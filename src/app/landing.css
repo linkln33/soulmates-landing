@@ -235,10 +235,6 @@ nav.lnav{position:fixed;top:0;left:0;right:0;z-index:100;padding:16px 32px;displ
 .sys-em{font-size:19px;flex-shrink:0;width:26px;text-align:center}
 .sys-glyph{width:22px;height:22px;flex-shrink:0;filter:brightness(0) invert(1);opacity:.75}
 .oc2-glyph{filter:brightness(0) invert(1);opacity:.9}
-.glyph-strip{display:flex;overflow-x:auto;gap:10px;padding:14px 20px;border-top:1px solid rgba(255,255,255,.06);background:rgba(168,85,247,.05);scrollbar-width:none}
-.glyph-strip::-webkit-scrollbar{display:none}
-.glyph-item{width:30px;height:30px;flex-shrink:0;filter:brightness(0) invert(1);opacity:.35;transition:opacity .2s,transform .2s;cursor:default}
-.glyph-item:hover{opacity:.85;transform:scale(1.15)}
 .sys-info{flex:1;min-width:0}
 .sys-name{display:block;font-size:13px;font-weight:700;margin-bottom:1px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
 .sys-desc{display:block;font-size:11px;color:var(--tm)}
