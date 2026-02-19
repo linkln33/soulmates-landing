@@ -206,28 +206,28 @@ export default function Home() {
         <div className="wrap">
           <div style={{textAlign:'center'}}>
             <div className="sl2">Daily Oracle</div>
-            <div className="st">Your cosmic inbox,<br />every morning</div>
-            <p className="ss" style={{margin:'0 auto'}}>7 personalized readings based on your actual spiritual profile — not generic content.</p>
+            <div className="st">7 things waiting for you<br />every morning</div>
+            <p className="ss" style={{margin:'0 auto'}}>Before you check anything else. Calculated fresh from your birth chart — not a post written for everyone born in April.</p>
           </div>
-          <div className="og">
+          <div className="og2">
             {[
-              ['oc1','♈','Daily Horoscope','Personalized transit reading','Free'],
-              ['oc2','🃏','Tarot Pull','Your card of the day','Free'],
-              ['oc3','🔢','Numerology','Personal day number','Free'],
-              ['oc4','🏛️','Mayan Oracle','Kin energy for today','Premium'],
-              ['oc5','🌸','Chakra Focus','Your energy centers today','Premium'],
-              ['oc6','🌿','Gene Keys','Rotating personal key','Premium'],
-              ['oc7','🌙','Vedic Moon','Nakshatra transit','Premium'],
-            ].map(([cls,ic,title,sub,tier]) => (
-              <div key={title} className={`oc ${cls}`}>
-                <div className="ocbg" />
-                <div className="ocov" />
-                <div className={`ollk ${tier==='Free'?'fl2':''}`}>{tier==='Free'?'● Free':'🔒 Premium'}</div>
-                <div className="occt">
-                  <div className="ocic">{ic}</div>
-                  <div className="oct">{title}</div>
-                  <div className="ocs">{sub}</div>
+              ['oc1','♈','Daily Horoscope','Free',   'Which planets are touching your chart today — and what that actually means for love, energy, and decisions.'],
+              ['oc2','🃏','Tarot Pull',     'Free',   'One card drawn for your day. A short, honest reading — not fortune-telling, more like a mirror.'],
+              ['oc3','🔢','Numerology',     'Free',   'Your personal day number from your birth date. Some days are for starting things. Others are for letting go.'],
+              ['oc4','🏛️','Mayan Oracle',  'Premium','Your Tzolkin kin energy for today — the Mayan equivalent of your daily horoscope, but far older.'],
+              ['oc5','🌸','Chakra Focus',  'Premium','Which of your 7 energy centers needs attention. Practical, not mystical — things you can actually feel.'],
+              ['oc6','🌿','Gene Keys',     'Premium','One of your 4 personal Gene Keys rotates each week. A contemplation that goes deep if you let it.'],
+              ['oc7','🌙','Vedic Moon',    'Premium','Where the Moon sits in your Vedic chart today. The nakshatra it's in colors your emotional weather.'],
+            ].map(([cls,ic,title,tier,desc]) => (
+              <div key={title} className={`oc2-card ${cls}`}>
+                <div className="oc2-top">
+                  <span className="oc2-ic">{ic}</span>
+                  <div className="oc2-meta">
+                    <span className="oc2-title">{title}</span>
+                    <span className={`oc2-tier ${tier==='Free'?'oc2-free':'oc2-prem'}`}>{tier==='Free'?'● Free':'🔒 Premium'}</span>
+                  </div>
                 </div>
+                <p className="oc2-desc">{desc}</p>
               </div>
             ))}
           </div>
