@@ -317,7 +317,7 @@ footer.lfooter a{color:rgba(192,132,252,.7);text-decoration:none}
 
 /* STATUS FLOW */
 .status-s{padding:100px 24px}
-.flow-g{display:grid;gap:0;margin-top:52px;max-width:780px;margin-left:auto;margin-right:auto;position:relative}
+.flow-g{display:grid;gap:0;margin-top:52px;max-width:1000px;margin-left:auto;margin-right:auto;position:relative}
 .flow-g{grid-template-columns:repeat(2,1fr)}
 .flow-g::before{content:'→';position:absolute;top:50%;left:50%;transform:translate(-50%,-50%);font-size:28px;color:rgba(168,85,247,.5);font-weight:700;z-index:1}
 .flow{text-align:center;padding:52px 40px;background:var(--cb);border:1px solid var(--cd)}
