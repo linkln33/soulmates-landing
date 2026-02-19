@@ -9,7 +9,7 @@ const EM: Record<string, string> = {
   // Free systems
   planet:    '⛩️',
   hash:      '🧬',
-  cards:     '🔮',
+  cards:     '✴️',
   fire:      '🔥',
   heart2:    '💌',
   link:      '💞',
