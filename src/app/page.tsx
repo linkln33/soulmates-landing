@@ -217,7 +217,7 @@ export default function Home() {
               ['oc4','🏛️','Mayan Oracle',  'Premium','Your Tzolkin kin energy for today — the Mayan equivalent of your daily horoscope, but far older.'],
               ['oc5','🌸','Chakra Focus',  'Premium','Which of your 7 energy centers needs attention. Practical, not mystical — things you can actually feel.'],
               ['oc6','🌿','Gene Keys',     'Premium','One of your 4 personal Gene Keys rotates each week. A contemplation that goes deep if you let it.'],
-              ['oc7','🌙','Vedic Moon',    'Premium','Where the Moon sits in your Vedic chart today. The nakshatra it's in colors your emotional weather.'],
+              ['oc7','🌙','Vedic Moon',    'Premium','Where the Moon sits in your Vedic chart today. The nakshatra it&apos;s in colors your emotional weather.'],
             ].map(([cls,ic,title,tier,desc]) => (
               <div key={title} className={`oc2-card ${cls}`}>
                 <div className="oc2-top">
@@ -240,16 +240,15 @@ export default function Home() {
           <div style={{textAlign:'center'}}>
             <div className="sl2">Match Score</div>
             <div className="st">Five levels of cosmic alignment</div>
-            <p className="ss" style={{margin:'0 auto'}}>Every compatibility score maps to a named level — shown consistently on cards, notifications, and shared blueprints.</p>
+            <p className="ss" style={{margin:'0 auto'}}>From Curious Spark to Twin Flame — every score maps to a named level shown consistently on match cards, notifications, and shared blueprints.</p>
           </div>
           <div className="tier-g">
             {[
-              ['t-tf','⭐','Perfect Match',    '93%+',    'Rarest outcome across all 16 systems. Under 1% of all cross-matches reach this. Triggers a VIP push alert + email the moment the match appears.'],
-              ['t-sb','💫','Exceptional Match','85–92%',  'Outstanding alignment across spiritual and behavioral systems. Surfaces with an urgent notification and priority position in discover.'],
-              ['t-cm','🌌','Celestial Match',  '80–84%',  'Exceptional multi-system resonance across spiritual and behavioral layers. Priority notification sent immediately.'],
-              ['t-dm','🌸','Divine Match',     '75–79%',  'Strong alignment across the core spiritual systems. Priority notification. The majority of lasting connections originate at this level.'],
-              ['t-om','🌿','Outstanding Match','65–74%',  'Meaningful alignment across several systems. Standard match notification. A solid connection worth exploring further.'],
-              ['t-gm','✨','Glowing Match',    '55–64%',  'Shown in discover feed only — no notification. Completing more questionnaires refines your profile and can raise a Glowing Match to Outstanding or higher.'],
+              ['t-tf','🔥','Twin Flame',     '93%+',   'The rarest outcome — under 1% of all cross-matches reach this across all 16 systems. Triggers a VIP push alert + email the moment the match appears.'],
+              ['t-sb','💫','Soul Bond',      '85–92%', 'Outstanding alignment across spiritual and behavioral systems. Surfaces with an urgent notification and priority position in discover.'],
+              ['t-dr','✨','Deep Resonance', '75–84%', 'Exceptional multi-system resonance across spiritual and behavioral layers. Priority notification sent immediately. Where most lasting connections begin.'],
+              ['t-ks','🌙','Kindred Spirit', '65–74%', 'Meaningful alignment across several systems. Standard match notification. A genuine connection worth exploring with real long-term potential.'],
+              ['t-cs','⚡','Curious Spark',  '55–64%', 'Shown in discover only — no notification. Complete more questionnaires to sharpen your profile and unlock a higher-tier match.'],
             ].map(([cls,ico,name,pct,desc]) => (
               <div key={name} className={`tier ${cls}`}>
                 <span className="tier-icon">{ico}</span>
