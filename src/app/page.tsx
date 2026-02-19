@@ -4,8 +4,8 @@ import PhoneCard from '@/components/landing/PhoneCard';
 import FreeTaste from '@/components/landing/FreeTaste';
 import { Ico } from '@/components/landing/PhosphorIco';
 
-const APP_URL  = 'https://apps.apple.com/app/id000000000';
-const PLAY_URL = 'https://play.google.com/store/apps/details?id=com.soulmatesquest.app';
+const APP_URL  = 'https://limewire.com/d/GU1Yt#pyPFYLC2v7';
+const PLAY_URL = 'https://limewire.com/d/GU1Yt#pyPFYLC2v7';
 
 export default function Home() {
   return (
