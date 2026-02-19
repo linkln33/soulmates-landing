@@ -1,10 +1,17 @@
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
+import localFont from "next/font/local";
 import "./globals.css";
 
 const inter = Inter({
   variable: "--font-inter",
   subsets: ["latin"],
+  display: "swap",
+});
+
+const aclonica = localFont({
+  src: "../../public/fonts/Aclonica.ttf",
+  variable: "--font-aclonica",
   display: "swap",
 });
 
@@ -39,7 +46,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={`${inter.variable} font-sans antialiased`}>
+      <body className={`${inter.variable} ${aclonica.variable} font-sans antialiased`}>
         {children}
       </body>
     </html>
