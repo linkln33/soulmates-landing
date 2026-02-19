@@ -43,7 +43,7 @@ nav.lnav{position:fixed;top:0;left:0;right:0;z-index:100;padding:16px 32px;displ
 .hb{display:flex;gap:16px;flex-wrap:wrap;margin-bottom:48px;animation:fu .6s .3s ease both;align-items:center}
 .store-badge-link{display:inline-block;transition:transform .15s,opacity .15s;line-height:0}
 .store-badge-link:hover{transform:translateY(-2px);opacity:.9}
-.store-badge{height:52px;width:auto;border-radius:10px}
+.store-badge{height:52px;width:auto;border-radius:10px;mix-blend-mode:screen}
 .bl{display:inline-flex;align-items:center;gap:10px;padding:16px 32px;border-radius:100px;font-size:16px;font-weight:700;text-decoration:none;transition:transform .15s,box-shadow .15s}
 .bp{background:linear-gradient(135deg,var(--p5),var(--i5));color:#fff;box-shadow:0 8px 40px rgba(168,85,247,.4)}
 .bp:hover{box-shadow:0 14px 50px rgba(168,85,247,.6);transform:translateY(-2px)}
@@ -223,7 +223,7 @@ nav.lnav{position:fixed;top:0;left:0;right:0;z-index:100;padding:16px 32px;displ
 .ci h2{font-size:clamp(32px,6vw,56px);font-weight:900;letter-spacing:-.01em;margin-bottom:20px;font-family:var(--font-aclonica),'Inter',sans-serif}
 .ci p{font-size:18px;color:var(--ts);line-height:1.65;margin-bottom:40px}
 .sbs{display:flex;gap:20px;justify-content:center;flex-wrap:wrap}
-.store-badge-lg{height:64px;width:auto;border-radius:12px}
+.store-badge-lg{height:64px;width:auto;border-radius:12px;mix-blend-mode:screen}
 footer.lfooter{border-top:1px solid rgba(255,255,255,.06);padding:32px 24px;text-align:center;color:var(--tm);font-size:13px}
 footer.lfooter a{color:rgba(192,132,252,.7);text-decoration:none}
 
