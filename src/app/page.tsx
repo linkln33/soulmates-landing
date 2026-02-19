@@ -176,17 +176,24 @@ export default function Home() {
                   ['🌙','Vedic / Jyotish','Moon nakshatra · Guna Milan'],
                   ['⚙️','Human Design','Type · Profile · Gates'],
                   ['🌿','Gene Keys','4 personal spheres'],
-                  ['🏛️','Mayan Calendar','Kin glyph · Wavespell'],
+                  ['/images/glyphs/glyph_01.svg','Mayan Calendar','Kin glyph · Wavespell'],
                   ['🌸','Chakra Analysis','7-center energy pattern'],
                   ['🕊️','Past Life / Karmic','Karmic nodes · soul lesson'],
                 ].map(([em,name,desc]) => (
                   <div key={name} className="sys-row">
-                    <span className="sys-em">{em}</span>
+                    {em.startsWith('/')
+                      ? <img src={em} className="sys-glyph" alt="" />
+                      : <span className="sys-em">{em}</span>}
                     <div className="sys-info">
                       <span className="sys-name">{name}</span>
                       <span className="sys-desc">{desc}</span>
                     </div>
                   </div>
+                ))}
+              </div>
+              <div className="glyph-strip">
+                {Array.from({length:20},(_,i) => (
+                  <img key={i} src={`/images/glyphs/glyph_${String(i+1).padStart(2,'0')}.svg`} alt="" className="glyph-item" />
                 ))}
               </div>
             </div>
@@ -207,14 +214,16 @@ export default function Home() {
               ['oc1','♈','Daily Horoscope','Free',   'Which planets are touching your chart today — and what that actually means for love, energy, and decisions.'],
               ['oc2','🃏','Tarot Pull',     'Free',   'One card drawn for your day. A short, honest reading — not fortune-telling, more like a mirror.'],
               ['oc3','🔢','Numerology',     'Free',   'Your personal day number from your birth date. Some days are for starting things. Others are for letting go.'],
-              ['oc4','🏛️','Mayan Oracle',  'Premium','Your Tzolkin kin energy for today — the Mayan equivalent of your daily horoscope, but far older.'],
+              ['oc4','/images/glyphs/glyph_05.svg','Mayan Oracle','Premium','Your Tzolkin kin energy for today — the Mayan equivalent of your daily horoscope, but far older.'],
               ['oc5','🌸','Chakra Focus',  'Premium','Which of your 7 energy centers needs attention. Practical, not mystical — things you can actually feel.'],
               ['oc6','🌿','Gene Keys',     'Premium','One of your 4 personal Gene Keys rotates each week. A contemplation that goes deep if you let it.'],
               ['oc7','🌙','Vedic Moon',    'Premium','Where the Moon sits in your Vedic chart today. The nakshatra it&apos;s in colors your emotional weather.'],
             ].map(([cls,ic,title,tier,desc]) => (
               <div key={title} className={`oc2-card ${cls}`}>
                 <div className="oc2-top">
-                  <span className="oc2-ic">{ic}</span>
+                  {ic.startsWith('/')
+                    ? <img src={ic} className="oc2-ic oc2-glyph" alt="" />
+                    : <span className="oc2-ic">{ic}</span>}
                   <div className="oc2-meta">
                     <span className="oc2-title">{title}</span>
                     <span className={`oc2-tier ${tier==='Free'?'oc2-free':'oc2-prem'}`}>{tier==='Free'?'● Free':'🔒 Premium'}</span>
