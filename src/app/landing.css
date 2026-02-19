@@ -50,7 +50,7 @@ nav.lnav{position:fixed;top:0;left:0;right:0;z-index:100;padding:16px 32px;displ
 .bp:hover{box-shadow:0 14px 50px rgba(168,85,247,.6);transform:translateY(-2px)}
 .bg2{background:rgba(255,255,255,.07);border:1px solid rgba(255,255,255,.14);color:rgba(255,255,255,.85);backdrop-filter:blur(12px)}
 .bg2:hover{background:rgba(255,255,255,.11);transform:translateY(-2px)}
-.sr{display:flex;gap:24px;flex-wrap:nowrap;animation:fu .6s .4s ease both;align-items:flex-start}
+.sr{display:flex;gap:24px;flex-wrap:nowrap;animation:fu .6s .4s ease both;align-items:flex-start;margin-bottom:40px}
 .sn{font-size:28px;font-weight:800}
 .sg{background:linear-gradient(135deg,var(--p4),var(--pk));-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text}
 .sl{font-size:13px;color:var(--tm);font-weight:500;margin-top:2px}
