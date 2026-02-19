@@ -69,70 +69,30 @@ export default function Home() {
         <div className="wrap">
           <div style={{ textAlign: 'center', marginBottom: 56 }}>
             <div className="sl2">Why Soulmates Quest</div>
-            <div className="st">Built different, by design</div>
-            <p className="ss" style={{ margin: '0 auto' }}>Most apps show you a grid of faces. We show you one carefully chosen match at a time.</p>
+            <div className="st">What your days actually look like</div>
+            <p className="ss" style={{ margin: '0 auto' }}>Built to be useful every single day — whether or not you've found your person yet.</p>
           </div>
-          <div className="fg3">
-            <div className="fcard pillar">
-              <div className="fico">🧮</div>
-              <h3>Real calculations, not AI fluff</h3>
-              <p>Your birth date powers actual Swiss Ephemeris computations. Every synastry score, nakshatra, Gene Key, and Mayan sign is calculated in real-time — not generic lookup tables.</p>
-              <div className="cr">
-                <span className="chip">Swiss Ephemeris</span><span className="chip">Synastry Engine</span>
-                <span className="chip">Gene Keys</span><span className="chip">Human Design</span>
-              </div>
+          <div className="diff-grid">
+            <div className="diff-card">
+              <div className="diff-icon">🌅</div>
+              <h3>Wake up to 7 readings made for you</h3>
+              <p>Every morning, 7 things are waiting: your horoscope, a tarot card, your numerology day number, and more. All calculated from your actual birth date — not a generic post that fits everyone born in the same month.</p>
             </div>
-            <div className="fcard pillar">
-              <div className="fico">🎯</div>
-              <h3>One match at a time</h3>
-              <p>No infinite scroll. No swiping fatigue. One carefully chosen match per week — then you decide. Intentional connection over dopamine loops.</p>
+            <div className="diff-card">
+              <div className="diff-icon">👤</div>
+              <h3>One person. Your full attention. No noise.</h3>
+              <p>We don't give you a stack of photos to sort through. When your best match appears, you get 7 days together — just the two of you. Incoming likes wait quietly. Real conversation, not a slot machine.</p>
             </div>
-            <div className="fcard pillar">
-              <div className="fico">🌅</div>
-              <h3>Daily Oracle — always on</h3>
-              <p>7 personalized readings every morning based on your actual spiritual profile. Works even with zero matches. Horoscope, Tarot, Chakra, Vedic Moon and more.</p>
+            <div className="diff-card">
+              <div className="diff-icon">🔔</div>
+              <h3>Your person will find you — even a year from now</h3>
+              <p>Set your threshold once and forget it. The moment anyone above that level joins the app — even months from now — you get a push notification. Your profile is always watching, even when you're not.</p>
             </div>
-          </div>
-          <div className="fg-groups">
-            <div className="fg-group">
-              <div className="fg-group-label">🔮 Intelligence &amp; Matching</div>
-              <div className="fg-group-cards">
-                {[
-                  ['🔔','Reverse-Match Engine','Background engine monitors every new signup. You get a push the moment someone above your threshold joins.'],
-                  ['✨','Free Soulmate Reading','No account required. Partial profile from 5 spiritual systems. Shareable to Instagram stories.'],
-                  ['⭐','Trust Score','Earned from feedback, GPS check-ins, and response reliability. Verified &amp; Trustworthy badges on every card.'],
-                  ['🌟','Profile Tiers','Bronze → Silver → Gold → Platinum. Complete quizzes to rank up and unlock more precise scoring.'],
-                ].map(([ico,title,desc]) => (
-                  <div key={title} className="fcard compact">
-                    <div className="fico sm">{ico}</div>
-                    <h3>{title}</h3>
-                    <p dangerouslySetInnerHTML={{__html: desc}} />
-                  </div>
-                ))}
-              </div>
+            <div className="diff-card">
+              <div className="diff-icon">🔢</div>
+              <h3>A compatibility score that actually means something</h3>
+              <p>Sun signs are just the start. We run your birth date through 16 systems — astrology, Human Design, Mayan Calendar, Gene Keys, numerology — and give you one honest number. Real math, not vibes.</p>
             </div>
-            <div className="fg-group">
-              <div className="fg-group-label">💎 Premium Experience</div>
-              <div className="fg-group-cards">
-                {[
-                  ['🌈','Aura Visualization','Each zodiac sign mapped to an aura color — glowing radial overlay behind your card. Energy compatibility at a glance.'],
-                  ['🔮','Pre-Swipe Oracle','"This person\'s Gene Key 22 harmonizes with your Key 47." Decide with soul, not just attraction.'],
-                  ['📍','GPS Check-in','Verify you met your match IRL. Proximity-based check-in builds trust and unlocks bonus connection time.'],
-                  ['🕵️','Incognito Mode','Browse compatibility without appearing in anyone\'s Discover feed. Radar stays on, presence stays hidden.'],
-                ].map(([ico,title,desc]) => (
-                  <div key={title} className="fcard compact">
-                    <div className="fico sm">{ico}</div>
-                    <h3>{title}</h3>
-                    <p>{desc}</p>
-                  </div>
-                ))}
-              </div>
-            </div>
-          </div>
-          <div className="feat-strip">
-            {['🎴 Soul Cards','💬 Real-time Cosmic Chat','⭐️ Post-Match Feedback','💌 Invite &amp; Referral','🛡️ Privacy-First'].map(pill => (
-              <div key={pill} className="feat-pill" dangerouslySetInnerHTML={{__html:`<span>${pill.split(' ')[0]}</span> ${pill.slice(pill.indexOf(' ')+1)}`}} />
-            ))}
           </div>
         </div>
       </section>
