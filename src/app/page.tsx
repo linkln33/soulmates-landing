@@ -2,6 +2,22 @@ import './landing.css';
 import Stars from '@/components/landing/Stars';
 import PhoneCard from '@/components/landing/PhoneCard';
 import FreeTaste from '@/components/landing/FreeTaste';
+import {
+  Sun, Moon, Star, Hash, Layers, Flame, MessageCircle, Link2,
+  Brain, Globe, Clock, Eye, Cpu, Leaf, CircleDot, Bird,
+  MapPin, Bell, Zap, RotateCcw, UserRound, Heart, Lock,
+  type LucideIcon,
+} from 'lucide-react';
+const ICO: Record<string, LucideIcon> = {
+  sun: Sun, moon: Moon, star: Star, hash: Hash, layers: Layers,
+  flame: Flame, msg: MessageCircle, link: Link2, brain: Brain,
+  globe: Globe, clock: Clock, eye: Eye, cpu: Cpu, leaf: Leaf,
+  dot: CircleDot, bird: Bird, pin: MapPin, bell: Bell, zap: Zap,
+  refresh: RotateCcw, user: UserRound, heart: Heart, lock: Lock,
+};
+function Ico({ k, s = 17 }: { k: string; s?: number }) {
+  const C = ICO[k]; return C ? <C size={s} strokeWidth={1.75} /> : null;
+}
 
 const APP_URL  = 'https://apps.apple.com/app/id000000000';
 const PLAY_URL = 'https://play.google.com/store/apps/details?id=com.soulmatesquest.app';
@@ -74,22 +90,22 @@ export default function Home() {
           </div>
           <div className="diff-grid">
             <div className="diff-card">
-              <div className="diff-icon">🌅</div>
+              <div className="diff-icon"><Ico k="sun" s={24} /></div>
               <h3>Wake up to 7 readings made for you</h3>
               <p>Every morning, 7 things are waiting: your horoscope, a tarot card, your numerology day number, and more. All calculated from your actual birth date — not a generic post that fits everyone born in the same month.</p>
             </div>
             <div className="diff-card">
-              <div className="diff-icon">👤</div>
+              <div className="diff-icon"><Ico k="user" s={24} /></div>
               <h3>One person. Your full attention. No noise.</h3>
-              <p>We don't give you a stack of photos to sort through. When your best match appears, you get 7 days together — just the two of you. Incoming likes wait quietly. Real conversation, not a slot machine.</p>
+              <p>We don&apos;t give you a stack of photos to sort through. When your best match appears, you get 7 days together — just the two of you. Incoming likes wait quietly. Real conversation, not a slot machine.</p>
             </div>
             <div className="diff-card">
-              <div className="diff-icon">🔔</div>
+              <div className="diff-icon"><Ico k="bell" s={24} /></div>
               <h3>Your person will find you — even a year from now</h3>
-              <p>Set your threshold once and forget it. The moment anyone above that level joins the app — even months from now — you get a push notification. Your profile is always watching, even when you're not.</p>
+              <p>Set your threshold once and forget it. The moment anyone above that level joins the app — even months from now — you get a push notification. Your profile is always watching, even when you&apos;re not.</p>
             </div>
             <div className="diff-card">
-              <div className="diff-icon">🔢</div>
+              <div className="diff-icon"><Ico k="star" s={24} /></div>
               <h3>A compatibility score that actually means something</h3>
               <p>Sun signs are just the start. We run your birth date through 16 systems — astrology, Human Design, Mayan Calendar, Gene Keys, numerology — and give you one honest number. Real math, not vibes.</p>
             </div>
@@ -140,19 +156,19 @@ export default function Home() {
               </div>
               <div className="sys-list">
                 {[
-                  ['♈','Western Astrology','Natal chart + Synastry','sp'],
-                  ['🔢','Numerology','Life Path · Expression','sp'],
-                  ['🃏','Tarot','Birth card pairing','sp'],
-                  ['🔥','Elemental','Fire · Earth · Air · Water','sp'],
-                  ['💬','Love Language','5-scale · give vs receive','bh'],
-                  ['🪢','Attachment Style','Secure · Anxious · Avoidant','bh'],
-                  ['🧠','Big Five','OCEAN personality domains','bh'],
-                  ['🌍','Values Alignment','Goals · dealbreakers','bh'],
-                  ['🌅','Lifestyle','Rhythm · social · activities','bh'],
-                  ['🧘','Consciousness','Hawkins scale · soul age','bh'],
-                ].map(([em,name,desc,cat]) => (
+                  ['star','Western Astrology','Natal chart + Synastry','sp'],
+                  ['hash','Numerology','Life Path · Expression','sp'],
+                  ['layers','Tarot','Birth card pairing','sp'],
+                  ['flame','Elemental','Fire · Earth · Air · Water','sp'],
+                  ['msg','Love Language','5-scale · give vs receive','bh'],
+                  ['link','Attachment Style','Secure · Anxious · Avoidant','bh'],
+                  ['brain','Big Five','OCEAN personality domains','bh'],
+                  ['globe','Values Alignment','Goals · dealbreakers','bh'],
+                  ['clock','Lifestyle','Rhythm · social · activities','bh'],
+                  ['eye','Consciousness','Hawkins scale · soul age','bh'],
+                ].map(([ico,name,desc,cat]) => (
                   <div key={name} className="sys-row">
-                    <span className="sys-em">{em}</span>
+                    <span className="sys-em"><Ico k={ico} /></span>
                     <div className="sys-info">
                       <span className="sys-name">{name}</span>
                       <span className="sys-desc">{desc}</span>
@@ -173,17 +189,17 @@ export default function Home() {
               </div>
               <div className="sys-list">
                 {[
-                  ['🌙','Vedic / Jyotish','Moon nakshatra · Guna Milan'],
-                  ['⚙️','Human Design','Type · Profile · Gates'],
-                  ['🌿','Gene Keys','4 personal spheres'],
+                  ['moon','Vedic / Jyotish','Moon nakshatra · Guna Milan'],
+                  ['cpu','Human Design','Type · Profile · Gates'],
+                  ['leaf','Gene Keys','4 personal spheres'],
                   ['/images/glyphs/glyph_01.svg','Mayan Calendar','Kin glyph · Wavespell'],
-                  ['🌸','Chakra Analysis','7-center energy pattern'],
-                  ['🕊️','Past Life / Karmic','Karmic nodes · soul lesson'],
-                ].map(([em,name,desc]) => (
+                  ['dot','Chakra Analysis','7-center energy pattern'],
+                  ['bird','Past Life / Karmic','Karmic nodes · soul lesson'],
+                ].map(([ico,name,desc]) => (
                   <div key={name} className="sys-row">
-                    {em.startsWith('/')
-                      ? <img src={em} className="sys-glyph" alt="" />
-                      : <span className="sys-em">{em}</span>}
+                    {ico.startsWith('/')
+                      ? <img src={ico} className="sys-glyph" alt="" />
+                      : <span className="sys-em"><Ico k={ico} /></span>}
                     <div className="sys-info">
                       <span className="sys-name">{name}</span>
                       <span className="sys-desc">{desc}</span>
@@ -206,22 +222,22 @@ export default function Home() {
           </div>
           <div className="og2">
             {[
-              ['oc1','♈','Daily Horoscope','Free',   'Which planets are touching your chart today — and what that actually means for love, energy, and decisions.'],
-              ['oc2','🃏','Tarot Pull',     'Free',   'One card drawn for your day. A short, honest reading — not fortune-telling, more like a mirror.'],
-              ['oc3','🔢','Numerology',     'Free',   'Your personal day number from your birth date. Some days are for starting things. Others are for letting go.'],
+              ['oc1','sun','Daily Horoscope','Free',   'Which planets are touching your chart today — and what that actually means for love, energy, and decisions.'],
+              ['oc2','layers','Tarot Pull',   'Free',   'One card drawn for your day. A short, honest reading — not fortune-telling, more like a mirror.'],
+              ['oc3','hash','Numerology',     'Free',   'Your personal day number from your birth date. Some days are for starting things. Others are for letting go.'],
               ['oc4','/images/glyphs/glyph_05.svg','Mayan Oracle','Premium','Your Tzolkin kin energy for today — the Mayan equivalent of your daily horoscope, but far older.'],
-              ['oc5','🌸','Chakra Focus',  'Premium','Which of your 7 energy centers needs attention. Practical, not mystical — things you can actually feel.'],
-              ['oc6','🌿','Gene Keys',     'Premium','One of your 4 personal Gene Keys rotates each week. A contemplation that goes deep if you let it.'],
-              ['oc7','🌙','Vedic Moon',    'Premium','Where the Moon sits in your Vedic chart today. The nakshatra it&apos;s in colors your emotional weather.'],
+              ['oc5','dot','Chakra Focus',   'Premium','Which of your 7 energy centers needs attention. Practical, not mystical — things you can actually feel.'],
+              ['oc6','leaf','Gene Keys',      'Premium','One of your 4 personal Gene Keys rotates each week. A contemplation that goes deep if you let it.'],
+              ['oc7','moon','Vedic Moon',     'Premium','Where the Moon sits in your Vedic chart today. The nakshatra it&apos;s in colors your emotional weather.'],
             ].map(([cls,ic,title,tier,desc]) => (
               <div key={title} className={`oc2-card ${cls}`}>
                 <div className="oc2-top">
                   {ic.startsWith('/')
                     ? <img src={ic} className="oc2-ic oc2-glyph" alt="" />
-                    : <span className="oc2-ic">{ic}</span>}
+                    : <span className="oc2-ic"><Ico k={ic} s={20} /></span>}
                   <div className="oc2-meta">
                     <span className="oc2-title">{title}</span>
-                    <span className={`oc2-tier ${tier==='Free'?'oc2-free':'oc2-prem'}`}>{tier==='Free'?'● Free':'🔒 Premium'}</span>
+                    <span className={`oc2-tier ${tier==='Free'?'oc2-free':'oc2-prem'}`}>{tier==='Free'?'● Free':'✦ Premium'}</span>
                   </div>
                 </div>
                 <p className="oc2-desc">{desc}</p>
@@ -268,13 +284,13 @@ export default function Home() {
           </div>
           <div className="flow-g" style={{gridTemplateColumns:'repeat(2,1fr)',maxWidth:560}}>
             <div className="flow">
-              <div className="flow-ic">💚</div>
+              <div className="flow-ic"><Ico k="heart" s={36} /></div>
               <div className="flow-name">Available</div>
               <div className="flow-dur">Discover</div>
               <div className="flow-desc">Swipe, browse, and connect. The network shows you one match at a time.</div>
             </div>
             <div className="flow" style={{borderRadius:'0 24px 24px 0',borderLeft:'none'}}>
-              <div className="flow-ic">💗</div>
+              <div className="flow-ic"><Ico k="lock" s={36} /></div>
               <div className="flow-name">Taken</div>
               <div className="flow-dur">7 days</div>
               <div className="flow-desc">One match. Full focus. Incoming likes held in a hidden queue while you&apos;re committed.</div>
@@ -292,13 +308,13 @@ export default function Home() {
           </div>
           <div className="extra-g">
             {[
-              ['📍','GPS Check-in','Meeting your match in person? Both check in from the same location to verify the date happened. Builds trust, unlocks bonus time bank hours, and adds a real-world layer to digital connection.','linear-gradient(135deg,rgba(34,197,94,.2),rgba(16,185,129,.1))','1px solid rgba(34,197,94,.25)'],
-              ['🔔','Soulmate Radar','A background engine monitors every new signup. The moment someone above your threshold appears — even months later — you get an immediate push notification. Your oracle stays active while you wait.','linear-gradient(135deg,rgba(168,85,247,.2),rgba(99,102,241,.1))','1px solid rgba(168,85,247,.25)'],
-              ['🔥','Response Streaks + Time Bank','Consistent back-and-forth earns streak bonuses and deposits hours into your shared time bank — extending your 7-day match window. Meaningful conversation is literally rewarded.','linear-gradient(135deg,rgba(245,158,11,.2),rgba(239,68,68,.1))','1px solid rgba(245,158,11,.25)'],
-              ['♻️','Match Revival','A connection ended before its time? Premium members can revive a past match — re-opening the conversation window for a second chance. One revival per match.','linear-gradient(135deg,rgba(236,72,153,.2),rgba(168,85,247,.1))','1px solid rgba(236,72,153,.25)'],
-            ].map(([ico,title,desc,bg,border]) => (
+              ['pin','GPS Check-in','Meeting your match in person? Both check in from the same location to verify the date happened. Builds trust, unlocks bonus time bank hours, and adds a real-world layer to digital connection.','linear-gradient(135deg,rgba(34,197,94,.2),rgba(16,185,129,.1))','1px solid rgba(34,197,94,.25)','#4ade80'],
+              ['bell','Soulmate Radar','A background engine monitors every new signup. The moment someone above your threshold appears — even months later — you get an immediate push notification. Your oracle stays active while you wait.','linear-gradient(135deg,rgba(168,85,247,.2),rgba(99,102,241,.1))','1px solid rgba(168,85,247,.25)','var(--p3)'],
+              ['zap','Response Streaks + Time Bank','Consistent back-and-forth earns streak bonuses and deposits hours into your shared time bank — extending your 7-day match window. Meaningful conversation is literally rewarded.','linear-gradient(135deg,rgba(245,158,11,.2),rgba(239,68,68,.1))','1px solid rgba(245,158,11,.25)','#fbbf24'],
+              ['refresh','Match Revival','A connection ended before its time? Premium members can revive a past match — re-opening the conversation window for a second chance. One revival per match.','linear-gradient(135deg,rgba(236,72,153,.2),rgba(168,85,247,.1))','1px solid rgba(236,72,153,.25)','#f472b6'],
+            ].map(([ico,title,desc,bg,border,clr]) => (
               <div key={title} className="ecard">
-                <div className="eico" style={{background:bg as string,border:border as string}}>{ico}</div>
+                <div className="eico" style={{background:bg as string,border:border as string,color:clr as string}}><Ico k={ico} s={22} /></div>
                 <div>
                   <h3>{title}</h3>
                   <p>{desc}</p>
@@ -444,7 +460,7 @@ export default function Home() {
             <div className="sl2" style={{marginBottom:16}}>Soulmate Quiz</div>
             <h2>Send your friends<br />a cosmic quiz</h2>
             <p>Create a quiz, add your personal <strong>Lexicon</strong> — custom questions only you can ask — then share the link. Anyone who takes it gets a full 16-system compatibility reading against your profile.</p>
-            <a href={APP_URL} className="bl bp" style={{display:'inline-flex'}}>💫 Create Your Quiz</a>
+            <a href={APP_URL} className="bl bp" style={{display:'inline-flex',gap:8,alignItems:'center'}}><Star size={16} strokeWidth={2} />Create Your Quiz</a>
           </div>
         </div>
       </section>
