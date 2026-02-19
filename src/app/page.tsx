@@ -143,7 +143,7 @@ export default function Home() {
                 {[
                   ['planet','Western Astrology','Natal chart + Synastry','sp'],
                   ['hash','Numerology','Life Path · Expression','sp'],
-                  ['/images/tarot-icon.jpg','Tarot','Birth card pairing','sp'],
+                  ['cards','Tarot','Birth card pairing','sp'],
                   ['fire','Elemental','Fire · Earth · Air · Water','sp'],
                   ['heart2','Love Language','5-scale · give vs receive','bh'],
                   ['link','Attachment Style','Secure · Anxious · Avoidant','bh'],
@@ -208,7 +208,7 @@ export default function Home() {
           <div className="og2">
             {[
               ['oc1','planet','Daily Horoscope','Free',   'Which planets are touching your chart today — and what that actually means for love, energy, and decisions.'],
-              ['oc2','/images/tarot-icon.jpg','Tarot Pull','Free','One card drawn for your day. A short, honest reading — not fortune-telling, more like a mirror.'],
+              ['oc2','cards','Tarot Pull','Free','One card drawn for your day. A short, honest reading — not fortune-telling, more like a mirror.'],
               ['oc3','hash','Numerology',      'Free',   'Your personal day number from your birth date. Some days are for starting things. Others are for letting go.'],
               ['oc4','/images/glyphs/glyph_05.svg','Mayan Oracle','Premium','Your Tzolkin kin energy for today — the Mayan equivalent of your daily horoscope, but far older.'],
               ['oc5','lotus','Chakra Focus',   'Premium','Which of your 7 energy centers needs attention. Practical, not mystical — things you can actually feel.'],
