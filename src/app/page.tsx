@@ -182,9 +182,11 @@ export default function Home() {
                   ['butterfly','Past Life / Karmic','Karmic nodes · soul lesson'],
                 ].map(([ico,name,desc]) => (
                   <div key={name} className="sys-row">
-                    {ico.startsWith('/')
-                      ? <img src={ico} className="sys-glyph" alt="" />
-                      : <span className="sys-em"><Ico k={ico} s={28} /></span>}
+                    <span className="sys-em">
+                      {ico.startsWith('/')
+                        ? <img src={ico} className="sys-glyph" alt="" />
+                        : <Ico k={ico} s={28} />}
+                    </span>
                     <div className="sys-info">
                       <span className="sys-name">{name}</span>
                       <span className="sys-desc">{desc}</span>
