@@ -366,34 +366,73 @@ export default function Home() {
               <thead>
                 <tr>
                   <th></th>
-                  <th>Tinder / Hinge</th>
-                  <th>Co-Star</th>
-                  <th>NUiT</th>
-                  <th className="us">Soulmates Quest</th>
+                  <th>
+                    <div className="cmp-logo">
+                      <img src="/images/competitors/tinder-logo.jpg" alt="Tinder" />
+                      <span>Tinder</span>
+                    </div>
+                  </th>
+                  <th>
+                    <div className="cmp-logo">
+                      <img src="/images/competitors/hinge-logo.png" alt="Hinge" />
+                      <span>Hinge</span>
+                    </div>
+                  </th>
+                  <th>
+                    <div className="cmp-logo">
+                      <img src="/images/competitors/bumble-logo.png" alt="Bumble" />
+                      <span>Bumble</span>
+                    </div>
+                  </th>
+                  <th>
+                    <div className="cmp-logo">
+                      <img src="/images/competitors/boo-logo.jpeg" alt="Boo" />
+                      <span>Boo</span>
+                    </div>
+                  </th>
+                  <th>
+                    <div className="cmp-logo">
+                      <img src="/images/competitors/eharmony-logo.png" alt="eHarmony" />
+                      <span>eHarmony</span>
+                    </div>
+                  </th>
+                  <th className="us">
+                    <div className="cmp-logo us-logo">
+                      <img src="/logo.png" alt="Soulmates Quest" />
+                      <span>Soulmates Quest</span>
+                    </div>
+                  </th>
                 </tr>
               </thead>
               <tbody>
-                {[
-                  ['Dating / Matching',true,false,true,true,'✓'],
-                  ['Spiritual profiling',false,'Basic sun sign','1 system',false,'16 systems'],
-                  ['Behavioral psychology',false,false,false,false,'6 questionnaires'],
-                  ['Daily oracle content',false,true,false,false,'7 personalized pieces'],
-                  ['Works with zero users',false,true,false,false,'✓ Full oracle value'],
-                  ['Free soulmate reading',false,false,false,false,'✓ No account needed'],
-                  ['Passive match alerts',false,false,false,false,'✓ Soulmate Radar'],
-                  ['One-match model',false,false,false,false,'✓ 7-day intentional'],
-                  ['GPS meeting verification',false,false,false,false,'✓ Check-in system'],
-                ].map(([label, a, b, c, , us]) => (
-                  <tr key={label as string}>
-                    <td>{label as string}</td>
-                    {[a,b,c].map((v,i) => (
+                {([
+                  ['Dating & Matching',         true,    true,    true,    true,           true,           true],
+                  ['Spiritual profiling',        false,   false,   false,   '~Zodiac only', false,          '16 systems'],
+                  ['Personality matching',       false,   false,   false,   'MBTI + Enn.',  '32 dimensions','+ Behavioral'],
+                  ['Daily oracle / insights',    false,   false,   false,   false,          false,          '7 cards / day'],
+                  ['Free reading, no sign-up',   false,   false,   false,   false,          false,          true],
+                  ['Value without a user pool',  false,   false,   false,   false,          false,          true],
+                  ['Passive match alerts',       false,   false,   false,   false,          false,          true],
+                  ['One curated match',          false,   false,   false,   false,          false,          '7-day focus'],
+                  ['GPS meetup check-in',        false,   false,   false,   false,          false,          true],
+                ] as [string, boolean|string, boolean|string, boolean|string, boolean|string, boolean|string, boolean|string][])
+                .map(([label, ti, hi, bu, bo, eh, us]) => (
+                  <tr key={label}>
+                    <td>{label}</td>
+                    {([ti, hi, bu, bo, eh] as (boolean|string)[]).map((v, i) => (
                       <td key={i}>
-                        {v===true ? <span className="ck">✓</span>
-                          : v===false ? <span className="cx">✗</span>
+                        {v === true  ? <span className="ck">✓</span>
+                        : v === false ? <span className="cx">✗</span>
+                        : typeof v === 'string' && v.startsWith('~')
+                          ? <span className="cpart">{v.slice(1)}</span>
                           : <span className="cbasic">{v as string}</span>}
                       </td>
                     ))}
-                    <td className="cus">{us===true?<span className="ck">✓</span>:us as string}</td>
+                    <td className="cus">
+                      {us === true  ? <span className="ck">✓</span>
+                      : us === false ? <span className="cx">✗</span>
+                      : <span className="cus-v">{us as string}</span>}
+                    </td>
                   </tr>
                 ))}
               </tbody>
