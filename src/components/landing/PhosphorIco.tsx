@@ -3,6 +3,7 @@ const EM: Record<string, string> = {
   sun:       '🌟',
   user:      '💋',
   bell:      '🌪️',
+  pinata:    '🪅',
   scales:    '☯️',
   // Free systems
   planet:    '⛩️',
