@@ -191,11 +191,6 @@ export default function Home() {
                   </div>
                 ))}
               </div>
-              <div className="glyph-strip">
-                {Array.from({length:20},(_,i) => (
-                  <img key={i} src={`/images/glyphs/glyph_${String(i+1).padStart(2,'0')}.svg`} alt="" className="glyph-item" />
-                ))}
-              </div>
             </div>
           </div>
         </div>
