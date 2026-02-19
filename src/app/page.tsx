@@ -20,7 +20,7 @@ export default function Home() {
       {/* NAV */}
       <nav className="lnav">
         <a href="/" className="nl">
-          <div className="ni">💫</div>Soulmates Quest
+          <div className="ni"><img src="/logo.png" alt="Soulmates Quest" style={{width:'100%',height:'100%',objectFit:'cover',borderRadius:'10px'}} /></div>Soulmates Quest
         </a>
         <a href={APP_URL} className="nc">Download App</a>
       </nav>
