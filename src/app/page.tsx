@@ -85,7 +85,7 @@ export default function Home() {
               <p>We don&apos;t give you a stack of photos to sort through. When your best match appears, you get 7 days together — just the two of you. Incoming likes wait quietly. Real conversation, not a slot machine.</p>
             </div>
             <div className="diff-card">
-              <div className="diff-icon"><Ico k="bell" s={46} /></div>
+              <div className="diff-icon"><Ico k="pinata" s={46} /></div>
               <h3>Your person will find you — even a year from now</h3>
               <p>Set your threshold once and forget it. The moment anyone above that level joins the app — even months from now — you get a push notification. Your profile is always watching, even when you&apos;re not.</p>
             </div>
@@ -143,7 +143,7 @@ export default function Home() {
                 {[
                   ['planet','Western Astrology','Natal chart + Synastry','sp'],
                   ['hash','Numerology','Life Path · Expression','sp'],
-                  ['cards','Tarot','Birth card pairing','sp'],
+                  ['/images/tarot-icon.jpg','Tarot','Birth card pairing','sp'],
                   ['fire','Elemental','Fire · Earth · Air · Water','sp'],
                   ['heart2','Love Language','5-scale · give vs receive','bh'],
                   ['link','Attachment Style','Secure · Anxious · Avoidant','bh'],
@@ -153,7 +153,7 @@ export default function Home() {
                   ['yin','Consciousness','Hawkins scale · soul age','bh'],
                 ].map(([ico,name,desc,cat]) => (
                   <div key={name} className="sys-row">
-                    <span className="sys-em"><Ico k={ico} s={28} /></span>
+                    <span className="sys-em">{ico.startsWith('/') ? <img src={ico} className="sys-img" alt="" /> : <Ico k={ico} s={28} />}</span>
                     <div className="sys-info">
                       <span className="sys-name">{name}</span>
                       <span className="sys-desc">{desc}</span>
@@ -208,7 +208,7 @@ export default function Home() {
           <div className="og2">
             {[
               ['oc1','planet','Daily Horoscope','Free',   'Which planets are touching your chart today — and what that actually means for love, energy, and decisions.'],
-              ['oc2','cards','Tarot Pull',     'Free',   'One card drawn for your day. A short, honest reading — not fortune-telling, more like a mirror.'],
+              ['oc2','/images/tarot-icon.jpg','Tarot Pull','Free','One card drawn for your day. A short, honest reading — not fortune-telling, more like a mirror.'],
               ['oc3','hash','Numerology',      'Free',   'Your personal day number from your birth date. Some days are for starting things. Others are for letting go.'],
               ['oc4','/images/glyphs/glyph_05.svg','Mayan Oracle','Premium','Your Tzolkin kin energy for today — the Mayan equivalent of your daily horoscope, but far older.'],
               ['oc5','lotus','Chakra Focus',   'Premium','Which of your 7 energy centers needs attention. Practical, not mystical — things you can actually feel.'],
