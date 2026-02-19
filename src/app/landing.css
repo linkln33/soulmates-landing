@@ -441,7 +441,10 @@ footer.lfooter a{color:rgba(192,132,252,.7);text-decoration:none}
   .wrap{padding:0 18px}
   .hero{padding:90px 18px 0;gap:20px}
   .po{transform:scale(.58);transform-origin:top center;margin-bottom:calc(750px * -0.42)}
-  .sr{flex-wrap:wrap;gap:12px;justify-content:center}
+  .sr{flex-wrap:nowrap;gap:0;justify-content:space-between;width:100%}
+  .sr>div{flex:1;text-align:center}
+  .sn{font-size:22px}
+  .sl{font-size:10px;white-space:nowrap}
   .qi{padding:40px 20px}
   .ft-inner{padding:36px 20px;border-radius:28px}
   .store-badge{height:40px;width:auto}
@@ -474,9 +477,8 @@ footer.lfooter a{color:rgba(192,132,252,.7);text-decoration:none}
   .ni{width:30px;height:30px}
   .nc{font-size:12px;padding:7px 14px}
   .hb{gap:10px}
-  .sr{gap:8px}
-  .sn{font-size:22px}
-  .sl{font-size:11px}
+  .sn{font-size:19px}
+  .sl{font-size:9.5px}
   .diff-card{padding:22px 16px}
   .diff-icon{font-size:28px;margin-bottom:12px}
   .ft-inner{padding:26px 14px;border-radius:22px}
