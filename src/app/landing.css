@@ -262,7 +262,7 @@ footer.lfooter a{color:rgba(192,132,252,.7);text-decoration:none}
 
 /* FREE TASTE */
 .ft-s{padding:80px 24px;position:relative}
-.ft-inner{max-width:860px;margin:0 auto;background:linear-gradient(135deg,rgba(168,85,247,.14),rgba(99,102,241,.08));border:1px solid rgba(168,85,247,.32);border-radius:36px;padding:60px 52px;text-align:center;position:relative;overflow:hidden}
+.ft-inner{max-width:1100px;margin:0 auto;background:linear-gradient(135deg,rgba(168,85,247,.14),rgba(99,102,241,.08));border:1px solid rgba(168,85,247,.32);border-radius:36px;padding:60px 64px;text-align:center;position:relative;overflow:hidden}
 .ft-inner::before{content:'';position:absolute;top:-60px;left:50%;transform:translateX(-50%);width:400px;height:400px;border-radius:50%;background:radial-gradient(ellipse,rgba(168,85,247,.22),transparent 70%);pointer-events:none}
 .ft-row{display:flex;gap:14px;justify-content:center;flex-wrap:wrap;margin:28px 0 20px}
 .ft-inp{flex:1;min-width:160px;max-width:220px;background:rgba(255,255,255,.07);border:1px solid rgba(255,255,255,.16);border-radius:14px;padding:13px 16px;color:#fff;font-size:15px;font-family:'Inter',sans-serif;outline:none;transition:border-color .15s}
