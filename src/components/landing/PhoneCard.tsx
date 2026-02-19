@@ -60,7 +60,7 @@ export default function PhoneCard() {
     if (!f) return;
     if (autoTimerRef.current) clearInterval(autoTimerRef.current);
     f.style.transition = 'transform .4s cubic-bezier(.4,0,1,1),opacity .4s';
-    f.style.transform = `translateX(${dir > 0 ? '115%' : '-115%'}) rotate(${dir > 0 ? '22deg' : '-22deg'})`;
+    f.style.transform = `translateX(${dir > 0 ? '115%' : '-115%'})`;
     f.style.opacity = '0';
     setTimeout(() => {
       f.style.transition = '';
@@ -103,8 +103,7 @@ export default function PhoneCard() {
       if (!draggingRef.current) return;
       const cx = 'touches' in e ? e.touches[0].clientX : e.clientX;
       currentXRef.current = cx - startXRef.current;
-      const rot = currentXRef.current * 0.08;
-      f!.style.transform = `translateX(${currentXRef.current}px) rotate(${rot}deg)`;
+      f!.style.transform = `translateX(${currentXRef.current}px)`;
       const ratio = Math.min(Math.abs(currentXRef.current) / THRESHOLD, 1);
       if (currentXRef.current > 10) {
         if (likeRef.current) likeRef.current.style.opacity = String(ratio);
@@ -156,29 +155,55 @@ export default function PhoneCard() {
 
   return (
     <div className="po" style={{ position: 'relative', width: 390, height: 750 }}>
-      {/* Floating context cards */}
+      {/* LEFT: Multi-system compatibility breakdown */}
       <div className="fc2 fcl">
-        <div className="fi">♈ + ♒</div>
-        <div className="ft2">Synastry Score</div>
-        <div className="fsc">94%</div>
-        <div className="fsb">Fire ↔ Air — harmonious</div>
-        <div className="fb"><div className="ff" style={{ width: '94%' }}></div></div>
-      </div>
-      <div className="fc2 fct">
-        <div className="nc2">
-          <div className="nci">🔔</div>
-          <div className="nct">
-            <div className="nt1">New Match Alert!</div>
-            <div className="nt2">89% match just joined</div>
-          </div>
+        <div className="fc-label">Soul Compatibility</div>
+        <div className="fc-score">94%</div>
+        <div className="fc-rows">
+          <div className="fc-row"><span className="fc-sys">Star Alignment</span><div className="fc-bar"><div className="fc-fill" style={{width:'94%'}} /></div><span className="fc-pct">94</span></div>
+          <div className="fc-row"><span className="fc-sys">Energy Type</span><div className="fc-bar"><div className="fc-fill" style={{width:'88%',background:'linear-gradient(90deg,#818cf8,#6366f1)'}} /></div><span className="fc-pct">88</span></div>
+          <div className="fc-row"><span className="fc-sys">Sacred Calendar</span><div className="fc-bar"><div className="fc-fill" style={{width:'82%',background:'linear-gradient(90deg,#34d399,#059669)'}} /></div><span className="fc-pct">82</span></div>
+          <div className="fc-row"><span className="fc-sys">Soul Purpose</span><div className="fc-bar"><div className="fc-fill" style={{width:'91%',background:'linear-gradient(90deg,#fbbf24,#f59e0b)'}} /></div><span className="fc-pct">91</span></div>
         </div>
       </div>
+      {/* TOP-RIGHT: Match found notification */}
+      <div className="fc2 fct">
+        <div className="fc-notif-header">
+          <div className="fc-notif-icon">
+            <svg width="12" height="12" viewBox="0 0 24 24" fill="currentColor"><path d="M18 8A6 6 0 0 0 6 8c0 7-3 9-3 9h18s-3-2-3-9"/><path d="M13.73 21a2 2 0 0 1-3.46 0"/></svg>
+          </div>
+          <span className="fc-notif-app">Soulmates Quest</span>
+          <div className="fc-notif-dot" />
+          <span className="fc-notif-time">now</span>
+        </div>
+        <div className="fc-notif-body">
+          <div className="fc-notif-avatar">L</div>
+          <div className="fc-notif-content">
+            <div className="fc-notif-title">New Soulmate Match ✨</div>
+            <div className="fc-notif-sub">Luna, 28 · Berlin</div>
+            <div className="fc-notif-score">
+              <span className="fc-notif-pct">89%</span>
+            </div>
+          </div>
+        </div>
+        <div className="fc-systems-used">Calculated across 16 systems</div>
+      </div>
+      {/* RIGHT: Divine Oracle Active */}
       <div className="fc2 fcr">
-        <div className="fi">🧬</div>
-        <div className="ft2">Human Design</div>
-        <div className="fsb">Projector × Generator</div>
-        <div className="fsb" style={{ color: '#C084FC', fontWeight: 700, marginTop: 3 }}>High compatibility</div>
-        <div className="fb" style={{ marginTop: 8 }}><div className="ff" style={{ width: '88%' }}></div></div>
+        <div className="fc-oracle-header">
+          <div className="fc-oracle-ball">
+            <span className="fc-oracle-glyph">🔮</span>
+            <div className="fc-oracle-ring" />
+            <div className="fc-oracle-ring fc-oracle-ring2" />
+          </div>
+          <div>
+            <div className="fc-oracle-title">Divine Oracle</div>
+            <div className="fc-oracle-status"><span className="fc-oracle-pulse" />Active &amp; Watching</div>
+          </div>
+        </div>
+        <div className="fc-oracle-line" />
+        <div className="fc-oracle-reading">Reading your cosmic fingerprint across dimensions of time, soul &amp; energy…</div>
+        <div className="fc-oracle-dots"><span /><span /><span /></div>
       </div>
 
       {/* Phone shell */}

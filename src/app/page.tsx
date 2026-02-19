@@ -31,17 +31,20 @@ export default function Home() {
           {/* LEFT: text */}
           <div className="hero-text">
             <div className="badge"><span className="bd" />&nbsp;Oracle-First Dating</div>
-            <h1><span className="gr">Find Your<br />Cosmic Match</span></h1>
+            <h1><span className="gr">Find Your<br />Perfect Match</span></h1>
             <p className="hs">
-              16 spiritual systems. Real calculations. One intentional match at a time —
-              guided by astrology, Human Design, Mayan calendar &amp; more.
+              Somewhere along the way, love got reduced to a photo and an opening line —
+              a face that passes a three-second test or disappears forever.
+              <br /><br />
+              The soul that belongs with yours won't be found in a photo. It lives in the way they think,
+              the way they've been shaped by everything life handed them. We built a place that asks those questions.
             </p>
             <div className="hb">
               <a href={APP_URL} className="store-badge-link">
-                <img src="/images/badge-appstore.png" alt="Download on the App Store" className="store-badge" />
+                <img src="/images/badge-appstore.svg" alt="Download on the App Store" className="store-badge" />
               </a>
               <a href={PLAY_URL} className="store-badge-link">
-                <img src="/images/badge-googleplay.jpg" alt="Get it on Google Play" className="store-badge" />
+                <img src="/images/badge-googleplay.svg" alt="Get it on Google Play" className="store-badge" />
               </a>
             </div>
             <div className="sr">
@@ -498,10 +501,10 @@ export default function Home() {
           <p>Join and we&apos;ll alert you the moment someone above 75% compatibility appears. Free daily oracle while you wait.</p>
           <div className="sbs">
             <a href={APP_URL} className="store-badge-link">
-              <img src="/images/badge-appstore.png" alt="Download on the App Store" className="store-badge store-badge-lg" />
+              <img src="/images/badge-appstore.svg" alt="Download on the App Store" className="store-badge store-badge-lg" />
             </a>
             <a href={PLAY_URL} className="store-badge-link">
-              <img src="/images/badge-googleplay.jpg" alt="Get it on Google Play" className="store-badge store-badge-lg" />
+              <img src="/images/badge-googleplay.svg" alt="Get it on Google Play" className="store-badge store-badge-lg" />
             </a>
           </div>
         </div>
