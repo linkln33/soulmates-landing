@@ -421,7 +421,7 @@ footer.lfooter a{color:rgba(192,132,252,.7);text-decoration:none}
 /* ── 768px: tablet portrait ── */
 @media(max-width:768px){
   /* Phone: scale down and collapse the extra space with negative margin */
-  .po{transform:scale(.7);transform-origin:top center;margin-bottom:calc(750px * -0.3)}
+  .po{transform:scale(.85);transform-origin:top center;margin-bottom:calc(750px * -0.15)}
   .hero-phone{overflow:visible}
   .extra-g{grid-template-columns:1fr}
   .ecard{flex-direction:column;gap:14px}
@@ -442,7 +442,7 @@ footer.lfooter a{color:rgba(192,132,252,.7);text-decoration:none}
 @media(max-width:640px){
   .wrap{padding:0 18px}
   .hero{padding:90px 18px 0;gap:20px}
-  .po{transform:scale(.58);transform-origin:top center;margin-bottom:calc(750px * -0.42)}
+  .po{transform:scale(.78);transform-origin:top center;margin-bottom:calc(750px * -0.22)}
   .sr{flex-wrap:nowrap;gap:0;justify-content:space-between;width:100%}
   .sr>div{flex:1;text-align:center}
   .sn{font-size:22px}
@@ -473,7 +473,7 @@ footer.lfooter a{color:rgba(192,132,252,.7);text-decoration:none}
 @media(max-width:480px){
   .wrap{padding:0 16px}
   .hero{padding:80px 16px 0;gap:16px}
-  .po{transform:scale(.48);transform-origin:top center;margin-bottom:calc(750px * -0.52)}
+  .po{transform:scale(.64);transform-origin:top center;margin-bottom:calc(750px * -0.36)}
   nav.lnav{padding:10px 16px}
   .nl{font-size:14px;gap:7px}
   .ni{width:30px;height:30px}
