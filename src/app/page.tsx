@@ -129,56 +129,56 @@ export default function Home() {
             <p className="ss" style={{ margin: '0 auto' }}>Every major spiritual tradition, combined into a single compatibility score.</p>
           </div>
           <div className="sys-panels">
-            <div className="sys-panel sys-panel-spirit">
+            <div className="sys-panel sys-panel-free">
               <div className="sys-panel-hdr">
-                <span className="sys-panel-icon">✦ FROM THE STARS</span>
+                <span className="sys-panel-icon">◆ FREE FOREVER</span>
                 <div>
-                  <div className="sys-panel-title">Spiritual Systems</div>
-                  <div className="sys-panel-sub">Computed from birth data — no quiz needed</div>
+                  <div className="sys-panel-title">Free Systems</div>
+                  <div className="sys-panel-sub">Available on sign-up — no paywall</div>
                 </div>
                 <span className="sys-panel-count">10</span>
               </div>
               <div className="sys-list">
                 {[
-                  ['♈','Western Astrology','Natal chart + Synastry','Free'],
-                  ['🌙','Vedic / Jyotish','Moon nakshatra · Guna Milan','Premium'],
-                  ['🔢','Numerology','Life Path · Expression','Free'],
-                  ['🃏','Tarot','Birth card pairing','Free'],
-                  ['⚙️','Human Design','Type · Profile · Gates','Premium'],
-                  ['🌿','Gene Keys','4 personal spheres','Premium'],
-                  ['🏛️','Mayan Calendar','Kin glyph · Wavespell','Premium'],
-                  ['🌸','Chakra Analysis','7-center energy pattern','Premium'],
-                  ['🔥','Elemental','Fire · Earth · Air · Water','Free'],
-                  ['🕊️','Past Life / Karmic','Karmic nodes · soul lesson','Premium'],
-                ].map(([em,name,desc,tier]) => (
+                  ['♈','Western Astrology','Natal chart + Synastry','sp'],
+                  ['🔢','Numerology','Life Path · Expression','sp'],
+                  ['🃏','Tarot','Birth card pairing','sp'],
+                  ['🔥','Elemental','Fire · Earth · Air · Water','sp'],
+                  ['💬','Love Language','5-scale · give vs receive','bh'],
+                  ['🪢','Attachment Style','Secure · Anxious · Avoidant','bh'],
+                  ['🧠','Big Five','OCEAN personality domains','bh'],
+                  ['🌍','Values Alignment','Goals · dealbreakers','bh'],
+                  ['🌅','Lifestyle','Rhythm · social · activities','bh'],
+                  ['🧘','Consciousness','Hawkins scale · soul age','bh'],
+                ].map(([em,name,desc,cat]) => (
                   <div key={name} className="sys-row">
                     <span className="sys-em">{em}</span>
                     <div className="sys-info">
                       <span className="sys-name">{name}</span>
                       <span className="sys-desc">{desc}</span>
                     </div>
-                    <span className={tier==='Free'?'fb2':'pb'}>{tier}</span>
+                    <span className={`sys-cat sys-cat-${cat}`}>{cat==='sp'?'Spiritual':'Behavioral'}</span>
                   </div>
                 ))}
               </div>
             </div>
-            <div className="sys-panel sys-panel-behav">
+            <div className="sys-panel sys-panel-prem">
               <div className="sys-panel-hdr">
-                <span className="sys-panel-icon" style={{color:'#a5b4fc'}}>✦ FROM YOUR HEART</span>
+                <span className="sys-panel-icon">◆ PREMIUM</span>
                 <div>
-                  <div className="sys-panel-title">Behavioral Systems</div>
-                  <div className="sys-panel-sub">Unlocked via questionnaires on sign-up</div>
+                  <div className="sys-panel-title">Premium Systems</div>
+                  <div className="sys-panel-sub">Deep spiritual reads — unlocked with subscription</div>
                 </div>
                 <span className="sys-panel-count">6</span>
               </div>
               <div className="sys-list">
                 {[
-                  ['💬','Love Language','5-scale · give vs receive'],
-                  ['🪢','Attachment Style','Secure · Anxious · Avoidant'],
-                  ['🧠','Big Five','OCEAN personality domains'],
-                  ['🌍','Values Alignment','Goals · dealbreakers'],
-                  ['🌅','Lifestyle','Rhythm · social · activities'],
-                  ['🧘','Consciousness','Hawkins scale · soul age'],
+                  ['🌙','Vedic / Jyotish','Moon nakshatra · Guna Milan'],
+                  ['⚙️','Human Design','Type · Profile · Gates'],
+                  ['🌿','Gene Keys','4 personal spheres'],
+                  ['🏛️','Mayan Calendar','Kin glyph · Wavespell'],
+                  ['🌸','Chakra Analysis','7-center energy pattern'],
+                  ['🕊️','Past Life / Karmic','Karmic nodes · soul lesson'],
                 ].map(([em,name,desc]) => (
                   <div key={name} className="sys-row">
                     <span className="sys-em">{em}</span>
@@ -186,15 +186,8 @@ export default function Home() {
                       <span className="sys-name">{name}</span>
                       <span className="sys-desc">{desc}</span>
                     </div>
-                    <span className="fb2">Free</span>
                   </div>
                 ))}
-              </div>
-              <div style={{padding:'14px 20px',borderTop:'1px solid rgba(255,255,255,.06)',background:'rgba(99,102,241,.06)'}}>
-                <p style={{fontSize:12,color:'var(--tm)',lineHeight:1.55,margin:0}}>
-                  🎯 Each questionnaire takes ≈3 minutes. Complete all 6 to reach{' '}
-                  <strong style={{color:'#a5b4fc'}}>~93% profile confidence</strong> and unlock the most precise match scoring.
-                </p>
               </div>
             </div>
           </div>
