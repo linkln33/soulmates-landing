@@ -233,6 +233,8 @@ nav.lnav{position:fixed;top:0;left:0;right:0;z-index:100;padding:16px 32px;displ
 .sys-row:last-child{border-bottom:none}
 .sys-row:hover{background:rgba(255,255,255,.04)}
 .sys-em{flex-shrink:0;width:38px;height:38px;display:flex;align-items:center;justify-content:center;color:rgba(255,255,255,.7)}
+.sys-img{width:36px;height:36px;object-fit:contain;border-radius:50%}
+.sys-glyph{width:28px;height:28px;object-fit:contain;filter:brightness(0) invert(1);opacity:.85}
 .sys-glyph{width:22px;height:22px;flex-shrink:0;filter:brightness(0) invert(1);opacity:.75}
 .oc2-glyph{filter:brightness(0) invert(1);opacity:.9}
 .sys-info{flex:1;min-width:0}
