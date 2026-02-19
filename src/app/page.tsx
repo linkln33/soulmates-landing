@@ -244,19 +244,17 @@ export default function Home() {
           </div>
           <div className="tier-g">
             {[
-              ['t-pm','⭐','Perfect Match',     '93%+',   'The rarest outcome — under 1% of all cross-matches reach this across all 16 systems. Triggers a VIP push alert + email the moment the match appears.'],
-              ['t-em','💫','Exceptional Match', '85–92%', 'Outstanding alignment across spiritual and behavioral systems. Surfaces with an urgent notification and priority position in discover.'],
-              ['t-cm','🌌','Celestial Match',   '80–84%', 'Exceptional multi-system resonance across spiritual and behavioral layers. Priority notification sent immediately.'],
-              ['t-dm','🌸','Divine Match',      '75–79%', 'Strong alignment across the core spiritual systems. Priority notification. The majority of lasting connections originate at this level.'],
-              ['t-om','🌿','Outstanding Match', '65–74%', 'Meaningful alignment across several systems. Standard match notification. A genuine connection worth exploring with real long-term potential.'],
-              ['t-gm','✨','Glowing Match',     '55–64%', 'Shown in discover only — no notification. Complete more questionnaires to refine your profile and elevate a Glowing Match higher.'],
-            ].map(([cls,ico,name,pct,desc]) => (
+              ['t-pm','Perfect Match',     '93%+',   'The rarest outcome — under 1% of all cross-matches reach this across all 16 systems. Triggers a VIP push alert + email the moment the match appears.'],
+              ['t-em','Exceptional Match', '85–92%', 'Outstanding alignment across spiritual and behavioral systems. Surfaces with an urgent notification and priority position in discover.'],
+              ['t-cm','Celestial Match',   '80–84%', 'Exceptional multi-system resonance across spiritual and behavioral layers. Priority notification sent immediately.'],
+              ['t-dm','Divine Match',      '75–79%', 'Strong alignment across the core spiritual systems. Priority notification. The majority of lasting connections originate at this level.'],
+              ['t-om','Outstanding Match', '65–74%', 'Meaningful alignment across several systems. Standard match notification. A genuine connection worth exploring with real long-term potential.'],
+              ['t-gm','Glowing Match',     '55–64%', 'Shown in discover only — no notification. Complete more questionnaires to refine your profile and elevate a Glowing Match higher.'],
+            ].map(([cls,name,pct,desc]) => (
               <div key={name} className={`tier ${cls}`}>
-                <span className="tier-icon">{ico}</span>
                 <span className="tier-name">{name}</span>
                 <span className="tier-pct">{pct}</span>
-                <div className="tier-bar" />
-                <span className="tier-desc">{desc}</span>
+                <p className="tier-desc">{desc}</p>
               </div>
             ))}
           </div>
