@@ -1,6 +1,7 @@
 const EM: Record<string, string> = {
   // Diff cards
   sun:       '🌟',
+  diamond:   '💎',
   user:      '💋',
   bell:      '🌪️',
   pinata:    '🪅',

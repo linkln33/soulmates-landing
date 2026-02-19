@@ -75,7 +75,7 @@ export default function Home() {
           </div>
           <div className="diff-grid">
             <div className="diff-card">
-              <div className="diff-icon"><Ico k="sun" s={46} /></div>
+              <div className="diff-icon"><Ico k="diamond" s={46} /></div>
               <h3>Wake up to 7 readings made for you</h3>
               <p>Every morning, 7 things are waiting: your horoscope, a tarot card, your numerology day number, and more. All calculated from your actual birth date — not a generic post that fits everyone born in the same month.</p>
             </div>
