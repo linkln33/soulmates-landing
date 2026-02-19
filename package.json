@@ -9,6 +9,8 @@
     "lint": "eslint"
   },
   "dependencies": {
+    "@iconify-json/fluent-emoji-flat": "^1.2.5",
+    "@iconify/react": "^6.0.2",
     "@phosphor-icons/react": "^2.1.10",
     "framer-motion": "^12.34.2",
     "lucide-react": "^0.574.0",
