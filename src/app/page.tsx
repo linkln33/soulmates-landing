@@ -3,20 +3,26 @@ import Stars from '@/components/landing/Stars';
 import PhoneCard from '@/components/landing/PhoneCard';
 import FreeTaste from '@/components/landing/FreeTaste';
 import {
-  Sun, Moon, Star, Hash, Layers, Flame, MessageCircle, Link2,
-  Brain, Globe, Clock, Eye, Cpu, Leaf, CircleDot, Bird,
-  MapPin, Bell, Zap, RotateCcw, UserRound, Heart, Lock,
-  type LucideIcon,
-} from 'lucide-react';
-const ICO: Record<string, LucideIcon> = {
-  sun: Sun, moon: Moon, star: Star, hash: Hash, layers: Layers,
-  flame: Flame, msg: MessageCircle, link: Link2, brain: Brain,
-  globe: Globe, clock: Clock, eye: Eye, cpu: Cpu, leaf: Leaf,
-  dot: CircleDot, bird: Bird, pin: MapPin, bell: Bell, zap: Zap,
-  refresh: RotateCcw, user: UserRound, heart: Heart, lock: Lock,
+  SunHorizon, UserFocus, BellRinging, Scales,
+  Planet, Hash, Cards, Fire, ChatTeardropHeart, LinkSimple,
+  Brain, Compass, YinYang,
+  MoonStars, TreeStructure, Spiral, FlowerLotus, Butterfly,
+  HeartStraight, LockKey,
+  MapPin, Radar, Lightning, ArrowsCounterClockwise, Sparkle,
+} from '@phosphor-icons/react';
+/* eslint-disable @typescript-eslint/no-explicit-any */
+const PHO: Record<string, any> = {
+  sun: SunHorizon,   user: UserFocus,   bell: BellRinging,  scales: Scales,
+  planet: Planet,    hash: Hash,        cards: Cards,       fire: Fire,
+  heart2: ChatTeardropHeart, link: LinkSimple, brain: Brain, compass: Compass,
+  yin: YinYang,      moon: MoonStars,   tree: TreeStructure, spiral: Spiral,
+  lotus: FlowerLotus, butterfly: Butterfly,
+  heart: HeartStraight, lock: LockKey,
+  pin: MapPin, radar: Radar, lightning: Lightning,
+  refresh: ArrowsCounterClockwise, sparkle: Sparkle,
 };
-function Ico({ k, s = 17 }: { k: string; s?: number }) {
-  const C = ICO[k]; return C ? <C size={s} strokeWidth={1.75} /> : null;
+function Ico({ k, s = 18 }: { k: string; s?: number }) {
+  const C = PHO[k]; return C ? <C size={s} weight="duotone" /> : null;
 }
 
 const APP_URL  = 'https://apps.apple.com/app/id000000000';
@@ -90,22 +96,22 @@ export default function Home() {
           </div>
           <div className="diff-grid">
             <div className="diff-card">
-              <div className="diff-icon"><Ico k="sun" s={24} /></div>
+              <div className="diff-icon"><Ico k="sun" s={30} /></div>
               <h3>Wake up to 7 readings made for you</h3>
               <p>Every morning, 7 things are waiting: your horoscope, a tarot card, your numerology day number, and more. All calculated from your actual birth date — not a generic post that fits everyone born in the same month.</p>
             </div>
             <div className="diff-card">
-              <div className="diff-icon"><Ico k="user" s={24} /></div>
+              <div className="diff-icon"><Ico k="user" s={30} /></div>
               <h3>One person. Your full attention. No noise.</h3>
               <p>We don&apos;t give you a stack of photos to sort through. When your best match appears, you get 7 days together — just the two of you. Incoming likes wait quietly. Real conversation, not a slot machine.</p>
             </div>
             <div className="diff-card">
-              <div className="diff-icon"><Ico k="bell" s={24} /></div>
+              <div className="diff-icon"><Ico k="bell" s={30} /></div>
               <h3>Your person will find you — even a year from now</h3>
               <p>Set your threshold once and forget it. The moment anyone above that level joins the app — even months from now — you get a push notification. Your profile is always watching, even when you&apos;re not.</p>
             </div>
             <div className="diff-card">
-              <div className="diff-icon"><Ico k="star" s={24} /></div>
+              <div className="diff-icon"><Ico k="scales" s={30} /></div>
               <h3>A compatibility score that actually means something</h3>
               <p>Sun signs are just the start. We run your birth date through 16 systems — astrology, Human Design, Mayan Calendar, Gene Keys, numerology — and give you one honest number. Real math, not vibes.</p>
             </div>
@@ -156,19 +162,19 @@ export default function Home() {
               </div>
               <div className="sys-list">
                 {[
-                  ['star','Western Astrology','Natal chart + Synastry','sp'],
+                  ['planet','Western Astrology','Natal chart + Synastry','sp'],
                   ['hash','Numerology','Life Path · Expression','sp'],
-                  ['layers','Tarot','Birth card pairing','sp'],
-                  ['flame','Elemental','Fire · Earth · Air · Water','sp'],
-                  ['msg','Love Language','5-scale · give vs receive','bh'],
+                  ['cards','Tarot','Birth card pairing','sp'],
+                  ['fire','Elemental','Fire · Earth · Air · Water','sp'],
+                  ['heart2','Love Language','5-scale · give vs receive','bh'],
                   ['link','Attachment Style','Secure · Anxious · Avoidant','bh'],
                   ['brain','Big Five','OCEAN personality domains','bh'],
-                  ['globe','Values Alignment','Goals · dealbreakers','bh'],
-                  ['clock','Lifestyle','Rhythm · social · activities','bh'],
-                  ['eye','Consciousness','Hawkins scale · soul age','bh'],
+                  ['compass','Values Alignment','Goals · dealbreakers','bh'],
+                  ['sun','Lifestyle','Rhythm · social · activities','bh'],
+                  ['yin','Consciousness','Hawkins scale · soul age','bh'],
                 ].map(([ico,name,desc,cat]) => (
                   <div key={name} className="sys-row">
-                    <span className="sys-em"><Ico k={ico} /></span>
+                    <span className="sys-em"><Ico k={ico} s={17} /></span>
                     <div className="sys-info">
                       <span className="sys-name">{name}</span>
                       <span className="sys-desc">{desc}</span>
@@ -190,16 +196,16 @@ export default function Home() {
               <div className="sys-list">
                 {[
                   ['moon','Vedic / Jyotish','Moon nakshatra · Guna Milan'],
-                  ['cpu','Human Design','Type · Profile · Gates'],
-                  ['leaf','Gene Keys','4 personal spheres'],
+                  ['tree','Human Design','Type · Profile · Gates'],
+                  ['spiral','Gene Keys','4 personal spheres'],
                   ['/images/glyphs/glyph_01.svg','Mayan Calendar','Kin glyph · Wavespell'],
-                  ['dot','Chakra Analysis','7-center energy pattern'],
-                  ['bird','Past Life / Karmic','Karmic nodes · soul lesson'],
+                  ['lotus','Chakra Analysis','7-center energy pattern'],
+                  ['butterfly','Past Life / Karmic','Karmic nodes · soul lesson'],
                 ].map(([ico,name,desc]) => (
                   <div key={name} className="sys-row">
                     {ico.startsWith('/')
                       ? <img src={ico} className="sys-glyph" alt="" />
-                      : <span className="sys-em"><Ico k={ico} /></span>}
+                      : <span className="sys-em"><Ico k={ico} s={17} /></span>}
                     <div className="sys-info">
                       <span className="sys-name">{name}</span>
                       <span className="sys-desc">{desc}</span>
@@ -222,13 +228,13 @@ export default function Home() {
           </div>
           <div className="og2">
             {[
-              ['oc1','sun','Daily Horoscope','Free',   'Which planets are touching your chart today — and what that actually means for love, energy, and decisions.'],
-              ['oc2','layers','Tarot Pull',   'Free',   'One card drawn for your day. A short, honest reading — not fortune-telling, more like a mirror.'],
-              ['oc3','hash','Numerology',     'Free',   'Your personal day number from your birth date. Some days are for starting things. Others are for letting go.'],
+              ['oc1','planet','Daily Horoscope','Free',   'Which planets are touching your chart today — and what that actually means for love, energy, and decisions.'],
+              ['oc2','cards','Tarot Pull',     'Free',   'One card drawn for your day. A short, honest reading — not fortune-telling, more like a mirror.'],
+              ['oc3','hash','Numerology',      'Free',   'Your personal day number from your birth date. Some days are for starting things. Others are for letting go.'],
               ['oc4','/images/glyphs/glyph_05.svg','Mayan Oracle','Premium','Your Tzolkin kin energy for today — the Mayan equivalent of your daily horoscope, but far older.'],
-              ['oc5','dot','Chakra Focus',   'Premium','Which of your 7 energy centers needs attention. Practical, not mystical — things you can actually feel.'],
-              ['oc6','leaf','Gene Keys',      'Premium','One of your 4 personal Gene Keys rotates each week. A contemplation that goes deep if you let it.'],
-              ['oc7','moon','Vedic Moon',     'Premium','Where the Moon sits in your Vedic chart today. The nakshatra it&apos;s in colors your emotional weather.'],
+              ['oc5','lotus','Chakra Focus',   'Premium','Which of your 7 energy centers needs attention. Practical, not mystical — things you can actually feel.'],
+              ['oc6','spiral','Gene Keys',     'Premium','One of your 4 personal Gene Keys rotates each week. A contemplation that goes deep if you let it.'],
+              ['oc7','moon','Vedic Moon',      'Premium','Where the Moon sits in your Vedic chart today. The nakshatra it&apos;s in colors your emotional weather.'],
             ].map(([cls,ic,title,tier,desc]) => (
               <div key={title} className={`oc2-card ${cls}`}>
                 <div className="oc2-top">
@@ -309,8 +315,8 @@ export default function Home() {
           <div className="extra-g">
             {[
               ['pin','GPS Check-in','Meeting your match in person? Both check in from the same location to verify the date happened. Builds trust, unlocks bonus time bank hours, and adds a real-world layer to digital connection.','linear-gradient(135deg,rgba(34,197,94,.2),rgba(16,185,129,.1))','1px solid rgba(34,197,94,.25)','#4ade80'],
-              ['bell','Soulmate Radar','A background engine monitors every new signup. The moment someone above your threshold appears — even months later — you get an immediate push notification. Your oracle stays active while you wait.','linear-gradient(135deg,rgba(168,85,247,.2),rgba(99,102,241,.1))','1px solid rgba(168,85,247,.25)','var(--p3)'],
-              ['zap','Response Streaks + Time Bank','Consistent back-and-forth earns streak bonuses and deposits hours into your shared time bank — extending your 7-day match window. Meaningful conversation is literally rewarded.','linear-gradient(135deg,rgba(245,158,11,.2),rgba(239,68,68,.1))','1px solid rgba(245,158,11,.25)','#fbbf24'],
+              ['radar','Soulmate Radar','A background engine monitors every new signup. The moment someone above your threshold appears — even months later — you get an immediate push notification. Your oracle stays active while you wait.','linear-gradient(135deg,rgba(168,85,247,.2),rgba(99,102,241,.1))','1px solid rgba(168,85,247,.25)','var(--p3)'],
+              ['lightning','Response Streaks + Time Bank','Consistent back-and-forth earns streak bonuses and deposits hours into your shared time bank — extending your 7-day match window. Meaningful conversation is literally rewarded.','linear-gradient(135deg,rgba(245,158,11,.2),rgba(239,68,68,.1))','1px solid rgba(245,158,11,.25)','#fbbf24'],
               ['refresh','Match Revival','A connection ended before its time? Premium members can revive a past match — re-opening the conversation window for a second chance. One revival per match.','linear-gradient(135deg,rgba(236,72,153,.2),rgba(168,85,247,.1))','1px solid rgba(236,72,153,.25)','#f472b6'],
             ].map(([ico,title,desc,bg,border,clr]) => (
               <div key={title} className="ecard">
@@ -460,7 +466,7 @@ export default function Home() {
             <div className="sl2" style={{marginBottom:16}}>Soulmate Quiz</div>
             <h2>Send your friends<br />a cosmic quiz</h2>
             <p>Create a quiz, add your personal <strong>Lexicon</strong> — custom questions only you can ask — then share the link. Anyone who takes it gets a full 16-system compatibility reading against your profile.</p>
-            <a href={APP_URL} className="bl bp" style={{display:'inline-flex',gap:8,alignItems:'center'}}><Star size={16} strokeWidth={2} />Create Your Quiz</a>
+            <a href={APP_URL} className="bl bp" style={{display:'inline-flex',gap:8,alignItems:'center'}}><Ico k="sparkle" s={16} />Create Your Quiz</a>
           </div>
         </div>
       </section>
