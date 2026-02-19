@@ -75,22 +75,22 @@ export default function Home() {
           </div>
           <div className="diff-grid">
             <div className="diff-card">
-              <div className="diff-icon"><Ico k="sun" s={30} /></div>
+              <div className="diff-icon"><Ico k="sun" s={46} /></div>
               <h3>Wake up to 7 readings made for you</h3>
               <p>Every morning, 7 things are waiting: your horoscope, a tarot card, your numerology day number, and more. All calculated from your actual birth date — not a generic post that fits everyone born in the same month.</p>
             </div>
             <div className="diff-card">
-              <div className="diff-icon"><Ico k="user" s={30} /></div>
+              <div className="diff-icon"><Ico k="user" s={46} /></div>
               <h3>One person. Your full attention. No noise.</h3>
               <p>We don&apos;t give you a stack of photos to sort through. When your best match appears, you get 7 days together — just the two of you. Incoming likes wait quietly. Real conversation, not a slot machine.</p>
             </div>
             <div className="diff-card">
-              <div className="diff-icon"><Ico k="bell" s={30} /></div>
+              <div className="diff-icon"><Ico k="bell" s={46} /></div>
               <h3>Your person will find you — even a year from now</h3>
               <p>Set your threshold once and forget it. The moment anyone above that level joins the app — even months from now — you get a push notification. Your profile is always watching, even when you&apos;re not.</p>
             </div>
             <div className="diff-card">
-              <div className="diff-icon"><Ico k="scales" s={30} /></div>
+              <div className="diff-icon"><Ico k="scales" s={46} /></div>
               <h3>A compatibility score that actually means something</h3>
               <p>Sun signs are just the start. We run your birth date through 16 systems — astrology, Human Design, Mayan Calendar, Gene Keys, numerology — and give you one honest number. Real math, not vibes.</p>
             </div>
@@ -153,7 +153,7 @@ export default function Home() {
                   ['yin','Consciousness','Hawkins scale · soul age','bh'],
                 ].map(([ico,name,desc,cat]) => (
                   <div key={name} className="sys-row">
-                    <span className="sys-em"><Ico k={ico} s={17} /></span>
+                    <span className="sys-em"><Ico k={ico} s={28} /></span>
                     <div className="sys-info">
                       <span className="sys-name">{name}</span>
                       <span className="sys-desc">{desc}</span>
@@ -184,7 +184,7 @@ export default function Home() {
                   <div key={name} className="sys-row">
                     {ico.startsWith('/')
                       ? <img src={ico} className="sys-glyph" alt="" />
-                      : <span className="sys-em"><Ico k={ico} s={17} /></span>}
+                      : <span className="sys-em"><Ico k={ico} s={28} /></span>}
                     <div className="sys-info">
                       <span className="sys-name">{name}</span>
                       <span className="sys-desc">{desc}</span>
@@ -219,7 +219,7 @@ export default function Home() {
                 <div className="oc2-top">
                   {ic.startsWith('/')
                     ? <img src={ic} className="oc2-ic oc2-glyph" alt="" />
-                    : <span className="oc2-ic"><Ico k={ic} s={20} /></span>}
+                    : <span className="oc2-ic"><Ico k={ic} s={30} /></span>}
                   <div className="oc2-meta">
                     <span className="oc2-title">{title}</span>
                     <span className={`oc2-tier ${tier==='Free'?'oc2-free':'oc2-prem'}`}>{tier==='Free'?'● Free':'✦ Premium'}</span>
@@ -269,13 +269,13 @@ export default function Home() {
           </div>
           <div className="flow-g" style={{gridTemplateColumns:'repeat(2,1fr)',maxWidth:560}}>
             <div className="flow">
-              <div className="flow-ic"><Ico k="heart" s={36} /></div>
+              <div className="flow-ic"><Ico k="heart" s={56} /></div>
               <div className="flow-name">Available</div>
               <div className="flow-dur">Discover</div>
               <div className="flow-desc">Swipe, browse, and connect. The network shows you one match at a time.</div>
             </div>
             <div className="flow" style={{borderRadius:'0 24px 24px 0',borderLeft:'none'}}>
-              <div className="flow-ic"><Ico k="lock" s={36} /></div>
+              <div className="flow-ic"><Ico k="lock" s={56} /></div>
               <div className="flow-name">Taken</div>
               <div className="flow-dur">7 days</div>
               <div className="flow-desc">One match. Full focus. Incoming likes held in a hidden queue while you&apos;re committed.</div>
@@ -299,7 +299,7 @@ export default function Home() {
               ['refresh','Match Revival','A connection ended before its time? Premium members can revive a past match — re-opening the conversation window for a second chance. One revival per match.','linear-gradient(135deg,rgba(236,72,153,.2),rgba(168,85,247,.1))','1px solid rgba(236,72,153,.25)','#f472b6'],
             ].map(([ico,title,desc,bg,border,clr]) => (
               <div key={title} className="ecard">
-                <div className="eico" style={{background:bg as string,border:border as string,color:clr as string}}><Ico k={ico} s={22} /></div>
+                <div className="eico" style={{background:bg as string,border:border as string,color:clr as string}}><Ico k={ico} s={34} /></div>
                 <div>
                   <h3>{title}</h3>
                   <p>{desc}</p>
@@ -445,7 +445,7 @@ export default function Home() {
             <div className="sl2" style={{marginBottom:16}}>Soulmate Quiz</div>
             <h2>Send your friends<br />a cosmic quiz</h2>
             <p>Create a quiz, add your personal <strong>Lexicon</strong> — custom questions only you can ask — then share the link. Anyone who takes it gets a full 16-system compatibility reading against your profile.</p>
-            <a href={APP_URL} className="bl bp" style={{display:'inline-flex',gap:8,alignItems:'center'}}><Ico k="sparkle" s={16} />Create Your Quiz</a>
+            <a href={APP_URL} className="bl bp" style={{display:'inline-flex',gap:8,alignItems:'center'}}><Ico k="sparkle" s={20} />Create Your Quiz</a>
           </div>
         </div>
       </section>
