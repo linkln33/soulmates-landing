@@ -1,7 +1,7 @@
 'use client';
 
 import { useEffect, useRef, useState, useCallback } from 'react';
-import { Flame, Gem, ScanEye, HeartHandshake, MoonStar, type LucideIcon } from 'lucide-react';
+import { Flame, Gem, ScanEye, HeartHandshake, MoonStar, Star, type LucideIcon } from 'lucide-react';
 
 interface Profile {
   img: string;
@@ -42,6 +42,12 @@ const PROFILES: Profile[] = [
     conn:  { icon: MoonStar,      cat: '', name: 'Sacred Devotion',    color: '#fbbf24' },
     score: { emoji: '',  tier: 'Glowing Match',       val: 62, color: '#F59E0B' },
     oracle: { system: 'Devotion Reading', icon: '🌙', reading: 'Zara carries a Sacred Devotion signature — rare, quiet, and built for depth over time. This connection asks for patience as its entry point. Your Vedic nakshatra and her Moon placement suggest a bond that becomes more meaningful the longer it is allowed to breathe.', color: '#fbbf24' },
+  },
+  {
+    img: '/images/p6.jpg', name: 'Ivailo, 37', loc: 'Sofia, Bulgaria',
+    conn:  { icon: Star,          cat: '', name: 'Fated Encounter',    color: '#38bdf8' },
+    score: { emoji: '', tier: 'Celestial Match',     val: 79, color: '#6366F1' },
+    oracle: { system: 'Fated Encounter Reading', icon: '✦', reading: 'Ivailo carries a rare Fated Encounter signature — a soul you have crossed paths with before, in a different time. This is not accidental. Your Human Design and his Mayan kin create a convergence point that opens only when both people are truly ready.', color: '#38bdf8' },
   },
 ];
 
