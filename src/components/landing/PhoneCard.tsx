@@ -68,11 +68,11 @@ export default function PhoneCard() {
     if (oracleTimerRef.current) clearTimeout(oracleTimerRef.current);
     setOracleFading(false);
     setOracleVisible(true);
-    // show for 5.5s then fade over 0.7s
+    // show for 8s then fade over 0.7s
     oracleTimerRef.current = setTimeout(() => {
       setOracleFading(true);
       oracleTimerRef.current = setTimeout(() => setOracleVisible(false), 700);
-    }, 5500);
+    }, 8000);
   }, []);
 
   useEffect(() => () => { if (oracleTimerRef.current) clearTimeout(oracleTimerRef.current); }, []);
@@ -99,7 +99,7 @@ export default function PhoneCard() {
 
   const scheduleAuto = useCallback(() => {
     if (autoTimerRef.current) clearInterval(autoTimerRef.current);
-    autoTimerRef.current = setInterval(() => swipeAway(1), 8500);
+    autoTimerRef.current = setInterval(() => swipeAway(1), 11000);
   }, [swipeAway]);
 
   useEffect(() => {
