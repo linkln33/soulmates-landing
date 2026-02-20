@@ -65,35 +65,62 @@ export default function Home() {
       {/* FREE TASTE */}
       <FreeTaste />
 
-      {/* FEATURES */}
+      {/* WHY DATING NEEDS AN UPDATE */}
       <section className="feat-s lsection">
         <div className="wrap">
-          <div style={{ textAlign: 'center', marginBottom: 56 }}>
-            <div className="sl2">Why Soulmates Quest</div>
-            <div className="st">What your days actually look like</div>
-            <p className="ss" style={{ margin: '0 auto' }}>Built to be useful every single day — whether or not you've found your person yet.</p>
+          <div style={{ textAlign: 'center', marginBottom: 64 }}>
+            <div className="sl2">The Real Problem</div>
+            <div className="st">DATING APPS HAVE<br />A BROKEN MODEL</div>
+            <p className="ss" style={{ margin: '0 auto', maxWidth: 900 }}>Swiping apps were never designed to find you love.<br />They were designed to keep you scrolling. Here&apos;s the honest breakdown — and what we do differently.</p>
           </div>
-          <div className="diff-grid">
-            <div className="diff-card">
-              <div className="diff-icon"><Ico k="diamond" s={46} /></div>
-              <h3>Wake up to 7 readings made for you</h3>
-              <p>Every morning, 7 things are waiting: your horoscope, a tarot card, your numerology day number, and more. All calculated from your actual birth date — not a generic post that fits everyone born in the same month.</p>
-            </div>
-            <div className="diff-card">
-              <div className="diff-icon"><Ico k="user" s={46} /></div>
-              <h3>One person. Your full attention. No noise.</h3>
-              <p>We don&apos;t give you a stack of photos to sort through. When your best match appears, you get 7 days together — just the two of you. Incoming likes wait quietly. Real conversation, not a slot machine.</p>
-            </div>
-            <div className="diff-card">
-              <div className="diff-icon"><Ico k="pinata" s={46} /></div>
-              <h3>Your person will find you — even a year from now</h3>
-              <p>Set your threshold once and forget it. The moment anyone above that level joins the app — even months from now — you get a push notification. Your profile is always watching, even when you&apos;re not.</p>
-            </div>
-            <div className="diff-card">
-              <div className="diff-icon"><Ico k="scales" s={46} /></div>
-              <h3>A compatibility score that actually means something</h3>
-              <p>Sun signs are just the start. We run your birth date through 16 systems — astrology, Human Design, Mayan Calendar, Gene Keys, numerology — and give you one honest number. Real math, not vibes.</p>
-            </div>
+          <div className="why-grid">
+            {[
+              {
+                pain: 'You judge in 3 seconds — on looks alone',
+                fix: 'Your most compatible person might never pass a photo test',
+                how: 'We build compatibility from who you are inside — values, personality, life patterns. Looks are never the filter.',
+              },
+              {
+                pain: 'Your loneliness is their business model',
+                fix: 'Apps profit from keeping you single and scrolling',
+                how: 'We are built to get you out of the app. One match at a time means we win only when you do.',
+              },
+              {
+                pain: '100 matches, 0 real connections',
+                fix: 'Volume feels like progress but leads nowhere',
+                how: 'One person in front of you. Full focus for 7 days. No parallel conversations diluting your attention.',
+              },
+              {
+                pain: 'Every conversation dies at "hey"',
+                fix: 'Small talk has no structure — so it just stops',
+                how: 'Your shared compatibility profile gives you real things to explore from day one. The hard questions are already answered.',
+              },
+              {
+                pain: 'You disappear when you log off',
+                fix: 'Miss a week and your matches moved on',
+                how: 'Set your threshold once. We watch for your match forever — and notify you the moment they arrive, even months from now.',
+              },
+              {
+                pain: 'Your profile tells people nothing',
+                fix: 'Four photos and a bio cannot explain who you are',
+                how: 'A rich profile built from personality science and lived experience tells the full story — for people who actually care to read it.',
+              },
+            ].map(({ pain, fix, how }) => (
+              <div key={pain} className="why-card">
+                <div className="why-problem">
+                  <div className="why-x">✕</div>
+                  <div>
+                    <div className="why-pain">{pain}</div>
+                    <div className="why-fix">{fix}</div>
+                  </div>
+                </div>
+                <div className="why-divider" />
+                <div className="why-solution">
+                  <div className="why-check">✦</div>
+                  <div className="why-how">{how}</div>
+                </div>
+              </div>
+            ))}
           </div>
         </div>
       </section>
@@ -107,9 +134,9 @@ export default function Home() {
           </div>
           <div className="srow">
             {[
-              ['Free Reading','Enter your name and birth date. Instantly receive a partial soulmate profile from 5 spiritual systems — no account needed. ~55% confidence. Shareable to stories.'],
-              ['Complete Your Profile','Sign up and answer 6 behavioral questionnaires — love language, attachment style, values and more. Unlock your full ~93% confidence soulmate profile.'],
-              ['Daily Oracle + Matching','7 personalized oracle readings every morning. Get notified the moment a high-compatibility match joins — even months from now.'],
+              ['Free Reading','Enter your name and birth date. Instantly receive a partial soulmate profile — no account needed. Shareable to stories.'],
+              ['Complete Your Profile','Sign up and answer short questionnaires about your personality, values, and life patterns. Unlock your full soulmate profile at 100%.'],
+              ['Daily Oracle + Matching','Personalized oracle readings every morning. Get notified the moment a high-compatibility match joins — even months from now.'],
             ].map(([title, desc], i) => (
               <div key={title} className="step">
                 <div className="snum">{i+1}</div>
@@ -121,78 +148,19 @@ export default function Home() {
         </div>
       </section>
 
-      {/* 16 SYSTEMS */}
+      {/* THE DIVINE ORACLE */}
       <section className="sys-s lsection">
         <div className="wrap">
-          <div style={{ textAlign: 'center' }}>
-            <div className="sl2">The Science &amp; Spirit</div>
-            <div className="st">16 systems, one truth</div>
-            <p className="ss" style={{ margin: '0 auto' }}>Every major spiritual tradition, combined into a single compatibility score.</p>
-          </div>
-          <div className="sys-panels">
-            <div className="sys-panel sys-panel-free">
-              <div className="sys-panel-hdr">
-                <span className="sys-panel-icon">◆ FREE FOREVER</span>
-                <div>
-                  <div className="sys-panel-title">Free Systems</div>
-                  <div className="sys-panel-sub">Available on sign-up — no paywall</div>
-                </div>
-                <span className="sys-panel-count">10</span>
-              </div>
-              <div className="sys-list">
-                {[
-                  ['planet','Western Astrology','Natal chart + Synastry','sp'],
-                  ['hash','Numerology','Life Path · Expression','sp'],
-                  ['cards','Tarot','Birth card pairing','sp'],
-                  ['fire','Elemental','Fire · Earth · Air · Water','sp'],
-                  ['heart2','Love Language','5-scale · give vs receive','bh'],
-                  ['link','Attachment Style','Secure · Anxious · Avoidant','bh'],
-                  ['brain','Big Five','OCEAN personality domains','bh'],
-                  ['compass','Values Alignment','Goals · dealbreakers','bh'],
-                  ['sun','Lifestyle','Rhythm · social · activities','bh'],
-                  ['yin','Consciousness','Hawkins scale · soul age','bh'],
-                ].map(([ico,name,desc,cat]) => (
-                  <div key={name} className="sys-row">
-                    <span className="sys-em">{ico.startsWith('/') ? <img src={ico} className="sys-img" alt="" /> : <Ico k={ico} s={28} />}</span>
-                    <div className="sys-info">
-                      <span className="sys-name">{name}</span>
-                      <span className="sys-desc">{desc}</span>
-                    </div>
-                    <span className={`sys-cat sys-cat-${cat}`}>{cat==='sp'?'Spiritual':'Behavioral'}</span>
-                  </div>
-                ))}
-              </div>
-            </div>
-            <div className="sys-panel sys-panel-prem">
-              <div className="sys-panel-hdr">
-                <span className="sys-panel-icon">◆ PREMIUM</span>
-                <div>
-                  <div className="sys-panel-title">Premium Systems</div>
-                  <div className="sys-panel-sub">Deep spiritual reads — unlocked with subscription</div>
-                </div>
-                <span className="sys-panel-count">6</span>
-              </div>
-              <div className="sys-list">
-                {[
-                  ['moon','Vedic / Jyotish','Moon nakshatra · Guna Milan'],
-                  ['tree','Human Design','Type · Profile · Gates'],
-                  ['spiral','Gene Keys','4 personal spheres'],
-                  ['/images/glyphs/glyph_01.svg','Mayan Calendar','Kin glyph · Wavespell'],
-                  ['lotus','Chakra Analysis','7-center energy pattern'],
-                  ['butterfly','Past Life / Karmic','Karmic nodes · soul lesson'],
-                ].map(([ico,name,desc]) => (
-                  <div key={name} className="sys-row">
-                    <span className="sys-em">
-                      {ico.startsWith('/')
-                        ? <img src={ico} className="sys-glyph" alt="" />
-                        : <Ico k={ico} s={28} />}
-                    </span>
-                    <div className="sys-info">
-                      <span className="sys-name">{name}</span>
-                      <span className="sys-desc">{desc}</span>
-                    </div>
-                  </div>
-                ))}
+          <div className="oracle-prose-wrap">
+            <img src="/images/crystal-ball.png" alt="Crystal Ball" className="oracle-big-icon" />
+            <div className="oracle-prose-text">
+              <div className="sl2">Your Daily Companion</div>
+              <div className="st" style={{marginBottom:24}}>The Divine Oracle</div>
+              <div className="oracle-prose">
+                <p>Every morning, before you check a single notification, seven personal readings are already waiting for you. Not horoscope columns written for everyone born in the same month — insights drawn specifically from the exact moment you came into the world.</p>
+                <p>The oracle reads the sky, the cards, and the numbers. It looks at where you are in the larger cycles of your life and distills everything into clear, plain language you can actually use today. No charts to decode. No jargon. Just a quiet message that belongs only to you.</p>
+                <p>The same oracle that reads you, reads every person on the platform. When two people&apos;s patterns align at a deep level, the connection is already half-made before they say hello.</p>
+                <p>Three core readings are yours for free, every single day, forever. The oracle is not a feature. It is the foundation everything else is built on.</p>
               </div>
             </div>
           </div>
@@ -204,30 +172,30 @@ export default function Home() {
         <div className="wrap">
           <div style={{textAlign:'center'}}>
             <div className="sl2">Daily Oracle</div>
-            <div className="st">7 things waiting for you<br />every morning</div>
-            <p className="ss" style={{margin:'0 auto'}}>Before you check anything else. Calculated fresh from your birth chart — not a post written for everyone born in April.</p>
+            <div className="st">Your morning ritual</div>
+            <p className="ss" style={{margin:'0 auto'}}>Seven readings. All personal. All waiting before you open your eyes.</p>
           </div>
-          <div className="og2">
+          <div className="oracle-big-card">
             {[
-              ['oc1','planet','Daily Horoscope','Free',   'Which planets are touching your chart today — and what that actually means for love, energy, and decisions.'],
-              ['oc2','cards','Tarot Pull','Free','One card drawn for your day. A short, honest reading — not fortune-telling, more like a mirror.'],
-              ['oc3','hash','Numerology',      'Free',   'Your personal day number from your birth date. Some days are for starting things. Others are for letting go.'],
-              ['oc4','/images/glyphs/glyph_05.svg','Mayan Oracle','Premium','Your Tzolkin kin energy for today — the Mayan equivalent of your daily horoscope, but far older.'],
-              ['oc5','lotus','Chakra Focus',   'Premium','Which of your 7 energy centers needs attention. Practical, not mystical — things you can actually feel.'],
-              ['oc6','spiral','Gene Keys',     'Premium','One of your 4 personal Gene Keys rotates each week. A contemplation that goes deep if you let it.'],
-              ['oc7','moon','Vedic Moon',      'Premium','Where the Moon sits in your Vedic chart today. The nakshatra it&apos;s in colors your emotional weather.'],
-            ].map(([cls,ic,title,tier,desc]) => (
-              <div key={title} className={`oc2-card ${cls}`}>
-                <div className="oc2-top">
+              ['planet','Daily Horoscope','Free',   'Which planets are touching your chart today — and what that means for love, energy, and decisions.'],
+              ['cards','Tarot Pull','Free','One card drawn for your day. A short, honest reading — more like a mirror than a fortune.'],
+              ['hash','Numerology','Free','Your personal day number. Some days are for starting things. Others are for letting go.'],
+              ['lotus','Chakra Focus','Premium','Which of your 7 energy centers needs attention today. Practical and felt, not abstract.'],
+              ['spiral','Gene Keys','Premium','One of your personal Gene Keys rotates each week. A contemplation that goes deep if you let it.'],
+              ['/images/glyphs/glyph_05.svg','Mayan Oracle','Premium','Your Tzolkin kin energy for today — an ancient read of your day\'s tone and direction.'],
+              ['moon','Vedic Moon','Premium','Where the Moon sits in your Vedic chart. The nakshatra it\'s in colors your emotional weather.'],
+            ].map(([ic, title, tier, desc]) => (
+              <div key={title} className="oracle-row">
+                <div className="oracle-row-ic">
                   {ic.startsWith('/')
-                    ? <img src={ic} className="oc2-ic oc2-glyph" alt="" />
-                    : <span className="oc2-ic"><Ico k={ic} s={30} /></span>}
-                  <div className="oc2-meta">
-                    <span className="oc2-title">{title}</span>
-                    <span className={`oc2-tier ${tier==='Free'?'oc2-free':'oc2-prem'}`}>{tier==='Free'?'● Free':'✦ Premium'}</span>
-                  </div>
+                    ? <img src={ic} className="oc2-glyph" style={{width:26,height:26,objectFit:'contain'}} alt="" />
+                    : <Ico k={ic} s={26} />}
                 </div>
-                <p className="oc2-desc">{desc}</p>
+                <div className="oracle-row-body">
+                  <div className="oracle-row-title">{title}</div>
+                  <div className="oracle-row-desc">{desc}</div>
+                </div>
+                <span className={`oc2-tier ${tier==='Free'?'oc2-free':'oc2-prem'}`}>{tier==='Free'?'● Free':'✦ Premium'}</span>
               </div>
             ))}
           </div>
