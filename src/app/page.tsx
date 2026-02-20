@@ -4,8 +4,8 @@ import PhoneCard from '@/components/landing/PhoneCard';
 import FreeTaste from '@/components/landing/FreeTaste';
 import { Ico } from '@/components/landing/PhosphorIco';
 
-const APP_URL  = 'https://limewire.com/d/GU1Yt#pyPFYLC2v7';
-const PLAY_URL = 'https://limewire.com/d/GU1Yt#pyPFYLC2v7';
+const APP_URL  = 'https://limewire.com/d/GjWGY#J68L6xtGKk';
+const PLAY_URL = 'https://limewire.com/d/GjWGY#J68L6xtGKk';
 
 export default function Home() {
   return (
