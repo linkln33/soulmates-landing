@@ -1,6 +1,7 @@
 'use client';
 
 import { useState, useRef } from 'react';
+import { Hash, Sun, Planet, Leaf, Scroll } from '@phosphor-icons/react';
 
 interface Section { emoji: string; title: string; summary: string; details?: Record<string, unknown> }
 interface LockedSection { title: string; description: string }
@@ -139,11 +140,11 @@ export default function FreeTaste() {
           )}
           {!result && !loading && (
             <div className="ft-chips">
-              <div className="ft-chip">🔢 Numerology</div>
-              <div className="ft-chip">🏛️ Mayan Kin</div>
-              <div className="ft-chip">♈ Astrology</div>
-              <div className="ft-chip">🌿 Elemental</div>
-              <div className="ft-chip">🕊️ Past Life</div>
+              <div className="ft-chip"><Hash size={15} weight="bold" /> Numerology</div>
+              <div className="ft-chip"><Sun size={15} weight="bold" /> Mayan Kin</div>
+              <div className="ft-chip"><Planet size={15} weight="bold" /> Astrology</div>
+              <div className="ft-chip"><Leaf size={15} weight="bold" /> Elemental</div>
+              <div className="ft-chip"><Scroll size={15} weight="bold" /> Past Life</div>
               <div className="ft-chip" style={{ color: 'rgba(255,255,255,.35)' }}>+ 11 more with quizzes</div>
             </div>
           )}
