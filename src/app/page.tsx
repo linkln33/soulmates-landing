@@ -302,7 +302,7 @@ export default function Home() {
             ].map(([ico,title,desc,bg,border,clr]) => (
               <div key={title} className="ecard">
                 <div className="eico" style={{background:bg as string,border:border as string,color:clr as string}}><Ico k={ico} s={34} /></div>
-                <div>
+                <div style={{width:'100%'}}>
                   <h3>{title}</h3>
                   <p>{desc}</p>
                 </div>
