@@ -9,6 +9,7 @@ interface Profile {
   loc: string;
   conn: { icon: LucideIcon; cat: string; name: string; color: string };
   score: { emoji: string; tier: string; val: number; color: string };
+  oracle: { system: string; icon: string; reading: string; color: string };
 }
 
 const PROFILES: Profile[] = [
@@ -16,32 +17,40 @@ const PROFILES: Profile[] = [
     img: '/images/p1.jpg', name: 'Mia, 26', loc: 'Berlin, Germany',
     conn:  { icon: Flame,     cat: '', name: 'Twin Flame',        color: '#f97316' },
     score: { emoji: '',  tier: 'Perfect Match',       val: 94, color: '#FF4500' },
+    oracle: { system: 'Venus Transit', icon: '♀', reading: 'Venus conjuncts your natal Mars today. The cosmos is pulling two flames toward the same point in space and time.', color: '#f97316' },
   },
   {
     img: '/images/p2.jpg', name: 'Luna, 28', loc: 'Barcelona, Spain',
     conn:  { icon: Gem,           cat: '', name: 'Soulmate',           color: '#8b5cf6' },
     score: { emoji: '', tier: 'Exceptional Match',   val: 88, color: '#9333EA' },
+    oracle: { system: 'Vedic Moon', icon: '🌙', reading: 'Your Moon in Pisces mirrors her Sun energy. A karmic contract written lifetimes ago is preparing to surface.', color: '#8b5cf6' },
   },
   {
     img: '/images/p3.jpg', name: 'Sofia, 24', loc: 'Amsterdam, NL',
     conn:  { icon: ScanEye,       cat: '', name: 'Spiritual Mirror',   color: '#06b6d4' },
     score: { emoji: '', tier: 'Celestial Match',     val: 82, color: '#6366F1' },
+    oracle: { system: 'Mayan Tzolkin', icon: '🗓', reading: 'Your Mayan kin aligns on the sacred Tzolkin wheel. This convergence recurs only once every 260 days — you are in that window now.', color: '#06b6d4' },
   },
   {
     img: '/images/p4.jpg', name: 'Aria, 27', loc: 'Paris, France',
     conn:  { icon: HeartHandshake, cat: '', name: 'Heart-Based Union',  color: '#ec4899' },
     score: { emoji: '', tier: 'Outstanding Match',   val: 71, color: '#10B981' },
+    oracle: { system: 'Gene Keys', icon: '🧬', reading: 'Gene Key 46 illuminates your heart center. This connection holds the frequency to unlock something that has been dormant in your soul.', color: '#ec4899' },
   },
   {
     img: '/images/p5.jpg', name: 'Zara, 25', loc: 'London, UK',
     conn:  { icon: MoonStar,      cat: '', name: 'Sacred Devotion',    color: '#fbbf24' },
     score: { emoji: '',  tier: 'Glowing Match',       val: 62, color: '#F59E0B' },
+    oracle: { system: 'Nakshatra', icon: '⭐', reading: 'Your Vedic nakshatra forms a trine with her rising star. Patience here is not waiting — it is sacred preparation for a deep union.', color: '#fbbf24' },
   },
 ];
 
 export default function PhoneCard() {
   const [ci, setCi] = useState(0);
   const [entering, setEntering] = useState(false);
+  const [oracleVisible, setOracleVisible] = useState(false);
+  const [oracleFading, setOracleFading] = useState(false);
+  const oracleTimerRef = useRef<ReturnType<typeof setTimeout> | null>(null);
   const frontRef = useRef<HTMLDivElement>(null);
   const autoTimerRef = useRef<ReturnType<typeof setInterval> | null>(null);
   const draggingRef = useRef(false);
@@ -54,6 +63,19 @@ export default function PhoneCard() {
   const p = PROFILES[ci];
   const mid = PROFILES[(ci + 1) % PROFILES.length];
   const back = PROFILES[(ci + 2) % PROFILES.length];
+
+  const triggerOracle = useCallback(() => {
+    if (oracleTimerRef.current) clearTimeout(oracleTimerRef.current);
+    setOracleFading(false);
+    setOracleVisible(true);
+    // start fade-out after 3.6s, fully hidden at 4.5s
+    oracleTimerRef.current = setTimeout(() => {
+      setOracleFading(true);
+      oracleTimerRef.current = setTimeout(() => setOracleVisible(false), 700);
+    }, 3600);
+  }, []);
+
+  useEffect(() => () => { if (oracleTimerRef.current) clearTimeout(oracleTimerRef.current); }, []);
 
   const swipeAway = useCallback((dir: number) => {
     const f = frontRef.current;
@@ -70,9 +92,10 @@ export default function PhoneCard() {
       setEntering(true);
       setTimeout(() => setEntering(false), 460);
       scheduleAuto();
+      setTimeout(() => triggerOracle(), 300);
     }, 420);
   // eslint-disable-next-line react-hooks/exhaustive-deps
-  }, []);
+  }, [triggerOracle]);
 
   const scheduleAuto = useCallback(() => {
     if (autoTimerRef.current) clearInterval(autoTimerRef.current);
@@ -272,8 +295,9 @@ export default function PhoneCard() {
                 <div className="mac-circle">✕</div>
                 <span className="mac-lbl">Nope</span>
               </div>
-              <div className="mac-btn mac-oracle">
-                <div className="mac-circle">🔮</div>
+              <div className="mac-btn mac-oracle" onClick={() => { triggerOracle(); }}
+                style={{ transform: oracleVisible && !oracleFading ? 'scale(1.12)' : 'scale(1)', transition: 'transform .2s' }}>
+                <div className="mac-circle" style={{ boxShadow: oracleVisible && !oracleFading ? '0 0 22px rgba(139,92,246,.9),0 0 44px rgba(139,92,246,.4)' : '', transition: 'box-shadow .3s' }}>🔮</div>
                 <span className="mac-lbl">Oracle</span>
               </div>
               <div className="mac-btn mac-like" onClick={() => swipeAway(1)}>
@@ -281,6 +305,28 @@ export default function PhoneCard() {
                 <span className="mac-lbl">Like</span>
               </div>
             </div>
+
+            {/* Oracle reading popup */}
+            {oracleVisible && (
+              <div className="oracle-popup" style={{ opacity: oracleFading ? 0 : 1 }}>
+                <div className="oracle-popup-inner">
+                  <div className="oracle-popup-top">
+                    <span className="oracle-popup-ball">🔮</span>
+                    <div>
+                      <div className="oracle-popup-system" style={{ color: p.oracle.color }}>{p.oracle.icon} {p.oracle.system}</div>
+                      <div className="oracle-popup-title">Your Reading</div>
+                    </div>
+                  </div>
+                  <div className="oracle-popup-divider" style={{ background: p.oracle.color + '55' }} />
+                  <p className="oracle-popup-text">{p.oracle.reading}</p>
+                  <div className="oracle-popup-dots">
+                    <span style={{ background: p.oracle.color }} />
+                    <span style={{ background: p.oracle.color + '88' }} />
+                    <span style={{ background: p.oracle.color + '44' }} />
+                  </div>
+                </div>
+              </div>
+            )}
           </div>
         </div>
       </div>
