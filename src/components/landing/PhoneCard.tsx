@@ -17,31 +17,31 @@ const PROFILES: Profile[] = [
     img: '/images/p1.jpg', name: 'Mia, 26', loc: 'Berlin, Germany',
     conn:  { icon: Flame,     cat: '', name: 'Twin Flame',        color: '#f97316' },
     score: { emoji: '',  tier: 'Perfect Match',       val: 94, color: '#FF4500' },
-    oracle: { system: 'Venus Transit', icon: '♀', reading: 'Venus conjuncts your natal Mars today. The cosmos is pulling two flames toward the same point in space and time.', color: '#f97316' },
+    oracle: { system: 'Twin Flame Reading', icon: '🔥', reading: 'Mia carries the mirror frequency your soul has been seeking. A Twin Flame connection like this is intense by design — she will reflect your deepest strengths and your biggest blind spots. This is not comfortable love. It is transformative love.', color: '#f97316' },
   },
   {
     img: '/images/p2.jpg', name: 'Luna, 28', loc: 'Barcelona, Spain',
     conn:  { icon: Gem,           cat: '', name: 'Soulmate',           color: '#8b5cf6' },
     score: { emoji: '', tier: 'Exceptional Match',   val: 88, color: '#9333EA' },
-    oracle: { system: 'Vedic Moon', icon: '🌙', reading: 'Your Moon in Pisces mirrors her Sun energy. A karmic contract written lifetimes ago is preparing to surface.', color: '#8b5cf6' },
+    oracle: { system: 'Soulmate Reading', icon: '💜', reading: 'Luna is not a chance encounter. Soulmates arrive with a sense of already-known — a familiarity that bypasses small talk entirely. Your 16-system blueprint shows deep harmonic resonance across emotional, spiritual, and life-purpose layers.', color: '#8b5cf6' },
   },
   {
     img: '/images/p3.jpg', name: 'Sofia, 24', loc: 'Amsterdam, NL',
     conn:  { icon: ScanEye,       cat: '', name: 'Spiritual Mirror',   color: '#06b6d4' },
     score: { emoji: '', tier: 'Celestial Match',     val: 82, color: '#6366F1' },
-    oracle: { system: 'Mayan Tzolkin', icon: '🗓', reading: 'Your Mayan kin aligns on the sacred Tzolkin wheel. This convergence recurs only once every 260 days — you are in that window now.', color: '#06b6d4' },
+    oracle: { system: 'Mirror Reading', icon: '🪞', reading: 'Sofia will show you yourself — the parts you celebrate and the parts still in shadow. A Spiritual Mirror connection accelerates growth faster than any other type. You will not stay the same person after meeting her.', color: '#06b6d4' },
   },
   {
     img: '/images/p4.jpg', name: 'Aria, 27', loc: 'Paris, France',
     conn:  { icon: HeartHandshake, cat: '', name: 'Heart-Based Union',  color: '#ec4899' },
     score: { emoji: '', tier: 'Outstanding Match',   val: 71, color: '#10B981' },
-    oracle: { system: 'Gene Keys', icon: '🧬', reading: 'Gene Key 46 illuminates your heart center. This connection holds the frequency to unlock something that has been dormant in your soul.', color: '#ec4899' },
+    oracle: { system: 'Heart Union Reading', icon: '💗', reading: 'Aria represents a Heart-Based Union — built on genuine care rather than intensity or obligation. This kind of love is steady, chosen every day. Your Gene Keys show complementary heart activation that makes a lasting partnership deeply possible.', color: '#ec4899' },
   },
   {
     img: '/images/p5.jpg', name: 'Zara, 25', loc: 'London, UK',
     conn:  { icon: MoonStar,      cat: '', name: 'Sacred Devotion',    color: '#fbbf24' },
     score: { emoji: '',  tier: 'Glowing Match',       val: 62, color: '#F59E0B' },
-    oracle: { system: 'Nakshatra', icon: '⭐', reading: 'Your Vedic nakshatra forms a trine with her rising star. Patience here is not waiting — it is sacred preparation for a deep union.', color: '#fbbf24' },
+    oracle: { system: 'Devotion Reading', icon: '🌙', reading: 'Zara carries a Sacred Devotion signature — rare, quiet, and built for depth over time. This connection asks for patience as its entry point. Your Vedic nakshatra and her Moon placement suggest a bond that becomes more meaningful the longer it is allowed to breathe.', color: '#fbbf24' },
   },
 ];
 
@@ -68,11 +68,11 @@ export default function PhoneCard() {
     if (oracleTimerRef.current) clearTimeout(oracleTimerRef.current);
     setOracleFading(false);
     setOracleVisible(true);
-    // start fade-out after 3.6s, fully hidden at 4.5s
+    // show for 5.5s then fade over 0.7s
     oracleTimerRef.current = setTimeout(() => {
       setOracleFading(true);
       oracleTimerRef.current = setTimeout(() => setOracleVisible(false), 700);
-    }, 3600);
+    }, 5500);
   }, []);
 
   useEffect(() => () => { if (oracleTimerRef.current) clearTimeout(oracleTimerRef.current); }, []);
@@ -99,7 +99,7 @@ export default function PhoneCard() {
 
   const scheduleAuto = useCallback(() => {
     if (autoTimerRef.current) clearInterval(autoTimerRef.current);
-    autoTimerRef.current = setInterval(() => swipeAway(1), 5600);
+    autoTimerRef.current = setInterval(() => swipeAway(1), 8500);
   }, [swipeAway]);
 
   useEffect(() => {
