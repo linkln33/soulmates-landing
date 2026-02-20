@@ -50,10 +50,12 @@ nav.lnav{position:fixed;top:0;left:0;right:0;z-index:100;padding:16px 32px;displ
 .bp:hover{box-shadow:0 14px 50px rgba(168,85,247,.6);transform:translateY(-2px)}
 .bg2{background:rgba(255,255,255,.07);border:1px solid rgba(255,255,255,.14);color:rgba(255,255,255,.85);backdrop-filter:blur(12px)}
 .bg2:hover{background:rgba(255,255,255,.11);transform:translateY(-2px)}
-.sr{display:flex;gap:24px;flex-wrap:nowrap;animation:fu .6s .4s ease both;align-items:flex-start;margin-bottom:40px}
-.sn{font-size:28px;font-weight:800}
+.sr{display:grid;grid-template-columns:repeat(4,1fr);gap:10px;animation:fu .6s .4s ease both;margin-bottom:40px}
+.sc{display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center;padding:16px 10px;background:rgba(255,255,255,0.04);border:1px solid rgba(192,132,252,0.18);border-radius:16px;backdrop-filter:blur(10px);box-shadow:0 4px 24px rgba(0,0,0,.2),inset 0 1px 0 rgba(255,255,255,.06);transition:border-color .2s,box-shadow .2s}
+.sc:hover{border-color:rgba(192,132,252,.38);box-shadow:0 8px 32px rgba(168,85,247,.22),inset 0 1px 0 rgba(255,255,255,.09)}
+.sn{font-size:26px;font-weight:800;text-align:center}
 .sg{background:linear-gradient(135deg,var(--p4),var(--pk));-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text}
-.sl{font-size:13px;color:var(--tm);font-weight:500;margin-top:2px}
+.sl{font-size:12px;color:var(--tm);font-weight:500;margin-top:4px;text-align:center}
 @keyframes fu{from{opacity:0;transform:translateY(24px)}to{opacity:1;transform:translateY(0)}}
 
 /* PHONE */
@@ -464,9 +466,9 @@ footer.lfooter a{color:rgba(192,132,252,.7);text-decoration:none}
   .wrap{padding:0 18px}
   .hero{padding:90px 18px 0;gap:20px}
   .po{transform:scale(.88);transform-origin:top center;margin-bottom:calc(750px * -0.12)}
-  .sr{flex-wrap:nowrap;gap:0;justify-content:space-between;width:100%}
-  .sr>div{flex:1;text-align:center}
-  .sn{font-size:22px}
+  .sr{grid-template-columns:repeat(2,1fr);gap:8px}
+  .sc{padding:12px 8px;border-radius:14px}
+  .sn{font-size:20px}
   .sl{font-size:10px;white-space:nowrap}
   .qi{padding:40px 20px}
   .ft-inner{padding:36px 20px;border-radius:28px}
@@ -500,8 +502,9 @@ footer.lfooter a{color:rgba(192,132,252,.7);text-decoration:none}
   .ni{width:30px;height:30px}
   .nc{font-size:12px;padding:7px 14px}
   .hb{gap:10px}
-  .sn{font-size:19px}
-  .sl{font-size:9.5px}
+  .sr{gap:6px}
+  .sn{font-size:17px}
+  .sl{font-size:9px}
   .diff-card{padding:22px 16px}
   .diff-icon{width:58px;height:58px;margin-bottom:14px}
   .ft-inner{padding:26px 14px;border-radius:22px}
