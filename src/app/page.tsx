@@ -49,10 +49,10 @@ export default function Home() {
               </a>
             </div>
             <div className="sr">
-              <div><div className="sn sg">16</div><div className="sl">Spiritual Systems</div></div>
-              <div><div className="sn sg">93%</div><div className="sl">Profile Accuracy</div></div>
-              <div><div className="sn sg">7</div><div className="sl">Daily Oracle Cards</div></div>
-              <div><div className="sn sg">1</div><div className="sl">Match at a Time</div></div>
+              <div className="sc"><div className="sn" style={{fontSize:'30px',lineHeight:'1'}}>🔮</div><div className="sl">Divine Oracle</div></div>
+              <div className="sc"><div className="sn sg">93–100%</div><div className="sl">Match Score</div></div>
+              <div className="sc"><div className="sn sg">7</div><div className="sl">Daily Oracle Cards</div></div>
+              <div className="sc"><div className="sn sg">1</div><div className="sl">Match at a Time</div></div>
             </div>
           </div>
           {/* RIGHT: phone */}
