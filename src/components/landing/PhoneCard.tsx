@@ -87,8 +87,9 @@ export default function PhoneCard() {
     const f = frontRef.current;
     if (!f) return;
     if (autoTimerRef.current) clearInterval(autoTimerRef.current);
-    f.style.transition = 'transform .4s cubic-bezier(.4,0,1,1),opacity .4s';
-    f.style.transform = `translateX(${dir > 0 ? '115%' : '-115%'})`;
+    const rotation = dir > 0 ? 22 : -22;
+    f.style.transition = 'transform .42s cubic-bezier(.4,0,1,1), opacity .38s';
+    f.style.transform = `translateX(${dir > 0 ? '120%' : '-120%'}) rotate(${rotation}deg)`;
     f.style.opacity = '0';
     setTimeout(() => {
       f.style.transition = '';
@@ -96,9 +97,9 @@ export default function PhoneCard() {
       f.style.opacity = '';
       setCi(prev => (prev + 1) % PROFILES.length);
       setEntering(true);
-      setTimeout(() => setEntering(false), 460);
+      setTimeout(() => setEntering(false), 580);
       scheduleAuto();
-      setTimeout(() => triggerOracle(), 300);
+      setTimeout(() => triggerOracle(), 350);
     }, 420);
   // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [triggerOracle]);

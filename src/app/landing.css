@@ -66,14 +66,21 @@ nav.lnav{position:fixed;top:0;left:0;right:0;z-index:100;padding:16px 32px;displ
 .pst{display:flex;justify-content:space-between;font-size:10px;font-weight:600;color:rgba(255,255,255,.7);padding:4px 4px 6px}
 .cs{position:relative;flex:1;margin:0 auto;width:366px;overflow:hidden}
 .mc{position:absolute;border-radius:28px;overflow:hidden;border:1px solid rgba(255,255,255,.1);box-shadow:0 12px 32px rgba(0,0,0,.55)}
-.mcb{inset:22px 16px;transform:scale(.91);opacity:.45}
-.mcm{inset:11px 7px;transform:scale(.95);opacity:.65}
+.mcb{inset:22px 16px;transform:scale(.91);opacity:.45;transition:transform .45s cubic-bezier(0,.9,.4,1),opacity .45s}
+.mcm{inset:11px 7px;transform:scale(.95);opacity:.65;transition:transform .45s cubic-bezier(0,.9,.4,1),opacity .45s}
 .mcf{inset:0}
 @keyframes cs{0%,100%{transform:rotate(-1deg)}50%{transform:rotate(1.5deg)}}
-@keyframes swipe-out{to{transform:translateX(115%);opacity:0}}
-@keyframes card-in{from{transform:scale(.93) translateY(16px);opacity:0}to{transform:scale(1) translateY(0);opacity:1}}
-.mc.swiping{animation:swipe-out .4s cubic-bezier(.4,0,1,1) forwards}
-.mc.entering{animation:card-in .42s cubic-bezier(0,.9,.4,1) both}
+@keyframes swipe-out-right{0%{transform:translateX(0) rotate(0);opacity:1}100%{transform:translateX(120%) rotate(22deg);opacity:0}}
+@keyframes swipe-out-left{0%{transform:translateX(0) rotate(0);opacity:1}100%{transform:translateX(-120%) rotate(-22deg);opacity:0}}
+@keyframes card-in{
+  0%{transform:scale(.8) translateY(40px) rotate(-4deg);opacity:0;filter:blur(6px)}
+  55%{transform:scale(1.04) translateY(-6px) rotate(.8deg);opacity:1;filter:blur(0)}
+  80%{transform:scale(.98) translateY(2px) rotate(-.3deg)}
+  100%{transform:scale(1) translateY(0) rotate(0)}
+}
+.mc.entering{animation:card-in .55s cubic-bezier(0,.9,.4,1) both}
+.mc.entering::after{content:'';position:absolute;inset:0;border-radius:28px;animation:card-glow .6s ease-out forwards;pointer-events:none;z-index:50}
+@keyframes card-glow{0%{box-shadow:inset 0 0 0 2px rgba(192,132,252,.7),0 0 40px rgba(192,132,252,.4)}60%{box-shadow:inset 0 0 0 1px rgba(192,132,252,.2),0 0 16px rgba(192,132,252,.1)}100%{box-shadow:none}}
 .mc.dragging{animation:none!important;transition:none!important;cursor:grabbing;user-select:none}
 .stamp{position:absolute;top:22px;z-index:10;border:3px solid;border-radius:10px;padding:4px 10px;font-size:14px;font-weight:900;letter-spacing:.05em;opacity:0;pointer-events:none;transition:opacity .1s}
 .stamp-like{left:14px;color:#4ade80;border-color:#4ade80;transform:rotate(-22deg)}
