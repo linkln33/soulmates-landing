@@ -411,7 +411,7 @@ export default function Home() {
           <div className="price-g">
             <div className="pcard p-free">
               <div className="p-badge">Free — forever</div>
-              <div className="p-price">$0</div>
+              <div className="p-price">€0</div>
               <div className="p-sub">No credit card needed</div>
               <ul className="p-list">
                 {['Full soulmate blueprint (16 systems)','3 daily oracle cards (Horoscope · Tarot · Numerology)','Soulmate Radar alerts','One match at a time (7-day model)','Real-time cosmic chat','3 compatibility views per day','GPS check-in','Shareable soulmate stories'].map(i=><li key={i}>{i}</li>)}
@@ -420,7 +420,7 @@ export default function Home() {
             </div>
             <div className="pcard premium p-prem">
               <div className="p-badge">Oracle Premium</div>
-              <div className="p-price">$19<span>.99/mo</span></div>
+              <div className="p-price"><span className="p-orig">€49.95</span>€19<span>.95/mo</span></div>
               <div className="p-sub">Everything in Free, plus:</div>
               <ul className="p-list">
                 {['4 extra oracle systems (Mayan · Chakra · Gene Keys · Vedic)','Oracle AI Chat — conversational spiritual advisor','Extended Tarot (3-card + Celtic Cross spreads)','Unlimited compatibility breakdowns','Pre-Swipe Oracle insight before deciding','Match Revival — revive past connections','Time Bank Boost (72-hr max vs 12-hr)','Unlimited streak freezes','Priority matching + Incognito mode','Monthly Past Life deep readings'].map(i=><li key={i}>{i}</li>)}
@@ -429,10 +429,10 @@ export default function Home() {
             </div>
             <div className="pcard cards p-sc">
               <div className="p-badge">Soul Cards</div>
-              <div className="p-price">$4<span>.99</span></div>
+              <div className="p-price">€4<span>.99</span></div>
               <div className="p-sub">Per card — or save in packs</div>
               <ul className="p-list">
-                {['Exchange real contact info with your match','Take the connection beyond the app','3 cards — $9.99','5 cards — $14.99','10 cards — $24.99'].map(i=><li key={i}>{i}</li>)}
+                {['Exchange real contact info with your match','Take the connection beyond the app','3 cards — €9.99','5 cards — €14.99','10 cards — €24.99'].map(i=><li key={i}>{i}</li>)}
               </ul>
               <a href={APP_URL} className="p-cta sc">Get Soul Cards</a>
             </div>
