@@ -4,8 +4,7 @@ import PhoneCard from '@/components/landing/PhoneCard';
 import FreeTaste from '@/components/landing/FreeTaste';
 import { Ico } from '@/components/landing/PhosphorIco';
 
-const APP_URL  = 'https://limewire.com/d/GjWGY#J68L6xtGKk';
-const PLAY_URL = 'https://limewire.com/d/GjWGY#J68L6xtGKk';
+const APP_URL  = 'https://expo.dev/artifacts/eas/ptfPkJpknAVvIs94LMzuXjYH1Vfwjhv4sWduI0YZaWc.apk';
 
 export default function Home() {
   return (
@@ -41,16 +40,11 @@ export default function Home() {
               the way they've been shaped by everything life handed them. We built a place that asks those questions.
             </p>
             <div className="hb">
-              <a href={APP_URL} className="store-badge-link">
-                <img src="/images/badge-appstore.svg" alt="Download on the App Store" className="store-badge" />
-              </a>
-              <a href={PLAY_URL} className="store-badge-link">
-                <img src="/images/badge-googleplay.svg" alt="Get it on Google Play" className="store-badge" />
-              </a>
+              <a href={APP_URL} className="p-cta free">Download Android APK</a>
             </div>
             <div className="sr">
               <div className="sc"><div className="sn" style={{fontSize:'30px',lineHeight:'1'}}>🔮</div><div className="sl">Divine Oracle</div></div>
-              <div className="sc"><div className="sn sg">93–100%</div><div className="sl">Match Score</div></div>
+              <div className="sc"><div className="sn sg">15</div><div className="sl">Compatibility Dimensions</div></div>
               <div className="sc"><div className="sn sg">7</div><div className="sl">Daily Oracle Cards</div></div>
               <div className="sc"><div className="sn sg">1</div><div className="sl">Match at a Time</div></div>
             </div>
@@ -391,7 +385,7 @@ export default function Home() {
               <div className="p-price"><span className="p-orig">€49.95</span>€19<span>.95/mo</span></div>
               <div className="p-sub">Everything in Free, plus:</div>
               <ul className="p-list">
-                {['4 extra oracle systems (Mayan · Chakra · Gene Keys · Vedic)','Oracle AI Chat — conversational spiritual advisor','Extended Tarot (3-card + Celtic Cross spreads)','Unlimited compatibility breakdowns','Pre-Swipe Oracle insight before deciding','Match Revival — revive past connections','Time Bank Boost (72-hr max vs 12-hr)','Unlimited streak freezes','Priority matching + Incognito mode','Monthly Past Life deep readings'].map(i=><li key={i}>{i}</li>)}
+                {['4 extra oracle systems (Mayan · Chakra · Gene Keys · Vedic)','Oracle AI Chat — conversational spiritual advisor','Extended Tarot (3-card + Celtic Cross spreads)','Unlimited compatibility breakdowns','Private Radar compatibility insight','Match Revival — revive past connections','Time Bank Boost (72-hr max vs 12-hr)','Unlimited streak freezes','Priority matching + Incognito mode','Monthly Past Life deep readings'].map(i=><li key={i}>{i}</li>)}
               </ul>
               <a href={APP_URL} className="p-cta prem">Get Oracle Premium</a>
             </div>
@@ -426,12 +420,7 @@ export default function Home() {
           <h2>Your soulmate is<br /><span style={{background:'linear-gradient(135deg,#C084FC,#f472b6)',WebkitBackgroundClip:'text',WebkitTextFillColor:'transparent',backgroundClip:'text'}}>already out there</span></h2>
           <p>Join and we&apos;ll alert you the moment someone above 75% compatibility appears. Free daily oracle while you wait.</p>
           <div className="sbs">
-            <a href={APP_URL} className="store-badge-link">
-              <img src="/images/badge-appstore.svg" alt="Download on the App Store" className="store-badge store-badge-lg" />
-            </a>
-            <a href={PLAY_URL} className="store-badge-link">
-              <img src="/images/badge-googleplay.svg" alt="Get it on Google Play" className="store-badge store-badge-lg" />
-            </a>
+            <a href={APP_URL} className="p-cta free">Download Android APK</a>
           </div>
         </div>
       </section>

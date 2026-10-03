@@ -1,339 +1,71 @@
-'use client';
+import { Radio, Sparkles } from 'lucide-react';
 
-import { useEffect, useRef, useState, useCallback } from 'react';
-import { Flame, Gem, ScanEye, HeartHandshake, MoonStar, Star, type LucideIcon } from 'lucide-react';
-
-interface Profile {
-  img: string;
-  name: string;
-  loc: string;
-  conn: { icon: LucideIcon; cat: string; name: string; color: string };
-  score: { emoji: string; tier: string; val: number; color: string };
-  oracle: { system: string; icon: string; reading: string; color: string };
-}
-
-const PROFILES: Profile[] = [
-  {
-    img: '/images/p1.jpg', name: 'Mia, 26', loc: 'Berlin, Germany',
-    conn:  { icon: Flame,     cat: '', name: 'Twin Flame',        color: '#f97316' },
-    score: { emoji: '',  tier: 'Perfect Match',       val: 94, color: '#FF4500' },
-    oracle: { system: 'Twin Flame Reading', icon: '🔥', reading: 'Mia carries the mirror frequency your soul has been seeking. A Twin Flame connection like this is intense by design — she will reflect your deepest strengths and your biggest blind spots. This is not comfortable love. It is transformative love.', color: '#f97316' },
-  },
-  {
-    img: '/images/p2.jpg', name: 'Luna, 28', loc: 'Barcelona, Spain',
-    conn:  { icon: Gem,           cat: '', name: 'Soulmate',           color: '#8b5cf6' },
-    score: { emoji: '', tier: 'Exceptional Match',   val: 88, color: '#9333EA' },
-    oracle: { system: 'Soulmate Reading', icon: '💜', reading: 'Luna is not a chance encounter. Soulmates arrive with a sense of already-known — a familiarity that bypasses small talk entirely. Your 16-system blueprint shows deep harmonic resonance across emotional, spiritual, and life-purpose layers.', color: '#8b5cf6' },
-  },
-  {
-    img: '/images/p3.jpg', name: 'Sofia, 24', loc: 'Amsterdam, NL',
-    conn:  { icon: ScanEye,       cat: '', name: 'Spiritual Mirror',   color: '#06b6d4' },
-    score: { emoji: '', tier: 'Celestial Match',     val: 82, color: '#6366F1' },
-    oracle: { system: 'Mirror Reading', icon: '🪞', reading: 'Sofia will show you yourself — the parts you celebrate and the parts still in shadow. A Spiritual Mirror connection accelerates growth faster than any other type. You will not stay the same person after meeting her.', color: '#06b6d4' },
-  },
-  {
-    img: '/images/p4.jpg', name: 'Aria, 27', loc: 'Paris, France',
-    conn:  { icon: HeartHandshake, cat: '', name: 'Heart-Based Union',  color: '#ec4899' },
-    score: { emoji: '', tier: 'Outstanding Match',   val: 71, color: '#10B981' },
-    oracle: { system: 'Heart Union Reading', icon: '💗', reading: 'Aria represents a Heart-Based Union — built on genuine care rather than intensity or obligation. This kind of love is steady, chosen every day. Your Gene Keys show complementary heart activation that makes a lasting partnership deeply possible.', color: '#ec4899' },
-  },
-  {
-    img: '/images/p5.jpg', name: 'Zara, 25', loc: 'London, UK',
-    conn:  { icon: MoonStar,      cat: '', name: 'Sacred Devotion',    color: '#fbbf24' },
-    score: { emoji: '',  tier: 'Glowing Match',       val: 62, color: '#F59E0B' },
-    oracle: { system: 'Devotion Reading', icon: '🌙', reading: 'Zara carries a Sacred Devotion signature — rare, quiet, and built for depth over time. This connection asks for patience as its entry point. Your Vedic nakshatra and her Moon placement suggest a bond that becomes more meaningful the longer it is allowed to breathe.', color: '#fbbf24' },
-  },
-  {
-    img: '/images/p6.jpg', name: 'Ivailo, 37', loc: 'Sofia, Bulgaria',
-    conn:  { icon: Star,          cat: '', name: 'Fated Encounter',    color: '#38bdf8' },
-    score: { emoji: '', tier: 'Celestial Match',     val: 79, color: '#6366F1' },
-    oracle: { system: 'Fated Encounter Reading', icon: '✦', reading: 'Ivailo carries a rare Fated Encounter signature — a soul you have crossed paths with before, in a different time. This is not accidental. Your Human Design and his Mayan kin create a convergence point that opens only when both people are truly ready.', color: '#38bdf8' },
-  },
-];
-
+/** Product-faithful preview: private Radar, daily Oracle, one match only. */
 export default function PhoneCard() {
-  const [ci, setCi] = useState(0);
-  const [entering, setEntering] = useState(false);
-  const [oracleVisible, setOracleVisible] = useState(false);
-  const [oracleFading, setOracleFading] = useState(false);
-  const oracleTimerRef = useRef<ReturnType<typeof setTimeout> | null>(null);
-  const frontRef = useRef<HTMLDivElement>(null);
-  const autoTimerRef = useRef<ReturnType<typeof setInterval> | null>(null);
-  const draggingRef = useRef(false);
-  const startXRef = useRef(0);
-  const currentXRef = useRef(0);
-  const likeRef = useRef<HTMLDivElement>(null);
-  const nopeRef = useRef<HTMLDivElement>(null);
-  const THRESHOLD = 72;
-
-  const p = PROFILES[ci];
-  const mid = PROFILES[(ci + 1) % PROFILES.length];
-  const back = PROFILES[(ci + 2) % PROFILES.length];
-
-  const triggerOracle = useCallback(() => {
-    if (oracleTimerRef.current) clearTimeout(oracleTimerRef.current);
-    setOracleFading(false);
-    setOracleVisible(true);
-    // show for 8s then fade over 0.7s
-    oracleTimerRef.current = setTimeout(() => {
-      setOracleFading(true);
-      oracleTimerRef.current = setTimeout(() => setOracleVisible(false), 700);
-    }, 8000);
-  }, []);
-
-  useEffect(() => () => { if (oracleTimerRef.current) clearTimeout(oracleTimerRef.current); }, []);
-
-  const swipeAway = useCallback((dir: number) => {
-    const f = frontRef.current;
-    if (!f) return;
-    if (autoTimerRef.current) clearInterval(autoTimerRef.current);
-    const rotation = dir > 0 ? 22 : -22;
-    f.style.transition = 'transform .42s cubic-bezier(.4,0,1,1), opacity .38s';
-    f.style.transform = `translateX(${dir > 0 ? '120%' : '-120%'}) rotate(${rotation}deg)`;
-    f.style.opacity = '0';
-    setTimeout(() => {
-      f.style.transition = '';
-      f.style.transform = '';
-      f.style.opacity = '';
-      setCi(prev => (prev + 1) % PROFILES.length);
-      setEntering(true);
-      setTimeout(() => setEntering(false), 580);
-      scheduleAuto();
-      setTimeout(() => triggerOracle(), 350);
-    }, 420);
-  // eslint-disable-next-line react-hooks/exhaustive-deps
-  }, [triggerOracle]);
-
-  const scheduleAuto = useCallback(() => {
-    if (autoTimerRef.current) clearInterval(autoTimerRef.current);
-    autoTimerRef.current = setInterval(() => swipeAway(1), 11000);
-  }, [swipeAway]);
-
-  useEffect(() => {
-    scheduleAuto();
-    return () => { if (autoTimerRef.current) clearInterval(autoTimerRef.current); };
-  }, [scheduleAuto]);
-
-  // Drag handlers
-  useEffect(() => {
-    const f = frontRef.current;
-    if (!f) return;
-
-    function onStart(e: MouseEvent | TouchEvent) {
-      if (entering) return;
-      draggingRef.current = true;
-      currentXRef.current = 0;
-      startXRef.current = 'touches' in e ? e.touches[0].clientX : e.clientX;
-      f!.classList.add('dragging');
-      if (autoTimerRef.current) clearInterval(autoTimerRef.current);
-      e.preventDefault();
-    }
-
-    function onMove(e: MouseEvent | TouchEvent) {
-      if (!draggingRef.current) return;
-      const cx = 'touches' in e ? e.touches[0].clientX : e.clientX;
-      currentXRef.current = cx - startXRef.current;
-      f!.style.transform = `translateX(${currentXRef.current}px)`;
-      const ratio = Math.min(Math.abs(currentXRef.current) / THRESHOLD, 1);
-      if (currentXRef.current > 10) {
-        if (likeRef.current) likeRef.current.style.opacity = String(ratio);
-        if (nopeRef.current) nopeRef.current.style.opacity = '0';
-      } else if (currentXRef.current < -10) {
-        if (nopeRef.current) nopeRef.current.style.opacity = String(ratio);
-        if (likeRef.current) likeRef.current.style.opacity = '0';
-      } else {
-        if (likeRef.current) likeRef.current.style.opacity = '0';
-        if (nopeRef.current) nopeRef.current.style.opacity = '0';
-      }
-      e.preventDefault();
-    }
-
-    function onEnd() {
-      if (!draggingRef.current) return;
-      draggingRef.current = false;
-      f!.classList.remove('dragging');
-      if (likeRef.current) likeRef.current.style.opacity = '0';
-      if (nopeRef.current) nopeRef.current.style.opacity = '0';
-      if (Math.abs(currentXRef.current) >= THRESHOLD) {
-        swipeAway(currentXRef.current > 0 ? 1 : -1);
-        f!.style.transform = '';
-      } else {
-        f!.style.transition = 'transform .35s cubic-bezier(0,.9,.4,1)';
-        f!.style.transform = '';
-        setTimeout(() => { f!.style.transition = ''; }, 360);
-        scheduleAuto();
-      }
-      currentXRef.current = 0;
-    }
-
-    f.addEventListener('mousedown', onStart as EventListener);
-    window.addEventListener('mousemove', onMove as EventListener);
-    window.addEventListener('mouseup', onEnd);
-    f.addEventListener('touchstart', onStart as EventListener, { passive: false });
-    window.addEventListener('touchmove', onMove as EventListener, { passive: false });
-    window.addEventListener('touchend', onEnd);
-
-    return () => {
-      f.removeEventListener('mousedown', onStart as EventListener);
-      window.removeEventListener('mousemove', onMove as EventListener);
-      window.removeEventListener('mouseup', onEnd);
-      f.removeEventListener('touchstart', onStart as EventListener);
-      window.removeEventListener('touchmove', onMove as EventListener);
-      window.removeEventListener('touchend', onEnd);
-    };
-  }, [entering, swipeAway, scheduleAuto]);
-
   return (
     <div className="po" style={{ position: 'relative', width: 390, height: 750 }}>
-      {/* LEFT: Multi-system compatibility breakdown */}
       <div className="fc2 fcl">
-        <div className="fc-label">Soul Compatibility</div>
-        <div className="fc-score">94%</div>
+        <div className="fc-label">Private matching</div>
+        <div className="fc-score" style={{ fontSize: 28 }}>No public search</div>
         <div className="fc-rows">
-          <div className="fc-row"><span className="fc-sys">Star Alignment</span><div className="fc-bar"><div className="fc-fill" style={{width:'94%'}} /></div><span className="fc-pct">94</span></div>
-          <div className="fc-row"><span className="fc-sys">Energy Type</span><div className="fc-bar"><div className="fc-fill" style={{width:'88%',background:'linear-gradient(90deg,#818cf8,#6366f1)'}} /></div><span className="fc-pct">88</span></div>
-          <div className="fc-row"><span className="fc-sys">Sacred Calendar</span><div className="fc-bar"><div className="fc-fill" style={{width:'82%',background:'linear-gradient(90deg,#34d399,#059669)'}} /></div><span className="fc-pct">82</span></div>
-          <div className="fc-row"><span className="fc-sys">Soul Purpose</span><div className="fc-bar"><div className="fc-fill" style={{width:'91%',background:'linear-gradient(90deg,#fbbf24,#f59e0b)'}} /></div><span className="fc-pct">91</span></div>
+          <div className="fc-row"><span className="fc-sys">Reciprocal preferences</span><span className="fc-pct">✓</span></div>
+          <div className="fc-row"><span className="fc-sys">Deep compatibility</span><span className="fc-pct">✓</span></div>
+          <div className="fc-row"><span className="fc-sys">One connection</span><span className="fc-pct">✓</span></div>
         </div>
       </div>
-      {/* TOP-RIGHT: Match found notification */}
+
       <div className="fc2 fct">
         <div className="fc-notif-header">
-          <div className="fc-notif-icon">
-            <svg width="12" height="12" viewBox="0 0 24 24" fill="currentColor"><path d="M18 8A6 6 0 0 0 6 8c0 7-3 9-3 9h18s-3-2-3-9"/><path d="M13.73 21a2 2 0 0 1-3.46 0"/></svg>
-          </div>
+          <div className="fc-notif-icon"><Sparkles size={12} /></div>
           <span className="fc-notif-app">Soulmates Quest</span>
           <div className="fc-notif-dot" />
           <span className="fc-notif-time">now</span>
         </div>
         <div className="fc-notif-body">
-          <div className="fc-notif-avatar">L</div>
+          <div className="fc-notif-avatar">✦</div>
           <div className="fc-notif-content">
-            <div className="fc-notif-title">New Soulmate Match ✨</div>
-            <div className="fc-notif-sub">Luna, 28 · Berlin</div>
-            <div className="fc-notif-score">
-              <span className="fc-notif-pct">89%</span>
-            </div>
+            <div className="fc-notif-title">A mutual alignment arrived</div>
+            <div className="fc-notif-sub">Your private connection is ready</div>
           </div>
         </div>
-        <div className="fc-systems-used">Calculated across 16 systems</div>
       </div>
-      {/* RIGHT: Divine Oracle Active */}
+
       <div className="fc2 fcr">
         <div className="fc-oracle-header">
-          <div className="fc-oracle-ball">
-            <span className="fc-oracle-glyph">🔮</span>
-            <div className="fc-oracle-ring" />
-            <div className="fc-oracle-ring fc-oracle-ring2" />
-          </div>
+          <div className="fc-oracle-ball"><span className="fc-oracle-glyph">🔮</span><div className="fc-oracle-ring" /></div>
           <div>
-            <div className="fc-oracle-title">Divine Oracle</div>
-            <div className="fc-oracle-status"><span className="fc-oracle-pulse" />Active &amp; Watching</div>
+            <div className="fc-oracle-title">Daily Oracle</div>
+            <div className="fc-oracle-status"><span className="fc-oracle-pulse" />Ready while you wait</div>
           </div>
         </div>
         <div className="fc-oracle-line" />
-        <div className="fc-oracle-reading">Reading your cosmic fingerprint across dimensions of time, soul &amp; energy…</div>
-        <div className="fc-oracle-dots"><span /><span /><span /></div>
+        <div className="fc-oracle-reading">Personal guidance from your calculated spiritual profile—valuable from your very first day.</div>
       </div>
 
-      {/* Phone shell */}
       <div className="pw">
         <div className="ps">
-          <div className="pn"></div>
-          <div className="psc">
+          <div className="pn" />
+          <div className="psc" style={{ background: 'linear-gradient(180deg,#0b0920,#17102f)' }}>
             <div className="pst"><span>9:41</span><span>●●●</span></div>
-            <div className="cs">
-              {/* Back card */}
-              <div className="mc mcb">
-                <div className="mi"><img src={back.img} alt="" loading="lazy" /></div>
-                <div className="mg"></div>
+            <div style={{ padding: '44px 22px 18px', textAlign: 'center' }}>
+              <div style={{ width: 110, height: 110, borderRadius: 60, margin: '18px auto', display: 'grid', placeItems: 'center', border: '1px solid rgba(167,139,250,.45)', background: 'rgba(124,58,237,.16)', boxShadow: '0 0 45px rgba(124,58,237,.3)' }}>
+                <Radio size={48} color="#c4b5fd" />
               </div>
-              {/* Mid card */}
-              <div className="mc mcm">
-                <div className="mi"><img src={mid.img} alt="" loading="lazy" /></div>
-                <div className="mg"></div>
+              <div style={{ color: '#a78bfa', letterSpacing: 2, fontSize: 11, fontWeight: 800 }}>RADAR ACTIVE</div>
+              <h3 style={{ color: 'white', fontSize: 24, lineHeight: 1.2, margin: '12px 0' }}>We are listening for your match</h3>
+              <p style={{ color: '#aaa4c0', fontSize: 13, lineHeight: 1.55, margin: 0 }}>No swiping. No public intentions. The Oracle quietly checks mutual preferences and deep compatibility.</p>
+
+              <div style={{ marginTop: 24, padding: 16, borderRadius: 16, textAlign: 'left', background: 'rgba(255,255,255,.055)', border: '1px solid rgba(255,255,255,.1)' }}>
+                <div style={{ display: 'flex', justifyContent: 'space-between', color: '#9e97b5', fontSize: 12 }}><span>Profile visibility</span><strong style={{ color: '#5eead4' }}>Private · Active</strong></div>
+                <div style={{ height: 1, background: 'rgba(255,255,255,.1)', margin: '13px 0' }} />
+                <div style={{ display: 'flex', justifyContent: 'space-between', color: '#9e97b5', fontSize: 12 }}><span>Matching mode</span><strong style={{ color: 'white' }}>Reciprocal</strong></div>
               </div>
-              {/* Front card — real SwipeCard design */}
-              <div
-                ref={frontRef}
-                className={`mc mcf${entering ? ' entering' : ''}`}
-                style={{ cursor: 'grab' }}
-              >
-                {/* Drag stamps */}
-                <div ref={likeRef} className="stamp stamp-like">LIKE</div>
-                <div ref={nopeRef} className="stamp stamp-nope">NOPE</div>
 
-                {/* Full-bleed photo */}
-                <div className="mi"><img src={p.img} alt="" loading="lazy" /></div>
-
-                {/* Top scrim */}
-                <div style={{ position: 'absolute', inset: 0, background: 'linear-gradient(to bottom,rgba(0,0,0,0.45) 0%,transparent 28%)', pointerEvents: 'none', zIndex: 1 }} />
-
-                {/* TOP-LEFT: Connection type badge */}
-                <div className="card-badge card-badge-left" style={{ borderColor: p.conn.color + '80' }}>
-                  <p.conn.icon className="cb-icon" style={{ width: 13, height: 13, color: p.conn.color, flexShrink: 0 }} strokeWidth={2.2} />
-                  <div className="cb-val" style={{ color: p.conn.color }}>{p.conn.name.toUpperCase()}</div>
-                </div>
-
-                {/* TOP-RIGHT: Match score badge */}
-                <div className="card-badge card-badge-right" style={{ borderColor: p.score.color + '80' }}>
-                  <div className="cb-val" style={{ color: p.score.color }}>{p.score.tier.toUpperCase()} {p.score.val}%</div>
-                </div>
-
-                {/* Heavy bottom gradient */}
-                <div className="mg" />
-
-                {/* Name + location */}
-                <div className="mb">
-                  <div className="mn">{p.name}</div>
-                  <div className="mloc">
-                    <svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeOpacity="0.6">
-                      <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/>
-                    </svg>
-                    {p.loc}
-                  </div>
-                </div>
+              <div style={{ marginTop: 16, padding: 15, borderRadius: 16, display: 'flex', alignItems: 'center', gap: 12, textAlign: 'left', background: 'rgba(124,58,237,.15)', border: '1px solid rgba(167,139,250,.25)' }}>
+                <span style={{ fontSize: 25 }}>🔮</span>
+                <div><strong style={{ color: 'white', fontSize: 13 }}>Today&apos;s Oracle is ready</strong><div style={{ color: '#9e97b5', fontSize: 11, marginTop: 3 }}>Guidance while Radar works</div></div>
               </div>
             </div>
-
-            {/* Action buttons — Nope · Oracle · Like */}
-            <div className="mac">
-              <div className="mac-btn mac-nope" onClick={() => swipeAway(-1)}>
-                <div className="mac-circle">✕</div>
-                <span className="mac-lbl">Nope</span>
-              </div>
-              <div className="mac-btn mac-oracle" onClick={() => { triggerOracle(); }}
-                style={{ transform: oracleVisible && !oracleFading ? 'scale(1.12)' : 'scale(1)', transition: 'transform .2s' }}>
-                <div className="mac-circle" style={{ boxShadow: oracleVisible && !oracleFading ? '0 0 22px rgba(139,92,246,.9),0 0 44px rgba(139,92,246,.4)' : '', transition: 'box-shadow .3s' }}>🔮</div>
-                <span className="mac-lbl">Oracle</span>
-              </div>
-              <div className="mac-btn mac-like" onClick={() => swipeAway(1)}>
-                <div className="mac-circle">♥</div>
-                <span className="mac-lbl">Like</span>
-              </div>
-            </div>
-
-            {/* Oracle reading popup */}
-            {oracleVisible && (
-              <div className="oracle-popup" style={{ opacity: oracleFading ? 0 : 1 }}>
-                <div className="oracle-popup-inner">
-                  <div className="oracle-popup-top">
-                    <span className="oracle-popup-ball">🔮</span>
-                    <div>
-                      <div className="oracle-popup-system" style={{ color: p.oracle.color }}>{p.oracle.icon} {p.oracle.system}</div>
-                      <div className="oracle-popup-title">Your Reading</div>
-                    </div>
-                  </div>
-                  <div className="oracle-popup-divider" style={{ background: p.oracle.color + '55' }} />
-                  <p className="oracle-popup-text">{p.oracle.reading}</p>
-                  <div className="oracle-popup-dots">
-                    <span style={{ background: p.oracle.color }} />
-                    <span style={{ background: p.oracle.color + '88' }} />
-                    <span style={{ background: p.oracle.color + '44' }} />
-                  </div>
-                </div>
-              </div>
-            )}
           </div>
         </div>
       </div>

@@ -16,6 +16,7 @@ const aclonica = localFont({
 });
 
 export const metadata: Metadata = {
+  metadataBase: new URL("https://www.soulmates.quest"),
   title: "Soulmates Quest — Find Your Cosmic Match",
   description: "16 spiritual systems. One soulmate. Free cosmic compatibility reading — no account needed.",
   icons: {
