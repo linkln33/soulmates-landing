@@ -15,10 +15,14 @@ const aclonica = localFont({
   display: "swap",
 });
 
+const SITE_URL = "https://www.soulmates.quest";
+const description =
+  "A free reading from your first name and birth date: numerology, sun sign and a symbolic past-life archetype. The Soulmates Quest dating app is being prepared for a private pilot.";
+
 export const metadata: Metadata = {
-  metadataBase: new URL("https://www.soulmates.quest"),
-  title: "Soulmates Quest — Find Your Cosmic Match",
-  description: "16 spiritual systems. One soulmate. Free cosmic compatibility reading — no account needed.",
+  metadataBase: new URL(SITE_URL),
+  title: "Soulmates Quest — Free Reading",
+  description,
   icons: {
     icon: [
       { url: '/favicon.png', sizes: '256x256', type: 'image/png' },
@@ -27,15 +31,15 @@ export const metadata: Metadata = {
   },
   openGraph: {
     title: "Soulmates Quest",
-    description: "16 spiritual systems. One soulmate.",
-    url: "https://soulmates.quest",
+    description,
+    url: SITE_URL,
     type: "website",
     images: [{ url: '/logo.png', width: 1024, height: 1024 }],
   },
   twitter: {
     card: 'summary',
     title: 'Soulmates Quest',
-    description: '16 spiritual systems. One soulmate.',
+    description,
     images: ['/logo.png'],
   },
 };
