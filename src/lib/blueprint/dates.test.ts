@@ -2,11 +2,10 @@ import { test } from 'node:test';
 import assert from 'node:assert/strict';
 import {
   DATE_ERRORS,
-  addDays,
+  futureDateError,
   isoDateInTimeZone,
-  localIsoDate,
   parseCalendarDate,
-  serverLatestAllowedDate,
+  todayInSofia,
   validateBirthDate,
 } from './dates.ts';
 
@@ -36,9 +35,17 @@ test('rejects years before 1900', () => {
   assert.deepEqual(validateBirthDate('0001-01-01', TODAY), { ok: false, error: DATE_ERRORS.tooEarly });
 });
 
-test('rejects future dates', () => {
-  assert.deepEqual(validateBirthDate('2026-10-15', TODAY), { ok: false, error: DATE_ERRORS.future });
-  assert.deepEqual(validateBirthDate('2999-01-01', TODAY), { ok: false, error: DATE_ERRORS.future });
+test('rejects any date after the latest allowed day (no leniency)', () => {
+  // TODAY itself is accepted (see the first test); the very next day is not.
+  assert.deepEqual(validateBirthDate('2026-10-15', TODAY), { ok: false, error: futureDateError(TODAY) });
+  assert.deepEqual(validateBirthDate('2999-01-01', TODAY), { ok: false, error: futureDateError(TODAY) });
+});
+
+test('future-date message is clear and names the latest accepted date', () => {
+  const msg = futureDateError('2026-10-14');
+  assert.match(msg, /cannot be in the future/);
+  assert.match(msg, /2026-10-14/);
+  assert.match(msg, /Europe\/Sofia/);
 });
 
 test('parseCalendarDate round-trips', () => {
@@ -46,21 +53,21 @@ test('parseCalendarDate round-trips', () => {
   assert.equal(parseCalendarDate('2023-02-29'), null);
 });
 
-test('server leniency: Sofia today + 1 day', () => {
-  // 2026-10-14 21:30 UTC is already 2026-10-15 00:30 in Sofia (UTC+3, EEST).
-  const now = new Date(Date.UTC(2026, 9, 14, 21, 30));
-  assert.equal(isoDateInTimeZone(now, 'Europe/Sofia'), '2026-10-15');
-  assert.equal(serverLatestAllowedDate(now), '2026-10-16');
-  // Earlier the same UTC day it is still the 14th in Sofia.
-  assert.equal(serverLatestAllowedDate(new Date(Date.UTC(2026, 9, 14, 12))), '2026-10-15');
+test('todayInSofia follows the Sofia calendar day, not UTC (injected clock)', () => {
+  // Sofia is UTC+3 in summer time (EEST) and UTC+2 in winter (EET).
+  // 2026-10-14 20:59 UTC = 23:59 EEST on the 14th in Sofia.
+  assert.equal(todayInSofia(new Date(Date.UTC(2026, 9, 14, 20, 59))), '2026-10-14');
+  // 2026-10-14 21:00 UTC = 00:00 EEST on the 15th in Sofia, still the 14th in UTC.
+  assert.equal(todayInSofia(new Date(Date.UTC(2026, 9, 14, 21, 0))), '2026-10-15');
+  // Winter: 2026-12-31 22:00 UTC = 00:00 EET on 2027-01-01 in Sofia.
+  assert.equal(todayInSofia(new Date(Date.UTC(2026, 11, 31, 21, 59))), '2026-12-31');
+  assert.equal(todayInSofia(new Date(Date.UTC(2026, 11, 31, 22, 0))), '2027-01-01');
+  assert.equal(isoDateInTimeZone(new Date(Date.UTC(2026, 11, 31, 22, 0)), 'UTC'), '2026-12-31');
 });
 
-test('addDays crosses month and year boundaries', () => {
-  assert.equal(addDays('2024-02-28', 1), '2024-02-29');
-  assert.equal(addDays('2023-02-28', 1), '2023-03-01');
-  assert.equal(addDays('2026-12-31', 1), '2027-01-01');
-});
-
-test('localIsoDate uses local calendar fields, zero-padded', () => {
-  assert.equal(localIsoDate(new Date(2026, 0, 5, 23, 59)), '2026-01-05');
+test('Sofia-today rule end to end: today accepted, tomorrow rejected', () => {
+  const now = new Date(Date.UTC(2026, 9, 14, 21, 30)); // 00:30 on the 15th in Sofia
+  const today = todayInSofia(now);
+  assert.equal(validateBirthDate('2026-10-15', today).ok, true);
+  assert.deepEqual(validateBirthDate('2026-10-16', today), { ok: false, error: futureDateError('2026-10-15') });
 });

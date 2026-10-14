@@ -10,11 +10,12 @@
  * - It must not be later than `latestAllowed` (a YYYY-MM-DD string chosen by
  *   the caller).
  *
- * Future-date policy: the server passes "today in Europe/Sofia plus one day"
- * (see `serverLatestAllowedDate`). The one-day leniency means a visitor in a
- * time zone ahead of Sofia (e.g. Asia/Tokyo just after midnight) who enters
- * their own local "today" is not rejected. The browser form passes the
- * visitor's local date, so it never offers a future date in the first place.
+ * Future-date policy: the latest accepted date is TODAY in Europe/Sofia
+ * (see `todayInSofia`), with no extra day of leniency. The server route and
+ * the browser form both compute that date with Intl, so they apply the same
+ * rule. Consequence: a visitor in a time zone ahead of Sofia (e.g. Asia/Tokyo
+ * just after local midnight) cannot enter their own local "today" until it is
+ * also that date in Sofia. Pass `now` explicitly in tests.
  */
 
 export const MIN_BIRTH_YEAR = 1900;
@@ -35,8 +36,15 @@ export const DATE_ERRORS = {
   format: 'Birth date must be a date in the format YYYY-MM-DD.',
   notReal: 'That date does not exist on the calendar. Please check the day and month.',
   tooEarly: `Please enter a birth year of ${MIN_BIRTH_YEAR} or later.`,
-  future: 'Birth date cannot be in the future.',
 } as const;
+
+/** Time zone whose calendar date defines "today" for the future-date rule. */
+export const BIRTH_DATE_TIME_ZONE = 'Europe/Sofia';
+
+/** Error for a birth date after `today` (YYYY-MM-DD, today in Europe/Sofia). */
+export function futureDateError(today: string): string {
+  return `Birth date cannot be in the future. The latest date accepted is ${today} (today's date in Bulgaria, Europe/Sofia time).`;
+}
 
 const ISO_DATE = /^(\d{4})-(\d{2})-(\d{2})$/;
 
@@ -70,7 +78,7 @@ export function validateBirthDate(value: unknown, latestAllowed: string): DateVa
   if (!date) return { ok: false, error: DATE_ERRORS.notReal };
   if (date.year < MIN_BIRTH_YEAR) return { ok: false, error: DATE_ERRORS.tooEarly };
   // Zero-padded ISO strings compare correctly as plain strings.
-  if (date.iso > latestAllowed) return { ok: false, error: DATE_ERRORS.future };
+  if (date.iso > latestAllowed) return { ok: false, error: futureDateError(latestAllowed) };
   return { ok: true, date };
 }
 
@@ -85,22 +93,11 @@ export function isoDateInTimeZone(now: Date, timeZone: string): string {
   }).format(now);
 }
 
-/** Add whole days to a YYYY-MM-DD string. */
-export function addDays(iso: string, days: number): string {
-  const [y, m, d] = iso.split('-').map(Number);
-  const t = new Date(Date.UTC(y, m - 1, d + days));
-  return t.toISOString().slice(0, 10);
-}
-
-/** Latest birth date the server accepts: today in Europe/Sofia, plus one day of leniency. */
-export function serverLatestAllowedDate(now: Date = new Date()): string {
-  return addDays(isoDateInTimeZone(now, 'Europe/Sofia'), 1);
-}
-
-/** The visitor's local calendar date as YYYY-MM-DD (not UTC). */
-export function localIsoDate(now: Date = new Date()): string {
-  const y = now.getFullYear();
-  const m = String(now.getMonth() + 1).padStart(2, '0');
-  const d = String(now.getDate()).padStart(2, '0');
-  return `${y}-${m}-${d}`;
+/**
+ * Today's calendar date in Europe/Sofia as YYYY-MM-DD. This is the latest
+ * birth date accepted, on both the server and the client. `now` is injectable
+ * for tests.
+ */
+export function todayInSofia(now: Date = new Date()): string {
+  return isoDateInTimeZone(now, BIRTH_DATE_TIME_ZONE);
 }

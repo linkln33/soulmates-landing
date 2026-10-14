@@ -1,9 +1,9 @@
 'use client';
 
-import { useState, useRef } from 'react';
+import { useState, useRef, useSyncExternalStore } from 'react';
 import Link from 'next/link';
 import { Hash, Planet, Scroll } from '@phosphor-icons/react';
-import { MIN_BIRTH_YEAR, localIsoDate, validateBirthDate } from '@/lib/blueprint/dates';
+import { MIN_BIRTH_YEAR, todayInSofia, validateBirthDate } from '@/lib/blueprint/dates';
 
 type DetailValue = string | number | null;
 interface Section {
@@ -22,6 +22,8 @@ interface BlueprintResponse {
 
 const NAME_MAX_LENGTH = 100;
 
+const noSubscribe = () => () => {};
+
 function label(key: string): string {
   return key.replace(/([A-Z])/g, ' $1').toLowerCase().trim();
 }
@@ -34,8 +36,10 @@ export default function FreeTaste() {
   const [result, setResult] = useState<BlueprintResponse | null>(null);
   const resultRef = useRef<HTMLDivElement>(null);
 
-  // The visitor's local calendar date (not UTC), so the picker never blocks "today".
-  const today = localIsoDate();
+  // Same rule as the server: the latest accepted birth date is today in
+  // Europe/Sofia. Read on the client only (undefined during prerender), so a
+  // build-time date is never baked into the picker's `max`.
+  const sofiaToday = useSyncExternalStore(noSubscribe, () => todayInSofia(), () => undefined);
 
   async function getFreeReading() {
     setErr('');
@@ -45,7 +49,7 @@ export default function FreeTaste() {
       return;
     }
     if (!date) { setErr('Please enter your birth date.'); return; }
-    const check = validateBirthDate(date, today);
+    const check = validateBirthDate(date, todayInSofia());
     if (!check.ok) { setErr(check.error); return; }
 
     setLoading(true);
@@ -101,7 +105,7 @@ export default function FreeTaste() {
               className="ft-inp"
               type="date"
               min={`${MIN_BIRTH_YEAR}-01-01`}
-              max={today}
+              max={sofiaToday}
               value={date}
               onChange={e => setDate(e.target.value)}
             />
