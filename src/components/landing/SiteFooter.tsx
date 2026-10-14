@@ -9,6 +9,8 @@ export default function SiteFooter() {
       <p>
         © {new Date().getFullYear()} Soulmates Quest &nbsp;·&nbsp;{' '}
         <Link href="/app">App status</Link> &nbsp;·&nbsp;{' '}
+        <Link href="/privacy">Privacy (draft)</Link> &nbsp;·&nbsp;{' '}
+        <Link href="/terms">Terms (draft)</Link> &nbsp;·&nbsp;{' '}
         <a href={`mailto:${CONTACT_EMAIL}`}>{CONTACT_EMAIL}</a>
       </p>
     </footer>
