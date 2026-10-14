@@ -7,8 +7,9 @@ import {
   buildBlueprint,
   validateInput,
 } from './blueprint.ts';
-import { DATE_ERRORS } from './dates.ts';
+import { DATE_ERRORS, futureDateError } from './dates.ts';
 
+// Stands in for today's date in Europe/Sofia.
 const LATEST = '2026-10-15';
 
 function ok(body: unknown) {
@@ -46,7 +47,7 @@ test('validateInput birth date rules', () => {
   assert.deepEqual(validateInput({ name }, LATEST), { ok: false, error: INPUT_ERRORS.birthDateMissing });
   assert.deepEqual(validateInput({ name, birthDate: '1995-02-31' }, LATEST), { ok: false, error: DATE_ERRORS.notReal });
   assert.deepEqual(validateInput({ name, birthDate: '2023-02-29' }, LATEST), { ok: false, error: DATE_ERRORS.notReal });
-  assert.deepEqual(validateInput({ name, birthDate: '2026-10-16' }, LATEST), { ok: false, error: DATE_ERRORS.future });
+  assert.deepEqual(validateInput({ name, birthDate: '2026-10-16' }, LATEST), { ok: false, error: futureDateError(LATEST) });
   assert.deepEqual(validateInput({ name, birthDate: 19900101 }, LATEST), { ok: false, error: DATE_ERRORS.format });
   assert.equal(validateInput({ name, birthDate: '2024-02-29' }, LATEST).ok, true);
 });

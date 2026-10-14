@@ -1,8 +1,8 @@
 # Free-reading calculators
 
-Pure functions behind `POST /api/blueprint`. The route (`src/app/api/blueprint/route.ts`) only parses JSON, calls `validateInput` and `buildBlueprint` from `blueprint.ts`, and returns the result. Nothing submitted is stored.
+Pure functions behind `POST /api/blueprint`. The route (`src/app/api/blueprint/route.ts`) only calls `handleBlueprintRequest` from `http.ts`. That handler rejects bodies over 2,000 characters (413), parses JSON, calls `validateInput` and `buildBlueprint` from `blueprint.ts`, and returns the result. Nothing submitted is stored.
 
-Tests: `npm test` (runs `node --test` on `*.test.ts`, using Node's built-in TypeScript type stripping). Modules here import each other with explicit `.ts` extensions and don't use the `@/` alias, so Node can run them directly.
+Tests: `npm test` (runs `node --test` on `*.test.ts`, using Node's built-in TypeScript type stripping). Modules here, and `route.ts`, import each other with explicit `.ts` extensions and don't use the `@/` alias, so Node can run them directly. `route.test.ts` calls the route's `POST` with plain `Request` objects.
 
 ## Numerology letter convention (`numerology.ts`)
 
@@ -28,7 +28,11 @@ Tests: `npm test` (runs `node --test` on `*.test.ts`, using Node's built-in Type
 
 - Only `YYYY-MM-DD` strings that round-trip as real calendar dates are accepted. For example, `1995-02-31`, `2023-02-29`, `1990-13-01` and `1990-00-00` are rejected, while `2024-02-29` is accepted.
 - The year must be 1900 or later.
-- **Future dates**: the server accepts dates up to *today in Europe/Sofia plus one day*. This extra day exists so that visitors in time zones ahead of Sofia aren't rejected for entering their own local "today". The browser form uses the visitor's local date (not UTC) as its maximum.
+- **Future dates**: any date after *today in Europe/Sofia* is rejected. There is no extra day of leniency. "Today" is computed with `Intl.DateTimeFormat('en-CA', { timeZone: 'Europe/Sofia' })` (`todayInSofia` in `dates.ts`).
+  - The server (`http.ts`) and the browser form (`FreeTaste.tsx`) use the same function, so they apply the same rule.
+  - The error message names the latest accepted date: *"Birth date cannot be in the future. The latest date accepted is YYYY-MM-DD (today's date in Bulgaria, Europe/Sofia time)."*
+  - Trade-off: a visitor in a time zone ahead of Sofia (e.g. Tokyo just after local midnight) can't enter their own local "today" until it is that date in Sofia too.
+  - The clock is injectable: `todayInSofia(now)` and `handleBlueprintRequest(req, now)` take the current time as a parameter in tests.
 
 ## Sun sign (`sunSign.ts`)
 
