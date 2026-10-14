@@ -11,7 +11,9 @@ Tests: `npm test` (runs `node --test` on `*.test.ts`, using Node's built-in Type
    - Otherwise it is decomposed to NFD and combining marks are stripped. If a single Latin letter `a`–`z` remains (`é→e`, `ë→e`, `ñ→n`), it is scored with the Latin table.
    - Everything else is **ignored**: digits, spaces, punctuation, CJK, Greek, Russian- and Ukrainian-only letters (`ё ы э і ї є ґ`), Bulgarian `ѝ`, and Latin letters that don't decompose to `a`–`z` (`ß ø æ ł`).
 2. **Latin**: standard Pythagorean values. a=1 … i=9, j=1 … r=9, s=1 … z=8.
-3. **Bulgarian Cyrillic**: each letter's position in the 30-letter alphabet `а б в г д е ж з и й к л м н о п р с т у ф х ц ч ш щ ъ ь ю я`, reduced on the same 1–9 cycle: `value = ((position − 1) mod 9) + 1`. So а=1 … и=9, й=1 … с=9, т=1 … ъ=9, ь=1, ю=2, я=3.
+3. **Bulgarian Cyrillic — our chosen convention**: each letter's position in the 30-letter alphabet `а б в г д е ж з и й к л м н о п р с т у ф х ц ч ш щ ъ ь ю я`, reduced on the same 1–9 cycle: `value = ((position − 1) mod 9) + 1`. So а=1 … и=9, й=1 … с=9, т=1 … ъ=9, ь=1, ю=2, я=3.
+   - This is a convention **we chose**, not a universal standard. Other conventions exist (for example tables built on the 33-letter Russian alphabet, or transliterating to Latin and then using the Pythagorean table), and they give different numbers for the same name.
+   - The result card shows a one-line footnote under the numerology section (`#numerology-convention` in `FreeTaste.tsx`) that names this as our convention and says results differ between conventions.
 4. **Mixed-script names**: each letter uses its own script's table.
 5. **Vowels** (soul urge): Latin `a e i o u y`. `y` is always counted as a vowel, which keeps the previous behaviour. Bulgarian vowels are `а е и о у ъ ю я`.
 6. **No countable letters**: expression and soul urge are `null`, and the UI says they couldn't be calculated for the characters entered. If the name has letters but no counted vowels, only soul urge is `null`. There is no fallback "1".

@@ -14,9 +14,14 @@
  *      and Latin letters that do not decompose to a-z such as ß ø æ ł) is
  *      ignored.
  * 2. Latin table: standard Pythagorean, a=1 ... i=9, j=1 ... r=9, s=1 ... z=8.
- * 3. Bulgarian table: each letter's position in the 30-letter Bulgarian
- *    alphabet (а б в г д е ж з и й к л м н о п р с т у ф х ц ч ш щ ъ ь ю я),
+ * 3. Bulgarian table -- OUR CHOSEN CONVENTION, not a universal standard:
+ *    each letter's position in the 30-letter Bulgarian alphabet
+ *    (а б в г д е ж з и й к л м н о п р с т у ф х ц ч ш щ ъ ь ю я),
  *    reduced on the same 1-9 cycle: value = ((position - 1) mod 9) + 1.
+ *    Other Cyrillic conventions exist (e.g. tables built for the 33-letter
+ *    Russian alphabet, or transliterating to Latin first and using the
+ *    Pythagorean table). They give different numbers for the same name, so
+ *    the UI shows a footnote naming this as our convention.
  * 4. Mixed-script names are allowed; each letter uses its own script's table.
  * 5. Vowels (soul urge): Latin a e i o u y (y is always counted as a vowel,
  *    as in the previous implementation); Bulgarian а е и о у ъ ю я.

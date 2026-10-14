@@ -149,6 +149,13 @@ export default function FreeTaste() {
                         {(sec.notes ?? []).map((n) => (
                           <p key={n} style={{ fontSize: 12, color: 'var(--tm)', marginTop: 8 }}>{n}</p>
                         ))}
+                        {sec.key === 'numerology' && (
+                          <p id="numerology-convention" style={{ fontSize: 12, color: 'var(--tm)', marginTop: 8 }}>
+                            * Latin letters use standard Pythagorean values. Bulgarian letters are scored with
+                            our chosen convention: alphabet position reduced to 1–9 (а=1 … и=9, й=1 …). Other
+                            conventions exist for Cyrillic names, and results differ between them.
+                          </p>
+                        )}
                       </div>
                     );
                   })}
