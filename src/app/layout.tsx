@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import localFont from "next/font/local";
 import "./globals.css";
+import { SITE_URL } from "@/lib/site/config";
 
 const inter = Inter({
   variable: "--font-inter",
@@ -15,7 +16,6 @@ const aclonica = localFont({
   display: "swap",
 });
 
-const SITE_URL = "https://www.soulmates.quest";
 const description =
   "A free reading from your first name and birth date: numerology, sun sign and a symbolic past-life archetype. The Soulmates Quest dating app is being prepared for a private pilot.";
 
