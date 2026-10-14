@@ -1,3 +1,10 @@
+// Expected values are worked out by hand from the published tables, not by
+// running the code:
+//   Latin (Pythagorean): a1 b2 c3 d4 e5 f6 g7 h8 i9 / j1 k2 l3 m4 n5 o6 p7 q8 r9 / s1 t2 u3 v4 w5 x6 y7 z8
+//   Bulgarian (our convention, position reduced to 1-9):
+//     а1 б2 в3 г4 д5 е6 ж7 з8 и9 / й1 к2 л3 м4 н5 о6 п7 р8 с9 / т1 у2 ф3 х4 ц5 ч6 ш7 щ8 ъ9 / ь1 ю2 я3
+//   reduce: sum digits until <= 9, stopping at 11, 22 or 33.
+// Each test comment shows the letter-by-letter sum.
 import { test } from 'node:test';
 import assert from 'node:assert/strict';
 import {
