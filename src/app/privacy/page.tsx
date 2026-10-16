@@ -45,6 +45,40 @@ export default function PrivacyDraftPage() {
       </ul>
       <p>Lawful basis: <Missing>lawful basis — to be confirmed by counsel</Missing></p>
 
+      <h2>Soulmate quiz (&quot;Are you my soulmate?&quot;)</h2>
+      <p>
+        A Soulmates Quest member can share a quiz link that asks: &quot;Are you my soulmate?&quot;. If someone sends
+        them that link and you answer it on this website (pages under <code>/quiz</code>), this is what happens.
+      </p>
+      <ul>
+        <li>
+          What we collect from you: your first name; your answers to the ten quiz questions and to any questions
+          the quiz creator wrote; your birth date, only if you choose to add it; and when you agreed to send your
+          answers and the language you used.
+        </li>
+        <li>
+          Who sees it: only the person who made the quiz. Soulmates Quest compares your answers with the
+          creator&apos;s own answers to write a reading that is shown only to the creator. If you add your birth
+          date, it is used only for the traditional signs-and-numbers part of that reading: the creator sees your
+          sign and life path number, not the date itself.
+        </li>
+        <li>Your answers are not shown to anyone else and are not used to match you with anyone.</li>
+        <li>
+          How long we keep it: until the creator deletes it, or for up to 12 months (proposed period, pending
+          review), whichever comes first.
+        </li>
+        <li>
+          Deleting your answers: after sending, you get a one-time link that deletes your answers at any time.
+          The creator can also delete them. If you answered while signed in to a Soulmates Quest account, deleting
+          that account deletes them too.
+        </li>
+        <li>
+          Abuse protection: to limit repeated or automated sending, our server keeps a rate-limit record that
+          contains only a keyed hash of your IP address, not the address itself, for 48 hours.
+        </li>
+      </ul>
+      <p>Lawful basis: <Missing>lawful basis for the quiz — to be confirmed by counsel</Missing></p>
+
       <h2>Hosting</h2>
       <p>
         The website is hosted by our hosting provider, Vercel, which may process technical request logs when you
