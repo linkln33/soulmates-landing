@@ -10,7 +10,7 @@
 - [ ] `[MISSING: contact email for privacy requests]`
 - [ ] `[MISSING: lawful basis — to be confirmed by counsel]` (free-reading processing)
 - [ ] `[MISSING: lawful basis for the quiz — to be confirmed by counsel]` (soulmate quiz answers from friends)
-- [ ] Quiz retention: 12 months is a proposed period, pending review (must match the consent text in `src/lib/quiz/messages.ts` and the API's `LEXICON_RETENTION_DAYS`)
+- [ ] Quiz retention: 12 months is a proposed period, pending review. The consent text on `/quiz` takes the months from the API (`LEXICON_RETENTION_DAYS`); the privacy page states 12 and must be updated if that changes
 - [ ] `[MISSING: hosting log retention period]` (Vercel request logs)
 - [ ] `[MISSING: email provider and retention period]` (mail sent to hello@soulmates.quest)
 - [ ] `[MISSING: applicable law, data subject rights wording and how to exercise them — to be confirmed by counsel]`

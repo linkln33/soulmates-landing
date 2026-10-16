@@ -2,7 +2,8 @@ import type { Metadata } from 'next';
 import Link from 'next/link';
 import { headers } from 'next/headers';
 import '../../quiz.css';
-import QuizShell, { QuizNotice } from '@/components/quiz/QuizShell';
+import QuizShell from '@/components/quiz/QuizShell';
+import { QuizNotice } from '@/components/quiz/QuizNotice';
 import DeleteAnswers from '@/components/quiz/DeleteAnswers';
 import { messages, resolveLang, type Lang } from '@/lib/quiz/messages';
 

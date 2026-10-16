@@ -46,3 +46,14 @@ test('messages: both languages define every key', () => {
     assert.equal(typeof value, typeof MESSAGES.en[key as keyof typeof MESSAGES.en], key);
   }
 });
+
+test('retention months: from the API days, 12 as the fallback', async () => {
+  const { retentionMonths } = await import('./messages.ts');
+  assert.equal(retentionMonths(365), 12);
+  assert.equal(retentionMonths(180), 6);
+  assert.equal(retentionMonths(730), 24);
+  assert.equal(retentionMonths(10), 1);
+  assert.equal(retentionMonths(undefined), 12);
+  assert.equal(retentionMonths('365'), 12);
+  assert.equal(retentionMonths(0), 12);
+});
