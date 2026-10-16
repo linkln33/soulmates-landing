@@ -63,10 +63,10 @@
   color-scheme: light;
 }
 
-.lexicon[data-style='mystic'] { --lx-accent-a: #a855f7; --lx-accent-b: #ff0050; --lx-accent-tint: #fbf0fa; --lx-pattern: #e2a9dc; }
-.lexicon[data-style='flame'] { --lx-accent-a: #f97316; --lx-accent-b: #ff0050; --lx-accent-tint: #fff4ec; --lx-pattern: #f6c08a; }
-.lexicon[data-style='ocean'] { --lx-accent-a: #00b8c4; --lx-accent-b: #4c9bff; --lx-accent-tint: #eef7fc; --lx-pattern: #8fcde6; }
-.lexicon[data-style='aurora'] { --lx-accent-a: #2fc48d; --lx-accent-b: #00d8da; --lx-accent-tint: #edfaf5; --lx-pattern: #88dcc0; }
+.lexicon [data-style='mystic'] { --lx-accent-a: #a855f7; --lx-accent-b: #ff0050; --lx-accent-tint: #fbf0fa; --lx-pattern: #e2a9dc; }
+.lexicon [data-style='flame'] { --lx-accent-a: #f97316; --lx-accent-b: #ff0050; --lx-accent-tint: #fff4ec; --lx-pattern: #f6c08a; }
+.lexicon [data-style='ocean'] { --lx-accent-a: #00b8c4; --lx-accent-b: #4c9bff; --lx-accent-tint: #eef7fc; --lx-pattern: #8fcde6; }
+.lexicon [data-style='aurora'] { --lx-accent-a: #2fc48d; --lx-accent-b: #00d8da; --lx-accent-tint: #edfaf5; --lx-pattern: #88dcc0; }
 
 @media (prefers-color-scheme: dark) {
   .lexicon {
@@ -92,10 +92,10 @@
     --lx-pattern: #3b3770;
     color-scheme: dark;
   }
-  .lexicon[data-style='mystic'] { --lx-accent-a: #c084fc; --lx-accent-b: #ff4d85; --lx-accent-tint: #1e1830; --lx-pattern: #6b3456; }
-  .lexicon[data-style='flame'] { --lx-accent-a: #fb923c; --lx-accent-b: #ff4d85; --lx-accent-tint: #1d1f2c; --lx-pattern: #5c4524; }
-  .lexicon[data-style='ocean'] { --lx-accent-a: #2be0e5; --lx-accent-b: #6aaeff; --lx-accent-tint: #11233a; --lx-pattern: #1f5a63; }
-  .lexicon[data-style='aurora'] { --lx-accent-a: #3dd9a0; --lx-accent-b: #2be0e5; --lx-accent-tint: #132a28; --lx-pattern: #1f5a4d; }
+  .lexicon [data-style='mystic'] { --lx-accent-a: #c084fc; --lx-accent-b: #ff4d85; --lx-accent-tint: #1e1830; --lx-pattern: #6b3456; }
+  .lexicon [data-style='flame'] { --lx-accent-a: #fb923c; --lx-accent-b: #ff4d85; --lx-accent-tint: #1d1f2c; --lx-pattern: #5c4524; }
+  .lexicon [data-style='ocean'] { --lx-accent-a: #2be0e5; --lx-accent-b: #6aaeff; --lx-accent-tint: #11233a; --lx-pattern: #1f5a63; }
+  .lexicon [data-style='aurora'] { --lx-accent-a: #3dd9a0; --lx-accent-b: #2be0e5; --lx-accent-tint: #132a28; --lx-pattern: #1f5a4d; }
 }
 
 /* The site's body is dark; match the quiz background behind overscroll. */
@@ -499,4 +499,28 @@ body:has(> .lexicon) { background-color: #ffffff; }
   min-height: var(--lx-touch);
   font-weight: 600;
   text-underline-offset: 3px;
+}
+
+/* ── Loading ─────────────────────────────────────────── */
+
+.lx-loading {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: var(--lx-s-sm);
+  min-height: 240px;
+  color: var(--lx-text-muted);
+  font-weight: 600;
+}
+.lx-spinner {
+  width: 22px;
+  height: 22px;
+  border-radius: 50%;
+  border: 3px solid var(--lx-track);
+  border-top-color: var(--lx-primary);
+  animation: lx-spin 0.8s linear infinite;
+}
+@keyframes lx-spin { to { transform: rotate(360deg); } }
+@media (prefers-reduced-motion: reduce) {
+  .lx-spinner { animation-duration: 2.4s; }
 }

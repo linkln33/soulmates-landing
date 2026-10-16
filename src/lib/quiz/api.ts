@@ -63,7 +63,10 @@ function isPublicQuiz(body: unknown): body is PublicQuiz {
   );
 }
 
-/** Server-side load of a quiz for rendering (never cached). */
+/**
+ * Browser: load a quiz. Called from the visitor's browser (never the website
+ * server) so the API rate-limits each visitor by their own IP.
+ */
 export async function loadQuiz(code: string): Promise<QuizLoad> {
   if (!QUIZ_CODE_RE.test(code)) return { status: 'not_found' };
   try {

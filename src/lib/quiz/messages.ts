@@ -7,8 +7,14 @@
 export type Lang = 'en' | 'bg';
 export const LANGS: readonly Lang[] = ['en', 'bg'];
 
-/** Retention shown in the consent text. Proposed period, pending review. */
-export const RETENTION_MONTHS = 12;
+/** Retention months shown when the API does not send `consent.retentionDays`. */
+export const FALLBACK_RETENTION_MONTHS = 12;
+
+/** Months for the consent text, from the API's retention in days. */
+export function retentionMonths(days: unknown): number {
+  if (typeof days !== 'number' || !Number.isFinite(days) || days <= 0) return FALLBACK_RETENTION_MONTHS;
+  return Math.max(1, Math.round(days / 30.4));
+}
 
 const en = {
   langSwitchLabel: 'Language',
@@ -17,9 +23,8 @@ const en = {
   homeLink: 'Soulmates Quest home page',
   privacy: 'Privacy',
 
-  metaTitle: (name: string) => `${name} asks: Are you my soulmate?`,
-  metaDescription: (name: string) => `Answer a few questions for ${name}.`,
-  metaNotFound: 'Quiz not found — Soulmates Quest',
+  metaTitle: 'Are you my soulmate?',
+  metaDescription: 'Answer a few questions for the friend who sent you this link.',
   metaDelete: 'Delete your answers — Soulmates Quest',
 
   cardEyebrow: (name: string) => `From ${name}`,
@@ -30,6 +35,7 @@ const en = {
   dataNote: (name: string) => `Your answers go only to ${name}.`,
   dataMore: 'How your answers are used',
   start: 'Start',
+  loading: 'Loading the quiz…',
 
   back: 'Back',
   next: 'Next',
@@ -123,9 +129,8 @@ const bg: Messages = {
   homeLink: 'Начална страница на Soulmates Quest',
   privacy: 'Поверителност',
 
-  metaTitle: (name) => `${name} пита: Ти ли си моята сродна душа?`,
-  metaDescription: (name) => `Отговори на няколко въпроса за ${name}.`,
-  metaNotFound: 'Тестът не е намерен — Soulmates Quest',
+  metaTitle: 'Ти ли си моята сродна душа?',
+  metaDescription: 'Отговори на няколко въпроса за приятеля, който ти е изпратил тази връзка.',
   metaDelete: 'Изтрий отговорите си — Soulmates Quest',
 
   cardEyebrow: (name) => `От ${name}`,
@@ -136,6 +141,7 @@ const bg: Messages = {
   dataNote: (name) => `Отговорите ти отиват само при ${name}.`,
   dataMore: 'Как се използват отговорите ти',
   start: 'Започни',
+  loading: 'Тестът се зарежда…',
 
   back: 'Назад',
   next: 'Напред',

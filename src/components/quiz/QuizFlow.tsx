@@ -5,7 +5,7 @@ import Link from 'next/link';
 import { submitAnswers, type PublicQuiz, type QuizQuestion, type SubmitOutcome } from '@/lib/quiz/api';
 import { checkBirthDate, type BirthDateParts } from '@/lib/quiz/birthDate';
 import { todayInSofia } from '@/lib/blueprint/dates';
-import { messages, RETENTION_MONTHS, type Lang, type Messages } from '@/lib/quiz/messages';
+import { messages, retentionMonths, type Lang, type Messages } from '@/lib/quiz/messages';
 import CardPattern from './CardPattern';
 
 const NAME_MIN = 2;
@@ -56,6 +56,7 @@ export default function QuizFlow({ code, data, lang }: { code: string; data: Pub
   const creator = data.quiz.creatorName;
   const questions = data.questions.questions;
   const custom = data.customQuestions;
+  const months = retentionMonths(data.consent.retentionDays);
 
   const steps = useMemo<Step[]>(
     () => [
@@ -253,7 +254,7 @@ export default function QuizFlow({ code, data, lang }: { code: string; data: Pub
           <p className="lx-note">{m.dataNote(creator)}</p>
           <details className="lx-details">
             <summary>{m.dataMore}</summary>
-            <p>{m.consentText(creator, RETENTION_MONTHS)}</p>
+            <p>{m.consentText(creator, months)}</p>
           </details>
           <div className="lx-actions">
             <button type="button" className="lx-btn lx-btn-primary" onClick={next}>{m.start}</button>
@@ -417,7 +418,7 @@ export default function QuizFlow({ code, data, lang }: { code: string; data: Pub
       body = (
         <form onSubmit={send} noValidate>
           <h1 ref={headingRef} tabIndex={-1} className="lx-title">{m.consentTitle}</h1>
-          <p className="lx-consent" id="lx-consent-text">{m.consentText(creator, RETENTION_MONTHS)}</p>
+          <p className="lx-consent" id="lx-consent-text">{m.consentText(creator, months)}</p>
           <label className="lx-check">
             <input
               type="checkbox"

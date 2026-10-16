@@ -1,8 +1,6 @@
 import type { ReactNode } from 'react';
 import Link from 'next/link';
-import type { CardStyle } from '@/lib/quiz/api';
 import { LANGS, messages, type Lang } from '@/lib/quiz/messages';
-import CardPattern from './CardPattern';
 
 /** EN | БГ switcher. Keeps the current path and the given query parameters. */
 function LangSwitch({ lang, path, query }: { lang: Lang; path: string; query: Record<string, string> }) {
@@ -35,18 +33,16 @@ export default function QuizShell({
   lang,
   path,
   query = {},
-  cardStyle = 'cosmic',
   children,
 }: {
   lang: Lang;
   path: string;
   query?: Record<string, string>;
-  cardStyle?: CardStyle;
   children: ReactNode;
 }) {
   const m = messages(lang);
   return (
-    <div className="lexicon" data-style={cardStyle} lang={lang}>
+    <div className="lexicon" lang={lang}>
       <header className="lx-top">
         <Link href="/" className="lx-brand" aria-label={m.homeLink}>
           {/* eslint-disable-next-line @next/next/no-img-element */}
@@ -60,29 +56,5 @@ export default function QuizShell({
         <Link href="/privacy">{m.privacy}</Link>
       </footer>
     </div>
-  );
-}
-
-/** A simple card with a heading and text, for not-found / paused / error states. */
-export function QuizNotice({
-  title,
-  children,
-  eyebrow,
-}: {
-  title: string;
-  children: ReactNode;
-  eyebrow?: string;
-}) {
-  return (
-    <section className="lx-card" aria-labelledby="lx-notice-title">
-      <div className="lx-card-head">
-        <span className="lx-eyebrow">{eyebrow ?? ''}</span>
-        <CardPattern />
-      </div>
-      <div className="lx-card-body">
-        <h1 id="lx-notice-title" className="lx-title">{title}</h1>
-        {children}
-      </div>
-    </section>
   );
 }
