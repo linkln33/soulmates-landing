@@ -1,0 +1,88 @@
+import type { ReactNode } from 'react';
+import Link from 'next/link';
+import type { CardStyle } from '@/lib/quiz/api';
+import { LANGS, messages, type Lang } from '@/lib/quiz/messages';
+import CardPattern from './CardPattern';
+
+/** EN | БГ switcher. Keeps the current path and the given query parameters. */
+function LangSwitch({ lang, path, query }: { lang: Lang; path: string; query: Record<string, string> }) {
+  const m = messages(lang);
+  return (
+    <nav className="lx-lang" aria-label={m.langSwitchLabel}>
+      {LANGS.map((l, i) => {
+        const params = new URLSearchParams({ ...query, lang: l });
+        return (
+          <span key={l} className="lx-lang-item">
+            {i > 0 && <span className="lx-lang-sep" aria-hidden="true">|</span>}
+            {l === lang ? (
+              <span className="lx-lang-current" aria-current="true" lang={l} title={m.langFull[l]}>
+                {m.langShort[l]}
+              </span>
+            ) : (
+              <Link href={`${path}?${params.toString()}`} replace scroll={false} lang={l} hrefLang={l} title={m.langFull[l]}>
+                {m.langShort[l]}
+              </Link>
+            )}
+          </span>
+        );
+      })}
+    </nav>
+  );
+}
+
+/** Page frame for the quiz pages: scoped theme root, header with switcher, footer. */
+export default function QuizShell({
+  lang,
+  path,
+  query = {},
+  cardStyle = 'cosmic',
+  children,
+}: {
+  lang: Lang;
+  path: string;
+  query?: Record<string, string>;
+  cardStyle?: CardStyle;
+  children: ReactNode;
+}) {
+  const m = messages(lang);
+  return (
+    <div className="lexicon" data-style={cardStyle} lang={lang}>
+      <header className="lx-top">
+        <Link href="/" className="lx-brand" aria-label={m.homeLink}>
+          {/* eslint-disable-next-line @next/next/no-img-element */}
+          <img src="/logo.png" alt="" width={32} height={32} />
+          <span>Soulmates Quest</span>
+        </Link>
+        <LangSwitch lang={lang} path={path} query={query} />
+      </header>
+      <main className="lx-main">{children}</main>
+      <footer className="lx-foot">
+        <Link href="/privacy">{m.privacy}</Link>
+      </footer>
+    </div>
+  );
+}
+
+/** A simple card with a heading and text, for not-found / paused / error states. */
+export function QuizNotice({
+  title,
+  children,
+  eyebrow,
+}: {
+  title: string;
+  children: ReactNode;
+  eyebrow?: string;
+}) {
+  return (
+    <section className="lx-card" aria-labelledby="lx-notice-title">
+      <div className="lx-card-head">
+        <span className="lx-eyebrow">{eyebrow ?? ''}</span>
+        <CardPattern />
+      </div>
+      <div className="lx-card-body">
+        <h1 id="lx-notice-title" className="lx-title">{title}</h1>
+        {children}
+      </div>
+    </section>
+  );
+}
