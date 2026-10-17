@@ -3,8 +3,10 @@
  * browser/server calls used by /quiz/[code] and /quiz/answer/delete.
  */
 
-/** API base, without a trailing slash. */
-export const API = (process.env.NEXT_PUBLIC_API_URL ?? 'https://soul-mates-backend.vercel.app/api').replace(/\/+$/, '');
+import { API_BASE } from '../site/config.ts';
+
+/** API base, without a trailing slash (configured in src/lib/site/config.ts). */
+export const API = API_BASE;
 
 /** Quiz codes the API accepts; anything else is a 404 without a request. */
 export const QUIZ_CODE_RE = /^[A-Za-z0-9_-]{4,32}$/;

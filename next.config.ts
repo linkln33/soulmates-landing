@@ -1,4 +1,14 @@
 import type { NextConfig } from "next";
+import { CANONICAL_API_URL } from "./src/lib/site/config.ts";
+
+// The API base is configured explicitly, never by an implicit default.
+const apiUrl = (process.env.NEXT_PUBLIC_API_URL ?? "").replace(/\/+$/, "");
+if (!/^https?:\/\/[^/]+\/api$/.test(apiUrl)) {
+  throw new Error("NEXT_PUBLIC_API_URL must be set to the API base, e.g. " + CANONICAL_API_URL);
+}
+if (process.env.VERCEL_ENV === "production" && apiUrl !== CANONICAL_API_URL) {
+  throw new Error(`Production builds must use the canonical API ${CANONICAL_API_URL}, not ${apiUrl}`);
+}
 
 const nextConfig: NextConfig = {
   async headers() {
