@@ -1,6 +1,7 @@
 import type { Metadata, Viewport } from 'next';
 import { notFound } from 'next/navigation';
 import { Inter } from 'next/font/google';
+import { Analytics } from '@vercel/analytics/next';
 import '../../globals.css';
 import { LOCALES, isLocale } from '@/i18n/config';
 import { site } from '@/i18n';
@@ -50,6 +51,7 @@ export default async function PortalLayout({ children, params }: LayoutProps<'/[
         <SiteHeader lang={lang} />
         <main id="main">{children}</main>
         <SiteFooter lang={lang} />
+        <Analytics />
       </body>
     </html>
   );

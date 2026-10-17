@@ -5,6 +5,7 @@
  */
 import type { Metadata, Viewport } from 'next';
 import { Inter } from 'next/font/google';
+import { Analytics } from '@vercel/analytics/next';
 import '../globals.css';
 import { SITE_URL } from '@/lib/site/config';
 import { TOKENS_CSS } from '@/lib/design/tokens';
@@ -34,7 +35,10 @@ export default function StandaloneLayout({ children }: { children: React.ReactNo
         <script dangerouslySetInnerHTML={{ __html: THEME_SCRIPT }} />
         <style dangerouslySetInnerHTML={{ __html: TOKENS_CSS }} />
       </head>
-      <body className={inter.variable}>{children}</body>
+      <body className={inter.variable}>
+        {children}
+        <Analytics />
+      </body>
     </html>
   );
 }
