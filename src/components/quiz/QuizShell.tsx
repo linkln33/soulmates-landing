@@ -53,7 +53,7 @@ export default function QuizShell({
       </header>
       <main className="lx-main">{children}</main>
       <footer className="lx-foot">
-        <Link href="/privacy">{m.privacy}</Link>
+        <Link href="/">{m.homeLink}</Link>
       </footer>
     </div>
   );

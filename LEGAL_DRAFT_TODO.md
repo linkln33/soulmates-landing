@@ -1,6 +1,6 @@
 # Legal drafts: open items
 
-`/privacy` and `/terms` are **drafts**. Each one shows a "Draft — not yet in effect" banner, is set to `noindex`, and is left out of the sitemap. Before either page can take effect, every placeholder below needs a reviewed answer, and the banner and the `robots: { index: false }` metadata have to be removed. Planning reference: decision D-L1 in `SoulMates-Quest-mobile/docs/IMPLEMENTATION_PLAN.md`.
+`/privacy` and `/terms` are **drafts and are not published**: they return 404 unless the site is built with `LEGAL_DRAFTS=show` (local review only; `legalDraftsShown()` in `src/components/site/LegalDraft.tsx`), and nothing links to them. When shown, each one shows a "Draft — not yet in effect" banner, is set to `noindex`, and is left out of the sitemap. Before either page can take effect, every placeholder below needs a reviewed answer, and the banner and the `robots: { index: false }` metadata have to be removed. Planning reference: decision D-L1 in `SoulMates-Quest-mobile/docs/IMPLEMENTATION_PLAN.md`.
 
 ## Privacy (`src/app/privacy/page.tsx`)
 

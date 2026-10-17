@@ -1,6 +1,7 @@
 import type { Metadata } from 'next';
 import Link from 'next/link';
-import LegalDraft, { Missing } from '@/components/site/LegalDraft';
+import { notFound } from 'next/navigation';
+import LegalDraft, { Missing, legalDraftsShown } from '@/components/site/LegalDraft';
 import { CONTACT_EMAIL } from '@/lib/site/config';
 
 export const metadata: Metadata = {
@@ -11,6 +12,7 @@ export const metadata: Metadata = {
 };
 
 export default function PrivacyDraftPage() {
+  if (!legalDraftsShown()) notFound();
   return (
     <LegalDraft title="Privacy notice (draft)">
       <p>

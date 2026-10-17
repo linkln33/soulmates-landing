@@ -27,8 +27,6 @@ const en = {
     tagline: 'Free readings for reflection. Real people when the time is right.',
     tools: 'Free tools',
     about: 'About',
-    privacy: 'Privacy (draft)',
-    terms: 'Terms (draft)',
     contact: 'Contact',
     note: 'Readings follow traditional astrology, tarot and numerology. They are for reflection, not prediction.',
   },
@@ -203,7 +201,7 @@ const en = {
       { title: 'Use the free readings', body: 'Everything on this website stays free and complete, with or without an account.' },
       { title: 'Create your account in the app', body: 'You sign in with Google or with an email and password. Your readings start with your birth date.' },
       { title: 'A balance check', body: 'To keep the community balanced, the app admits women and men so that each stays between 48% and 52% of the members being introduced.' },
-      { title: 'Admitted, or waiting', body: 'If there is room, you’re in. If not, you wait and the app lets you know when you’re admitted. Your readings stay available while you wait.' },
+      { title: 'Admitted, or waiting', body: 'If there is room, you’re in. If not, you wait, and the app shows your status until you’re admitted. Your readings stay available while you wait.' },
     ],
     profileTitle: 'Your profile grows gradually',
     profile:
