@@ -1,6 +1,7 @@
 import type { Metadata } from 'next';
 import Link from 'next/link';
-import LegalDraft, { Missing } from '@/components/site/LegalDraft';
+import { notFound } from 'next/navigation';
+import LegalDraft, { Missing, legalDraftsShown } from '@/components/site/LegalDraft';
 
 export const metadata: Metadata = {
   title: 'Terms (draft) — Soulmates Quest',
@@ -10,6 +11,7 @@ export const metadata: Metadata = {
 };
 
 export default function TermsDraftPage() {
+  if (!legalDraftsShown()) notFound();
   return (
     <LegalDraft title="Terms of use (draft)">
       <p>These draft terms would apply to the Soulmates Quest website at www.soulmates.quest.</p>

@@ -66,8 +66,6 @@ export function SiteFooter({ lang }: { lang: Locale }) {
             <h2>{t.footer.about}</h2>
             <ul>
               <li><Link href={`/${lang}/app`}>{t.nav.app}</Link></li>
-              <li><Link href="/privacy">{t.footer.privacy}</Link></li>
-              <li><Link href="/terms">{t.footer.terms}</Link></li>
               <li><a href={`mailto:${CONTACT_EMAIL}`}>{CONTACT_EMAIL}</a></li>
             </ul>
           </div>

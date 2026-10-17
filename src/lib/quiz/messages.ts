@@ -21,7 +21,6 @@ const en = {
   langShort: { en: 'EN', bg: 'БГ' } as Record<Lang, string>,
   langFull: { en: 'English', bg: 'Български' } as Record<Lang, string>,
   homeLink: 'Soulmates Quest home page',
-  privacy: 'Privacy',
 
   metaTitle: 'Are you my soulmate?',
   metaDescription: 'Answer a few questions for the friend who sent you this link.',
@@ -127,7 +126,6 @@ const bg: Messages = {
   langShort: { en: 'EN', bg: 'БГ' },
   langFull: { en: 'English', bg: 'Български' },
   homeLink: 'Начална страница на Soulmates Quest',
-  privacy: 'Поверителност',
 
   metaTitle: 'Ти ли си моята сродна душа?',
   metaDescription: 'Отговори на няколко въпроса за приятеля, който ти е изпратил тази връзка.',
