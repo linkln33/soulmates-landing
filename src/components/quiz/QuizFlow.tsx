@@ -45,6 +45,7 @@ function outcomeMessage(outcome: Exclude<SubmitOutcome, { kind: 'sent' }>, m: Me
     case 'invalid': return m.errCheck;
     case 'full': return m.errFull;
     case 'paused': return m.errPaused;
+    case 'answers_paused': return m.errAnswersPaused;
     case 'not_found': return m.errNotFound;
     case 'rate_limited': return m.errRate;
     case 'error': return outcome.network ? m.errNetwork : m.errGeneric;

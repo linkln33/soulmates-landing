@@ -1,6 +1,6 @@
 'use client';
 
-import { useCallback, useEffect, useState } from 'react';
+import { useEffect, useState } from 'react';
 import Link from 'next/link';
 import { cardStyleOf, loadQuiz, type QuizLoad } from '@/lib/quiz/api';
 import { messages, type Lang } from '@/lib/quiz/messages';
@@ -15,9 +15,9 @@ export default function QuizLoader({ code, lang }: { code: string; lang: Lang })
   const m = messages(lang);
   const [load, setLoad] = useState<QuizLoad | null>(null);
 
-  const fetchQuiz = useCallback(async () => {
+  async function fetchQuiz() {
     setLoad(await loadQuiz(code));
-  }, [code]);
+  }
 
   useEffect(() => {
     let active = true;
@@ -35,6 +35,17 @@ export default function QuizLoader({ code, lang }: { code: string; lang: Lang })
         <span className="lx-spinner" aria-hidden="true" />
         <span>{m.loading}</span>
       </div>
+    );
+  }
+
+  if (load.status === 'ok' && load.data.acceptingAnswers === false) {
+    return (
+      <QuizNotice title={m.answersPausedTitle}>
+        <p className="lx-lead">{m.answersPausedText(load.data.quiz.creatorName)}</p>
+        <div className="lx-actions lx-actions-stack">
+          <Link href="/" className="lx-btn lx-btn-primary">{m.goHome}</Link>
+        </div>
+      </QuizNotice>
     );
   }
 

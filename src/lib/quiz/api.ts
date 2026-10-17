@@ -44,6 +44,8 @@ export interface PublicQuiz {
   questions: { version?: string; questions: QuizQuestion[] };
   customQuestions: CustomQuestion[];
   consent: { version: string; retentionDays?: number };
+  /** False while new public answers are paused (backend LEXICON_PUBLIC_SUBMISSIONS). */
+  acceptingAnswers?: boolean;
 }
 
 export type QuizLoad =
@@ -103,6 +105,7 @@ export type SubmitOutcome =
   | { kind: 'invalid' }
   | { kind: 'full' }
   | { kind: 'paused' }
+  | { kind: 'answers_paused' }
   | { kind: 'not_found' }
   | { kind: 'rate_limited' }
   | { kind: 'error'; correlationId: string | null; network: boolean };
@@ -145,7 +148,11 @@ export async function submitAnswers(code: string, payload: SubmitBody): Promise<
   }
   if (res.status === 400) return { kind: 'invalid' };
   if (res.status === 404) return { kind: 'not_found' };
-  if (res.status === 410) return body?.error === 'quiz_full' ? { kind: 'full' } : { kind: 'paused' };
+  if (res.status === 410) {
+    if (body?.error === 'quiz_full') return { kind: 'full' };
+    if (body?.error === 'submissions_paused') return { kind: 'answers_paused' };
+    return { kind: 'paused' };
+  }
   if (res.status === 429) return { kind: 'rate_limited' };
   return { kind: 'error', correlationId: correlationIdOf(body), network: false };
 }
