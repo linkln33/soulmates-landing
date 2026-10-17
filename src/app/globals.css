@@ -96,6 +96,23 @@ main { display: block; }
 .site-footer a:hover { color: var(--text); text-decoration: underline; }
 .site-footer .note { margin-top: 28px; padding-top: 20px; border-top: 1px solid var(--border); }
 
+/* Language menu (same pattern as PrintVes / Creator OS). */
+.locale-switcher { position: relative; }
+.locale-trigger { height: 30px; display: flex; align-items: center; gap: 4px; padding-inline: 9px; border: 1px solid var(--border); border-radius: 999px; background: var(--surface); cursor: pointer; font-size: 11px; font-weight: 800; letter-spacing: .06em; color: var(--text-muted); }
+.locale-trigger:hover { color: var(--primary); }
+.locale-trigger svg { width: 13px; height: 13px; }
+.locale-chevron { width: 11px !important; height: 11px !important; transition: transform .15s ease; }
+.locale-trigger[aria-expanded='true'] .locale-chevron { transform: rotate(180deg); }
+.locale-menu { position: absolute; z-index: 60; top: calc(100% + 8px); right: 0; min-width: 180px; padding: 6px; border: 1px solid var(--border); border-radius: var(--r-md); background: var(--surface); box-shadow: 0 12px 30px rgba(15, 26, 46, .14); }
+.locale-menu a { display: flex; align-items: center; justify-content: space-between; gap: 12px; padding: 9px 11px; border-radius: var(--r-sm); text-decoration: none; font-size: 14px; font-weight: 600; color: var(--text); white-space: nowrap; }
+.locale-menu a:hover { background: var(--surface-muted); color: var(--primary); }
+.locale-menu a.is-current { color: var(--primary); }
+.locale-menu a svg { width: 15px; height: 15px; flex: none; }
+.locale-name { display: flex; align-items: center; gap: 10px; }
+.locale-code { width: 22px; font-size: 11px; font-weight: 800; color: var(--text-subtle); }
+.locale-menu a.is-current .locale-code { color: inherit; }
+@media (prefers-reduced-motion: reduce) { .locale-chevron { transition: none; } }
+
 /* ── Buttons and fields ─────────────────────────────────── */
 
 .btn { display: inline-flex; align-items: center; justify-content: center; gap: 8px; min-height: 48px; padding: 0 22px; border-radius: var(--r-pill); border: 1px solid transparent; font-weight: 600; font-size: 16px; text-decoration: none; cursor: pointer; transition: background .15s ease, transform .15s ease; }
