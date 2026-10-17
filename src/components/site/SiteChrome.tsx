@@ -3,7 +3,7 @@ import Link from 'next/link';
 import type { Locale } from '@/i18n/config';
 import { site } from '@/i18n';
 import { CONTACT_EMAIL } from '@/lib/site/config';
-import { LangSwitch, NavLinks, ThemeSwitch, type NavItem } from './HeaderControls';
+import { LangSwitch, NavLinks, type NavItem } from './HeaderControls';
 
 function navItems(lang: Locale): NavItem[] {
   const t = site(lang).nav;
@@ -31,7 +31,6 @@ export function SiteHeader({ lang }: { lang: Locale }) {
         <NavLinks items={items} lang={lang} className="site-nav" label={t.nav.label} />
         <div className="header-tools">
           <LangSwitch lang={lang} label={t.language} />
-          <ThemeSwitch labels={t.theme} />
         </div>
       </div>
       <NavLinks items={items} lang={lang} className="mobile-nav" label={t.nav.menu} />

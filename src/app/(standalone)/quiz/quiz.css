@@ -68,9 +68,9 @@
 .lexicon [data-style='ocean'] { --lx-accent-a: #00b8c4; --lx-accent-b: #4c9bff; --lx-accent-tint: #eef7fc; --lx-pattern: #8fcde6; }
 .lexicon [data-style='aurora'] { --lx-accent-a: #2fc48d; --lx-accent-b: #00d8da; --lx-accent-tint: #edfaf5; --lx-pattern: #88dcc0; }
 
-/* Dark: the saved choice (sq.theme → <html data-theme>) wins; otherwise the system setting. */
+/* Dark: <html data-theme> from the local time (src/lib/design/tokens.ts); the system setting only without JavaScript. */
 @media (prefers-color-scheme: dark) {
-  :root:not([data-theme='light']) .lexicon {
+  :root:not([data-theme]) .lexicon {
     --lx-bg: #0b1426;
     --lx-surface: #131f36;
     --lx-surface-muted: #1a2742;
@@ -93,10 +93,10 @@
     --lx-pattern: #3b3770;
     color-scheme: dark;
   }
-  :root:not([data-theme='light']) .lexicon [data-style='mystic'] { --lx-accent-a: #c084fc; --lx-accent-b: #ff4d85; --lx-accent-tint: #1e1830; --lx-pattern: #6b3456; }
-  :root:not([data-theme='light']) .lexicon [data-style='flame'] { --lx-accent-a: #fb923c; --lx-accent-b: #ff4d85; --lx-accent-tint: #1d1f2c; --lx-pattern: #5c4524; }
-  :root:not([data-theme='light']) .lexicon [data-style='ocean'] { --lx-accent-a: #2be0e5; --lx-accent-b: #6aaeff; --lx-accent-tint: #11233a; --lx-pattern: #1f5a63; }
-  :root:not([data-theme='light']) .lexicon [data-style='aurora'] { --lx-accent-a: #3dd9a0; --lx-accent-b: #2be0e5; --lx-accent-tint: #132a28; --lx-pattern: #1f5a4d; }
+  :root:not([data-theme]) .lexicon [data-style='mystic'] { --lx-accent-a: #c084fc; --lx-accent-b: #ff4d85; --lx-accent-tint: #1e1830; --lx-pattern: #6b3456; }
+  :root:not([data-theme]) .lexicon [data-style='flame'] { --lx-accent-a: #fb923c; --lx-accent-b: #ff4d85; --lx-accent-tint: #1d1f2c; --lx-pattern: #5c4524; }
+  :root:not([data-theme]) .lexicon [data-style='ocean'] { --lx-accent-a: #2be0e5; --lx-accent-b: #6aaeff; --lx-accent-tint: #11233a; --lx-pattern: #1f5a63; }
+  :root:not([data-theme]) .lexicon [data-style='aurora'] { --lx-accent-a: #3dd9a0; --lx-accent-b: #2be0e5; --lx-accent-tint: #132a28; --lx-pattern: #1f5a4d; }
 }
 
 :root[data-theme='dark'] .lexicon {

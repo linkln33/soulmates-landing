@@ -16,12 +16,6 @@ const en = {
     app: 'The app',
     menu: 'Menu',
   },
-  theme: {
-    label: 'Appearance',
-    system: 'System',
-    light: 'Light',
-    dark: 'Dark',
-  },
   language: 'Language',
   footer: {
     tagline: 'Free readings for reflection. Real people when the time is right.',

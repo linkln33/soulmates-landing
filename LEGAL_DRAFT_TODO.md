@@ -35,5 +35,5 @@
 - Horoscope and Moon requests send only a sign and a time zone. Numbers sends the birth date and time zone in the request body (never the URL). The API doesn't store or log them.
 - Tarot card of the day sends a random browser identifier (kept in local storage) and the time zone. The API doesn't store the identifier. Draws send only the number of cards; the question stays in the browser.
 - The API's rate limits store a keyed hash of the IP address for 48 hours (`RateLimitEvent`).
-- Local storage keys: `sq.visitor`, `sq.tarot.daily`, `sq.tarot.draw.1`, `sq.tarot.draw.3`, `sq.theme` (`src/lib/readings/local.ts`). No cookies, analytics, advertising or tracking scripts. Fonts are self-hosted by `next/font`.
+- Local storage keys: `sq.visitor`, `sq.tarot.daily`, `sq.tarot.draw.1`, `sq.tarot.draw.3` (`src/lib/readings/local.ts`). No cookies, analytics, advertising or tracking scripts. Fonts are self-hosted by `next/font`.
 - The site and the API are hosted on Vercel.

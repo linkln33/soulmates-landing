@@ -65,8 +65,7 @@ export default function PrivacyDraftPage() {
       <h2>What is kept in your browser</h2>
       <p>
         The website uses your browser&apos;s local storage (not cookies) for: the random tarot identifier, today&apos;s
-        tarot card and your last tarot draw with its question (so a refresh does not draw again), and your
-        light or dark theme choice. It stays on your device; clearing this site&apos;s data removes it. Your birth date
+        tarot card and your last tarot draw with its question (so a refresh does not draw again). It stays on your device; clearing this site&apos;s data removes it. Your birth date
         is not kept in the browser.
       </p>
 
