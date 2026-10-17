@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 120">
+  <defs>
+    <linearGradient id="f1" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#E6D7FF"/><stop offset="1" stop-color="#B79CF3"/></linearGradient>
+    <linearGradient id="f2" x1="1" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#B79CF3"/><stop offset="1" stop-color="#7E68D4"/></linearGradient>
+  </defs>
+  <path d="M62 10 L78 38 L72 100 L52 100 L46 38 Z" fill="url(#f1)"/>
+  <path d="M62 10 L78 38 L72 100 L62 100 Z" fill="url(#f2)"/>
+  <path d="M36 44 L48 64 L46 102 L30 102 L26 64 Z" fill="url(#f1)" opacity=".95"/>
+  <path d="M36 44 L48 64 L46 102 L37 102 Z" fill="url(#f2)" opacity=".95"/>
+  <path d="M90 52 L101 70 L98 102 L84 102 L80 70 Z" fill="url(#f1)" opacity=".9"/>
+  <path d="M90 52 L101 70 L98 102 L90 102 Z" fill="url(#f2)" opacity=".9"/>
+  <path d="M20 104 H104" stroke="#7E68D4" stroke-opacity=".35" stroke-width="3" stroke-linecap="round"/>
+  <g fill="#B79CF3"><path d="M18 30 l1.6 4.4 4.4 1.6 -4.4 1.6 -1.6 4.4 -1.6 -4.4 -4.4 -1.6 4.4 -1.6 Z"/><path d="M104 22 l1.2 3.3 3.3 1.2 -3.3 1.2 -1.2 3.3 -1.2 -3.3 -3.3 -1.2 3.3 -1.2 Z"/></g>
+</svg>

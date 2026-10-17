@@ -1,0 +1,2732 @@
+{
+ "fool": {
+  "index": 0,
+  "group": "major",
+  "number": 0,
+  "en": {
+   "name": "The Fool",
+   "keywords": [
+    "new beginnings",
+    "spontaneity",
+    "trust",
+    "freedom"
+   ],
+   "imagery": "A young traveller in bright clothes steps toward the edge of a cliff, a white rose in one hand and a small bundle on a staff, while a little white dog leaps at their heels under a yellow sky.",
+   "upright": "The Fool is the beginning of a journey, taken with an open heart and very little luggage. It invites you to trust curiosity over certainty and to say yes to something new. There is wisdom in not knowing everything yet – just keep one eye on the ground beneath your feet.",
+   "reversed": "Reversed, the Fool can point to carelessness or to a restlessness that keeps you from landing anywhere. You may be leaping without looking, or holding back so tightly that nothing begins at all. Ask whether you need more grounding, or simply the courage to take the first step.",
+   "love": "In love, the Fool favours openness and playfulness: meeting someone without a script, or bringing a sense of adventure back into a bond you already share.",
+   "work": "At work, it marks a fresh start, an unusual idea or a path no one has mapped for you yet.",
+   "advice": "Take one small step toward something that makes you curious."
+  },
+  "bg": {
+   "name": "Глупакът",
+   "keywords": [
+    "ново начало",
+    "спонтанност",
+    "доверие",
+    "свобода"
+   ],
+   "imagery": "Млад пътник в пъстри дрехи пристъпва към ръба на скала, с бяла роза в едната ръка и вързопче на тояга, а малко бяло куче подскача край краката му под жълто небе.",
+   "upright": "Глупакът е началото на едно пътуване – с отворено сърце и почти без багаж. Той те кани да се довериш на любопитството повече, отколкото на сигурността, и да кажеш „да“ на нещо ново. Има мъдрост в това да не знаеш още всичко – само не забравяй да гледаш и къде стъпваш.",
+   "reversed": "Обърнат, Глупакът може да говори за небрежност или за неспокойство, което не ти позволява да се спреш никъде. Възможно е да скачаш, без да погледнеш, или пък да се държиш толкова здраво, че нищо да не започва. Запитай се дали ти трябва повече опора, или просто смелост за първата крачка.",
+   "love": "В любовта Глупакът насърчава откритост и игривост – среща без сценарий или повече приключенски дух във връзка, която вече имаш.",
+   "work": "В работата той бележи ново начало, необичайна идея или път, който никой не е начертал преди теб.",
+   "advice": "Направи една малка крачка към нещо, което буди любопитството ти."
+  }
+ },
+ "magician": {
+  "index": 1,
+  "group": "major",
+  "number": 1,
+  "en": {
+   "name": "The Magician",
+   "keywords": [
+    "willpower",
+    "skill",
+    "focus",
+    "manifestation"
+   ],
+   "imagery": "A figure in a white tunic and red robe raises a wand toward the sky and points the other hand to the earth, with a cup, a sword, a coin and a staff on the table before them and an infinity sign above their head, among roses and lilies.",
+   "upright": "The Magician reminds you that you already hold the tools you need. Skill, clear intention and steady attention can turn an idea into something real. This is a card of confident action – of knowing what you want and gathering your resources to give it shape.",
+   "reversed": "Reversed, the Magician can suggest scattered energy, self-doubt or talents left unused. It may also point to words that sound good but lack substance, in yourself or in others. Pause, check your intentions, and reconnect with what you truly want before you act.",
+   "love": "In love, it encourages you to express your feelings clearly and to take an active part in shaping the connection you hope for.",
+   "work": "At work, it highlights initiative, communication and the ability to bring your abilities together in one focused effort.",
+   "advice": "Name one thing you want and one tool you already have to begin."
+  },
+  "bg": {
+   "name": "Магьосникът",
+   "keywords": [
+    "воля",
+    "умение",
+    "фокус",
+    "сътворяване"
+   ],
+   "imagery": "Фигура в бяла туника и червена мантия вдига жезъл към небето, а с другата ръка сочи земята; пред нея на масата лежат чаша, меч, монета и жезъл, над главата ѝ е знакът на безкрайността, а наоколо цъфтят рози и лилии.",
+   "upright": "Магьосникът ти напомня, че вече държиш нужните инструменти. Умението, ясното намерение и постоянното внимание могат да превърнат една идея в нещо истинско. Това е карта на увереното действие – да знаеш какво искаш и да събереш силите си, за да му дадеш форма.",
+   "reversed": "Обърнат, Магьосникът може да говори за разпиляна енергия, съмнение в себе си или неизползвани заложби. Понякога сочи и към думи, които звучат добре, но нямат покритие – твои или чужди. Спри за миг, провери намеренията си и се свържи отново с онова, което наистина искаш.",
+   "love": "В любовта той те насърчава да изразяваш чувствата си ясно и активно да участваш в създаването на връзката, за която мечтаеш.",
+   "work": "В работата подчертава инициативата, общуването и умението да насочиш всичките си способности в едно съсредоточено усилие.",
+   "advice": "Назови едно свое желание и един инструмент, с който вече можеш да започнеш."
+  }
+ },
+ "high_priestess": {
+  "index": 2,
+  "group": "major",
+  "number": 2,
+  "en": {
+   "name": "The High Priestess",
+   "keywords": [
+    "intuition",
+    "mystery",
+    "inner knowing",
+    "stillness"
+   ],
+   "imagery": "A serene woman in blue robes sits between a black pillar and a white pillar, a crescent moon at her feet and a partly hidden scroll in her lap, before a veil patterned with pomegranates.",
+   "upright": "The High Priestess speaks of what is not yet revealed. She asks you to slow down, listen inwardly and trust the quiet knowing that does not need to explain itself. Some answers come through silence and patience rather than through pushing for clarity.",
+   "reversed": "Reversed, the High Priestess can show that you are ignoring your intuition or getting lost in surface details. Strong emotions may be drowning out your inner voice, or you may be sharing too much too soon. Make space for quiet and see what rises.",
+   "love": "In love, she suggests depth over speed – a bond that grows through trust, unspoken understanding and letting each other keep a little mystery.",
+   "work": "At work, she favours research, reflection and listening carefully before you reveal your plans.",
+   "advice": "Give yourself ten quiet minutes and notice what you already know."
+  },
+  "bg": {
+   "name": "Върховната жрица",
+   "keywords": [
+    "интуиция",
+    "тайнство",
+    "вътрешно знание",
+    "тишина"
+   ],
+   "imagery": "Спокойна жена в синя роба седи между черна и бяла колона, с полумесец в краката си и полускрит свитък в скута, пред завеса, изрисувана с нарове.",
+   "upright": "Върховната жрица говори за онова, което още не е разкрито. Тя те моли да забавиш крачка, да се вслушаш навътре и да се довериш на тихото знание, което няма нужда да се обяснява. Някои отговори идват чрез тишина и търпение, а не чрез натиск за яснота.",
+   "reversed": "Обърната, Върховната жрица може да покаже, че пренебрегваш интуицията си или се губиш в повърхностни подробности. Силните емоции понякога заглушават вътрешния глас, а понякога споделяш твърде много твърде рано. Направи място за тишина и виж какво ще изплува.",
+   "love": "В любовта тя предпочита дълбочината пред бързината – връзка, която расте чрез доверие, неизречено разбиране и малко тайнственост за всеки от двамата.",
+   "work": "В работата тя подкрепя проучването, размисъла и внимателното вслушване, преди да разкриеш плановете си.",
+   "advice": "Подари си десет тихи минути и забележи какво вече знаеш."
+  }
+ },
+ "empress": {
+  "index": 3,
+  "group": "major",
+  "number": 3,
+  "en": {
+   "name": "The Empress",
+   "keywords": [
+    "abundance",
+    "nurturing",
+    "creativity",
+    "growth"
+   ],
+   "imagery": "A crowned woman rests on soft cushions in a field of ripening wheat, holding a sceptre, with a heart-shaped shield bearing the sign of Venus beside her and a forest and waterfall behind.",
+   "upright": "The Empress is a card of growth, warmth and creative abundance. She invites you to care for what you are cultivating – projects, relationships, your own body and joy – and to let things ripen in their own season. Pleasure, beauty and generosity are part of her wisdom.",
+   "reversed": "Reversed, the Empress can point to creative blocks, neglecting yourself while caring for others, or holding on too tightly. It may also reflect hesitation about which direction to grow in. Return to simple nourishment: rest, nature, beauty and kindness toward yourself.",
+   "love": "In love, she brings tenderness, affection and a sense of being cared for, and invites you to give and receive warmth freely.",
+   "work": "At work, she supports creative projects and steady growth that comes from patience rather than force.",
+   "advice": "Do one thing today purely because it nourishes you."
+  },
+  "bg": {
+   "name": "Императрицата",
+   "keywords": [
+    "изобилие",
+    "грижа",
+    "творчество",
+    "растеж"
+   ],
+   "imagery": "Жена с корона почива върху меки възглавници сред нива със зреещо жито, държи скиптър, до нея има щит с форма на сърце и знака на Венера, а зад нея се виждат гора и водопад.",
+   "upright": "Императрицата е карта на растежа, топлината и творческото изобилие. Тя те кани да се грижиш за онова, което отглеждаш – начинания, отношения, собственото си тяло и радост – и да оставиш нещата да узреят в своето време. Удоволствието, красотата и щедростта са част от нейната мъдрост.",
+   "reversed": "Обърната, Императрицата може да сочи творчески застой, забравяне на себе си в грижата за другите или прекалено силно вкопчване. Може да отразява и колебание накъде да растеш. Върни се към простите неща, които те подхранват: почивка, природа, красота и доброта към себе си.",
+   "love": "В любовта тя носи нежност, обич и усещането, че за теб се грижат, и те кани свободно да даваш и да приемаш топлина.",
+   "work": "В работата подкрепя творческите проекти и спокойния растеж, който идва от търпение, а не от натиск.",
+   "advice": "Направи днес едно нещо само защото те подхранва."
+  }
+ },
+ "emperor": {
+  "index": 4,
+  "group": "major",
+  "number": 4,
+  "en": {
+   "name": "The Emperor",
+   "keywords": [
+    "structure",
+    "stability",
+    "authority",
+    "protection"
+   ],
+   "imagery": "A bearded ruler in armour and a red robe sits on a stone throne carved with ram heads, holding an ankh-shaped sceptre and an orb, against bare, rugged mountains.",
+   "upright": "The Emperor brings structure, steadiness and clear boundaries. He invites you to take responsibility, make decisions and build something that can last. Reason and reliability are his gifts – the kind of strength that protects rather than controls.",
+   "reversed": "Reversed, the Emperor can point to rigidity and control or, on the other side, a lack of structure and follow-through. Power may feel misused or simply missing. Look at where you need firmer boundaries, and where you could soften your grip a little.",
+   "love": "In love, he values commitment, reliability and a sense of safety, where both people know they can count on each other.",
+   "work": "At work, he favours planning, leadership and turning good ideas into solid systems.",
+   "advice": "Choose one boundary or routine that would make your life feel steadier."
+  },
+  "bg": {
+   "name": "Императорът",
+   "keywords": [
+    "структура",
+    "стабилност",
+    "авторитет",
+    "закрила"
+   ],
+   "imagery": "Брадат владетел в броня и червена мантия седи на каменен трон с изваяни овнешки глави, държи скиптър с форма на анкх и кълбо, а зад него се издигат голи, сурови планини.",
+   "upright": "Императорът носи структура, устойчивост и ясни граници. Той те кани да поемеш отговорност, да вземаш решения и да изградиш нещо трайно. Разумът и надеждността са неговите дарове – сила, която пази, а не контролира.",
+   "reversed": "Обърнат, Императорът може да сочи твърдост и контрол или, обратно, липса на ред и последователност. Може да има злоупотреба с власт или пък тя просто да липсва. Виж къде имаш нужда от по-ясни граници и къде можеш малко да поотпуснеш хватката си.",
+   "love": "В любовта той цени обвързаността, надеждността и усещането за сигурност, при което двамата знаят, че могат да разчитат един на друг.",
+   "work": "В работата подкрепя планирането, лидерството и превръщането на добрите идеи в стабилни системи.",
+   "advice": "Избери една граница или навик, който би внесъл повече устойчивост в живота ти."
+  }
+ },
+ "hierophant": {
+  "index": 5,
+  "group": "major",
+  "number": 5,
+  "en": {
+   "name": "The Hierophant",
+   "keywords": [
+    "tradition",
+    "guidance",
+    "shared values",
+    "commitment"
+   ],
+   "imagery": "A robed spiritual teacher wearing a triple crown sits between two grey pillars, raising a hand in blessing over two kneeling figures, with two crossed keys at his feet.",
+   "upright": "The Hierophant speaks of tradition, guidance and the values we share with others. It can point to a mentor, a community, or a formal commitment that gives life shape and meaning. It asks what you have learned from those before you, and what you want to carry forward.",
+   "reversed": "Reversed, the Hierophant can show restlessness with rules that no longer fit, or a wish to find your own way. It may also warn against being too agreeable just to keep the peace. Honour what still feels true, and gently question what doesn't.",
+   "love": "In love, it relates to commitment, shared values and the rituals that bind two people together – whether traditional or entirely your own.",
+   "work": "At work, it favours learning from experienced people, established methods and teaching what you know.",
+   "advice": "Ask yourself which tradition you want to keep, and which you are ready to outgrow."
+  },
+  "bg": {
+   "name": "Жрецът",
+   "keywords": [
+    "традиция",
+    "напътствие",
+    "общи ценности",
+    "обвързване"
+   ],
+   "imagery": "Духовен учител в роба и с тройна корона седи между две сиви колони, вдигнал ръка за благословия над две коленичили фигури, а в краката му лежат два кръстосани ключа.",
+   "upright": "Жрецът говори за традиция, напътствие и ценностите, които споделяме с другите. Той може да сочи наставник, общност или официално обвързване, което придава на живота форма и смисъл. Пита те какво ти е предадено от онези преди теб и какво искаш да понесеш нататък.",
+   "reversed": "Обърнат, Жрецът може да покаже неспокойство спрямо правила, които вече не ти пасват, или желание да откриеш собствен път. Може да предупреждава и срещу прекалената отстъпчивост само за да се запази мирът. Уважи онова, което още звучи вярно, и внимателно постави под въпрос останалото.",
+   "love": "В любовта картата е свързана с обвързването, общите ценности и ритуалите, които сближават двама души – традиционни или изцяло ваши.",
+   "work": "В работата подкрепя ученето от опитни хора, утвърдените методи и предаването на знанията ти на другите.",
+   "advice": "Запитай се коя традиция искаш да запазиш и коя вече е време да надраснеш."
+  }
+ },
+ "lovers": {
+  "index": 6,
+  "group": "major",
+  "number": 6,
+  "en": {
+   "name": "The Lovers",
+   "keywords": [
+    "love",
+    "harmony",
+    "choice",
+    "alignment"
+   ],
+   "imagery": "A man and a woman stand unclothed in a garden beneath a great winged angel in a radiant sun, with a fruit tree and a serpent behind her and a tree of flames behind him, a mountain rising between them.",
+   "upright": "The Lovers celebrate attraction, harmony and a meaningful bond. Beyond romance, the card speaks of choices made from the heart and of aligning what you do with what you value. A connection here feels mutual, honest and quietly sacred.",
+   "reversed": "Reversed, the Lovers can point to imbalance, mixed signals or a choice made against your own values. You may feel torn between paths, or notice a gap between what you want and what you are doing. Gentle honesty, first with yourself, helps.",
+   "love": "In love, this is a card of deep connection and mutual choosing – a bond in which both people see and accept each other.",
+   "work": "At work, it highlights partnerships, collaboration and decisions that reflect what truly matters to you.",
+   "advice": "Let your next choice be one your heart and values agree on."
+  },
+  "bg": {
+   "name": "Влюбените",
+   "keywords": [
+    "любов",
+    "хармония",
+    "избор",
+    "съзвучие"
+   ],
+   "imagery": "Мъж и жена стоят голи в градина под голям крилат ангел в сияещо слънце; зад жената има плодно дърво със змия, зад мъжа – дърво от пламъци, а между тях се издига планина.",
+   "upright": "Влюбените празнуват привличането, хармонията и значимата връзка. Отвъд романтиката картата говори за избори, направени от сърце, и за съзвучие между онова, което правиш, и онова, което цениш. Връзката тук е взаимна, честна и тихо свещена.",
+   "reversed": "Обърнати, Влюбените могат да сочат дисбаланс, противоречиви сигнали или избор, направен напук на собствените ти ценности. Може да ти е трудно да избереш между два пътя или да забелязваш разлика между това, което искаш, и това, което правиш. Помага нежната честност – най-напред със себе си.",
+   "love": "В любовта това е карта на дълбока връзка и взаимен избор – отношения, в които двамата се виждат и приемат един друг.",
+   "work": "В работата подчертава партньорствата, сътрудничеството и решенията, които отразяват наистина важното за теб.",
+   "advice": "Нека следващият ти избор е такъв, с който са съгласни и сърцето, и ценностите ти."
+  }
+ },
+ "chariot": {
+  "index": 7,
+  "group": "major",
+  "number": 7,
+  "en": {
+   "name": "The Chariot",
+   "keywords": [
+    "determination",
+    "momentum",
+    "self-control",
+    "victory"
+   ],
+   "imagery": "An armoured figure beneath a starry canopy stands in a stone chariot drawn by two sphinxes, one black and one white, with a walled city behind.",
+   "upright": "The Chariot is about moving forward with purpose. It asks you to gather opposing feelings and pull them in one direction through focus and self-discipline. Success here comes not from force alone but from knowing where you are going and staying steady on the way.",
+   "reversed": "Reversed, the Chariot can show a loss of direction, inner conflict or energy spent pulling in two ways at once. Frustration and arguments may slow you down. Step back, decide what really matters, and let that guide your next move.",
+   "love": "In love, it encourages you to pursue what you want with confidence while staying aware of the other person's direction too.",
+   "work": "At work, it supports ambition, goals within reach and the drive to overcome obstacles.",
+   "advice": "Choose one direction for this week and keep both hands on the reins."
+  },
+  "bg": {
+   "name": "Колесницата",
+   "keywords": [
+    "решимост",
+    "устрем",
+    "самообладание",
+    "победа"
+   ],
+   "imagery": "Фигура в броня, под балдахин, обсипан със звезди, стои в каменна колесница, теглена от два сфинкса – черен и бял, а зад нея се вижда град, обграден със стени.",
+   "upright": "Колесницата е движение напред с ясна цел. Тя те моли да събереш противоречивите си чувства и да ги насочиш в една посока чрез съсредоточеност и самодисциплина. Успехът тук не идва само от сила, а от това да знаеш накъде вървиш и да запазиш устойчивост по пътя.",
+   "reversed": "Обърната, Колесницата може да покаже загуба на посока, вътрешен конфликт или енергия, която се разпилява в две посоки едновременно. Раздразнението и споровете могат да те забавят. Отстъпи крачка назад, реши кое е наистина важно и нека то насочи следващия ти ход.",
+   "love": "В любовта тя те насърчава да следваш желанията си уверено, като същевременно уважаваш и посоката на другия.",
+   "work": "В работата подкрепя амбицията, постижимите цели и устрема да преодоляваш препятствия.",
+   "advice": "Избери една посока за тази седмица и дръж юздите с двете ръце."
+  }
+ },
+ "strength": {
+  "index": 8,
+  "group": "major",
+  "number": 8,
+  "en": {
+   "name": "Strength",
+   "keywords": [
+    "courage",
+    "compassion",
+    "patience",
+    "inner strength"
+   ],
+   "imagery": "A woman in white, crowned with flowers and with an infinity sign above her head, gently closes the jaws of a lion under an open yellow sky.",
+   "upright": "Strength is the quiet courage that comes from calm rather than force. It invites you to meet strong emotions, your own or someone else's, with patience and compassion. Real power here looks like gentleness that does not give way.",
+   "reversed": "Reversed, Strength can point to self-doubt, impatience or feeling ruled by your reactions. It may also show strength turning into control. Be kind to yourself, breathe, and remember that softness and firmness can live together.",
+   "love": "In love, it speaks of patience, emotional maturity and a tenderness that helps both people feel safe being fully themselves.",
+   "work": "At work, it favours steady confidence, resilience and leading through calm example.",
+   "advice": "Meet one hard feeling today with patience instead of pressure."
+  },
+  "bg": {
+   "name": "Силата",
+   "keywords": [
+    "смелост",
+    "състрадание",
+    "търпение",
+    "вътрешна сила"
+   ],
+   "imagery": "Жена в бяло, с венец от цветя и знака на безкрайността над главата, нежно затваря челюстите на лъв под открито жълто небе.",
+   "upright": "Силата е тихата смелост, която идва от спокойствие, а не от натиск. Тя те кани да посрещаш силните емоции – твоите или чуждите – с търпение и състрадание. Истинската мощ тук изглежда като нежност, която не отстъпва.",
+   "reversed": "Обърната, Силата може да сочи съмнение в себе си, нетърпение или усещане, че реакциите ти те управляват. Може да покаже и сила, която се превръща в контрол. Отнеси се към себе си с доброта, поеми дъх и си спомни, че мекотата и твърдостта могат да съществуват заедно.",
+   "love": "В любовта говори за търпение, емоционална зрялост и нежност, с която и двамата се чувстват сигурни да бъдат напълно себе си.",
+   "work": "В работата подкрепя спокойната увереност, издръжливостта и воденето чрез личен пример.",
+   "advice": "Посрещни днес едно трудно чувство с търпение вместо с натиск."
+  }
+ },
+ "hermit": {
+  "index": 9,
+  "group": "major",
+  "number": 9,
+  "en": {
+   "name": "The Hermit",
+   "keywords": [
+    "solitude",
+    "reflection",
+    "inner guidance",
+    "wisdom"
+   ],
+   "imagery": "A cloaked, grey-bearded figure stands alone on a snowy peak, holding up a lantern with a six-pointed star inside and leaning on a long staff.",
+   "upright": "The Hermit invites you to step back from the noise and look within. Time alone, careful thought and honest reflection can light the next part of your path – even if you can only see a few steps ahead. Wisdom grows when you slow down enough to hear it.",
+   "reversed": "Reversed, the Hermit can point to isolation that no longer serves you, or to avoiding reflection by staying constantly busy. Caution may be turning into fear. Notice whether you need more solitude or, just as possibly, more connection.",
+   "love": "In love, it suggests taking time to understand what you truly need, so that when you share yourself, you do so with clarity.",
+   "work": "At work, it favours focused study, careful planning and seeking guidance from someone you trust.",
+   "advice": "Take a quiet walk and let one question keep you company."
+  },
+  "bg": {
+   "name": "Отшелникът",
+   "keywords": [
+    "уединение",
+    "размисъл",
+    "вътрешен ориентир",
+    "мъдрост"
+   ],
+   "imagery": "Сивобрада фигура в наметало стои сама на заснежен връх, вдигнала фенер с шестолъчна звезда в него и подпряна на дълга тояга.",
+   "upright": "Отшелникът те кани да се отдръпнеш от шума и да погледнеш навътре. Времето насаме, внимателният размисъл и честният поглед към себе си могат да осветят следващата част от пътя ти – дори да виждаш само няколко крачки напред. Мъдростта расте, когато забавиш ход достатъчно, за да я чуеш.",
+   "reversed": "Обърнат, Отшелникът може да сочи самота, която вече не ти помага, или бягство от размисъла чрез постоянна заетост. Предпазливостта понякога се превръща в страх. Забележи дали ти трябва повече уединение – или, също толкова вероятно, повече близост.",
+   "love": "В любовта подсказва да отделиш време, за да разбереш от какво наистина имаш нужда, така че да се споделяш с яснота.",
+   "work": "В работата подкрепя задълбоченото учене, внимателното планиране и търсенето на съвет от човек, на когото имаш доверие.",
+   "advice": "Излез на тиха разходка и нека един въпрос ти прави компания."
+  }
+ },
+ "wheel_of_fortune": {
+  "index": 10,
+  "group": "major",
+  "number": 10,
+  "en": {
+   "name": "Wheel of Fortune",
+   "keywords": [
+    "cycles",
+    "change",
+    "fortune",
+    "turning point"
+   ],
+   "imagery": "A great wheel marked with letters and symbols turns in the clouds, a sphinx with a sword sits on top, a serpent glides down one side and a jackal-headed figure rises on the other, while four winged creatures read books in the corners.",
+   "upright": "The Wheel of Fortune reminds you that life moves in cycles. A turning point may be arriving, bringing a lucky opening or a change in direction. You can't control every turn, but you can choose how you meet it – with openness rather than resistance.",
+   "reversed": "Reversed, the Wheel can reflect resistance to change, or a feeling that things keep repeating. It may also point to too much of a good thing. Look for the pattern you keep returning to, and for the small shift that could start a new cycle.",
+   "love": "In love, it can signal a meaningful turn – a fresh chapter, a timely meeting or a shift in how a relationship flows.",
+   "work": "At work, it highlights timing, unexpected opportunities and the value of adapting as things change.",
+   "advice": "Notice what is changing around you and ask how you want to move with it."
+  },
+  "bg": {
+   "name": "Колелото на съдбата",
+   "keywords": [
+    "цикли",
+    "промяна",
+    "късмет",
+    "повратна точка"
+   ],
+   "imagery": "Голямо колело с букви и символи се върти сред облаците, отгоре седи сфинкс с меч, от едната страна се плъзга змия, от другата се издига фигура с глава на чакал, а в ъглите четири крилати създания четат книги.",
+   "upright": "Колелото на съдбата ти напомня, че животът се движи на цикли. Може би наближава повратна точка – щастлива възможност или промяна на посоката. Не можеш да контролираш всеки обрат, но можеш да избереш как да го посрещнеш – с отвореност, а не със съпротива.",
+   "reversed": "Обърнато, Колелото може да отразява съпротива срещу промяната или усещане, че нещата се повтарят отново и отново. Може да сочи и прекалено много от нещо хубаво. Потърси модела, към който постоянно се връщаш, и малката промяна, с която може да започне нов цикъл.",
+   "love": "В любовта може да е знак за значим обрат – нова глава, навременна среща или промяна в начина, по който тече една връзка.",
+   "work": "В работата подчертава значението на подходящия момент, неочакваните възможности и умението да се приспособяваш.",
+   "advice": "Забележи какво се променя около теб и се запитай как искаш да се движиш заедно с него."
+  }
+ },
+ "justice": {
+  "index": 11,
+  "group": "major",
+  "number": 11,
+  "en": {
+   "name": "Justice",
+   "keywords": [
+    "fairness",
+    "truth",
+    "balance",
+    "accountability"
+   ],
+   "imagery": "A crowned figure in red sits between two pillars, holding an upright sword in the right hand and a pair of scales in the left, before a purple veil.",
+   "upright": "Justice asks for honesty, fairness and clear thinking. It invites you to weigh things as they truly are, take responsibility for your part and act in a way you can stand behind. Choices made with integrity tend to bring balance over time.",
+   "reversed": "Reversed, Justice can point to imbalance, bias or avoiding responsibility – your own or someone else's. It may also show being too harsh in judging yourself or others. Look for the fuller picture and aim for a fairness that includes compassion.",
+   "love": "In love, it values honesty, equal give-and-take and conversations where both people feel heard.",
+   "work": "At work, it favours clear agreements, ethical decisions and fair recognition for effort.",
+   "advice": "Before you decide, ask what the most honest version of you would do."
+  },
+  "bg": {
+   "name": "Справедливостта",
+   "keywords": [
+    "справедливост",
+    "истина",
+    "равновесие",
+    "отговорност"
+   ],
+   "imagery": "Коронована фигура в червено седи между две колони, държи изправен меч в дясната ръка и везни в лявата, пред пурпурна завеса.",
+   "upright": "Справедливостта иска честност, безпристрастност и ясна мисъл. Тя те кани да претеглиш нещата такива, каквито са, да поемеш отговорност за своята част и да действаш така, че да можеш да застанеш зад избора си. Решенията, взети с почтеност, с времето носят равновесие.",
+   "reversed": "Обърната, Справедливостта може да сочи дисбаланс, пристрастие или бягство от отговорност – твоя или чужда. Може да покаже и прекалена строгост в преценката на себе си или на другите. Потърси по-пълната картина и се стреми към справедливост, в която има и състрадание.",
+   "love": "В любовта цени честността, равното даване и получаване и разговорите, в които и двамата се чувстват чути.",
+   "work": "В работата подкрепя ясните договорки, етичните решения и справедливото признание за положените усилия.",
+   "advice": "Преди да решиш, запитай се какво би направила най-честната версия на теб."
+  }
+ },
+ "hanged_man": {
+  "index": 12,
+  "group": "major",
+  "number": 12,
+  "en": {
+   "name": "The Hanged Man",
+   "keywords": [
+    "pause",
+    "surrender",
+    "new perspective",
+    "insight"
+   ],
+   "imagery": "A man hangs upside down by one foot from a living T-shaped tree, his other leg bent behind him and his hands behind his back, his face calm and his head ringed with light.",
+   "upright": "The Hanged Man invites a pause. By letting go of the need to act right now, you may see your situation from a completely new angle. What looks like waiting can be a time of quiet insight, when surrender brings more clarity than struggle.",
+   "reversed": "Reversed, the Hanged Man can point to stalling, resisting a needed pause, or giving up too much of yourself to please others or to fit in with the crowd. Ask whether your waiting still has a purpose, or whether it is time to move.",
+   "love": "In love, it suggests patience and seeing things through the other person's eyes before deciding what comes next.",
+   "work": "At work, it favours rethinking a stuck project, letting go of old assumptions and allowing ideas to mature.",
+   "advice": "Look at one situation upside down and see what changes."
+  },
+  "bg": {
+   "name": "Обесеният",
+   "keywords": [
+    "пауза",
+    "отдаване",
+    "нова гледна точка",
+    "прозрение"
+   ],
+   "imagery": "Мъж виси с главата надолу, вързан за единия крак на живо дърво с форма на буквата Т; другият му крак е свит зад него, ръцете са зад гърба, лицето – спокойно, а около главата му има сияние.",
+   "upright": "Обесеният те кани да спреш за малко. Когато пуснеш нуждата да действаш веднага, можеш да видиш положението си от съвсем нов ъгъл. Онова, което прилича на чакане, може да бъде време за тихо прозрение, в което отдаването носи повече яснота от борбата.",
+   "reversed": "Обърнат, Обесеният може да сочи протакане, съпротива срещу нужната пауза или прекалено много отстъпки от себе си, за да угодиш на другите или да се впишеш в тълпата. Запитай се дали чакането ти още има смисъл, или е време да тръгнеш.",
+   "love": "В любовта подсказва търпение и поглед през очите на другия, преди да решиш какво следва.",
+   "work": "В работата подкрепя преосмислянето на заседнал проект, отказа от стари предположения и времето, нужно на идеите да узреят.",
+   "advice": "Погледни една ситуация наопаки и виж какво се променя."
+  }
+ },
+ "death": {
+  "index": 13,
+  "group": "major",
+  "number": 13,
+  "en": {
+   "name": "Death",
+   "keywords": [
+    "endings",
+    "transformation",
+    "release",
+    "renewal"
+   ],
+   "imagery": "A skeleton in black armour rides a white horse and carries a black banner with a white rose, as a king lies fallen and a cleric, a young woman and a child face it, while the sun rises between two distant towers.",
+   "upright": "Death is a card of endings that make room for something new. It rarely speaks of anything literal; instead it marks the close of a chapter, a habit or an identity you have outgrown. Letting go can be tender and hard, yet it clears the ground for real renewal.",
+   "reversed": "Reversed, Death can show resistance to an ending that is already happening, or a feeling of being stuck in limbo. Holding on may leave you tired and stagnant. Ask what is asking to be released, and what might grow in its place.",
+   "love": "In love, it points to transformation – a relationship moving into a deeper phase, or the closing of an old pattern so that something healthier can begin.",
+   "work": "At work, it can mark the end of one role or approach and the start of a more fitting one.",
+   "advice": "Name one thing you are ready to let go of, with gratitude."
+  },
+  "bg": {
+   "name": "Смъртта",
+   "keywords": [
+    "край",
+    "преобразяване",
+    "освобождаване",
+    "обновление"
+   ],
+   "imagery": "Скелет в черна броня язди бял кон и носи черно знаме с бяла роза; пред него лежи паднал цар, а свещеник, девойка и дете застават срещу него, докато между две далечни кули изгрява слънце.",
+   "upright": "Смъртта е карта на завършеци, които правят място за нещо ново. Тя рядко говори за нещо буквално – по-скоро бележи края на една глава, навик или представа за себе си, които вече са ти тесни. Пускането може да е нежно и трудно, но разчиства почвата за истинско обновление.",
+   "reversed": "Обърната, Смъртта може да покаже съпротива срещу край, който вече се случва, или усещане за застой и безвремие. Вкопчването може да изтощава и да спира движението. Запитай се какво иска да бъде пуснато и какво би могло да израсне на негово място.",
+   "love": "В любовта сочи преобразяване – връзка, която навлиза в по-дълбока фаза, или край на стар модел, за да започне нещо по-здравословно.",
+   "work": "В работата може да бележи края на една роля или подход и началото на нещо, което ти подхожда повече.",
+   "advice": "Назови едно нещо, което вече можеш да пуснеш – с благодарност."
+  }
+ },
+ "temperance": {
+  "index": 14,
+  "group": "major",
+  "number": 14,
+  "en": {
+   "name": "Temperance",
+   "keywords": [
+    "balance",
+    "moderation",
+    "patience",
+    "harmony"
+   ],
+   "imagery": "A winged angel with one foot in a pool and the other on land pours water between two cups, while a path winds past irises toward a glowing light between distant mountains.",
+   "upright": "Temperance is the art of balance. It invites you to blend opposites with patience – work and rest, giving and receiving, head and heart – until they find a healthy middle. Small, steady adjustments matter more here than dramatic gestures.",
+   "reversed": "Reversed, Temperance can point to excess, impatience or parts of life pulling against each other. Competing priorities may leave you feeling scattered. Gently ask what is out of proportion, and which small adjustment would bring you closer to your centre.",
+   "love": "In love, it supports compromise, calm communication and a relationship built on mutual adjustment rather than intensity alone.",
+   "work": "At work, it favours good management, collaboration and a sustainable pace.",
+   "advice": "Find one place where a little less, or a little more, would bring balance."
+  },
+  "bg": {
+   "name": "Умереността",
+   "keywords": [
+    "равновесие",
+    "мярка",
+    "търпение",
+    "хармония"
+   ],
+   "imagery": "Крилат ангел, стъпил с единия крак във водоем и с другия на сушата, прелива вода от една чаша в друга, а покрай перуники пътека води към сияние между далечни планини.",
+   "upright": "Умереността е изкуството на равновесието. Тя те кани търпеливо да съчетаваш противоположностите – работа и почивка, даване и получаване, разум и сърце – докато намерят здравословна среда. Тук малките постоянни корекции значат повече от драматичните жестове.",
+   "reversed": "Обърната, Умереността може да сочи крайности, нетърпение или части от живота ти, които се дърпат в различни посоки. Съперничещите си приоритети могат да те разпиляват. Внимателно се запитай кое е извън мярката и коя малка промяна би те върнала по-близо до центъра.",
+   "love": "В любовта подкрепя компромиса, спокойното общуване и отношенията, изградени на взаимно приспособяване, а не само на силни емоции.",
+   "work": "В работата насърчава доброто управление, сътрудничеството и устойчивото темпо.",
+   "advice": "Открий едно място, където малко по-малко или малко повече би внесло равновесие."
+  }
+ },
+ "devil": {
+  "index": 15,
+  "group": "major",
+  "number": 15,
+  "en": {
+   "name": "The Devil",
+   "keywords": [
+    "attachment",
+    "patterns",
+    "temptation",
+    "liberation"
+   ],
+   "imagery": "A horned, bat-winged figure crouches on a dark pedestal with an inverted star above its brow, while a man and a woman stand chained to the pedestal by loose collars they could slip off.",
+   "upright": "The Devil shines a light on what binds you – habits, attachments or beliefs that feel stronger than they really are. It is not a judgment but an invitation to see a pattern clearly. Notice that the chains on the card are loose: awareness is already the first step toward freedom.",
+   "reversed": "Reversed, the Devil can show a pattern beginning to loosen as you recognise what has been holding you. It may also point to smaller, quieter compulsions or blind spots that are easy to overlook. Be honest and gentle with yourself as you reclaim your choices.",
+   "love": "In love, it invites you to notice intense attraction, jealousy or dependence, and to choose a connection that leaves both people free.",
+   "work": "At work, it can highlight ambition that drives you too hard, or a situation where you feel stuck but have more options than you think.",
+   "advice": "Name one habit that holds you, and one small way to loosen it."
+  },
+  "bg": {
+   "name": "Дяволът",
+   "keywords": [
+    "привързаност",
+    "модели",
+    "изкушение",
+    "освобождение"
+   ],
+   "imagery": "Рогата фигура с крила на прилеп е приклекнала върху тъмен пиедестал с обърната звезда над челото, а мъж и жена стоят оковани за пиедестала с хлабави нашийници, които биха могли да свалят.",
+   "upright": "Дяволът осветява онова, което те обвързва – навици, привързаности или убеждения, които изглеждат по-силни, отколкото са. Това не е присъда, а покана да видиш един модел ясно. Забележи, че веригите на картата са хлабави: осъзнаването вече е първата крачка към свободата.",
+   "reversed": "Обърнат, Дяволът може да покаже модел, който започва да се разхлабва, щом разпознаеш какво те е държало. Може да сочи и по-дребни, тихи зависимости или слепи петна, които лесно остават незабелязани. Отнеси се към себе си честно и нежно, докато си връщаш свободата на избора.",
+   "love": "В любовта те кани да забележиш силното привличане, ревността или зависимостта и да избереш връзка, в която и двамата остават свободни.",
+   "work": "В работата може да подчертае амбиция, която те пришпорва прекалено, или ситуация, в която се чувстваш в капан, но имаш повече възможности, отколкото мислиш.",
+   "advice": "Назови един навик, който те държи, и един малък начин да го разхлабиш."
+  }
+ },
+ "tower": {
+  "index": 16,
+  "group": "major",
+  "number": 16,
+  "en": {
+   "name": "The Tower",
+   "keywords": [
+    "sudden change",
+    "revelation",
+    "upheaval",
+    "breakthrough"
+   ],
+   "imagery": "A tall tower on a rocky peak is struck by lightning, its crown-shaped top blown off and flames pouring from the windows, as two figures fall through a dark sky scattered with sparks.",
+   "upright": "The Tower marks a sudden shift that shakes up what seemed solid. It can feel unsettling, yet it often reveals hidden truths and clears away structures that were built on shaky ground. What falls away here makes room for something more honest.",
+   "reversed": "Reversed, the Tower can point to a smaller upheaval, or to change you are trying to hold back. You may feel confined by a situation you know needs to shift. Gradual, chosen change can be gentler than waiting for the walls to crack.",
+   "love": "In love, it can bring a moment of truth – a revelation that clears the air and lets a relationship rebuild on firmer ground.",
+   "work": "At work, it signals a breakthrough or a shake-up that challenges old plans and opens space for a better approach.",
+   "advice": "Ask what in your life needs to be rebuilt on more honest foundations."
+  },
+  "bg": {
+   "name": "Кулата",
+   "keywords": [
+    "внезапна промяна",
+    "откровение",
+    "сътресение",
+    "пробив"
+   ],
+   "imagery": "Висока кула на скалист връх е ударена от мълния, върхът ѝ във формата на корона е отхвърлен, от прозорците излизат пламъци, а две фигури падат през тъмното небе, осеяно с искри.",
+   "upright": "Кулата бележи внезапна промяна, която разклаща онова, което изглеждаше стабилно. Това може да е смущаващо, но често разкрива скрити истини и премахва конструкции, построени на нестабилна основа. Онова, което рухва тук, прави място за нещо по-истинско.",
+   "reversed": "Обърната, Кулата може да сочи по-леко сътресение или промяна, която се опитваш да задържиш. Може би една ситуация те стяга, а знаеш, че трябва да се промени. Постепенната, избрана от теб промяна може да е по-нежна от чакането стените сами да се напукат.",
+   "love": "В любовта може да донесе момент на истина – прозрение, което разчиства въздуха и позволява на връзката да се изгради отново на по-здрава основа.",
+   "work": "В работата е знак за пробив или разтърсване, което поставя под въпрос старите планове и отваря място за по-добър подход.",
+   "advice": "Запитай се какво в живота ти има нужда да бъде изградено на по-честни основи."
+  }
+ },
+ "star": {
+  "index": 17,
+  "group": "major",
+  "number": 17,
+  "en": {
+   "name": "The Star",
+   "keywords": [
+    "hope",
+    "healing",
+    "inspiration",
+    "renewal"
+   ],
+   "imagery": "A woman kneels unclothed beside a pool beneath one large eight-pointed star and seven smaller ones, pouring water from one jug into the pool and from another onto the land, while a bird rests in a tree behind her.",
+   "upright": "The Star brings hope and quiet renewal after a difficult time. It invites you to trust that things can heal, to open up again and to let your hopes guide you. This is a gentle card of inspiration, generosity and bright possibilities ahead.",
+   "reversed": "Reversed, the Star can point to discouragement, disconnection from your hopes, or pride that keeps you from asking for support. Your light may feel dim right now. Small acts of care and moments of beauty can slowly rekindle it.",
+   "love": "In love, it suggests openness, healing and honest vulnerability – letting someone see your true self.",
+   "work": "At work, it favours creative inspiration, long-term vision and work that feels meaningful.",
+   "advice": "Write down one hope you would like to believe in again."
+  },
+  "bg": {
+   "name": "Звездата",
+   "keywords": [
+    "надежда",
+    "изцеление",
+    "вдъхновение",
+    "обновление"
+   ],
+   "imagery": "Гола жена е коленичила край водоем под една голяма осемлъчна звезда и седем по-малки; от едната стомна излива вода във водоема, от другата – върху земята, а зад нея на едно дърво е кацнала птица.",
+   "upright": "Звездата носи надежда и тихо обновление след труден период. Тя те кани да повярваш, че раните могат да зараснат, да се отвориш отново и да оставиш надеждите си да те водят. Това е нежна карта на вдъхновението, щедростта и светлите възможности напред.",
+   "reversed": "Обърната, Звездата може да сочи обезсърчение, откъснатост от надеждите ти или гордост, която ти пречи да потърсиш подкрепа. Светлината ти може да изглежда приглушена точно сега. Малките жестове на грижа и мигове на красота могат постепенно да я разпалят отново.",
+   "love": "В любовта подсказва откритост, изцеление и честна уязвимост – да позволиш на някого да види истинското ти аз.",
+   "work": "В работата подкрепя творческото вдъхновение, дългосрочната визия и заниманията, които имат смисъл за теб.",
+   "advice": "Запиши една надежда, в която искаш да повярваш отново."
+  }
+ },
+ "moon": {
+  "index": 18,
+  "group": "major",
+  "number": 18,
+  "en": {
+   "name": "The Moon",
+   "keywords": [
+    "intuition",
+    "uncertainty",
+    "dreams",
+    "the unconscious"
+   ],
+   "imagery": "A full moon with a face shines between two towers as a dog and a wolf howl up at it and a crayfish crawls from a pool onto a winding path that leads into the hills.",
+   "upright": "The Moon reflects a time of uncertainty, when things are not quite what they seem. Fears, dreams and old feelings may rise to the surface. Rather than rushing to conclusions, move slowly, trust your intuition and give the fog time to lift.",
+   "reversed": "Reversed, the Moon can show confusion beginning to clear, or mixed feelings that keep shifting. There may be small misunderstandings or things left unsaid. Gentle questions and patience can help you tell what is real from what you fear.",
+   "love": "In love, it invites you to notice projections and unspoken worries, and to seek clarity through honest, gentle conversation.",
+   "work": "At work, it advises checking details carefully and trusting your instincts while the full picture is still forming.",
+   "advice": "Write down a recent dream or worry and look at it in daylight."
+  },
+  "bg": {
+   "name": "Луната",
+   "keywords": [
+    "интуиция",
+    "несигурност",
+    "сънища",
+    "подсъзнание"
+   ],
+   "imagery": "Пълна луна с лице грее между две кули, куче и вълк вият към нея, а рак изпълзява от водоем към виеща се пътека, която води към хълмовете.",
+   "upright": "Луната отразява време на несигурност, когато нещата не са съвсем такива, каквито изглеждат. Страхове, сънища и стари чувства могат да изплуват на повърхността. Вместо да бързаш със заключенията, движи се бавно, довери се на интуицията си и дай време на мъглата да се вдигне.",
+   "reversed": "Обърната, Луната може да покаже обърканост, която започва да се разсейва, или смесени чувства, които непрекъснато се менят. Възможно е да има дребни недоразумения или неизречени неща. Нежните въпроси и търпението могат да ти помогнат да различиш истинското от онова, от което се страхуваш.",
+   "love": "В любовта те кани да забележиш проекциите и неизречените тревоги и да търсиш яснота чрез честен и нежен разговор.",
+   "work": "В работата съветва да проверяваш внимателно подробностите и да се доверяваш на инстинкта си, докато цялата картина все още се оформя.",
+   "advice": "Запиши скорошен сън или тревога и ги погледни на дневна светлина."
+  }
+ },
+ "sun": {
+  "index": 19,
+  "group": "major",
+  "number": 19,
+  "en": {
+   "name": "The Sun",
+   "keywords": [
+    "joy",
+    "vitality",
+    "warmth",
+    "success"
+   ],
+   "imagery": "A smiling child crowned with flowers rides a white horse beneath a radiant sun with a face, carrying a large red banner, as tall sunflowers lean over a garden wall behind.",
+   "upright": "The Sun is one of the brightest cards in the deck, full of joy, warmth and simple happiness. It invites you to enjoy what is going well, to share your light and to approach life with childlike openness. Things feel clear, and contentment is close at hand.",
+   "reversed": "Reversed, the Sun still carries warmth, only a little softer or slower to arrive. Joy may be present but harder to notice, perhaps hidden behind worry or high expectations. Look for small, simple pleasures and let them count.",
+   "love": "In love, it brings warmth, playfulness and the happiness of being openly yourself with someone who welcomes it.",
+   "work": "At work, it favours recognition, confidence and projects that let you shine.",
+   "advice": "Spend a few minutes in the sunlight today, literally or in spirit."
+  },
+  "bg": {
+   "name": "Слънцето",
+   "keywords": [
+    "радост",
+    "жизненост",
+    "топлина",
+    "успех"
+   ],
+   "imagery": "Усмихнато дете с венец от цветя язди бял кон под сияещо слънце с лице и носи голямо червено знаме, а зад него високи слънчогледи се надвесват над градинска стена.",
+   "upright": "Слънцето е една от най-светлите карти в тестето – пълна с радост, топлина и простичко щастие. То те кани да се радваш на онова, което върви добре, да споделяш светлината си и да подхождаш към живота с детска откритост. Нещата изглеждат ясни, а удовлетворението е съвсем наблизо.",
+   "reversed": "Обърнато, Слънцето пак носи топлина, само че малко по-приглушена или по-бавна да дойде. Радостта може да е тук, но по-трудно забележима, скрита зад тревоги или високи очаквания. Потърси малките, простички удоволствия и им позволи да имат значение.",
+   "love": "В любовта носи топлина, игривост и щастието да бъдеш открито себе си с някого, който го приема.",
+   "work": "В работата подкрепя признанието, увереността и проектите, в които можеш да блеснеш.",
+   "advice": "Прекарай днес няколко минути на слънце – буквално или в мислите си."
+  }
+ },
+ "judgement": {
+  "index": 20,
+  "group": "major",
+  "number": 20,
+  "en": {
+   "name": "Judgement",
+   "keywords": [
+    "awakening",
+    "renewal",
+    "reflection",
+    "calling"
+   ],
+   "imagery": "A great angel blows a trumpet hung with a banner bearing a cross, as men, women and children rise with lifted arms from open coffins floating on the water, against a range of mountains.",
+   "upright": "Judgement is a call to awaken and begin again. It invites you to look honestly at your past, forgive what needs forgiving and rise into a new chapter. A shift in position or perspective becomes possible when you listen to what is truly calling you.",
+   "reversed": "Reversed, Judgement can point to self-doubt, hesitation or avoiding a decision that is waiting for you. You may be judging yourself so harshly that it holds you back. Take time to weigh things fairly, then answer the call in your own way.",
+   "love": "In love, it supports renewal – a fresh start, an honest reckoning or seeing a relationship with new eyes.",
+   "work": "At work, it favours finding your vocation, reviewing your path and stepping into a role that fits who you are becoming.",
+   "advice": "Ask what is calling you now, and listen for the quiet answer."
+  },
+  "bg": {
+   "name": "Възраждането",
+   "keywords": [
+    "пробуждане",
+    "обновление",
+    "равносметка",
+    "призвание"
+   ],
+   "imagery": "Голям ангел надува тръба със знаме, на което има кръст, а мъже, жени и деца се надигат с вдигнати ръце от отворени ковчези сред водата, на фона на планинска верига.",
+   "upright": "Възраждането е зов за пробуждане и ново начало. То те кани да погледнеш честно към миналото си, да простиш онова, което има нужда от прошка, и да се издигнеш към нова глава. Промяна в положението или в гледната ти точка става възможна, когато се вслушаш в онова, което наистина те зове.",
+   "reversed": "Обърнато, Възраждането може да сочи съмнение в себе си, колебание или отлагане на решение, което те очаква. Може би се съдиш толкова строго, че това те спира. Дай си време да претеглиш нещата справедливо и после отговори на зова по своя начин.",
+   "love": "В любовта подкрепя обновлението – ново начало, честна равносметка или поглед към връзката с нови очи.",
+   "work": "В работата насърчава откриването на призванието ти, прегледа на досегашния път и стъпването в роля, която отговаря на човека, в когото се превръщаш.",
+   "advice": "Запитай се какво те зове сега и се вслушай в тихия отговор."
+  }
+ },
+ "world": {
+  "index": 21,
+  "group": "major",
+  "number": 21,
+  "en": {
+   "name": "The World",
+   "keywords": [
+    "completion",
+    "wholeness",
+    "fulfilment",
+    "journey"
+   ],
+   "imagery": "A dancing figure wrapped in a flowing scarf holds a wand in each hand inside a large oval wreath, with an angel, an eagle, a lion and a bull watching from the four corners.",
+   "upright": "The World celebrates completion and wholeness. A cycle is coming full circle, bringing a sense of fulfilment and well-earned reward. It can also point to travel or a wider horizon. Enjoy what you have achieved and notice how far you have come.",
+   "reversed": "Reversed, the World can show a cycle that is almost complete but feels stuck, or a fear of closing one chapter and moving on. Stagnation may quietly creep in. Look for the last small step that would let you finish well.",
+   "love": "In love, it speaks of a relationship that feels complete and harmonious, or of feeling whole enough to share your life fully.",
+   "work": "At work, it marks the successful end of a project and the readiness to step onto a larger stage.",
+   "advice": "Celebrate one thing you have completed before starting the next."
+  },
+  "bg": {
+   "name": "Светът",
+   "keywords": [
+    "завършеност",
+    "цялост",
+    "удовлетворение",
+    "пътуване"
+   ],
+   "imagery": "Танцуваща фигура, увита в развяващ се шал, държи по един жезъл във всяка ръка в голям овален венец, а от четирите ъгъла гледат ангел, орел, лъв и бик.",
+   "upright": "Светът празнува завършеността и цялостта. Един цикъл се затваря и носи усещане за удовлетворение и заслужена награда. Картата може да сочи и пътуване или по-широк хоризонт. Порадвай се на постигнатото и забележи колко дълъг път е зад теб.",
+   "reversed": "Обърнат, Светът може да покаже цикъл, който е почти завършен, но сякаш е заседнал, или страх да затвориш една глава и да продължиш напред. Може неусетно да се прокрадне застой. Потърси последната малка крачка, с която да завършиш добре.",
+   "love": "В любовта говори за връзка, която се усеща цялостна и хармонична, или за вътрешна цялост, с която можеш напълно да споделиш живота си.",
+   "work": "В работата бележи успешния край на един проект и готовността за по-голяма сцена.",
+   "advice": "Отпразнувай едно завършено нещо, преди да започнеш следващото."
+  }
+ },
+ "wands_ace": {
+  "index": 22,
+  "group": "wands",
+  "rank": "ace",
+  "en": {
+   "name": "Ace of Wands",
+   "keywords": [
+    "spark",
+    "new venture",
+    "creative fire",
+    "beginnings"
+   ],
+   "imagery": "A hand reaches out of a cloud holding a sturdy wand that is sprouting fresh leaves, with a castle on a distant hill below.",
+   "upright": "A new spark is catching. This card points to the first stirrings of an idea, a project or a desire that wants to grow into something real. Notice what excites you right now and give it a little room, because raw energy like this asks for a first step rather than a perfect plan.",
+   "reversed": "The spark is there, but something keeps it from catching. You may feel flat, scattered or unsure where your enthusiasm went. Rather than forcing it, ask what has dampened the fire – tiredness, doubt or a goal that no longer feels like yours – and tend to that first.",
+   "love": "Attraction feels fresh and lively, and you may be drawn to someone who wakes up your curiosity. In an existing bond, this is a moment to bring back playfulness and shared adventures.",
+   "work": "A new idea or opportunity is asking for your energy. Start small and let your enthusiasm show you which direction feels most alive.",
+   "advice": "Take one small step toward the thing that lights you up."
+  },
+  "bg": {
+   "name": "Асо Жезли",
+   "keywords": [
+    "искра",
+    "ново начинание",
+    "творчески огън",
+    "начало"
+   ],
+   "imagery": "Ръка се показва от облак и държи здрав жезъл с пъпки и свежи листа, а далеч долу на хълм се вижда замък.",
+   "upright": "Една нова искра се разпалва. Картата говори за първите трепети на идея, проект или желание, което иска да се превърне в нещо истинско. Забележи какво те вълнува точно сега и му дай малко място – такава сурова енергия иска първа крачка, не съвършен план.",
+   "reversed": "Искрата е тук, но нещо ѝ пречи да пламне. Може да се чувстваш без сили, разпилян или да не знаеш накъде е изчезнал ентусиазмът ти. Вместо да се насилваш, попитай се какво е охладило огъня – умора, съмнение или цел, която вече не усещаш като своя – и започни оттам.",
+   "love": "Привличането е свежо и живо и може да те тегли към човек, който събужда любопитството ти. Във вече съществуваща връзка е време да върнеш закачката и общите приключения.",
+   "work": "Нова идея или възможност търси енергията ти. Започни с малко и остави въодушевлението да ти покаже коя посока е най-жива.",
+   "advice": "Направи една малка крачка към онова, което те запалва."
+  }
+ },
+ "wands_two": {
+  "index": 23,
+  "group": "wands",
+  "rank": "two",
+  "en": {
+   "name": "Two of Wands",
+   "keywords": [
+    "vision",
+    "planning",
+    "choice",
+    "wider horizons"
+   ],
+   "imagery": "A figure stands on castle battlements holding a small globe in one hand and a wand in the other, while a second wand is fixed to the wall beside them, looking out over land and sea.",
+   "upright": "You have some solid ground under your feet and now you are looking further out. This card speaks of plans, ambitions and the quiet restlessness that comes when what you have is good but not quite enough. It invites you to picture the bigger world you want and decide how to reach for it.",
+   "reversed": "Your plans may feel stuck between wanting more and fearing the unknown. Perhaps something has surprised you or made you hesitate. Notice whether caution is protecting you or simply keeping you small, and allow yourself to take in what is new before deciding.",
+   "love": "You may be weighing what you want from a connection and where it could lead. Talk openly about shared plans instead of guessing what the other person imagines.",
+   "work": "It is a good time to map out your next stage and think beyond your current role. Clarity about direction matters more than speed here.",
+   "advice": "Look at the horizon and name the place you really want to go."
+  },
+  "bg": {
+   "name": "Двойка Жезли",
+   "keywords": [
+    "визия",
+    "планиране",
+    "избор",
+    "по-широк хоризонт"
+   ],
+   "imagery": "Фигура стои на крепостната стена на замък, държи малък глобус в едната ръка и жезъл в другата, до нея е закрепен втори жезъл, а погледът ѝ е отправен към земя и море.",
+   "upright": "Под краката ти има стабилна почва и вече гледаш по-надалеч. Картата говори за планове, амбиции и тихото безпокойство, което идва, когато имаш нещо хубаво, но не съвсем достатъчно. Тя те кани да си представиш по-големия свят, който искаш, и да решиш как да посегнеш към него.",
+   "reversed": "Плановете ти може да са заседнали между желанието за повече и страха от неизвестното. Може би нещо те е изненадало или те е накарало да се поколебаеш. Забележи дали предпазливостта те пази, или просто те държи малък, и си позволи да осмислиш новото, преди да решаваш.",
+   "love": "Може би претегляш какво искаш от една връзка и докъде би могла да стигне. Говорете открито за общите планове, вместо да гадаеш какво си представя другият.",
+   "work": "Добър момент е да начертаеш следващия си етап и да мислиш отвъд сегашната си роля. Тук яснотата за посоката е по-важна от скоростта.",
+   "advice": "Погледни към хоризонта и назови мястото, до което наистина искаш да стигнеш."
+  }
+ },
+ "wands_three": {
+  "index": 24,
+  "group": "wands",
+  "rank": "three",
+  "en": {
+   "name": "Three of Wands",
+   "keywords": [
+    "expansion",
+    "foresight",
+    "progress",
+    "cooperation"
+   ],
+   "imagery": "Seen from behind, a figure stands on a cliff edge among three planted wands, watching ships sail across a wide sea.",
+   "upright": "What you set in motion is starting to move. This card shows someone who has laid foundations and now watches their efforts travel outward. It speaks of growth, exploration and support that comes through working with others. Trust the groundwork you have done and stay open to what returns to you.",
+   "reversed": "Progress may feel slower than you hoped, or a plan may have taken an unexpected turn. It can also mark the end of a tiring stretch and a pause before the next one. Use the stillness to check your expectations and see who could share the load with you.",
+   "love": "A relationship may be growing beyond its early stage, with talk of shared future or travel. Give each other room to explore while staying connected.",
+   "work": "Your efforts are beginning to reach further, and partnerships can carry them even further. Keep an eye on the long view.",
+   "advice": "Trust the seeds you have planted and watch for the ships coming in."
+  },
+  "bg": {
+   "name": "Тройка Жезли",
+   "keywords": [
+    "разрастване",
+    "далновидност",
+    "напредък",
+    "сътрудничество"
+   ],
+   "imagery": "Фигура, видяна в гръб, стои на ръба на скала сред три забити жезъла и наблюдава кораби, които плават по широко море.",
+   "upright": "Онова, което задвижи, започва да се движи. Картата показва човек, който е положил основите и сега гледа как усилията му поемат навън. Тя говори за растеж, откривателство и подкрепа, която идва от работата с други. Довери се на подготовката си и остани отворен за онова, което ще се върне при теб.",
+   "reversed": "Напредъкът може да ти се струва по-бавен, отколкото си се надявал, или планът да е поел неочаквана посока. Картата може да бележи и края на изморителен период и пауза преди следващия. Използвай затишието, за да провериш очакванията си и да видиш кой може да поеме част от товара с теб.",
+   "love": "Една връзка може би излиза отвъд началния си етап – с разговори за общо бъдеще или пътуване. Дайте си простор да опознавате света, като останете свързани.",
+   "work": "Усилията ти започват да стигат по-далеч, а партньорствата могат да ги отнесат още по-нататък. Не изпускай от поглед дългия хоризонт.",
+   "advice": "Довери се на посятото и следи за корабите, които се връщат."
+  }
+ },
+ "wands_four": {
+  "index": 25,
+  "group": "wands",
+  "rank": "four",
+  "en": {
+   "name": "Four of Wands",
+   "keywords": [
+    "celebration",
+    "home",
+    "harmony",
+    "rest"
+   ],
+   "imagery": "Four wands hung with a garland of flowers and fruit form a gateway, while two figures raise bouquets in welcome before a castle and a bridge.",
+   "upright": "This is a card of homecoming and joy. It speaks of a safe haven, a harvest gathered and a moment to celebrate what has been built together. Let yourself enjoy the warmth of belonging, whether that means friends, family or a place where you can finally exhale.",
+   "reversed": "Even upside down, this card keeps its warm meaning: happiness, growth and beauty are still near. The celebration may simply be quieter or less formal than you imagined. Look for small, real moments of harmony rather than waiting for one perfect occasion.",
+   "love": "A relationship may reach a happy milestone or simply feel settled and welcoming. Celebrate your togetherness and the home you create for each other.",
+   "work": "A phase of work is coming to a satisfying close. Acknowledge the achievement and share the credit with those who helped.",
+   "advice": "Pause to celebrate what you have already built."
+  },
+  "bg": {
+   "name": "Четворка Жезли",
+   "keywords": [
+    "празник",
+    "дом",
+    "хармония",
+    "почивка"
+   ],
+   "imagery": "Четири жезъла, окичени с гирлянд от цветя и плодове, образуват порта, а две фигури вдигат букети за посрещане пред замък и мост.",
+   "upright": "Това е карта на завръщането у дома и на радостта. Тя говори за сигурно пристанище, прибрана реколта и момент да отпразнуваш изграденото заедно. Позволи си да се насладиш на топлината на принадлежността – било то приятели, семейство или място, където най-сетне можеш да си отдъхнеш.",
+   "reversed": "Дори обърната, тази карта запазва топлото си значение: щастието, растежът и красотата са все така наблизо. Празникът може просто да е по-тих или по-неформален, отколкото си си представял. Търси малките истински мигове на хармония, вместо да чакаш един съвършен повод.",
+   "love": "Една връзка може да достигне щастлив етап или просто да се усеща спокойна и гостоприемна. Празнувайте заедността си и дома, който създавате един за друг.",
+   "work": "Един етап от работата приключва удовлетворяващо. Признай постижението и сподели заслугите с онези, които са помогнали.",
+   "advice": "Спри за миг, за да отпразнуваш онова, което вече си изградил."
+  }
+ },
+ "wands_five": {
+  "index": 26,
+  "group": "wands",
+  "rank": "five",
+  "en": {
+   "name": "Five of Wands",
+   "keywords": [
+    "competition",
+    "friction",
+    "striving",
+    "testing strength"
+   ],
+   "imagery": "Five young people swing their wands at one another in what looks more like a lively mock battle than a real fight.",
+   "upright": "Energy is running high and everyone seems to be pushing in a different direction. This card describes rivalry, debate and the busy struggle to get ahead. It is not necessarily hostile, more like sparring that sharpens you. Ask whether the contest is helping you grow or simply wearing you out.",
+   "reversed": "The friction may turn more tangled, with disagreements, mixed messages or people working against each other. It can also signal a wish to step back from conflict. Look for honest conversation and clear terms, and notice where you can choose peace over winning.",
+   "love": "Small clashes may reveal different needs or styles. Treat disagreements as a way to understand each other, not as a fight to win.",
+   "work": "Competition or a crowded field is pushing you to show your strengths. Healthy rivalry can motivate you as long as you stay fair and focused.",
+   "advice": "Choose which battles are truly worth your fire."
+  },
+  "bg": {
+   "name": "Петица Жезли",
+   "keywords": [
+    "съперничество",
+    "търкания",
+    "стремеж",
+    "проба на силите"
+   ],
+   "imagery": "Петима млади размахват жезлите си един срещу друг в нещо, което прилича по-скоро на оживена игрова схватка, отколкото на истински бой.",
+   "upright": "Енергията е висока и всеки сякаш тегли в различна посока. Картата описва съперничество, спорове и шумната борба да изпревариш другите. Не е задължително враждебно – по-скоро е като тренировъчен двубой, който те изостря. Попитай се дали надпреварата ти помага да растеш, или просто те изтощава.",
+   "reversed": "Търканията може да станат по-заплетени – с несъгласия, противоречиви сигнали или хора, които си пречат. Картата може да покаже и желание да се отдръпнеш от конфликта. Търси честен разговор и ясни условия и забележи къде можеш да избереш мира пред победата.",
+   "love": "Дребни сблъсъци могат да разкрият различни нужди или навици. Приемай несъгласията като начин да се разберете, а не като битка за печелене.",
+   "work": "Конкуренцията или претъпканото поле те подтикват да покажеш силните си страни. Здравословното съперничество мотивира, стига да останеш честен и съсредоточен.",
+   "advice": "Избери кои битки наистина заслужават огъня ти."
+  }
+ },
+ "wands_six": {
+  "index": 27,
+  "group": "wands",
+  "rank": "six",
+  "en": {
+   "name": "Six of Wands",
+   "keywords": [
+    "recognition",
+    "victory",
+    "confidence",
+    "good news"
+   ],
+   "imagery": "A rider crowned with laurel carries a wand tied with a victory wreath, surrounded by people on foot holding their own wands high.",
+   "upright": "Something you hoped for is being recognised. This card celebrates success, good news and the confidence that comes when others see your efforts. Let yourself receive the praise without shrinking from it, and remember the people walking beside you who helped make it happen.",
+   "reversed": "You may worry that success is fragile, or feel uneasy about someone else's rise. Recognition might be delayed or less visible than you wanted. Gently separate your worth from applause and check whether fear is telling you a story that is not quite true.",
+   "love": "You may feel proud of your relationship or admired by someone special. Celebrate each other openly and let affection be seen.",
+   "work": "Your efforts are noticed and a win may be within reach. Share the moment with your team and use the confidence for your next goal.",
+   "advice": "Accept the recognition and stay humble about the journey."
+  },
+  "bg": {
+   "name": "Шестица Жезли",
+   "keywords": [
+    "признание",
+    "победа",
+    "увереност",
+    "добри новини"
+   ],
+   "imagery": "Ездач, увенчан с лавров венец, носи жезъл с вързан победен венец, а около него вървят пешаци с високо вдигнати жезли.",
+   "upright": "Нещо, за което си мечтал, получава признание. Картата празнува успеха, добрите новини и увереността, която идва, когато другите виждат усилията ти. Позволи си да приемеш похвалата, без да се свиваш, и помни хората, които са вървели до теб и са помогнали това да се случи.",
+   "reversed": "Може да се тревожиш, че успехът е крехък, или да ти е неловко от нечий чужд възход. Признанието може да закъснява или да е по-незабележимо, отколкото ти се иска. Внимателно отдели стойността си от аплодисментите и провери дали страхът не ти разказва история, която не е съвсем вярна.",
+   "love": "Може да се гордееш с връзката си или да усещаш възхищението на някой специален. Празнувайте се открито и оставете обичта да се вижда.",
+   "work": "Усилията ти се забелязват и една победа може да е на една ръка разстояние. Сподели момента с екипа си и използвай увереността за следващата цел.",
+   "advice": "Приеми признанието и остани скромен за пътя дотук."
+  }
+ },
+ "wands_seven": {
+  "index": 28,
+  "group": "wands",
+  "rank": "seven",
+  "en": {
+   "name": "Seven of Wands",
+   "keywords": [
+    "standing firm",
+    "courage",
+    "conviction",
+    "challenge"
+   ],
+   "imagery": "A young person on a rocky height holds a wand against six others rising toward them from below, keeping the higher ground.",
+   "upright": "You are holding your position while others push back. This card speaks of courage, conviction and the energy of defending what matters to you. You have the higher ground, so stay steady. Discussion and negotiation are part of the picture, and calm persistence can carry you through.",
+   "reversed": "You may feel overwhelmed, unsure whether to keep defending your ground or let it go. Doubt and second-guessing can drain more energy than the challenge itself. Decide what is truly yours to protect, and allow yourself to release the rest.",
+   "love": "You may need to stand up for your needs or for the relationship itself. Speak with conviction, but leave space to listen.",
+   "work": "You may face pushback or competition for your ideas. Trust your experience and defend your position with clear reasons.",
+   "advice": "Stand firm for what matters and let the rest go."
+  },
+  "bg": {
+   "name": "Седмица Жезли",
+   "keywords": [
+    "твърда позиция",
+    "смелост",
+    "убеденост",
+    "предизвикателство"
+   ],
+   "imagery": "Млад човек на скалисто възвишение държи жезъл срещу шест други, които се издигат към него отдолу, и пази по-високото място.",
+   "upright": "Държиш позицията си, докато другите натискат. Картата говори за смелост, убеденост и енергия да защитиш онова, което има значение за теб. Ти си на по-високото място, затова остани стабилен. Обсъжданията и преговорите са част от картината, а спокойното постоянство може да те преведе.",
+   "reversed": "Може да се чувстваш претоварен и да не знаеш дали да продължиш да отстояваш позицията си, или да я пуснеш. Съмненията и колебанията могат да изчерпят повече сили от самото предизвикателство. Реши кое наистина е твое да пазиш и си позволи да освободиш останалото.",
+   "love": "Може да се наложи да отстояваш нуждите си или самата връзка. Говори убедено, но остави място и да слушаш.",
+   "work": "Може да срещнеш съпротива или конкуренция за идеите си. Довери се на опита си и защитавай позицията си с ясни доводи.",
+   "advice": "Остани твърд за важното и пусни останалото."
+  }
+ },
+ "wands_eight": {
+  "index": 29,
+  "group": "wands",
+  "rank": "eight",
+  "en": {
+   "name": "Eight of Wands",
+   "keywords": [
+    "momentum",
+    "speed",
+    "messages",
+    "movement"
+   ],
+   "imagery": "Eight wands fly diagonally through a clear sky above open countryside and a river, all heading the same way.",
+   "upright": "Things are picking up speed. This card brings swift movement, news arriving quickly and the sense that a matter is heading toward its goal. It can also hint at sudden sparks of affection. Ride the momentum, stay alert and respond while the energy is fresh.",
+   "reversed": "The arrows may be flying in the wrong direction, stirring jealousy, rushed words or tension at home. Things can feel hurried yet stuck at once. Slow down before reacting, and check whether your restlessness comes from the situation or from inside you.",
+   "love": "Feelings can move quickly, with messages and invitations flying. Enjoy the rush while letting trust keep pace with excitement.",
+   "work": "Projects and news may arrive all at once. Prioritise, act decisively and keep communication clear.",
+   "advice": "Move with the momentum, but aim before you release."
+  },
+  "bg": {
+   "name": "Осмица Жезли",
+   "keywords": [
+    "устрем",
+    "бързина",
+    "вести",
+    "движение"
+   ],
+   "imagery": "Осем жезъла летят по диагонал в ясното небе над открита местност и река, всички в една и съща посока.",
+   "upright": "Нещата набират скорост. Картата носи бързо движение, вести, които пристигат неочаквано скоро, и усещането, че една ситуация се носи към целта си. Тя може да намеква и за внезапни искри на привличане. Възползвай се от устрема, бъди нащрек и отговаряй, докато енергията е свежа.",
+   "reversed": "Стрелите може да летят в погрешна посока и да разпалват ревност, прибързани думи или напрежение у дома. Нещата може да изглеждат едновременно забързани и заседнали. Забави се, преди да реагираш, и провери дали безпокойството ти идва от ситуацията, или отвътре.",
+   "love": "Чувствата могат да се развият бързо, а съобщенията и поканите да летят. Наслаждавай се на вълнението, но остави доверието да върви в крак с него.",
+   "work": "Проекти и новини може да пристигнат наведнъж. Подреди приоритетите, действай решително и поддържай общуването ясно.",
+   "advice": "Движи се с устрема, но се прицели, преди да пуснеш стрелата."
+  }
+ },
+ "wands_nine": {
+  "index": 30,
+  "group": "wands",
+  "rank": "nine",
+  "en": {
+   "name": "Nine of Wands",
+   "keywords": [
+    "resilience",
+    "vigilance",
+    "perseverance",
+    "boundaries"
+   ],
+   "imagery": "A figure with a bandaged head leans on a wand and watches warily, with eight more wands standing upright behind them like a fence.",
+   "upright": "You have been through a lot, and you are still standing. This card shows strength that stays alert, ready to meet whatever comes next. Your boundaries and experience are real resources. Honour how far you have come, and notice whether you can lower your guard where it is safe.",
+   "reversed": "Obstacles may feel heavier and your reserves thinner. Constant watchfulness can turn into exhaustion or mistrust. Let yourself ask for support, and consider which defences still serve you and which belong to an older chapter.",
+   "love": "Past hurts may make you cautious with your heart. Protect what is tender, yet give trustworthy people a chance to come closer.",
+   "work": "You are near the end of a demanding stretch. Persist a little longer, and pace yourself so you do not burn out.",
+   "advice": "Honour your strength, and let someone help you carry the watch."
+  },
+  "bg": {
+   "name": "Деветка Жезли",
+   "keywords": [
+    "издръжливост",
+    "бдителност",
+    "постоянство",
+    "граници"
+   ],
+   "imagery": "Фигура с превързана глава се подпира на жезъл и гледа предпазливо, а зад нея стоят изправени още осем жезъла като ограда.",
+   "upright": "Минал си през много и все още стоиш изправен. Картата показва сила, която остава нащрек и е готова да посрещне следващото. Границите и опитът ти са истински ресурс. Признай колко път си извървял и забележи дали можеш да свалиш гарда там, където е безопасно.",
+   "reversed": "Препятствията може да изглеждат по-тежки, а силите ти – на изчерпване. Постоянната бдителност може да прерасне в изтощение или недоверие. Позволи си да потърсиш подкрепа и помисли кои защити още ти служат и кои принадлежат на една по-стара глава.",
+   "love": "Старите рани може да те правят предпазлив със сърцето ти. Пази онова, което е нежно, но дай шанс на хората, на които може да се вярва, да се приближат.",
+   "work": "Наближаваш края на изтощителен период. Издръж още малко, но разпредели силите си, за да не прегориш.",
+   "advice": "Признай силата си и позволи на някого да пази с теб."
+  }
+ },
+ "wands_ten": {
+  "index": 31,
+  "group": "wands",
+  "rank": "ten",
+  "en": {
+   "name": "Ten of Wands",
+   "keywords": [
+    "burden",
+    "responsibility",
+    "overload",
+    "final stretch"
+   ],
+   "imagery": "A figure bends under the weight of ten wands clutched in their arms, trudging toward a town in the distance.",
+   "upright": "Success has brought its own weight. This card shows someone carrying more than is comfortable, often because they took on everything themselves. The goal may be close, yet the load is heavy. Look honestly at what you are holding and ask which pieces you could share, set down or carry differently.",
+   "reversed": "The pressure may come out as tangled situations, conflicting demands or quiet strain behind a calm face. It can also be the moment you finally let something drop. Notice what you have been pretending is fine, and give yourself permission to simplify.",
+   "love": "One person may be carrying too much of the relationship. Talk about how to share responsibilities so that love does not feel like duty.",
+   "work": "You may be overloaded with tasks and commitments. Delegate, prioritise and remember that doing everything alone is not the same as doing it well.",
+   "advice": "Set down one thing you were never meant to carry alone."
+  },
+  "bg": {
+   "name": "Десетка Жезли",
+   "keywords": [
+    "бреме",
+    "отговорност",
+    "претоварване",
+    "последна отсечка"
+   ],
+   "imagery": "Фигура се е превила под тежестта на десет жезъла, които стиска в ръцете си, и се влачи към град в далечината.",
+   "upright": "Успехът е донесъл и своята тежест. Картата показва човек, който носи повече, отколкото му е удобно, често защото е поел всичко сам. Целта може да е близо, но товарът е тежък. Погледни честно какво държиш и се запитай кои части можеш да споделиш, да оставиш или да носиш по друг начин.",
+   "reversed": "Напрежението може да излезе наяве като заплетени ситуации, противоречиви изисквания или тиха умора зад спокойно лице. Може да е и мигът, в който най-сетне пускаш нещо. Забележи какво си се преструвал, че е наред, и си позволи да опростиш нещата.",
+   "love": "Единият може да носи твърде голяма част от връзката. Поговорете как да споделите отговорностите, така че любовта да не се усеща като задължение.",
+   "work": "Може да си затрупан със задачи и ангажименти. Делегирай, подреди приоритетите и помни, че да правиш всичко сам не е същото като да го правиш добре.",
+   "advice": "Остави едно нещо, което никога не е трябвало да носиш сам."
+  }
+ },
+ "wands_page": {
+  "index": 32,
+  "group": "wands",
+  "rank": "page",
+  "en": {
+   "name": "Page of Wands",
+   "keywords": [
+    "enthusiasm",
+    "curiosity",
+    "news",
+    "exploration"
+   ],
+   "imagery": "A young figure in a patterned tunic stands in a dry, open landscape, holding a tall sprouting wand and gazing at it as if about to announce something.",
+   "upright": "Fresh enthusiasm is knocking. This card can describe a curious, faithful and eager person, or the arrival of exciting news and invitations. It encourages you to explore without needing all the answers yet. Treat this as a playful beginning and let your curiosity lead.",
+   "reversed": "Excitement may scatter before it settles. You might hear unsettling news or feel torn between too many ideas. Notice where restlessness is pulling you in circles, and choose one spark to follow through on instead of chasing them all.",
+   "love": "A flirtatious message or a new crush may bring a pleasant thrill. Stay curious and honest about where your interest lies.",
+   "work": "A new idea, course or role may call to your adventurous side. Try it out with an open mind and a willingness to learn.",
+   "advice": "Follow your curiosity and see where it leads you today."
+  },
+  "bg": {
+   "name": "Паж Жезли",
+   "keywords": [
+    "ентусиазъм",
+    "любопитство",
+    "вести",
+    "откривателство"
+   ],
+   "imagery": "Млада фигура в шарена туника стои сред суха, открита местност, държи висок жезъл с пъпки и го гледа, сякаш се кани да обяви нещо.",
+   "upright": "Нов ентусиазъм чука на вратата. Картата може да описва любопитен, верен и нетърпелив човек или пристигането на вълнуващи вести и покани. Тя те насърчава да изследваш, без да имаш още всички отговори. Приеми това като игриво начало и остави любопитството да те води.",
+   "reversed": "Вълнението може да се разпилее, преди да се е уталожило. Може да чуеш смущаващи новини или да се разкъсваш между твърде много идеи. Забележи къде безпокойството те върти в кръг и избери една искра, която да доведеш докрай, вместо да гониш всички.",
+   "love": "Закачливо съобщение или ново увлечение може да донесе приятна тръпка. Остани любопитен и честен за това накъде е насочен интересът ти.",
+   "work": "Нова идея, курс или роля може да повика авантюристичната ти страна. Опитай с отворено съзнание и желание да учиш.",
+   "advice": "Последвай любопитството си и виж накъде ще те отведе днес."
+  }
+ },
+ "wands_knight": {
+  "index": 33,
+  "group": "wands",
+  "rank": "knight",
+  "en": {
+   "name": "Knight of Wands",
+   "keywords": [
+    "adventure",
+    "boldness",
+    "change",
+    "departure"
+   ],
+   "imagery": "A knight in armour and a tunic patterned with salamanders rides a rearing horse past desert mounds, holding a short sprouting wand.",
+   "upright": "This card brings bold, restless energy and the urge to move. It can point to a journey, a change of place or a person who is passionate, daring and always on the go. Use this fire to act on your plans, while keeping enough patience to finish what you start.",
+   "reversed": "Haste may turn into impulsiveness, with plans breaking off or tempers flaring. You might feel interrupted or pulled away from something important. Ask whether you are moving toward what you want or simply away from discomfort, and pause before you charge ahead.",
+   "love": "Passion and excitement run high, perhaps with someone adventurous. Enjoy the spark, and check whether you both want the same pace.",
+   "work": "You may feel ready for a bold move, a new project or a change of scene. Act with courage, and plan just enough to keep your momentum.",
+   "advice": "Ride your passion, but hold the reins."
+  },
+  "bg": {
+   "name": "Рицар Жезли",
+   "keywords": [
+    "приключение",
+    "дързост",
+    "промяна",
+    "тръгване"
+   ],
+   "imagery": "Рицар в броня и туника, изрисувана със саламандри, язди изправен на задните си крака кон покрай пустинни хълмове и държи къс жезъл с пъпки.",
+   "upright": "Картата носи дръзка, неспокойна енергия и порив за движение. Тя може да сочи пътуване, смяна на мястото или човек, който е страстен, смел и винаги в движение. Използвай този огън, за да действаш по плановете си, но запази достатъчно търпение, за да довършиш започнатото.",
+   "reversed": "Бързането може да се превърне в импулсивност – с прекъснати планове или избухвания. Може да се чувстваш прекъснат или откъснат от нещо важно. Попитай се дали вървиш към онова, което искаш, или просто бягаш от неудобството, и спри за миг, преди да се втурнеш напред.",
+   "love": "Страстта и вълнението са силни, може би с човек с дух на авантюрист. Наслаждавай се на искрата и провери дали и двамата искате едно и също темпо.",
+   "work": "Може да се чувстваш готов за смела крачка, нов проект или смяна на обстановката. Действай с кураж и планирай точно колкото е нужно, за да запазиш устрема.",
+   "advice": "Остави се на страстта си, но дръж юздите."
+  }
+ },
+ "wands_queen": {
+  "index": 34,
+  "group": "wands",
+  "rank": "queen",
+  "en": {
+   "name": "Queen of Wands",
+   "keywords": [
+    "warmth",
+    "confidence",
+    "vitality",
+    "generosity"
+   ],
+   "imagery": "A queen sits on a throne carved with lions, holding a leafy wand in one hand and a sunflower in the other, with a black cat sitting at her feet.",
+   "upright": "This card describes a warm, confident and magnetic presence, a person who is friendly, loyal and full of life. It may be you, or someone who inspires you. It invites you to step into your own radiance, trust your instincts and share your energy generously with those you care about.",
+   "reversed": "The same fire can turn inward as jealousy, insecurity or a need to control. You might also find yourself being helpful to the point of forgetting your own needs. Notice where you feel threatened, and return to the steady confidence that does not depend on outshining anyone.",
+   "love": "Warmth, charm and self-assurance make you attractive and easy to be around. Show your affection openly and let your loyalty be felt.",
+   "work": "You can lead with enthusiasm and practical skill. Let your confidence inspire others while you keep things running smoothly.",
+   "advice": "Let your warmth shine without dimming anyone else."
+  },
+  "bg": {
+   "name": "Царица Жезли",
+   "keywords": [
+    "топлина",
+    "увереност",
+    "жизненост",
+    "щедрост"
+   ],
+   "imagery": "Царица седи на трон, изваян с лъвове, държи жезъл с листа в едната ръка и слънчоглед в другата, а в краката ѝ седи черна котка.",
+   "upright": "Картата описва топло, уверено и привличащо присъствие – човек, който е дружелюбен, верен и изпълнен с живот. Това може да си ти или някой, който те вдъхновява. Тя те кани да пристъпиш в собственото си сияние, да се довериш на инстинктите си и щедро да споделяш енергията си с хората, които обичаш.",
+   "reversed": "Същият огън може да се обърне навътре като ревност, несигурност или нужда от контрол. Може и да помагаш дотолкова, че да забравиш собствените си нужди. Забележи къде се чувстваш застрашен и се върни към спокойната увереност, която не зависи от това да засенчиш някого.",
+   "love": "Топлината, чарът и самоувереността те правят привлекателен и приятен за компания. Показвай обичта си открито и остави верността ти да се усеща.",
+   "work": "Можеш да водиш с ентусиазъм и практичен усет. Нека увереността ти вдъхновява другите, докато държиш нещата в ред.",
+   "advice": "Остави топлината си да грее, без да засенчваш никого."
+  }
+ },
+ "wands_king": {
+  "index": 35,
+  "group": "wands",
+  "rank": "king",
+  "en": {
+   "name": "King of Wands",
+   "keywords": [
+    "leadership",
+    "vision",
+    "integrity",
+    "passion"
+   ],
+   "imagery": "A king sits on a throne decorated with lions and salamanders, holding a flowering wand and leaning forward as if ready to rise, with a small salamander at his feet.",
+   "upright": "This card describes a passionate, honest and noble spirit, someone with vision who leads by example. It may reflect you or a person you look up to. It encourages you to take charge of your direction, act with integrity and let your enthusiasm move others toward a shared goal.",
+   "reversed": "Strong leadership can harden into strictness or impatience. You may be holding yourself or others to demanding standards. The good intentions are still there, so ask how you can stay principled while also being tolerant, flexible and kind.",
+   "love": "You may seek or offer a love that is generous, loyal and bold. Lead with honesty and let your passion feel safe, not overwhelming.",
+   "work": "Your vision and drive can inspire a team. Set the direction, keep your word and trust others to bring their own fire.",
+   "advice": "Lead with vision, and leave room for others to shine."
+  },
+  "bg": {
+   "name": "Цар Жезли",
+   "keywords": [
+    "водачество",
+    "визия",
+    "почтеност",
+    "страст"
+   ],
+   "imagery": "Цар седи на трон, украсен с лъвове и саламандри, държи цъфнал жезъл и се е наклонил напред, сякаш всеки миг ще стане, а в краката му има малък саламандър.",
+   "upright": "Картата описва страстен, честен и благороден дух – човек с визия, който води с личен пример. Тя може да отразява теб или някого, когото уважаваш. Насърчава те да поемеш посоката си в свои ръце, да действаш почтено и да оставиш ентусиазма си да увлича другите към обща цел.",
+   "reversed": "Силното водачество може да се втвърди в строгост или нетърпение. Възможно е да държиш себе си или другите на твърде високи изисквания. Добрите намерения са все още там, затова се запитай как да останеш принципен, но и толерантен, гъвкав и добър.",
+   "love": "Може да търсиш или да даряваш любов, която е щедра, вярна и смела. Води с честност и остави страстта ти да носи сигурност, а не да задушава.",
+   "work": "Визията и устремът ти могат да вдъхновят цял екип. Задай посоката, дръж на думата си и се довери, че другите ще донесат своя огън.",
+   "advice": "Води с визия и остави място и другите да блеснат."
+  }
+ },
+ "cups_ace": {
+  "index": 36,
+  "group": "cups",
+  "rank": "ace",
+  "en": {
+   "name": "Ace of Cups",
+   "keywords": [
+    "open heart",
+    "new feelings",
+    "abundance",
+    "joy"
+   ],
+   "imagery": "A hand emerges from a cloud holding a cup that overflows in five streams into a pond of water lilies, while a dove descends toward the cup carrying a small wafer.",
+   "upright": "Your heart is ready to open. This card brings a fresh wave of feeling, whether that is new love, renewed friendship or simply a deep sense of contentment. Emotion here is generous and nourishing. Let yourself receive kindness, and notice how much you have to give in return.",
+   "reversed": "Feelings may be shifting or hard to trust right now. You might sense that something looks loving on the surface but feels uncertain underneath, or your own emotions may be unsettled. Be gentle with yourself and allow time for your heart to find steady ground.",
+   "love": "A new connection or a deeper emotional bond may be forming. Stay open, and let affection flow without rushing to define it.",
+   "work": "Work that touches your heart or helps others may feel especially rewarding. Follow the tasks that make you feel emotionally engaged.",
+   "advice": "Open your heart to what wants to flow in."
+  },
+  "bg": {
+   "name": "Асо Чаши",
+   "keywords": [
+    "отворено сърце",
+    "нови чувства",
+    "изобилие",
+    "радост"
+   ],
+   "imagery": "Ръка се показва от облак и държи чаша, от която преливат пет струи в езерце с водни лилии, а към чашата се спуска гълъб с малка нафора в клюна.",
+   "upright": "Сърцето ти е готово да се отвори. Картата носи свежа вълна от чувства – нова любов, обновено приятелство или просто дълбоко усещане за удовлетвореност. Емоциите тук са щедри и подхранващи. Позволи си да приемеш добротата и забележи колко много имаш да дадеш в замяна.",
+   "reversed": "Чувствата може да се променят или трудно да им се довериш в момента. Може да усещаш, че нещо изглежда любящо отгоре, но под повърхността е несигурно, или собствените ти емоции да са разклатени. Бъди нежен със себе си и дай време на сърцето си да намери твърда почва.",
+   "love": "Може да се заражда нова връзка или по-дълбока емоционална близост. Остани отворен и остави обичта да тече, без да бързаш да ѝ слагаш име.",
+   "work": "Работа, която докосва сърцето ти или помага на другите, може да носи особено удовлетворение. Следвай задачите, в които се чувстваш истински ангажиран.",
+   "advice": "Отвори сърцето си за онова, което иска да влезе."
+  }
+ },
+ "cups_two": {
+  "index": 37,
+  "group": "cups",
+  "rank": "two",
+  "en": {
+   "name": "Two of Cups",
+   "keywords": [
+    "connection",
+    "partnership",
+    "mutual attraction",
+    "harmony"
+   ],
+   "imagery": "Two young people face each other and exchange cups as a pledge, beneath a winged lion's head rising above a staff entwined with two serpents.",
+   "upright": "This is a card of meeting someone halfway. It speaks of mutual attraction, friendship, understanding and the sweet feeling of being seen. Two people offer something of themselves and receive something back. Notice where a real exchange of feeling is happening and honour it.",
+   "reversed": "The balance between two people may feel off. Perhaps one gives more than the other, or desire is louder than genuine care. A misunderstanding could be creating distance. Speak honestly about what you feel and need, and listen for what the other person truly wants.",
+   "love": "A meaningful bond, a mutual spark or a renewed commitment is highlighted. Treat each other as equals and keep the exchange of care alive.",
+   "work": "A partnership or collaboration built on respect can thrive now. Look for people whose values match yours.",
+   "advice": "Offer your cup, and welcome the one held out to you."
+  },
+  "bg": {
+   "name": "Двойка Чаши",
+   "keywords": [
+    "връзка",
+    "партньорство",
+    "взаимно привличане",
+    "хармония"
+   ],
+   "imagery": "Двама млади застават един срещу друг и си разменят чаши като обет, а над тях се издига крилата лъвска глава над жезъл, обвит от две змии.",
+   "upright": "Това е карта на срещата по средата на пътя. Тя говори за взаимно привличане, приятелство, разбиране и сладкото чувство, че някой те вижда. Двама души дават нещо от себе си и получават нещо в отговор. Забележи къде се случва истинска размяна на чувства и я цени.",
+   "reversed": "Равновесието между двама души може да е нарушено. Може единият да дава повече от другия или желанието да е по-силно от истинската грижа. Някое недоразумение може да създава дистанция. Говори честно за това какво чувстваш и от какво имаш нужда и се вслушай какво всъщност иска другият.",
+   "love": "На преден план са смислена връзка, взаимна искра или обновен ангажимент. Отнасяйте се един към друг като равни и поддържайте жива размяната на грижа.",
+   "work": "Партньорство или сътрудничество, изградено на уважение, сега може да процъфти. Търси хора, чиито ценности съвпадат с твоите.",
+   "advice": "Подай чашата си и приеми онази, която ти протягат."
+  }
+ },
+ "cups_three": {
+  "index": 38,
+  "group": "cups",
+  "rank": "three",
+  "en": {
+   "name": "Three of Cups",
+   "keywords": [
+    "friendship",
+    "celebration",
+    "community",
+    "abundance"
+   ],
+   "imagery": "Three young women dance in a garden ripe with fruit and gourds, raising their cups together in a toast.",
+   "upright": "Something deserves to be celebrated. This card speaks of friendship, shared happiness and the joy of a good outcome. It reminds you that joy grows when it is shared. Reach out to the people who lift you up, and let yourself enjoy a moment of ease and belonging.",
+   "reversed": "A matter may be wrapping up quickly, perhaps faster than you expected. The celebration can also tip into overindulgence or into gatherings that feel more hollow than warm. Ask what kind of connection you are truly craving, and choose company that nourishes you.",
+   "love": "Love is supported by friends and community, and joy may come through shared social moments. Let your relationship breathe among people who care for you both.",
+   "work": "Teamwork and a supportive circle make success sweeter. Celebrate milestones together and appreciate each person's part.",
+   "advice": "Raise a cup with the people who make your life brighter."
+  },
+  "bg": {
+   "name": "Тройка Чаши",
+   "keywords": [
+    "приятелство",
+    "празник",
+    "общност",
+    "изобилие"
+   ],
+   "imagery": "Три млади жени танцуват в градина, пълна с плодове и тикви, и заедно вдигат чашите си за наздравица.",
+   "upright": "Нещо заслужава да бъде отпразнувано. Картата говори за приятелство, споделено щастие и радостта от добрия край. Тя ти напомня, че радостта расте, когато я споделяш. Потърси хората, които те повдигат, и си позволи да се насладиш на миг лекота и принадлежност.",
+   "reversed": "Нещо може да приключва бързо, дори по-бързо, отколкото си очаквал. Празнуването може и да прерасне в излишество или в събирания, които са по-скоро кухи, отколкото топли. Запитай се за каква близост всъщност копнееш и избирай компания, която те подхранва.",
+   "love": "Любовта е подкрепена от приятели и общност, а радостта може да дойде от споделени моменти сред хора. Нека връзката ви диша сред онези, които обичат и двама ви.",
+   "work": "Работата в екип и подкрепящият кръг правят успеха по-сладък. Празнувайте заедно постигнатото и оценявайте приноса на всеки.",
+   "advice": "Вдигни чаша с хората, които правят живота ти по-светъл."
+  }
+ },
+ "cups_four": {
+  "index": 39,
+  "group": "cups",
+  "rank": "four",
+  "en": {
+   "name": "Four of Cups",
+   "keywords": [
+    "apathy",
+    "contemplation",
+    "withdrawal",
+    "missed offers"
+   ],
+   "imagery": "A young person sits under a tree with arms folded, gazing at three cups on the grass while a hand from a cloud offers a fourth cup they do not seem to notice.",
+   "upright": "You may feel bored, dissatisfied or tired of what is in front of you. This card describes withdrawing into your thoughts, sometimes stewing over troubles that are partly imagined. Rest if you need to, yet stay alert: something new may be offered quietly while you are looking the other way.",
+   "reversed": "You are starting to look up again. Fresh ideas, new people or unexpected lessons can pull you out of a slump. Notice what sparks even a little interest, and give yourself permission to say yes to something you might have overlooked before.",
+   "love": "Feeling uninspired may make you overlook genuine affection. Look again at what is offered, and say honestly what you are missing.",
+   "work": "Restlessness or boredom may be a sign that you need new challenges. Reflect on what would make your work feel meaningful again.",
+   "advice": "Look up – something may be offered to you right now."
+  },
+  "bg": {
+   "name": "Четворка Чаши",
+   "keywords": [
+    "безразличие",
+    "съзерцание",
+    "оттегляне",
+    "пропуснати възможности"
+   ],
+   "imagery": "Млад човек седи под дърво със скръстени ръце и гледа три чаши на тревата, докато ръка от облак му подава четвърта, която той сякаш не забелязва.",
+   "upright": "Може да се чувстваш отегчен, неудовлетворен или уморен от онова, което е пред теб. Картата описва оттегляне в собствените мисли, понякога въртене около тревоги, които са отчасти въображаеми. Почини си, ако имаш нужда, но остани нащрек: нещо ново може тихо да ти бъде предложено, докато гледаш в другата посока.",
+   "reversed": "Започваш отново да вдигаш поглед. Свежи идеи, нови хора или неочаквани уроци могат да те извадят от застоя. Забележи какво буди дори мъничко интерес и си позволи да кажеш „да“ на нещо, което досега може би си подминавал.",
+   "love": "Липсата на вдъхновение може да те накара да пропуснеш истинска обич. Погледни отново какво ти се предлага и кажи честно какво ти липсва.",
+   "work": "Неспокойството или скуката може да са знак, че имаш нужда от нови предизвикателства. Помисли какво би върнало смисъла в работата ти.",
+   "advice": "Вдигни поглед – може би точно сега нещо ти се предлага."
+  }
+ },
+ "cups_five": {
+  "index": 40,
+  "group": "cups",
+  "rank": "five",
+  "en": {
+   "name": "Five of Cups",
+   "keywords": [
+    "loss",
+    "regret",
+    "grief",
+    "what remains"
+   ],
+   "imagery": "A figure in a dark cloak bows their head over three spilled cups, while two cups still stand behind them and a bridge leads across a river to a small building.",
+   "upright": "Something has not turned out as you hoped, and it is natural to feel the loss. This card honours sadness and regret. It also gently points out that not everything is gone: there are still cups standing behind you. When you are ready, turn around and see what remains.",
+   "reversed": "Hope is returning. You may reconnect with old friends, family ties or a sense of where you come from. Some plans may prove less solid than they seemed, but you are better able to see clearly now. Let yourself move forward without forgetting what you learned.",
+   "love": "Disappointment or heartache may need space to be felt. Be kind to yourself, and notice the love that is still present around you.",
+   "work": "A setback can feel discouraging, yet not everything is lost. Acknowledge the disappointment, then look at the resources you still have.",
+   "advice": "Grieve what fell, then turn toward what still stands."
+  },
+  "bg": {
+   "name": "Петица Чаши",
+   "keywords": [
+    "загуба",
+    "съжаление",
+    "скръб",
+    "онова, което остава"
+   ],
+   "imagery": "Фигура в тъмно наметало е навела глава над три разлети чаши, зад нея още стоят две, а мост води през река към малка постройка.",
+   "upright": "Нещо не се е получило както си се надявал и е естествено да усещаш загубата. Картата отдава почит на тъгата и съжалението. Тя обаче нежно ти напомня, че не всичко е изгубено: зад теб все още стоят чаши. Когато си готов, обърни се и виж какво е останало.",
+   "reversed": "Надеждата се завръща. Може да се свържеш отново със стари приятели, близки или с усещането откъде идваш. Някои планове може да се окажат по-нестабилни, отколкото изглеждаха, но сега виждаш по-ясно. Позволи си да продължиш напред, без да забравяш наученото.",
+   "love": "Разочарованието или сърдечната болка може да имат нужда от място, за да бъдат изживени. Бъди мил към себе си и забележи любовта, която все още те заобикаля.",
+   "work": "Една неуспешна стъпка може да обезкуражава, но не всичко е загубено. Признай разочарованието и после погледни ресурсите, които още имаш.",
+   "advice": "Оплачи падналото, после се обърни към онова, което още стои."
+  }
+ },
+ "cups_six": {
+  "index": 41,
+  "group": "cups",
+  "rank": "six",
+  "en": {
+   "name": "Six of Cups",
+   "keywords": [
+    "memories",
+    "innocence",
+    "nostalgia",
+    "kindness"
+   ],
+   "imagery": "In an old courtyard, a child offers another child a cup filled with white flowers, with more flower-filled cups standing nearby.",
+   "upright": "The past is calling softly. This card brings memories, innocence and the simple pleasures of earlier days. It may hint at reconnecting with someone from your past or finding comfort in familiar places. Enjoy the sweetness, and notice which old joys you could bring into the present.",
+   "reversed": "Your attention turns from what was to what is coming. Something new may be close, and holding on too tightly to old memories could keep you from it. Treasure the past, yet let it be a foundation rather than a place to hide.",
+   "love": "A tender, playful connection or a reunion may warm your heart. Share memories and simple acts of kindness.",
+   "work": "Revisiting old skills or early dreams can inspire your current path. Bring the curiosity you had as a beginner.",
+   "advice": "Carry a sweet memory forward into today."
+  },
+  "bg": {
+   "name": "Шестица Чаши",
+   "keywords": [
+    "спомени",
+    "невинност",
+    "носталгия",
+    "доброта"
+   ],
+   "imagery": "В стар двор едно дете подава на друго чаша, пълна с бели цветя, а наоколо стоят още чаши с цветя.",
+   "upright": "Миналото те вика тихо. Картата носи спомени, невинност и простите радости на отминали дни. Тя може да намеква за нова среща с някого от миналото или за утеха на познати места. Наслади се на сладостта и забележи кои стари радости можеш да пренесеш в настоящето.",
+   "reversed": "Вниманието ти се обръща от онова, което е било, към онова, което предстои. Нещо ново може да е съвсем близо, а прекаленото вкопчване в спомените може да те отдели от него. Пази миналото като съкровище, но нека то бъде основа, а не скривалище.",
+   "love": "Нежна, игрива връзка или нова среща със стар познат може да стопли сърцето ти. Споделяйте спомени и малки жестове на доброта.",
+   "work": "Връщането към стари умения или ранни мечти може да вдъхнови сегашния ти път. Внеси в работата любопитството, което си имал като начинаещ.",
+   "advice": "Пренеси един сладък спомен в днешния ден."
+  }
+ },
+ "cups_seven": {
+  "index": 42,
+  "group": "cups",
+  "rank": "seven",
+  "en": {
+   "name": "Seven of Cups",
+   "keywords": [
+    "imagination",
+    "choices",
+    "daydreams",
+    "illusion"
+   ],
+   "imagery": "A figure seen in silhouette stands before seven cups floating in clouds, each holding a vision such as a face, a veiled figure, a serpent, a castle, jewels, a wreath and a dragon.",
+   "upright": "Your imagination is wide awake. This card shows many enticing possibilities, dreams and fantasies, not all of them real or lasting. Enjoy the creativity, yet be careful not to mistake wishes for plans. Ask which vision truly matches your values, and take one grounded step toward it.",
+   "reversed": "The mist begins to lift. You may find clarity, willpower and a firm sense of what you actually want. This is a good moment to turn a dream into a concrete project. Let go of options that only glitter, and commit to the one that feels true.",
+   "love": "You may idealise someone or imagine many possible futures. Enjoy dreaming, and also get to know the real person in front of you.",
+   "work": "There are many ideas and paths to choose from. Prioritise, test them against reality and focus your energy.",
+   "advice": "Choose one dream and give it real ground to grow."
+  },
+  "bg": {
+   "name": "Седмица Чаши",
+   "keywords": [
+    "въображение",
+    "избор",
+    "мечтания",
+    "илюзия"
+   ],
+   "imagery": "Фигура, видяна като силует, стои пред седем чаши, които се носят в облаци, и във всяка има видение – лице, забулена фигура, змия, замък, скъпоценности, венец и дракон.",
+   "upright": "Въображението ти е напълно будно. Картата показва много примамливи възможности, мечти и фантазии, но не всички са истински или трайни. Наслаждавай се на творчеството, но внимавай да не объркаш желанията с плановете. Попитай се кое видение наистина отговаря на ценностите ти, и направи една реалистична крачка към него.",
+   "reversed": "Мъглата започва да се вдига. Може да намериш яснота, воля и твърдо усещане какво всъщност искаш. Това е добър момент да превърнеш мечта в конкретен проект. Пусни възможностите, които само блестят, и се посвети на онази, която усещаш като истинска.",
+   "love": "Може да идеализираш някого или да си представяш много възможни бъдещета. Мечтай, но опознай и истинския човек пред теб.",
+   "work": "Имаш много идеи и пътища за избор. Подреди приоритетите, провери ги срещу реалността и насочи енергията си.",
+   "advice": "Избери една мечта и ѝ дай истинска почва, в която да расте."
+  }
+ },
+ "cups_eight": {
+  "index": 43,
+  "group": "cups",
+  "rank": "eight",
+  "en": {
+   "name": "Eight of Cups",
+   "keywords": [
+    "walking away",
+    "seeking more",
+    "letting go",
+    "inner journey"
+   ],
+   "imagery": "Under a moon in the night sky, a cloaked figure with a staff walks away from eight stacked cups toward rocky hills.",
+   "upright": "Sometimes you outgrow what once made you happy. This card shows someone leaving behind a situation that no longer fulfils them, even if it looks fine from the outside. It can feel bittersweet and a little shy. Trust the quiet pull toward something deeper, even if you cannot yet name it.",
+   "reversed": "Joy may arrive where you did not expect it. You might choose to stay and celebrate, or discover that what you were about to leave still has life in it. Reflect on whether you are walking away from emptiness or from a good thing you fear to enjoy.",
+   "love": "You may realise a relationship needs more depth, or that you need space to find yourself. Be honest and gentle with yourself and others.",
+   "work": "A role or project may no longer feel meaningful. Consider what you are truly searching for before deciding on your next step.",
+   "advice": "Honour the part of you that longs for more."
+  },
+  "bg": {
+   "name": "Осмица Чаши",
+   "keywords": [
+    "тръгване",
+    "търсене на повече",
+    "пускане",
+    "вътрешен път"
+   ],
+   "imagery": "Под луната в нощното небе фигура с наметало и тояга се отдалечава от осем подредени чаши към скалисти хълмове.",
+   "upright": "Понякога израстваш от онова, което някога те е правило щастлив. Картата показва човек, който оставя зад себе си ситуация, която вече не го изпълва, дори отвън всичко да изглежда наред. Чувството може да е горчиво-сладко и малко срамежливо. Довери се на тихото привличане към нещо по-дълбоко, дори още да не можеш да го назовеш.",
+   "reversed": "Радостта може да дойде оттам, откъдето не я очакваш. Може да решиш да останеш и да празнуваш или да откриеш, че онова, което си се канел да оставиш, още има живот в себе си. Помисли дали бягаш от празнотата, или от нещо хубаво, на което те е страх да се зарадваш.",
+   "love": "Може да осъзнаеш, че връзката има нужда от повече дълбочина или че ти трябва пространство, за да намериш себе си. Бъди честен и нежен към себе си и към другите.",
+   "work": "Една роля или проект може вече да не носи смисъл. Помисли какво наистина търсиш, преди да решиш каква да е следващата ти крачка.",
+   "advice": "Уважи онази част от теб, която копнее за повече."
+  }
+ },
+ "cups_nine": {
+  "index": 44,
+  "group": "cups",
+  "rank": "nine",
+  "en": {
+   "name": "Nine of Cups",
+   "keywords": [
+    "contentment",
+    "wishes",
+    "satisfaction",
+    "enjoyment"
+   ],
+   "imagery": "A well-fed, satisfied figure sits with arms crossed on a bench, while nine cups are lined up on a curved, cloth-covered shelf behind them.",
+   "upright": "Often called the wish card, this card speaks of contentment, comfort and the pleasure of getting what you hoped for. It invites you to savour the good things in your life and feel genuinely satisfied. Notice what you are grateful for today and let yourself enjoy it fully.",
+   "reversed": "Satisfaction may feel incomplete, or you may notice small flaws and mistakes behind the happy picture. At the same time, the card points toward honesty, loyalty and freedom. Ask what would make you truly content rather than only comfortable, and be truthful with yourself about it.",
+   "love": "You may feel happy and fulfilled in love, or close to a wish coming true. Enjoy the warmth and express your appreciation.",
+   "work": "Effort may bring a satisfying reward or recognition. Take time to enjoy the result before chasing the next goal.",
+   "advice": "Savour what is already good in your life."
+  },
+  "bg": {
+   "name": "Деветка Чаши",
+   "keywords": [
+    "удовлетворение",
+    "желания",
+    "задоволство",
+    "наслада"
+   ],
+   "imagery": "Сита, доволна фигура седи на пейка със скръстени ръце, а зад нея на извит, покрит с плат рафт са подредени девет чаши.",
+   "upright": "Често я наричат картата на желанията. Тя говори за удовлетворение, уют и удоволствието да получиш онова, за което си се надявал. Кани те да се насладиш на хубавите неща в живота си и да изпиташ истинско задоволство. Забележи за какво си благодарен днес и си позволи да му се радваш изцяло.",
+   "reversed": "Удовлетворението може да изглежда непълно или да забележиш малки недостатъци и грешки зад щастливата картина. Същевременно картата сочи към честност, вярност и свобода. Попитай се какво би те направило истински доволен, а не само удобно настанен, и бъди искрен със себе си.",
+   "love": "Може да се чувстваш щастлив и пълноценен в любовта или близо до сбъдване на желание. Наслаждавай се на топлината и изразявай признателността си.",
+   "work": "Усилията може да донесат удовлетворяваща награда или признание. Отдели време да се порадваш на резултата, преди да гониш следващата цел.",
+   "advice": "Наслади се на онова, което вече е хубаво в живота ти."
+  }
+ },
+ "cups_ten": {
+  "index": 45,
+  "group": "cups",
+  "rank": "ten",
+  "en": {
+   "name": "Ten of Cups",
+   "keywords": [
+    "harmony",
+    "family",
+    "lasting happiness",
+    "belonging"
+   ],
+   "imagery": "Two adults stand with arms around each other, raising their free arms toward a rainbow of ten cups in the sky, while two children dance beside them near a house.",
+   "upright": "This card paints a picture of emotional fulfilment: a loving home, deep peace and relationships that feel whole. It speaks of the kind of happiness that is shared and lasting. Let it remind you what truly matters, and nurture the bonds that make you feel at home.",
+   "reversed": "The picture of harmony may hide tension, resentment or values that do not quite match. Peace that is only on the surface rarely lasts. Look gently at what is unspoken, and consider which honest conversation could bring real calm back into your relationships.",
+   "love": "A loving, stable relationship and a sense of shared home are highlighted. Nurture the everyday moments of connection that build lasting joy.",
+   "work": "Your work may feel aligned with your values and supportive of your personal life. Look for balance between ambition and the people you love.",
+   "advice": "Tend the relationships that make you feel at home."
+  },
+  "bg": {
+   "name": "Десетка Чаши",
+   "keywords": [
+    "хармония",
+    "семейство",
+    "трайно щастие",
+    "принадлежност"
+   ],
+   "imagery": "Двама възрастни стоят прегърнати и вдигат свободните си ръце към дъга от десет чаши в небето, а до тях край една къща танцуват две деца.",
+   "upright": "Картата рисува картина на емоционална пълнота: любящ дом, дълбок покой и отношения, които се усещат цялостни. Тя говори за щастие, което се споделя и трае. Нека ти напомни кое наистина е важно, и се грижи за връзките, в които се чувстваш у дома.",
+   "reversed": "Картината на хармония може да крие напрежение, натрупани обиди или ценности, които не съвпадат съвсем. Покоят, който е само на повърхността, рядко трае. Погледни внимателно неизказаното и помисли кой честен разговор би върнал истинското спокойствие в отношенията ти.",
+   "love": "На преден план са любяща, стабилна връзка и усещане за общ дом. Грижи се за ежедневните мигове на близост, от които се гради трайната радост.",
+   "work": "Работата ти може да е в синхрон с ценностите ти и да подкрепя личния ти живот. Търси равновесие между амбицията и хората, които обичаш.",
+   "advice": "Грижи се за връзките, в които се чувстваш у дома."
+  }
+ },
+ "cups_page": {
+  "index": 46,
+  "group": "cups",
+  "rank": "page",
+  "en": {
+   "name": "Page of Cups",
+   "keywords": [
+    "sensitivity",
+    "intuition",
+    "creative messages",
+    "tenderness"
+   ],
+   "imagery": "A young figure in a flowered tunic stands by the sea, holding a cup from which a small fish peeks out, and looks at it with gentle surprise.",
+   "upright": "A tender, imaginative energy is arriving. This card can describe a sensitive, thoughtful person eager to help, or a sweet message, an invitation or an intuitive hunch. It asks you to stay open to surprises from your inner world and to express feelings with simple honesty.",
+   "reversed": "Feelings may run ahead of reality. Charm and attraction can be genuine, yet they can also be a pleasant disguise. Notice whether you are drawn to a person or to the fantasy around them, and stay kind while keeping your eyes open.",
+   "love": "A sweet confession, an unexpected message or the first signs of affection may appear. Respond with openness and gentle curiosity.",
+   "work": "Creative ideas or intuitive insights can guide you. Take time to reflect, study and let your imagination play.",
+   "advice": "Listen to the small, surprising voice of your heart."
+  },
+  "bg": {
+   "name": "Паж Чаши",
+   "keywords": [
+    "чувствителност",
+    "интуиция",
+    "творчески послания",
+    "нежност"
+   ],
+   "imagery": "Млада фигура в туника на цветя стои край морето, държи чаша, от която надзърта малка рибка, и я гледа с кротка изненада.",
+   "upright": "Пристига нежна, изпълнена с въображение енергия. Картата може да описва чувствителен, вдълбочен човек, който иска да помогне, или мило послание, покана или интуитивно предчувствие. Тя те моли да останеш отворен за изненадите на вътрешния си свят и да изразяваш чувствата си с простота и честност.",
+   "reversed": "Чувствата може да изпреварват реалността. Чарът и привличането може да са искрени, но може и да са приятна маска. Забележи дали те тегли самият човек, или фантазията около него, и остани добър, без да затваряш очи.",
+   "love": "Може да се появи мило признание, неочаквано съобщение или първите знаци на привързаност. Отговори с откритост и нежно любопитство.",
+   "work": "Творчески идеи или интуитивни прозрения могат да те водят. Отдели време да размишляваш, да учиш и да оставиш въображението си да играе.",
+   "advice": "Вслушай се в тихия, изненадващ глас на сърцето си."
+  }
+ },
+ "cups_knight": {
+  "index": 47,
+  "group": "cups",
+  "rank": "knight",
+  "en": {
+   "name": "Knight of Cups",
+   "keywords": [
+    "romance",
+    "invitation",
+    "idealism",
+    "graceful approach"
+   ],
+   "imagery": "A knight in a winged helmet rides a calm white horse at a gentle pace, holding a cup out in front as if bringing an offering, near a winding stream.",
+   "upright": "Something or someone is approaching with an open heart. This card brings romance, invitations and proposals, as well as the dreamy, idealistic side of love. It can describe a person who is charming and sincere. Welcome what is offered, and let your own feelings move gracefully toward what you desire.",
+   "reversed": "Sweet words may not match actions. This card can warn of charm used to manipulate, or of promises that are more fantasy than substance. Trust your intuition, look for consistency, and be honest about whether you are being swept away by a story.",
+   "love": "A romantic gesture, a heartfelt invitation or a sincere proposal may be on the way. Let yourself feel it, and see whether it matches who the person really is.",
+   "work": "An appealing offer or creative opportunity may arrive. Follow what inspires you, but check the details before committing.",
+   "advice": "Follow your heart with your eyes open."
+  },
+  "bg": {
+   "name": "Рицар Чаши",
+   "keywords": [
+    "романтика",
+    "покана",
+    "идеализъм",
+    "изящно приближаване"
+   ],
+   "imagery": "Рицар с крилат шлем язди спокоен бял кон с бавен ход и държи чаша пред себе си, сякаш носи дар, край криволичещ поток.",
+   "upright": "Нещо или някой се приближава с отворено сърце. Картата носи романтика, покани и предложения, както и мечтателната, идеалистична страна на любовта. Тя може да описва чаровен и искрен човек. Посрещни онова, което ти се предлага, и остави собствените си чувства изящно да се насочат към онова, което желаеш.",
+   "reversed": "Сладките думи може да не съвпадат с делата. Картата може да предупреждава за чар, използван за манипулация, или за обещания, които са повече фантазия, отколкото съдържание. Довери се на интуицията си, търси последователност и бъди честен дали не те отнася красива история.",
+   "love": "Може да предстои романтичен жест, сърдечна покана или искрено предложение. Позволи си да го почувстваш и виж дали отговаря на това кой е човекът всъщност.",
+   "work": "Може да пристигне привлекателна оферта или творческа възможност. Следвай онова, което те вдъхновява, но провери подробностите, преди да се обвържеш.",
+   "advice": "Следвай сърцето си с отворени очи."
+  }
+ },
+ "cups_queen": {
+  "index": 48,
+  "group": "cups",
+  "rank": "queen",
+  "en": {
+   "name": "Queen of Cups",
+   "keywords": [
+    "compassion",
+    "intuition",
+    "emotional depth",
+    "devotion"
+   ],
+   "imagery": "A queen sits on a throne at the edge of the sea, decorated with sea creatures, gazing deeply into an ornate, lidded cup she holds in both hands.",
+   "upright": "This card describes a deeply caring, intuitive and devoted presence, someone who listens with the heart and sees beneath the surface. It may be you, or someone who supports you. It invites you to trust your inner knowing, offer compassion freely and give your own feelings the same tenderness.",
+   "reversed": "Emotional depth can become overwhelm, or care can slip into losing yourself in others' moods. Sometimes this card warns of someone whose kindness is not quite reliable. Protect your sensitivity with healthy boundaries, and notice where you need to come back to your own centre.",
+   "love": "Love feels nurturing, understanding and emotionally rich. Offer empathy, and let yourself be cared for in return.",
+   "work": "Work that involves listening, creativity or caring for others can flourish. Trust your intuition about people and situations.",
+   "advice": "Hold your feelings with the same kindness you offer others."
+  },
+  "bg": {
+   "name": "Царица Чаши",
+   "keywords": [
+    "състрадание",
+    "интуиция",
+    "емоционална дълбочина",
+    "отдаденост"
+   ],
+   "imagery": "Царица седи на трон на брега на морето, украсен с морски създания, и се взира съсредоточено в богато украсена чаша с капак, която държи с две ръце.",
+   "upright": "Картата описва дълбоко грижовно, интуитивно и отдадено присъствие – човек, който слуша със сърцето и вижда под повърхността. Това може да си ти или някой, който те подкрепя. Тя те кани да се довериш на вътрешното си знание, да даряваш състрадание щедро и да даваш същата нежност и на собствените си чувства.",
+   "reversed": "Емоционалната дълбочина може да прерасне в претоварване, а грижата – в изгубване на себе си в настроенията на другите. Понякога картата предупреждава за човек, на чиято доброта не може съвсем да се разчита. Пази чувствителността си със здрави граници и забележи кога трябва да се върнеш към собствения си център.",
+   "love": "Любовта се усеща подхранваща, разбираща и емоционално богата. Давай съпричастност и си позволи и ти да получиш грижа.",
+   "work": "Работа, свързана със слушане, творчество или грижа за другите, може да процъфти. Довери се на интуицията си за хора и ситуации.",
+   "advice": "Отнасяй се към чувствата си със същата доброта, която даваш на другите."
+  }
+ },
+ "cups_king": {
+  "index": 49,
+  "group": "cups",
+  "rank": "king",
+  "en": {
+   "name": "King of Cups",
+   "keywords": [
+    "emotional balance",
+    "wisdom",
+    "generosity",
+    "calm"
+   ],
+   "imagery": "A king holds a cup in one hand and a short sceptre in the other, his throne resting on a stone block amid rolling waves, with a ship on one side and a leaping fish on the other.",
+   "upright": "This card describes calm emotional maturity: someone who feels deeply yet stays steady, kind and fair. It may reflect you or a person you trust. It speaks of responsibility, generosity and creative wisdom. It invites you to meet strong waves of feeling with patience, and to support others without losing your balance.",
+   "reversed": "Emotional control can turn into coldness, or kindness into a mask for self-interest. This card can warn of double-dealing or of feelings kept so tightly that they leak out sideways. Notice where you or someone else may not be fully honest, and seek fairness and transparency.",
+   "love": "Love may feel mature, steady and supportive. Show care through consistent presence and calm, honest conversations.",
+   "work": "Your ability to stay calm and fair makes you a trusted guide. Lead with empathy and good judgement.",
+   "advice": "Stay steady and kind when the waters rise."
+  },
+  "bg": {
+   "name": "Цар Чаши",
+   "keywords": [
+    "емоционално равновесие",
+    "мъдрост",
+    "щедрост",
+    "спокойствие"
+   ],
+   "imagery": "Цар държи чаша в едната ръка и къс скиптър в другата, тронът му стои върху каменен блок сред вълни, а от едната страна плава кораб, от другата изскача риба.",
+   "upright": "Картата описва спокойна емоционална зрялост: човек, който чувства дълбоко, но остава стабилен, добър и справедлив. Тя може да отразява теб или някого, на когото вярваш. Говори за отговорност, щедрост и творческа мъдрост. Кани те да посрещаш силните вълни на чувствата с търпение и да подкрепяш другите, без да губиш равновесие.",
+   "reversed": "Емоционалният контрол може да се превърне в студенина, а добротата – в маска за собствени интереси. Картата може да предупреждава за двуличие или за чувства, стискани толкова силно, че избиват по странични пътища. Забележи къде ти или някой друг може да не сте напълно честни, и търси справедливост и прозрачност.",
+   "love": "Любовта може да се усеща зряла, стабилна и подкрепяща. Показвай грижа чрез постоянно присъствие и спокойни, честни разговори.",
+   "work": "Умението ти да останеш спокоен и справедлив те прави водач, на когото се доверяват. Води със съпричастност и разумна преценка.",
+   "advice": "Остани стабилен и добър, когато водите се надигат."
+  }
+ },
+ "swords_ace": {
+  "index": 50,
+  "group": "swords",
+  "rank": "ace",
+  "en": {
+   "name": "Ace of Swords",
+   "keywords": [
+    "clarity",
+    "breakthrough",
+    "truth",
+    "resolve"
+   ],
+   "imagery": "A hand emerges from a cloud gripping an upright sword crowned at its tip and hung with olive and palm, above a range of bare mountains.",
+   "upright": "A clear thought cuts through the fog. This card marks the moment you see a situation for what it is and feel the strength to act on it. Truth spoken plainly can open a new chapter, and your mind feels sharp, awake and ready to choose.",
+   "reversed": "The same sharpness can turn against you when it is pushed too hard. You may be forcing a conclusion, winning an argument at the cost of closeness, or thinking in circles without landing. Pause, soften the edge, and let clarity come instead of grabbing for it.",
+   "love": "Honest words open space between you. A frank conversation, kindly delivered, can clear up a misunderstanding and show you both where you really stand.",
+   "work": "A fresh idea or a clear decision gets things moving. Name the goal precisely and the next steps become easier to see.",
+   "advice": "Say the true thing simply, and say it with kindness."
+  },
+  "bg": {
+   "name": "Асо Мечове",
+   "keywords": [
+    "яснота",
+    "пробив",
+    "истина",
+    "решителност"
+   ],
+   "imagery": "От облак се показва ръка, стиснала изправен меч с корона на върха, окичена с маслинова и палмова клонка, над голи планински върхове.",
+   "upright": "Ясна мисъл разсича мъглата. Картата бележи мига, в който виждаш нещата такива, каквито са, и усещаш сила да действаш. Истината, казана простичко, може да отвори нова глава, а умът ти е буден, остър и готов да избира.",
+   "reversed": "Същата острота може да се обърне срещу теб, ако я натискаш прекалено. Възможно е да насилваш извод, да печелиш спор с цената на близостта или да въртиш мислите си в кръг. Спри за малко, смекчи ръба и остави яснотата да дойде сама.",
+   "love": "Честните думи правят място помежду ви. Един откровен, но топъл разговор може да разсее недоразумение и да покаже къде всъщност стоите двамата.",
+   "work": "Свежа идея или ясно решение раздвижва нещата. Назови целта точно и следващите стъпки ще се видят по-лесно.",
+   "advice": "Кажи истината простичко – и с доброта."
+  }
+ },
+ "swords_two": {
+  "index": 51,
+  "group": "swords",
+  "rank": "two",
+  "en": {
+   "name": "Two of Swords",
+   "keywords": [
+    "stalemate",
+    "balance",
+    "hard choice",
+    "truce"
+   ],
+   "imagery": "A blindfolded figure sits by the sea under a crescent moon, holding two long swords crossed over the chest.",
+   "upright": "You are holding two options in perfect balance and refusing, for now, to let either one win. This calm can be a wise truce, a way of keeping the peace while feelings settle. Yet a blindfold can also shield you from information you need before you decide.",
+   "reversed": "The balance is slipping. Something you avoided looking at comes into view, or someone may not be fully honest about where they stand. It can feel unsettling, but it also frees you from limbo. Take off the blindfold gently and look at what is really there.",
+   "love": "You may be keeping the peace by not saying what you feel. A truce is fine for a while, but closeness grows when you both lower your guard.",
+   "work": "A decision has been parked between two paths. Gather the facts you have been avoiding, then choose.",
+   "advice": "What would you see if you let yourself look?"
+  },
+  "bg": {
+   "name": "Двойка Мечове",
+   "keywords": [
+    "застой",
+    "равновесие",
+    "труден избор",
+    "примирие"
+   ],
+   "imagery": "Фигура със завързани очи седи край морето под тънък лунен сърп и държи два дълги меча, кръстосани пред гърдите си.",
+   "upright": "Държиш два варианта в пълно равновесие и засега не позволяваш на нито един да надделее. Това спокойствие може да е мъдро примирие, начин да пазиш мира, докато чувствата се уталожат. Но превръзката на очите може и да те крие от нещо, което трябва да знаеш, преди да решиш.",
+   "reversed": "Равновесието се клати. Нещо, което досега избягваш да видиш, излиза на светло, или някой не е съвсем честен за позицията си. Може да е тревожно, но и те освобождава от безтегловността. Свали превръзката внимателно и погледни какво има наистина.",
+   "love": "Може би пазиш мира, като премълчаваш какво чувстваш. Примирието е добре за известно време, но близостта расте, когато и двамата свалите гарда.",
+   "work": "Едно решение е оставено на пауза между два пътя. Събери фактите, които отлагаш, и после избери.",
+   "advice": "Какво ще видиш, ако си позволиш да погледнеш?"
+  }
+ },
+ "swords_three": {
+  "index": 52,
+  "group": "swords",
+  "rank": "three",
+  "en": {
+   "name": "Three of Swords",
+   "keywords": [
+    "heartache",
+    "grief",
+    "separation",
+    "release"
+   ],
+   "imagery": "A red heart pierced by three swords hangs against a grey sky full of cloud and slanting rain.",
+   "upright": "This is the card of heartache: a loss, a parting, or words that hurt more than expected. The pain is real and deserves to be felt rather than hidden. Like rain that finally falls from a heavy sky, letting the sadness move through you is often the first step toward feeling lighter.",
+   "reversed": "The hurt may be lingering longer than it needs to, kept alive by replaying old conversations or blaming yourself. You might also be starting to heal and not quite trust it yet. Be patient with your heart, and reach for people who can hold some of the weight with you.",
+   "love": "A disappointment or distance is asking to be acknowledged. Naming the hurt honestly, without accusation, gives both of you a chance to understand and mend.",
+   "work": "A setback or a painful piece of feedback stings. Let yourself feel it, then look for the part that can teach you something.",
+   "advice": "Let yourself grieve, and let someone keep you company."
+  },
+  "bg": {
+   "name": "Тройка Мечове",
+   "keywords": [
+    "сърдечна болка",
+    "тъга",
+    "раздяла",
+    "освобождаване"
+   ],
+   "imagery": "Червено сърце, пронизано от три меча, виси на фона на сиво небе с тежки облаци и косо падащ дъжд.",
+   "upright": "Това е картата на сърдечната болка – загуба, раздяла или думи, които нараняват повече от очакваното. Болката е истинска и заслужава да бъде изживяна, а не скрита. Както дъждът най-после пада от натежалото небе, така и пуснатата тъга често е първата крачка към олекване.",
+   "reversed": "Раната може да се задържа по-дълго от нужното, подхранвана от превъртане на стари разговори или от самообвинения. Възможно е и вече да заздравяваш, но още да не вярваш в това. Имай търпение към сърцето си и потърси хора, които да поемат част от тежестта.",
+   "love": "Едно разочарование или отдалечаване иска да бъде признато. Когато назовеш болката честно, без обвинения, давате и на двамата шанс да разберете и да поправите.",
+   "work": "Неуспех или болезнена обратна връзка те жилва. Позволи си да го усетиш, после потърси онова, което може да те научи на нещо.",
+   "advice": "Позволи си да тъгуваш и не носи това в самота."
+  }
+ },
+ "swords_four": {
+  "index": 53,
+  "group": "swords",
+  "rank": "four",
+  "en": {
+   "name": "Four of Swords",
+   "keywords": [
+    "rest",
+    "retreat",
+    "recovery",
+    "stillness"
+   ],
+   "imagery": "A knight's stone effigy lies with hands joined in prayer on a tomb beneath a stained-glass window, three swords hanging above and one lying along the side.",
+   "upright": "After a stretch of strain, this card invites quiet. Step back, rest your mind and give yourself time alone to recover your strength. Nothing is lost by pausing; a still, watchful retreat often brings the clearest answers once you are ready to return.",
+   "reversed": "You may be ready to come back out into the world, slowly and with care. Alternatively, you might be resisting rest you clearly need, or hiding away longer than is good for you. Notice which is true, and plan your next steps sensibly and without rush.",
+   "love": "Space can be a gift right now. Taking a breather, alone or together, may help you return to each other calmer and more present.",
+   "work": "Burnout is a signal, not a failure. Protect some quiet time and your focus will come back stronger.",
+   "advice": "Rest is part of the work; give yourself some."
+  },
+  "bg": {
+   "name": "Четворка Мечове",
+   "keywords": [
+    "почивка",
+    "оттегляне",
+    "възстановяване",
+    "тишина"
+   ],
+   "imagery": "Каменна фигура на рицар лежи със събрани в молитва ръце върху гробница под витраж; три меча висят над него, а един лежи покрай саркофага.",
+   "upright": "След период на напрежение картата те кани към тишина. Отстъпи крачка назад, дай почивка на ума си и време насаме, за да си върнеш силите. С паузата нищо не губиш – спокойното, будно оттегляне често носи най-ясните отговори, щом дойде време да се върнеш.",
+   "reversed": "Може би вече е време да излезеш отново навън – бавно и внимателно. Или пък се съпротивляваш на почивка, от която явно имаш нужда, или се криеш по-дълго, отколкото ти е добре. Забележи кое е вярно и планирай следващите си стъпки разумно и без бързане.",
+   "love": "Пространството сега може да е подарък. Малко отдих – насаме или заедно – ще ви помогне да се върнете един към друг по-спокойни и по-присъстващи.",
+   "work": "Прегарянето е сигнал, а не провал. Запази си малко тишина и концентрацията ти ще се върне по-силна.",
+   "advice": "Почивката е част от работата – подари си я."
+  }
+ },
+ "swords_five": {
+  "index": 54,
+  "group": "swords",
+  "rank": "five",
+  "en": {
+   "name": "Five of Swords",
+   "keywords": [
+    "hollow victory",
+    "conflict",
+    "pride",
+    "loss"
+   ],
+   "imagery": "A smirking figure gathers up swords on a windswept shore while two dejected people walk away, two more swords lying on the ground.",
+   "upright": "Someone has won, but at what price? This card points to a conflict where pride mattered more than the relationship, leaving everyone a little poorer. Whether you are the one holding the swords or the one walking away, ask whether this battle was worth what it cost.",
+   "reversed": "The tension may be easing, or the urge to keep fighting is fading. It can be a chance to make amends, to let go of needing to be right, or to walk away from a dynamic that keeps hurting you. Old resentments ask to be laid down.",
+   "love": "Winning an argument is not the same as being heard. Choose connection over scoring points, and be willing to say sorry first.",
+   "work": "Competition has turned sour. Consider whether cooperation, or simply stepping back, would serve you better than pushing harder.",
+   "advice": "Would you rather be right, or be close?"
+  },
+  "bg": {
+   "name": "Петица Мечове",
+   "keywords": [
+    "празна победа",
+    "конфликт",
+    "гордост",
+    "загуба"
+   ],
+   "imagery": "Ухилена фигура събира мечове на ветровит бряг, докато двама унили души се отдалечават, а още два меча лежат на земята.",
+   "upright": "Някой е победил, но на каква цена? Картата сочи конфликт, в който гордостта е била по-важна от отношенията и всички са излезли малко по-бедни. Независимо дали държиш мечовете, или се отдалечаваш, запитай се дали тази битка е струвала толкова.",
+   "reversed": "Напрежението може би отслабва или желанието да продължиш борбата затихва. Това е шанс да се извиниш, да пуснеш нуждата да имаш право или да се отдалечиш от динамика, която продължава да те наранява. Старите обиди искат да бъдат оставени.",
+   "love": "Да спечелиш спор не е същото като да бъдеш чут. Избери връзката пред точките и не се бой пръв да кажеш „съжалявам“.",
+   "work": "Съперничеството е вкиснало. Помисли дали сътрудничеството или просто една крачка назад няма да ти помогнат повече от още натиск.",
+   "advice": "Какво искаш повече – да имаш право или да сте близо?"
+  }
+ },
+ "swords_six": {
+  "index": 55,
+  "group": "swords",
+  "rank": "six",
+  "en": {
+   "name": "Six of Swords",
+   "keywords": [
+    "transition",
+    "moving on",
+    "passage",
+    "calmer waters"
+   ],
+   "imagery": "A ferryman poles a small boat toward a distant shore, carrying a hunched, cloaked figure and a child, with six swords standing upright in the bow.",
+   "upright": "You are leaving rough water behind and heading somewhere calmer. The journey may be quiet and a little sad, but it is moving you forward. Accept help on the way, carry only what you need, and trust that the far shore offers a gentler place to land.",
+   "reversed": "Moving on feels harder than expected, or something unresolved keeps pulling you back. You may need to say out loud what you have been carrying before you can truly leave it. An honest conversation or confession could be the oar that gets you going again.",
+   "love": "A relationship is shifting into a steadier phase, or you are healing after a difficult one. Go gently and let the calm come.",
+   "work": "A transition, a change of team or direction, is underway. Focus on the next stretch, not the whole voyage.",
+   "advice": "Let the past be the shore behind you, not the boat you sit in."
+  },
+  "bg": {
+   "name": "Шестица Мечове",
+   "keywords": [
+    "преход",
+    "продължаване напред",
+    "път",
+    "по-тихи води"
+   ],
+   "imagery": "Лодкар бута с прът малка лодка към далечен бряг, в нея седят прегърбена фигура с наметало и дете, а в носа стърчат шест изправени меча.",
+   "upright": "Оставяш бурните води зад себе си и се насочваш към по-спокойно място. Пътят може да е тих и малко тъжен, но те води напред. Приеми помощ по пътя, носи само необходимото и се довери, че отсрещният бряг предлага по-меко място за спиране.",
+   "reversed": "Да продължиш напред е по-трудно от очакваното или нещо неразрешено те дърпа назад. Може би първо трябва да кажеш на глас онова, което носиш, за да го оставиш наистина. Честен разговор или признание може да е веслото, което ще те раздвижи отново.",
+   "love": "Връзката преминава към по-стабилна фаза или ти се възстановяваш след трудна такава. Движи се нежно и остави спокойствието да дойде.",
+   "work": "Преходът – смяна на екип или посока – вече е започнал. Съсредоточи се върху следващия участък, а не върху цялото плаване.",
+   "advice": "Нека миналото е брегът зад теб, а не лодката, в която седиш."
+  }
+ },
+ "swords_seven": {
+  "index": 56,
+  "group": "swords",
+  "rank": "seven",
+  "en": {
+   "name": "Seven of Swords",
+   "keywords": [
+    "strategy",
+    "evasion",
+    "cunning",
+    "going it alone"
+   ],
+   "imagery": "A figure tiptoes away from a camp of tents, arms full of five swords and glancing back, while two swords remain planted in the ground.",
+   "upright": "A plan is in motion, perhaps clever, perhaps a little sneaky. This card asks you to look at where you or someone else is avoiding the direct route. Strategy has its place, but trying to carry everything alone, or quietly, can mean leaving important pieces behind.",
+   "reversed": "Secrets tend to surface, and this may be the moment to come clean or to ask openly for what you want. It can also show good advice arriving from someone wiser. Be wary of gossip, your own or others', and choose transparency where you can.",
+   "love": "Notice where honesty is thin, in yourself or in the other person. Trust grows from openness, not from managing what the other knows.",
+   "work": "A shortcut looks tempting. Check whether it will hold up in daylight, and whether a team effort would carry more.",
+   "advice": "What are you leaving behind by doing this alone?"
+  },
+  "bg": {
+   "name": "Седмица Мечове",
+   "keywords": [
+    "стратегия",
+    "увъртане",
+    "хитрост",
+    "потайност"
+   ],
+   "imagery": "Фигура се измъква на пръсти от лагер с шатри, понесла пет меча в ръце и поглеждаща назад, докато два меча остават забити в земята.",
+   "upright": "Някакъв план е в ход – може би умен, може би малко прикрит. Картата те подканя да видиш къде ти или някой друг заобикаля прекия път. Стратегията си има място, но опитът да носиш всичко без чужда помощ или тайно може да означава да оставиш важни части зад себе си.",
+   "reversed": "Тайните имат навика да излизат наяве и може би сега е моментът да си признаеш или открито да поискаш каквото искаш. Картата може да покаже и добър съвет от някой по-мъдър. Пази се от клюки – своите и чуждите – и избирай прозрачността, където можеш.",
+   "love": "Забележи къде честността е изтъняла – в теб или в другия. Доверието расте от откритост, а не от това да контролираш какво знае другият.",
+   "work": "Прекият път изглежда изкусителен. Провери дали ще издържи на светло и дали общото усилие няма да те отведе по-далеч.",
+   "advice": "Какво оставяш зад себе си, като действаш без другите?"
+  }
+ },
+ "swords_eight": {
+  "index": 57,
+  "group": "swords",
+  "rank": "eight",
+  "en": {
+   "name": "Eight of Swords",
+   "keywords": [
+    "feeling trapped",
+    "self-doubt",
+    "restriction",
+    "fear"
+   ],
+   "imagery": "A blindfolded figure, loosely bound, stands on wet ground inside a loose ring of eight swords, a castle on the hill behind.",
+   "upright": "You may feel stuck, criticised or hemmed in, with no obvious way out. Look closely, though: the bonds are loose and the swords do not fully enclose you. Much of the trap is made of fearful thoughts, and small steps can begin to show you an opening.",
+   "reversed": "The blindfold is starting to slip. You are seeing options you missed and loosening beliefs that kept you small. Unexpected obstacles can still appear, so move with care, but trust that you have more freedom than you thought.",
+   "love": "Fear of getting it wrong may be keeping you from reaching out. Question the story that says you have no choice.",
+   "work": "You feel boxed in by rules or other people's opinions. List what you can actually change, and start there.",
+   "advice": "Which of these walls is only a thought?"
+  },
+  "bg": {
+   "name": "Осмица Мечове",
+   "keywords": [
+    "усещане за капан",
+    "съмнение в себе си",
+    "ограничение",
+    "страх"
+   ],
+   "imagery": "Фигура със завързани очи и хлабаво пристегнати ръце стои върху мокра земя сред разреден кръг от осем меча, а зад нея на хълма се вижда замък.",
+   "upright": "Може да имаш усещането, че си в капан, че те критикуват и притискат, а изход не се вижда. Но погледни по-внимателно: въжетата са хлабави, а мечовете не те обграждат напълно. Голяма част от капана е изтъкана от тревожни мисли, а малките стъпки могат да ти покажат пролука.",
+   "reversed": "Превръзката започва да се смъква. Виждаш възможности, които досега ти убягваха, и разхлабваш вярвания, които те смаляваха. Все още могат да изникнат неочаквани пречки, затова се движи внимателно, но вярвай, че имаш повече свобода, отколкото изглеждаше.",
+   "love": "Страхът да не сгрешиш може би те спира да направиш крачка към другия. Постави под въпрос историята, която ти казва, че нямаш избор.",
+   "work": "Правилата или чуждите мнения те притискат. Запиши какво всъщност можеш да промениш и започни оттам.",
+   "advice": "Коя от тези стени е само мисъл?"
+  }
+ },
+ "swords_nine": {
+  "index": 58,
+  "group": "swords",
+  "rank": "nine",
+  "en": {
+   "name": "Nine of Swords",
+   "keywords": [
+    "worry",
+    "sleepless nights",
+    "anxiety",
+    "shame"
+   ],
+   "imagery": "A figure sits up in bed with face buried in both hands, nine swords lined up across the dark wall behind.",
+   "upright": "This is the card of the racing mind at night, when worries grow larger than life. The fears feel overwhelming, yet the swords hang on the wall, not in your hands. Speaking your worries to someone you trust often shrinks them back to a size you can handle.",
+   "reversed": "Worry may be turning into doubt or quiet shame, the kind you keep to yourself. Some concerns are reasonable and worth addressing; others are old echoes. The light is coming back: share what weighs on you, and let others help you sort the real from the imagined.",
+   "love": "Anxious thoughts about a relationship may be louder than the facts. Check in gently with the other person rather than carrying the worry alone.",
+   "work": "Stress keeps you awake. Write the worries down, choose one to act on, and let the rest wait until morning.",
+   "advice": "Say the fear out loud to someone kind."
+  },
+  "bg": {
+   "name": "Деветка Мечове",
+   "keywords": [
+    "тревога",
+    "безсъние",
+    "безпокойство",
+    "срам"
+   ],
+   "imagery": "Фигура седи изправена в леглото, заровила лице в длани, а зад нея на тъмната стена са наредени девет меча.",
+   "upright": "Това е картата на препускащия нощем ум, когато тревогите стават по-големи от живота. Страховете изглеждат непосилни, но мечовете висят на стената, а не в ръцете ти. Когато споделиш тревогите си с човек, на когото вярваш, те често се смаляват до размер, с който можеш да се справиш.",
+   "reversed": "Тревогата може би преминава в съмнение или тих срам – онзи, който пазиш само за себе си. Някои опасения са основателни и заслужават внимание, други са стари отгласи. Светлината се връща: сподели какво те тежи и позволи на другите да ти помогнат да отделиш истинското от въображаемото.",
+   "love": "Тревожните мисли за връзката може да са по-шумни от фактите. Попитай другия внимателно, вместо да носиш притеснението в себе си.",
+   "work": "Стресът не те оставя да спиш. Запиши тревогите, избери една, по която да действаш, а останалите остави за сутринта.",
+   "advice": "Кажи страха си на глас пред някой добър човек."
+  }
+ },
+ "swords_ten": {
+  "index": 59,
+  "group": "swords",
+  "rank": "ten",
+  "en": {
+   "name": "Ten of Swords",
+   "keywords": [
+    "painful ending",
+    "rock bottom",
+    "release",
+    "new dawn"
+   ],
+   "imagery": "A figure lies face down by still water under a black sky, ten swords in the back, while a band of golden light rises on the horizon.",
+   "upright": "Something has reached its end, and it may feel as if it could not hurt more. This card speaks of sorrow and exhaustion, not of literal harm. The worst is often already behind you; on the horizon, a new dawn is quietly breaking, and from here the only way is up.",
+   "reversed": "You are beginning to rise from a hard ending. Relief, small gains and support start to return, even if they feel fragile. Take your recovery seriously and do not rush back into what wore you down. Each day you stand a little taller.",
+   "love": "A chapter may be closing, painfully but honestly. Allow the ending to be complete so that something healthier can begin.",
+   "work": "A project or role has run its course. Let it go fully, rest, and notice what you learned before starting again.",
+   "advice": "Endings make room for dawn; look toward the light."
+  },
+  "bg": {
+   "name": "Десетка Мечове",
+   "keywords": [
+    "болезнен край",
+    "дъно",
+    "освобождаване",
+    "нова зора"
+   ],
+   "imagery": "Фигура лежи по очи край неподвижна вода под черно небе, с десет меча в гърба, а на хоризонта изгрява ивица златиста светлина.",
+   "upright": "Нещо е стигнало до своя край и може да ти се струва, че не може да боли повече. Картата говори за тъга и изтощение, не за буквална вреда. Най-лошото често вече е зад теб; на хоризонта тихо се развиделява и оттук нататък пътят води само нагоре.",
+   "reversed": "Започваш да се изправяш след труден край. Облекчението, малките успехи и подкрепата постепенно се връщат, макар и да изглеждат крехки. Отнеси се сериозно към възстановяването си и не бързай да се връщаш към онова, което те е изтощило. С всеки ден се изправяш малко повече.",
+   "love": "Една глава може би се затваря – болезнено, но честно. Позволи на края да се случи изцяло, за да може да започне нещо по-здраво.",
+   "work": "Проект или роля са изчерпали себе си. Пусни ги напълно, почини си и забележи на какво те научиха, преди да започнеш отново.",
+   "advice": "Краят прави място за зората – погледни към светлината."
+  }
+ },
+ "swords_page": {
+  "index": 60,
+  "group": "swords",
+  "rank": "page",
+  "en": {
+   "name": "Page of Swords",
+   "keywords": [
+    "curiosity",
+    "vigilance",
+    "new ideas",
+    "questions"
+   ],
+   "imagery": "A young figure strides across rough, windy ground holding a sword upright in both hands, clouds and birds swirling overhead.",
+   "upright": "A curious, alert energy is with you. You want to learn, ask questions and get to the bottom of things. This card favours watching carefully, gathering information and speaking up with fresh ideas. Just remember that sharp observation lands best when paired with tact.",
+   "reversed": "Curiosity can tip into prying, or quick words can run ahead of good sense. You may feel caught unprepared by something unexpected. Slow down, check your facts, and ask yourself whether you are seeking understanding or just ammunition.",
+   "love": "You are eager to understand the other person. Ask open questions and listen to the answers without rushing to judge.",
+   "work": "A good time to research, learn a new skill or pitch an idea. Do your homework and your voice will carry.",
+   "advice": "Ask the question, then truly listen."
+  },
+  "bg": {
+   "name": "Паж Мечове",
+   "keywords": [
+    "любопитство",
+    "бдителност",
+    "нови идеи",
+    "въпроси"
+   ],
+   "imagery": "Млада фигура крачи по неравна, ветровита земя, държейки меч изправен с две ръце, а над нея се вият облаци и птици.",
+   "upright": "С теб е любопитна, будна енергия. Искаш да учиш, да питаш и да стигнеш до дъното на нещата. Картата благоприятства внимателното наблюдение, събирането на информация и смелото споделяне на нови идеи. Само помни, че острото око стига най-добре, когато върви ръка за ръка с такта.",
+   "reversed": "Любопитството може да се превърне в ровене, а бързите думи – да изпреварят здравия разум. Нещо неочаквано може да те изненада и да те свари без подготовка. Забави темпото, провери фактите и се запитай дали търсиш разбиране, или просто аргументи за спор.",
+   "love": "Искаш да опознаеш другия. Задавай отворени въпроси и слушай отговорите, без да бързаш да съдиш.",
+   "work": "Подходящо време да проучиш, да научиш ново умение или да представиш идея. Подготви се добре и гласът ти ще бъде чут.",
+   "advice": "Задай въпроса, а после наистина слушай."
+  }
+ },
+ "swords_knight": {
+  "index": 61,
+  "group": "swords",
+  "rank": "knight",
+  "en": {
+   "name": "Knight of Swords",
+   "keywords": [
+    "drive",
+    "boldness",
+    "speed",
+    "conviction"
+   ],
+   "imagery": "An armoured rider charges at full gallop with sword raised, the horse straining forward as wind tears at the clouds and trees.",
+   "upright": "You are full of drive and conviction, ready to charge toward what you believe in. This card brings courage, quick thinking and the skill to defend a cause. Use that momentum well: aim it at the right target, and remember that others may need a moment to catch up.",
+   "reversed": "Speed is outrunning wisdom. You may be acting rashly, pushing too hard, or scattering your energy in many directions. Anger and impatience can leave a trail of hurt. Rein in, breathe, and decide where you actually want to go before you ride on.",
+   "love": "Passion and directness are attractive, but leave room for the other person's pace. Talk with each other, not at each other.",
+   "work": "Bold action can break a deadlock. Make sure your plan is sound before you charge in.",
+   "advice": "Know your destination before you gallop."
+  },
+  "bg": {
+   "name": "Рицар Мечове",
+   "keywords": [
+    "устрем",
+    "дързост",
+    "бързина",
+    "убеденост"
+   ],
+   "imagery": "Рицар в броня препуска в пълен галоп с вдигнат меч, конят се е изпънал напред, а вятърът разкъсва облаците и огъва дърветата.",
+   "upright": "В теб кипят устрем и убеденост и имаш сили да се втурнеш към онова, в което вярваш. Картата носи смелост, бърза мисъл и умението да защитиш кауза. Използвай тази инерция добре: насочи я към правилната цел и помни, че другите може да имат нужда от миг, за да те настигнат.",
+   "reversed": "Бързината изпреварва мъдростта. Може би действаш прибързано, натискаш твърде силно или разпиляваш енергията си в много посоки. Гневът и нетърпението могат да оставят следа от наранявания. Дръпни юздите, поеми дъх и реши накъде всъщност искаш да вървиш, преди да продължиш.",
+   "love": "Страстта и прямотата са привлекателни, но остави място и за темпото на другия. Говорете помежду си, а не един срещу друг.",
+   "work": "Смелото действие може да отпуши застой. Увери се, че планът ти е стабилен, преди да се хвърлиш напред.",
+   "advice": "Знай къде отиваш, преди да препуснеш."
+  }
+ },
+ "swords_queen": {
+  "index": 62,
+  "group": "swords",
+  "rank": "queen",
+  "en": {
+   "name": "Queen of Swords",
+   "keywords": [
+    "discernment",
+    "honesty",
+    "independence",
+    "wisdom from sorrow"
+   ],
+   "imagery": "A crowned figure sits in profile on a throne carved with butterflies, sword held upright in the right hand and the left hand raised in welcome, clouds gathering below.",
+   "upright": "Here is clear sight shaped by experience, including sorrow. This card invites you to see through pretence, set honest boundaries and speak with both precision and compassion. You can stand on your own, and your hard-won wisdom becomes a gift to others when shared with warmth.",
+   "reversed": "Sharpness can harden into coldness, criticism or a guarded heart. You may be judging too quickly, keeping people at arm's length, or using words to wound. Old pain may be speaking. Let some softness back in, and remember that being clear does not require being cutting.",
+   "love": "You value honesty and won't settle for games. Share your truth, and let the other person see the tenderness beneath it too.",
+   "work": "Your clear judgement is an asset. Give direct feedback, and pair it with genuine care for the people involved.",
+   "advice": "Be clear and kind in the same breath."
+  },
+  "bg": {
+   "name": "Царица Мечове",
+   "keywords": [
+    "проницателност",
+    "честност",
+    "независимост",
+    "мъдрост от болката"
+   ],
+   "imagery": "Фигура с корона седи в профил на трон, украсен с пеперуди, държи меча изправен в дясната ръка, а лявата е вдигната като за поздрав; под нея се трупат облаци.",
+   "upright": "Това е ясният поглед, изваян от опита – включително от тъгата. Картата те кани да виждаш отвъд преструвките, да поставяш честни граници и да говориш едновременно точно и състрадателно. Можеш да стоиш на собствените си крака, а трудно извоюваната ти мъдрост става дар, когато я споделяш с топлота.",
+   "reversed": "Остротата може да се втвърди в студенина, критичност или затворено сърце. Може би съдиш прибързано, държиш хората на разстояние или използваш думите, за да раниш. Възможно е през теб да говори стара болка. Пусни малко мекота обратно и помни, че яснотата не изисква рязкост.",
+   "love": "Цениш честността и не се съгласяваш на игри. Сподели своята истина и позволи на другия да види и нежността под нея.",
+   "work": "Ясната ти преценка е ценност. Давай пряка обратна връзка, но я съчетавай с истинска грижа за хората.",
+   "advice": "Говори ясно и с доброта – на един дъх."
+  }
+ },
+ "swords_king": {
+  "index": 63,
+  "group": "swords",
+  "rank": "king",
+  "en": {
+   "name": "King of Swords",
+   "keywords": [
+    "fair judgement",
+    "authority",
+    "logic",
+    "integrity"
+   ],
+   "imagery": "A crowned figure sits facing forward on a high throne, holding an unsheathed sword slightly tilted, with butterflies carved behind and tall trees under a cloudy sky.",
+   "upright": "This card brings fair, clear-headed judgement and the authority to stand by it. You are able to weigh facts calmly, set principles above moods and make decisions that others can trust. Leadership here means using your mind with integrity and taking responsibility for the outcome.",
+   "reversed": "Authority can slide into control, harshness or cold calculation. You, or someone near you, may be using intellect to dominate rather than to serve. Watch for rigid rules that ignore people's feelings, and ask whether your decisions are truly fair or simply convenient.",
+   "love": "Reliability and honest communication form the backbone of this bond. Let fairness guide you, but don't let logic crowd out affection.",
+   "work": "You are called to lead with clarity. Make the decision, explain it plainly and own its consequences.",
+   "advice": "Decide fairly, and stand behind it."
+  },
+  "bg": {
+   "name": "Цар Мечове",
+   "keywords": [
+    "справедлива преценка",
+    "авторитет",
+    "логика",
+    "почтеност"
+   ],
+   "imagery": "Фигура с корона седи с лице към нас на висок трон, държи изваден меч, леко наклонен, зад нея са издялани пеперуди, а под облачното небе се издигат високи дървета.",
+   "upright": "Картата носи справедлива, трезва преценка и авторитет да я отстояваш. Можеш спокойно да претегляш фактите, да поставяш принципите над настроенията и да вземаш решения, на които другите да разчитат. Тук лидерството означава да използваш ума си почтено и да поемаш отговорност за резултата.",
+   "reversed": "Авторитетът може да се плъзне към контрол, суровост или студена пресметливост. Ти или някой близо до теб може би използва интелекта, за да доминира, а не за да служи. Пази се от строги правила, които пренебрегват чувствата на хората, и се питай дали решенията ти са наистина справедливи или просто удобни.",
+   "love": "Надеждността и честното общуване са гръбнакът на тази връзка. Нека справедливостта те води, но не позволявай на логиката да изтласка нежността.",
+   "work": "Сега е време да водиш с яснота. Вземи решението, обясни го простичко и поеми последствията.",
+   "advice": "Решавай справедливо и стой зад решението си."
+  }
+ },
+ "pentacles_ace": {
+  "index": 64,
+  "group": "pentacles",
+  "rank": "ace",
+  "en": {
+   "name": "Ace of Pentacles",
+   "keywords": [
+    "new foundation",
+    "opportunity",
+    "abundance",
+    "groundedness"
+   ],
+   "imagery": "A hand reaches from a cloud holding a large golden pentacle above a flowering garden, where a hedge archway opens onto distant mountains.",
+   "upright": "A seed of something solid is offered to you: a new opportunity, a fresh start in work or home, or simply a deep sense of contentment. This card celebrates the good things you can touch and build on. Plant it with care, tend it patiently, and let it grow.",
+   "reversed": "An opportunity may be slipping past, or the promise of security is distracting you from what truly matters. Sometimes plenty brings its own worries. Ask whether you are chasing comfort for its own sake, and return to steady, simple steps that feel genuinely nourishing.",
+   "love": "A relationship with real potential to become steady and nurturing may be taking root. Small, practical gestures of care will help it grow.",
+   "work": "A new role, project or skill could become a lasting foundation. Treat it as a seed worth tending, not a quick win.",
+   "advice": "Plant something today that you would like to see grow."
+  },
+  "bg": {
+   "name": "Асо Пентакли",
+   "keywords": [
+    "нова основа",
+    "възможност",
+    "изобилие",
+    "заземеност"
+   ],
+   "imagery": "От облак се протяга ръка с голям златен пентакъл над цъфнала градина, където арка в жив плет се отваря към далечни планини.",
+   "upright": "Предлага ти се семе на нещо солидно: нова възможност, ново начало в работата или у дома, или просто дълбоко чувство на удовлетворение. Картата празнува хубавите неща, които можеш да докоснеш и върху които да градиш. Посади го грижливо, гледай го търпеливо и го остави да расте.",
+   "reversed": "Някоя възможност може би се изплъзва или обещанието за сигурност те отвлича от онова, което наистина има значение. Понякога изобилието носи свои тревоги. Запитай се дали не гониш удобството заради самото удобство и се върни към спокойните, прости стъпки, които истински те подхранват.",
+   "love": "Може би пуска корени връзка с истинския потенциал да стане стабилна и грижовна. Малките практични жестове на внимание ще ѝ помогнат да расте.",
+   "work": "Нова роля, проект или умение могат да се превърнат в трайна основа. Отнасяй се към тях като към семе, което си струва да гледаш, а не като към бърза печалба.",
+   "advice": "Посади днес нещо, което искаш да видиш как расте."
+  }
+ },
+ "pentacles_two": {
+  "index": 65,
+  "group": "pentacles",
+  "rank": "two",
+  "en": {
+   "name": "Two of Pentacles",
+   "keywords": [
+    "juggling",
+    "adaptability",
+    "balance",
+    "playfulness"
+   ],
+   "imagery": "A young figure in a tall hat dances while juggling two pentacles linked by a looping, figure-of-eight band, as ships ride high waves behind.",
+   "upright": "Life is asking you to juggle, and you are managing it with a light step. This card shows flexibility, a sense of fun and the ability to keep several things moving at once. The waves may rise and fall, but rhythm and good humour help you stay balanced.",
+   "reversed": "The juggling act is wearing thin. You may be smiling through stress, overcommitted, or losing track of messages and details. It is fine to drop a ball on purpose. Simplify, say no where you can, and let your enjoyment be real rather than performed.",
+   "love": "Balancing a relationship with everything else takes playfulness. Keep a sense of humour together and make room for each other in the busy weeks.",
+   "work": "Several tasks compete for your time. Prioritise, stay flexible and keep notes so nothing important slips.",
+   "advice": "Keep your rhythm, and let one ball rest if you need to."
+  },
+  "bg": {
+   "name": "Двойка Пентакли",
+   "keywords": [
+    "жонглиране",
+    "гъвкавост",
+    "равновесие",
+    "игривост"
+   ],
+   "imagery": "Млада фигура с висока шапка танцува и жонглира с два пентакъла, свързани с лента във формата на осмица, а зад нея кораби се люшкат по високи вълни.",
+   "upright": "Животът иска от теб да жонглираш, а ти се справяш с лека стъпка. Картата показва гъвкавост, чувство за хумор и умение да държиш няколко неща в движение едновременно. Вълните могат да се надигат и спадат, но ритъмът и доброто настроение ти помагат да пазиш равновесие.",
+   "reversed": "Номерът с жонглирането започва да изтощава. Може би се усмихваш през стреса, поемаш твърде много или изпускаш съобщения и подробности. Нищо лошо няма да оставиш една топка нарочно. Опрости, казвай „не“, където можеш, и нека радостта ти бъде истинска, а не изиграна.",
+   "love": "Да балансираш връзката с всичко останало иска игривост. Пазете чувството си за хумор и намирайте място един за друг и в натоварените седмици.",
+   "work": "Няколко задачи се борят за времето ти. Подреди приоритетите, запази гъвкавостта си и си води бележки, за да не изпуснеш нищо важно.",
+   "advice": "Пази ритъма си и остави една топка да почине, ако трябва."
+  }
+ },
+ "pentacles_three": {
+  "index": 66,
+  "group": "pentacles",
+  "rank": "three",
+  "en": {
+   "name": "Three of Pentacles",
+   "keywords": [
+    "teamwork",
+    "craft",
+    "recognition",
+    "collaboration"
+   ],
+   "imagery": "A craftsperson stands on a bench carving stonework inside a church archway, while a monk and a figure holding plans look on and discuss the design.",
+   "upright": "Good work is being noticed. This card honours skill, steady craft and the magic that happens when different people bring their strengths together. Listen to feedback, share your expertise generously, and take quiet pride in building something that will last.",
+   "reversed": "The work may feel mediocre, or the team is not pulling together. Small egos, unclear plans or cutting corners can drag quality down. Return to the shared vision, clarify who does what, and remember that real craft takes patience rather than shortcuts.",
+   "love": "A relationship grows like a well-made building, through shared effort and respect for each other's gifts. Plan together and build together.",
+   "work": "Collaboration and skilled effort pay off. Seek out mentors and colleagues whose talents complement yours.",
+   "advice": "Build it together, one careful stone at a time."
+  },
+  "bg": {
+   "name": "Тройка Пентакли",
+   "keywords": [
+    "екипност",
+    "майсторство",
+    "признание",
+    "сътрудничество"
+   ],
+   "imagery": "Майстор стои на пейка и дялка каменна украса в църковна арка, а един монах и фигура с чертежи в ръце го наблюдават и обсъждат замисъла.",
+   "upright": "Добрата работа се забелязва. Картата почита умението, търпеливия занаят и чудото, което се случва, когато различни хора съберат силните си страни. Слушай обратната връзка, споделяй щедро знанията си и изпитвай тиха гордост, че градиш нещо трайно.",
+   "reversed": "Работата може да изглежда посредствена или екипът не дърпа в една посока. Дребното его, неясните планове или пестенето на усилия смъкват качеството. Върни се към общата визия, изясни кой какво прави и помни, че истинското майсторство иска търпение, а не преки пътища.",
+   "love": "Връзката расте като добре построена сграда – със споделени усилия и уважение към дарбите на другия. Планирайте заедно и градете заедно.",
+   "work": "Сътрудничеството и умелата работа се отплащат. Потърси наставници и колеги, чиито таланти допълват твоите.",
+   "advice": "Градете заедно, камък по камък, с грижа."
+  }
+ },
+ "pentacles_four": {
+  "index": 67,
+  "group": "pentacles",
+  "rank": "four",
+  "en": {
+   "name": "Four of Pentacles",
+   "keywords": [
+    "holding on",
+    "security",
+    "control",
+    "saving"
+   ],
+   "imagery": "A crowned figure sits before a city, clutching one pentacle to the chest, with another balanced on the crown and one beneath each foot.",
+   "upright": "You are holding tightly to what you have, whether that is money, time, feelings or a sense of control. Some security is wise, and protecting what you have built is natural. Yet a grip that is too firm can keep good things from coming in as well as going out.",
+   "reversed": "Something is blocked or delayed, and you may meet resistance when you try to move forward. You might also be ready to loosen your grip and share more freely. Notice where fear is making you stingy with yourself or others, and let a little flow return.",
+   "love": "Guarding your heart can turn into closing it. Let the other person in a little, and see what opens when you relax your grip.",
+   "work": "Stability matters, but clinging to the familiar may limit growth. Ask what you could share or delegate.",
+   "advice": "Open your hand a little and notice what arrives."
+  },
+  "bg": {
+   "name": "Четворка Пентакли",
+   "keywords": [
+    "вкопчване",
+    "сигурност",
+    "контрол",
+    "пестеливост"
+   ],
+   "imagery": "Фигура с корона седи пред град, притиснала един пентакъл до гърдите си, с още един, крепящ се върху короната, и по един под всяко стъпало.",
+   "upright": "Държиш здраво онова, което имаш – пари, време, чувства или усещането за контрол. Известна сигурност е мъдра и е естествено да пазиш изграденото. Но твърде силната хватка може да не пуска хубавите неща нито да излизат, нито да влизат.",
+   "reversed": "Нещо е блокирано или се бави и може да срещнеш съпротива, когато опиташ да продължиш. Възможно е и вече да имаш готовност да разхлабиш хватката и да споделяш по-свободно. Забележи къде страхът те прави стиснат към себе си или към другите и пусни малко поток обратно.",
+   "love": "Пазенето на сърцето може да се превърне в затваряне. Допусни другия мъничко по-близо и виж какво се отваря, когато отпуснеш хватката.",
+   "work": "Стабилността е важна, но вкопчването в познатото може да ограничи растежа. Запитай се какво можеш да споделиш или да повериш на друг.",
+   "advice": "Отвори леко ръката си и виж какво идва."
+  }
+ },
+ "pentacles_five": {
+  "index": 68,
+  "group": "pentacles",
+  "rank": "five",
+  "en": {
+   "name": "Five of Pentacles",
+   "keywords": [
+    "hardship",
+    "feeling left out",
+    "worry",
+    "support nearby"
+   ],
+   "imagery": "Two ragged figures, one on crutches, trudge through falling snow past a glowing stained-glass window set with five pentacles.",
+   "upright": "This card speaks of a hard season: money worries, feeling left out in the cold, or a sense of lack. The struggle is real, and you do not have to pretend otherwise. Notice the lit window nearby: support, warmth and companionship may be closer than they seem, if you let yourself reach for it.",
+   "reversed": "Things may feel chaotic, or old patterns of scarcity keep repeating. It can also mark the beginning of recovery as you start accepting help and rebuilding step by step. Be gentle with yourself, ask clearly for what you need, and let others share the load.",
+   "love": "Hard times can bring people closer when they face them side by side. Lean on each other instead of struggling alone.",
+   "work": "A setback or insecurity weighs on you. Look for help, community and practical resources rather than carrying it quietly.",
+   "advice": "Knock on the lit door; you are allowed to ask."
+  },
+  "bg": {
+   "name": "Петица Пентакли",
+   "keywords": [
+    "трудности",
+    "чувство за изолация",
+    "тревога",
+    "подкрепа наблизо"
+   ],
+   "imagery": "Двама дрипави души, единият с патерици, газят през падащия сняг покрай светещ витраж с пет пентакъла.",
+   "upright": "Картата говори за труден сезон: тревоги за пари, усещане, че оставаш навън в студа, или чувство за липса. Трудността е истинска и не е нужно да се преструваш, че я няма. Забележи светещия прозорец наблизо: подкрепата, топлината и близките хора може да са по-наблизо, отколкото изглежда, стига да си позволиш да посегнеш към тях.",
+   "reversed": "Нещата може да изглеждат хаотични или старите модели на недоимък продължават да се повтарят. Картата може да бележи и началото на възстановяването – когато започнеш да приемаш помощ и да градиш наново стъпка по стъпка. Отнасяй се нежно към себе си, искай ясно онова, от което имаш нужда, и позволи на другите да поемат част от товара.",
+   "love": "Трудните времена могат да сближат хората, когато ги посрещат рамо до рамо. Опирайте се един на друг, вместо всеки да се бори сам.",
+   "work": "Неуспех или несигурност тежат на плещите ти. Потърси помощ, общност и практични ресурси, вместо да носиш всичко мълчаливо.",
+   "advice": "Почукай на осветената врата – имаш право да помолиш."
+  }
+ },
+ "pentacles_six": {
+  "index": 69,
+  "group": "pentacles",
+  "rank": "six",
+  "en": {
+   "name": "Six of Pentacles",
+   "keywords": [
+    "generosity",
+    "giving and receiving",
+    "fairness",
+    "support"
+   ],
+   "imagery": "A well-dressed merchant holds a set of scales in one hand and drops coins into the outstretched hands of two kneeling figures with the other.",
+   "upright": "Giving and receiving are flowing well. This card celebrates generosity, fair exchange and the good feeling of sharing what you have, whether time, help or resources. If you are on the receiving end, accept graciously; if you are giving, do so with an open heart and without strings.",
+   "reversed": "The balance of give and take may be off. Help might come with conditions, or envy and comparison are creeping in. You may be giving until you are empty, or hesitant to ask for anything at all. Look for an exchange that feels fair and respectful to everyone.",
+   "love": "Love thrives on mutual care. Notice who gives and who receives, and make sure both of you feel valued.",
+   "work": "Mentoring, sharing knowledge or receiving support can lift everyone. Keep the exchange fair and transparent.",
+   "advice": "Give freely, receive gracefully, and keep the scales honest."
+  },
+  "bg": {
+   "name": "Шестица Пентакли",
+   "keywords": [
+    "щедрост",
+    "даване и получаване",
+    "справедливост",
+    "подкрепа"
+   ],
+   "imagery": "Добре облечен търговец държи везни в едната ръка, а с другата пуска монети в протегнатите длани на двама коленичили души.",
+   "upright": "Даването и получаването текат добре. Картата празнува щедростта, честната размяна и хубавото чувство да споделяш каквото имаш – време, помощ или средства. Ако си от страната на получаващия, приеми с благодарност; ако даваш, давай с отворено сърце и без условия.",
+   "reversed": "Равновесието между даване и вземане може да е нарушено. Помощта може да идва с условия или да се прокрадват завист и сравнения. Може би даваш, докато не се изпразниш, или се колебаеш да поискаш каквото и да било. Потърси размяна, която е честна и уважителна към всички.",
+   "love": "Любовта процъфтява от взаимна грижа. Забележи кой дава и кой получава и се погрижи и двамата да се чувствате ценени.",
+   "work": "Наставничеството, споделянето на знания или получената подкрепа могат да издигнат всички. Пазете размяната честна и прозрачна.",
+   "advice": "Давай свободно, приемай с благодарност и пази везните честни."
+  }
+ },
+ "pentacles_seven": {
+  "index": 70,
+  "group": "pentacles",
+  "rank": "seven",
+  "en": {
+   "name": "Seven of Pentacles",
+   "keywords": [
+    "patience",
+    "assessment",
+    "long-term effort",
+    "growth"
+   ],
+   "imagery": "A young figure leans on a hoe, gazing thoughtfully at seven pentacles growing like fruit on a leafy bush.",
+   "upright": "You have put in steady effort, and now you pause to take stock. This card invites patience and honest reflection: what is growing well, and what needs a different kind of care? Good things often ripen slowly, so give your work the time it deserves before judging the harvest.",
+   "reversed": "Impatience or worry about results may be clouding your view. Perhaps the effort feels unrewarded, or you doubt whether to keep going. Step back, look at the bigger picture, and decide calmly whether to continue tending this patch or plant your energy elsewhere.",
+   "love": "A relationship needs time to deepen. Appreciate how far you've come together, and keep tending it with patience.",
+   "work": "Review your progress honestly. Adjust where needed, but don't abandon a project just because the fruit isn't ripe yet.",
+   "advice": "Let it ripen; patience is part of the harvest."
+  },
+  "bg": {
+   "name": "Седмица Пентакли",
+   "keywords": [
+    "търпение",
+    "равносметка",
+    "дългосрочно усилие",
+    "растеж"
+   ],
+   "imagery": "Млада фигура се е облегнала на мотика и замислено гледа седем пентакъла, които растат като плодове по гъст храст.",
+   "upright": "Вложени са постоянни усилия и сега спираш, за да направиш равносметка. Картата те кани към търпение и честен поглед: какво расте добре и какво има нужда от друг вид грижа? Хубавите неща често зреят бавно, затова дай на труда си времето, което заслужава, преди да съдиш за реколтата.",
+   "reversed": "Нетърпението или тревогата за резултата може би замъгляват погледа ти. Възможно е усилията да изглеждат неоценени или да се питаш дали да продължиш. Отстъпи крачка, погледни голямата картина и реши спокойно дали да продължиш да гледаш тази леха, или да посадиш енергията си другаде.",
+   "love": "Връзката има нужда от време, за да се задълбочи. Оценете колко път сте извървели заедно и продължавайте да я гледате с търпение.",
+   "work": "Прегледай напредъка си честно. Промени, каквото е нужно, но не изоставяй проекта само защото плодът още не е узрял.",
+   "advice": "Остави го да узрее – търпението е част от реколтата."
+  }
+ },
+ "pentacles_eight": {
+  "index": 71,
+  "group": "pentacles",
+  "rank": "eight",
+  "en": {
+   "name": "Eight of Pentacles",
+   "keywords": [
+    "dedication",
+    "skill",
+    "practice",
+    "diligence"
+   ],
+   "imagery": "A craftsperson sits at a workbench carefully hammering a pentacle, with finished pentacles displayed on a post beside them and a town in the distance.",
+   "upright": "This is the card of focused, devoted work. You are learning, practising and refining a skill one piece at a time. Repetition is not dull here; it is how mastery grows. Take satisfaction in doing something well for its own sake, and let your craft speak for itself.",
+   "reversed": "Effort may feel scattered or empty, or perfectionism is turning work into a chore. Skill can also be bent toward cutting corners or impressing others. Reconnect with why you started, and choose quality and meaning over sheer busyness.",
+   "love": "Love is a craft too. Small, consistent acts of attention build more than grand gestures.",
+   "work": "Dedicated practice pays off. Invest in learning and take pride in careful, quality work.",
+   "advice": "Do one small thing beautifully today."
+  },
+  "bg": {
+   "name": "Осмица Пентакли",
+   "keywords": [
+    "отдаденост",
+    "умение",
+    "практика",
+    "усърдие"
+   ],
+   "imagery": "Майстор седи на работна маса и внимателно кове пентакъл, а до него на стълб са изложени готовите пентакли, в далечината се вижда град.",
+   "upright": "Това е картата на съсредоточената, отдадена работа. Учиш се, упражняваш и усъвършенстваш умение парче по парче. Тук повторението не е скучно – така расте майсторството. Радвай се, че правиш нещо добре заради самото него, и остави труда си да говори вместо теб.",
+   "reversed": "Усилията може да изглеждат разпилени или празни, а перфекционизмът да превръща работата в тегоба. Умението може и да се насочи към пестене на усилия или към впечатляване на другите. Свържи се отново с причината, поради която започна, и избери качеството и смисъла пред голата заетост.",
+   "love": "Любовта също е занаят. Малките, постоянни жестове на внимание градят повече от големите.",
+   "work": "Отдадената практика се отплаща. Вложи време в ученето и се гордей с грижливата, качествена работа.",
+   "advice": "Направи днес едно малко нещо красиво."
+  }
+ },
+ "pentacles_nine": {
+  "index": 72,
+  "group": "pentacles",
+  "rank": "nine",
+  "en": {
+   "name": "Nine of Pentacles",
+   "keywords": [
+    "self-sufficiency",
+    "comfort",
+    "accomplishment",
+    "refinement"
+   ],
+   "imagery": "An elegantly robed figure stands in a lush vineyard before a manor house, a hooded bird resting on one gloved hand among nine pentacles.",
+   "upright": "You are enjoying the fruits of your own effort and discernment. This card speaks of comfort, quiet confidence and the freedom that comes from being able to stand on your own. Savour what you have created, and let yourself relax into a well-earned sense of security.",
+   "reversed": "Independence may feel lonely, or comfort rests on shaky ground. A plan might fall through, or someone may not be acting in good faith. Check that your security is real, and remember that self-reliance does not mean you have to do everything alone.",
+   "love": "You bring wholeness to a relationship rather than looking for someone to complete you. Share your good life generously.",
+   "work": "Your efforts have built something you can be proud of. Enjoy it, and let your independence be a base for what comes next.",
+   "advice": "Pause and enjoy the garden you have grown."
+  },
+  "bg": {
+   "name": "Деветка Пентакли",
+   "keywords": [
+    "самостоятелност",
+    "уют",
+    "постижение",
+    "изтънченост"
+   ],
+   "imagery": "Фигура в изящна дреха стои в буйно лозе пред господарска къща, а на облечената ѝ в ръкавица ръка почива птица с качулка сред девет пентакъла.",
+   "upright": "Наслаждаваш се на плодовете на собствения си труд и усет. Картата говори за уют, спокойна увереност и свободата да стоиш на собствените си крака. Вкуси от онова, което си създаваш, и си позволи да се отпуснеш в заслужено чувство на сигурност.",
+   "reversed": "Независимостта може да носи самота или уютът да стои на нестабилна основа. Някой план може да се провали или някой да не действа добросъвестно. Провери дали сигурността ти е истинска и помни, че да разчиташ на себе си не означава да правиш всичко без ничия помощ.",
+   "love": "Внасяш цялост във връзката, вместо да търсиш някой, който да те допълни. Споделяй щедро хубавия си живот.",
+   "work": "С усилията си изгради нещо, с което можеш да се гордееш. Радвай му се и нека независимостта ти стане основа за следващата стъпка.",
+   "advice": "Спри за миг и се порадвай на градината, която отгледа."
+  }
+ },
+ "pentacles_ten": {
+  "index": 73,
+  "group": "pentacles",
+  "rank": "ten",
+  "en": {
+   "name": "Ten of Pentacles",
+   "keywords": [
+    "legacy",
+    "family",
+    "belonging",
+    "lasting security"
+   ],
+   "imagery": "Beneath a stone archway an elder sits with two dogs while a couple and a child stand nearby, ten pentacles arranged in a tree-like pattern across the scene.",
+   "upright": "This card speaks of lasting foundations: family, home, traditions and the security that grows across generations. It invites you to appreciate your roots and to think about what you would like to pass on. Belonging, stability and shared history are treasures in their own right.",
+   "reversed": "Family tensions, unexpected setbacks or questions about inheritance and tradition may be stirring. Stability can feel less certain than it once did. Focus on what you can build together, talk openly about expectations, and remember that a home is made of people, not only walls.",
+   "love": "A relationship may be moving toward long-term commitment and a shared life. Talk about the future you both want to build.",
+   "work": "Work that creates lasting value, for you and others, is favoured. Think beyond the short term.",
+   "advice": "Honour your roots and tend what you will pass on."
+  },
+  "bg": {
+   "name": "Десетка Пентакли",
+   "keywords": [
+    "наследство",
+    "семейство",
+    "принадлежност",
+    "трайна сигурност"
+   ],
+   "imagery": "Под каменна арка възрастен човек седи с две кучета, а наблизо стоят двойка и дете; десет пентакъла са подредени в шарка като дърво върху цялата сцена.",
+   "upright": "Картата говори за трайни основи: семейство, дом, традиции и сигурността, която расте през поколенията. Тя те кани да оцениш корените си и да помислиш какво искаш да предадеш нататък. Принадлежността, стабилността и общата история са съкровища сами по себе си.",
+   "reversed": "Може би се надигат семейни напрежения, неочаквани спънки или въпроси около наследството и традициите. Стабилността вече може да не изглежда толкова сигурна. Съсредоточи се върху онова, което можете да изградите заедно, говорете открито за очакванията и помни, че домът е направен от хора, не само от стени.",
+   "love": "Връзката може би върви към дълготрайна обвързаност и общ живот. Говорете за бъдещето, което и двамата искате да изградите.",
+   "work": "Благоприятства се работа, която създава трайна стойност – за теб и за другите. Мисли отвъд краткия срок.",
+   "advice": "Почитай корените си и се грижи за онова, което ще предадеш."
+  }
+ },
+ "pentacles_page": {
+  "index": 74,
+  "group": "pentacles",
+  "rank": "page",
+  "en": {
+   "name": "Page of Pentacles",
+   "keywords": [
+    "study",
+    "new venture",
+    "diligence",
+    "curiosity"
+   ],
+   "imagery": "A young figure stands in a green, flowering meadow, gazing intently at a pentacle held up in both hands, ploughed fields and a grove of trees behind.",
+   "upright": "A thoughtful, studious energy is with you. You are ready to learn something practical, start a modest new venture or give careful attention to a goal. Take it one step at a time; your focus and willingness to apply yourself can turn a small beginning into something real.",
+   "reversed": "Focus may be wandering, or plans stay at the dreaming stage. You might be spreading yourself thin, indulging a little too much, or receiving news that disappoints. Bring your attention back to one concrete step you can take today.",
+   "love": "A slow, sincere start can grow into something solid. Show interest through steady, reliable actions.",
+   "work": "A good time to study, train or begin a practical project. Consistency matters more than speed.",
+   "advice": "Take one small, concrete step toward your goal."
+  },
+  "bg": {
+   "name": "Паж Пентакли",
+   "keywords": [
+    "учене",
+    "ново начинание",
+    "старание",
+    "любознателност"
+   ],
+   "imagery": "Млада фигура стои на зелена, цъфнала поляна и съсредоточено гледа пентакъла, вдигнат с две ръце, а зад нея се виждат изорани ниви и горичка.",
+   "upright": "С теб е замислена, учеща се енергия. Готовността да научиш нещо практично, да започнеш скромно ново начинание или да посветиш внимание на цел е налице. Действай стъпка по стъпка; съсредоточеността и старанието ти могат да превърнат малкото начало в нещо истинско.",
+   "reversed": "Вниманието може би се разсейва или плановете остават на ниво мечти. Може да се разпиляваш, да си угаждаш малко повече от нужното или да получиш разочароваща новина. Върни вниманието си към една конкретна стъпка, която можеш да направиш още днес.",
+   "love": "Бавното, искрено начало може да израсне в нещо солидно. Показвай интереса си с постоянни и надеждни действия.",
+   "work": "Добро време за учене, обучение или практичен проект. Постоянството е по-важно от скоростта.",
+   "advice": "Направи една малка, конкретна крачка към целта си."
+  }
+ },
+ "pentacles_knight": {
+  "index": 75,
+  "group": "pentacles",
+  "rank": "knight",
+  "en": {
+   "name": "Knight of Pentacles",
+   "keywords": [
+    "reliability",
+    "steadiness",
+    "responsibility",
+    "hard work"
+   ],
+   "imagery": "An armoured rider sits on a heavy, motionless horse at the edge of a ploughed field, holding a pentacle out and studying it.",
+   "upright": "Slow and steady wins here. This card brings dependability, patience and a strong sense of duty. You get things done by showing up, step after step, without needing applause. Your reliability is a quiet strength, and it builds trust over time.",
+   "reversed": "Steadiness may have turned into stuckness. Routine feels heavy, motivation is low, or caution has become an excuse not to move. Gently shake things up: try one new approach, and check whether you are resting or simply avoiding.",
+   "love": "Consistency is your love language. Show up, keep your word, and let small acts of care speak loudly.",
+   "work": "Patient, methodical effort leads to solid results. Keep a steady pace and finish what you start.",
+   "advice": "Keep going, one dependable step at a time."
+  },
+  "bg": {
+   "name": "Рицар Пентакли",
+   "keywords": [
+    "надеждност",
+    "стабилност",
+    "отговорност",
+    "упорит труд"
+   ],
+   "imagery": "Рицар в броня седи на тежък, неподвижен кон на ръба на изорана нива, протегнал пред себе си пентакъл и вгледан в него.",
+   "upright": "Тук печели бавното и постоянното. Картата носи надеждност, търпение и силно чувство за дълг. Свършваш нещата, като се появяваш отново и отново, стъпка след стъпка, без нужда от аплодисменти. Твоята надеждност е тиха сила и с времето гради доверие.",
+   "reversed": "Стабилността може да се е превърнала в застой. Рутината тежи, мотивацията е ниска или предпазливостта е станала оправдание да не мърдаш. Раздвижи нещата внимателно: опитай един нов подход и провери дали почиваш, или просто отбягваш.",
+   "love": "Постоянството е твоят език на любовта. Бъди там, спазвай думата си и остави малките жестове на грижа да говорят силно.",
+   "work": "Търпеливото, методично усилие води до солидни резултати. Пази равномерното темпо и довършвай започнатото.",
+   "advice": "Продължавай – стъпка по стъпка, с постоянство."
+  }
+ },
+ "pentacles_queen": {
+  "index": 76,
+  "group": "pentacles",
+  "rank": "queen",
+  "en": {
+   "name": "Queen of Pentacles",
+   "keywords": [
+    "nurturing",
+    "practical care",
+    "generosity",
+    "security"
+   ],
+   "imagery": "A crowned figure sits on a throne carved with fruit and goat heads in a blooming garden, cradling a pentacle in the lap, roses overhead and a rabbit at the foot.",
+   "upright": "This card brings warm, practical care. You create comfort and security for yourself and others, with a generous spirit and a grounded mind. Home, body and everyday life feel like places to nurture. Your kindness is felt in real, tangible ways.",
+   "reversed": "Caring for everyone else may leave you depleted, or worry and mistrust are taking the place of warmth. You might be neglecting your own needs or clinging to control at home. Give yourself the same nurturing you offer others, and let others care for you too.",
+   "love": "Love shows up in thoughtful, practical gestures. Create a warm space where both of you feel safe and looked after.",
+   "work": "You balance competence with care. Your steady presence helps others feel secure and productive.",
+   "advice": "Nurture yourself as kindly as you nurture others."
+  },
+  "bg": {
+   "name": "Царица Пентакли",
+   "keywords": [
+    "грижовност",
+    "практична грижа",
+    "щедрост",
+    "сигурност"
+   ],
+   "imagery": "Фигура с корона седи на трон, издялан с плодове и козе глави, сред цъфнала градина, държи пентакъл в скута си, над нея се вият рози, а в краката ѝ има заек.",
+   "upright": "Картата носи топла, практична грижа. Създаваш уют и сигурност за себе си и за другите – с щедър дух и трезв ум. Домът, тялото и ежедневието са места, които да подхранваш. Добротата ти се усеща по истински, осезаем начин.",
+   "reversed": "Грижата за всички останали може да те изтощи или тревогата и недоверието да заемат мястото на топлината. Може би пренебрегваш собствените си нужди или се вкопчваш в контрола у дома. Дай на себе си същата грижа, която даваш на другите, и позволи и на тях да се погрижат за теб.",
+   "love": "Любовта се проявява в мили, практични жестове. Създайте топло място, където и двамата да се чувствате в безопасност и обгрижени.",
+   "work": "Съчетаваш компетентност с грижа. Спокойното ти присъствие помага на другите да се чувстват сигурни и продуктивни.",
+   "advice": "Грижи се за себе си така нежно, както за другите."
+  }
+ },
+ "pentacles_king": {
+  "index": 77,
+  "group": "pentacles",
+  "rank": "king",
+  "en": {
+   "name": "King of Pentacles",
+   "keywords": [
+    "stability",
+    "provision",
+    "steady success",
+    "leadership"
+   ],
+   "imagery": "A crowned figure in a robe embroidered with grapevines sits on a throne carved with bulls' heads, a pentacle in one hand and a sceptre in the other, a castle rising behind.",
+   "upright": "This card brings mature, steady success built on patience and practical wisdom. You know how to turn ideas into reality and create security for yourself and those you care about. Lead with generosity, stay grounded, and enjoy the stability you have worked for.",
+   "reversed": "Focus on status or possessions may be crowding out what matters. Stubbornness, overindulgence or rigid control can weaken what you have built. Ask whether your sense of worth depends too much on outer success, and return to the values that made you strong.",
+   "love": "You offer steadiness and a sense of safety. Remember to show your affection openly, not only through what you provide.",
+   "work": "Experience and reliability make you a natural leader. Use your success to support others and build something lasting.",
+   "advice": "Let your security be a gift you share."
+  },
+  "bg": {
+   "name": "Цар Пентакли",
+   "keywords": [
+    "стабилност",
+    "осигуряване",
+    "устойчив успех",
+    "лидерство"
+   ],
+   "imagery": "Фигура с корона, облечена в дреха, извезана с лози, седи на трон с издялани бичи глави, държи пентакъл в едната ръка и скиптър в другата, а зад нея се издига замък.",
+   "upright": "Картата носи зрял, устойчив успех, изграден с търпение и практична мъдрост. Умееш да превръщаш идеите в действителност и да създаваш сигурност за себе си и за хората, които обичаш. Води с щедрост, стой здраво на земята и се радвай на стабилността, за която положи толкова труд.",
+   "reversed": "Вниманието към статуса или притежанията може би изтласква важното. Упорството, прекомерното угаждане или строгият контрол могат да отслабят изграденото. Запитай се дали самочувствието ти не зависи твърде много от външния успех и се върни към ценностите, които ти дават сила.",
+   "love": "Даряваш устойчивост и чувство за безопасност. Не забравяй да показваш обичта си открито, а не само чрез онова, което осигуряваш.",
+   "work": "Опитът и надеждността карат другите естествено да те следват. Използвай успеха си, за да подкрепяш другите и да градиш нещо трайно.",
+   "advice": "Нека сигурността ти бъде дар, който споделяш."
+  }
+ }
+}

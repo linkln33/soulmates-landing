@@ -3,7 +3,7 @@
  * into YYYY-MM-DD. Same rules as the free reading: a real calendar date from
  * 1900-01-01 up to today in Europe/Sofia (the date the server checks against).
  */
-import { MIN_BIRTH_YEAR, parseCalendarDate } from '../blueprint/dates.ts';
+import { MIN_BIRTH_YEAR, parseCalendarDate } from './dates.ts';
 
 export type BirthDateParts = { day: string; month: string; year: string };
 
