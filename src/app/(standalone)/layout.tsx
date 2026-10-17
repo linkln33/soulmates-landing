@@ -7,7 +7,8 @@ import type { Metadata, Viewport } from 'next';
 import { Inter } from 'next/font/google';
 import '../globals.css';
 import { SITE_URL } from '@/lib/site/config';
-import { THEME_SCRIPT, TOKENS_CSS } from '@/lib/design/tokens';
+import { TOKENS_CSS } from '@/lib/design/tokens';
+import { THEME_SCRIPT } from '@/lib/design/theme';
 
 const inter = Inter({ variable: '--font-inter', subsets: ['latin', 'cyrillic'], display: 'swap' });
 

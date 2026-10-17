@@ -5,7 +5,6 @@
  *  - sq.tarot.daily      today's card, so it shows again without a request
  *  - sq.tarot.draw.1/3   the last completed draw (and its question), so a
  *                        refresh never redraws by accident
- *  - sq.theme            light | dark (absent = follow the system)
  * Every access is guarded: storage can be missing or throw (private windows,
  * blocked site data), and the tools still work without it.
  */
@@ -14,7 +13,6 @@ export const STORAGE_KEYS = {
   visitor: 'sq.visitor',
   daily: 'sq.tarot.daily',
   draw: (count: 1 | 3) => `sq.tarot.draw.${count}`,
-  theme: 'sq.theme',
 } as const;
 
 export function readJson<T>(key: string): T | null {

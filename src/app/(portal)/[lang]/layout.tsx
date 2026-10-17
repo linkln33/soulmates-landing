@@ -5,7 +5,8 @@ import '../../globals.css';
 import { LOCALES, isLocale } from '@/i18n/config';
 import { site } from '@/i18n';
 import { SITE_URL } from '@/lib/site/config';
-import { THEME_SCRIPT, TOKENS_CSS } from '@/lib/design/tokens';
+import { TOKENS_CSS } from '@/lib/design/tokens';
+import { THEME_SCRIPT } from '@/lib/design/theme';
 import { SiteFooter, SiteHeader } from '@/components/site/SiteChrome';
 
 const inter = Inter({ variable: '--font-inter', subsets: ['latin', 'cyrillic'], display: 'swap' });
