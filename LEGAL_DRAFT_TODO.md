@@ -31,7 +31,9 @@
 
 ## Facts the privacy draft relies on (re-check if the code changes)
 
-- `/api/blueprint` takes `name` and `birthDate`, computes the reading during the request, and returns it. Nothing is written to a database or file.
-- The route logs only an error message when a calculation fails (`console.error`). It never logs the submitted name or birth date.
-- No cookies, analytics, advertising or tracking scripts are included. Fonts come from `next/font`, which self-hosts them on the site's own domain.
-- The site is hosted on Vercel.
+- The website has no server code of its own. The readings are calculated by the SoulMates Quest API (`/api/public/readings/*`, backend `src/routes/publicReadings.js`), called from the visitor's browser.
+- Horoscope and Moon requests send only a sign and a time zone. Numbers sends the birth date and time zone in the request body (never the URL). The API doesn't store or log them.
+- Tarot card of the day sends a random browser identifier (kept in local storage) and the time zone. The API doesn't store the identifier. Draws send only the number of cards; the question stays in the browser.
+- The API's rate limits store a keyed hash of the IP address for 48 hours (`RateLimitEvent`).
+- Local storage keys: `sq.visitor`, `sq.tarot.daily`, `sq.tarot.draw.1`, `sq.tarot.draw.3`, `sq.theme` (`src/lib/readings/local.ts`). No cookies, analytics, advertising or tracking scripts. Fonts are self-hosted by `next/font`.
+- The site and the API are hosted on Vercel.

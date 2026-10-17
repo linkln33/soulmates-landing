@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 150">
+  <defs>
+    <radialGradient id="disc" cx="0.5" cy="0.45" r="0.6"><stop offset="0" stop-color="#2E4374"/><stop offset="1" stop-color="#16213F"/></radialGradient>
+    <radialGradient id="sun" cx="0.5" cy="0.5" r="0.5"><stop offset="0" stop-color="#FFF1C2"/><stop offset=".6" stop-color="#F6C453"/><stop offset="1" stop-color="#E39A2D"/></radialGradient>
+    <linearGradient id="gold" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#F6D27A"/><stop offset="1" stop-color="#D9A441"/></linearGradient>
+  </defs>
+  <circle cx="100" cy="78" r="66" fill="url(#disc)"/>
+  <circle cx="100" cy="78" r="64" fill="none" stroke="url(#gold)" stroke-width="2.5"/>
+  <circle cx="100" cy="78" r="46" fill="none" stroke="url(#gold)" stroke-width="1.6" opacity=".9"/>
+  <g stroke="#D9A441" stroke-width="1.4" opacity=".9">
+    <path d="M100 14 V32 M100 124 V142 M36 78 H54 M146 78 H164 M68 22.6 L77 38.2 M132 22.6 L123 38.2 M68 133.4 L77 117.8 M132 133.4 L123 117.8 M44.6 46 L60.2 55 M155.4 46 L139.8 55 M44.6 110 L60.2 101 M155.4 110 L139.8 101"/>
+  </g>
+  <g fill="#E9C46A" opacity=".85">
+    <circle cx="100" cy="23" r="2.4"/><circle cx="127.5" cy="30.4" r="2.4"/><circle cx="147.6" cy="50.5" r="2.4"/><circle cx="155" cy="78" r="2.4"/>
+    <circle cx="147.6" cy="105.5" r="2.4"/><circle cx="127.5" cy="125.6" r="2.4"/><circle cx="100" cy="133" r="2.4"/><circle cx="72.5" cy="125.6" r="2.4"/>
+    <circle cx="52.4" cy="105.5" r="2.4"/><circle cx="45" cy="78" r="2.4"/><circle cx="52.4" cy="50.5" r="2.4"/><circle cx="72.5" cy="30.4" r="2.4"/>
+  </g>
+  <g stroke="#F6C453" stroke-width="2.4" stroke-linecap="round">
+    <path d="M100 48 v-6 M100 108 v6 M70 78 h-6 M130 78 h6 M79 57 l-4 -4 M121 57 l4 -4 M79 99 l-4 4 M121 99 l4 4"/>
+  </g>
+  <circle cx="100" cy="78" r="22" fill="url(#sun)"/>
+</svg>

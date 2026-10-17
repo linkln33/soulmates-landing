@@ -1,0 +1,572 @@
+{
+ "common": {
+  "optional": "Optional",
+  "retry": "Try again",
+  "continue": "Continue",
+  "back": "Back",
+  "close": "Close",
+  "save": "Save",
+  "saved": "Saved",
+  "share": "Share",
+  "seeAll": "See all",
+  "comingSoon": "Coming soon",
+  "loading": "Loading…",
+  "signOut": "Sign out",
+  "cancel": "Cancel",
+  "done": "Done"
+ },
+ "states": {
+  "errorTitle": "Something went wrong",
+  "errorBody": "We couldn’t load this. Check your connection and try again.",
+  "offlineTitle": "Can’t connect",
+  "offlineBody": "Check your internet connection and try again.",
+  "cachedFrom": "Showing your reading from {date}. Today’s couldn’t load.",
+  "unavailableTitle": "Not available yet",
+  "devSample": "Development sample — not a real reading"
+ },
+ "indicators": {
+  "level": {
+   "1": "Quiet",
+   "2": "Gentle",
+   "3": "Steady",
+   "4": "Strong"
+  },
+  "accessible": "{name}: {level}",
+  "energy": {
+   "name": "Energy",
+   "about": "How much drive the day tends to bring."
+  },
+  "connection": {
+   "name": "Connection",
+   "about": "How open the day is for closeness and warmth."
+  },
+  "focus": {
+   "name": "Focus",
+   "about": "How well the day supports steady, careful work."
+  },
+  "communication": {
+   "name": "Communication",
+   "about": "How easily words and listening flow today."
+  },
+  "balance": {
+   "name": "Balance",
+   "about": "How easy it is to keep a calm pace today."
+  }
+ },
+ "moon": {
+  "title": "The Moon today",
+  "headline": "Moon {in}",
+  "phaseLine": "{phase} · {percent}% lit",
+  "yourSign": "Your sign: {sign}",
+  "yourSignUncertain": "Your sign: {a} or {b}",
+  "inYourSignNow": "In your sign now",
+  "nextVisit": "Next visit: {date}",
+  "compareHint": "Add your birth date to compare",
+  "calendarLink": "Moon calendar",
+  "phaseIn": "{phase} {in}",
+  "illumination": "{percent}% lit",
+  "inYourSign": "The Moon is in your sign, {sign}.",
+  "leavesAt": "It moves {into} on {when}.",
+  "notInYourSign": "Next in your sign, {sign}: {when}.",
+  "comparedWith": "Compared with your Sun sign, {sign}, from your birth date.",
+  "signNeedsTime": "Your birth date falls on a sign change ({a} or {b}). Add your birth time to know which.",
+  "noBirthDate": "Add your birth date to see how the Moon relates to your sign.",
+  "nextPhase": "{phase} on {when}",
+  "meaningLink": "What does this mean?",
+  "meaningTitle": "The Moon today",
+  "meaningReading": "What it suggests",
+  "meaningFacts": "The facts",
+  "meaningFactsNote": "Sign, phase and dates are calculated from the Moon's actual position.",
+  "meaningReadingNote": "The suggestion follows traditional astrology. It is a reflection, not a prediction.",
+  "mood": {
+   "aries": {
+    "title": "A day to start something",
+    "body": "Energy runs quick and direct. Good for first steps, honest answers and a little courage. Watch for impatience."
+   },
+   "taurus": {
+    "title": "Slow down and savour",
+    "body": "Comfort, steadiness and simple pleasures feel right. A good day for patience and caring for your body."
+   },
+   "gemini": {
+    "title": "Curious and talkative",
+    "body": "Conversations, messages and new ideas flow easily. Keep it light, and listen as much as you speak."
+   },
+   "cancer": {
+    "title": "Close to home and heart",
+    "body": "Feelings run nearer the surface. Time with people who feel safe, and a little self-care, go a long way."
+   },
+   "leo": {
+    "title": "Let your warmth show",
+    "body": "A day for generosity, play and being seen. Share appreciation freely, and enjoy receiving it."
+   },
+   "virgo": {
+    "title": "Small things, done well",
+    "body": "Order and usefulness feel satisfying. Tidy one corner of life, and go gently with yourself and others."
+   },
+   "libra": {
+    "title": "Seek balance together",
+    "body": "Harmony, fairness and beauty matter more today. A good time for kind words and meeting halfway."
+   },
+   "scorpio": {
+    "title": "Go deeper",
+    "body": "Feelings are intense and honest. A day for real talk, trust and letting go of what no longer fits."
+   },
+   "sagittarius": {
+    "title": "Open horizons today",
+    "body": "Curiosity and optimism come easily. Learn something, plan an adventure, and say what you mean, kindly."
+   },
+   "capricorn": {
+    "title": "Steady and purposeful",
+    "body": "Structure and commitment feel grounding. Take one practical step towards something that matters to you."
+   },
+   "aquarius": {
+    "title": "Think freely",
+    "body": "Fresh ideas and friendship are favoured. Give others room to be themselves, and yourself too."
+   },
+   "pisces": {
+    "title": "Soft and intuitive",
+    "body": "Imagination, empathy and dreams are close. Rest, create, and protect your energy where you need to."
+   }
+  },
+  "phases": {
+   "new_moon": "New Moon",
+   "waxing_crescent": "Waxing crescent",
+   "first_quarter": "First quarter",
+   "waxing_gibbous": "Waxing gibbous",
+   "full_moon": "Full Moon",
+   "waning_gibbous": "Waning gibbous",
+   "last_quarter": "Last quarter",
+   "waning_crescent": "Waning crescent"
+  }
+ },
+ "signs": {
+  "aries": "Aries",
+  "taurus": "Taurus",
+  "gemini": "Gemini",
+  "cancer": "Cancer",
+  "leo": "Leo",
+  "virgo": "Virgo",
+  "libra": "Libra",
+  "scorpio": "Scorpio",
+  "sagittarius": "Sagittarius",
+  "capricorn": "Capricorn",
+  "aquarius": "Aquarius",
+  "pisces": "Pisces"
+ },
+ "signIn": {
+  "aries": "in Aries",
+  "taurus": "in Taurus",
+  "gemini": "in Gemini",
+  "cancer": "in Cancer",
+  "leo": "in Leo",
+  "virgo": "in Virgo",
+  "libra": "in Libra",
+  "scorpio": "in Scorpio",
+  "sagittarius": "in Sagittarius",
+  "capricorn": "in Capricorn",
+  "aquarius": "in Aquarius",
+  "pisces": "in Pisces"
+ },
+ "signInto": {
+  "aries": "into Aries",
+  "taurus": "into Taurus",
+  "gemini": "into Gemini",
+  "cancer": "into Cancer",
+  "leo": "into Leo",
+  "virgo": "into Virgo",
+  "libra": "into Libra",
+  "scorpio": "into Scorpio",
+  "sagittarius": "into Sagittarius",
+  "capricorn": "into Capricorn",
+  "aquarius": "into Aquarius",
+  "pisces": "into Pisces"
+ },
+ "signFacts": {
+  "dates": "About {from} – {to}",
+  "element": "Element",
+  "modality": "Quality",
+  "ruler": "Ruler",
+  "elements": {
+   "fire": "Fire",
+   "earth": "Earth",
+   "air": "Air",
+   "water": "Water"
+  },
+  "modalities": {
+   "cardinal": "Cardinal",
+   "fixed": "Fixed",
+   "mutable": "Mutable"
+  },
+  "rulers": {
+   "mars": "Mars",
+   "venus": "Venus",
+   "mercury": "Mercury",
+   "moon": "Moon",
+   "sun": "Sun",
+   "pluto": "Pluto",
+   "jupiter": "Jupiter",
+   "saturn": "Saturn",
+   "uranus": "Uranus",
+   "neptune": "Neptune"
+  },
+  "traditionally": "{modern} (traditionally {traditional})"
+ },
+ "tools": {
+  "title": "All free tools",
+  "searchPlaceholder": "What would you like to explore?",
+  "noResults": "No tools match “{query}”.",
+  "categories": {
+   "all": "All",
+   "daily": "Daily",
+   "love": "Love",
+   "discover": "Discover"
+  },
+  "soon": "Soon",
+  "unavailableBody": "This tool is being prepared. It will appear here when it’s ready.",
+  "items": {
+   "horoscope": {
+    "name": "Horoscopes",
+    "short": "My horoscope",
+    "about": "Today, week & month"
+   },
+   "tarot": {
+    "name": "Tarot",
+    "short": "Tarot reading",
+    "about": "Explore a question"
+   },
+   "coffee": {
+    "name": "Coffee readings",
+    "short": "Read my cup",
+    "about": "Read the shapes in your cup"
+   },
+   "dreams": {
+    "name": "Dreams",
+    "short": "Dream meanings",
+    "about": "Explore a dream"
+   },
+   "forTwo": {
+    "name": "For two",
+    "short": "For two",
+    "about": "Understand your connection"
+   },
+   "numbers": {
+    "name": "Numbers & meaning",
+    "short": "Numbers",
+    "about": "Your personal themes"
+   },
+   "moonCalendar": {
+    "name": "Moon calendar",
+    "short": "Moon calendar",
+    "about": "Phases & zodiac signs"
+   },
+   "moreReadings": {
+    "name": "More readings",
+    "short": "More readings",
+    "about": "Runes, I Ching & more"
+   },
+   "learn": {
+    "name": "Learn & explore",
+    "short": "Learn",
+    "about": "Guides to the traditions"
+   }
+  }
+ },
+ "horoscope": {
+  "yourSign": "Your Sun sign",
+  "readingFor": "Reading for {sign}",
+  "changeSign": "Change sign",
+  "chooseSign": "Choose a sign",
+  "periods": {
+   "today": "Today",
+   "tomorrow": "Tomorrow",
+   "week": "Week",
+   "month": "Month"
+  },
+  "textUnavailable": "This reading could not be prepared right now. Here is what we can already show you.",
+  "placement": "{body} in {sign} · your solar house {house}",
+  "bodies": {
+   "sun": "Sun",
+   "moon": "Moon",
+   "mercury": "Mercury",
+   "venus": "Venus",
+   "mars": "Mars"
+  },
+  "moonMoves": "At {when} the Moon moves into {sign}, your solar house {house}.",
+  "range": "{from} – {to}",
+  "on": "On {when}",
+  "moonForSign": "The Moon and {sign}",
+  "moonInSign": "The Moon is {in}.",
+  "moonNextIn": "The Moon next enters {sign} on {when}.",
+  "aboutSign": "About {sign}",
+  "shareText": "{sign}: {facts}",
+  "signNeedsTime": "Your birth date falls on a sign change. Showing {sign}; add your birth time to be sure."
+ },
+ "themes": {
+  "energy": "Energy & drive",
+  "connection": "Love & connection",
+  "focus": "Focus & everyday life",
+  "communication": "Words & listening",
+  "balance": "Balance & rest"
+ },
+ "moonCalendar": {
+  "title": "Moon calendar",
+  "subtitle": "The Moon over the next 30 days",
+  "now": "Now",
+  "enters": "Moon moves {into}",
+  "yourSign": "Your sign",
+  "timesIn": "Times shown for {zone}.",
+  "empty": "Nothing to show for these days."
+ },
+ "dates": {
+  "plusDays": {
+   "one": "in {count} day",
+   "other": "in {count} days"
+  },
+  "today": "Today",
+  "tomorrow": "Tomorrow"
+ },
+ "numbersReading": {
+  "title": "Your numbers",
+  "intro": "Numbers from your birth date and today's date.",
+  "dayLabel": "Your day today",
+  "monthLabel": "Your month",
+  "yearLabel": "Your year",
+  "lifePathLabel": "Your life path",
+  "howTitle": "How it is calculated",
+  "howLifePath": "Life path: month, day and year each reduced to one digit ({parts}), then added ({total}). 11, 22 and 33 are kept as master numbers.",
+  "howCycle": "Your year adds your birth month and day to this year; your month adds this month; your day adds today's date. Each is reduced to one digit.",
+  "needsBirth": "Add your birth date to see your numbers.",
+  "addBirth": "Add your birth date",
+  "note": "Numerology is a tradition for reflection, not a prediction.",
+  "savedTitle": "Day {number} · {title}",
+  "day": {
+   "d1": {
+    "title": "A day to begin",
+    "body": "Fresh starts come easily. Take the first step on something you have been putting off, and trust your own lead."
+   },
+   "d2": {
+    "title": "A day for together",
+    "body": "Patience and cooperation work better than pushing. Listen closely, and let small kindnesses do the work."
+   },
+   "d3": {
+    "title": "A day to express",
+    "body": "Words, play and creativity flow. Share an idea, reach out to a friend, and let yourself enjoy the day."
+   },
+   "d4": {
+    "title": "A day to build",
+    "body": "Steady effort pays off. Sort, plan and finish one practical thing; solid ground makes everything else easier."
+   },
+   "d5": {
+    "title": "A day for change",
+    "body": "Expect the unexpected and stay flexible. Try something new, move your body, and leave room for surprise."
+   },
+   "d6": {
+    "title": "A day for care",
+    "body": "Home, family and close relationships ask for attention. Offer support, and accept it when it is offered to you."
+   },
+   "d7": {
+    "title": "A day to reflect",
+    "body": "Quiet helps you see clearly. Make time to think, read or rest before you decide anything big."
+   },
+   "d8": {
+    "title": "A day for strength",
+    "body": "Focus and confidence are on your side. Handle practical matters, money or decisions with a calm, firm hand."
+   },
+   "d9": {
+    "title": "A day to let go",
+    "body": "Something is ready to close. Finish, forgive or clear space, so there is room for what comes next."
+   }
+  },
+  "lifePath": {
+   "n1": {
+    "title": "The initiator",
+    "body": "Independent and driven, you are here to lead and to start things others only imagine."
+   },
+   "n2": {
+    "title": "The peacemaker",
+    "body": "Sensitive and diplomatic, you bring people together and notice what others miss."
+   },
+   "n3": {
+    "title": "The communicator",
+    "body": "Expressive and warm, you inspire through words, humour and creativity."
+   },
+   "n4": {
+    "title": "The builder",
+    "body": "Reliable and practical, you create lasting foundations through patience and care."
+   },
+   "n5": {
+    "title": "The explorer",
+    "body": "Curious and adaptable, you grow through freedom, travel and new experiences."
+   },
+   "n6": {
+    "title": "The nurturer",
+    "body": "Caring and responsible, you make homes and relationships feel safe."
+   },
+   "n7": {
+    "title": "The seeker",
+    "body": "Thoughtful and intuitive, you look beneath the surface for deeper understanding."
+   },
+   "n8": {
+    "title": "The achiever",
+    "body": "Ambitious and capable, you turn vision into results and use power with purpose."
+   },
+   "n9": {
+    "title": "The humanitarian",
+    "body": "Compassionate and generous, you care about the bigger picture and about others."
+   },
+   "n11": {
+    "title": "The intuitive (master number)",
+    "body": "A heightened sensitivity and vision; your challenge is to trust your inner voice while staying grounded."
+   },
+   "n22": {
+    "title": "The master builder (master number)",
+    "body": "Big practical vision; you can turn ideals into real structures that serve many people."
+   },
+   "n33": {
+    "title": "The master teacher (master number)",
+    "body": "Deep compassion and care; you uplift others through kindness, guidance and example."
+   }
+  }
+ },
+ "tarotReading": {
+  "title": "Your card today",
+  "intro": "One card from the full 78-card deck, drawn for you today. It stays the same all day.",
+  "note": "A prompt for reflection, not a prediction.",
+  "upright": "Upright",
+  "reversed": "Reversed",
+  "meaning": "Meaning",
+  "keywords": "Keywords",
+  "imagery": "On the card",
+  "love": "Love & connection",
+  "work": "Work & purpose",
+  "advice": "A prompt for you",
+  "artCredit": "Card art: SoulMates Quest deck. Meanings based on A. E. Waite (1911).",
+  "openThree": "Three-card reading",
+  "openLibrary": "All 78 cards",
+  "three": {
+   "title": "Three-card reading",
+   "intro": "Think of a question or a situation, then draw three cards: where you are, what is in the way, and what can help.",
+   "questionLabel": "Your question",
+   "questionPlaceholder": "For example: What do I need to see about this relationship?",
+   "draw": "Draw three cards",
+   "again": "Ask something else",
+   "sameNote": "The same question gives the same cards for the rest of today.",
+   "yourQuestion": "Your question",
+   "noQuestion": "A reading without a question",
+   "positions": {
+    "situation": "Where you are",
+    "challenge": "What is in the way",
+    "guidance": "What can help"
+   },
+   "savedTitle": "Three-card reading"
+  },
+  "ranks": {
+   "ace": "Ace",
+   "page": "Page",
+   "knight": "Knight",
+   "queen": "Queen",
+   "king": "King"
+  },
+  "library": {
+   "title": "The 78 cards",
+   "intro": "Every card of the deck, with its upright and reversed meaning.",
+   "groups": {
+    "major": "Major Arcana",
+    "wands": "Wands",
+    "cups": "Cups",
+    "swords": "Swords",
+    "pentacles": "Pentacles"
+   }
+  },
+  "cards": {
+   "fool": {
+    "name": "The Fool",
+    "meaning": "A fresh beginning. Step forward with curiosity and an open heart, even if you cannot see the whole path yet."
+   },
+   "magician": {
+    "name": "The Magician",
+    "meaning": "You have what you need. Focus your skills and attention, and turn an idea into action."
+   },
+   "high_priestess": {
+    "name": "The High Priestess",
+    "meaning": "Listen inward. Quiet intuition knows more than the noise around you today."
+   },
+   "empress": {
+    "name": "The Empress",
+    "meaning": "Nurture and enjoy. Care for your body, your home and the people and projects you love."
+   },
+   "emperor": {
+    "name": "The Emperor",
+    "meaning": "Structure brings calm. Set clear boundaries and take steady responsibility."
+   },
+   "hierophant": {
+    "name": "The Hierophant",
+    "meaning": "Learn from tradition and trusted guides. Shared values can show you the way."
+   },
+   "lovers": {
+    "name": "The Lovers",
+    "meaning": "A meaningful choice. Choose what truly aligns with your values, in love and in life."
+   },
+   "chariot": {
+    "name": "The Chariot",
+    "meaning": "Direction and willpower. Keep going towards your goal and steer your energy with intention."
+   },
+   "strength": {
+    "name": "Strength",
+    "meaning": "Gentle courage. Patience and kindness are stronger than force today."
+   },
+   "hermit": {
+    "name": "The Hermit",
+    "meaning": "Time for reflection. Step back from the crowd and listen to your own inner light."
+   },
+   "wheel_of_fortune": {
+    "name": "Wheel of Fortune",
+    "meaning": "Things are moving. Stay open to change and notice the turning points."
+   },
+   "justice": {
+    "name": "Justice",
+    "meaning": "Fairness and honesty. Weigh things clearly and own your choices."
+   },
+   "hanged_man": {
+    "name": "The Hanged Man",
+    "meaning": "Pause and see differently. Letting go of control can reveal a new perspective."
+   },
+   "death": {
+    "name": "Death",
+    "meaning": "An ending makes space. Something is changing form; release what has run its course."
+   },
+   "temperance": {
+    "name": "Temperance",
+    "meaning": "Balance and moderation. Blend opposites patiently and find the middle way."
+   },
+   "devil": {
+    "name": "The Devil",
+    "meaning": "Notice what holds you. Habits or attachments may be ready to loosen."
+   },
+   "tower": {
+    "name": "The Tower",
+    "meaning": "A sudden shift. What is not solid may fall, clearing the way for something truer."
+   },
+   "star": {
+    "name": "The Star",
+    "meaning": "Hope and renewal. Trust that healing is possible and keep your faith in the future."
+   },
+   "moon": {
+    "name": "The Moon",
+    "meaning": "Not everything is clear yet. Move gently, trust your instincts and give feelings time."
+   },
+   "sun": {
+    "name": "The Sun",
+    "meaning": "Warmth and joy. Let yourself be seen, celebrate small wins and share your light."
+   },
+   "judgement": {
+    "name": "Judgement",
+    "meaning": "A call to awaken. Reflect honestly and answer what you know is right for you."
+   },
+   "world": {
+    "name": "The World",
+    "meaning": "Completion and wholeness. Acknowledge how far you have come before the next chapter."
+   }
+  }
+ }
+}

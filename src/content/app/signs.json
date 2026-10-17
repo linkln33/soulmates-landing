@@ -1,0 +1,173 @@
+{
+ "aries": {
+  "glyph": "♈︎",
+  "from": [
+   3,
+   21
+  ],
+  "to": [
+   4,
+   19
+  ],
+  "element": "fire",
+  "modality": "cardinal",
+  "ruler": "mars"
+ },
+ "taurus": {
+  "glyph": "♉︎",
+  "from": [
+   4,
+   20
+  ],
+  "to": [
+   5,
+   20
+  ],
+  "element": "earth",
+  "modality": "fixed",
+  "ruler": "venus"
+ },
+ "gemini": {
+  "glyph": "♊︎",
+  "from": [
+   5,
+   21
+  ],
+  "to": [
+   6,
+   20
+  ],
+  "element": "air",
+  "modality": "mutable",
+  "ruler": "mercury"
+ },
+ "cancer": {
+  "glyph": "♋︎",
+  "from": [
+   6,
+   21
+  ],
+  "to": [
+   7,
+   22
+  ],
+  "element": "water",
+  "modality": "cardinal",
+  "ruler": "moon"
+ },
+ "leo": {
+  "glyph": "♌︎",
+  "from": [
+   7,
+   23
+  ],
+  "to": [
+   8,
+   22
+  ],
+  "element": "fire",
+  "modality": "fixed",
+  "ruler": "sun"
+ },
+ "virgo": {
+  "glyph": "♍︎",
+  "from": [
+   8,
+   23
+  ],
+  "to": [
+   9,
+   22
+  ],
+  "element": "earth",
+  "modality": "mutable",
+  "ruler": "mercury"
+ },
+ "libra": {
+  "glyph": "♎︎",
+  "from": [
+   9,
+   23
+  ],
+  "to": [
+   10,
+   22
+  ],
+  "element": "air",
+  "modality": "cardinal",
+  "ruler": "venus"
+ },
+ "scorpio": {
+  "glyph": "♏︎",
+  "from": [
+   10,
+   23
+  ],
+  "to": [
+   11,
+   21
+  ],
+  "element": "water",
+  "modality": "fixed",
+  "ruler": "pluto",
+  "traditionalRuler": "mars"
+ },
+ "sagittarius": {
+  "glyph": "♐︎",
+  "from": [
+   11,
+   22
+  ],
+  "to": [
+   12,
+   21
+  ],
+  "element": "fire",
+  "modality": "mutable",
+  "ruler": "jupiter"
+ },
+ "capricorn": {
+  "glyph": "♑︎",
+  "from": [
+   12,
+   22
+  ],
+  "to": [
+   1,
+   19
+  ],
+  "element": "earth",
+  "modality": "cardinal",
+  "ruler": "saturn"
+ },
+ "aquarius": {
+  "glyph": "♒︎",
+  "from": [
+   1,
+   20
+  ],
+  "to": [
+   2,
+   18
+  ],
+  "element": "air",
+  "modality": "fixed",
+  "ruler": "uranus",
+  "traditionalRuler": "saturn"
+ },
+ "pisces": {
+  "glyph": "♓︎",
+  "from": [
+   2,
+   19
+  ],
+  "to": [
+   3,
+   20
+  ],
+  "element": "water",
+  "modality": "mutable",
+  "ruler": "neptune",
+  "traditionalRuler": "jupiter"
+ }
+}

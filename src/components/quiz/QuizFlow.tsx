@@ -4,7 +4,7 @@ import { useEffect, useMemo, useRef, useState, type ChangeEvent, type FormEvent,
 import Link from 'next/link';
 import { submitAnswers, type PublicQuiz, type QuizQuestion, type SubmitOutcome } from '@/lib/quiz/api';
 import { checkBirthDate, type BirthDateParts } from '@/lib/quiz/birthDate';
-import { todayInSofia } from '@/lib/blueprint/dates';
+import { todayInSofia } from '@/lib/quiz/dates';
 import { messages, retentionMonths, type Lang, type Messages } from '@/lib/quiz/messages';
 import CardPattern from './CardPattern';
 
