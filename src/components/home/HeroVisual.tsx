@@ -16,18 +16,6 @@ const BASE: Record<Locale, string> = { en: '/home/hero-composition', bg: '/home/
 const srcSet = (lang: Locale, ext: 'avif' | 'webp') => WIDTHS.map((w) => `${BASE[lang]}-${w}.${ext} ${w}w`).join(', ');
 const SIZES = '(min-width: 1320px) 680px, (min-width: 1024px) 52vw, (min-width: 808px) 760px, calc(100vw - 32px)';
 
-/** A concealed person: soft head-and-shoulders silhouette, blurred by CSS. */
-export function Concealed({ hue, className = '' }: { hue: 'a' | 'b' | 'c' | 'd'; className?: string }) {
-  return (
-    <span className={`concealed concealed-${hue} ${className}`} aria-hidden>
-      <svg viewBox="0 0 40 40" focusable="false">
-        <circle cx="20" cy="15" r="8" />
-        <path d="M5 40c1-9 7-14 15-14s14 5 15 14z" />
-      </svg>
-    </span>
-  );
-}
-
 export default function HeroVisual({ lang }: { lang: Locale }) {
   const p = site(lang).home.preview;
   return (

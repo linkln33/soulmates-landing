@@ -15,7 +15,7 @@ import type { Locale } from '@/i18n/config';
 import { app, dates, fmt, site } from '@/i18n';
 import type { TarotCardView } from '@/content/tarotKeys';
 import { drawCards, fetchDailyCard, visitorZone, type ApiError, type TarotDailyResponse, type TarotDrawResponse } from '@/lib/readings/api';
-import { STORAGE_KEYS, localDay, readJson, removeKey, visitorId, writeJson } from '@/lib/readings/local';
+import { clearDraw, readDaily, readDraw, saveDaily, saveDraw, visitorId } from '@/lib/readings/local';
 import { AppInvite, ErrorState, Loading } from '@/components/site/Bits';
 import PatternCard from '@/components/site/PatternCard';
 import { TarotCredit, TarotFace, TarotMeaning } from './TarotCard';
@@ -37,7 +37,10 @@ type Phase<T> = { kind: 'idle' } | { kind: 'loading' } | { kind: 'done'; data: T
 
 // ── Card of the day ─────────────────────────────────────────
 
-interface StoredDaily { visitorId: string; day: string; data: TarotDailyResponse }
+/** Shape check for a stored daily card (anything else is cleared). */
+const isDailyData = (d: unknown): d is TarotDailyResponse =>
+  typeof d === 'object' && d !== null && typeof (d as TarotDailyResponse).date === 'string' &&
+  typeof (d as TarotDailyResponse).card?.key === 'string';
 
 export function TarotDaily({ lang }: { lang: Locale }) {
   const t = site(lang).tarot;
@@ -46,20 +49,20 @@ export function TarotDaily({ lang }: { lang: Locale }) {
   const [checked, setChecked] = useState(false);
 
   useEffect(() => {
-    const stored = readJson<StoredDaily>(STORAGE_KEYS.daily);
-    const id = readJson<string>(STORAGE_KEYS.visitor);
-    // Show today's card again if this browser already revealed it.
+    // Show today's card again if this browser already revealed it (until local midnight).
+    const stored = readDaily(visitorZone(), isDailyData);
     // eslint-disable-next-line react-hooks/set-state-in-effect
-    if (stored && stored.visitorId === id && stored.day === localDay(visitorZone())) setPhase({ kind: 'done', data: stored.data });
+    if (stored) setPhase({ kind: 'done', data: stored.data });
     setChecked(true);
   }, []);
 
   async function reveal() {
     setPhase({ kind: 'loading' });
     const id = visitorId();
-    const result = await fetchDailyCard(id, visitorZone());
+    const tz = visitorZone();
+    const result = await fetchDailyCard(id, tz);
     if (!result.ok) return setPhase({ kind: 'error', error: result.error });
-    writeJson(STORAGE_KEYS.daily, { visitorId: id, day: result.data.date, data: result.data } satisfies StoredDaily);
+    saveDaily(id, result.data.date, tz, result.data);
     setPhase({ kind: 'done', data: result.data });
   }
 
@@ -92,6 +95,8 @@ export function TarotDaily({ lang }: { lang: Locale }) {
 // ── One or three cards ─────────────────────────────────────
 
 interface StoredDraw { question: string; data: TarotDrawResponse }
+const isDrawData = (count: 1 | 3) => (d: unknown): d is TarotDrawResponse =>
+  typeof d === 'object' && d !== null && (d as TarotDrawResponse).reading?.cards?.length === count;
 const MAX_QUESTION = 200;
 
 export function TarotDraw({ lang, count }: { lang: Locale; count: 1 | 3 }) {
@@ -103,10 +108,10 @@ export function TarotDraw({ lang, count }: { lang: Locale; count: 1 | 3 }) {
   const [checked, setChecked] = useState(false);
 
   useEffect(() => {
-    const stored = readJson<StoredDraw>(STORAGE_KEYS.draw(count));
-    // A completed reading survives a refresh.
+    // A completed reading survives a refresh, for up to 30 days.
+    const stored = readDraw(count, isDrawData(count));
     // eslint-disable-next-line react-hooks/set-state-in-effect
-    if (stored?.data?.reading?.cards?.length === count) setPhase({ kind: 'done', data: stored });
+    if (stored) setPhase({ kind: 'done', data: { question: stored.question, data: stored.data } });
     setChecked(true);
   }, [count]);
 
@@ -116,12 +121,12 @@ export function TarotDraw({ lang, count }: { lang: Locale; count: 1 | 3 }) {
     const result = await drawCards(count);
     if (!result.ok) return setPhase({ kind: 'error', error: result.error });
     const stored: StoredDraw = { question: q, data: result.data };
-    writeJson(STORAGE_KEYS.draw(count), stored);
+    saveDraw(count, q, result.data);
     setPhase({ kind: 'done', data: stored });
   }
 
   function startOver() {
-    removeKey(STORAGE_KEYS.draw(count));
+    clearDraw(count);
     setQuestion('');
     setPhase({ kind: 'idle' });
   }

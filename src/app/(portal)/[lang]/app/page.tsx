@@ -24,11 +24,22 @@ export default async function AppPage({ params }: Props) {
       <ToolHeader lang={lang} title={t.title} lead={t.lead} art="hearts" tile="for-two" />
       <div className="stack-lg">
         <PatternCard tint="amber" motif="feather">
-          <div className="stack" style={{ gap: 8 }}>
+          <div id="status" className="stack" style={{ gap: 8 }}>
             <h2 className="heading">{t.statusTitle}</h2>
             <p>{t.status}</p>
           </div>
         </PatternCard>
+
+        <section className="stack" aria-labelledby="matching">
+          <div className="stack" style={{ gap: 6 }}>
+            <p className="eyebrow">{t.matchingBadge}</p>
+            <h2 id="matching" className="title">{t.matchingTitle}</h2>
+          </div>
+          <ul className="stack">
+            {t.matching.map((line) => <li key={line} className="muted">{line}</li>)}
+          </ul>
+          <p className="small subtle">{t.matchingNote}</p>
+        </section>
 
         <section className="stack" aria-labelledby="how">
           <h2 id="how" className="title">{t.howTitle}</h2>

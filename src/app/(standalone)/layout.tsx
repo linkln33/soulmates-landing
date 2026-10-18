@@ -4,8 +4,8 @@
  * Same fonts, tokens and theme as the portal.
  */
 import type { Metadata, Viewport } from 'next';
-import { Analytics } from '@vercel/analytics/next';
 import '../globals.css';
+import StorageSweep from '@/components/site/StorageSweep';
 import { SITE_URL } from '@/lib/site/config';
 import { TOKENS_CSS } from '@/lib/design/tokens';
 import { THEME_SCRIPT } from '@/lib/design/theme';
@@ -36,7 +36,7 @@ export default function StandaloneLayout({ children }: { children: React.ReactNo
       </head>
       <body className={inter.variable}>
         {children}
-        <Analytics />
+        <StorageSweep />
       </body>
     </html>
   );

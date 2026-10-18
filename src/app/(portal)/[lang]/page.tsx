@@ -7,7 +7,7 @@ import { pageMeta } from '@/lib/site/meta';
 import PatternCard, { type CardTint } from '@/components/site/PatternCard';
 import { MoonNow } from '@/components/tools/MoonTool';
 import HeroVisual from '@/components/home/HeroVisual';
-import { CompatibilitySection, ExploreSection, MatchesSection, PrivacySection } from '@/components/home/HomeSections';
+import { ConnectionSection } from '@/components/home/HomeSections';
 import '@/components/home/home.css';
 
 type Props = PageProps<'/[lang]'>;
@@ -113,10 +113,7 @@ export default async function Home({ params }: Props) {
         </div>
       </section>
 
-      <MatchesSection lang={lang} />
-      <CompatibilitySection lang={lang} />
-      <ExploreSection lang={lang} />
-      <PrivacySection lang={lang} />
+      <ConnectionSection lang={lang} />
 
       <section className="wrap h-final" aria-labelledby="final-title">
         <div className="h-final-card">

@@ -1,61 +1,52 @@
 /**
  * What the website keeps in the visitor's browser (localStorage only; no
- * cookies, nothing sent anywhere unless a tool says so):
- *  - sq.visitor          random UUID for the tarot card of the day
- *  - sq.tarot.daily      today's card, so it shows again without a request
- *  - sq.tarot.draw.1/3   the last completed draw (and its question), so a
- *                        refresh never redraws by accident
+ * cookies, nothing sent anywhere unless a tool says so): the Tarot keys
+ * described in ./tarotStorage.ts, each with a schema version and an expiry
+ * (visitor id 365 days after last use, today's card until local midnight,
+ * the last draw 30 days).
  * Every access is guarded: storage can be missing or throw (private windows,
  * blocked site data), and the tools still work without it.
  */
+import {
+  clearDraw as clearDrawIn,
+  readDaily as readDailyIn,
+  readDraw as readDrawIn,
+  saveDaily as saveDailyIn,
+  saveDraw as saveDrawIn,
+  sweepTarotStorage,
+  takeVisitorId,
+  type KeyValueStore,
+} from './tarotStorage.ts';
 
-export const STORAGE_KEYS = {
-  visitor: 'sq.visitor',
-  daily: 'sq.tarot.daily',
-  draw: (count: 1 | 3) => `sq.tarot.draw.${count}`,
-} as const;
+export { localDay } from './tarotStorage.ts';
 
-export function readJson<T>(key: string): T | null {
+/** localStorage, or a no-op store when the browser blocks it. */
+function store(): KeyValueStore {
   try {
-    const raw = window.localStorage.getItem(key);
-    return raw ? (JSON.parse(raw) as T) : null;
+    const s = window.localStorage;
+    if (s) return s;
   } catch {
-    return null;
+    // fall through
   }
+  return { getItem: () => null, setItem: () => {}, removeItem: () => {} };
 }
 
-export function writeJson(key: string, value: unknown): void {
-  try {
-    window.localStorage.setItem(key, JSON.stringify(value));
-  } catch {
-    // Storage unavailable: the result simply isn't kept.
-  }
-}
+/** This browser's random visitor identifier for the card of the day; refreshes its last use. */
+export const visitorId = (): string => takeVisitorId(store());
 
-export function removeKey(key: string): void {
-  try {
-    window.localStorage.removeItem(key);
-  } catch {
-    // ignore
-  }
-}
+export const readDaily = <T,>(tz: string, isData: (d: unknown) => d is T) => readDailyIn(store(), tz, isData);
+export const saveDaily = <T,>(id: string, day: string, tz: string, data: T) => saveDailyIn(store(), id, day, tz, data);
+export const readDraw = <T,>(count: 1 | 3, isData: (d: unknown) => d is T) => readDrawIn(store(), count, isData);
+export const saveDraw = <T,>(count: 1 | 3, question: string, data: T) => saveDrawIn(store(), count, question, data);
+export const clearDraw = (count: 1 | 3) => clearDrawIn(store(), count);
 
-const UUID_RE = /^[0-9a-f]{8}-[0-9a-f]{4}-[1-8][0-9a-f]{3}-[89ab][0-9a-f]{3}-[0-9a-f]{12}$/i;
+/** Shape checks shared by the Tarot tools and the page-load sweep. */
+export const isDailyShape = (d: unknown): boolean =>
+  typeof d === 'object' && d !== null && typeof (d as { date?: unknown }).date === 'string' &&
+  typeof (d as { card?: { key?: unknown } }).card?.key === 'string';
+export const isDrawShape = (count: 1 | 3) => (d: unknown): boolean =>
+  Array.isArray((d as { reading?: { cards?: unknown } } | null)?.reading?.cards) &&
+  (d as { reading: { cards: unknown[] } }).reading.cards.length === count;
 
-/** This browser's random visitor identifier, created on first use. */
-export function visitorId(): string {
-  const existing = readJson<string>(STORAGE_KEYS.visitor);
-  if (existing && UUID_RE.test(existing)) return existing;
-  const id = crypto.randomUUID();
-  writeJson(STORAGE_KEYS.visitor, id);
-  return id;
-}
-
-/** Today's date (YYYY-MM-DD) in a time zone. */
-export function localDay(tz: string, now = new Date()): string {
-  try {
-    return new Intl.DateTimeFormat('en-CA', { timeZone: tz, year: 'numeric', month: '2-digit', day: '2-digit' }).format(now);
-  } catch {
-    return now.toISOString().slice(0, 10);
-  }
-}
+/** Expire or clear invalid Tarot keys once per page load, wherever the visitor lands. */
+export const sweepTarot = (tz: string) => sweepTarotStorage(store(), tz, isDailyShape, isDrawShape);

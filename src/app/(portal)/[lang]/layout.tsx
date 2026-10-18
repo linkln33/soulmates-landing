@@ -1,7 +1,7 @@
 import type { Metadata, Viewport } from 'next';
 import { notFound } from 'next/navigation';
-import { Analytics } from '@vercel/analytics/next';
 import '../../globals.css';
+import StorageSweep from '@/components/site/StorageSweep';
 import { LOCALES, isLocale } from '@/i18n/config';
 import { site } from '@/i18n';
 import { SITE_URL } from '@/lib/site/config';
@@ -50,7 +50,7 @@ export default async function PortalLayout({ children, params }: LayoutProps<'/[
         <SiteHeader lang={lang} />
         <main id="main">{children}</main>
         <SiteFooter lang={lang} />
-        <Analytics />
+        <StorageSweep />
       </body>
     </html>
   );

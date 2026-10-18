@@ -34,9 +34,9 @@ const en = {
   },
   reflection: 'A reflection, not a prediction.',
   home: {
-    metaTitle: 'SoulMates Quest — free readings and meaningful matches',
+    metaTitle: 'SoulMates Quest — free personal readings',
     metaDescription:
-      'Free horoscope, tarot, numbers and Moon calendar, with no account. The SoulMates Quest app, being prepared for a private pilot, adds personal readings and possible matches that stay concealed until both people accept.',
+      'Explore free astrology, tarot, numerology and lunar readings. SoulMates Quest is also preparing a limited pilot for compatibility-led connections.',
     eyebrow: 'Free readings. No account needed.',
     titleTop: 'Above the Physical.',
     titleAccent: 'Beyond the Visible.',
@@ -45,8 +45,8 @@ const en = {
     ctaApp: 'Discover the app',
     preview: {
       label:
-        'Preview of the SoulMates Quest app Home screen: a greeting, your day, incoming matches with blurred identities, daily meters and today’s readings, surrounded by Tarot, Moon Phase, Your Numbers and Concealed Match Possibility cards. Scores shown are illustrative.',
-      badge: 'App preview · Illustrative scores',
+        'Illustrative preview of the SoulMates Quest app: the Home screen with today’s readings and concealed connection cards. Names and scores are examples.',
+      badge: 'App preview · Illustrative',
     },
     toolsTitle: 'Explore free readings',
     toolsLead: 'Gain clarity, deeper connection and a new perspective on your journey.',
@@ -71,64 +71,21 @@ const en = {
     ],
     moonTitle: 'The Moon right now',
     moonMore: 'Moon calendar',
-    inApp: 'In the app',
-    pilot: 'The app is being prepared for a private pilot. It isn’t in the App Store or Google Play yet.',
-    illustrative: 'Illustrative score',
-    illustrativePreview: 'Illustrative preview. Names, scores and statuses are examples, not real members.',
-    matchesTitle: 'Possible matches, concealed until you both accept',
-    matchesLead:
-      'In SoulMates Quest, every possible connection is called a match. A match appears without a name, photo or profile. Who it is opens only when both people accept.',
-    matchesPoints: [
-      { title: 'Hidden until both accept', body: 'Name, photos and profile appear only after the match opens, for both people at the same time.' },
-      { title: 'Several at a time', body: 'You can have more than one open match, each with its own private conversation.' },
-      {
-        title: 'A match, and its kind',
-        body: 'When there is enough information, a match may be described as Soulmate, Twin Flame, Karmic Connection, Tantric Connection, Kindred Spirit or Steady Union: a pattern in your answers and charts, not a prediction.',
-      },
-    ],
-    feed: {
-      title: 'Possible matches',
-      intro: 'Every possible match stays hidden until you both accept.',
-      item: 'Hidden possible match',
-      status: { new: 'New', ready: 'Ready to match', waiting: 'Waiting' },
-      pending: 'More information needed',
+    connection: {
+      eyebrow: 'Limited pilot in preparation',
+      title: 'Meaningful connections, when you choose them',
+      lead:
+        'The SoulMates Quest app is being prepared for a limited pilot. The intended model is quiet and built on consent: possible connections stay concealed, and identities open only when both people accept.',
+      points: [
+        { title: 'Concealed first', body: 'No names or photos before both people accept.' },
+        { title: 'Led by compatibility', body: 'Possible connections come from what you choose to share in the app, explained in plain language.' },
+        { title: 'Always your choice', body: 'Taking part is optional and needs your explicit consent. You can step away at any time.' },
+      ],
+      note: 'Not available yet. There is no public download and no launch date.',
     },
-    compatTitle: 'Compatibility, in seven dimensions',
-    compatLead:
-      'When both profiles hold enough information, the app describes a match across seven areas of a relationship, in plain language. How it is calculated stays private. Where information is missing, the app says so instead of guessing.',
-    compatStatus:
-      'Compatibility scores are still being prepared and verified. Until they are, the app shows “more information needed” rather than a number.',
-    compatNotEnough: 'Not enough information',
-    dimensions: [
-      { name: 'Emotional Connection', about: 'How you feel with each other and care for each other.' },
-      { name: 'Mind & Communication', about: 'How you think, talk and listen together.' },
-      { name: 'Passion & Intimacy', about: 'Attraction, closeness and how you share desire.' },
-      { name: 'Values & Life Direction', about: 'What matters to you and where your lives are heading.' },
-      { name: 'Everyday Harmony', about: 'Rhythm, habits and the ease of ordinary days.' },
-      { name: 'Soul & Spiritual Resonance', about: 'Shared meaning and the sense of being recognised.' },
-      { name: 'Consciousness & Growth', about: 'How you each grow, reflect and work through difference.' },
-    ],
-    exploreTitle: 'Beyond small talk',
-    exploreLead: 'When a match opens, it comes with a private conversation and, in time, other ways to get to know each other more deeply.',
-    preparing: 'Being prepared',
-    explore: [
-      { title: 'Meaningful conversation', body: 'Each open match has its own private conversation, separate from every other.' },
-      { title: 'Send one Lexicon question', body: 'Ask one question of your own and see how they answer.' },
-      { title: 'Choose several Lexicon questions', body: 'Pick a few questions that matter to you and answer them together.' },
-      { title: 'Exchange your personal Lexicon', body: 'Share your whole Lexicon of answers, and see theirs.' },
-      { title: 'Relationship Oracle', body: 'Reflections on your connection, asked about together.' },
-    ],
-    privacyTitle: 'You stay in control',
-    privacyLead: 'Matching is built around consent. Nothing about you is shared until both people choose it.',
-    privacy: [
-      { title: 'Concealed until it opens', body: 'Your identity stays hidden until both people’s conditions are met.' },
-      { title: 'Manual review', body: 'Review every possible match yourself, and accept only the ones you choose.' },
-      { title: 'Automatic opening, later', body: 'Opening matches at a minimum score you choose becomes available only once compatibility scores are verified.' },
-      { title: 'Release, report, block', body: 'End a connection at any time, and report or block anyone.' },
-    ],
     finalTitle: 'Start with a free reading today',
     finalLead:
-      'The free readings are complete here, with no account. The app, with personal readings and concealed matches, is being prepared for a private pilot.',
+      'The free readings are complete here, with no account. The SoulMates Quest app is being prepared for a limited pilot.',
   },
   tools: {
     horoscope: { title: 'Horoscope', about: 'Any sign: today, tomorrow, this week and this month.' },
@@ -256,26 +213,35 @@ const en = {
   app: {
     metaTitle: 'The SoulMates Quest app',
     metaDescription:
-      'The SoulMates Quest app is preparing a private pilot. It isn’t in the App Store or Google Play yet. Here is how joining and admission will work.',
+      'The SoulMates Quest app is being prepared for a limited pilot. It isn’t in the App Store or Google Play yet. Here is what it is for and how it is intended to work.',
     title: 'The SoulMates Quest app',
     lead:
-      'The app is where your readings meet real people. Possible matches stay concealed until both people accept, and you can have more than one open match, each with its own conversation.',
+      'The app is being prepared for a limited pilot. It will bring your readings into one personal place, and, for members who choose to take part, a careful, compatibility-led way to meet real people.',
     statusTitle: 'Where things stand',
     status:
-      'The app is being prepared for a private pilot. It isn’t in the App Store or Google Play yet, and there is no public download. We aren’t promising a date.',
+      'The app is being prepared for a limited pilot. It isn’t in the App Store or Google Play yet, and there is no public download. We aren’t promising a date.',
+    matchingTitle: 'How matching is intended to work',
+    matchingBadge: 'Being prepared',
+    matching: [
+      'Possible matches are suggested from the compatibility of what both people choose to share in the app.',
+      'Each possible match stays concealed, with no name, photo or profile, until both people accept it.',
+      'You review possible matches yourself and accept only the ones you choose. Nobody is told if you don’t.',
+      'When a match opens, it has its own private conversation. A match that ends doesn’t come back, and you can report or block anyone.',
+    ],
+    matchingNote: 'This describes the model being prepared, not a feature you can use today.',
     howTitle: 'How joining will work',
     steps: [
       { title: 'Use the free readings', body: 'Everything on this website stays free and complete, with or without an account.' },
-      { title: 'Create your account in the app', body: 'You sign in with Google or with an email and password. Your readings start with your birth date.' },
-      { title: 'A balance check', body: 'To keep the community balanced, the app admits women and men so that each stays between 48% and 52% of the members taking part in matching.' },
-      { title: 'Admitted, or waiting', body: 'If there is room, you’re in. If not, you wait, and the app shows your status until you’re admitted. Your readings stay available while you wait.' },
+      { title: 'Create your account in the app', body: 'When the pilot opens, you sign in with Google or with an email and password. Your readings start with your birth date.' },
+      { title: 'For adults only', body: 'SoulMates Quest is for people aged 18 or over. You confirm your age when you create your account.' },
+      { title: 'Matching only if you choose it', body: 'Taking part in matching is your choice. The app asks for your explicit consent before it collects anything about who you would like to meet, and you can withdraw that consent later.' },
     ],
     profileTitle: 'Your profile grows gradually',
     profile:
       'Your birth date is enough for the basic readings. Further answers in the app allow deeper readings over time. Nothing you do on this website adds you to matching: that only happens in the app, with your explicit consent.',
     quizTitle: '“Are you my soulmate?”',
     quiz:
-      'Members of the app can send friends a short quiz. Friends answer it on this website, without installing the app or creating an account.',
+      'Members of the app can send friends a short quiz. Friends answer it on this website, without installing the app or creating an account. New answers are paused for now. When they resume, friends will confirm that they are 18 or over before answering.',
     contact: 'Questions? Write to {email}.',
     backToTools: 'Back to the free readings',
   },
