@@ -14,10 +14,10 @@ We are preparing the SoulMates Quest app for a limited pilot. It will offer pers
 
 SoulMates Quest is operated by REAL4LIFE LTD, a private limited company registered in the United Kingdom, company number 15724723, registered office 128 City Road, London, EC1V 2NX, United Kingdom.
 
-## Contact
+## Contact {#contact}
 
-- General: [hello@soulmates.quest](mailto:hello@soulmates.quest) [address being set up]
-- Privacy: [privacy@soulmates.quest](mailto:privacy@soulmates.quest) [address being set up]
-- Safety: [safety@soulmates.quest](mailto:safety@soulmates.quest) [address being set up]
+- General: hello@soulmates.quest [address being set up]
+- Privacy: privacy@soulmates.quest [address being set up]
+- Safety: safety@soulmates.quest [address being set up]
 
 Read more: [Privacy Notice](/en/privacy), [Terms of Use](/en/terms), [Safety and reporting](/en/safety), [Delete your account](/en/delete-account).

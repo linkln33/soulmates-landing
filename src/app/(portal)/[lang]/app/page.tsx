@@ -2,7 +2,6 @@ import type { Metadata } from 'next';
 import Link from 'next/link';
 import type { Locale } from '@/i18n/config';
 import { site } from '@/i18n';
-import { CONTACT_EMAIL } from '@/lib/site/config';
 import { pageMeta } from '@/lib/site/meta';
 import PatternCard from '@/components/site/PatternCard';
 import { ToolHeader } from '@/components/site/ToolPage';
@@ -19,28 +18,36 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
 export default async function AppPage({ params }: Props) {
   const lang = (await params).lang as Locale;
   const t = site(lang).app;
-  const [before, after] = t.contact.split('{email}');
+  const [before, after] = t.contact.split('{contact}');
   return (
     <div className="wrap page narrow">
       <ToolHeader lang={lang} title={t.title} lead={t.lead} art="hearts" tile="for-two" />
       <div className="stack-lg">
         <PatternCard tint="amber" motif="feather">
-          <div id="status" className="stack" style={{ gap: 8 }}>
+          <div id="limited-pilot" className="stack" style={{ gap: 8 }}>
             <h2 className="heading">{t.statusTitle}</h2>
             <p>{t.status}</p>
             <StoreBadges lang={lang} />
           </div>
         </PatternCard>
 
-        <section className="stack" aria-labelledby="matching">
+        <section className="stack" aria-labelledby="how-matching-works">
           <div className="stack" style={{ gap: 6 }}>
             <p className="eyebrow">{t.matchingBadge}</p>
-            <h2 id="matching" className="title">{t.matchingTitle}</h2>
+            <h2 id="how-matching-works" className="title">{t.matchingTitle}</h2>
           </div>
           <ul className="stack">
             {t.matching.map((line) => <li key={line} className="muted">{line}</li>)}
           </ul>
           <p className="small subtle">{t.matchingNote}</p>
+        </section>
+
+        <section className="stack" aria-labelledby="daily-compass">
+          <div className="stack" style={{ gap: 6 }}>
+            <p className="eyebrow">{t.compassBadge}</p>
+            <h2 id="daily-compass" className="title">{t.compassTitle}</h2>
+          </div>
+          <p className="muted">{t.compass}</p>
         </section>
 
         <section className="stack" aria-labelledby="how">
@@ -70,7 +77,7 @@ export default async function AppPage({ params }: Props) {
         </PatternCard>
 
         <p className="muted">
-          {before}<a href={`mailto:${CONTACT_EMAIL}`}>{CONTACT_EMAIL}</a>{after}
+          {before}<Link href={`/${lang}/about#contact`}>{t.contactLink}</Link>{after}
         </p>
         <div><Link href={`/${lang}#tools`} className="btn btn-primary">{t.backToTools}</Link></div>
       </div>

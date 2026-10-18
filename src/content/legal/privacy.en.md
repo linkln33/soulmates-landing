@@ -14,9 +14,9 @@ We do not sell your personal data and do not use it for advertising.
 
 | For | Address |
 |---|---|
-| General questions | [hello@soulmates.quest](mailto:hello@soulmates.quest) [address being set up] |
-| Privacy requests and complaints | [privacy@soulmates.quest](mailto:privacy@soulmates.quest) [address being set up] |
-| Safety and illegal-content reports | [safety@soulmates.quest](mailto:safety@soulmates.quest) [address being set up] |
+| General questions | hello@soulmates.quest [address being set up] |
+| Privacy requests and complaints | privacy@soulmates.quest [address being set up] |
+| Safety and illegal-content reports | safety@soulmates.quest [address being set up] |
 
 We have not appointed a data protection officer. Representative in the European Union: [to be confirmed]
 
@@ -130,7 +130,7 @@ You can complain to us first, or to a regulator:
 
 The app and the friends' quiz are for people aged **18 or over**. If you think someone under 18 is using SoulMates Quest, report it in the app or see [Safety and reporting](/en/safety).
 
-## 14. Browser and device storage
+## 14. Cookies and local storage {#cookies-local-storage}
 
 The website sets no cookies. Your browser's local storage keeps only what the tarot features need:
 

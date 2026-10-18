@@ -8,9 +8,9 @@ SoulMates Quest (сайтът www.soulmates.quest и приложението So
 
 Контакти:
 
-- общи въпроси: [hello@soulmates.quest](mailto:hello@soulmates.quest) [адресът се настройва]
-- поверителност: [privacy@soulmates.quest](mailto:privacy@soulmates.quest) [адресът се настройва]
-- безопасност и сигнали за незаконно съдържание: [safety@soulmates.quest](mailto:safety@soulmates.quest) [адресът се настройва]
+- общи въпроси: hello@soulmates.quest [адресът се настройва]
+- поверителност: privacy@soulmates.quest [адресът се настройва]
+- безопасност и сигнали за незаконно съдържание: safety@soulmates.quest [адресът се настройва]
 - звено за контакт с органите: [предстои потвърждение]
 
 Тези условия са споразумение между вас и нас. [Уведомлението за поверителност](/bg/privacy) обяснява как използваме личните данни; то е информация и не е част от това споразумение.

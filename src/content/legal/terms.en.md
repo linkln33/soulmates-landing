@@ -8,9 +8,9 @@ SoulMates Quest (the website www.soulmates.quest and the SoulMates Quest app) is
 
 Contacts:
 
-- general: [hello@soulmates.quest](mailto:hello@soulmates.quest) [address being set up]
-- privacy: [privacy@soulmates.quest](mailto:privacy@soulmates.quest) [address being set up]
-- safety and illegal-content reports: [safety@soulmates.quest](mailto:safety@soulmates.quest) [address being set up]
+- general: hello@soulmates.quest [address being set up]
+- privacy: privacy@soulmates.quest [address being set up]
+- safety and illegal-content reports: safety@soulmates.quest [address being set up]
 - point of contact for authorities: [to be confirmed]
 
 These terms are an agreement between you and us. Our [Privacy Notice](/en/privacy) explains how we use personal data; it is information, not part of this agreement.

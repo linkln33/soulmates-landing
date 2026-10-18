@@ -104,16 +104,19 @@ main { display: block; }
 @media (min-width: 900px) { .mobile-nav { display: none; } }
 
 .site-footer { border-top: 1px solid var(--border); padding: 40px 0 48px; background: var(--surface-muted); }
-.site-footer .cols { display: grid; gap: 28px; grid-template-columns: 1fr; }
-@media (min-width: 720px) { .site-footer .cols { grid-template-columns: 1fr 1.4fr; } }
-.footer-links { display: grid !important; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 10px 24px !important; }
-.footer-links a { display: inline-flex; align-items: center; min-height: 32px; }
-@media (pointer: coarse) { .footer-links a { min-height: 44px; } }
+.footer-grid { display: grid; gap: 28px; grid-template-columns: 1fr; }
+@media (min-width: 600px) { .footer-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); } }
+@media (min-width: 1000px) { .footer-grid { grid-template-columns: repeat(4, minmax(0, 1fr)); } }
+.site-footer li a { display: inline-flex; align-items: center; min-height: 32px; }
+@media (pointer: coarse) { .site-footer li a { min-height: 44px; } }
+.footer-bottom { display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 12px; margin-top: 16px; padding-top: 16px; border-top: 1px solid var(--border); }
+.footer-bottom p { margin: 0; }
+.footer-bottom .locale-menu { top: auto; bottom: calc(100% + 8px); }
 .site-footer h2 { font-size: 13px; font-weight: 600; text-transform: uppercase; letter-spacing: .06em; color: var(--text-muted); margin-bottom: 10px; }
 .site-footer ul { list-style: none; display: flex; flex-direction: column; gap: 8px; }
 .site-footer a { color: var(--text-muted); text-decoration: none; font-size: 15px; }
 .site-footer a:hover { color: var(--text); text-decoration: underline; }
-.site-footer .note { margin-top: 28px; padding-top: 20px; border-top: 1px solid var(--border); }
+.site-footer .note { margin-top: 28px; }
 
 /* Language menu (same pattern as PrintVes / Creator OS). */
 .locale-switcher { position: relative; }
@@ -318,3 +321,17 @@ code { font-size: .92em; background: var(--surface-muted); padding: 1px 5px; bor
 .store-badge span { display: flex; flex-direction: column; line-height: 1.15; }
 .store-badge small { font-size: 11px; font-weight: 600; letter-spacing: .02em; color: var(--text-muted); text-transform: uppercase; }
 .store-badge b { font-size: 16px; font-weight: 700; }
+
+/* App banner above the footer */
+.app-banner { padding: 48px 0; border-top: 1px solid var(--border); background:
+  radial-gradient(520px 260px at 10% 0%, color-mix(in srgb, var(--secondary) 12%, transparent), transparent 70%),
+  radial-gradient(520px 260px at 90% 100%, color-mix(in srgb, var(--primary) 10%, transparent), transparent 70%),
+  var(--background); }
+.app-banner-inner { display: grid; gap: 24px; align-items: center; }
+@media (min-width: 900px) { .app-banner-inner { grid-template-columns: minmax(0, 1.2fr) minmax(0, 1fr); gap: 40px; } }
+.app-banner-text { display: flex; flex-direction: column; gap: 10px; }
+.app-banner-title { font-size: clamp(26px, 3.6vw, 40px); line-height: 1.1; font-weight: 800; letter-spacing: -0.025em; color: var(--text); }
+.app-banner-title .h-accent { color: var(--primary); }
+.app-banner-actions { display: flex; flex-direction: column; gap: 14px; align-items: flex-start; }
+@media (min-width: 900px) { .app-banner-actions { align-items: flex-end; } }
+@media (min-width: 900px) { .app-banner-title span { white-space: nowrap; } }

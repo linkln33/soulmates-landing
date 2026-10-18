@@ -20,16 +20,38 @@ const en = {
   footer: {
     tagline: 'Free readings for reflection. Real people when the time is right.',
     navLabel: 'Footer',
-    links: {
-      about: 'About',
-      readings: 'Free readings',
+    banner: {
+      titleTop: 'Above the Physical.',
+      titleAccent: 'Beyond the Visible.',
+      lead: 'Discover the unseen forces that draw two souls together.',
+      cta: 'Discover the app',
+    },
+    columns: {
+      readings: 'Readings',
       app: 'The app',
-      privacy: 'Privacy',
-      terms: 'Terms',
+      support: 'Support',
+      legal: 'Trust & legal',
+    },
+    links: {
+      readings: 'Free readings',
+      horoscope: 'Horoscope',
+      tarot: 'Tarot',
+      numerology: 'Numerology',
+      moon: 'Moon',
+      app: 'Discover the app',
+      matching: 'How matching works',
+      compass: 'Daily Compass',
+      pilot: 'Limited pilot',
+      about: 'About',
       safety: 'Safety and reporting',
       deleteAccount: 'Delete your account',
       contact: 'Contact',
+      privacy: 'Privacy',
+      terms: 'Terms',
+      communityRules: 'Community rules',
+      cookies: 'Cookies and local storage',
     },
+    company: 'Company number 15724723',
     note: 'Readings follow traditional astrology, tarot and numerology. They are for reflection, not prediction.',
   },
   docs: {
@@ -254,6 +276,10 @@ const en = {
       'When a match opens, it has its own private conversation. A match that ends doesn’t come back, and you can report or block anyone.',
     ],
     matchingNote: 'This describes the model being prepared, not a feature you can use today.',
+    compassTitle: 'Daily Compass',
+    compassBadge: 'In the limited pilot',
+    compass:
+      'Your day in one view: a gentle, steady or strong reading for energy, connection, focus, communication and balance, drawn from your sign, your numbers, the Moon and a tarot card. A reflection, not a prediction.',
     howTitle: 'How joining will work',
     steps: [
       { title: 'Use the free readings', body: 'Everything on this website stays free and complete, with or without an account.' },
@@ -267,7 +293,8 @@ const en = {
     quizTitle: '“Are you my soulmate?”',
     quiz:
       'Members of the app can send friends a short quiz. Friends answer it on this website, without installing the app or creating an account. New answers are paused for now. When they resume, friends will confirm that they are 18 or over before answering.',
-    contact: 'Questions? Write to {email}.',
+    contact: 'Questions? See {contact}.',
+    contactLink: 'how to contact us',
     backToTools: 'Back to the free readings',
   },
   notFound: {

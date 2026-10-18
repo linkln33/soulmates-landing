@@ -1,6 +1,6 @@
 /**
  * A deliberately small Markdown subset for the site's own document pages
- * (src/content/legal/*.md): headings (#, ##, ###), paragraphs, single-level
+ * (src/content/legal/*.md): headings (#, ##, ###, optional {#id}), paragraphs, single-level
  * "- " lists, pipe tables, **bold** and [text](url) links. Anything else is
  * plain text. No HTML passes through, so the output is safe to render.
  */
@@ -64,8 +64,10 @@ export function parseMarkdown(src: string): Block[] {
     const h = /^(#{1,3})\s+(.*)$/.exec(line);
     if (h) {
       flush();
-      const text = parseInline(h[2].trim());
-      const base = slug(plain(text)) || 'section';
+      // An explicit, language-independent id: "## Contact {#contact}".
+      const custom = /\s*\{#([a-z0-9-]+)\}\s*$/.exec(h[2]);
+      const text = parseInline((custom ? h[2].slice(0, custom.index) : h[2]).trim());
+      const base = custom ? custom[1] : slug(plain(text)) || 'section';
       const n = used.get(base) ?? 0;
       used.set(base, n + 1);
       blocks.push({ kind: 'heading', level: h[1].length as 1 | 2 | 3, text, id: n ? `${base}-${n + 1}` : base });

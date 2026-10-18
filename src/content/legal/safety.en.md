@@ -4,6 +4,19 @@ Last updated: 18 October 2026 (draft)
 
 SoulMates Quest is for adults aged 18 or over.
 
+## Community rules {#community-rules}
+
+Everyone on SoulMates Quest agrees to these rules. Breaking them can lead us to remove content or restrict or close an account.
+
+- Treat people with respect: no harassment, threats, intimidation, stalking or exploitation.
+- No illegal, hateful, sexual or violent content, and nothing that infringes someone else's rights.
+- Never ask anyone for money, and don't offer or promote commercial or sexual services, adverts or spam.
+- Be yourself: no fake profiles and no impersonation. SoulMates Quest is for people aged 18 or over.
+- Respect privacy: don't share another person's private information without their consent, and don't try to identify members or see information you are not allowed to see.
+- Don't scrape, copy or overload the service, or try to bypass its security or limits.
+
+The full rules are in our [Terms of Use](/en/terms).
+
 ## 1. If you are in immediate danger
 
 Contact local emergency services now: 112 in the EU and the UK (999 also works in the UK). Then tell us, if you can.
@@ -44,7 +57,7 @@ We do not tell a member who reported them, but the details of a report can somet
 
 ## 9. Contact
 
-Safety and illegal-content reports: [safety@soulmates.quest](mailto:safety@soulmates.quest) [address being set up]
+Safety and illegal-content reports: safety@soulmates.quest [address being set up]
 
 See also our [Terms of Use](/en/terms) and [Privacy Notice](/en/privacy).
 

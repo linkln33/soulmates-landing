@@ -14,10 +14,10 @@ SoulMates Quest предлага безплатни прочити: хороск
 
 SoulMates Quest се управлява от REAL4LIFE LTD, частно дружество с ограничена отговорност, регистрирано в Обединеното кралство, фирмен номер 15724723, седалище и адрес на управление 128 City Road, London, EC1V 2NX, Обединено кралство.
 
-## Контакт
+## Контакт {#contact}
 
-- Общи въпроси: [hello@soulmates.quest](mailto:hello@soulmates.quest) [адресът се настройва]
-- Поверителност: [privacy@soulmates.quest](mailto:privacy@soulmates.quest) [адресът се настройва]
-- Безопасност: [safety@soulmates.quest](mailto:safety@soulmates.quest) [адресът се настройва]
+- Общи въпроси: hello@soulmates.quest [адресът се настройва]
+- Поверителност: privacy@soulmates.quest [адресът се настройва]
+- Безопасност: safety@soulmates.quest [адресът се настройва]
 
 Още: [Уведомление за поверителност](/bg/privacy), [Условия за ползване](/bg/terms), [Безопасност и сигнали](/bg/safety), [Изтриване на акаунта](/bg/delete-account).

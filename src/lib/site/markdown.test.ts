@@ -46,3 +46,9 @@ test('heading ids are unique and work for Cyrillic', () => {
   assert.deepEqual(ids, ['контакт', 'контакт-2', 'who-we-are']);
   assert.equal(slug('  Your rights (UK & EU) '), 'your-rights-uk-eu');
 });
+
+test('explicit heading ids are kept and stripped from the text', () => {
+  const [h] = parseMarkdown('## Контакт {#contact}');
+  assert.equal(h.kind === 'heading' && h.id, 'contact');
+  assert.equal(h.kind === 'heading' && h.text[0].text, 'Контакт');
+});

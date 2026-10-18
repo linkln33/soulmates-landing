@@ -8,7 +8,7 @@ Go to **Settings → Account → Delete account**. Type DELETE to confirm, and e
 
 ## 2. Without the app
 
-Email [privacy@soulmates.quest](mailto:privacy@soulmates.quest) [address being set up] with the subject "Delete my account".
+Email privacy@soulmates.quest [address being set up] with the subject "Delete my account".
 
 ## 3. How we check it is you
 
@@ -39,6 +39,6 @@ Deletion in the app takes effect immediately. Requests by email are completed wi
 
 ## 9. Privacy contact
 
-[privacy@soulmates.quest](mailto:privacy@soulmates.quest) [address being set up], for deletion, a copy of your data or any other privacy question. More detail is in our [Privacy Notice](/en/privacy).
+privacy@soulmates.quest [address being set up], for deletion, a copy of your data or any other privacy question. More detail is in our [Privacy Notice](/en/privacy).
 
 SoulMates Quest is operated by REAL4LIFE LTD, a private limited company registered in the United Kingdom, company number 15724723, registered office 128 City Road, London, EC1V 2NX, United Kingdom.
