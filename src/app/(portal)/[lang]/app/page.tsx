@@ -6,6 +6,7 @@ import { CONTACT_EMAIL } from '@/lib/site/config';
 import { pageMeta } from '@/lib/site/meta';
 import PatternCard from '@/components/site/PatternCard';
 import { ToolHeader } from '@/components/site/ToolPage';
+import StoreBadges from '@/components/site/StoreBadges';
 
 type Props = PageProps<'/[lang]/app'>;
 
@@ -27,6 +28,7 @@ export default async function AppPage({ params }: Props) {
           <div id="status" className="stack" style={{ gap: 8 }}>
             <h2 className="heading">{t.statusTitle}</h2>
             <p>{t.status}</p>
+            <StoreBadges lang={lang} />
           </div>
         </PatternCard>
 

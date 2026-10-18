@@ -2,7 +2,7 @@
 import Link from 'next/link';
 import type { Locale } from '@/i18n/config';
 import { site } from '@/i18n';
-import { CONTACT_EMAIL } from '@/lib/site/config';
+import { footerLinks } from '@/lib/site/footer';
 import { LangSwitch, NavLinks, type NavItem } from './HeaderControls';
 
 function navItems(lang: Locale): NavItem[] {
@@ -52,22 +52,15 @@ export function SiteFooter({ lang }: { lang: Locale }) {
             </Link>
             <p className="small muted">{t.footer.tagline}</p>
           </div>
-          <div>
-            <h2>{t.footer.tools}</h2>
-            <ul>
-              <li><Link href={`/${lang}/horoscope`}>{t.tools.horoscope.title}</Link></li>
-              <li><Link href={`/${lang}/tarot`}>{t.tools.tarot.title}</Link></li>
-              <li><Link href={`/${lang}/numbers`}>{t.tools.numbers.title}</Link></li>
-              <li><Link href={`/${lang}/moon`}>{t.tools.moon.title}</Link></li>
+          <nav aria-label={t.footer.navLabel}>
+            <ul className="footer-links">
+              {footerLinks(lang).map(({ key, href }) => (
+                <li key={key}>
+                  {href.startsWith('mailto:') ? <a href={href}>{t.footer.links[key]}</a> : <Link href={href}>{t.footer.links[key]}</Link>}
+                </li>
+              ))}
             </ul>
-          </div>
-          <div>
-            <h2>{t.footer.about}</h2>
-            <ul>
-              <li><Link href={`/${lang}/app`}>{t.nav.app}</Link></li>
-              <li><a href={`mailto:${CONTACT_EMAIL}`}>{CONTACT_EMAIL}</a></li>
-            </ul>
-          </div>
+          </nav>
         </div>
         <p className="note small subtle">{t.footer.note} © {new Date().getFullYear()} SoulMates Quest</p>
       </div>

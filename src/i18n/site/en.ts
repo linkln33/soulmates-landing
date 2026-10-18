@@ -19,10 +19,35 @@ const en = {
   language: 'Language',
   footer: {
     tagline: 'Free readings for reflection. Real people when the time is right.',
-    tools: 'Free tools',
-    about: 'About',
-    contact: 'Contact',
+    navLabel: 'Footer',
+    links: {
+      about: 'About',
+      readings: 'Free readings',
+      app: 'The app',
+      privacy: 'Privacy',
+      terms: 'Terms',
+      safety: 'Safety and reporting',
+      deleteAccount: 'Delete your account',
+      contact: 'Contact',
+    },
     note: 'Readings follow traditional astrology, tarot and numerology. They are for reflection, not prediction.',
+  },
+  docs: {
+    draftBanner: 'Draft under legal review. This text is not final and may change. Details marked [to be confirmed] are still being settled.',
+    draftSuffix: '(draft)',
+    descriptions: {
+      about: 'About SoulMates Quest: free horoscope, tarot, numerology and Moon readings, and an app being prepared for a limited pilot.',
+      privacy: 'How SoulMates Quest handles personal data on the website and in the app. Draft under legal review.',
+      terms: 'The terms for using the SoulMates Quest website and app. Draft under legal review.',
+      safety: 'How to stay safe on SoulMates Quest and how to report a member, illegal content or a suspected under-18 user. Draft under legal review.',
+      'delete-account': 'How to delete your SoulMates Quest account, what is deleted and what may be kept. Draft under legal review.',
+    },
+  },
+  stores: {
+    label: 'App stores',
+    appStore: 'App Store',
+    googlePlay: 'Google Play',
+    soon: 'Coming soon',
   },
   states: {
     loading: 'Loading…',

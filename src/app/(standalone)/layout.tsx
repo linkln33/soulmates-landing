@@ -1,6 +1,6 @@
 /**
  * Root layout for pages outside the localised portal: the friends' quiz
- * (/quiz/…, language from ?lang or the browser) and the draft legal pages.
+ * (/quiz/…, language from ?lang or the browser).
  * Same fonts, tokens and theme as the portal.
  */
 import type { Metadata, Viewport } from 'next';

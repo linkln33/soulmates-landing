@@ -26,4 +26,16 @@ export const PORTAL_PATHS = [
   '/numbers',
   '/moon',
   '/app',
+  '/about',
 ] as const;
+
+/** Document pages under /{lang}/…, with text in src/content/legal/{slug}.{lang}.md. */
+export const DOC_PAGES = ['about', 'privacy', 'terms', 'safety', 'delete-account'] as const;
+export type DocPage = (typeof DOC_PAGES)[number];
+
+/**
+ * Drafts awaiting legal review (owner decision 18 Oct 2026: published with a
+ * visible draft banner). They are noindex and stay out of the sitemap until
+ * the reviewed texts replace them; remove a page from this list then.
+ */
+export const DRAFT_DOCS: readonly DocPage[] = ['privacy', 'terms', 'safety', 'delete-account'];

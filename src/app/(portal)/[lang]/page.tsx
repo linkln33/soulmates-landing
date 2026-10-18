@@ -7,6 +7,7 @@ import { pageMeta } from '@/lib/site/meta';
 import PatternCard, { type CardTint } from '@/components/site/PatternCard';
 import { MoonNow } from '@/components/tools/MoonTool';
 import HeroVisual from '@/components/home/HeroVisual';
+import StoreBadges from '@/components/site/StoreBadges';
 import { ConnectionSection } from '@/components/home/HomeSections';
 import '@/components/home/home.css';
 
@@ -45,6 +46,7 @@ export default async function Home({ params }: Props) {
             <a href="#tools" className="btn btn-primary">{t.home.ctaReadings} <ArrowRight weight="bold" aria-hidden /></a>
             <Link href={`/${lang}/app`} className="btn btn-outline">{t.home.ctaApp}</Link>
           </div>
+          <StoreBadges lang={lang} className="h-stores" />
         </div>
         <HeroVisual lang={lang} />
       </section>

@@ -35,12 +35,13 @@ const nextConfig: NextConfig = {
         ],
       },
       {
-        // Private quiz links, answer deletion and draft legal pages are never indexed.
-        source: "/:dir(quiz|privacy|terms)/:path*",
+        // Private quiz links and answer deletion are never indexed.
+        source: "/quiz/:path*",
         headers: [{ key: "X-Robots-Tag", value: "noindex, nofollow" }],
       },
       {
-        source: "/:dir(privacy|terms)",
+        // Draft legal pages (src/lib/site/config.ts DRAFT_DOCS) are not indexed until reviewed.
+        source: "/:lang(en|bg)/:doc(privacy|terms|safety|delete-account)",
         headers: [{ key: "X-Robots-Tag", value: "noindex" }],
       },
       {
