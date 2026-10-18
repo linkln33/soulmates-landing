@@ -46,7 +46,7 @@ export default function QuizShell({
       <header className="lx-top">
         <Link href="/" className="lx-brand" aria-label={m.homeLink}>
           {/* eslint-disable-next-line @next/next/no-img-element */}
-          <img src="/logo.png" alt="" width={32} height={32} />
+          <img src="/brand/mark-32.webp" srcSet="/brand/mark-32.webp 1x, /brand/mark-64.webp 2x, /brand/mark-96.webp 3x" alt="" width={32} height={32} />
           <span>Soulmates Quest</span>
         </Link>
         <LangSwitch lang={lang} path={path} query={query} />

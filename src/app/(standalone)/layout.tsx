@@ -4,19 +4,18 @@
  * Same fonts, tokens and theme as the portal.
  */
 import type { Metadata, Viewport } from 'next';
-import { Inter } from 'next/font/google';
 import { Analytics } from '@vercel/analytics/next';
 import '../globals.css';
 import { SITE_URL } from '@/lib/site/config';
 import { TOKENS_CSS } from '@/lib/design/tokens';
 import { THEME_SCRIPT } from '@/lib/design/theme';
+import { inter } from '@/lib/design/font';
 
-const inter = Inter({ variable: '--font-inter', subsets: ['latin', 'cyrillic'], display: 'swap' });
 
 export const metadata: Metadata = {
   metadataBase: new URL(SITE_URL),
   applicationName: 'SoulMates Quest',
-  icons: { icon: [{ url: '/favicon.png', sizes: '256x256', type: 'image/png' }], apple: '/logo.png' },
+  icons: { icon: [{ url: '/brand/icon-32.png', sizes: '32x32', type: 'image/png' }, { url: '/brand/icon-192.png', sizes: '192x192', type: 'image/png' }], apple: '/brand/icon-192.png' },
 };
 
 export const viewport: Viewport = {

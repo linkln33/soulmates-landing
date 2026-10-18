@@ -70,7 +70,7 @@ export function LangSwitch({ lang, label }: { lang: Locale; label: string }) {
       <button
         type="button"
         className="locale-trigger"
-        aria-label={`${label}: ${LOCALE_INFO[lang].label}`}
+        aria-label={`${lang.toUpperCase()} · ${label}: ${LOCALE_INFO[lang].label}`}
         aria-haspopup="menu"
         aria-expanded={open}
         aria-controls={open ? menuId : undefined}

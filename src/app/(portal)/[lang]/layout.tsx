@@ -1,6 +1,5 @@
 import type { Metadata, Viewport } from 'next';
 import { notFound } from 'next/navigation';
-import { Inter } from 'next/font/google';
 import { Analytics } from '@vercel/analytics/next';
 import '../../globals.css';
 import { LOCALES, isLocale } from '@/i18n/config';
@@ -8,9 +7,9 @@ import { site } from '@/i18n';
 import { SITE_URL } from '@/lib/site/config';
 import { TOKENS_CSS } from '@/lib/design/tokens';
 import { THEME_SCRIPT } from '@/lib/design/theme';
+import { inter } from '@/lib/design/font';
 import { SiteFooter, SiteHeader } from '@/components/site/SiteChrome';
 
-const inter = Inter({ variable: '--font-inter', subsets: ['latin', 'cyrillic'], display: 'swap' });
 
 export const dynamicParams = false;
 
@@ -25,7 +24,7 @@ export async function generateMetadata({ params }: LayoutProps<'/[lang]'>): Prom
     metadataBase: new URL(SITE_URL),
     applicationName: t.siteName,
     title: { default: t.home.metaTitle, template: `%s — ${t.siteName}` },
-    icons: { icon: [{ url: '/favicon.png', sizes: '256x256', type: 'image/png' }], apple: '/logo.png' },
+    icons: { icon: [{ url: '/brand/icon-32.png', sizes: '32x32', type: 'image/png' }, { url: '/brand/icon-192.png', sizes: '192x192', type: 'image/png' }], apple: '/brand/icon-192.png' },
   };
 }
 

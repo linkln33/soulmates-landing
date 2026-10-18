@@ -51,7 +51,7 @@ export function MoonNow({ lang }: { lang: Locale }) {
   return (
     <PatternCard tint="violet" aria-label={t.home.moonTitle}>
       <div className="stack">
-        <h2 className="heading">{t.home.moonTitle}</h2>
+        <h3 className="heading">{t.home.moonTitle}</h3>
         {state.status === 'loading' ? <Loading lang={lang} /> : null}
         {state.status === 'error' ? <ErrorState lang={lang} kind={state.error.kind} onRetry={retry} /> : null}
         {state.status === 'ok' ? <MoonFacts lang={lang} moon={state.data.moon} tz={state.data.timezone} /> : null}

@@ -25,7 +25,7 @@
   --lx-primary: var(--lx-pink);
   --lx-primary-pressed: var(--lx-pink-pressed);
   --lx-on-primary: #ffffff;
-  --lx-secondary-text: var(--lx-teal-deep);
+  --lx-secondary-text: #09777e; /* AA on white and tints (the app's #08868B is 4.4:1) */
   --lx-link: #e0004a;
   --lx-danger: #d92d20;
   --lx-track: #e9ecf3;
@@ -491,8 +491,9 @@
   cursor: pointer;
 }
 .lx-btn:disabled { opacity: 0.6; cursor: default; }
-.lexicon .lx-btn-primary { background: var(--lx-primary); color: var(--lx-on-primary); }
-.lexicon .lx-btn-primary:hover:not(:disabled) { background: var(--lx-primary-pressed); }
+/* Pressed pink under white text: 4.9:1 (the brighter pink is 3.9:1). */
+.lexicon .lx-btn-primary { background: var(--lx-primary-pressed); color: var(--lx-on-primary); }
+.lexicon .lx-btn-primary:hover:not(:disabled) { background: color-mix(in srgb, var(--lx-primary-pressed) 88%, #000); }
 .lexicon .lx-btn-secondary { background: var(--lx-surface-muted); color: var(--lx-text); border-color: var(--lx-border); }
 .lexicon .lx-btn-ghost { background: transparent; color: var(--lx-link); border-color: var(--lx-border); }
 .lexicon .lx-btn-danger { background: var(--lx-danger); color: #ffffff; }

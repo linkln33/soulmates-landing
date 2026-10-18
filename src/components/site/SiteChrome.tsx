@@ -25,7 +25,7 @@ export function SiteHeader({ lang }: { lang: Locale }) {
       <div className="wrap">
         <Link href={`/${lang}`} className="brand" aria-label={`${t.siteName} — ${t.nav.home}`}>
           {/* eslint-disable-next-line @next/next/no-img-element */}
-          <img src="/app-content/logo.png" alt="" width={1373} height={655} />
+          <img src="/brand/logo-56.webp" srcSet="/brand/logo-56.webp 1x, /brand/logo-112.webp 2x, /brand/logo-168.webp 3x" alt="" width={56} height={27} />
           <span>{t.siteName}</span>
         </Link>
         <NavLinks items={items} lang={lang} className="site-nav" label={t.nav.label} />
@@ -47,7 +47,7 @@ export function SiteFooter({ lang }: { lang: Locale }) {
           <div className="stack">
             <Link href={`/${lang}`} className="brand">
               {/* eslint-disable-next-line @next/next/no-img-element */}
-              <img src="/app-content/logo.png" alt="" width={1373} height={655} />
+              <img src="/brand/logo-56.webp" srcSet="/brand/logo-56.webp 1x, /brand/logo-112.webp 2x, /brand/logo-168.webp 3x" alt="" width={56} height={27} />
               <span style={{ display: 'inline' }}>{t.siteName}</span>
             </Link>
             <p className="small muted">{t.footer.tagline}</p>
