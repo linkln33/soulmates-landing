@@ -1,5 +1,5 @@
 import type { NextConfig } from "next";
-import { CANONICAL_API_URL } from "./src/lib/site/config.ts";
+import { CANONICAL_API_URL, SITE_URL } from "./src/lib/site/config.ts";
 
 // The API base is configured explicitly, never by an implicit default.
 const apiUrl = (process.env.NEXT_PUBLIC_API_URL ?? "").replace(/\/+$/, "");
@@ -11,6 +11,19 @@ if (process.env.VERCEL_ENV === "production" && apiUrl !== CANONICAL_API_URL) {
 }
 
 const nextConfig: NextConfig = {
+  async redirects() {
+    return [
+      {
+        // The project's own vercel.app host serves the full site; send it to the
+        // canonical host (308, path and query kept). Per-deployment URLs
+        // (soulmates-landing-<hash>-….vercel.app) don't match and stay usable for checks.
+        source: "/:path*",
+        has: [{ type: "host", value: "soulmates-landing.vercel.app" }],
+        destination: `${SITE_URL}/:path*`,
+        permanent: true,
+      },
+    ];
+  },
   async headers() {
     return [
       {
