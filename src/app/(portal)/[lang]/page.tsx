@@ -8,7 +8,7 @@ import PatternCard, { type CardTint } from '@/components/site/PatternCard';
 import { MoonNow } from '@/components/tools/MoonTool';
 import HeroVisual from '@/components/home/HeroVisual';
 import StoreBadges from '@/components/site/StoreBadges';
-import { ConnectionSection } from '@/components/home/HomeSections';
+import { JourneySection } from '@/components/home/HomeSections';
 import '@/components/home/home.css';
 
 type Props = PageProps<'/[lang]'>;
@@ -43,8 +43,8 @@ export default async function Home({ params }: Props) {
           </h1>
           <p className="h-lead">{t.home.lead}</p>
           <div className="h-ctas">
-            <a href="#tools" className="btn btn-primary">{t.home.ctaReadings} <ArrowRight weight="bold" aria-hidden /></a>
-            <Link href={`/${lang}/app`} className="btn btn-outline">{t.home.ctaApp}</Link>
+            <a href="#tools" className="btn btn-primary btn-3d">{t.home.ctaReadings} <ArrowRight weight="bold" aria-hidden /></a>
+            <Link href={`/${lang}/app`} className="btn btn-glass btn-3d">{t.home.ctaApp}</Link>
           </div>
           <StoreBadges lang={lang} className="h-stores" />
         </div>
@@ -115,15 +115,15 @@ export default async function Home({ params }: Props) {
         </div>
       </section>
 
-      <ConnectionSection lang={lang} />
+      <JourneySection lang={lang} />
 
       <section className="wrap h-final" aria-labelledby="final-title">
         <div className="h-final-card">
           <h2 id="final-title" className="h-title">{t.home.finalTitle}</h2>
           <p className="lead">{t.home.finalLead}</p>
           <div className="h-ctas">
-            <a href="#tools" className="btn btn-primary">{t.home.ctaReadings} <ArrowRight weight="bold" aria-hidden /></a>
-            <Link href={`/${lang}/app`} className="btn btn-outline">{t.home.ctaApp}</Link>
+            <a href="#tools" className="btn btn-primary btn-3d">{t.home.ctaReadings} <ArrowRight weight="bold" aria-hidden /></a>
+            <Link href={`/${lang}/app`} className="btn btn-glass btn-3d">{t.home.ctaApp}</Link>
           </div>
         </div>
       </section>

@@ -155,6 +155,89 @@ main { display: block; }
 .btn-quiet { background: transparent; color: var(--teal-text); padding: 0 8px; min-height: 40px; }
 .btn[disabled] { opacity: .55; cursor: default; }
 
+/*
+ * Glass secondary and teal connection actions. Raspberry stays the primary;
+ * teal is for connection actions (open a conversation), with navy ink:
+ * 9.8:1 on the teal and 7:1 on its darker hover, where white would be 1.7:1.
+ */
+:root {
+  --glass-bg: color-mix(in srgb, var(--surface) 68%, transparent);
+  --glass-border: color-mix(in srgb, var(--text) 18%, transparent);
+  --glass-blur: 14px;
+  --btn3d-rest: 0 1px 1px rgb(15 26 46 / .16), 0 4px 10px -2px rgb(15 26 46 / .28);
+  --btn3d-lift: 0 1px 1px rgb(15 26 46 / .14), 0 9px 20px -4px rgb(15 26 46 / .34);
+  --btn3d-glass-rest: 0 1px 1px rgb(15 26 46 / .07), 0 4px 12px -3px rgb(15 26 46 / .16), inset 0 1px 0 rgb(255 255 255 / .70), inset 0 -1px 0 rgb(15 26 46 / .08);
+  --btn3d-glass-lift: 0 1px 1px rgb(15 26 46 / .07), 0 10px 22px -5px rgb(15 26 46 / .22), inset 0 1px 0 rgb(255 255 255 / .80), inset 0 -1px 0 rgb(15 26 46 / .08);
+}
+@media (prefers-color-scheme: dark) { :root:not([data-theme]) {
+  --btn3d-rest: 0 1px 1px rgb(0 0 0 / .40), 0 5px 14px -3px rgb(0 0 0 / .55);
+  --btn3d-lift: 0 1px 1px rgb(0 0 0 / .40), 0 11px 24px -5px rgb(0 0 0 / .62);
+  --btn3d-glass-rest: 0 1px 1px rgb(0 0 0 / .40), 0 5px 14px -3px rgb(0 0 0 / .55), inset 0 1px 0 rgb(255 255 255 / .16), inset 0 -1px 0 rgb(0 0 0 / .40);
+  --btn3d-glass-lift: 0 1px 1px rgb(0 0 0 / .40), 0 11px 24px -5px rgb(0 0 0 / .60), inset 0 1px 0 rgb(255 255 255 / .22), inset 0 -1px 0 rgb(0 0 0 / .40);
+} }
+:root[data-theme='dark'] {
+  --btn3d-rest: 0 1px 1px rgb(0 0 0 / .40), 0 5px 14px -3px rgb(0 0 0 / .55);
+  --btn3d-lift: 0 1px 1px rgb(0 0 0 / .40), 0 11px 24px -5px rgb(0 0 0 / .62);
+  --btn3d-glass-rest: 0 1px 1px rgb(0 0 0 / .40), 0 5px 14px -3px rgb(0 0 0 / .55), inset 0 1px 0 rgb(255 255 255 / .16), inset 0 -1px 0 rgb(0 0 0 / .40);
+  --btn3d-glass-lift: 0 1px 1px rgb(0 0 0 / .40), 0 11px 24px -5px rgb(0 0 0 / .60), inset 0 1px 0 rgb(255 255 255 / .22), inset 0 -1px 0 rgb(0 0 0 / .40);
+}
+.btn-glass { background: var(--glass-bg); color: var(--text); border-color: var(--glass-border); -webkit-backdrop-filter: blur(var(--glass-blur)); backdrop-filter: blur(var(--glass-blur)); }
+.btn-glass:hover { border-color: color-mix(in srgb, var(--text) 42%, transparent); }
+.btn-connect { background: var(--secondary); color: var(--palette-navy); }
+.btn-connect:hover { background: color-mix(in srgb, var(--secondary) 84%, #000); }
+/* The teal focus ring would vanish against a teal button. */
+.btn-connect:focus-visible { outline-color: var(--text); }
+
+/*
+ * 3D metallic-glass modifier (adapted from the PrintVes hero CTAs). Composes
+ * onto .btn + a variant: size, radius and layout stay, only the surface
+ * changes. Depth comes from a raised shadow with an inset rim light, a
+ * hairline inner ring (::before) and a sheen swept across on hover (::after).
+ * Use it on a few primary actions, not on every control.
+ */
+.btn-3d {
+  position: relative; isolation: isolate; overflow: hidden;
+  border-color: color-mix(in srgb, var(--on-primary) 26%, transparent);
+  background-image: linear-gradient(180deg, rgb(255 255 255 / .17) 0%, rgb(255 255 255 / .04) 46%, rgb(0 0 0 / .07) 100%);
+  box-shadow: var(--btn3d-rest), inset 0 1px 0 rgb(255 255 255 / .34), inset 0 -1px 0 rgb(0 0 0 / .20);
+  transition: transform .18s ease, box-shadow .18s ease, background-color .2s ease, filter .18s ease;
+}
+.btn-3d::before {
+  content: ''; position: absolute; inset: 0; z-index: -1; border-radius: inherit; padding: 1px; pointer-events: none;
+  background: linear-gradient(180deg, rgb(255 255 255 / .42), rgb(255 255 255 / .06) 40%, rgb(0 0 0 / .16));
+  -webkit-mask: linear-gradient(#000 0 0) content-box exclude, linear-gradient(#000 0 0);
+  mask: linear-gradient(#000 0 0) content-box exclude, linear-gradient(#000 0 0);
+}
+/* plus-lighter only brightens, so the label stays legible mid-sweep. */
+.btn-3d::after {
+  content: ''; position: absolute; top: 0; bottom: 0; left: -60%; z-index: 2; width: 45%; pointer-events: none;
+  background: linear-gradient(100deg, transparent, rgb(255 255 255 / .5), transparent);
+  mix-blend-mode: plus-lighter; transform: skewX(-18deg); opacity: 0;
+}
+.btn-3d:hover { transform: translateY(-2px); box-shadow: var(--btn3d-lift), inset 0 1px 0 rgb(255 255 255 / .42), inset 0 -1px 0 rgb(0 0 0 / .18); filter: saturate(1.06); }
+.btn-3d:hover::after { animation: btnSheen .62s ease-out; }
+/* Press settles below rest and drops the lift, so the travel is felt. */
+.btn-3d:active { transform: translateY(1px); box-shadow: 0 1px 1px rgb(0 0 0 / .10), 0 2px 5px -2px rgb(0 0 0 / .26), inset 0 2px 5px rgb(0 0 0 / .26), inset 0 1px 0 rgb(255 255 255 / .12); }
+.btn-3d.btn-glass {
+  border-color: var(--glass-border);
+  background-image: linear-gradient(180deg, rgb(255 255 255 / .30) 0%, rgb(255 255 255 / .06) 50%, rgb(0 0 0 / .05) 100%);
+  box-shadow: var(--btn3d-glass-rest);
+}
+.btn-3d.btn-glass:hover { box-shadow: var(--btn3d-glass-lift); }
+.btn-3d.btn-glass:active { box-shadow: var(--btn3d-glass-rest), inset 0 2px 5px rgb(0 0 0 / .14); }
+.btn-3d.btn-connect {
+  border-color: color-mix(in srgb, var(--palette-navy) 22%, transparent);
+  background-image: linear-gradient(180deg, rgb(255 255 255 / .34) 0%, rgb(255 255 255 / .06) 48%, rgb(0 0 0 / .12) 100%);
+  box-shadow: var(--btn3d-rest), inset 0 1px 0 rgb(255 255 255 / .46), inset 0 -1px 0 rgb(0 0 0 / .22);
+}
+@keyframes btnSheen { from { left: -60%; opacity: 0; } 35% { opacity: 1; } to { left: 115%; opacity: 0; } }
+/* Depth stays (it is the affordance); lift and sheen stop. */
+@media (prefers-reduced-motion: reduce) {
+  .btn-3d, .btn-3d:hover, .btn-3d:active { transform: none; transition: none; }
+  .btn-3d:hover::after { animation: none; }
+}
+@media (forced-colors: active) { .btn-3d::before, .btn-3d::after { display: none; } }
+
 .field { display: flex; flex-direction: column; gap: 6px; }
 .field label { font-weight: 600; font-size: 14px; }
 .input { min-height: 48px; width: 100%; padding: 10px 14px; border-radius: var(--r-md); border: 1px solid var(--border); background: var(--surface); color: var(--text); font-size: 16px; }

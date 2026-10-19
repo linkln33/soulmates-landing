@@ -1,0 +1,313 @@
+/*
+ * JourneyTimeline (src/components/home/JourneyTimeline.tsx). Layout and motion
+ * adapted from the PrintVes process timeline; colours from the SoulMates
+ * tokens. Light and dark themes resolve through the token variables.
+ */
+
+.h-journey { overflow-x: clip; }
+
+.journey {
+  --journey-pink: var(--primary);
+  --journey-teal: var(--secondary);
+  /* Soft sage-mint rather than the brand's electric mint: the third stage
+     should feel calm. Lighter on the dark theme so it still reads. */
+  --journey-green: #6FC29E;
+  --spine: 76px;
+  --node-size: 46px;
+  --gap: 40px;
+  --card-pad: 28px;
+  /* Full by default: without JavaScript the rail is simply complete. */
+  --journey-progress: 1;
+  position: relative;
+}
+
+:root[data-theme='dark'] .journey { --journey-green: #9AD9B8; }
+@media (prefers-color-scheme: dark) { :root:not([data-theme]) .journey { --journey-green: #9AD9B8; } }
+
+/* ── rail ── */
+
+/* Shown once measured; until then the per-stage segments below stand in. */
+.journey:not([data-rail='measured']) .journey-rail { display: none; }
+
+.journey-rail {
+  position: absolute;
+  left: 50%;
+  top: var(--rail-top, calc(var(--node-size) / 2));
+  bottom: var(--rail-bottom, calc(var(--node-size) / 2));
+  width: 4px;
+  transform: translateX(-50%);
+  pointer-events: none;
+}
+.journey-rail-base,
+.journey-rail-fill { position: absolute; inset: 0; border-radius: 999px; }
+.journey-rail-base { background: color-mix(in srgb, var(--text) 12%, transparent); }
+
+/* clip-path reveals a gradient fixed to the whole rail, so colours never slide. */
+.journey-rail-fill {
+  background: var(--journey-gradient);
+  clip-path: inset(0 0 calc(100% - 100% * var(--journey-progress)) 0 round 999px);
+  transition: clip-path .18s linear;
+}
+/* The glow is a blurred copy behind the line, which keeps the line itself crisp. */
+.journey-rail-fill::after {
+  content: '';
+  position: absolute;
+  inset: -3px -5px;
+  border-radius: inherit;
+  background: inherit;
+  filter: blur(9px);
+  opacity: .45;
+}
+:root[data-theme='dark'] .journey-rail-fill::after { opacity: .65; }
+@media (prefers-color-scheme: dark) { :root:not([data-theme]) .journey-rail-fill::after { opacity: .65; } }
+
+/* ── steps ── */
+
+.journey-steps { position: relative; display: grid; gap: var(--gap); list-style: none; padding-bottom: 12px; }
+
+/* Copy on one side of the spine, artwork on the other; the even steps swap. */
+.journey-step {
+  position: relative;
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) var(--spine) minmax(0, 1fr);
+  align-items: center;
+}
+.journey-step > .journey-card { grid-column: 1; grid-row: 1; }
+.journey-step > .journey-art { grid-column: 3; grid-row: 1; }
+.journey-step:nth-child(even) > .journey-card { grid-column: 3; }
+.journey-step:nth-child(even) > .journey-art { grid-column: 1; }
+
+.journey-card {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  padding: var(--card-pad);
+  border-radius: 26px;
+  border: 1px solid color-mix(in srgb, var(--accent) 24%, var(--glass-border));
+  background:
+    radial-gradient(120% 90% at 100% 0%, color-mix(in srgb, var(--accent) 10%, transparent), transparent 60%),
+    var(--glass-bg);
+  -webkit-backdrop-filter: blur(var(--glass-blur));
+  backdrop-filter: blur(var(--glass-blur));
+  box-shadow: var(--shadow-2);
+  transition: transform .22s ease, border-color .22s ease;
+}
+.journey-step-number {
+  font-size: .75rem;
+  font-weight: 700;
+  letter-spacing: .12em;
+  color: color-mix(in srgb, var(--accent) 62%, var(--text));
+}
+.journey-title { font-size: clamp(1.35rem, 2.1vw, 1.8rem); line-height: 1.15; font-weight: 800; letter-spacing: -0.02em; color: var(--text); }
+.journey-body { color: var(--text-muted); font-size: 1rem; line-height: 1.6; max-width: 44ch; }
+.journey-statuses { list-style: none; display: flex; flex-wrap: wrap; gap: 6px; margin-top: 4px; }
+.journey-status {
+  padding: 4px 12px;
+  border-radius: 999px;
+  font-size: .8125rem;
+  font-weight: 600;
+  color: color-mix(in srgb, var(--accent) 52%, var(--text));
+  background: color-mix(in srgb, var(--accent) 12%, var(--surface));
+  border: 1px solid color-mix(in srgb, var(--accent) 30%, transparent);
+}
+
+/*
+ * Rail without JavaScript: one segment per stage, from node to node. Each
+ * segment blends half-way into its neighbours' colours at its ends, so the
+ * joins match. Desktop draws it on the step (nodes sit at the step's middle);
+ * the stacked layout draws it on the artwork and the card, because there the
+ * node sits near the top of the card.
+ */
+.journey:not([data-rail='measured']) .journey-step::before {
+  content: '';
+  position: absolute;
+  left: 50%;
+  top: 0;
+  bottom: calc(-1 * var(--gap));
+  width: 4px;
+  transform: translateX(-50%);
+  border-radius: 999px;
+  background: linear-gradient(180deg, color-mix(in srgb, var(--accent-prev) 50%, var(--accent)), var(--accent) 50%, color-mix(in srgb, var(--accent) 50%, var(--accent-next)));
+  pointer-events: none;
+}
+.journey:not([data-rail='measured']) .journey-step:first-child::before { top: 50%; background: linear-gradient(180deg, var(--accent), color-mix(in srgb, var(--accent) 50%, var(--accent-next))); }
+.journey:not([data-rail='measured']) .journey-step:last-child::before { bottom: 50%; background: linear-gradient(180deg, color-mix(in srgb, var(--accent-prev) 50%, var(--accent)), var(--accent)); }
+.journey:not([data-rail='measured']) .journey-step:only-child::before { display: none; }
+
+/* ── nodes ── on the spine, level with the card's middle */
+
+.journey-node {
+  position: absolute;
+  z-index: 2;
+  top: 50%;
+  left: calc(100% + var(--spine) / 2);
+  display: grid;
+  place-items: center;
+  width: var(--node-size);
+  height: var(--node-size);
+  border-radius: 50%;
+  transform: translate(-50%, -50%);
+  background: var(--surface);
+  border: 2px solid color-mix(in srgb, var(--text) 16%, transparent);
+  transition: border-color .32s ease, box-shadow .32s ease, background .32s ease;
+}
+.journey-step:nth-child(even) .journey-node { left: calc(var(--spine) / -2); }
+.journey-node::after { content: attr(data-step); font-size: 14px; font-weight: 800; color: var(--text-muted); transition: color .32s ease; }
+
+/* Lit when the fill reaches it, and always lit without the motion layer. */
+.journey-node.is-active,
+.journey:not([data-motion='on']) .journey-node {
+  background: color-mix(in srgb, var(--accent) 16%, var(--surface));
+  border-color: var(--accent);
+  box-shadow: 0 0 0 4px color-mix(in srgb, var(--accent) 14%, transparent), 0 0 22px color-mix(in srgb, var(--accent) 45%, transparent);
+}
+.journey-node.is-active::after,
+.journey:not([data-motion='on']) .journey-node::after { color: color-mix(in srgb, var(--accent) 62%, var(--text)); }
+@keyframes journeyNodePop {
+  0% { transform: translate(-50%, -50%) scale(1); }
+  46% { transform: translate(-50%, -50%) scale(1.14); }
+  100% { transform: translate(-50%, -50%) scale(1); }
+}
+.journey[data-motion='on'] .journey-node.is-active { animation: journeyNodePop .46s cubic-bezier(.34, 1.56, .64, 1); }
+
+/* ── artwork, unboxed ── */
+
+.journey-art { position: relative; display: grid; place-items: center; min-width: 0; }
+.journey-art::before {
+  content: '';
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  width: 92%;
+  aspect-ratio: 1;
+  transform: translate(-50%, -50%);
+  border-radius: 50%;
+  background: radial-gradient(circle, color-mix(in srgb, var(--accent) 16%, transparent), transparent 64%);
+  pointer-events: none;
+}
+.journey-art picture { position: relative; display: block; width: 100%; }
+.journey-art img {
+  width: 100%;
+  height: auto;
+  max-height: 380px;
+  object-fit: contain;
+  filter: drop-shadow(0 18px 26px color-mix(in srgb, var(--accent) 20%, transparent));
+  transition: transform .3s ease;
+}
+
+@media (hover: hover) {
+  .journey-step:hover .journey-card { transform: translateY(-4px); border-color: color-mix(in srgb, var(--accent) 42%, var(--glass-border)); }
+  .journey-step:hover .journey-art img { transform: scale(1.02); }
+}
+
+/* ── one-time entrances (only once the motion layer is on) ── */
+
+.journey[data-motion='on'] .journey-step {
+  opacity: 0;
+  transform: translateY(28px);
+  transition: opacity .52s cubic-bezier(.22, .61, .36, 1), transform .52s cubic-bezier(.22, .61, .36, 1);
+}
+.journey[data-motion='on'] .journey-step.is-entered { opacity: 1; transform: none; }
+
+/* The artwork arrives from its own side with a slight tilt and settles once. */
+.journey[data-motion='on'] .journey-art { --art-from: 48px; --art-tilt: -5deg; opacity: 0; }
+.journey[data-motion='on'] .journey-step:nth-child(even) .journey-art { --art-from: -48px; --art-tilt: 5deg; }
+@keyframes journeyArtIn {
+  0% { opacity: 0; transform: translateX(var(--art-from)) rotate(var(--art-tilt)) scale(.86); }
+  55% { opacity: 1; }
+  72% { transform: translateX(0) rotate(calc(var(--art-tilt) * -.25)) scale(1.04); }
+  100% { opacity: 1; transform: none; }
+}
+.journey[data-motion='on'] .journey-step.is-entered .journey-art { opacity: 1; animation: journeyArtIn .8s cubic-bezier(.34, 1.3, .64, 1) 90ms both; }
+
+/* ── optional confetti (off by default) ── */
+
+.journey-confetti { position: absolute; left: 50%; top: 50%; width: 0; height: 0; pointer-events: none; }
+.journey-confetti-piece {
+  position: absolute; width: 6px; height: 6px; border-radius: 2px; opacity: 0;
+  animation: journeyConfetti 1.1s cubic-bezier(.16, .68, .42, 1) var(--delay, 0ms) both;
+}
+.journey-confetti-piece.is-pink { background: var(--journey-pink); }
+.journey-confetti-piece.is-teal { background: var(--journey-teal); }
+.journey-confetti-piece.is-green { background: var(--journey-green); }
+@keyframes journeyConfetti {
+  0% { opacity: 0; transform: translate(0, 0) scale(.6); }
+  15% { opacity: 1; transform: translate(calc(var(--dx) * .35), calc(var(--dy) * .5)) scale(1); }
+  100% { opacity: 0; transform: translate(var(--dx), calc(var(--dy) + 44px)) scale(.9); }
+}
+
+/* ── closing call to action ── */
+
+.journey-closing { display: flex; flex-direction: column; align-items: center; text-align: center; gap: 14px; padding-top: 8px; }
+.journey-closing-title { font-size: clamp(26px, 3.4vw, 40px); line-height: 1.12; font-weight: 800; letter-spacing: -0.025em; color: var(--text); }
+.journey-closing-title span { display: inline-block; }
+.journey-closing .lead { margin: 0 auto; }
+.journey-closing .btn { min-height: 52px; padding: 0 26px; margin-top: 6px; }
+.journey-closing .btn svg { width: 18px; height: 18px; }
+.journey-closing .small { max-width: 56ch; }
+
+/* ── responsive: the spine moves to the left edge ── */
+
+@media (max-width: 1100px) {
+  .journey { --spine: 64px; --gap: 32px; --card-pad: 24px; }
+  .journey-art img { max-height: 300px; }
+}
+
+@media (max-width: 860px) {
+  .journey { --spine: 52px; --node-size: 40px; --gap: 36px; --card-pad: 20px; }
+  .journey-rail { left: calc(var(--spine) / 2); }
+  .journey-step { grid-template-columns: minmax(0, 1fr); padding-left: var(--spine); }
+  .journey-step > .journey-card,
+  .journey-step > .journey-art,
+  .journey-step:nth-child(even) > .journey-card,
+  .journey-step:nth-child(even) > .journey-art { grid-column: 1; grid-row: auto; }
+  .journey-step > .journey-art { order: -1; margin-bottom: 12px; }
+  /* Beside the stage number, on the rail. */
+  .journey-node,
+  .journey-step:nth-child(even) .journey-node { left: calc(var(--spine) / -2); top: calc(var(--card-pad) + 0.6em); }
+  .journey-art img { max-height: 260px; }
+  .journey[data-motion='on'] .journey-art,
+  .journey[data-motion='on'] .journey-step:nth-child(even) .journey-art { --art-from: 0px; }
+}
+
+/* Stacked layout without JavaScript: artwork segment above the card, then the card's own. */
+@media (max-width: 860px) {
+  .journey:not([data-rail='measured']) .journey-step::before { display: none; }
+  .journey:not([data-rail='measured']) .journey-step:not(:first-child) .journey-art::after,
+  .journey:not([data-rail='measured']) .journey-step:not(:only-child) .journey-card::before {
+    content: '';
+    position: absolute;
+    left: calc(var(--spine) / -2);
+    width: 4px;
+    transform: translateX(-50%);
+    border-radius: 999px;
+    pointer-events: none;
+  }
+  .journey:not([data-rail='measured']) .journey-step:not(:first-child) .journey-art::after {
+    top: 0;
+    bottom: -12px;
+    background: linear-gradient(180deg, color-mix(in srgb, var(--accent-prev) 50%, var(--accent)), var(--accent));
+  }
+  .journey:not([data-rail='measured']) .journey-step:not(:only-child) .journey-card::before {
+    top: 0;
+    bottom: calc(-1 * var(--gap));
+    background: linear-gradient(180deg, var(--accent), color-mix(in srgb, var(--accent) 50%, var(--accent-next)));
+  }
+  .journey:not([data-rail='measured']) .journey-step:first-child .journey-card::before { top: calc(var(--card-pad) + 0.6em); }
+  .journey:not([data-rail='measured']) .journey-step:last-child .journey-card::before { bottom: auto; height: calc(var(--card-pad) + 0.6em); background: var(--accent); }
+}
+
+@media (max-width: 480px) {
+  .journey { --spine: 40px; --node-size: 34px; --card-pad: 18px; }
+  .journey-node::after { font-size: 12px; }
+  .journey-card { border-radius: 20px; }
+  .journey-art img { max-height: 220px; }
+}
+
+/* Settled: everything lit, nothing moving, the rail full. */
+@media (prefers-reduced-motion: reduce) {
+  .journey-rail-fill, .journey-card, .journey-art img, .journey-node { transition: none; }
+  .journey-node.is-active { animation: none; }
+  .journey-step:hover .journey-card, .journey-step:hover .journey-art img { transform: none; }
+}

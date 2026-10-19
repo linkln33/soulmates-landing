@@ -118,17 +118,36 @@ const en = {
     ],
     moonTitle: 'The Moon right now',
     moonMore: 'Moon calendar',
-    connection: {
+    journey: {
       eyebrow: 'Limited pilot in preparation',
-      title: 'Meaningful connections, when you choose them',
-      lead:
-        'The SoulMates Quest app is being prepared for a limited pilot. The intended model is quiet and built on consent: possible connections stay concealed, and identities open only when both people accept.',
-      points: [
-        { title: 'Concealed first', body: 'No names or photos before both people accept.' },
-        { title: 'Led by compatibility', body: 'Possible connections come from what you choose to share in the app, explained in plain language.' },
-        { title: 'Always your choice', body: 'Taking part is optional and needs your explicit consent. You can step away at any time.' },
+      title: 'From your inner world to a shared one',
+      lead: 'The SoulMates Quest app is being prepared for a limited pilot. This is how it is meant to feel, in three stages: quiet, and built on consent.',
+      label: 'The SoulMates Quest journey',
+      stages: [
+        {
+          title: 'Discover your inner world',
+          body: 'Free personal readings help you reflect on yourself, and in the pilot the Daily Compass adds how your day feels. A reflection, not a prediction.',
+          statuses: ['Free readings available today', 'Daily Compass in the limited pilot'],
+          alt: 'An adult woman with her eyes closed and her hands over her heart, surrounded by soft raspberry light.',
+        },
+        {
+          title: 'Notice a connection',
+          body: 'Possible matches come from what you choose to share in the app and appear concealed, with no names or photos. You explore what draws you together and decide whether to open each one.',
+          statuses: ['Being prepared'],
+          alt: 'Two adult figures with their faces veiled in light, joined by a thin cyan trail.',
+        },
+        {
+          title: 'Explore it together',
+          body: 'When you both accept, your profiles open and a private conversation begins. Later, an optional Oracle is planned to help you understand the connection and find a way to begin.',
+          statuses: ['Being prepared'],
+          alt: 'An adult woman and man facing each other and smiling, their hands linked by a shared thread of light.',
+        },
       ],
-      note: 'Not available yet. There is no public download and no launch date.',
+      closingTop: 'Above the Physical.',
+      closingAccent: 'Beyond the Visible.',
+      closingLead: 'Discover the unseen forces that draw two souls together.',
+      consent: 'Taking part in matching is optional and needs your explicit consent. You can step away at any time.',
+      note: 'Matching, conversations and the Oracle are not available yet. There is no public download and no launch date.',
     },
     finalTitle: 'Start with a free reading today',
     finalLead:
