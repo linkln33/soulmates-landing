@@ -91,26 +91,6 @@ main { display: block; }
 @media (min-width: 900px) { .site-nav { display: flex; } }
 .header-tools { margin-left: auto; display: flex; align-items: center; gap: 8px; }
 
-/*
- * Header "Download app" button: a light aqua-blue between the palette's teal
- * (#00D8DA) and sky (#4C9BFF), the same in both themes, with navy ink:
- * 11.8:1 at rest and 10.3:1 on hover. The teal focus ring would be faint on
- * it, so it uses the text colour (navy in light, near-white in dark).
- */
-:root {
-  --download-bg: #9ADFF5;
-  --download-bg-hover: #7DD3EE;
-  --download-ink: var(--palette-navy);
-  --download-border: color-mix(in srgb, var(--palette-teal-deep) 30%, transparent);
-}
-.header-download { display: inline-flex; align-items: center; justify-content: center; gap: 6px; min-height: 44px; padding: 0 14px; border-radius: var(--r-pill); border: 1px solid var(--download-border); background: var(--download-bg); color: var(--download-ink); text-decoration: none; font-size: 14px; font-weight: 700; white-space: nowrap; flex-shrink: 0; transition: background .15s ease; }
-.header-download:hover { background: var(--download-bg-hover); }
-.header-download:focus-visible { outline-color: var(--text); border-radius: var(--r-pill); }
-.header-download svg { width: 16px; height: 16px; flex: none; }
-.header-download-full { display: none; }
-/* Full label where it fits; short beside the desktop nav until there is room (BG at 900px). */
-@media (min-width: 640px) and (max-width: 899px), (min-width: 1040px) { .header-download-full { display: inline; } .header-download-short { display: none; } }
-@media (prefers-reduced-motion: reduce) { .header-download { transition: none; } }
 
 .segmented { display: inline-flex; padding: 3px; border-radius: var(--r-pill); background: var(--surface-muted); border: 1px solid var(--border); gap: 2px; }
 .segmented a, .segmented button { border: 0; background: transparent; min-height: 34px; min-width: 40px; padding: 0 10px; border-radius: var(--r-pill); font-size: 13px; font-weight: 600; color: var(--text-muted); text-decoration: none; display: inline-flex; align-items: center; justify-content: center; gap: 6px; cursor: pointer; }
@@ -235,10 +215,10 @@ main { display: block; }
   background: linear-gradient(100deg, transparent, rgb(255 255 255 / .5), transparent);
   mix-blend-mode: plus-lighter; transform: skewX(-18deg); opacity: 0;
 }
-.btn-3d:hover { transform: translateY(-2px); box-shadow: var(--btn3d-lift), inset 0 1px 0 rgb(255 255 255 / .42), inset 0 -1px 0 rgb(0 0 0 / .18); filter: saturate(1.06); }
-.btn-3d:hover::after { animation: btnSheen .62s ease-out; }
+.btn-3d:hover, .header-download:hover > .btn-3d { transform: translateY(-2px); box-shadow: var(--btn3d-lift), inset 0 1px 0 rgb(255 255 255 / .42), inset 0 -1px 0 rgb(0 0 0 / .18); filter: saturate(1.06); }
+.btn-3d:hover::after, .header-download:hover > .btn-3d::after { animation: btnSheen .62s ease-out; }
 /* Press settles below rest and drops the lift, so the travel is felt. */
-.btn-3d:active { transform: translateY(1px); box-shadow: 0 1px 1px rgb(0 0 0 / .10), 0 2px 5px -2px rgb(0 0 0 / .26), inset 0 2px 5px rgb(0 0 0 / .26), inset 0 1px 0 rgb(255 255 255 / .12); }
+.btn-3d:active, .header-download:active > .btn-3d { transform: translateY(1px); box-shadow: 0 1px 1px rgb(0 0 0 / .10), 0 2px 5px -2px rgb(0 0 0 / .26), inset 0 2px 5px rgb(0 0 0 / .26), inset 0 1px 0 rgb(255 255 255 / .12); }
 .btn-3d.btn-glass {
   border-color: var(--glass-border);
   background-image: linear-gradient(180deg, rgb(255 255 255 / .30) 0%, rgb(255 255 255 / .06) 50%, rgb(0 0 0 / .05) 100%);
@@ -254,10 +234,41 @@ main { display: block; }
 @keyframes btnSheen { from { left: -60%; opacity: 0; } 35% { opacity: 1; } to { left: 115%; opacity: 0; } }
 /* Depth stays (it is the affordance); lift and sheen stop. */
 @media (prefers-reduced-motion: reduce) {
-  .btn-3d, .btn-3d:hover, .btn-3d:active { transform: none; transition: none; }
-  .btn-3d:hover::after { animation: none; }
+  .btn-3d, .btn-3d:hover, .btn-3d:active, .header-download:hover > .btn-3d, .header-download:active > .btn-3d { transform: none; transition: none; }
+  .btn-3d:hover::after, .header-download:hover > .btn-3d::after { animation: none; }
 }
 @media (forced-colors: active) { .btn-3d::before, .btn-3d::after { display: none; } }
+
+/*
+ * Header "Download app" button: the hero's 3D pill (.btn .btn-3d) in a
+ * smaller size (.btn-header, 36px visible) and a bright sky-aqua variant
+ * (.btn-sky) between the palette's teal #00D8DA and sky #4C9BFF, the same
+ * in both themes, with navy ink. Navy on #4FD2F6: 9.8:1 flat, 8.5:1 at the
+ * darkest point of the 3D gradient; hover #3FCDF5: 9.3:1 and 8.1:1. The
+ * link around it (.header-download) is the 44px touch target and drives
+ * the button's hover and press; its focus ring is drawn on the button in
+ * the text colour (the teal ring would be faint on sky-aqua).
+ */
+:root {
+  --download-bg: #4FD2F6;
+  --download-bg-hover: #3FCDF5;
+  --download-ink: var(--palette-navy);
+}
+.btn-header { min-height: 36px; padding: 0 14px; gap: 6px; font-size: 14px; white-space: nowrap; }
+.btn-header svg { width: 16px; height: 16px; flex: none; }
+.btn-sky { background-color: var(--download-bg); color: var(--download-ink); }
+.btn-3d.btn-sky {
+  border-color: color-mix(in srgb, var(--palette-navy) 22%, transparent);
+  background-image: linear-gradient(180deg, rgb(255 255 255 / .34) 0%, rgb(255 255 255 / .06) 48%, rgb(0 0 0 / .07) 100%);
+  box-shadow: var(--btn3d-rest), inset 0 1px 0 rgb(255 255 255 / .46), inset 0 -1px 0 rgb(0 0 0 / .20);
+}
+.btn-sky:hover, .header-download:hover > .btn-sky { background-color: var(--download-bg-hover); }
+.header-download { display: inline-flex; align-items: center; min-height: 44px; flex-shrink: 0; text-decoration: none; border-radius: var(--r-pill); }
+.header-download:focus-visible { outline: none; }
+.header-download:focus-visible > .btn { outline: 3px solid var(--text); outline-offset: 2px; }
+.header-download-full { display: none; }
+/* Full label where it fits; short beside the desktop nav until there is room (BG at 900px). */
+@media (min-width: 640px) and (max-width: 899px), (min-width: 1040px) { .header-download-full { display: inline; } .header-download-short { display: none; } }
 
 .field { display: flex; flex-direction: column; gap: 6px; }
 .field label { font-weight: 600; font-size: 14px; }

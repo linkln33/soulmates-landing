@@ -35,10 +35,13 @@ export function SiteHeader({ lang }: { lang: Locale }) {
         <div className="header-tools">
           <LangSwitch lang={lang} label={t.language} />
           {/* No public download yet: the button leads to the app page. Only one label is displayed at a time, so the accessible name matches the visible text. */}
+          {/* The link is the 44px touch target; the 3D pill inside is 36px. */}
           <Link href={`/${lang}/app`} className="header-download">
-            <Download aria-hidden />
-            <span className="header-download-full">{t.nav.download}</span>
-            <span className="header-download-short">{t.nav.downloadShort}</span>
+            <span className="btn btn-sky btn-3d btn-header">
+              <Download aria-hidden />
+              <span className="header-download-full">{t.nav.download}</span>
+              <span className="header-download-short">{t.nav.downloadShort}</span>
+            </span>
           </Link>
         </div>
       </div>
