@@ -289,9 +289,9 @@ const en = {
     ],
   },
   app: {
-    metaTitle: 'SoulMates Quest app: free readings, limited pilot, concealed matches',
+    metaTitle: 'SoulMates Quest dating app: free readings and concealed matches',
     metaDescription:
-      'Free readings are available today with no account. The SoulMates Quest app is in an invite-only limited pilot, where optional matches stay concealed until both people accept. No public download yet.',
+      'Explore free personal readings today without an account. SoulMates Quest is a dating app in an invite-only pilot with optional concealed matches that open after mutual acceptance. No public download yet.',
     breadcrumb: 'The app',
     eyebrow: 'Free readings today · App in limited pilot',
     title: 'Above the Physical. Beyond the Visible.',
