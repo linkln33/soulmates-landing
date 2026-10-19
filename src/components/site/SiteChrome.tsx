@@ -1,5 +1,6 @@
 /** Portal header and footer (server components; interactive parts in HeaderControls). */
 import Link from 'next/link';
+import { Download } from 'lucide-react';
 import type { Locale } from '@/i18n/config';
 import { site } from '@/i18n';
 import { footerColumns } from '@/lib/site/footer';
@@ -33,6 +34,12 @@ export function SiteHeader({ lang }: { lang: Locale }) {
         <NavLinks items={items} lang={lang} className="site-nav" label={t.nav.label} />
         <div className="header-tools">
           <LangSwitch lang={lang} label={t.language} />
+          {/* No public download yet: the button leads to the app page. Only one label is displayed at a time, so the accessible name matches the visible text. */}
+          <Link href={`/${lang}/app`} className="header-download">
+            <Download aria-hidden />
+            <span className="header-download-full">{t.nav.download}</span>
+            <span className="header-download-short">{t.nav.downloadShort}</span>
+          </Link>
         </div>
       </div>
       <NavLinks items={items} lang={lang} className="mobile-nav" label={t.nav.menu} />

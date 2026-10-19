@@ -13,6 +13,8 @@ const bg: SiteMessages = {
     moon: 'Луна',
     app: 'Приложението',
     menu: 'Меню',
+    download: 'Изтегли приложението',
+    downloadShort: 'Изтегли',
   },
   language: 'Език',
   footer: {

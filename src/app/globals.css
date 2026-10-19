@@ -91,6 +91,27 @@ main { display: block; }
 @media (min-width: 900px) { .site-nav { display: flex; } }
 .header-tools { margin-left: auto; display: flex; align-items: center; gap: 8px; }
 
+/*
+ * Header "Download app" button: a light aqua-blue between the palette's teal
+ * (#00D8DA) and sky (#4C9BFF), the same in both themes, with navy ink:
+ * 11.8:1 at rest and 10.3:1 on hover. The teal focus ring would be faint on
+ * it, so it uses the text colour (navy in light, near-white in dark).
+ */
+:root {
+  --download-bg: #9ADFF5;
+  --download-bg-hover: #7DD3EE;
+  --download-ink: var(--palette-navy);
+  --download-border: color-mix(in srgb, var(--palette-teal-deep) 30%, transparent);
+}
+.header-download { display: inline-flex; align-items: center; justify-content: center; gap: 6px; min-height: 44px; padding: 0 14px; border-radius: var(--r-pill); border: 1px solid var(--download-border); background: var(--download-bg); color: var(--download-ink); text-decoration: none; font-size: 14px; font-weight: 700; white-space: nowrap; flex-shrink: 0; transition: background .15s ease; }
+.header-download:hover { background: var(--download-bg-hover); }
+.header-download:focus-visible { outline-color: var(--text); border-radius: var(--r-pill); }
+.header-download svg { width: 16px; height: 16px; flex: none; }
+.header-download-full { display: none; }
+/* Full label where it fits; short beside the desktop nav until there is room (BG at 900px). */
+@media (min-width: 640px) and (max-width: 899px), (min-width: 1040px) { .header-download-full { display: inline; } .header-download-short { display: none; } }
+@media (prefers-reduced-motion: reduce) { .header-download { transition: none; } }
+
 .segmented { display: inline-flex; padding: 3px; border-radius: var(--r-pill); background: var(--surface-muted); border: 1px solid var(--border); gap: 2px; }
 .segmented a, .segmented button { border: 0; background: transparent; min-height: 34px; min-width: 40px; padding: 0 10px; border-radius: var(--r-pill); font-size: 13px; font-weight: 600; color: var(--text-muted); text-decoration: none; display: inline-flex; align-items: center; justify-content: center; gap: 6px; cursor: pointer; }
 .segmented [aria-current='true'], .segmented [aria-pressed='true'], .segmented [aria-selected='true'] { background: var(--surface); color: var(--text); box-shadow: var(--shadow-1); }

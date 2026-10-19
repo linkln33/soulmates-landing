@@ -15,6 +15,8 @@ const en = {
     moon: 'Moon',
     app: 'The app',
     menu: 'Menu',
+    download: 'Download app',
+    downloadShort: 'Download',
   },
   language: 'Language',
   footer: {
