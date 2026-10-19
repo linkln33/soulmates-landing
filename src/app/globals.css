@@ -240,7 +240,7 @@ main { display: block; }
 @media (forced-colors: active) { .btn-3d::before, .btn-3d::after { display: none; } }
 
 /*
- * Header "Explore the app" button (labelled "Download app" until 19 Oct; no public download exists): the hero's 3D pill (.btn .btn-3d) in a
+ * Header "Download app" button: the hero's 3D pill (.btn .btn-3d) in a
  * smaller size (.btn-header, 36px visible) and a bright sky-aqua variant
  * (.btn-sky) between the palette's teal #00D8DA and sky #4C9BFF, the same
  * in both themes, with navy ink. Navy on #4FD2F6: 9.8:1 flat, 8.5:1 at the
