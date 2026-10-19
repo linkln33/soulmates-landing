@@ -1,6 +1,6 @@
 # Delete your SoulMates Quest account
 
-Last updated: 18 October 2026 (draft)
+Last updated: 19 October 2026 (draft)
 
 ## 1. In the app
 
@@ -16,12 +16,13 @@ Write from the email address you use for SoulMates Quest. If we cannot match you
 
 ## 4. What is deleted
 
-Your account, profile, photos, birth details, location, answers, interests, agreements, reading history, matches and messages, your quizzes and your friends' answers to them, and your own answers to other members' quizzes.
+Your account, profile, photos, birth details, location, answers, interests, agreements, reading history, matches and messages, comparisons with other members, your Oracle conversations, your quizzes and your friends' answers to them, and your own answers to other members' quizzes. Your sign-in record held by our authentication provider is deleted too [to be confirmed: applies from the next app update].
 
 ## 5. What is kept
 
 - **Safety reports** made by you or about you, and the evidence saved with them, without the link to your account. They are deleted automatically 12 months after the report was submitted.
-- **Your sign-in record**, if you signed in with Google, Apple or an email link. This record is held by our authentication provider and is not yet removed automatically when you delete your account. How it is removed: [to be confirmed]
+- **Only if your account was restricted for safety reasons, was waiting for an age review, or had open reports about it when you deleted it:** a pseudonymous record (keyed one-way codes of your sign-in details, such as your email address, with the kind of restriction and the dates), so that the restriction cannot be undone by creating the account again. It holds no profile, photos or messages, and it is deleted after the report-retention period [12 months, to be confirmed]. See the [Privacy Notice](/en/privacy), section 12.
+- **Oracle purchase records**, if you bought the Oracle: [period to be confirmed]
 - **Backups:** copies may remain in backups for [period to be confirmed].
 - **Our correspondence** about your request: [period to be confirmed]
 

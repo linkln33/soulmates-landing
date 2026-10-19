@@ -314,7 +314,7 @@ const en = {
       { title: 'Use the free readings', body: 'Everything on this website stays free and complete, with or without an account.' },
       { title: 'Create your account in the app', body: 'When the pilot opens, you sign in with Google or with an email and password. Your readings start with your birth date.' },
       { title: 'For adults only', body: 'SoulMates Quest is for people aged 18 or over. You confirm your age when you create your account.' },
-      { title: 'Matching only if you choose it', body: 'Taking part in matching is your choice. The app asks for your explicit consent before it collects anything about who you would like to meet, and you can withdraw that consent later.' },
+      { title: 'Matching only if you choose it', body: 'Taking part in matching is your choice. Before matching uses who you would like to meet or your more personal answers, the app asks for your explicit consent in a separate step, and you can withdraw it later. Your personal readings don’t need it.' },
     ],
     profileTitle: 'Your profile grows gradually',
     profile:

@@ -1,6 +1,6 @@
 # Terms of Use
 
-Last updated: 18 October 2026 (draft)
+Last updated: 19 October 2026 (draft)
 
 ## 1. Who we are
 
@@ -25,7 +25,7 @@ These terms are an agreement between you and us. Our [Privacy Notice](/en/privac
 
 - **Readings:** horoscope, tarot, numerology and the Moon calendar on the website and, in the app, personal readings based on your birth details and answers.
 - **The friends' quiz:** you can share a short quiz with friends. Their answers reach only you.
-- **Matching** is not publicly available. It is being prepared for a **limited pilot**. Taking part will need a separate agreement in the app, including explicit consent for information that can reveal your sexual orientation.
+- **Matching** is not publicly available. It is being prepared for a **limited pilot**. Taking part will need a separate agreement in the app and, in its own step, your explicit consent for sensitive information (such as information that can reveal your sexual orientation, your beliefs or your intimacy preferences). Matches stay concealed until both members accept, and no compatibility score is shown yet. See the Privacy Notice, sections 7 and 8.
 - The app is not available in app stores. Features may be limited, changed, paused or withdrawn, and we do not promise that any feature will be released or available at a particular time.
 - We do not promise that you will meet anyone or that any person will suit you.
 
