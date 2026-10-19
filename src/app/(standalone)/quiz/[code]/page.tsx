@@ -23,8 +23,8 @@ export async function generateMetadata({ searchParams }: Props): Promise<Metadat
     title: m.metaTitle,
     description: m.metaDescription,
     robots: { index: false, follow: false },
-    openGraph: { title: m.metaTitle, description: m.metaDescription, type: 'website', images: [{ url: '/logo.png', width: 1024, height: 1024 }] },
-    twitter: { card: 'summary', title: m.metaTitle, description: m.metaDescription, images: ['/logo.png'] },
+    openGraph: { title: m.metaTitle, description: m.metaDescription, type: 'website', images: [{ url: '/brand/quiz-mark-1024.png', width: 1024, height: 1024 }] },
+    twitter: { card: 'summary', title: m.metaTitle, description: m.metaDescription, images: ['/brand/quiz-mark-1024.png'] },
   };
 }
 

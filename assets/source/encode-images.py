@@ -4,7 +4,8 @@ needs Pillow with AVIF/WebP):
   (transparent margin only), as AVIF and WebP at 640/960/1280/full width.
 - public/brand/: the header/footer logo at 56/112/168 px wide (1x/2x/3x)
   from the synced public/app-content/logo.png, the quiz header mark at
-  32/64/96 px from public/logo.png, and small favicons from public/favicon.png.
+  32/64/96 px from public/brand/quiz-mark-1024.png, and small favicons from
+  public/brand/favicon-source.png.
 """
 from pathlib import Path
 from PIL import Image
@@ -28,10 +29,10 @@ brand.mkdir(exist_ok=True)
 logo = Image.open(ROOT / 'public/app-content/logo.png').convert('RGBA')
 for w in (56, 112, 168):
     sized(logo, w).save(brand / f'logo-{w}.webp', 'WEBP', quality=90, method=6)
-mark = Image.open(ROOT / 'public/logo.png').convert('RGBA')
+mark = Image.open(brand / 'quiz-mark-1024.png').convert('RGBA')
 for w in (32, 64, 96):
     sized(mark, w).save(brand / f'mark-{w}.webp', 'WEBP', quality=90, method=6)
-fav = Image.open(ROOT / 'public/favicon.png').convert('RGBA')
+fav = Image.open(brand / 'favicon-source.png').convert('RGBA')
 for w in (32, 192):
     sized(fav, w).save(brand / f'icon-{w}.png', optimize=True)
 print('brand', sorted(p.name for p in brand.iterdir()))
