@@ -1,6 +1,6 @@
 /** Portal header and footer (server components; interactive parts in HeaderControls). */
 import Link from 'next/link';
-import { Download } from 'lucide-react';
+import { Smartphone } from 'lucide-react';
 import type { Locale } from '@/i18n/config';
 import { site } from '@/i18n';
 import { footerColumns } from '@/lib/site/footer';
@@ -34,11 +34,11 @@ export function SiteHeader({ lang }: { lang: Locale }) {
         <NavLinks items={items} lang={lang} className="site-nav" label={t.nav.label} />
         <div className="header-tools">
           <LangSwitch lang={lang} label={t.language} />
-          {/* No public download yet: the button leads to the app page. Only one label is displayed at a time, so the accessible name matches the visible text. */}
+          {/* No public download yet, so the button says what it does (explore the app page), not "Download". Only one label is displayed at a time, so the accessible name matches the visible text. */}
           {/* The link is the 44px touch target; the 3D pill inside is 36px. */}
           <Link href={`/${lang}/app`} className="header-download">
             <span className="btn btn-sky btn-3d btn-header">
-              <Download aria-hidden />
+              <Smartphone aria-hidden />
               <span className="header-download-full">{t.nav.download}</span>
               <span className="header-download-short">{t.nav.downloadShort}</span>
             </span>
