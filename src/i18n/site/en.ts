@@ -296,7 +296,7 @@ const en = {
     eyebrow: 'Free readings today · App in limited pilot',
     title: 'Above the Physical. Beyond the Visible.',
     lead:
-      'Start with free readings here on the website, today, with no account. The SoulMates Quest app is in a small, invite-only pilot. Inside it, matching is optional, and every possible match stays concealed until both of you accept.',
+      'Your journey toward a soulmate begins with getting to know yourself. Explore free readings and daily guidance; when you’re ready, choose to discover possible connections. Each connection opens only when you both accept.',
     facts: [
       { label: 'Free readings', value: 'Available today on this website' },
       { label: 'The app', value: 'Invite-only limited pilot' },
@@ -311,7 +311,7 @@ const en = {
     statusLabels: { today: 'Available today', pilot: 'Limited pilot', planned: 'Planned' },
     sequence: {
       eyebrow: 'Inside the app',
-      title: 'From your day to a conversation',
+      title: 'The quest: know yourself, find a connection, explore it together',
       lead: 'Four moments in the app, recreated from its current screens. The people are fictional adults and no member’s data is shown.',
       steps: [
         {
@@ -321,7 +321,7 @@ const en = {
         },
         {
           title: 'A concealed possible match',
-          body: 'If you choose to take part in matching, possible matches appear as abstract lights with a status. No name, no photo, no profile, and no score.',
+          body: 'If you choose to take part in matching, possible matches appear as abstract lights with a status. Who the other person is stays hidden: no name and no profile until you both accept.',
           alt: 'Recreated Matches screen: three possible matches shown only as abstract coloured circles with a heart, labelled New, Seen and Waiting for the other person.',
         },
         {
@@ -410,7 +410,7 @@ const en = {
           lead: 'Not available yet, with no date promised',
           items: [
             'A public release in the App Store and Google Play',
-            'A compatibility reading for an open match, only once it has been verified',
+            'Compatibility results, shown only when a pair’s result passes verification, and a deeper connection reading for open matches',
             'The Oracle, an optional paid guide. It is switched off.',
           ],
         },
@@ -429,11 +429,11 @@ const en = {
         },
         {
           q: 'How does concealment work?',
-          a: 'Before a match opens, you see only an abstract visual and a status. No name, photo, profile, age or location is shown, and nothing about you is shown to the other person either.',
+          a: 'Before a match opens, members see an abstract visual and a status in place of the other person. Their name, photos, profile, age and location stay hidden, and the same applies to what they see about you.',
         },
         {
-          q: 'When does a photo appear?',
-          a: 'Only after both of you have accepted the match. Until then neither of you sees the other’s photos, name or profile.',
+          q: 'When do photos appear?',
+          a: 'When both of you have accepted and the match opens. That is when you see each other’s photos, name and profile.',
         },
         {
           q: 'Is matching optional?',
@@ -445,7 +445,7 @@ const en = {
         },
         {
           q: 'Do you show compatibility scores?',
-          a: 'Not today. A compatibility reading will appear only for open matches, and only once it has been checked and verified. We don’t guess compatibility from a star sign or a number.',
+          a: 'Not yet: compatibility is being prepared. Once it is released, a possible match, even a concealed one, can show an overall result, but only when that pair’s result has passed verification. The deeper reading of a connection belongs to an opened match. We never guess compatibility from a star sign or a number.',
         },
         {
           q: 'Who can join?',
