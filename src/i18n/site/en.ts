@@ -22,6 +22,16 @@ const en = {
   footer: {
     tagline: 'Free readings for reflection. Real people when the time is right.',
     navLabel: 'Footer',
+    homeLabel: 'SoulMates Quest home page',
+    socialLabel: 'Follow SoulMates Quest',
+    social: {
+      instagram: 'SoulMates Quest on Instagram (opens in a new tab)',
+      tiktok: 'SoulMates Quest on TikTok (opens in a new tab)',
+      facebook: 'SoulMates Quest on Facebook (opens in a new tab)',
+      youtube: 'SoulMates Quest on YouTube (opens in a new tab)',
+      x: 'SoulMates Quest on X (opens in a new tab)',
+      linkedin: 'SoulMates Quest on LinkedIn (opens in a new tab)',
+    },
     banner: {
       titleTop: 'Above the Physical.',
       titleAccent: 'Beyond the Visible.',

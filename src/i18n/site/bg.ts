@@ -20,6 +20,16 @@ const bg: SiteMessages = {
   footer: {
     tagline: 'Безплатни прочити за размисъл. Истински хора, когато му дойде времето.',
     navLabel: 'Долно меню',
+    homeLabel: 'Начална страница на SoulMates Quest',
+    socialLabel: 'Последвай SoulMates Quest',
+    social: {
+      instagram: 'SoulMates Quest в Instagram (отваря се в нов раздел)',
+      tiktok: 'SoulMates Quest в TikTok (отваря се в нов раздел)',
+      facebook: 'SoulMates Quest във Facebook (отваря се в нов раздел)',
+      youtube: 'SoulMates Quest в YouTube (отваря се в нов раздел)',
+      x: 'SoulMates Quest в X (отваря се в нов раздел)',
+      linkedin: 'SoulMates Quest в LinkedIn (отваря се в нов раздел)',
+    },
     banner: {
       titleTop: 'Над физическото.',
       titleAccent: 'Отвъд видимото.',

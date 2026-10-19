@@ -3,7 +3,9 @@ import Link from 'next/link';
 import { Download } from 'lucide-react';
 import type { Locale } from '@/i18n/config';
 import { site } from '@/i18n';
+import { FacebookLogo, InstagramLogo, LinkedinLogo, TiktokLogo, XLogo, YoutubeLogo } from '@phosphor-icons/react/dist/ssr';
 import { footerColumns } from '@/lib/site/footer';
+import { socialLinks, type SocialNetwork } from '@/lib/site/social';
 import StoreBadges from './StoreBadges';
 import CookieSettingsButton from './CookieSettingsButton';
 import { LangSwitch, NavLinks, type NavItem } from './HeaderControls';
@@ -71,6 +73,31 @@ function AppBanner({ lang }: { lang: Locale }) {
   );
 }
 
+const SOCIAL_ICONS: Record<SocialNetwork, typeof InstagramLogo> = {
+  instagram: InstagramLogo, tiktok: TiktokLogo, facebook: FacebookLogo, youtube: YoutubeLogo, x: XLogo, linkedin: LinkedinLogo,
+};
+
+/** Social icons from src/lib/site/social.ts: only networks with a URL (all six with SOCIAL_PREVIEW=1). */
+function SocialLinks({ lang }: { lang: Locale }) {
+  const t = site(lang).footer;
+  const links = socialLinks(undefined, process.env.SOCIAL_PREVIEW === '1');
+  if (!links.length) return null;
+  return (
+    <ul className="footer-social" aria-label={t.socialLabel}>
+      {links.map(({ network, href }) => {
+        const Icon = SOCIAL_ICONS[network];
+        return (
+          <li key={network}>
+            <a href={href} target="_blank" rel="noopener noreferrer" aria-label={t.social[network]}>
+              <Icon weight="fill" aria-hidden />
+            </a>
+          </li>
+        );
+      })}
+    </ul>
+  );
+}
+
 export function SiteFooter({ lang }: { lang: Locale }) {
   const t = site(lang);
   return (
@@ -78,6 +105,14 @@ export function SiteFooter({ lang }: { lang: Locale }) {
       <AppBanner lang={lang} />
       <footer className="site-footer">
         <div className="wrap">
+          <div className="footer-brand">
+            {/* The header's logo at twice its size (56x27 there, 112x54 here). */}
+            <Link href={`/${lang}`} className="footer-logo">
+              {/* eslint-disable-next-line @next/next/no-img-element */}
+              <img src="/brand/logo-112.webp" srcSet="/brand/logo-112.webp 1x, /brand/logo-224.webp 2x, /brand/logo-336.webp 3x" alt={t.footer.homeLabel} width={112} height={54} loading="lazy" decoding="async" />
+            </Link>
+            <SocialLinks lang={lang} />
+          </div>
           <nav aria-label={t.footer.navLabel} className="footer-grid">
             {footerColumns(lang).map((col) => (
               <section key={col.key} aria-labelledby={`footer-${col.key}`}>
