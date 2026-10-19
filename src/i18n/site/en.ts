@@ -292,7 +292,7 @@ const en = {
     metaTitle: 'The SoulMates Quest app',
     metaDescription:
       'The SoulMates Quest app is being prepared for a limited pilot. It isn’t in the App Store or Google Play yet. Here is what it is for and how it is intended to work.',
-    title: 'The SoulMates Quest app',
+    title: 'Above the Physical. Beyond the Visible.',
     lead:
       'The app is being prepared for a limited pilot. It will bring your readings into one personal place, and, for members who choose to take part, a careful, compatibility-led way to meet real people.',
     statusTitle: 'Where things stand',
