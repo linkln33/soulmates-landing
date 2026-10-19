@@ -54,6 +54,16 @@ const en = {
     company: 'Company number 15724723',
     note: 'Readings follow traditional astrology, tarot and numerology. They are for reflection, not prediction.',
   },
+  consent: {
+    title: 'Cookies for visit statistics',
+    body: 'With your permission we use Google Analytics, which sets cookies, to count visits and see which pages are used. Nothing from Google loads unless you accept. A cookie-free visit count runs either way. You can change your choice at any time under “Cookie settings” at the bottom of the page.',
+    privacyLink: 'Cookies and local storage',
+    accept: 'Accept',
+    reject: 'Reject',
+    currentGranted: 'Your current choice: accepted.',
+    currentDenied: 'Your current choice: rejected.',
+    settings: 'Cookie settings',
+  },
   docs: {
     draftBanner: 'Draft under legal review. This text is not final and may change. Details marked [to be confirmed] are still being settled.',
     draftSuffix: '(draft)',

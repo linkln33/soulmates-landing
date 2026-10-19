@@ -26,7 +26,7 @@ In the United Kingdom, the UK GDPR and the Data Protection Act 2018 apply. In th
 
 ## 4. Website, no account
 
-The free readings need no account. To count visits and see which pages are used, the website uses **Google Analytics**, which sets cookies, and **Vercel Web Analytics**, which does not. It uses no advertising tools. See section 14.
+The free readings need no account. To count visits and see which pages are used, the website uses **Vercel Web Analytics**, which sets no cookies and stores nothing in your browser, and, **only if you accept it in the cookie banner**, **Google Analytics**, which sets cookies. It uses no advertising tools. See section 14.
 
 | What you do | What we receive | What we keep |
 |---|---|---|
@@ -88,7 +88,7 @@ Other members see only what section 8 describes. Our service providers act on ou
 |---|---|
 | Supabase | Database, photo storage, sign-in service |
 | Vercel | Hosting of the website and the app's server |
-| Google (Google Analytics) | Website visit statistics: pages viewed, device and browser type, approximate location, through cookies |
+| Google (Google Analytics) | Website visit statistics, only if you accept it: pages viewed, device and browser type, approximate location, through cookies |
 | Vercel Web Analytics | Website visit statistics, without cookies |
 | Expo, with Apple and Google push services | Push notifications |
 | Google Sign-In, Sign in with Apple | Only if you choose them; each is a separate controller for your account with them |
@@ -134,10 +134,15 @@ The app and the friends' quiz are for people aged **18 or over**. If you think s
 
 ## 14. Cookies and local storage {#cookies-local-storage}
 
-Google Analytics sets cookies on the website (names beginning with `_ga`) to tell visits apart. They last up to 2 years, and you can delete or block them in your browser. Private quiz links and deletion links are never sent to either analytics tool. Your browser's local storage also keeps what the tarot features need:
+On your first visit, a banner asks whether you allow Google Analytics, with **Accept** and **Reject** as equal choices. Until you accept, nothing is loaded from Google and no Google cookies are set; if you reject, or make no choice, Google Analytics never loads. If you accept, Google Analytics sets cookies (names beginning with `_ga`) to tell visits apart. They last up to 2 years. You can change your choice at any time with **Cookie settings** at the bottom of every page; if you withdraw, we delete these cookies and Google Analytics stops loading. Your consent is the legal basis for Google Analytics.
+
+Vercel Web Analytics counts visits without cookies and without storing anything in your browser, so it runs whatever you choose. Private quiz links and deletion links are never sent to either analytics tool.
+
+Your browser's local storage keeps your cookie choice and what the tarot features need:
 
 | Item | Why | How long |
 |---|---|---|
+| Your cookie choice | Remembers whether you accepted or rejected Google Analytics, so the banner does not ask again | 12 months, then the banner asks again; you can change it at any time |
 | A random identifier | Keeps your card of the day the same all day; our server does not store it | Deleted after 365 days without use; you can clear it at any time |
 | Today's card | Shows it again without a new request | Until local midnight |
 | Your last draw and its question | Refreshing the page does not redraw | 30 days |

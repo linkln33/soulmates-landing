@@ -52,7 +52,7 @@ export default async function PortalLayout({ children, params }: LayoutProps<'/[
         <main id="main">{children}</main>
         <SiteFooter lang={lang} />
         <StorageSweep />
-        <SiteAnalytics />
+        <SiteAnalytics text={site(lang).consent} privacyHref={`/${lang}/privacy#cookies-local-storage`} />
       </body>
     </html>
   );

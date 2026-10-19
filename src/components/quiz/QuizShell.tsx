@@ -1,6 +1,9 @@
 import type { ReactNode } from 'react';
 import Link from 'next/link';
 import { LANGS, messages, type Lang } from '@/lib/quiz/messages';
+import { site } from '@/i18n';
+import SiteAnalytics from '@/components/site/SiteAnalytics';
+import CookieSettingsButton from '@/components/site/CookieSettingsButton';
 
 /** EN | БГ switcher. Keeps the current path and the given query parameters. */
 function LangSwitch({ lang, path, query }: { lang: Lang; path: string; query: Record<string, string> }) {
@@ -28,7 +31,7 @@ function LangSwitch({ lang, path, query }: { lang: Lang; path: string; query: Re
   );
 }
 
-/** Page frame for the quiz pages: scoped theme root, header with switcher, footer. */
+/** Page frame for the quiz pages: scoped theme root, header with switcher, footer, analytics and the cookie banner. */
 export default function QuizShell({
   lang,
   path,
@@ -54,7 +57,10 @@ export default function QuizShell({
       <main className="lx-main">{children}</main>
       <footer className="lx-foot">
         <Link href="/">{m.homeLink}</Link>
+        <span aria-hidden="true"> · </span>
+        <CookieSettingsButton label={site(lang).consent.settings} />
       </footer>
+      <SiteAnalytics text={site(lang).consent} privacyHref={`/${lang}/privacy#cookies-local-storage`} />
     </div>
   );
 }

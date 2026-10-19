@@ -4,6 +4,7 @@ import type { Locale } from '@/i18n/config';
 import { site } from '@/i18n';
 import { footerColumns } from '@/lib/site/footer';
 import StoreBadges from './StoreBadges';
+import CookieSettingsButton from './CookieSettingsButton';
 import { LangSwitch, NavLinks, type NavItem } from './HeaderControls';
 
 function navItems(lang: Locale): NavItem[] {
@@ -89,6 +90,7 @@ export function SiteFooter({ lang }: { lang: Locale }) {
           <p className="note small subtle">{t.footer.note}</p>
           <div className="footer-bottom">
             <p className="small subtle">© {new Date().getFullYear()} REAL4LIFE LTD · {t.footer.company}</p>
+            <CookieSettingsButton label={t.consent.settings} />
             <LangSwitch lang={lang} label={t.language} />
           </div>
         </div>

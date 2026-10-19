@@ -1,12 +1,12 @@
 /**
  * Root layout for pages outside the localised portal: the friends' quiz
  * (/quiz/…, language from ?lang or the browser).
- * Same fonts, tokens and theme as the portal.
+ * Same fonts, tokens and theme as the portal. Analytics and the cookie
+ * banner are in QuizShell, which knows the page's language.
  */
 import type { Metadata, Viewport } from 'next';
 import '../globals.css';
 import StorageSweep from '@/components/site/StorageSweep';
-import SiteAnalytics from '@/components/site/SiteAnalytics';
 import { SITE_URL } from '@/lib/site/config';
 import { TOKENS_CSS } from '@/lib/design/tokens';
 import { THEME_SCRIPT } from '@/lib/design/theme';
@@ -38,7 +38,6 @@ export default function StandaloneLayout({ children }: { children: React.ReactNo
       <body className={inter.variable}>
         {children}
         <StorageSweep />
-        <SiteAnalytics />
       </body>
     </html>
   );

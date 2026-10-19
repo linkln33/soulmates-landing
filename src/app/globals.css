@@ -418,3 +418,18 @@ code { font-size: .92em; background: var(--surface-muted); padding: 1px 5px; bor
 .app-banner-actions { display: flex; flex-direction: column; gap: 14px; align-items: flex-start; }
 @media (min-width: 900px) { .app-banner-actions { align-items: flex-end; } }
 @media (min-width: 900px) { .app-banner-title span { white-space: nowrap; } }
+
+/* Cookie banner (SiteAnalytics): Accept and Reject carry the same weight, same size and style. */
+.consent-banner { position: fixed; z-index: 70; left: 16px; right: 16px; bottom: max(16px, env(safe-area-inset-bottom)); display: flex; justify-content: center; pointer-events: none; }
+.consent-inner { pointer-events: auto; width: 100%; max-width: 640px; padding: var(--s-lg); border: 1px solid var(--border); border-radius: var(--r-lg); background: var(--surface); color: var(--text); box-shadow: 0 12px 30px rgba(15, 26, 46, .16); }
+.consent-title { font-size: 17px; font-weight: 700; line-height: 1.3; margin: 0 0 6px; color: var(--text); }
+.consent-body, .consent-current { font-size: 14px; line-height: 1.5; color: var(--text-muted); margin: 0; }
+.consent-body a { color: var(--link); }
+.consent-current { margin-top: 6px; }
+.consent-actions { display: grid; grid-template-columns: 1fr 1fr; gap: 12px; margin-top: var(--s-md); }
+.consent-choice { width: 100%; background: color-mix(in srgb, var(--text) 7%, var(--surface)); color: var(--text); border-color: var(--border); }
+.consent-choice:hover { border-color: color-mix(in srgb, var(--text) 42%, transparent); }
+.cookie-settings { background: none; border: 0; padding: 0; font: inherit; font-size: 14px; color: var(--text-muted); text-decoration: underline; text-underline-offset: 2px; cursor: pointer; min-height: 32px; }
+.cookie-settings:hover { color: var(--text); }
+.lexicon .cookie-settings { color: var(--lx-text-muted); }
+@media (pointer: coarse) { .cookie-settings { min-height: 44px; } }
