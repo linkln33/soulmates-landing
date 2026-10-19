@@ -43,6 +43,28 @@
     "tarot-dark-1200.avif": 160189,
     "tarot-dark-1200.webp": 183826
    }
+  },
+  "moon-light": {
+   "source": "SoulMates-Quest-mobile/assets/cards/moon-light.jpg",
+   "sourceSha256": "616147d028dd5dd6e20d4bd02caf0cc23662c1f3af0901db650fbc01fcc20a7a",
+   "appCommit": "617ba324e51cc5d80d00b0bf60b9f733fd768cad",
+   "outputs": {
+    "moon-light-600.avif": 26093,
+    "moon-light-600.webp": 33398,
+    "moon-light-1200.avif": 74521,
+    "moon-light-1200.webp": 97160
+   }
+  },
+  "moon-dark": {
+   "source": "SoulMates-Quest-mobile/assets/cards/moon-dark.jpg",
+   "sourceSha256": "197e0ac8c6ca260fd6e79909631ec709b218c7019f2250b063cadba97ea08e44",
+   "appCommit": "617ba324e51cc5d80d00b0bf60b9f733fd768cad",
+   "outputs": {
+    "moon-dark-600.avif": 29147,
+    "moon-dark-600.webp": 37792,
+    "moon-dark-1200.avif": 77279,
+    "moon-dark-1200.webp": 102178
+   }
   }
  },
  "note": "owner-supplied artwork, copied from the mobile assets/cards (SoulMates-Quest-mobile/assets/cards). The originals stay untouched; regenerate with scripts/make-covers.mjs."

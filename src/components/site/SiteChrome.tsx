@@ -105,11 +105,13 @@ export function SiteFooter({ lang }: { lang: Locale }) {
       <AppBanner lang={lang} />
       <footer className="site-footer">
         <div className="wrap">
+          {/* Logo with the social icons under it, the four link columns to its right (owner, 20 Oct 2026); stacked on phones. */}
+          <div className="footer-main">
           <div className="footer-brand">
-            {/* The header's logo at twice its size (56x27 there, 112x54 here). */}
+            {/* The header's logo at three times its size (56x27 there, 168x81 here). */}
             <Link href={`/${lang}`} className="footer-logo">
               {/* eslint-disable-next-line @next/next/no-img-element */}
-              <img src="/brand/logo-112.webp" srcSet="/brand/logo-112.webp 1x, /brand/logo-224.webp 2x, /brand/logo-336.webp 3x" alt={t.footer.homeLabel} width={112} height={54} loading="lazy" decoding="async" />
+              <img src="/brand/logo-168.webp" srcSet="/brand/logo-168.webp 1x, /brand/logo-336.webp 2x" alt={t.footer.homeLabel} width={168} height={81} loading="lazy" decoding="async" />
             </Link>
             <SocialLinks lang={lang} />
           </div>
@@ -132,7 +134,7 @@ export function SiteFooter({ lang }: { lang: Locale }) {
               </section>
             ))}
           </nav>
-          <p className="note small subtle">{t.footer.note}</p>
+          </div>
           <div className="footer-bottom">
             <p className="small subtle">© {new Date().getFullYear()} REAL4LIFE LTD · {t.footer.company}</p>
             <CookieSettingsButton label={t.consent.settings} />

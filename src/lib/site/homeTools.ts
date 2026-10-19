@@ -33,7 +33,7 @@ export const HOME_TOOLS: readonly HomeTool[] = [
   { key: 'horoscope', href: '/horoscope', art: 'horoscope-wheel', tile: 'horoscope', cover: 'horoscope' },
   { key: 'tarot', href: '/tarot', art: 'tarot', tile: 'tarot', cover: 'tarot' },
   { key: 'numbers', href: '/numbers', art: 'numbers', tile: 'numbers', cover: null },
-  { key: 'moon', href: '/moon', art: 'moon-phases', tile: 'moon-calendar', cover: null },
+  { key: 'moon', href: '/moon', art: 'moon-phases', tile: 'moon-calendar', cover: 'moon' },
 ];
 
 export const coverFile = (cover: string, theme: CoverTheme, width: number, format: CoverFormat) =>
