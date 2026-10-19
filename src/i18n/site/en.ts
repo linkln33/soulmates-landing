@@ -289,14 +289,14 @@ const en = {
     ],
   },
   app: {
-    metaTitle: 'SoulMates Quest dating app: free readings and concealed matches',
+    metaTitle: 'SoulMates Quest app: free readings, limited pilot, concealed matches',
     metaDescription:
-      'Explore free personal readings today without an account. SoulMates Quest is a dating app in an invite-only pilot with optional concealed matches that open after mutual acceptance. No public download yet.',
+      'Free readings are available today with no account. The SoulMates Quest app is in an invite-only limited pilot, where optional matches stay concealed until both people accept. No public download yet.',
     breadcrumb: 'The app',
     eyebrow: 'Free readings today · App in limited pilot',
     title: 'Above the Physical. Beyond the Visible.',
     lead:
-      'SoulMates Quest is a dating app in a small, invite-only pilot, combining free personal readings with optional concealed matching. You can use the complete readings on this website today, without an account. In the app, a possible match stays concealed until both of you accept.',
+      'Start with free readings here on the website, today, with no account. The SoulMates Quest app is in a small, invite-only pilot. Inside it, matching is optional, and every possible match stays concealed until both of you accept.',
     facts: [
       { label: 'Free readings', value: 'Available today on this website' },
       { label: 'The app', value: 'Invite-only limited pilot' },
@@ -321,7 +321,7 @@ const en = {
         },
         {
           title: 'A concealed possible match',
-          body: 'If you choose to take part in matching, a possible match appears through a concealed visual and a status. No name, identifiable photo, profile or unverified score is shown.',
+          body: 'If you choose to take part in matching, possible matches appear as abstract lights with a status. No name, no photo, no profile, and no score.',
           alt: 'Recreated Matches screen: three possible matches shown only as abstract coloured circles with a heart, labelled New, Seen and Waiting for the other person.',
         },
         {
@@ -410,7 +410,7 @@ const en = {
           lead: 'Not available yet, with no date promised',
           items: [
             'A public release in the App Store and Google Play',
-            'A brief compatibility result for a possible match and a detailed reading after it opens, only when each result is verified',
+            'A compatibility reading for an open match, only once it has been verified',
             'The Oracle, an optional paid guide. It is switched off.',
           ],
         },
@@ -429,11 +429,11 @@ const en = {
         },
         {
           q: 'How does concealment work?',
-          a: 'Before a match opens, you see a concealed visual and a status, without an identifiable photo, name, profile, age or location. Your identity stays concealed from the other person too.',
+          a: 'Before a match opens, you see only an abstract visual and a status. No name, photo, profile, age or location is shown, and nothing about you is shown to the other person either.',
         },
         {
           q: 'When does a photo appear?',
-          a: 'A full, identifiable photo appears only after both of you have accepted the match. Until then neither of you sees the other’s name or profile.',
+          a: 'Only after both of you have accepted the match. Until then neither of you sees the other’s photos, name or profile.',
         },
         {
           q: 'Is matching optional?',
@@ -445,7 +445,7 @@ const en = {
         },
         {
           q: 'Do you show compatibility scores?',
-          a: 'Not today. Once a result is verified for a particular pair, a brief result may appear with a possible match. A detailed compatibility reading is for an open match. We don’t guess pair compatibility from a star sign or a number.',
+          a: 'Not today. A compatibility reading will appear only for open matches, and only once it has been checked and verified. We don’t guess compatibility from a star sign or a number.',
         },
         {
           q: 'Who can join?',
