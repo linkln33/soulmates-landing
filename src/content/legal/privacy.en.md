@@ -26,7 +26,7 @@ In the United Kingdom, the UK GDPR and the Data Protection Act 2018 apply. In th
 
 ## 4. Website, no account
 
-The free readings need no account. The website sets **no cookies** and uses **no analytics or advertising tools**.
+The free readings need no account. To count visits and see which pages are used, the website uses **Google Analytics**, which sets cookies, and **Vercel Web Analytics**, which does not. It uses no advertising tools. See section 14.
 
 | What you do | What we receive | What we keep |
 |---|---|---|
@@ -88,6 +88,8 @@ Other members see only what section 8 describes. Our service providers act on ou
 |---|---|
 | Supabase | Database, photo storage, sign-in service |
 | Vercel | Hosting of the website and the app's server |
+| Google (Google Analytics) | Website visit statistics: pages viewed, device and browser type, approximate location, through cookies |
+| Vercel Web Analytics | Website visit statistics, without cookies |
 | Expo, with Apple and Google push services | Push notifications |
 | Google Sign-In, Sign in with Apple | Only if you choose them; each is a separate controller for your account with them |
 | Location search service | Finding the city you type [to be confirmed] |
@@ -132,7 +134,7 @@ The app and the friends' quiz are for people aged **18 or over**. If you think s
 
 ## 14. Cookies and local storage {#cookies-local-storage}
 
-The website sets no cookies. Your browser's local storage keeps only what the tarot features need:
+Google Analytics sets cookies on the website (names beginning with `_ga`) to tell visits apart. They last up to 2 years, and you can delete or block them in your browser. Private quiz links and deletion links are never sent to either analytics tool. Your browser's local storage also keeps what the tarot features need:
 
 | Item | Why | How long |
 |---|---|---|

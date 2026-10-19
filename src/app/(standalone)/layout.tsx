@@ -6,6 +6,7 @@
 import type { Metadata, Viewport } from 'next';
 import '../globals.css';
 import StorageSweep from '@/components/site/StorageSweep';
+import SiteAnalytics from '@/components/site/SiteAnalytics';
 import { SITE_URL } from '@/lib/site/config';
 import { TOKENS_CSS } from '@/lib/design/tokens';
 import { THEME_SCRIPT } from '@/lib/design/theme';
@@ -37,6 +38,7 @@ export default function StandaloneLayout({ children }: { children: React.ReactNo
       <body className={inter.variable}>
         {children}
         <StorageSweep />
+        <SiteAnalytics />
       </body>
     </html>
   );
