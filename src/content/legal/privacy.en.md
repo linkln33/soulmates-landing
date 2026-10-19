@@ -53,15 +53,15 @@ A member can send a friend a link to a short quiz. If you answer it, we collect 
 - **Birth details:** date, time (or "unknown") and place of birth, for your personal readings and to confirm you are 18 or over.
 - **Profile:** name, short bio, gender identity, photos.
 - **Your answers** to the app's questions, and the insights we draw from them. Some questions ask about your values, your spiritual life and your intimacy preferences; see section 7.
-- **If you take part in matching:** who you want to meet, age range and interests.
-- **Location** (optional): city and approximate coordinates, only for distance limits. Only you see your city; other members never see your city, your location or how far away you are.
+- **If you take part in matching:** who you want to meet, the kind of connection you are looking for, age range and interests.
+- **Location** (optional): your city and your position (to about 100 m), only for distance limits. If you choose to use your current location, your phone's own location service (from Google or Apple) turns your position into a city name. Only you see your city; other members never see your city, your location or how far away you are.
 - **Messages**, quizzes you create, your answers to other members' quizzes, blocks and reports.
 - **The Oracle**, only if you use it: your questions, its answers and your access to it. See section 9.
 - **Technical records:** push token and notification settings, records of what you agreed to (with version and date), and keyed one-way codes made from IP addresses or account identifiers for rate limits.
 
 We do not ask for your sexual orientation as a separate question, and we do not send marketing emails.
 
-**Legal bases:** the contract with you (account, readings and the Oracle); your consent (the friends' quiz, optional location, matching, and Google Analytics on the website, which you can withdraw at any time with **Cookie settings**, see section 15); your explicit consent (the sensitive information in section 7, for matching and compatibility readings); our legitimate interests (security, abuse prevention, safety, including the record described in section 12 that stops a safety restriction being undone, and an aggregate count of website visits with Vercel Web Analytics, which sets no cookies and stores nothing in your browser); and legal obligations where they apply. The exact basis for each use: [to be confirmed]
+**Legal bases:** the contract with you (account, readings and the Oracle); your consent (the friends' quiz, optional location, matching, and Google Analytics on the website, which you can withdraw at any time with **Cookie settings**, see section 15); your explicit consent (the sensitive information in section 7, for matching and compatibility readings; section 7 says which agreement covers what); our legitimate interests (security, abuse prevention, safety, including the record described in section 12 that stops a safety restriction being undone, and an aggregate count of website visits with Vercel Web Analytics, which sets no cookies and stores nothing in your browser); and legal obligations where they apply. The exact basis for each use: [to be confirmed]
 
 ## 7. Sensitive information
 
@@ -72,9 +72,9 @@ Some of the information used for matching and compatibility readings is sensitiv
 - your answers about your **intimacy preferences**, which concern your sex life;
 - for this purpose we also treat your **birth details** with the same care.
 
-**Before matching or a compatibility reading uses any of it, the app asks for your explicit consent in its own separate step**, apart from the other agreements. This consent is required to take part in matching. It is not needed for your personal readings, which you can use without it.
+**How you give your explicit consent.** Your gender and the genders you want to meet are named in the matching agreement, and agreeing to it is your explicit consent to their use for matching. **For your answers about values, spiritual life and intimacy, and your birth details, the app asks for your explicit consent in its own separate step**, apart from the other agreements, before matching or a compatibility reading uses them [to be confirmed: applies from the next app update]. Both are required to take part in matching. Neither is needed for your personal readings, which you can use without them.
 
-You can withdraw this consent at any time in the app. You then stop taking part in matching and no longer appear as anyone's possible match; your personal readings are not affected. Withdrawal does not affect earlier processing. What happens to open matches and stored comparisons after withdrawal: [to be confirmed]
+You can withdraw either consent at any time in the app. You then stop taking part in matching and no longer appear as anyone's possible match; your personal readings are not affected. Withdrawal does not affect earlier processing. What happens to open matches and stored comparisons after withdrawal: [to be confirmed]
 
 ## 8. Matching
 
@@ -84,7 +84,7 @@ You can withdraw this consent at any time in the app. You then stop taking part 
 
 **What an open match sees about you:** the name on your profile, your profile and cover photos, your short bio, gender and age, up to 10 of your interests, your Sun and Moon signs and your life-path number, and the messages you send them. We never show other members your email, your full birth date, time or place, your city, your location or distance, or your answers to the app's questions.
 
-**How possible matches are found.** Between members who take part, we compare age and age range, gender and who each person wants to meet, distance if either set a limit (distance is only a filter and is never shown), answers to the app's questions, and details calculated from birth data. This is profiling. Members who have blocked each other are never matched. We store the results of comparisons between two members on our server; they are deleted when either member deletes their account.
+**How possible matches are found.** Between members who take part, we compare age and age range, gender and who each person wants to meet, the kind of connection each of you is looking for, distance if either set a limit (distance is only a filter and is never shown), answers to the app's questions, and details calculated from birth data. This is profiling. Members who have blocked each other are never matched. We store the results of comparisons between two members on our server; they are deleted when either member deletes their account.
 
 **Compatibility.** No compatibility score or percentage is shown yet. One will appear only after our pair scoring has been verified, and we will update this notice before then. A compatibility reading for an open match uses both members' information only with both members' explicit consent. We never judge how well two people suit each other from one person's sign or number alone.
 
@@ -99,17 +99,17 @@ If you believe an automated step affects you unfairly, write to the privacy addr
 
 The Oracle is the only paid feature. It is not available yet. It answers your questions about your own readings, using the details we calculated for you.
 
-**Only if you use it,** we send our AI provider, **Anthropic** (the Claude API), from our server: the facts we calculated from your birth details (positions, signs, houses, aspects and numbers, not the birth date, time or place themselves), your question, up to three earlier questions and answers from the same conversation, and your language. For answers in Bulgarian, a second request sends only the sentences of the answer, so they can be proofread. Anthropic processes this on our behalf to write the answer. How long Anthropic keeps this data, where it is processed, and confirmation that it is not used to train models: [to be confirmed under our agreement with Anthropic]
+**Only if you use it,** we send our AI provider, **Anthropic** (the Claude API), from our server: the facts we calculated from your birth details (positions of the planets, signs, houses, aspects and numbers; not the birth date, time or place themselves, although the positions are precise enough that your birth date and time could be worked out from them), your question, up to three earlier questions and answers from the same conversation, and your language. For answers in Bulgarian, a second request sends only the sentences of the answer, so they can be proofread. Anthropic processes this on our behalf to write the answer. How long Anthropic keeps this data, where it is processed, and confirmation that it is not used to train models: [to be confirmed under our agreement with Anthropic]
 
 We never send the Oracle your name, email, photos, location or messages, your answers to the app's questions, or anything about your matches or other members. Oracle questions about a match are not available, and buying the Oracle never gives you access to another member's information.
 
-**What we keep:** your saved Oracle conversations, until you delete them or your account [period to be confirmed]; the text of questions that could not be answered, for 30 days [to be confirmed], after which only a record that it happened remains; usage records (counts and dates, no text), to apply usage limits, until you delete your account; and your purchases and access [period to be confirmed]. How you pay and which payment provider handles it: [to be confirmed]
+**What we keep:** your saved Oracle conversations, until you delete them or your account [period to be confirmed]; the text of questions that could not be answered, until you delete your account; we plan to shorten this to 30 days, after which only a record that it happened would remain [to be confirmed]; usage records (counts and dates, no text), to apply usage limits, until you delete your account; and your purchases and access [period to be confirmed]. How you pay and which payment provider handles it: [to be confirmed]
 
 ## 10. Blocks and reports
 
 You can block a member and report a profile or conversation in the app. A report saves what you write, a copy of the profile as you saw it, for conversations your latest messages, and for some reasons copies of the member's photos. The member is not told who reported them.
 
-Reports and their evidence are kept for **12 months from submission**, then deleted automatically, even if an account is deleted (the link to the accounts is removed; for the separate record kept in a few cases, see section 12). See [Safety and reporting](/en/safety).
+Reports and their evidence are kept for **12 months from submission**, then deleted automatically, even if an account is deleted (the link to the accounts is removed; in the few cases described in section 12, the reports can be linked to a new account again). See [Safety and reporting](/en/safety).
 
 ## 11. Who receives your data
 
@@ -124,7 +124,9 @@ Other members see only what section 8 describes. Our service providers act on ou
 | Expo, with Apple and Google push services | Push notifications |
 | Google Sign-In, Sign in with Apple | Only if you choose them; each is a separate controller for your account with them |
 | Anthropic (Claude API) | Writing Oracle answers, only if you use the Oracle (section 9) |
-| Google Places Autocomplete, OpenStreetMap Nominatim | Finding the city or birth place you type. Our server sends only the text you type, not your IP address or account. We use Google Places when it is available and Nominatim otherwise |
+| Google Places Autocomplete, OpenStreetMap Nominatim | Finding the city or birth place you type. Our server sends only the text you type, not your IP address or account. We use Google Places where it is configured, otherwise Nominatim |
+| Your phone's location service (Google or Apple) | Only if you choose to use your current location: turning your position into a city name, on your phone |
+| Resend | Sending account emails, such as verification and sign-in codes: your email address and the message [to be confirmed: when account emails are switched on] |
 | Email provider | Our mailboxes [to be confirmed] |
 
 Agreements and locations of each provider: [to be confirmed]. We may disclose data where the law requires it or to protect someone's safety.
@@ -141,13 +143,13 @@ Some providers are in, or may process data in, the United States. The European C
 | Comparisons between two members (section 8) | Until either member deletes their account [period to be confirmed] |
 | Oracle conversations, failed questions, usage and purchases | See section 9 |
 | Safety reports and their evidence | 12 months from submission, then deleted automatically |
-| Record that keeps a safety restriction after deletion (below) | The report-retention period, 12 months [to be confirmed], then deleted automatically |
+| Record that keeps a safety restriction after deletion (below) | Restricted account: up to 12 months after deletion [to be confirmed], or longer while a related report is still kept. Account with open reports only: as long as those reports are kept. Then deleted automatically |
 | Security and sign-in records, hosting logs, backups, emails to us | [period to be confirmed] |
 
 **When you delete your account** (Settings → Account → Delete account), we delete your profile, photos, birth details, location, answers, interests, agreements, reading history, matches and messages, comparisons with other members, Oracle conversations and access (purchase records: [to be confirmed]), and quiz answers. A shared conversation is deleted for both people. We also delete your sign-in record held by our authentication provider [to be confirmed: applies from the next app update]. We keep:
 
-- safety reports, without the link to your account, until 12 months after submission;
-- **only if your account was restricted for safety reasons, was waiting for an age review, or had open reports about it when you deleted it:** a pseudonymous record, made of keyed one-way codes of your sign-in details (such as your email address) [exact details to be confirmed], the kind of restriction and the dates. It contains no profile, photos or messages. We use it only to stop a restriction being undone by deleting the account and creating it again, and we keep it for the report-retention period [12 months, to be confirmed], then delete it. We do not keep it for other accounts;
+- safety reports, without the link to your account, until 12 months after submission, except in the case in the next point;
+- **only if your account was restricted for safety reasons, was waiting for an age review, or had open reports about it when you deleted it** [to be confirmed: applies from the next app update]: a pseudonymous record. It holds keyed one-way codes made from your email address and from your account identifier (the identifier our sign-in service gives your account, which a new sign-in with the same Google, Apple or email-link identity repeats), the kind of restriction if there was one, whether an age review was open, references to the reports about your account, and the dates. It contains no profile, photos or messages. We use it only to stop a restriction being undone by deleting the account and creating it again: if the same email address or sign-in identity is used again, the new account gets the same restriction and those reports are linked to it again, and an email sign-up with that address is refused as if the address were already in use. We keep it for the period in the table above, then delete it. We do not keep it for other accounts. If this record cannot be created, the app cannot complete the deletion of such an account until it can, so that the restriction is not lost; you can also write to the privacy address;
 - copies in backups: [period to be confirmed]
 
 Details: [Delete your account](/en/delete-account).
