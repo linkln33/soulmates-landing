@@ -9,6 +9,7 @@ import { MoonNow } from '@/components/tools/MoonTool';
 import HeroVisual from '@/components/home/HeroVisual';
 import StoreBadges from '@/components/site/StoreBadges';
 import { JourneySection } from '@/components/home/HomeSections';
+import { COVER_SIZES, COVER_THEMES, HOME_TOOLS, coverFile, coverSrcSet, type HomeTool } from '@/lib/site/homeTools';
 import '@/components/home/home.css';
 
 type Props = PageProps<'/[lang]'>;
@@ -20,14 +21,45 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   return { ...pageMeta(l, '', t.metaTitle, t.metaDescription), title: { absolute: t.metaTitle } };
 }
 
-const TOOLS = [
-  { key: 'horoscope', href: '/horoscope', art: 'horoscope-wheel', tile: 'horoscope' },
-  { key: 'tarot', href: '/tarot', art: 'tarot', tile: 'tarot' },
-  { key: 'numbers', href: '/numbers', art: 'numbers', tile: 'numbers' },
-  { key: 'moon', href: '/moon', art: 'moon-phases', tile: 'moon-calendar' },
-] as const;
-
 const HONEST: CardTint[] = ['teal', 'amber', 'pink'];
+
+/**
+ * The tile's 2:1 cover, decorative (the link is named by its text). A painted
+ * cover has one <picture> per theme; CSS shows the one matching <html
+ * data-theme> and hides the other, and lazy images that are not rendered are
+ * never fetched, so only one painting loads. Without a painting, the app
+ * illustration sits on the tile tint.
+ */
+function ToolCover({ tool }: { tool: HomeTool }) {
+  const { cover } = tool;
+  if (!cover) {
+    return (
+      <span className="h-cover h-cover-art" style={{ background: `var(--tile-${tool.tile})` }}>
+        {/* eslint-disable-next-line @next/next/no-img-element */}
+        <img src={`/app-content/illustrations/${tool.art}.svg`} alt="" width={200} height={150} loading="lazy" decoding="async" />
+      </span>
+    );
+  }
+  return (
+    <span className="h-cover">
+      {COVER_THEMES.map((theme) => (
+        <picture key={theme} className={`h-cover-${theme}`}>
+          <source type="image/avif" srcSet={coverSrcSet(cover, theme, 'avif')} sizes={COVER_SIZES} />
+          <img
+            src={coverFile(cover, theme, 600, 'webp')}
+            srcSet={coverSrcSet(cover, theme, 'webp')}
+            sizes={COVER_SIZES}
+            alt=""
+            width={1200}
+            height={600}
+            loading="lazy"
+            decoding="async"
+          />
+        </picture>
+      ))}
+    </span>
+  );
+}
 
 export default async function Home({ params }: Props) {
   const { lang: raw } = await params;
@@ -57,22 +89,18 @@ export default async function Home({ params }: Props) {
           <p className="muted">{t.home.toolsLead}</p>
         </div>
         <ul className="h-tool-list">
-          {TOOLS.map((tool) => (
+          {HOME_TOOLS.map((tool) => (
             <li key={tool.key}>
-              <Link
-                href={`/${lang}${tool.href}`}
-                className="h-tool"
-                style={{ background: `var(--tile-${tool.tile})` }}
-                aria-describedby={`tool-${tool.key}-about`}
-              >
-                {/* eslint-disable-next-line @next/next/no-img-element */}
-                <img src={`/app-content/illustrations/${tool.art}.svg`} alt="" width={200} height={150} loading="lazy" decoding="async" />
-                <span className="h-tool-text">
-                  <span className="heading">{t.nav[tool.key]}</span>
-                  <span className="small muted">{t.home.toolsShort[tool.key]}</span>
-                  <span id={`tool-${tool.key}-about`} className="visually-hidden">{t.tools[tool.key].about}</span>
+              <Link href={`/${lang}${tool.href}`} className="h-tool" aria-describedby={`tool-${tool.key}-about`}>
+                <ToolCover tool={tool} />
+                <span className="h-tool-row">
+                  <span className="h-tool-text">
+                    <span className="heading">{t.nav[tool.key]}</span>
+                    <span className="small muted">{t.home.toolsShort[tool.key]}</span>
+                    <span id={`tool-${tool.key}-about`} className="visually-hidden">{t.tools[tool.key].about}</span>
+                  </span>
+                  <span className="h-arrow" aria-hidden><ArrowRight weight="bold" /></span>
                 </span>
-                <span className="h-arrow" aria-hidden><ArrowRight weight="bold" /></span>
               </Link>
             </li>
           ))}

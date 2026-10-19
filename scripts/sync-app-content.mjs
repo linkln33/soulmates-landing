@@ -186,7 +186,10 @@ if (CHECK) {
   console.log(`In sync with app ${manifest.app.commit.slice(0, 7)}: ${outputs.size} files.`);
 } else {
   rmSync(CONTENT_OUT, { recursive: true, force: true });
-  rmSync(PUBLIC_OUT, { recursive: true, force: true });
+  // public/app-content/covers is not synced: encoded painted covers made by scripts/make-covers.mjs.
+  for (const entry of existsSync(PUBLIC_OUT) ? readdirSync(PUBLIC_OUT) : []) {
+    if (entry !== 'covers') rmSync(join(PUBLIC_OUT, entry), { recursive: true, force: true });
+  }
   for (const [rel, buf] of outputs) {
     mkdirSync(dirname(join(WEB, rel)), { recursive: true });
     writeFileSync(join(WEB, rel), buf);

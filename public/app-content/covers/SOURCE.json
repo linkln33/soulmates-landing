@@ -1,0 +1,49 @@
+{
+ "covers": {
+  "horoscope-light": {
+   "source": "SoulMates-Quest-mobile/assets/cards/zodiac-light.jpg",
+   "sourceSha256": "5aaf29a9d4f9fb9dda24083aee23c3cd95c504ebee86cd1db15f8833cb3b162a",
+   "appCommit": "c5845dacaeb694c3c8d031e9bd6b8c6a7aeb8808",
+   "outputs": {
+    "horoscope-light-600.avif": 53647,
+    "horoscope-light-600.webp": 56634,
+    "horoscope-light-1200.avif": 137494,
+    "horoscope-light-1200.webp": 160820
+   }
+  },
+  "horoscope-dark": {
+   "source": "SoulMates-Quest-mobile/assets/cards/zodiac-dark.jpg",
+   "sourceSha256": "185f3feb559db3394ea510ab905a0cc7c7534705718c869f005b5083d74f57c7",
+   "appCommit": "c5845dacaeb694c3c8d031e9bd6b8c6a7aeb8808",
+   "outputs": {
+    "horoscope-dark-600.avif": 46293,
+    "horoscope-dark-600.webp": 51162,
+    "horoscope-dark-1200.avif": 115550,
+    "horoscope-dark-1200.webp": 140138
+   }
+  },
+  "tarot-light": {
+   "source": "SoulMates-Quest-mobile/assets/cards/tarot-light.jpg",
+   "sourceSha256": "84321c43d5cf637555b3ee416b60c4f11a2acb9b665bd28ddccb98b1cf68f6b3",
+   "appCommit": "c5845dacaeb694c3c8d031e9bd6b8c6a7aeb8808",
+   "outputs": {
+    "tarot-light-600.avif": 64324,
+    "tarot-light-600.webp": 66438,
+    "tarot-light-1200.avif": 175735,
+    "tarot-light-1200.webp": 197606
+   }
+  },
+  "tarot-dark": {
+   "source": "SoulMates-Quest-mobile/assets/cards/tarot-dark.jpg",
+   "sourceSha256": "23f4e740570b4c69ba9f69875bb0b7d8f08273a445b8076ced48e142424863ce",
+   "appCommit": "c5845dacaeb694c3c8d031e9bd6b8c6a7aeb8808",
+   "outputs": {
+    "tarot-dark-600.avif": 56718,
+    "tarot-dark-600.webp": 60752,
+    "tarot-dark-1200.avif": 160189,
+    "tarot-dark-1200.webp": 183826
+   }
+  }
+ },
+ "note": "owner-supplied artwork, copied from the mobile assets/cards (SoulMates-Quest-mobile/assets/cards). The originals stay untouched; regenerate with scripts/make-covers.mjs."
+}

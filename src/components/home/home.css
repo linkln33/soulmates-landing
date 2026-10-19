@@ -58,21 +58,45 @@ body:has(.home) .site-footer .wrap,
 .h-tools { scroll-margin-top: 96px; display: grid; gap: 20px; padding-top: 32px; padding-bottom: 40px; }
 @media (min-width: 1360px) { .h-tools { grid-template-columns: 236px minmax(0, 1fr); align-items: center; gap: 28px; } }
 .h-tools-intro .muted { margin-top: 8px; max-width: 46ch; }
-.h-tool-list { list-style: none; display: grid; gap: 12px; grid-template-columns: 1fr; }
+.h-tool-list { list-style: none; display: grid; gap: 24px 16px; grid-template-columns: 1fr; }
 @media (min-width: 600px) { .h-tool-list { grid-template-columns: repeat(2, minmax(0, 1fr)); } }
 @media (min-width: 1000px) { .h-tool-list { grid-template-columns: repeat(4, minmax(0, 1fr)); } }
+/* Each tile is the 2:1 cover (the whole painting, or the illustration on its tint) with its name below: no box or border. */
 .h-tool {
-  height: 100%; display: flex; align-items: center; gap: 10px; padding: 16px 12px 16px 14px; border-radius: var(--r-xl);
-  text-decoration: none; color: var(--text); border: 1px solid var(--border);
-  transition: transform .2s ease, box-shadow .2s ease, border-color .2s ease;
+  height: 100%; display: flex; flex-direction: column; gap: 12px; border-radius: var(--r-xl);
+  text-decoration: none; color: var(--text);
 }
-.h-tool:hover { transform: translateY(-2px); box-shadow: var(--shadow-2); border-color: color-mix(in srgb, var(--secondary) 45%, var(--border)); }
-.h-tool:focus-visible { outline: 3px solid var(--secondary); outline-offset: 3px; border-radius: var(--r-xl); }
-.h-tool img { width: 52px; height: auto; flex: none; }
+.h-tool:focus-visible { outline: 3px solid var(--secondary); outline-offset: 4px; }
+.h-cover {
+  position: relative; display: block; aspect-ratio: 2 / 1; border-radius: var(--r-xl); overflow: hidden;
+  background: var(--surface-muted); box-shadow: 0 10px 26px rgba(15, 26, 46, .12);
+  transition: transform .25s ease, box-shadow .25s ease;
+}
+/* A soft glass sheen over the painting's top edge, no border. */
+.h-cover::after {
+  content: ''; position: absolute; inset: 0; pointer-events: none; border-radius: inherit;
+  background: linear-gradient(180deg, rgba(255, 255, 255, .14), transparent 38%);
+}
+.h-cover picture, .h-cover picture img { display: block; width: 100%; height: 100%; }
+.h-cover picture img { object-fit: cover; }
+/* Only the painting for the current theme is rendered (and so fetched). */
+.h-cover-dark { display: none !important; }
+:root[data-theme='dark'] .h-cover-light { display: none !important; }
+:root[data-theme='dark'] .h-cover-dark { display: block !important; }
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme]) .h-cover-light { display: none !important; }
+  :root:not([data-theme]) .h-cover-dark { display: block !important; }
+}
+:root[data-theme='dark'] .h-cover { box-shadow: 0 10px 28px rgba(0, 0, 0, .45); }
+@media (prefers-color-scheme: dark) { :root:not([data-theme]) .h-cover { box-shadow: 0 10px 28px rgba(0, 0, 0, .45); } }
+.h-cover-art { display: grid; place-items: center; }
+.h-cover-art img { height: 72%; width: auto; }
+.h-tool:hover .h-cover { transform: translateY(-3px); box-shadow: 0 16px 34px rgba(15, 26, 46, .18); }
+.h-tool-row { display: flex; align-items: center; gap: 10px; padding: 0 4px; }
 .h-tool-text { display: flex; flex-direction: column; gap: 2px; min-width: 0; flex: 1; }
 .h-tool-text .heading { font-size: 17px; }
 .h-tool-text .small { font-size: 13.5px; line-height: 1.35; }
-.h-arrow { flex: none; width: 30px; height: 30px; border-radius: 50%; display: grid; place-items: center; background: var(--surface); color: var(--text); box-shadow: var(--shadow-1); transition: background .2s ease, color .2s ease; }
+.h-arrow { flex: none; width: 30px; height: 30px; border-radius: 50%; display: grid; place-items: center; background: var(--surface-muted); color: var(--text); transition: background .2s ease, color .2s ease; }
 .h-arrow svg { width: 16px; height: 16px; }
 .h-tool:hover .h-arrow, .h-tool:focus-visible .h-arrow { background: var(--action); color: var(--on-primary); }
 
@@ -99,7 +123,7 @@ body:has(.home) .site-footer .wrap,
 .h-final-card .lead { margin: 0 auto; }
 .h-final-card .h-ctas { justify-content: center; margin-top: 8px; }
 
-@media (prefers-reduced-motion: reduce) { .h-tool, .h-arrow { transition: none; } .h-tool:hover { transform: none; } }
+@media (prefers-reduced-motion: reduce) { .h-cover, .h-arrow { transition: none; } .h-tool:hover .h-cover { transform: none; } }
 
 /* ── Mobile and rendering ──────────────────────────────── */
 
