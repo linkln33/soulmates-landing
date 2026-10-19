@@ -67,3 +67,25 @@ export function cookieDomains(hostname: string): string[] {
   for (let i = 0; i < parts.length - 1; i++) out.push(parts.slice(i).join('.'));
   return out.length ? out : [hostname];
 }
+
+/**
+ * Cookie assignments that expire every Google Analytics cookie in `cookieHeader`
+ * (document.cookie) on the host and on each parent domain.
+ */
+export function expireGoogleCookies(cookieHeader: string, hostname: string): string[] {
+  const names = [...new Set(cookieHeader.split(';').map((c) => c.split('=')[0].trim()).filter(isGoogleAnalyticsCookie))];
+  return names.flatMap((name) => [
+    `${name}=; Max-Age=0; path=/`,
+    ...cookieDomains(hostname).map((domain) => `${name}=; Max-Age=0; path=/; domain=${domain}`),
+  ]);
+}
+
+/**
+ * What to clear on a page load. Google Analytics cookies left by the earlier
+ * release without a banner are removed whenever there is no "granted" choice
+ * (no choice, or Reject). With "granted" they stay: they are Google
+ * Analytics' own cookies.
+ */
+export function cookiesToClearOnLoad(choice: ConsentChoice | null, cookieHeader: string, hostname: string): string[] {
+  return choice === 'granted' ? [] : expireGoogleCookies(cookieHeader, hostname);
+}

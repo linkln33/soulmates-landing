@@ -4,6 +4,8 @@ import {
   CONSENT_KEY,
   CONSENT_TTL_MS,
   cookieDomains,
+  cookiesToClearOnLoad,
+  expireGoogleCookies,
   isGoogleAnalyticsCookie,
   readConsent,
   safeUrl,
@@ -60,4 +62,19 @@ test('Google Analytics cookies and their domains', () => {
   for (const n of ['_gauge', 'ga', 'session']) assert.ok(!isGoogleAnalyticsCookie(n), n);
   assert.deepEqual(cookieDomains('www.soulmates.quest'), ['www.soulmates.quest', 'soulmates.quest']);
   assert.deepEqual(cookieDomains('localhost'), ['localhost']);
+});
+
+test('legacy Google cookies are cleared on load unless the choice is "granted"', () => {
+  const header = '_ga=GA1.1.1.1; theme=x; _ga_KJK7PCFVSC=GS1.1; _gid=GA1.2; _gat_gtag_UA_1=1';
+  const expected = ['_ga', '_ga_KJK7PCFVSC', '_gid', '_gat_gtag_UA_1'].flatMap((n) => [
+    `${n}=; Max-Age=0; path=/`,
+    `${n}=; Max-Age=0; path=/; domain=www.soulmates.quest`,
+    `${n}=; Max-Age=0; path=/; domain=soulmates.quest`,
+  ]);
+  assert.deepEqual(cookiesToClearOnLoad(null, header, 'www.soulmates.quest'), expected);
+  assert.deepEqual(cookiesToClearOnLoad('denied', header, 'www.soulmates.quest'), expected);
+  assert.deepEqual(cookiesToClearOnLoad('granted', header, 'www.soulmates.quest'), []);
+  assert.deepEqual(cookiesToClearOnLoad(null, 'theme=x', 'www.soulmates.quest'), []);
+  assert.deepEqual(cookiesToClearOnLoad(null, '', 'localhost'), []);
+  assert.ok(!expireGoogleCookies(header, 'localhost').some((c) => c.startsWith('theme=')), 'other cookies untouched');
 });

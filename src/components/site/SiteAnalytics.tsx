@@ -11,7 +11,9 @@
  * - The choice is kept in localStorage (src/lib/site/consent.ts) and can be
  *   changed with "Cookie settings" (CookieSettingsButton), which reopens the
  *   banner. Withdrawing removes Google's cookies and reloads the page so the
- *   already loaded script stops.
+ *   already loaded script stops. On every page load without an accepted
+ *   choice, Google cookies left by the earlier release without a banner are
+ *   removed (nothing is loaded from Google to do it).
  * - Vercel Web Analytics sets no cookies and stores nothing in the browser, so
  *   it runs regardless of the choice, as the privacy notice says.
  *
@@ -23,8 +25,7 @@
 import { useCallback, useEffect, useState } from 'react';
 import { Analytics } from '@vercel/analytics/next';
 import {
-  cookieDomains,
-  isGoogleAnalyticsCookie,
+  cookiesToClearOnLoad,
   readConsent,
   safeUrl,
   saveConsent,
@@ -77,14 +78,10 @@ function loadGoogleAnalytics() {
   document.head.appendChild(s);
 }
 
-/** Removes Google Analytics cookies on this host and its parent domains. */
-function removeGoogleCookies() {
+/** Removes Google Analytics cookies on this host and its parent domains, or only when `choice` is not "granted". */
+function removeGoogleCookies(choice: ConsentChoice | null = null) {
   try {
-    const names = document.cookie.split(';').map((c) => c.split('=')[0].trim()).filter(isGoogleAnalyticsCookie);
-    for (const name of names) {
-      document.cookie = `${name}=; Max-Age=0; path=/`;
-      for (const domain of cookieDomains(location.hostname)) document.cookie = `${name}=; Max-Age=0; path=/; domain=${domain}`;
-    }
+    for (const c of cookiesToClearOnLoad(choice, document.cookie, location.hostname)) document.cookie = c;
   } catch {
     // cookies unavailable: nothing to remove
   }
@@ -97,6 +94,8 @@ export default function SiteAnalytics({ text, privacyHref }: { text: ConsentText
 
   useEffect(() => {
     const stored = readConsent(store());
+    // Google cookies left by the earlier release without a banner go unless the visitor accepted.
+    removeGoogleCookies(stored);
     // Reading browser storage has to wait until after hydration.
     // eslint-disable-next-line react-hooks/set-state-in-effect
     setChoice(stored);

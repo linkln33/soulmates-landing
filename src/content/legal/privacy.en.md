@@ -60,7 +60,7 @@ A member can send a friend a link to a short quiz. If you answer it, we collect 
 
 We do not ask for your sexual orientation as a separate question, and we do not send marketing emails.
 
-**Legal bases:** the contract with you (account and readings); your consent (the friends' quiz, optional location, matching); your explicit consent (information that can reveal your sexual orientation); our legitimate interests (security, abuse prevention, safety); and legal obligations where they apply. The exact basis for each use: [to be confirmed]
+**Legal bases:** the contract with you (account and readings); your consent (the friends' quiz, optional location, matching, and Google Analytics on the website, which you can withdraw at any time with **Cookie settings**, see section 14); your explicit consent (information that can reveal your sexual orientation); our legitimate interests (security, abuse prevention, safety, and an aggregate count of website visits with Vercel Web Analytics, which sets no cookies and stores nothing in your browser); and legal obligations where they apply. The exact basis for each use: [to be confirmed]
 
 ## 7. Sensitive information
 
@@ -134,7 +134,7 @@ The app and the friends' quiz are for people aged **18 or over**. If you think s
 
 ## 14. Cookies and local storage {#cookies-local-storage}
 
-On your first visit, a banner asks whether you allow Google Analytics, with **Accept** and **Reject** as equal choices. Until you accept, nothing is loaded from Google and no Google cookies are set; if you reject, or make no choice, Google Analytics never loads. If you accept, Google Analytics sets cookies (names beginning with `_ga`) to tell visits apart. They last up to 2 years. You can change your choice at any time with **Cookie settings** at the bottom of every page; if you withdraw, we delete these cookies and Google Analytics stops loading. Your consent is the legal basis for Google Analytics.
+On your first visit, a banner asks whether you allow Google Analytics, with **Accept** and **Reject** as equal choices. Until you accept, nothing is loaded from Google and no Google cookies are set; if you reject, or make no choice, Google Analytics never loads. If you accept, Google Analytics sets cookies (names beginning with `_ga`) to tell visits apart. They last up to 2 years. You can change your choice at any time with **Cookie settings** at the bottom of every page; if you withdraw, we delete these cookies and Google Analytics stops loading. Until you accept, any Google Analytics cookies left from an earlier visit are deleted when you open the website. Your consent is the legal basis for Google Analytics.
 
 Vercel Web Analytics counts visits without cookies and without storing anything in your browser, so it runs whatever you choose. Private quiz links and deletion links are never sent to either analytics tool.
 
