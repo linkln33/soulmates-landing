@@ -82,7 +82,7 @@ You can withdraw either consent at any time in the app. You then stop taking par
 
 **How it works.** Possible matches stay concealed. While a match is concealed, neither of you sees the other's name, photos, profile, city or distance, or whether the other has accepted; you see only that a possible match exists, its status and your own choice. A match opens only when both members accept it. You can have several open matches at once.
 
-**What an open match sees about you:** the name on your profile, your profile and cover photos, your short bio, gender and age, up to 10 of your interests, your Sun and Moon signs and your life-path number, and the messages you send them. We never show other members your email, your full birth date, time or place, your city, your location or distance, or your answers to the app's questions.
+**What an open match sees about you:** the name on your profile, your profile and cover photos, your short bio, gender and age, up to 10 of your interests, and the messages you send them. We never show other members your email, your full birth date, time or place, your signs or numbers from your readings, your city, your location or distance, or your answers to the app's questions.
 
 **How possible matches are found.** Between members who take part, we compare age and age range, gender and who each person wants to meet, the kind of connection each of you is looking for, distance if either set a limit (distance is only a filter and is never shown), answers to the app's questions, and details calculated from birth data. This is profiling. Members who have blocked each other are never matched. We store the results of comparisons between two members on our server; they are deleted when either member deletes their account.
 
