@@ -1,0 +1,10 @@
+/* Internal Oracle review page only. */
+.oracle-demo { max-width: 1120px; margin: 0 auto; padding: 32px 16px 64px; display: flex; flex-direction: column; gap: 32px; }
+.oracle-demo h1 { font-size: 28px; }
+.oracle-demo section > h2 { font-size: 16px; font-weight: 600; margin-bottom: 12px; color: var(--text-muted); }
+.oracle-demo__note { color: var(--text-muted); font-size: 14px; }
+.oracle-demo__grid { display: grid; grid-template-columns: repeat(3, max-content); gap: 12px; align-items: end; }
+.oracle-demo__cell { display: grid; place-items: center; padding: 16px; min-width: 96px; border-radius: 20px; background: var(--oracle-surround); }
+.oracle-demo__row { display: flex; flex-wrap: wrap; gap: 20px; align-items: flex-start; }
+.oracle-demo__row > [data-shot^='card'] { width: 340px; padding: 24px; background: var(--background); }
+.oracle-demo__link { display: inline-flex; align-items: center; gap: 12px; padding: 12px 18px 12px 12px; border-radius: 999px; background: var(--oracle-surround); color: var(--oracle-ink); text-decoration: none; font-weight: 600; }

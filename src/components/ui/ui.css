@@ -1,0 +1,35 @@
+/*
+ * Tailwind 4 for the shadcn/ui primitives in this folder and the Oracle
+ * component only. The rest of the site uses its own CSS (globals.css), so
+ * there is no preflight here, and utilities are generated only from the
+ * folders listed with @source. Utilities stay unlayered so they win over the
+ * site's element rules (for example `a { color }`) by specificity.
+ *
+ * shadcn colour names map to the site's tokens (src/lib/design/tokens.ts),
+ * which already switch between the light and dark themes.
+ */
+@import 'tailwindcss/theme.css' layer(theme);
+@import 'tailwindcss/utilities.css' source(none);
+
+@source './';
+@source '../oracle';
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--text);
+  --color-primary: var(--action);
+  --color-primary-foreground: var(--on-primary);
+  --color-secondary: var(--surface-muted);
+  --color-secondary-foreground: var(--text);
+  --color-muted: var(--surface-muted);
+  --color-muted-foreground: var(--text-muted);
+  --color-accent: var(--surface-muted);
+  --color-accent-foreground: var(--text);
+  --color-destructive: var(--danger);
+  --color-border: var(--border);
+  --color-input: var(--border);
+  --color-ring: var(--secondary);
+  --color-card: var(--glass-bg);
+  --color-card-foreground: var(--text);
+  --font-sans: var(--font-inter), 'Inter', system-ui, -apple-system, 'Segoe UI', sans-serif;
+}

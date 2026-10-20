@@ -40,6 +40,11 @@ const nextConfig: NextConfig = {
         headers: [{ key: "X-Robots-Tag", value: "noindex, nofollow" }],
       },
       {
+        // Internal component review pages (404 in production builds) are never indexed.
+        source: "/internal/:path*",
+        headers: [{ key: "X-Robots-Tag", value: "noindex, nofollow" }],
+      },
+      {
         // Draft legal pages (src/lib/site/config.ts DRAFT_DOCS) are not indexed until reviewed.
         source: "/:lang(en|bg)/:doc(privacy|terms|safety|delete-account)",
         headers: [{ key: "X-Robots-Tag", value: "noindex" }],

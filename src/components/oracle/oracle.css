@@ -1,0 +1,170 @@
+/*
+ * SoulMates Oracle: design tokens and styles (see README.md in this folder).
+ *
+ * Every colour, size and timing is an --oracle-* custom property. The palette
+ * matches the mobile app. Light and dark follow the site theme (<html
+ * data-theme>, set from the visitor's local time); a subtree can also be
+ * pinned with data-theme="light" | "dark".
+ */
+
+:root,
+[data-theme='light'] {
+  /* Palette (shared with the app) */
+  --oracle-amethyst-1: #2A1B6E;
+  --oracle-amethyst-2: #0E0A2E;
+  --oracle-core: #7B5CFF;
+  --oracle-raspberry: #FF0050;
+  --oracle-teal: #4FD2F6;
+  --oracle-gold-1: #F5D68A;
+  --oracle-gold-2: #B8862E;
+
+  /* Surroundings and text */
+  --oracle-surround: #FBF6EC;
+  --oracle-ink: #22142E;          /* 15.6:1 on the surround */
+  --oracle-ink-muted: #5A4A63;    /* 7.6:1 on the surround */
+  --oracle-cradle-shade: #8A6220;
+  --oracle-cue-ask: var(--oracle-gold-2);
+  --oracle-halo: color-mix(in srgb, var(--oracle-core) 26%, transparent);
+  --oracle-halo-blur: 0.12;       /* × size */
+  --oracle-card-bg: color-mix(in srgb, var(--oracle-surround) 86%, transparent);
+
+  /* Dimensions */
+  --oracle-size-icon: 40px;
+  --oracle-size-small: 64px;
+  --oracle-size-large: 120px;
+  --oracle-badge-gap: 8px;
+  --oracle-card-radius: 28px;
+  --oracle-card-stage-pad: 28px;
+
+  /* Motion */
+  --oracle-sweep-duration: 640ms;
+  --oracle-sweep-delay: 120ms;
+  --oracle-sweep-ease: cubic-bezier(.33, 0, .2, 1);
+  --oracle-compress-duration: 220ms;
+  --oracle-press-duration: 120ms;
+  --oracle-compress-scale: .84;
+  --oracle-compress-boost: 1.35;  /* halo opacity multiplier at full compression */
+}
+
+:root[data-theme='dark'],
+[data-theme='dark'] {
+  --oracle-surround: #140A1A;
+  --oracle-ink: #F6EEF8;          /* 17:1 on the surround */
+  --oracle-ink-muted: #C6B5CC;    /* 10:1 on the surround */
+  --oracle-cradle-shade: #6E4C16;
+  --oracle-cue-ask: var(--oracle-gold-1);
+  --oracle-halo: color-mix(in srgb, var(--oracle-core) 44%, transparent);
+  --oracle-card-bg: color-mix(in srgb, #140A1A 86%, transparent);
+}
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme]) {
+    --oracle-surround: #140A1A;
+    --oracle-ink: #F6EEF8;
+    --oracle-ink-muted: #C6B5CC;
+    --oracle-cradle-shade: #6E4C16;
+    --oracle-cue-ask: var(--oracle-gold-1);
+    --oracle-halo: color-mix(in srgb, var(--oracle-core) 44%, transparent);
+    --oracle-card-bg: color-mix(in srgb, #140A1A 86%, transparent);
+  }
+}
+
+/* ── Artwork ───────────────────────────────────────────── */
+
+.oracle-orb {
+  --oracle-size: var(--oracle-size-large);
+  position: relative;
+  display: inline-block;
+  flex: none;
+  width: var(--oracle-size);
+  height: var(--oracle-size);
+  line-height: 0;
+}
+.oracle-orb__art { position: relative; width: 100%; height: 100%; overflow: visible; }
+
+/* Soft light around the ball (centred on the ball, which sits a little above the box centre). */
+.oracle-orb__halo {
+  position: absolute;
+  left: 18%; top: 13%; width: 64%; height: 64%;
+  border-radius: 50%;
+  background: radial-gradient(circle, var(--oracle-halo) 0%, transparent 70%);
+  filter: blur(calc(var(--oracle-size) * var(--oracle-halo-blur)));
+  transform: scale(1.35);
+  pointer-events: none;
+}
+
+.oracle-stop-core { stop-color: var(--oracle-core); }
+.oracle-stop-amethyst-1 { stop-color: var(--oracle-amethyst-1); }
+.oracle-stop-amethyst-2 { stop-color: var(--oracle-amethyst-2); }
+.oracle-stop-teal { stop-color: var(--oracle-teal); }
+.oracle-stop-raspberry { stop-color: var(--oracle-raspberry); }
+.oracle-stop-gold-1 { stop-color: var(--oracle-gold-1); }
+.oracle-stop-gold-2 { stop-color: var(--oracle-gold-2); }
+.oracle-orb__cradle-shade { stroke: var(--oracle-cradle-shade); }
+
+.oracle-orb__arc { stroke-width: 2.4; opacity: .9; }
+.oracle-orb__arc--teal { stroke: var(--oracle-teal); }
+.oracle-orb__arc--raspberry { stroke: color-mix(in srgb, var(--oracle-raspberry) 82%, var(--oracle-gold-1)); }
+.oracle-orb__bubble { stroke: var(--oracle-cue-ask); stroke-width: 2.4; }
+
+/* The inner-light sweep: hidden at rest, crosses the ball once on entrance. */
+.oracle-orb__sweep { opacity: 0; transform: translateX(0) skewX(-18deg); transform-box: view-box; }
+.oracle-orb--entrance .oracle-orb__sweep {
+  animation: oracle-sweep var(--oracle-sweep-duration) var(--oracle-sweep-ease) var(--oracle-sweep-delay) 1 both;
+}
+@keyframes oracle-sweep {
+  0%   { opacity: 0; transform: translateX(0) skewX(-18deg); }
+  20%  { opacity: 1; }
+  80%  { opacity: 1; }
+  100% { opacity: 0; transform: translateX(150px) skewX(-18deg); }
+}
+
+/* ── Hover / press: one brief glow compression ─────────── */
+
+/*
+ * Put .oracle-press on the interactive element (link or button) that holds
+ * the artwork; in OracleCard the card's button drives it. Hover runs the compression once; pressing holds it briefly.
+ */
+.oracle-press:hover .oracle-orb__halo,
+.oracle-card:has([data-slot='button']:hover) .oracle-orb__halo {
+  animation: oracle-compress var(--oracle-compress-duration) ease-out 1;
+}
+.oracle-press:active .oracle-orb__halo,
+.oracle-card:has([data-slot='button']:active) .oracle-orb__halo {
+  transform: scale(calc(1.35 * var(--oracle-compress-scale)));
+  opacity: 1;
+  transition: transform var(--oracle-press-duration) ease-out;
+}
+@keyframes oracle-compress {
+  0%   { transform: scale(1.35); }
+  45%  { transform: scale(calc(1.35 * var(--oracle-compress-scale))); filter: blur(calc(var(--oracle-size) * var(--oracle-halo-blur) * .7)) brightness(var(--oracle-compress-boost)); }
+  100% { transform: scale(1.35); }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .oracle-orb--entrance .oracle-orb__sweep { animation: none; opacity: 0; }
+  .oracle-press:hover .oracle-orb__halo,
+  .oracle-card:has([data-slot='button']:hover) .oracle-orb__halo { animation: none; }
+  .oracle-press:active .oracle-orb__halo,
+  .oracle-card:has([data-slot='button']:active) .oracle-orb__halo { transition: none; }
+}
+
+/* ── Badge: artwork plus a visible label ───────────────── */
+
+.oracle-badge { display: inline-flex; align-items: center; gap: var(--oracle-badge-gap); color: var(--oracle-ink); }
+.oracle-badge--stacked { flex-direction: column; text-align: center; }
+.oracle-badge__label { font-size: 13px; line-height: 1.3; font-weight: 600; letter-spacing: .01em; }
+.oracle-badge--inline .oracle-badge__label { font-size: 15px; }
+
+/* ── Card ──────────────────────────────────────────────── */
+
+/* Borderless glass tinted with the surround colour: ivory in light, plum in dark. */
+.oracle-card {
+  max-width: 380px; width: 100%;
+  border-radius: var(--oracle-card-radius);
+  background: var(--oracle-card-bg);
+  color: var(--oracle-ink);
+}
+.oracle-card__stage { display: grid; place-items: center; padding: var(--oracle-card-stage-pad) 24px 4px; }
+.oracle-card__title { color: var(--oracle-ink); }
+.oracle-card__text { color: var(--oracle-ink-muted); }
+.oracle-card__note { font-size: 15px; line-height: 1.45; color: var(--oracle-ink-muted); }
