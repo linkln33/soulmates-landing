@@ -4,7 +4,7 @@ Status: **proposal, not built** (17 Oct 2026). Needs the owner's approval before
 
 ## What the owner has decided
 
-- **Journey:** free website tools, then sign-up in the app, then the 48–52% balance check, then admission or the waitlist, then gradual profile completion.
+- **Journey:** free website tools, then sign-up in the app, then pilot admission (pilot mode and invites; the 48–52% balance check was removed by the owner), then gradual profile completion.
 - **No linking by typed email.** Accounts are never linked or claimed because an email address matches.
 - **Separate consents:**
   - Email subscription is separate from an app account.
@@ -46,7 +46,7 @@ App
   → review screen: per field "keep mine" (default) / "use this one"; Confirm or Discard
   → POST /api/claims/redeem    { token, choices }   authenticated, atomic, single-use
       ← writes only the confirmed fields; marks the claim consumed by this user
-  → normal admission check (48–52% rule) → admitted or waitlist
+  → pilot admission (pilot mode and invites) → admitted or waitlist
 ```
 
 - **Expired or used tokens:** the app says the link has expired and offers to continue without it. The readings can be recreated in the app.
