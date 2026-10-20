@@ -86,7 +86,7 @@ You can withdraw either consent at any time in the app. You then stop taking par
 
 **How possible matches are found.** Between members who take part, we compare age and age range, gender and who each person wants to meet, the kind of connection each of you is looking for, distance if either set a limit (before a match opens distance is only a filter; after it opens, only the approximate distance in whole kilometres is shown), answers to the app's questions, and details calculated from birth data. This is profiling. Members who have blocked each other are never matched. We store the results of comparisons between two members on our server; they are deleted when either member deletes their account.
 
-**Compatibility.** No compatibility score or percentage is shown yet. One will appear only after our pair scoring has been verified, and we will update this notice before then. A compatibility reading for an open match uses both members' information only with both members' explicit consent. We never judge how well two people suit each other from one person's sign or number alone.
+**Compatibility.** Two members of an open match see a shared compatibility result (an overall percentage, results for each area and a match type) only when our checks have verified the result for that pair; otherwise they see that we are still learning. Passion & Intimacy is shown only as a general level, never as a number. A compatibility reading for an open match uses both members' information only with both members' explicit consent. We never judge how well two people suit each other from one person's sign or number alone.
 
 **Planned changes, not active now:**
 
