@@ -153,7 +153,7 @@ const en = {
         },
         {
           title: 'Notice a connection',
-          body: 'When your profile is complete, you can choose the Soulmate Quest. Possible matches are found in the background, with no swiping, and you can have several at once. Before you accept, each one stays concealed, with no name or photo: only an overall compatibility score when our checks have verified one.',
+          body: 'When your profile is complete, you can choose the Soulmate Quest. Possible matches are found in the background, with no swiping, and you can have several at once. Before you accept, each one stays concealed, with no name or identifiable photo: only an overall compatibility score when our checks have verified one.',
           statuses: ['Being prepared'],
           alt: 'Two adult figures with their faces veiled in light, joined by a thin cyan trail.',
         },
@@ -311,7 +311,7 @@ const en = {
     matchingBadge: 'Being prepared',
     matching: [
       'Possible matches are found in the background among members with a complete profile, from the compatibility of what both people choose to share in the app. There is no swiping, and you can have several at once.',
-      'Before you accept, a possible match stays concealed, with no name, photo or profile. It shows only a fixed overall compatibility score when our checks have verified one, and otherwise “Still learning”. Names, photos and chat open when you both accept.',
+      'Before you accept, a possible match stays concealed, with no name, identifiable photo or profile. It shows only a fixed overall compatibility score when our checks have verified one, and otherwise “Still learning”. Names, photos and chat open when you both accept.',
       'You review possible matches yourself and accept only the ones you choose. Nobody is told if you don’t.',
       'When a match opens, it has its own private conversation. A match that ends doesn’t come back, and you can report or block anyone.',
     ],

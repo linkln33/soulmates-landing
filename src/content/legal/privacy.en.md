@@ -90,6 +90,7 @@ You can withdraw either consent at any time in the app. You then stop taking par
 **Planned changes, not active now:**
 
 - **Automatic acceptance.** Later you may be able to choose that a possible match is accepted on your side without your review when it meets a minimum you set; it still opens only when the other member's conditions are met too. It is switched off. We will explain it in the app and update this notice before it can be turned on, and you will always be able to choose to review each match yourself.
+- **Previews.** A later version may show a heavily blurred photo preview of a possible match before it opens. This will happen only after we tell you in the app and update this notice.
 
 If you believe an automated step affects you unfairly, write to the privacy address and a person will review it. We will carry out a data protection impact assessment before matching becomes publicly available.
 

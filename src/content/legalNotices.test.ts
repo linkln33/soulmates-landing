@@ -102,7 +102,8 @@ for (const [lang, t] of Object.entries(LANGS)) {
     assert.ok(s8.includes(t.concealedScore));
     assert.ok(s8.includes(t.concealedNoAreas));
     assert.ok(s8.includes(t.completeOnly));
-    assert.doesNotMatch(s8, /blurred|размазана/);
+    // Approved blurred previews stay disclosed (owner, 22 Oct 2026).
+    assert.match(s8, /blurred|размазана/);
     assert.doesNotMatch(doc(`terms.${lang}.md`), /no compatibility score is shown yet|засега не се показва оценка/);
   });
 
