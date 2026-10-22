@@ -104,7 +104,7 @@ const en = {
   home: {
     metaTitle: 'SoulMates Quest — free personal readings',
     metaDescription:
-      'Explore free astrology, tarot, numerology and lunar readings. SoulMates Quest is also preparing a limited pilot for compatibility-led connections.',
+      'Explore free astrology, tarot, numerology and lunar readings. The SoulMates Quest app, being prepared for a limited pilot, is a free personal guide first, with an optional way to meet your match.',
     eyebrow: 'Free readings. No account needed.',
     titleTop: 'Above the Physical.',
     titleAccent: 'Beyond the Visible.',
@@ -147,19 +147,19 @@ const en = {
       stages: [
         {
           title: 'Discover your inner world',
-          body: 'Free personal readings help you reflect on yourself, and in the pilot the Daily Compass adds how your day feels. A reflection, not a prediction.',
+          body: 'Free personal readings open step by step with what you share: tarot and the Moon need nothing, your birth date opens your horoscope, Life Path and Dreamspell, and your birth time and place open your full natal chart. In the pilot, the Daily Compass adds how your day feels. A reflection, not a prediction.',
           statuses: ['Free readings available today', 'Daily Compass in the limited pilot'],
           alt: 'An adult woman with her eyes closed and her hands over her heart, surrounded by soft raspberry light.',
         },
         {
           title: 'Notice a connection',
-          body: 'Possible matches come from what you choose to share in the app and appear concealed, with no names or photos. You explore what draws you together and decide whether to open each one.',
+          body: 'When your profile is complete, you can choose the Soulmate Quest. Possible matches are found in the background, with no swiping, and you can have several at once. Before you accept, each one stays concealed, with no name or photo: only an overall compatibility score when our checks have verified one.',
           statuses: ['Being prepared'],
           alt: 'Two adult figures with their faces veiled in light, joined by a thin cyan trail.',
         },
         {
           title: 'Explore it together',
-          body: 'When you both accept, your profiles open and a private conversation begins. Later, an optional Oracle is planned to help you understand the connection and find a way to begin.',
+          body: 'When you both accept, names and photos open, a private conversation begins, and you see the details of your compatibility by area.',
           statuses: ['Being prepared'],
           alt: 'An adult woman and man facing each other and smiling, their hands linked by a shared thread of light.',
         },
@@ -168,7 +168,7 @@ const en = {
       closingAccent: 'Beyond the Visible.',
       closingLead: 'Discover the unseen forces that draw two souls together.',
       consent: 'Taking part in matching is optional and needs your explicit consent. You can step away at any time.',
-      note: 'Matching, conversations and the Oracle are not available yet. There is no public download and no launch date.',
+      note: 'Matching and conversations are not publicly available yet. There is no public download and no launch date.',
     },
     finalTitle: 'Start with a free reading today',
     finalLead:
@@ -303,15 +303,15 @@ const en = {
       'The SoulMates Quest app is being prepared for a limited pilot. It isn’t in the App Store or Google Play yet. Here is what it is for and how it is intended to work.',
     title: 'Above the Physical. Beyond the Visible.',
     lead:
-      'The app is being prepared for a limited pilot. It will bring your readings into one personal place, and, for members who choose to take part, a careful, compatibility-led way to meet real people.',
+      'The app is being prepared for a limited pilot. It is a free personal guide first, with your readings in one personal place. Once your profile is complete, you can also choose the Soulmate Quest, a careful, compatibility-led way to meet real people.',
     statusTitle: 'Where things stand',
     status:
       'The app is being prepared for a limited pilot. It isn’t in the App Store or Google Play yet, and there is no public download. We aren’t promising a date.',
     matchingTitle: 'How matching is intended to work',
     matchingBadge: 'Being prepared',
     matching: [
-      'Possible matches are suggested from the compatibility of what both people choose to share in the app.',
-      'Each possible match stays concealed, with no name, photo or profile, until both people accept it.',
+      'Possible matches are found in the background among members with a complete profile, from the compatibility of what both people choose to share in the app. There is no swiping, and you can have several at once.',
+      'Before you accept, a possible match stays concealed, with no name, photo or profile. It shows only a fixed overall compatibility score when our checks have verified one, and otherwise “Still learning”. Names, photos and chat open when you both accept.',
       'You review possible matches yourself and accept only the ones you choose. Nobody is told if you don’t.',
       'When a match opens, it has its own private conversation. A match that ends doesn’t come back, and you can report or block anyone.',
     ],
@@ -323,13 +323,13 @@ const en = {
     howTitle: 'How joining will work',
     steps: [
       { title: 'Use the free readings', body: 'Everything on this website stays free and complete, with or without an account.' },
-      { title: 'Create your account in the app', body: 'When the pilot opens, you sign in with Google or with an email and password. Your readings start with your birth date.' },
+      { title: 'Create your account in the app', body: 'When the pilot opens, you sign in with Google or with an email and password. Tarot and the Moon need nothing more; your birth date and birth details open the rest of your readings.' },
       { title: 'For adults only', body: 'SoulMates Quest is for people aged 18 or over. You confirm your age when you create your account.' },
-      { title: 'Matching only if you choose it', body: 'Taking part in matching is your choice. Before matching uses who you would like to meet or your more personal answers, the app asks for your explicit consent in a separate step, and you can withdraw it later. Your personal readings don’t need it.' },
+      { title: 'Matching only if you choose it', body: 'The Soulmate Quest is optional and opens once your profile is complete: your birth details (your birth time can be “I don’t know”), the relationship questionnaires, your matching preferences and agreements, and one photo. Before matching uses who you would like to meet or your more personal answers, the app asks for your explicit consent in a separate step, and you can withdraw it later. Your personal readings don’t need it.' },
     ],
     profileTitle: 'Your profile grows gradually',
     profile:
-      'Your birth date is enough for the basic readings. Further answers in the app allow deeper readings over time. Nothing you do on this website adds you to matching: that only happens in the app, with your explicit consent.',
+      'Your readings open step by step with what you share: tarot and the Moon need nothing, your birth date opens your horoscope, Life Path and Dreamspell, and your birth time and place open your full natal chart. Optional questionnaires, about 15 minutes in total, deepen your readings, and a complete profile opens the Soulmate Quest. Nothing you do on this website adds you to matching: that only happens in the app, with your explicit consent.',
     quizTitle: '“Are you my soulmate?”',
     quiz:
       'Members of the app can send friends a short quiz. Friends answer it on this website, without installing the app or creating an account. New answers are paused for now. When they resume, friends will confirm that they are 18 or over before answering.',
