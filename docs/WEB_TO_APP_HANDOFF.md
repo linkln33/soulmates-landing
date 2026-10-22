@@ -2,6 +2,8 @@
 
 Status: **proposal, not built** (17 Oct 2026). Needs the owner's approval before any backend or app work. It does not block the free readings, which are complete without it.
 
+> **Status (22 Oct 2026).** Still a proposal: no claim endpoints (`/api/public/claims`, `/api/claims/*`) exist in the backend or the app. The app is still not in the app stores (`src/content/legal/about.en.md`), so open decision 2 still applies. "Introductions" below means matches (current model: `SoulMates-Quest-mobile/docs/MATCHES_MODEL.md`).
+
 ## What the owner has decided
 
 - **Journey:** free website tools, then sign-up in the app, then pilot admission (pilot mode and invites; the 48–52% balance check was removed by the owner), then gradual profile completion.

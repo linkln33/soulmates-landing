@@ -4,6 +4,8 @@ A single crystal ball of deep amethyst glass with a restrained teal and raspberr
 
 Review page (dev only, 404 in production, noindex, not in the sitemap): `npm run dev -- -p 3311`, then `http://localhost:3311/internal/oracle?theme=light` (or `dark`). Screenshots: `scripts/oracle-screenshots.mjs`.
 
+> **Status (22 Oct 2026).** The in-app Oracle is off (no paid AI key; testers only; monetization undecided; see the workspace `AGENTS.md`). The default `unavailable` note, "The Oracle is available in the app." (`ORACLE_UNAVAILABLE_TEXT` in `OracleCard.tsx`), is therefore not true for members today: pass an accurate `unavailableText`, or keep the component off public pages, until the owner decides.
+
 ## Use
 
 ```tsx

@@ -1,6 +1,6 @@
 # SoulMates Quest website (www.soulmates.quest)
 
-The free readings portal: horoscope, tarot, numbers and the Moon calendar in English and Bulgarian, plus the friends' "Are you my soulmate?" quiz pages. Next.js 16 (App Router).
+The free readings portal: horoscope, tarot, numbers and the Moon calendar in English and Bulgarian, plus the friends' "Are you my soulmate?" quiz pages, an `/app` page and the About, Privacy, Terms, Safety and Delete-account pages. Next.js 16 (App Router).
 
 Read `AGENTS.md` first (strict rules: main only, production only, one database).
 
@@ -12,8 +12,9 @@ Read `AGENTS.md` first (strict rules: main only, production only, one database).
   - `npm run check:app` verifies the committed copies against the app without writing.
   - `npm test` fails if any synced file no longer matches the manifest.
 - **Languages:** `src/i18n/config.ts` (`LOCALES`). Portal pages live under `/{lang}/…`; `/` and unprefixed tool paths redirect by `Accept-Language` (`src/proxy.ts`). Website text is in `src/i18n/site/{en,bg}.ts`; reading text is the app's.
-- **Design:** CSS variables generated from the app's tokens (`src/lib/design/tokens.ts`), Inter with Cyrillic, system/light/dark themes, the app's card patterns.
-- **The visitor's browser keeps** only what `src/lib/readings/local.ts` lists (no cookies).
+- **Document pages:** `/{lang}/about|privacy|terms|safety|delete-account` render `src/content/legal/{slug}.{lang}.md` at build time (`src/components/site/DocPage.tsx`). Privacy, Terms, Safety and Delete-account are published as drafts with a banner, `noindex` and out of the sitemap (`DRAFT_DOCS` in `src/lib/site/config.ts`, owner decision 18 Oct 2026).
+- **Design:** CSS variables generated from the app's tokens (`src/lib/design/tokens.ts`), Inter with Cyrillic, the app's card patterns. No theme switch: the theme follows local time (dark 18:00–08:00, light 08:00–18:00).
+- **The visitor's browser keeps** the tarot keys in `src/lib/readings/local.ts` and the analytics choice (`sq.consent.analytics`, `src/lib/site/consent.ts`). Vercel Web Analytics runs without cookies; Google Analytics loads (and sets cookies) only after the visitor accepts the cookie banner (`src/components/site/SiteAnalytics.tsx`).
 
 ## Develop
 
@@ -33,3 +34,6 @@ Git pushes don't deploy (`vercel.json`). Production is deployed deliberately fro
 
 - `docs/WEB_TO_APP_HANDOFF.md`: proposed website → app claim design (not built).
 - `LEGAL_DRAFT_TODO.md`: open items before the draft legal pages can take effect.
+- `docs/verification/`: review screenshots saved on the owner's request.
+- `src/components/oracle/README.md`: the Oracle crystal-ball component (not on live pages).
+- `assets/source/README.md`: sources and encoding scripts for the homepage images.
