@@ -24,8 +24,12 @@ const LANGS = {
     separateStep: 'in its own separate step',
     intent: 'the kind of connection each of you is looking for',
     intentAccount: 'the kind of connection you are looking for',
-    derivable: 'birth date and time could be worked out',
-    failedKept: 'until you delete your account; we plan to shorten this to 30 days',
+    noPaid: 'There are no paid features',
+    noOracle: 'does not offer an in-app AI Oracle',
+    concealedScore: 'a fixed overall compatibility score',
+    concealedNoAreas: 'Area results and the match type are not shown before both members accept',
+    completeOnly: 'Only members with a complete profile are compared',
+    termsFree: 'readings, matching and chat',
     googleConfigured: 'We use Google Places where it is configured, otherwise Nominatim',
     phoneGeocoder: "your phone's own location service (from Google or Apple)",
     precision: 'to about 100 m',
@@ -45,8 +49,12 @@ const LANGS = {
     separateStep: 'в отделна стъпка',
     intent: 'какъв вид връзка търси всеки',
     intentAccount: 'какъв вид връзка търсите',
-    derivable: 'може да се изведат датата и часът на раждане',
-    failedKept: 'докато не изтриете акаунта си; планираме да съкратим този срок до 30 дни',
+    noPaid: 'Няма платени функции',
+    noOracle: 'не предлага Оракул с изкуствен интелект в самото приложение',
+    concealedScore: 'непроменлив общ резултат за съвместимост',
+    concealedNoAreas: 'Резултатите по области и видът връзка не се показват, преди и двамата членове да приемат',
+    completeOnly: 'Сравняват се само членове с пълен профил',
+    termsFree: 'прочитите, свързването и разговорите',
     googleConfigured: 'Използваме Google Places, когато е настроен, а иначе Nominatim',
     phoneGeocoder: 'услугата за местоположение на телефона ви (на Google или Apple)',
     precision: 'с точност до около 100 м',
@@ -78,10 +86,24 @@ for (const [lang, t] of Object.entries(LANGS)) {
     assert.ok(section(privacy, 8).includes(t.intent));
   });
 
-  test(`${lang}: Oracle facts are described as precise, and failed questions are not promised a 30-day deletion that does not run`, () => {
+  test(`${lang}: no paid features, no in-app Oracle, and no Oracle purchases or AI provider are described`, () => {
     const s9 = section(privacy, 9);
-    assert.ok(s9.includes(t.derivable));
-    assert.ok(s9.includes(t.failedKept));
+    assert.ok(s9.includes(t.noPaid));
+    assert.ok(s9.includes(t.noOracle));
+    const terms = doc(`terms.${lang}.md`);
+    assert.ok(section(terms, 10).includes(t.termsFree), 'terms: readings, matching and chat are free');
+    for (const text of [privacy, deletion, terms]) {
+      assert.doesNotMatch(text, /Anthropic|purchase|покуп|only paid feature|единствената платена/);
+    }
+  });
+
+  test(`${lang}: concealed matches show only a verified overall score, and only complete profiles are compared`, () => {
+    const s8 = section(privacy, 8);
+    assert.ok(s8.includes(t.concealedScore));
+    assert.ok(s8.includes(t.concealedNoAreas));
+    assert.ok(s8.includes(t.completeOnly));
+    assert.doesNotMatch(s8, /blurred|размазана/);
+    assert.doesNotMatch(doc(`terms.${lang}.md`), /no compatibility score is shown yet|засега не се показва оценка/);
   });
 
   test(`${lang}: location search, the phone geocoder and the account-email provider are named accurately`, () => {
@@ -111,7 +133,6 @@ test('bg: reviewed Bulgarian wording', () => {
   assert.ok(bg.includes('защото могат да разкрият религиозни или философски убеждения'));
   assert.ok(!bg.includes('защото може да разкрият религиозни'));
   assert.ok(bg.includes('да изберете възможните съвпадения да се приемат от ваша страна автоматично, без да ги преглеждате'));
-  assert.ok(bg.includes('положения на планетите, знаци, домове, аспекти и числа'));
 });
 
 test('privacy notices keep the same numbered sections in both languages', () => {

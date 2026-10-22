@@ -1,6 +1,6 @@
 # About SoulMates Quest
 
-Last updated: 18 October 2026 (draft)
+Last updated: 22 October 2026 (draft)
 
 SoulMates Quest offers free readings: a horoscope for every sign, tarot from our own 78-card deck, numerology from your birth date and a Moon calendar calculated from the real sky. Our texts and tarot artwork are our own.
 
@@ -8,7 +8,7 @@ Readings are for reflection, not prediction. They are not medical, psychological
 
 ## The app
 
-We are preparing the SoulMates Quest app for a limited pilot. It will offer personal readings and, for adult members who choose it, a careful way to meet real people. In the model we are preparing, possible matches stay concealed until both people choose to accept. The app is not available in app stores yet, and there is no release date.
+We are preparing the SoulMates Quest app for a limited pilot. It is a free personal guide first: readings that open step by step with what you share. Adult members who complete their profile can also choose the Soulmate Quest, a careful way to meet real people. Possible matches stay concealed until both people choose to accept. Readings, matching and chat are free. The app is not available in app stores yet, and there is no release date.
 
 ## Who we are
 

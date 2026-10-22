@@ -1,6 +1,6 @@
 # Delete your SoulMates Quest account
 
-Last updated: 19 October 2026 (draft)
+Last updated: 22 October 2026 (draft)
 
 ## 1. In the app
 
@@ -16,13 +16,12 @@ Write from the email address you use for SoulMates Quest. If we cannot match you
 
 ## 4. What is deleted
 
-Your account, profile, photos, birth details, location, answers, interests, agreements, reading history, matches and messages, comparisons with other members, your Oracle conversations, your quizzes and your friends' answers to them, and your own answers to other members' quizzes. Your sign-in record held by our authentication provider is deleted too [to be confirmed: applies from the next app update].
+Your account, profile, photos, birth details, location, answers, interests, agreements, reading history, matches and messages, comparisons with other members, your quizzes and your friends' answers to them, and your own answers to other members' quizzes. Your sign-in record held by our authentication provider is deleted too [to be confirmed: applies from the next app update].
 
 ## 5. What is kept
 
 - **Safety reports** made by you or about you, and the evidence saved with them, without the link to your account (except in the case in the next point). They are deleted automatically 12 months after the report was submitted.
 - **Only if your account was restricted for safety reasons, was waiting for an age review, or had open reports about it when you deleted it** [to be confirmed: applies from the next app update]: a pseudonymous record (keyed one-way codes made from your email address and your account identifier, the kind of restriction if there was one, references to the reports about your account, and the dates), so that the restriction cannot be undone by creating the account again. If the same email address or sign-in identity is used again, the new account gets the same restriction and those reports are linked to it again, and an email sign-up with that address is refused. The record holds no profile, photos or messages. It is deleted up to 12 months after deletion [to be confirmed], or later while a related report is still kept. If it cannot be created, the app cannot complete the deletion until it can. See the [Privacy Notice](/en/privacy), section 12.
-- **Oracle purchase records**, if you bought the Oracle: [period to be confirmed]
 - **Backups:** copies may remain in backups for [period to be confirmed].
 - **Our correspondence** about your request: [period to be confirmed]
 
