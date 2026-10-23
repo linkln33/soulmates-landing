@@ -147,3 +147,13 @@ test('privacy notices keep the same numbered sections in both languages', () => 
   assert.deepEqual(heads(doc('privacy.en.md')), heads(doc('privacy.bg.md')));
   assert.deepEqual(heads(doc('delete-account.en.md')), heads(doc('delete-account.bg.md')));
 });
+
+// The site copy says what privacy §8 says: a concealed match shows no photo at
+// all to a member (blurred previews are only a disclosed later possibility).
+for (const lang of ['en', 'bg'] as const) {
+  test(`${lang}: the site never suggests a concealed match shows some photo`, () => {
+    const site = readFileSync(join(import.meta.dirname, '..', 'i18n', 'site', `${lang}.ts`), 'utf8');
+    assert.doesNotMatch(site, /identifiable photo|разпознаваема снимка/);
+    assert.match(site, lang === 'en' ? /concealed, with no name, photo or profile/ : /скрито, без име, снимка или профил/);
+  });
+}
