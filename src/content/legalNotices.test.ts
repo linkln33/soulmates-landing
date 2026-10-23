@@ -24,6 +24,7 @@ const LANGS = {
     separateStep: 'in its own separate step',
     intent: 'the kind of connection each of you is looking for',
     intentAccount: 'the kind of connection you are looking for',
+    birthName: 'used only to calculate the numbers in your own name reading',
     noPaid: 'There are no paid features',
     noOracle: 'does not offer an in-app AI Oracle',
     concealedScore: 'a fixed overall compatibility score',
@@ -49,6 +50,7 @@ const LANGS = {
     separateStep: 'в отделна стъпка',
     intent: 'какъв вид връзка търси всеки',
     intentAccount: 'какъв вид връзка търсите',
+    birthName: 'използва се само за изчисляване на числата в собствения ви прочит на името',
     noPaid: 'Няма платени функции',
     noOracle: 'не предлага Оракул с изкуствен интелект в самото приложение',
     concealedScore: 'непроменлив общ резултат за съвместимост',
@@ -105,6 +107,10 @@ for (const [lang, t] of Object.entries(LANGS)) {
     // Approved blurred previews stay disclosed (owner, 22 Oct 2026).
     assert.match(s8, /blurred|размазана/);
     assert.doesNotMatch(doc(`terms.${lang}.md`), /no compatibility score is shown yet|засега не се показва оценка/);
+  });
+
+  test(`${lang}: the optional full birth name is listed with its one purpose (Stage 2, 23 Oct 2026)`, () => {
+    assert.ok(section(privacy, 6).includes(t.birthName));
   });
 
   test(`${lang}: location search, the phone geocoder and the account-email provider are named accurately`, () => {

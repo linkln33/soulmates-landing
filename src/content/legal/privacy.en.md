@@ -51,6 +51,7 @@ A member can send a friend a link to a short quiz. If you answer it, we collect 
 
 - **Sign-in:** email and password (stored only as a one-way hash), or Google, Apple or an email link.
 - **Birth details:** date, time (or "unknown") and place of birth, for your personal readings and to confirm you are 18 or over.
+- **Full birth name** (optional): the name you were given at birth, if you add it, used only to calculate the numbers in your own name reading. It is never shown to other members and never used for matching, and you can change or remove it at any time [to be confirmed: applies from the next app update].
 - **Profile:** name, short bio, gender identity, photos.
 - **Your answers** to the app's questions, and the insights we draw from them. Some questions ask about your values, your spiritual life and your intimacy preferences; see section 7.
 - **If you take part in matching:** who you want to meet, the kind of connection you are looking for, age range and interests.
