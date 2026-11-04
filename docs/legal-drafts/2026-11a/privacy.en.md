@@ -129,11 +129,19 @@ Other members see only what section 8 describes. Our service providers act on ou
 | Your phone's location service (Google or Apple) | Only if you choose to use your current location: turning your position into a city name, on your phone |
 | Resend | Sending account emails (section 6): your email address and the message |
 | Have I Been Pwned (Pwned Passwords) | When you choose a password, our server checks whether it appears in known data breaches. Only the first 5 characters of a one-way hash of the password are sent, never the password or your email |
-| The provider that hosts our mailboxes | Receiving and keeping the emails you send to our addresses |
+| Namecheap | Email forwarding: receiving the emails you send to our addresses and forwarding them to our inbox |
 
 Each provider acts under its own data processing terms. Our database is hosted by Supabase in the European Union (Ireland), and the app's server runs on Vercel in the European Union (Dublin). We may disclose data where the law requires it or to protect someone's safety.
 
-Some providers are in, or may process data in, the United States. The European Commission recognises that the UK provides adequate protection for data from the EU. For transfers to the United States, we rely on the EU–US Data Privacy Framework and its UK extension where the provider is certified, and otherwise on the standard contractual clauses (with the UK addendum) in the provider's data processing terms. You can ask the privacy address for a copy.
+Some providers are in, or may process data in, the United States. The European Commission recognises that the UK provides adequate protection for data from the EU. For transfers to the United States we rely on:
+
+- **Vercel:** the EU–US Data Privacy Framework (Vercel is certified) and the standard contractual clauses in its data processing terms;
+- **Supabase:** the standard contractual clauses in its data processing terms;
+- **Resend:** the EU–US Data Privacy Framework and its UK extension (Resend is certified);
+- **Expo** (delivery of push notifications): the EU–US Data Privacy Framework, including its UK and Swiss extensions;
+- **Google** (Firebase Cloud Messaging, Google Maps and Places): the EU–US Data Privacy Framework and the standard contractual clauses.
+
+You can ask the privacy address for a copy.
 
 ## 12. How long we keep data
 
@@ -155,7 +163,7 @@ Some providers are in, or may process data in, the United States. The European C
 | Love Check details of the other person | Not stored |
 | Daily Compass | Not stored; a copy is held in the server's memory for at most 6 hours |
 | Server and crash-report logs | Kept by our hosting provider for at most 30 days (on our current plan, about 1 hour) |
-| Backups | Copies of the database we make before system changes are deleted after 30 days. Our database provider's own backups, if any, are kept for at most 7 days |
+| Backups | We make copies of the database before system changes; they are deleted after 30 days |
 | Emails you send us | 2 years after the matter is closed, unless we need them longer for a legal claim |
 
 **When you delete your account** (Settings → Account → Delete account), we delete your profile, photos, birth details, location, answers, interests, agreements, reading history, matches and messages, comparisons and compatibility results with other members, your answers in Connection Quests, and quiz answers. A shared conversation is deleted for both people. Introductions and Connection Quests you were part of are closed and the link to you is removed. If you signed in with Google or Apple, we also remove your sign-in record from our sign-in provider (Supabase). We keep:

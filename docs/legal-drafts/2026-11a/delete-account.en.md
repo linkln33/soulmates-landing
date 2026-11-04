@@ -23,7 +23,7 @@ Your account, profile, photos, birth details, location, answers, interests, agre
 - **Safety reports** made by you or about you, and the evidence saved with them, without the link to your account (except in the case in the next point). They are deleted automatically 12 months after the report was submitted.
 - **Only if your account was restricted for safety reasons, was waiting for an age review, or had open reports about it when you deleted it**: a pseudonymous record (keyed one-way codes made from your email address and your account identifier, the kind of restriction if there was one, references to the reports about your account, and the dates), so that the restriction cannot be undone by creating the account again. If the same email address or sign-in identity is used again, the new account gets the same restriction and those reports are linked to it again, and an email sign-up with that address is refused. The record holds no profile, photos or messages. It is deleted 12 months after deletion, or later while a related report is still kept. If it cannot be created, the app cannot complete the deletion until it can. See the [Privacy Notice](/en/privacy), section 12.
 - **Interests you added to the shared list** ("+ Add yours") stay in the list as suggestions, without any link to you.
-- **Backups:** copies we make before system changes are deleted after 30 days; our database provider's own backups, if any, after at most 7 days.
+- **Backups:** we make copies of the database before system changes; they are deleted after 30 days.
 - **Our correspondence** about your request: 2 years after it is completed.
 
 ## 6. Legal and safety exceptions
