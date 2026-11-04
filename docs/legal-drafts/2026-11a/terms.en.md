@@ -59,12 +59,12 @@ Meet people with care: we cannot check every member's identity or behaviour. See
 
 ## 8. Reports and moderation
 
-- **In the app**, you can block a member and report a profile or conversation using **Report or block**.
+- **In the app**, you can block a member and report a profile or conversation using **Report or block**. A block is personal between the two of you and is deleted when either account is deleted; it is never a ban from the service.
 - **Anyone**, including people without an account, can report content they believe is illegal, or a safety concern, by writing to the safety address. Please say where the content is, why you think it is illegal or harmful, and give your name and email address so we can reply.
 - **Review:** reports are reviewed by people, as soon as we can and urgent safety reports first. We do not use automated moderation for reports or for what members write to each other. Interests that members add to the shared list are checked automatically (for example for links, contact details and offensive words), and an entry that fails the check is simply not added.
 - **Decisions:** if we remove your content or restrict, suspend or close your account, we will tell you what we decided, why, and how you can challenge it, unless the law prevents us.
 - **Challenging a decision:** write to the safety address within 6 months of the decision; a person who did not take the decision will review it. If you live in the EU, you can also use an out-of-court dispute settlement body certified under the Digital Services Act, or go to court.
-- We may suspend or close accounts that break these terms or the law, or that put others at risk.
+- We may suspend or close accounts that break these terms or the law, or that put others at risk. A suspension or an age review is applied again if the person deletes the account and signs up again with the same email address or sign-in identity (see [Delete your account](/en/delete-account)).
 
 ## 9. Deleting your account
 
@@ -93,4 +93,4 @@ Please contact us first at the general address so we can try to resolve any prob
 
 ## 14. Changes to these terms
 
-We may change these terms for valid reasons, such as new features, changes in the law or security. We will tell you in the app at least 30 days before an important change takes effect, unless it must apply sooner for legal or security reasons, and ask you to accept it before you keep using matching. If you do not agree, you can delete your account before the change takes effect.
+We may change these terms for valid reasons, such as new features, changes in the law or security. We will tell you in the app at least 30 days before an important change takes effect, unless it must apply sooner for legal or security reasons, and ask you to accept it before you keep using matching. Until you accept, your readings stay available and your matching and invitations are paused, not closed: your profile, matches and place in the waitlist are kept, and matching resumes once you accept, subject to the usual admission rules. If you do not agree, you can delete your account before the change takes effect.
