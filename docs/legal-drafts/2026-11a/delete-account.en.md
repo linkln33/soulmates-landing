@@ -16,7 +16,7 @@ Write from the email address you use for SoulMates Quest. If we cannot match you
 
 ## 4. What is deleted
 
-Your account, profile, photos, birth details, location, answers, interests, agreements, reading history, matches and messages, comparisons and compatibility results with other members, your answers in Connection Quests, your quizzes and your friends' answers to them, and your own answers to other members' quizzes. Introductions and Connection Quests you were part of are closed and the link to you is removed. If you signed in with Google or Apple, your sign-in record at our sign-in provider is removed too.
+Your account, profile, photos, birth details, location, answers, interests, agreements, reading history, matches and messages, comparisons and compatibility results with other members, your answers in Connection Quests, your quizzes and your friends' answers to them, and your own answers to other members' quizzes. Introductions and Connection Quests you were part of are closed and the link to you is removed, and every record of who you were introduced to is deleted. If you signed in with Google or Apple, your sign-in record at our sign-in provider is removed too.
 
 ## 5. What is kept
 
