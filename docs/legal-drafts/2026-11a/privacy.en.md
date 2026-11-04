@@ -1,6 +1,6 @@
 # Privacy Notice
 
-Last updated: [publication date] (draft, consent version privacy draft-2026-11a)
+Last updated: 1 December 2026 (version 2026-11a)
 
 ## 1. Who we are
 
@@ -14,15 +14,15 @@ We do not sell your personal data and do not use it for advertising.
 
 | For | Address |
 |---|---|
-| General questions | hello@soulmates.quest [address being set up] |
-| Privacy requests and complaints | privacy@soulmates.quest [address being set up] |
-| Safety and illegal-content reports | safety@soulmates.quest [address being set up] |
+| General questions | hello@soulmates.quest |
+| Privacy requests and complaints | privacy@soulmates.quest |
+| Safety and illegal-content reports | safety@soulmates.quest |
 
-We have not appointed a data protection officer. Representative in the European Union: [to be confirmed]
+We have not appointed a data protection officer. We have not appointed a representative in the European Union; people in the EU can contact us directly at the privacy address.
 
 ## 3. Which laws apply
 
-In the United Kingdom, the UK GDPR and the Data Protection Act 2018 apply. In the European Union, the EU General Data Protection Regulation also applies [to be confirmed].
+In the United Kingdom, the UK GDPR and the Data Protection Act 2018 apply. Because we offer the service to people in the European Union, the EU General Data Protection Regulation also applies to their data.
 
 ## 4. Website, no account
 
@@ -34,9 +34,9 @@ The free readings need no account. To count visits and see which pages are used,
 | Numbers | Your birth date, your time zone | Nothing |
 | Tarot card of the day | A random identifier from your browser, your time zone | Nothing. The identifier is used only to choose your card and is not stored on our server |
 | Tarot draws | The number of cards | Nothing. Your question stays in your browser |
-| Abuse protection | Your IP address | A keyed one-way code made from it, for rate limits, for [period to be confirmed] |
+| Abuse protection | Your IP address | A keyed one-way code made from it, for rate limits, deleted automatically after 48 hours |
 
-Our hosting provider processes standard request data (such as IP address, page and browser) to deliver and secure the website, for [period to be confirmed].
+Our hosting provider (Vercel) processes standard request data (such as IP address, page and browser) to deliver and secure the website. Its request logs are kept for at most 30 days; on our current plan, about 1 hour.
 
 ## 5. The friends' quiz
 
@@ -51,7 +51,7 @@ A member can send a friend a link to a short quiz. If you answer it, we collect 
 
 - **Sign-in:** email and password (stored only as a one-way hash), or Google, Apple or an email link.
 - **Birth details:** date, time (or "unknown") and place of birth, for your personal readings and to confirm you are 18 or over.
-- **Full birth name** (optional): the name you were given at birth, if you add it, used only to calculate the numbers in your own name reading. It is never shown to other members and never used for matching, and you can change or remove it at any time [to be confirmed: applies from the next app update].
+- **Full birth name** (optional): the name you were given at birth, if you add it, used only to calculate the numbers in your own name reading. It is never shown to other members and never used for matching, and you can change or remove it at any time.
 - **Profile:** name, short bio, gender identity, photos.
 - **Your answers** to the app's questions, and the insights we draw from them. Some questions ask about your values, your spiritual life and your intimacy preferences; see section 7.
 - **If you take part in matching:** who you want to meet, the kind of connection you are looking for, age range, your answers to the short Quest questions (for example how much closeness you like, how you like to receive love, what matters most to you, your everyday rhythm, money and where you want to live), and, if you add them, your interests. Some interest groups, such as spirituality or psychedelics, can reveal beliefs or private habits; see section 7.
@@ -61,12 +61,12 @@ A member can send a friend a link to a short quiz. If you answer it, we collect 
 - **Love Check:** if you check a relationship reading with someone you name, only their birth date, and their birth time and place if you add them, are sent to our server to calculate it. Their name stays on your phone. Nothing about them is stored or logged. If you search for their birth place, the text you type goes to the place search in section 11.
 - **Daily Compass and daily readings:** calculated on our server from your own birth details and your time zone when you open them. We do not keep a history of them; a copy is held in our server's memory for a few hours so the screen opens faster.
 - **Account emails:** verification codes, reminders to verify, password-reset codes, a notice when your password changes, and a notice when someone tries to sign up with your address. We do not send marketing emails.
-- **Crash reports:** if the app hits an error, it sends us a short technical report: the error message, where in the code it happened, the app version, your phone's platform (Android or iOS) and the screen name. It contains no name, email, messages or answers. It appears only in our server logs, which our hosting provider keeps for a short period, and is not stored in our database.
+- **Crash reports:** if the app hits an error, it sends us a short technical report: the error message (with any email addresses, identifiers, tokens, dates and long numbers masked), where in the code it happened, the app version, your phone's platform (Android or iOS) and the type of screen. It is sent without signing in, so it is not linked to your account, and contains no name, messages or answers. It is written as one line in our server logs, which our hosting provider keeps for at most 30 days (on our current plan, about 1 hour), and is never stored in our database.
 - **Technical records:** push token and notification settings, records of what you agreed to (with version and date), and keyed one-way codes made from IP addresses or account identifiers for rate limits.
 
 We do not ask for your sexual orientation as a separate question, and we do not send marketing emails.
 
-**Legal bases:** the contract with you (account and readings); your consent (the friends' quiz, optional location, matching, and Google Analytics on the website, which you can withdraw at any time with **Cookie settings**, see section 15); your explicit consent (the sensitive information in section 7, for matching and compatibility readings; section 7 says which agreement covers what); our legitimate interests (security, abuse prevention, safety, including the record described in section 12 that stops a safety restriction being undone, and an aggregate count of website visits with Vercel Web Analytics, which sets no cookies and stores nothing in your browser); and legal obligations where they apply. The exact basis for each use: [to be confirmed]
+**Legal bases:** the contract with you (account and readings); your consent (the friends' quiz, optional location, matching, and Google Analytics on the website, which you can withdraw at any time with **Cookie settings**, see section 15); your explicit consent (the sensitive information in section 7, for matching and compatibility readings; section 7 says which agreement covers what); our legitimate interests (security, abuse prevention, safety, including the record described in section 12 that stops a safety restriction being undone, and an aggregate count of website visits with Vercel Web Analytics, which sets no cookies and stores nothing in your browser); and legal obligations where they apply.
 
 ## 7. Sensitive information
 
@@ -80,7 +80,7 @@ Some of the information used for matching and compatibility readings is sensitiv
 
 **How you give your explicit consent.** Your gender and the genders you want to meet are named in the matching agreement, and agreeing to it is your explicit consent to their use for matching. **For your answers about values and spiritual life, your interests and your birth details, the app asks for your explicit consent in its own separate step**, apart from the other agreements, before matching or a compatibility result uses them. They are used now to calculate your compatibility with possible matches, and the results are shown to both members before either accepts (section 8). Both are required to take part in matching. **Your answers about intimacy have a consent of their own**, which is optional: for now only your answer about the kind of relationship you are looking for is used, to avoid suggesting matches whose answer is clearly incompatible with yours. Your other intimacy answers are kept private and are not used for any reading unless you are asked again and agree. Withdrawing that consent deletes your intimacy answers and everything worked out from them. Neither is needed for your personal readings, which you can use without them.
 
-You can withdraw either consent at any time in the app. You then stop taking part in matching and no longer appear as anyone's possible match; your personal readings are not affected. Withdrawal does not affect earlier processing. What happens to open matches and stored comparisons after withdrawal: [to be confirmed]
+You can withdraw either consent at any time in the app. You then stop taking part in matching and no longer appear as anyone's possible match; your personal readings are not affected. Withdrawal does not affect earlier processing. When you withdraw either one, we delete your Quest answers and the interests you added, close your introductions and Connection Quests, and stop showing compatibility results with you. Withdrawing the consent for sensitive information also deletes your stored compatibility results with other members. Matches that are already open stay open with your conversation, and the other person keeps what they have already seen.
 
 ## 8. Matching
 
@@ -129,31 +129,41 @@ Other members see only what section 8 describes. Our service providers act on ou
 | Your phone's location service (Google or Apple) | Only if you choose to use your current location: turning your position into a city name, on your phone |
 | Resend | Sending account emails (section 6): your email address and the message |
 | Have I Been Pwned (Pwned Passwords) | When you choose a password, our server checks whether it appears in known data breaches. Only the first 5 characters of a one-way hash of the password are sent, never the password or your email |
-| Email provider | Our mailboxes [to be confirmed] |
+| The provider that hosts our mailboxes | Receiving and keeping the emails you send to our addresses |
 
-Agreements and locations of each provider: [to be confirmed]. We may disclose data where the law requires it or to protect someone's safety.
+Each provider acts under its own data processing terms. Our database is hosted by Supabase in the European Union (Ireland), and the app's server runs on Vercel in the European Union (Dublin). We may disclose data where the law requires it or to protect someone's safety.
 
-Some providers are in, or may process data in, the United States. The European Commission recognises that the UK provides adequate protection for data from the EU. Safeguards for other transfers: [to be confirmed]. You can ask the privacy address for a copy.
+Some providers are in, or may process data in, the United States. The European Commission recognises that the UK provides adequate protection for data from the EU. For transfers to the United States, we rely on the EU–US Data Privacy Framework and its UK extension where the provider is certified, and otherwise on the standard contractual clauses (with the UK addendum) in the provider's data processing terms. You can ask the privacy address for a copy.
 
 ## 12. How long we keep data
 
 | Data | Period |
 |---|---|
-| Account, profile, birth details, answers, preferences, photos | Until you delete the item or your account. Inactive accounts: [period to be confirmed] |
-| Messages | Deleted when either member deletes their account. Otherwise: [period to be confirmed] |
+| Account, profile, birth details, answers, preferences, photos | Until you delete the item or your account. We do not delete inactive accounts automatically. We may delete an account that has not been used for 2 years, after warning you by email at least 30 days before |
+| Messages | Kept while both accounts exist; deleted for both people when either member deletes their account |
 | Friends' quiz answers | Up to 12 months, then deleted automatically, or earlier on deletion by the friend or the creator |
-| Comparisons between two members (section 8) | Until either member deletes their account [period to be confirmed] |
+| Comparisons between two members (section 8) | Until either member deletes their account, or withdraws the consent for sensitive information |
+| Closed introductions and Connection Quests | Deleted automatically 90 days after they close (for a Quest that led to a match, 90 days after the match ends). A one-way coded record of each pair introduced and how it ended (no names, no account details) decides whether the pair may be introduced again. If they may, it is deleted 12 months after that becomes possible; if one of you passed, declined, left, blocked or reported, or the Quest led to a match, it is kept so that the same two people are never introduced again |
 | Interests you added to the shared list | The suggestion stays in the list without any link to you after you delete your account |
 | Safety reports and their evidence | 12 months from submission, then deleted automatically |
-| Record that keeps a safety restriction after deletion (below) | Restricted account: up to 12 months after deletion [to be confirmed], or longer while a related report is still kept. Account with open reports only: as long as those reports are kept. Then deleted automatically |
-| Security and sign-in records, hosting logs, backups, emails to us | [period to be confirmed] |
+| Record that keeps a safety restriction after deletion (below) | Restricted account: 12 months after deletion, or longer while a related report is still kept. Account with open reports only: as long as those reports are kept. Then deleted automatically |
+| Records of what you agreed to | While your account exists, as proof of your choices (a withdrawal is recorded with its date); deleted with your account |
+| Verification and password-reset codes | Valid for 15 minutes and stored only as a one-way hash; the hashed record is deleted with your account |
+| Sign-in sessions | A session ends after 7 days without use; the record of it is deleted with your account |
+| Push token | Until you sign out, the phone stops accepting notifications, another account signs in on the same phone, or you delete your account. Delivery receipts: at most 2 days |
+| Rate-limit records | Keyed one-way codes, deleted automatically after 48 hours |
+| Love Check details of the other person | Not stored |
+| Daily Compass | Not stored; a copy is held in the server's memory for at most 6 hours |
+| Server and crash-report logs | Kept by our hosting provider for at most 30 days (on our current plan, about 1 hour) |
+| Backups | Copies of the database we make before system changes are deleted after 30 days. Our database provider's own backups, if any, are kept for at most 7 days |
+| Emails you send us | 2 years after the matter is closed, unless we need them longer for a legal claim |
 
-**When you delete your account** (Settings → Account → Delete account), we delete your profile, photos, birth details, location, answers, interests, agreements, reading history, matches and messages, comparisons and compatibility results with other members, your answers in Connection Quests, and quiz answers. A shared conversation is deleted for both people. Introductions and Connection Quests you were part of are closed and the link to you is removed. If you signed in with Google or Apple, we also ask our sign-in provider (Supabase) to delete your sign-in record; if that step fails, we try again [to be confirmed: how and when]. We keep:
+**When you delete your account** (Settings → Account → Delete account), we delete your profile, photos, birth details, location, answers, interests, agreements, reading history, matches and messages, comparisons and compatibility results with other members, your answers in Connection Quests, and quiz answers. A shared conversation is deleted for both people. Introductions and Connection Quests you were part of are closed and the link to you is removed. If you signed in with Google or Apple, we also remove your sign-in record from our sign-in provider (Supabase). We keep:
 
 - safety reports, without the link to your account, until 12 months after submission, except in the case in the next point;
-- **only if your account was restricted for safety reasons, was waiting for an age review, or had open reports about it when you deleted it** [to be confirmed: applies from the next app update]: a pseudonymous record. It holds keyed one-way codes made from your email address and from your account identifier (the identifier our sign-in service gives your account, which a new sign-in with the same Google, Apple or email-link identity repeats), the kind of restriction if there was one, whether an age review was open, references to the reports about your account, and the dates. It contains no profile, photos or messages. We use it only to stop a restriction being undone by deleting the account and creating it again: if the same email address or sign-in identity is used again, the new account gets the same restriction and those reports are linked to it again, and an email sign-up with that address is refused as if the address were already in use. We keep it for the period in the table above, then delete it. We do not keep it for other accounts. If this record cannot be created, the app cannot complete the deletion of such an account until it can, so that the restriction is not lost; you can also write to the privacy address;
+- **only if your account was restricted for safety reasons, was waiting for an age review, or had open reports about it when you deleted it**: a pseudonymous record. It holds keyed one-way codes made from your email address and from your account identifier (the identifier our sign-in service gives your account, which a new sign-in with the same Google, Apple or email-link identity repeats), the kind of restriction if there was one, whether an age review was open, references to the reports about your account, and the dates. It contains no profile, photos or messages. We use it only to stop a restriction being undone by deleting the account and creating it again: if the same email address or sign-in identity is used again, the new account gets the same restriction and those reports are linked to it again, and an email sign-up with that address is refused as if the address were already in use. We keep it for the period in the table above, then delete it. We do not keep it for other accounts. If this record cannot be created, the app cannot complete the deletion of such an account until it can, so that the restriction is not lost; you can also write to the privacy address;
 - interests you added to the shared list, without any link to you;
-- copies in backups: [period to be confirmed]
+- copies in backups, for at most 30 days (see the table above).
 
 Details: [Delete your account](/en/delete-account).
 
@@ -161,7 +171,7 @@ Details: [Delete your account](/en/delete-account).
 
 You can access and get a copy of your data, correct or delete it, restrict or object to its use, receive it in a portable format, and withdraw consent at any time. Some rights apply only in certain circumstances.
 
-In the app you can edit your profile, preferences and location, and delete your account. For a copy of your data, write to the privacy address from your account's email; there is no self-service export yet. We may ask you to confirm your identity. We answer within one month, or tell you why we need up to two more months.
+In the app you can edit your profile, preferences and location, and delete your account. In Settings → Privacy & agreements you can download a copy of your data (your profile, your answers, the messages you sent and your agreements). For anything else, write to the privacy address from your account's email. We may ask you to confirm your identity. We answer within one month, or tell you why we need up to two more months.
 
 You can complain to us first, or to a regulator:
 
@@ -191,7 +201,7 @@ The site works without them. In the app, your phone stores sign-in tokens, unsen
 
 ## 16. Security
 
-Passwords are stored only as one-way hashes, photos are delivered through signed, expiring links, and IP addresses for abuse protection are stored only as keyed one-way codes. Further measures: [to be confirmed]
+Passwords are stored only as one-way hashes, photos are delivered through signed, expiring links, and IP addresses for abuse protection are stored only as keyed one-way codes. Data travels encrypted (HTTPS), sign-in tokens last 15 minutes and sessions end after 7 days without use, new passwords are checked against known data breaches (section 11), and crash reports are masked before they are logged.
 
 ## 17. Changes
 

@@ -1,6 +1,6 @@
 # Terms of Use
 
-Last updated: 22 October 2026 (draft)
+Last updated: 1 December 2026 (version 2026-11a)
 
 ## 1. Who we are
 
@@ -8,10 +8,10 @@ SoulMates Quest (the website www.soulmates.quest and the SoulMates Quest app) is
 
 Contacts:
 
-- general: hello@soulmates.quest [address being set up]
-- privacy: privacy@soulmates.quest [address being set up]
-- safety and illegal-content reports: safety@soulmates.quest [address being set up]
-- point of contact for authorities: [to be confirmed]
+- general: hello@soulmates.quest
+- privacy: privacy@soulmates.quest
+- safety and illegal-content reports: safety@soulmates.quest
+- point of contact for authorities: safety@soulmates.quest
 
 These terms are an agreement between you and us. Our [Privacy Notice](/en/privacy) explains how we use personal data; it is information, not part of this agreement.
 
@@ -35,7 +35,7 @@ Readings draw on traditional astrology, tarot and numerology. They are for **ref
 
 ## 5. Our content
 
-Our horoscope texts and tarot meanings are written by us, and the tarot deck is our own artwork. These, and the design and software of the service, belong to us or our licensors. You may use them for your personal, non-commercial use of the service, and share links and the share images the service creates. You may not copy, sell or republish them, or use them to train automated systems, without our written permission [to be confirmed].
+Our horoscope texts and tarot meanings are written by us, and the tarot deck is our own artwork. These, and the design and software of the service, belong to us or our licensors. You may use them for your personal, non-commercial use of the service, and share links and the share images the service creates. You may not copy, sell or republish them, or use them to train automated systems, without our written permission.
 
 ## 6. Your content
 
@@ -61,16 +61,16 @@ Meet people with care: we cannot check every member's identity or behaviour. See
 
 - **In the app**, you can block a member and report a profile or conversation using **Report or block**.
 - **Anyone**, including people without an account, can report content they believe is illegal, or a safety concern, by writing to the safety address. Please say where the content is, why you think it is illegal or harmful, and give your name and email address so we can reply.
-- **Review:** reports are reviewed by people. We do not use automated content moderation. Review process and response times: [to be confirmed]
+- **Review:** reports are reviewed by people, as soon as we can and urgent safety reports first. We do not use automated moderation for reports or for what members write to each other. Interests that members add to the shared list are checked automatically (for example for links, contact details and offensive words), and an entry that fails the check is simply not added.
 - **Decisions:** if we remove your content or restrict, suspend or close your account, we will tell you what we decided, why, and how you can challenge it, unless the law prevents us.
-- **Challenging a decision:** write to the safety address within [to be confirmed]. Further options for resolving disputes: [to be confirmed]
+- **Challenging a decision:** write to the safety address within 6 months of the decision; a person who did not take the decision will review it. If you live in the EU, you can also use an out-of-court dispute settlement body certified under the Digital Services Act, or go to court.
 - We may suspend or close accounts that break these terms or the law, or that put others at risk.
 
 ## 9. Deleting your account
 
 - You can delete your account at any time in the app: **Settings → Account → Delete account**, or by writing to the privacy address from your account's email address.
 - Deletion in the app is immediate and cannot be undone. Conversations you share with others end for them too.
-- Some data is kept afterwards, as explained on [Delete your account](/en/delete-account): safety reports, without the link to your account, for 12 months from submission, and, if you signed in with Google, Apple or an email link, your sign-in record at our authentication provider [to be confirmed].
+- Some data is kept afterwards, as explained on [Delete your account](/en/delete-account): safety reports, without the link to your account, for 12 months from submission, and, only if your account was restricted for safety reasons or had open reports, a pseudonymous record that stops the restriction being undone.
 - We may end this agreement under section 8, or if we stop offering the service, with reasonable notice where possible.
 
 ## 10. Fees
@@ -79,7 +79,7 @@ The service is free: readings, matching and chat. There are no paid features and
 
 ## 11. Liability
 
-We take reasonable care in providing the service. We are not responsible for the behaviour of members, inside or outside the service. Nothing in these terms excludes or limits liability that cannot be excluded or limited by law, including for death or personal injury caused by negligence, or for fraud, and nothing affects your statutory rights as a consumer. Further terms: [to be confirmed]
+We take reasonable care in providing the service. We are not responsible for the behaviour of members, inside or outside the service. Nothing in these terms excludes or limits liability that cannot be excluded or limited by law, including for death or personal injury caused by negligence, or for fraud, and nothing affects your statutory rights as a consumer.
 
 ## 12. Consumer rights
 
@@ -87,10 +87,10 @@ If you are a consumer, you have legal rights that these terms do not affect. If 
 
 ## 13. Governing law and disputes
 
-Governing law and courts: [to be confirmed]
+These terms are governed by the law of England and Wales. If you are a consumer living elsewhere in the United Kingdom or in the European Union, you can also bring proceedings in the courts where you live, and you keep the protection of the mandatory laws of your country.
 
 Please contact us first at the general address so we can try to resolve any problem.
 
 ## 14. Changes to these terms
 
-We may change these terms for valid reasons, such as new features, changes in the law or security. We will tell you in the app before a change takes effect [to be confirmed]. If you do not agree, you can delete your account before the change takes effect.
+We may change these terms for valid reasons, such as new features, changes in the law or security. We will tell you in the app at least 30 days before an important change takes effect, unless it must apply sooner for legal or security reasons, and ask you to accept it before you keep using matching. If you do not agree, you can delete your account before the change takes effect.
