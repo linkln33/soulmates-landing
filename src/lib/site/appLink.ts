@@ -5,8 +5,11 @@
  */
 import type { Locale } from '@/i18n/config';
 
-/** The Android APK on Google Drive (owner, 11 Nov 2026), as a direct download link. */
-export const DRIVE_APK_URL = 'https://drive.google.com/uc?export=download&id=1NVEpA_hbUdaUCy1BievLBEssGR3kpOzW';
+/**
+ * The Android APK on Google Drive (owner, 11 Nov 2026: SoulmatesQuest-vc70.apk, 62.9 MB), as a direct download.
+ * `confirm=t` skips Drive's "can't scan this file for viruses" page, which otherwise needs a second tap.
+ */
+export const DRIVE_APK_URL = 'https://drive.usercontent.google.com/download?id=1NVEpA_hbUdaUCy1BievLBEssGR3kpOzW&export=download&confirm=t';
 export const APP_DOWNLOAD_URL = process.env.NEXT_PUBLIC_APP_DOWNLOAD_URL || DRIVE_APK_URL;
 
 /** The home hero's store badges (owner, 11 Nov 2026: no separate covers section). */
