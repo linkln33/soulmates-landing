@@ -6,7 +6,7 @@
  * mobile release ships them (SoulMates-Quest-mobile/docs/MATCHES_MODEL.md).
  */
 import Link from 'next/link';
-import { appSectionHref } from '@/lib/site/appLink';
+import { appDownloadHref } from '@/lib/site/appLink';
 import { ArrowRight } from '@phosphor-icons/react/dist/ssr';
 import type { Locale } from '@/i18n/config';
 import { site } from '@/i18n';
@@ -46,7 +46,7 @@ export function JourneySection({ lang }: { lang: Locale }) {
             <span>{j.closingTop}</span> <span className="h-accent">{j.closingAccent}</span>
           </p>
           <p className="lead">{j.closingLead}</p>
-          <Link href={appSectionHref(lang)} className="btn btn-glass btn-3d">
+          <Link href={appDownloadHref(lang)} className="btn btn-glass btn-3d">
             {t.ctaApp} <ArrowRight weight="bold" aria-hidden />
           </Link>
           <p className="small muted">{j.consent}</p>

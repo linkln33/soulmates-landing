@@ -110,7 +110,7 @@ const en = {
     titleAccent: 'Beyond the Visible.',
     lead: 'Discover the unseen forces that draw two souls together.',
     ctaReadings: 'Explore free readings',
-    ctaApp: 'Discover the app',
+    ctaApp: 'Download for Android',
     preview: {
       label:
         'Illustrative preview of the SoulMates Quest app: the Home screen with today’s readings and concealed connection cards. Names and scores are examples.',
@@ -170,7 +170,7 @@ const en = {
       closingAccent: 'Beyond the Visible.',
       closingLead: 'Discover the unseen forces that draw two souls together.',
       consent: 'Taking part in matching is optional and needs your explicit consent. You can step away at any time.',
-      note: 'Matching and conversations are not publicly available yet. There is no public download and no launch date.',
+      note: 'The Android app can be downloaded here; it is not in the App Store or Google Play yet. Matching and conversations open step by step during the pilot.',
     },
     finalTitle: 'Start with a free reading today',
     finalLead:

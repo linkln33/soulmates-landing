@@ -9,7 +9,7 @@ import { MoonNow } from '@/components/tools/MoonTool';
 import HeroVisual from '@/components/home/HeroVisual';
 import StoreBadges from '@/components/site/StoreBadges';
 import { JourneySection } from '@/components/home/HomeSections';
-import { appSectionHref } from '@/lib/site/appLink';
+import { appDownloadHref } from '@/lib/site/appLink';
 import { COVER_SIZES, COVER_THEMES, HOME_TOOLS, coverFile, coverSrcSet, type HomeTool } from '@/lib/site/homeTools';
 import '@/components/home/home.css';
 
@@ -77,7 +77,7 @@ export default async function Home({ params }: Props) {
           <p className="h-lead">{t.home.lead}</p>
           <div className="h-ctas">
             <a href="#tools" className="btn btn-primary btn-3d">{t.home.ctaReadings} <ArrowRight weight="bold" aria-hidden /></a>
-            <Link href={appSectionHref(lang)} className="btn btn-glass btn-3d">{t.home.ctaApp}</Link>
+            <a href={appDownloadHref(lang)} className="btn btn-glass btn-3d">{t.home.ctaApp}</a>
           </div>
           {/* Every "get the app" link lands here (#download) until the APK address is set. */}
           <div id="download" className="h-download-anchor"><StoreBadges lang={lang} className="h-stores" /></div>
@@ -153,7 +153,7 @@ export default async function Home({ params }: Props) {
           <p className="lead">{t.home.finalLead}</p>
           <div className="h-ctas">
             <a href="#tools" className="btn btn-primary btn-3d">{t.home.ctaReadings} <ArrowRight weight="bold" aria-hidden /></a>
-            <Link href={appSectionHref(lang)} className="btn btn-glass btn-3d">{t.home.ctaApp}</Link>
+            <a href={appDownloadHref(lang)} className="btn btn-glass btn-3d">{t.home.ctaApp}</a>
           </div>
         </div>
       </section>

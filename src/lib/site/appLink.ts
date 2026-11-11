@@ -5,7 +5,9 @@
  */
 import type { Locale } from '@/i18n/config';
 
-export const APP_DOWNLOAD_URL = process.env.NEXT_PUBLIC_APP_DOWNLOAD_URL || '';
+/** The Android APK on Google Drive (owner, 11 Nov 2026), as a direct download link. */
+export const DRIVE_APK_URL = 'https://drive.google.com/uc?export=download&id=1NVEpA_hbUdaUCy1BievLBEssGR3kpOzW';
+export const APP_DOWNLOAD_URL = process.env.NEXT_PUBLIC_APP_DOWNLOAD_URL || DRIVE_APK_URL;
 
 /** The home hero's store badges (owner, 11 Nov 2026: no separate covers section). */
 export const appSectionHref = (lang: Locale) => `/${lang}#download`;
