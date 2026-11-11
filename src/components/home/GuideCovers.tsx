@@ -6,6 +6,7 @@
  * Reduced motion: no motion; the covers are simply shown.
  */
 import { useRef } from 'react';
+import Link from 'next/link';
 import gsap from 'gsap';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
 import { useGSAP } from '@gsap/react';
@@ -13,13 +14,15 @@ import { DownloadSimple } from '@phosphor-icons/react';
 import type { Locale } from '@/i18n/config';
 import type { SiteMessages } from '@/i18n/site/en';
 import { COVER_THEMES, coverFile, coverSrcSet } from '@/lib/site/homeTools';
-import { APP_DOWNLOAD_URL } from '@/lib/site/appLink';
+import { APP_DOWNLOAD_URL, appDownloadHref } from '@/lib/site/appLink';
 import StoreBadges from '@/components/site/StoreBadges';
 import './guide-covers.css';
 
 gsap.registerPlugin(ScrollTrigger, useGSAP);
 
 const COVERS = ['natal', 'dreamspell', 'tarot', 'horoscope', 'numbers', 'moon'] as const;
+/** Each cover opens its free reading on this site; Natal chart and Dreamspell are in the app only. */
+const PAGE: Record<(typeof COVERS)[number], string | null> = { natal: null, dreamspell: null, tarot: '/tarot', horoscope: '/horoscope', numbers: '/numbers', moon: '/moon' };
 const SIZES = '(min-width: 1100px) 360px, (min-width: 700px) 45vw, 90vw';
 
 type Props = { lang: Locale; t: SiteMessages['appV2']; downloadLabel: string };
@@ -52,6 +55,8 @@ export default function GuideCovers({ lang, t, downloadLabel }: Props) {
 
   return (
     <section ref={root} id="download" className="gc" aria-labelledby="guide-title">
+      {/* Old links to the removed "Explore free readings" (#tools) land here too. */}
+      <span id="tools" className="gc-anchor" aria-hidden="true" />
       <div className="gc-stage">
         <div className="gc-wrap gc-grid">
           <div className="gc-text">
@@ -71,7 +76,7 @@ export default function GuideCovers({ lang, t, downloadLabel }: Props) {
           </div>
           <div className="gc-covers">
             {COVERS.map((name) => (
-              <figure key={name} className="gc-cover">
+              <Link key={name} href={PAGE[name] ? `/${lang}${PAGE[name]}` : appDownloadHref(lang)} className="gc-cover" aria-label={t.covers[name]}>
                 {COVER_THEMES.map((theme) => (
                   <picture key={theme} className={`gc-cover-${theme}`}>
                     <source type="image/avif" srcSet={coverSrcSet(name, theme, 'avif')} sizes={SIZES} />
@@ -79,8 +84,7 @@ export default function GuideCovers({ lang, t, downloadLabel }: Props) {
                     <img src={coverFile(name, theme, 600, 'webp')} srcSet={coverSrcSet(name, theme, 'webp')} sizes={SIZES} alt="" width={1200} height={600} loading="lazy" decoding="async" />
                   </picture>
                 ))}
-                <figcaption className="visually-hidden">{t.covers[name]}</figcaption>
-              </figure>
+              </Link>
             ))}
           </div>
         </div>

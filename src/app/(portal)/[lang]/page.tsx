@@ -11,7 +11,6 @@ import StoreBadges from '@/components/site/StoreBadges';
 import { JourneySection } from '@/components/home/HomeSections';
 import GuideCovers from '@/components/home/GuideCovers';
 import { appSectionHref } from '@/lib/site/appLink';
-import { COVER_SIZES, COVER_THEMES, HOME_TOOLS, coverFile, coverSrcSet, type HomeTool } from '@/lib/site/homeTools';
 import '@/components/home/home.css';
 
 type Props = PageProps<'/[lang]'>;
@@ -32,37 +31,6 @@ const HONEST: CardTint[] = ['teal', 'amber', 'pink'];
  * never fetched, so only one painting loads. Without a painting, the app
  * illustration sits on the tile tint.
  */
-function ToolCover({ tool }: { tool: HomeTool }) {
-  const { cover } = tool;
-  if (!cover) {
-    return (
-      <span className="h-cover h-cover-art" style={{ background: `var(--tile-${tool.tile})` }}>
-        {/* eslint-disable-next-line @next/next/no-img-element */}
-        <img src={`/app-content/illustrations/${tool.art}.svg`} alt="" width={200} height={150} loading="lazy" decoding="async" />
-      </span>
-    );
-  }
-  return (
-    <span className="h-cover">
-      {COVER_THEMES.map((theme) => (
-        <picture key={theme} className={`h-cover-${theme}`}>
-          <source type="image/avif" srcSet={coverSrcSet(cover, theme, 'avif')} sizes={COVER_SIZES} />
-          <img
-            src={coverFile(cover, theme, 600, 'webp')}
-            srcSet={coverSrcSet(cover, theme, 'webp')}
-            sizes={COVER_SIZES}
-            alt=""
-            width={1200}
-            height={600}
-            loading="lazy"
-            decoding="async"
-          />
-        </picture>
-      ))}
-    </span>
-  );
-}
-
 export default async function Home({ params }: Props) {
   const { lang: raw } = await params;
   const lang = raw as Locale;
@@ -83,30 +51,6 @@ export default async function Home({ params }: Props) {
           <StoreBadges lang={lang} className="h-stores" />
         </div>
         <HeroVisual lang={lang} />
-      </section>
-
-      <section id="tools" className="wrap h-tools" aria-labelledby="tools-title">
-        <div className="h-tools-intro">
-          <h2 id="tools-title" className="title">{t.home.toolsTitle}</h2>
-          <p className="muted">{t.home.toolsLead}</p>
-        </div>
-        <ul className="h-tool-list">
-          {HOME_TOOLS.map((tool) => (
-            <li key={tool.key}>
-              <Link href={`/${lang}${tool.href}`} className="h-tool" aria-describedby={`tool-${tool.key}-about`}>
-                <ToolCover tool={tool} />
-                <span className="h-tool-row">
-                  <span className="h-tool-text">
-                    <span className="heading">{tool.inApp ? t.appV2.covers[tool.key] : t.nav[tool.key as 'horoscope']}</span>
-                    <span className="small muted">{t.home.toolsShort[tool.key]}</span>
-                    <span id={`tool-${tool.key}-about`} className="visually-hidden">{tool.inApp ? t.home.toolsShort[tool.key] : t.tools[tool.key as 'horoscope'].about}</span>
-                  </span>
-                  <span className="h-arrow" aria-hidden><ArrowRight weight="bold" /></span>
-                </span>
-              </Link>
-            </li>
-          ))}
-        </ul>
       </section>
 
       <GuideCovers lang={lang} t={t.appV2} downloadLabel={t.nav.download} />
