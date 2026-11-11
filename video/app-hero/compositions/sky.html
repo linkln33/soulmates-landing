@@ -1,0 +1,582 @@
+<template>
+<style>
+#sky { position: absolute; inset: 0; overflow: hidden;
+  background: radial-gradient(120% 90% at 50% 40%, #2a1745 0%, #160f2e 45%, #0b0a1f 100%); }
+#sky .neb { position: absolute; border-radius: 50%; filter: blur(160px); opacity: .28; }
+#sky .s { position: absolute; border-radius: 50%; background: #fff6dd; box-shadow: 0 0 8px 2px rgba(255,214,140,.55); }
+#sky .c { position: absolute; width: 18px; height: 18px; margin: -9px 0 0 -9px; border-radius: 50%;
+  background: radial-gradient(circle, #fffbe9 0%, #ffd27a 45%, rgba(255,190,90,0) 72%); }
+#sky svg { position: absolute; inset: 0; }
+#sky .ln { stroke: #ffd98f; stroke-width: 2.6; stroke-linecap: round; fill: none; filter: drop-shadow(0 0 6px rgba(255,200,120,.8)); }
+#sky .glow { position: absolute; left: 1300px; top: 520px; width: 760px; height: 760px; margin: -380px 0 0 -380px; border-radius: 50%;
+  background: radial-gradient(circle, rgba(255,95,150,.42) 0%, rgba(0,216,218,.18) 40%, rgba(0,0,0,0) 70%); }
+#sky .logo { position: absolute; left: 1300px; top: 505px; width: 620px; margin-left: -310px; margin-top: -148px; }
+</style>
+<div id="sky" data-composition-id="sky" data-width="1920" data-height="1080" data-layout-allow-overflow data-layout-allow-overlap>
+<div id="sky-neb1" class="neb" style="left:-200px;top:-160px;width:1300px;height:900px;background:#ff5f96"></div>
+<div id="sky-neb2" class="neb" style="left:900px;top:420px;width:1300px;height:900px;background:#00b8c4"></div>
+<div id="sky-b0" class="s" style="left:440px;top:384px;width:3.5px;height:3.5px;opacity:0.50"></div>
+<div id="sky-b1" class="s" style="left:385px;top:924px;width:2.6px;height:2.6px;opacity:0.68"></div>
+<div id="sky-b2" class="s" style="left:1809px;top:217px;width:2.4px;height:2.4px;opacity:0.32"></div>
+<div id="sky-b3" class="s" style="left:613px;top:165px;width:3.5px;height:3.5px;opacity:0.62"></div>
+<div id="sky-b4" class="s" style="left:259px;top:636px;width:1.6px;height:1.6px;opacity:0.46"></div>
+<div id="sky-b5" class="s" style="left:487px;top:75px;width:1.7px;height:1.7px;opacity:0.39"></div>
+<div id="sky-b6" class="s" style="left:1852px;top:956px;width:2.1px;height:2.1px;opacity:0.64"></div>
+<div id="sky-b7" class="s" style="left:462px;top:223px;width:3.6px;height:3.6px;opacity:0.47"></div>
+<div id="sky-b8" class="s" style="left:801px;top:498px;width:2.4px;height:2.4px;opacity:0.82"></div>
+<div id="sky-b9" class="s" style="left:1159px;top:805px;width:3.9px;height:3.9px;opacity:0.51"></div>
+<div id="sky-b10" class="s" style="left:1473px;top:1016px;width:3.5px;height:3.5px;opacity:0.35"></div>
+<div id="sky-b11" class="s" style="left:1215px;top:562px;width:2.9px;height:2.9px;opacity:0.47"></div>
+<div id="sky-b12" class="s" style="left:1275px;top:617px;width:1.9px;height:1.9px;opacity:0.39"></div>
+<div id="sky-b13" class="s" style="left:435px;top:610px;width:3.7px;height:3.7px;opacity:0.41"></div>
+<div id="sky-b14" class="s" style="left:477px;top:410px;width:2.4px;height:2.4px;opacity:0.47"></div>
+<div id="sky-b15" class="s" style="left:480px;top:178px;width:2.9px;height:2.9px;opacity:0.45"></div>
+<div id="sky-b16" class="s" style="left:403px;top:616px;width:4.3px;height:4.3px;opacity:0.75"></div>
+<div id="sky-b17" class="s" style="left:588px;top:655px;width:2.9px;height:2.9px;opacity:0.45"></div>
+<div id="sky-b18" class="s" style="left:1067px;top:597px;width:4.4px;height:4.4px;opacity:0.70"></div>
+<div id="sky-b19" class="s" style="left:1317px;top:1014px;width:4.6px;height:4.6px;opacity:0.50"></div>
+<div id="sky-b20" class="s" style="left:221px;top:513px;width:1.9px;height:1.9px;opacity:0.79"></div>
+<div id="sky-b21" class="s" style="left:1225px;top:963px;width:2.0px;height:2.0px;opacity:0.59"></div>
+<div id="sky-b22" class="s" style="left:762px;top:146px;width:3.9px;height:3.9px;opacity:0.52"></div>
+<div id="sky-b23" class="s" style="left:513px;top:376px;width:2.9px;height:2.9px;opacity:0.82"></div>
+<div id="sky-b24" class="s" style="left:1370px;top:672px;width:3.6px;height:3.6px;opacity:0.48"></div>
+<div id="sky-b25" class="s" style="left:573px;top:218px;width:1.6px;height:1.6px;opacity:0.76"></div>
+<div id="sky-b26" class="s" style="left:1061px;top:874px;width:4.1px;height:4.1px;opacity:0.67"></div>
+<div id="sky-b27" class="s" style="left:235px;top:817px;width:3.7px;height:3.7px;opacity:0.46"></div>
+<div id="sky-b28" class="s" style="left:485px;top:839px;width:3.3px;height:3.3px;opacity:0.34"></div>
+<div id="sky-b29" class="s" style="left:505px;top:476px;width:1.6px;height:1.6px;opacity:0.52"></div>
+<div id="sky-b30" class="s" style="left:1501px;top:171px;width:3.2px;height:3.2px;opacity:0.47"></div>
+<div id="sky-b31" class="s" style="left:73px;top:630px;width:4.3px;height:4.3px;opacity:0.72"></div>
+<div id="sky-b32" class="s" style="left:1560px;top:855px;width:4.5px;height:4.5px;opacity:0.35"></div>
+<div id="sky-b33" class="s" style="left:595px;top:987px;width:1.7px;height:1.7px;opacity:0.44"></div>
+<div id="sky-b34" class="s" style="left:1551px;top:705px;width:2.2px;height:2.2px;opacity:0.38"></div>
+<div id="sky-b35" class="s" style="left:322px;top:440px;width:4.3px;height:4.3px;opacity:0.43"></div>
+<div id="sky-b36" class="s" style="left:53px;top:98px;width:4.3px;height:4.3px;opacity:0.75"></div>
+<div id="sky-b37" class="s" style="left:1116px;top:590px;width:2.7px;height:2.7px;opacity:0.46"></div>
+<div id="sky-b38" class="s" style="left:823px;top:113px;width:4.0px;height:4.0px;opacity:0.37"></div>
+<div id="sky-b39" class="s" style="left:1064px;top:964px;width:4.2px;height:4.2px;opacity:0.75"></div>
+<div id="sky-b40" class="s" style="left:455px;top:327px;width:2.5px;height:2.5px;opacity:0.84"></div>
+<div id="sky-b41" class="s" style="left:812px;top:243px;width:2.2px;height:2.2px;opacity:0.32"></div>
+<div id="sky-b42" class="s" style="left:457px;top:473px;width:3.9px;height:3.9px;opacity:0.45"></div>
+<div id="sky-b43" class="s" style="left:159px;top:1023px;width:2.3px;height:2.3px;opacity:0.57"></div>
+<div id="sky-b44" class="s" style="left:274px;top:649px;width:2.7px;height:2.7px;opacity:0.57"></div>
+<div id="sky-b45" class="s" style="left:1629px;top:951px;width:3.5px;height:3.5px;opacity:0.53"></div>
+<div id="sky-b46" class="s" style="left:1809px;top:286px;width:4.4px;height:4.4px;opacity:0.40"></div>
+<div id="sky-b47" class="s" style="left:1017px;top:928px;width:4.5px;height:4.5px;opacity:0.55"></div>
+<div id="sky-b48" class="s" style="left:1557px;top:209px;width:3.1px;height:3.1px;opacity:0.61"></div>
+<div id="sky-b49" class="s" style="left:639px;top:711px;width:3.3px;height:3.3px;opacity:0.78"></div>
+<div id="sky-b50" class="s" style="left:477px;top:989px;width:2.8px;height:2.8px;opacity:0.78"></div>
+<div id="sky-b51" class="s" style="left:1701px;top:828px;width:3.9px;height:3.9px;opacity:0.46"></div>
+<div id="sky-b52" class="s" style="left:782px;top:190px;width:3.5px;height:3.5px;opacity:0.37"></div>
+<div id="sky-b53" class="s" style="left:863px;top:107px;width:2.5px;height:2.5px;opacity:0.49"></div>
+<div id="sky-b54" class="s" style="left:1334px;top:775px;width:1.7px;height:1.7px;opacity:0.35"></div>
+<div id="sky-b55" class="s" style="left:614px;top:52px;width:3.8px;height:3.8px;opacity:0.62"></div>
+<div id="sky-b56" class="s" style="left:1383px;top:1012px;width:3.6px;height:3.6px;opacity:0.65"></div>
+<div id="sky-b57" class="s" style="left:1355px;top:818px;width:3.3px;height:3.3px;opacity:0.57"></div>
+<div id="sky-b58" class="s" style="left:655px;top:82px;width:4.2px;height:4.2px;opacity:0.85"></div>
+<div id="sky-b59" class="s" style="left:86px;top:834px;width:3.9px;height:3.9px;opacity:0.51"></div>
+<div id="sky-b60" class="s" style="left:1813px;top:867px;width:2.0px;height:2.0px;opacity:0.49"></div>
+<div id="sky-b61" class="s" style="left:139px;top:450px;width:3.0px;height:3.0px;opacity:0.74"></div>
+<div id="sky-b62" class="s" style="left:280px;top:68px;width:4.5px;height:4.5px;opacity:0.51"></div>
+<div id="sky-b63" class="s" style="left:557px;top:528px;width:4.6px;height:4.6px;opacity:0.33"></div>
+<div id="sky-b64" class="s" style="left:89px;top:815px;width:2.2px;height:2.2px;opacity:0.35"></div>
+<div id="sky-b65" class="s" style="left:1239px;top:692px;width:4.0px;height:4.0px;opacity:0.46"></div>
+<div id="sky-b66" class="s" style="left:1692px;top:1033px;width:2.0px;height:2.0px;opacity:0.49"></div>
+<div id="sky-b67" class="s" style="left:384px;top:557px;width:3.6px;height:3.6px;opacity:0.69"></div>
+<div id="sky-b68" class="s" style="left:831px;top:740px;width:4.5px;height:4.5px;opacity:0.73"></div>
+<div id="sky-b69" class="s" style="left:256px;top:379px;width:1.6px;height:1.6px;opacity:0.33"></div>
+<div id="sky-b70" class="s" style="left:816px;top:978px;width:2.5px;height:2.5px;opacity:0.61"></div>
+<div id="sky-b71" class="s" style="left:901px;top:115px;width:3.3px;height:3.3px;opacity:0.47"></div>
+<div id="sky-b72" class="s" style="left:1497px;top:44px;width:1.9px;height:1.9px;opacity:0.56"></div>
+<div id="sky-b73" class="s" style="left:99px;top:295px;width:2.2px;height:2.2px;opacity:0.48"></div>
+<div id="sky-b74" class="s" style="left:405px;top:131px;width:2.9px;height:2.9px;opacity:0.73"></div>
+<div id="sky-b75" class="s" style="left:1372px;top:460px;width:3.3px;height:3.3px;opacity:0.31"></div>
+<div id="sky-b76" class="s" style="left:1828px;top:387px;width:3.8px;height:3.8px;opacity:0.47"></div>
+<div id="sky-b77" class="s" style="left:651px;top:608px;width:3.7px;height:3.7px;opacity:0.33"></div>
+<div id="sky-b78" class="s" style="left:344px;top:399px;width:2.7px;height:2.7px;opacity:0.84"></div>
+<div id="sky-b79" class="s" style="left:1040px;top:235px;width:3.6px;height:3.6px;opacity:0.62"></div>
+<div id="sky-b80" class="s" style="left:136px;top:691px;width:3.8px;height:3.8px;opacity:0.61"></div>
+<div id="sky-b81" class="s" style="left:878px;top:282px;width:4.1px;height:4.1px;opacity:0.40"></div>
+<div id="sky-b82" class="s" style="left:1663px;top:230px;width:1.7px;height:1.7px;opacity:0.57"></div>
+<div id="sky-b83" class="s" style="left:1871px;top:274px;width:1.7px;height:1.7px;opacity:0.63"></div>
+<div id="sky-b84" class="s" style="left:316px;top:621px;width:2.4px;height:2.4px;opacity:0.53"></div>
+<div id="sky-b85" class="s" style="left:492px;top:667px;width:4.5px;height:4.5px;opacity:0.52"></div>
+<div id="sky-b86" class="s" style="left:53px;top:550px;width:2.9px;height:2.9px;opacity:0.82"></div>
+<div id="sky-b87" class="s" style="left:1602px;top:495px;width:3.7px;height:3.7px;opacity:0.61"></div>
+<div id="sky-b88" class="s" style="left:1359px;top:983px;width:2.3px;height:2.3px;opacity:0.44"></div>
+<div id="sky-b89" class="s" style="left:1179px;top:468px;width:4.1px;height:4.1px;opacity:0.77"></div>
+<div id="sky-b90" class="s" style="left:428px;top:346px;width:1.8px;height:1.8px;opacity:0.55"></div>
+<div id="sky-b91" class="s" style="left:798px;top:739px;width:2.6px;height:2.6px;opacity:0.48"></div>
+<div id="sky-b92" class="s" style="left:1705px;top:675px;width:3.1px;height:3.1px;opacity:0.71"></div>
+<div id="sky-b93" class="s" style="left:358px;top:665px;width:2.9px;height:2.9px;opacity:0.54"></div>
+<div id="sky-b94" class="s" style="left:295px;top:734px;width:2.7px;height:2.7px;opacity:0.64"></div>
+<div id="sky-b95" class="s" style="left:583px;top:926px;width:4.6px;height:4.6px;opacity:0.67"></div>
+<div id="sky-b96" class="s" style="left:596px;top:1011px;width:2.3px;height:2.3px;opacity:0.74"></div>
+<div id="sky-b97" class="s" style="left:1631px;top:382px;width:3.9px;height:3.9px;opacity:0.44"></div>
+<div id="sky-b98" class="s" style="left:788px;top:568px;width:3.7px;height:3.7px;opacity:0.65"></div>
+<div id="sky-b99" class="s" style="left:1313px;top:164px;width:1.6px;height:1.6px;opacity:0.38"></div>
+<div id="sky-b100" class="s" style="left:1391px;top:598px;width:4.0px;height:4.0px;opacity:0.83"></div>
+<div id="sky-b101" class="s" style="left:1410px;top:904px;width:2.6px;height:2.6px;opacity:0.49"></div>
+<div id="sky-b102" class="s" style="left:1369px;top:669px;width:3.4px;height:3.4px;opacity:0.37"></div>
+<div id="sky-b103" class="s" style="left:233px;top:425px;width:1.8px;height:1.8px;opacity:0.71"></div>
+<div id="sky-b104" class="s" style="left:837px;top:192px;width:3.0px;height:3.0px;opacity:0.72"></div>
+<div id="sky-b105" class="s" style="left:1574px;top:760px;width:2.4px;height:2.4px;opacity:0.54"></div>
+<div id="sky-b106" class="s" style="left:703px;top:760px;width:3.1px;height:3.1px;opacity:0.54"></div>
+<div id="sky-b107" class="s" style="left:1843px;top:884px;width:2.2px;height:2.2px;opacity:0.35"></div>
+<div id="sky-b108" class="s" style="left:323px;top:373px;width:3.7px;height:3.7px;opacity:0.71"></div>
+<div id="sky-b109" class="s" style="left:337px;top:401px;width:3.4px;height:3.4px;opacity:0.75"></div>
+<div id="sky-b110" class="s" style="left:1774px;top:416px;width:2.4px;height:2.4px;opacity:0.48"></div>
+<div id="sky-b111" class="s" style="left:828px;top:422px;width:4.4px;height:4.4px;opacity:0.55"></div>
+<div id="sky-b112" class="s" style="left:753px;top:475px;width:1.9px;height:1.9px;opacity:0.76"></div>
+<div id="sky-b113" class="s" style="left:1400px;top:906px;width:3.4px;height:3.4px;opacity:0.71"></div>
+<div id="sky-b114" class="s" style="left:1464px;top:789px;width:3.3px;height:3.3px;opacity:0.46"></div>
+<div id="sky-b115" class="s" style="left:1728px;top:122px;width:1.7px;height:1.7px;opacity:0.73"></div>
+<div id="sky-b116" class="s" style="left:1307px;top:91px;width:3.0px;height:3.0px;opacity:0.36"></div>
+<div id="sky-b117" class="s" style="left:701px;top:71px;width:4.5px;height:4.5px;opacity:0.41"></div>
+<div id="sky-b118" class="s" style="left:1839px;top:787px;width:2.5px;height:2.5px;opacity:0.76"></div>
+<div id="sky-b119" class="s" style="left:1478px;top:499px;width:3.2px;height:3.2px;opacity:0.35"></div>
+<div id="sky-b120" class="s" style="left:1391px;top:349px;width:3.3px;height:3.3px;opacity:0.53"></div>
+<div id="sky-b121" class="s" style="left:678px;top:982px;width:2.1px;height:2.1px;opacity:0.40"></div>
+<div id="sky-b122" class="s" style="left:1720px;top:944px;width:2.8px;height:2.8px;opacity:0.62"></div>
+<div id="sky-b123" class="s" style="left:1080px;top:324px;width:4.2px;height:4.2px;opacity:0.37"></div>
+<div id="sky-b124" class="s" style="left:1024px;top:62px;width:3.2px;height:3.2px;opacity:0.46"></div>
+<div id="sky-b125" class="s" style="left:1076px;top:112px;width:1.9px;height:1.9px;opacity:0.73"></div>
+<div id="sky-b126" class="s" style="left:1054px;top:106px;width:3.8px;height:3.8px;opacity:0.33"></div>
+<div id="sky-b127" class="s" style="left:1083px;top:931px;width:1.8px;height:1.8px;opacity:0.59"></div>
+<div id="sky-b128" class="s" style="left:968px;top:731px;width:3.6px;height:3.6px;opacity:0.49"></div>
+<div id="sky-b129" class="s" style="left:314px;top:168px;width:2.5px;height:2.5px;opacity:0.47"></div>
+<div id="sky-b130" class="s" style="left:671px;top:258px;width:2.5px;height:2.5px;opacity:0.59"></div>
+<div id="sky-b131" class="s" style="left:1753px;top:253px;width:3.4px;height:3.4px;opacity:0.62"></div>
+<div id="sky-b132" class="s" style="left:715px;top:465px;width:3.3px;height:3.3px;opacity:0.85"></div>
+<div id="sky-b133" class="s" style="left:144px;top:614px;width:4.4px;height:4.4px;opacity:0.33"></div>
+<div id="sky-b134" class="s" style="left:350px;top:661px;width:1.9px;height:1.9px;opacity:0.73"></div>
+<div id="sky-b135" class="s" style="left:677px;top:544px;width:2.3px;height:2.3px;opacity:0.46"></div>
+<div id="sky-b136" class="s" style="left:816px;top:732px;width:2.2px;height:2.2px;opacity:0.68"></div>
+<div id="sky-b137" class="s" style="left:1107px;top:917px;width:3.0px;height:3.0px;opacity:0.63"></div>
+<div id="sky-b138" class="s" style="left:833px;top:800px;width:3.8px;height:3.8px;opacity:0.79"></div>
+<div id="sky-b139" class="s" style="left:1537px;top:561px;width:2.1px;height:2.1px;opacity:0.70"></div>
+<div id="sky-b140" class="s" style="left:1239px;top:300px;width:2.6px;height:2.6px;opacity:0.55"></div>
+<div id="sky-b141" class="s" style="left:1310px;top:373px;width:4.3px;height:4.3px;opacity:0.71"></div>
+<div id="sky-b142" class="s" style="left:455px;top:821px;width:3.8px;height:3.8px;opacity:0.79"></div>
+<div id="sky-b143" class="s" style="left:93px;top:1004px;width:2.8px;height:2.8px;opacity:0.75"></div>
+<div id="sky-b144" class="s" style="left:856px;top:194px;width:4.2px;height:4.2px;opacity:0.60"></div>
+<div id="sky-b145" class="s" style="left:1706px;top:864px;width:2.3px;height:2.3px;opacity:0.67"></div>
+<div id="sky-b146" class="s" style="left:283px;top:786px;width:2.3px;height:2.3px;opacity:0.39"></div>
+<div id="sky-b147" class="s" style="left:474px;top:723px;width:3.2px;height:3.2px;opacity:0.80"></div>
+<div id="sky-b148" class="s" style="left:1294px;top:728px;width:4.3px;height:4.3px;opacity:0.48"></div>
+<div id="sky-b149" class="s" style="left:1635px;top:560px;width:4.4px;height:4.4px;opacity:0.33"></div>
+<svg viewBox="0 0 1920 1080" width="1920" height="1080">
+<line id="sky-l0" class="ln" x1="1300.0" y1="395.0" x2="1331.4" y2="314.1" stroke-dasharray="86.8" stroke-dashoffset="86.8"/>
+<line id="sky-l1" class="ln" x1="1331.4" y1="314.1" x2="1483.5" y2="228.9" stroke-dasharray="174.4" stroke-dashoffset="174.4"/>
+<line id="sky-l2" class="ln" x1="1483.5" y1="228.9" x2="1655.8" y2="322.5" stroke-dasharray="196.1" stroke-dashoffset="196.1"/>
+<line id="sky-l3" class="ln" x1="1655.8" y1="322.5" x2="1655.8" y2="521.2" stroke-dasharray="198.7" stroke-dashoffset="198.7"/>
+<line id="sky-l4" class="ln" x1="1655.8" y1="521.2" x2="1483.5" y2="704.4" stroke-dasharray="251.5" stroke-dashoffset="251.5"/>
+<line id="sky-l5" class="ln" x1="1483.5" y1="704.4" x2="1331.4" y2="854.9" stroke-dasharray="214.0" stroke-dashoffset="214.0"/>
+<line id="sky-l6" class="ln" x1="1331.4" y1="854.9" x2="1300.0" y2="923.0" stroke-dasharray="75.0" stroke-dashoffset="75.0"/>
+<line id="sky-l7" class="ln" x1="1300.0" y1="923.0" x2="1268.6" y2="854.9" stroke-dasharray="75.0" stroke-dashoffset="75.0"/>
+<line id="sky-l8" class="ln" x1="1268.6" y1="854.9" x2="1116.5" y2="704.4" stroke-dasharray="214.0" stroke-dashoffset="214.0"/>
+<line id="sky-l9" class="ln" x1="1116.5" y1="704.4" x2="944.2" y2="521.2" stroke-dasharray="251.5" stroke-dashoffset="251.5"/>
+<line id="sky-l10" class="ln" x1="944.2" y1="521.2" x2="944.2" y2="322.5" stroke-dasharray="198.7" stroke-dashoffset="198.7"/>
+<line id="sky-l11" class="ln" x1="944.2" y1="322.5" x2="1116.5" y2="228.9" stroke-dasharray="196.1" stroke-dashoffset="196.1"/>
+<line id="sky-l12" class="ln" x1="1116.5" y1="228.9" x2="1268.6" y2="314.1" stroke-dasharray="174.4" stroke-dashoffset="174.4"/>
+<line id="sky-l13" class="ln" x1="1268.6" y1="314.1" x2="1300.0" y2="395.0" stroke-dasharray="86.8" stroke-dashoffset="86.8"/>
+</svg>
+<div id="sky-glow" class="glow"></div>
+<img id="sky-logo" class="logo" src="assets/logo.png" alt="">
+<div id="sky-c0" class="c" style="left:1228px;top:226px"></div>
+<div id="sky-c1" class="c" style="left:1565px;top:139px"></div>
+<div id="sky-c2" class="c" style="left:1840px;top:294px"></div>
+<div id="sky-c3" class="c" style="left:1806px;top:808px"></div>
+<div id="sky-c4" class="c" style="left:731px;top:340px"></div>
+<div id="sky-c5" class="c" style="left:752px;top:702px"></div>
+<div id="sky-c6" class="c" style="left:519px;top:634px"></div>
+<div id="sky-c7" class="c" style="left:984px;top:711px"></div>
+<div id="sky-c8" class="c" style="left:885px;top:583px"></div>
+<div id="sky-c9" class="c" style="left:788px;top:546px"></div>
+<div id="sky-c10" class="c" style="left:940px;top:260px"></div>
+<div id="sky-c11" class="c" style="left:1330px;top:245px"></div>
+<div id="sky-c12" class="c" style="left:743px;top:317px"></div>
+<div id="sky-c13" class="c" style="left:894px;top:508px"></div>
+</div>
+<script>
+const tl = gsap.timeline({ paused: true });
+tl.fromTo("#sky-b0", {opacity:0.50}, {opacity:0.95, duration:2.500, repeat:3, yoyo:true, ease:"sine.inOut"}, 0);
+tl.fromTo("#sky-b0", {x:0,y:0}, {x:-9.6, y:8.9, duration:5, repeat:1, yoyo:true, ease:"sine.inOut"}, 0);
+tl.fromTo("#sky-b1", {opacity:0.68}, {opacity:1.00, duration:2.500, repeat:3, yoyo:true, ease:"sine.inOut"}, 0);
+tl.fromTo("#sky-b1", {x:0,y:0}, {x:-7.7, y:-0.9, duration:5, repeat:1, yoyo:true, ease:"sine.inOut"}, 0);
+tl.fromTo("#sky-b2", {opacity:0.32}, {opacity:0.77, duration:2.500, repeat:3, yoyo:true, ease:"sine.inOut"}, 0);
+tl.fromTo("#sky-b2", {x:0,y:0}, {x:6.9, y:-5.9, duration:5, repeat:1, yoyo:true, ease:"sine.inOut"}, 0);
+tl.fromTo("#sky-b3", {opacity:0.62}, {opacity:1.00, duration:2.500, repeat:3, yoyo:true, ease:"sine.inOut"}, 0);
+tl.fromTo("#sky-b3", {x:0,y:0}, {x:-9.0, y:-3.7, duration:5, repeat:1, yoyo:true, ease:"sine.inOut"}, 0);
+tl.fromTo("#sky-b4", {opacity:0.46}, {opacity:0.91, duration:2.500, repeat:3, yoyo:true, ease:"sine.inOut"}, 0);
+tl.fromTo("#sky-b4", {x:0,y:0}, {x:15.5, y:9.0, duration:5, repeat:1, yoyo:true, ease:"sine.inOut"}, 0);
+tl.fromTo("#sky-b5", {opacity:0.39}, {opacity:0.84, duration:2.500, repeat:3, yoyo:true, ease:"sine.inOut"}, 0);
+tl.fromTo("#sky-b5", {x:0,y:0}, {x:-5.0, y:6.9, duration:5, repeat:1, yoyo:true, ease:"sine.inOut"}, 0);
+tl.fromTo("#sky-b6", {opacity:0.64}, {opacity:1.00, duration:2.500, repeat:3, yoyo:true, ease:"sine.inOut"}, 0);
+tl.fromTo("#sky-b6", {x:0,y:0}, {x:-6.1, y:7.1, duration:5, repeat:1, yoyo:true, ease:"sine.inOut"}, 0);
+tl.fromTo("#sky-b7", {opacity:0.47}, {opacity:0.92, duration:2.500, repeat:3, yoyo:true, ease:"sine.inOut"}, 0);
+tl.fromTo("#sky-b7", {x:0,y:0}, {x:-16.3, y:0.9, duration:5, repeat:1, yoyo:true, ease:"sine.inOut"}, 0);
+tl.fromTo("#sky-b8", {opacity:0.82}, {opacity:1.00, duration:1.667, repeat:5, yoyo:true, ease:"sine.inOut"}, 0);
+tl.fromTo("#sky-b8", {x:0,y:0}, {x:-4.7, y:2.8, duration:5, repeat:1, yoyo:true, ease:"sine.inOut"}, 0);
+tl.fromTo("#sky-b9", {opacity:0.51}, {opacity:0.96, duration:1.667, repeat:5, yoyo:true, ease:"sine.inOut"}, 0);
+tl.fromTo("#sky-b9", {x:0,y:0}, {x:-2.0, y:-2.3, duration:5, repeat:1, yoyo:true, ease:"sine.inOut"}, 0);
+tl.fromTo("#sky-b10", {opacity:0.35}, {opacity:0.80, duration:2.500, repeat:3, yoyo:true, ease:"sine.inOut"}, 0);
+tl.fromTo("#sky-b10", {x:0,y:0}, {x:6.9, y:-1.7, duration:5, repeat:1, yoyo:true, ease:"sine.inOut"}, 0);
+tl.fromTo("#sky-b11", {opacity:0.47}, {opacity:0.92, duration:2.500, repeat:3, yoyo:true, ease:"sine.inOut"}, 0);
+tl.fromTo("#sky-b11", {x:0,y:0}, {x:-8.5, y:-5.1, duration:5, repeat:1, yoyo:true, ease:"sine.inOut"}, 0);
+tl.fromTo("#sky-b12", {opacity:0.39}, {opacity:0.84, duration:1.667, repeat:5, yoyo:true, ease:"sine.inOut"}, 0);
+tl.fromTo("#sky-b12", {x:0,y:0}, {x:-11.2, y:-0.7, duration:5, repeat:1, yoyo:true, ease:"sine.inOut"}, 0);
+tl.fromTo("#sky-b13", {opacity:0.41}, {opacity:0.86, duration:2.500, repeat:3, yoyo:true, ease:"sine.inOut"}, 0);
+tl.fromTo("#sky-b13", {x:0,y:0}, {x:-6.6, y:-8.6, duration:5, repeat:1, yoyo:true, ease:"sine.inOut"}, 0);
+tl.fromTo("#sky-b14", {opacity:0.47}, {opacity:0.92, duration:2.500, repeat:3, yoyo:true, ease:"sine.inOut"}, 0);
+tl.fromTo("#sky-b14", {x:0,y:0}, {x:6.6, y:8.0, duration:5, repeat:1, yoyo:true, ease:"sine.inOut"}, 0);
+tl.fromTo("#sky-b15", {opacity:0.45}, {opacity:0.90, duration:2.500, repeat:3, yoyo:true, ease:"sine.inOut"}, 0);
+tl.fromTo("#sky-b15", {x:0,y:0}, {x:-6.9, y:-7.8, duration:5, repeat:1, yoyo:true, ease:"sine.inOut"}, 0);
+tl.fromTo("#sky-b16", {opacity:0.75}, {opacity:1.00, duration:2.500, repeat:3, yoyo:true, ease:"sine.inOut"}, 0);
+tl.fromTo("#sky-b16", {x:0,y:0}, {x:-5.0, y:2.9, duration:5, repeat:1, yoyo:true, ease:"sine.inOut"}, 0);
+tl.fromTo("#sky-b17", {opacity:0.45}, {opacity:0.90, duration:1.667, repeat:5, yoyo:true, ease:"sine.inOut"}, 0);
+tl.fromTo("#sky-b17", {x:0,y:0}, {x:7.0, y:-6.9, duration:5, repeat:1, yoyo:true, ease:"sine.inOut"}, 0);
+tl.fromTo("#sky-b18", {opacity:0.70}, {opacity:1.00, duration:2.500, repeat:3, yoyo:true, ease:"sine.inOut"}, 0);
+tl.fromTo("#sky-b18", {x:0,y:0}, {x:6.9, y:-7.4, duration:5, repeat:1, yoyo:true, ease:"sine.inOut"}, 0);
+tl.fromTo("#sky-b19", {opacity:0.50}, {opacity:0.95, duration:2.500, repeat:3, yoyo:true, ease:"sine.inOut"}, 0);
+tl.fromTo("#sky-b19", {x:0,y:0}, {x:13.4, y:-7.1, duration:5, repeat:1, yoyo:true, ease:"sine.inOut"}, 0);
+tl.fromTo("#sky-b20", {opacity:0.79}, {opacity:1.00, duration:1.667, repeat:5, yoyo:true, ease:"sine.inOut"}, 0);
+tl.fromTo("#sky-b20", {x:0,y:0}, {x:11.6, y:-4.3, duration:5, repeat:1, yoyo:true, ease:"sine.inOut"}, 0);
+tl.fromTo("#sky-b21", {opacity:0.59}, {opacity:1.00, duration:2.500, repeat:3, yoyo:true, ease:"sine.inOut"}, 0);
+tl.fromTo("#sky-b21", {x:0,y:0}, {x:1.2, y:6.6, duration:5, repeat:1, yoyo:true, ease:"sine.inOut"}, 0);
+tl.fromTo("#sky-b22", {opacity:0.52}, {opacity:0.97, duration:1.667, repeat:5, yoyo:true, ease:"sine.inOut"}, 0);
+tl.fromTo("#sky-b22", {x:0,y:0}, {x:-11.8, y:-1.3, duration:5, repeat:1, yoyo:true, ease:"sine.inOut"}, 0);
+tl.fromTo("#sky-b23", {opacity:0.82}, {opacity:1.00, duration:2.500, repeat:3, yoyo:true, ease:"sine.inOut"}, 0);
+tl.fromTo("#sky-b23", {x:0,y:0}, {x:-2.7, y:-6.7, duration:5, repeat:1, yoyo:true, ease:"sine.inOut"}, 0);
+tl.fromTo("#sky-b24", {opacity:0.48}, {opacity:0.93, duration:1.667, repeat:5, yoyo:true, ease:"sine.inOut"}, 0);
+tl.fromTo("#sky-b24", {x:0,y:0}, {x:-17.2, y:-9.6, duration:5, repeat:1, yoyo:true, ease:"sine.inOut"}, 0);
+tl.fromTo("#sky-b25", {opacity:0.76}, {opacity:1.00, duration:1.667, repeat:5, yoyo:true, ease:"sine.inOut"}, 0);
+tl.fromTo("#sky-b25", {x:0,y:0}, {x:2.5, y:0.3, duration:5, repeat:1, yoyo:true, ease:"sine.inOut"}, 0);
+tl.fromTo("#sky-b26", {opacity:0.67}, {opacity:1.00, duration:2.500, repeat:3, yoyo:true, ease:"sine.inOut"}, 0);
+tl.fromTo("#sky-b26", {x:0,y:0}, {x:7.9, y:-3.2, duration:5, repeat:1, yoyo:true, ease:"sine.inOut"}, 0);
+tl.fromTo("#sky-b27", {opacity:0.46}, {opacity:0.91, duration:2.500, repeat:3, yoyo:true, ease:"sine.inOut"}, 0);
+tl.fromTo("#sky-b27", {x:0,y:0}, {x:16.2, y:-0.1, duration:5, repeat:1, yoyo:true, ease:"sine.inOut"}, 0);
+tl.fromTo("#sky-b28", {opacity:0.34}, {opacity:0.79, duration:1.667, repeat:5, yoyo:true, ease:"sine.inOut"}, 0);
+tl.fromTo("#sky-b28", {x:0,y:0}, {x:-15.9, y:3.0, duration:5, repeat:1, yoyo:true, ease:"sine.inOut"}, 0);
+tl.fromTo("#sky-b29", {opacity:0.52}, {opacity:0.97, duration:2.500, repeat:3, yoyo:true, ease:"sine.inOut"}, 0);
+tl.fromTo("#sky-b29", {x:0,y:0}, {x:15.5, y:6.0, duration:5, repeat:1, yoyo:true, ease:"sine.inOut"}, 0);
+tl.fromTo("#sky-b30", {opacity:0.47}, {opacity:0.92, duration:2.500, repeat:3, yoyo:true, ease:"sine.inOut"}, 0);
+tl.fromTo("#sky-b30", {x:0,y:0}, {x:1.1, y:7.7, duration:5, repeat:1, yoyo:true, ease:"sine.inOut"}, 0);
+tl.fromTo("#sky-b31", {opacity:0.72}, {opacity:1.00, duration:2.500, repeat:3, yoyo:true, ease:"sine.inOut"}, 0);
+tl.fromTo("#sky-b31", {x:0,y:0}, {x:15.5, y:-6.2, duration:5, repeat:1, yoyo:true, ease:"sine.inOut"}, 0);
+tl.fromTo("#sky-b32", {opacity:0.35}, {opacity:0.80, duration:1.667, repeat:5, yoyo:true, ease:"sine.inOut"}, 0);
+tl.fromTo("#sky-b32", {x:0,y:0}, {x:13.4, y:-7.1, duration:5, repeat:1, yoyo:true, ease:"sine.inOut"}, 0);
+tl.fromTo("#sky-b33", {opacity:0.44}, {opacity:0.89, duration:2.500, repeat:3, yoyo:true, ease:"sine.inOut"}, 0);
+tl.fromTo("#sky-b33", {x:0,y:0}, {x:5.7, y:1.0, duration:5, repeat:1, yoyo:true, ease:"sine.inOut"}, 0);
+tl.fromTo("#sky-b34", {opacity:0.38}, {opacity:0.83, duration:2.500, repeat:3, yoyo:true, ease:"sine.inOut"}, 0);
+tl.fromTo("#sky-b34", {x:0,y:0}, {x:-5.1, y:-2.6, duration:5, repeat:1, yoyo:true, ease:"sine.inOut"}, 0);
+tl.fromTo("#sky-b35", {opacity:0.43}, {opacity:0.88, duration:2.500, repeat:3, yoyo:true, ease:"sine.inOut"}, 0);
+tl.fromTo("#sky-b35", {x:0,y:0}, {x:-15.4, y:8.0, duration:5, repeat:1, yoyo:true, ease:"sine.inOut"}, 0);
+tl.fromTo("#sky-b36", {opacity:0.75}, {opacity:1.00, duration:2.500, repeat:3, yoyo:true, ease:"sine.inOut"}, 0);
+tl.fromTo("#sky-b36", {x:0,y:0}, {x:-14.7, y:-0.5, duration:5, repeat:1, yoyo:true, ease:"sine.inOut"}, 0);
+tl.fromTo("#sky-b37", {opacity:0.46}, {opacity:0.91, duration:1.667, repeat:5, yoyo:true, ease:"sine.inOut"}, 0);
+tl.fromTo("#sky-b37", {x:0,y:0}, {x:-8.2, y:6.1, duration:5, repeat:1, yoyo:true, ease:"sine.inOut"}, 0);
+tl.fromTo("#sky-b38", {opacity:0.37}, {opacity:0.82, duration:2.500, repeat:3, yoyo:true, ease:"sine.inOut"}, 0);
+tl.fromTo("#sky-b38", {x:0,y:0}, {x:3.2, y:7.0, duration:5, repeat:1, yoyo:true, ease:"sine.inOut"}, 0);
+tl.fromTo("#sky-b39", {opacity:0.75}, {opacity:1.00, duration:2.500, repeat:3, yoyo:true, ease:"sine.inOut"}, 0);
+tl.fromTo("#sky-b39", {x:0,y:0}, {x:-17.0, y:-9.4, duration:5, repeat:1, yoyo:true, ease:"sine.inOut"}, 0);
+tl.fromTo("#sky-b40", {opacity:0.84}, {opacity:1.00, duration:2.500, repeat:3, yoyo:true, ease:"sine.inOut"}, 0);
+tl.fromTo("#sky-b40", {x:0,y:0}, {x:1.2, y:9.5, duration:5, repeat:1, yoyo:true, ease:"sine.inOut"}, 0);
+tl.fromTo("#sky-b41", {opacity:0.32}, {opacity:0.77, duration:2.500, repeat:3, yoyo:true, ease:"sine.inOut"}, 0);
+tl.fromTo("#sky-b41", {x:0,y:0}, {x:-17.2, y:1.0, duration:5, repeat:1, yoyo:true, ease:"sine.inOut"}, 0);
+tl.fromTo("#sky-b42", {opacity:0.45}, {opacity:0.90, duration:1.667, repeat:5, yoyo:true, ease:"sine.inOut"}, 0);
+tl.fromTo("#sky-b42", {x:0,y:0}, {x:-5.4, y:2.5, duration:5, repeat:1, yoyo:true, ease:"sine.inOut"}, 0);
+tl.fromTo("#sky-b43", {opacity:0.57}, {opacity:1.00, duration:1.667, repeat:5, yoyo:true, ease:"sine.inOut"}, 0);
+tl.fromTo("#sky-b43", {x:0,y:0}, {x:-14.8, y:3.5, duration:5, repeat:1, yoyo:true, ease:"sine.inOut"}, 0);
+tl.fromTo("#sky-b44", {opacity:0.57}, {opacity:1.00, duration:2.500, repeat:3, yoyo:true, ease:"sine.inOut"}, 0);
+tl.fromTo("#sky-b44", {x:0,y:0}, {x:10.1, y:8.4, duration:5, repeat:1, yoyo:true, ease:"sine.inOut"}, 0);
+tl.fromTo("#sky-b45", {opacity:0.53}, {opacity:0.98, duration:1.667, repeat:5, yoyo:true, ease:"sine.inOut"}, 0);
+tl.fromTo("#sky-b45", {x:0,y:0}, {x:-14.7, y:5.3, duration:5, repeat:1, yoyo:true, ease:"sine.inOut"}, 0);
+tl.fromTo("#sky-b46", {opacity:0.40}, {opacity:0.85, duration:2.500, repeat:3, yoyo:true, ease:"sine.inOut"}, 0);
+tl.fromTo("#sky-b46", {x:0,y:0}, {x:-9.5, y:-0.1, duration:5, repeat:1, yoyo:true, ease:"sine.inOut"}, 0);
+tl.fromTo("#sky-b47", {opacity:0.55}, {opacity:1.00, duration:1.667, repeat:5, yoyo:true, ease:"sine.inOut"}, 0);
+tl.fromTo("#sky-b47", {x:0,y:0}, {x:12.9, y:4.6, duration:5, repeat:1, yoyo:true, ease:"sine.inOut"}, 0);
+tl.fromTo("#sky-b48", {opacity:0.61}, {opacity:1.00, duration:2.500, repeat:3, yoyo:true, ease:"sine.inOut"}, 0);
+tl.fromTo("#sky-b48", {x:0,y:0}, {x:-15.2, y:-3.5, duration:5, repeat:1, yoyo:true, ease:"sine.inOut"}, 0);
+tl.fromTo("#sky-b49", {opacity:0.78}, {opacity:1.00, duration:1.667, repeat:5, yoyo:true, ease:"sine.inOut"}, 0);
+tl.fromTo("#sky-b49", {x:0,y:0}, {x:-7.8, y:-9.0, duration:5, repeat:1, yoyo:true, ease:"sine.inOut"}, 0);
+tl.fromTo("#sky-b50", {opacity:0.78}, {opacity:1.00, duration:2.500, repeat:3, yoyo:true, ease:"sine.inOut"}, 0);
+tl.fromTo("#sky-b50", {x:0,y:0}, {x:-9.7, y:8.2, duration:5, repeat:1, yoyo:true, ease:"sine.inOut"}, 0);
+tl.fromTo("#sky-b51", {opacity:0.46}, {opacity:0.91, duration:2.500, repeat:3, yoyo:true, ease:"sine.inOut"}, 0);
+tl.fromTo("#sky-b51", {x:0,y:0}, {x:16.9, y:-2.5, duration:5, repeat:1, yoyo:true, ease:"sine.inOut"}, 0);
+tl.fromTo("#sky-b52", {opacity:0.37}, {opacity:0.82, duration:2.500, repeat:3, yoyo:true, ease:"sine.inOut"}, 0);
+tl.fromTo("#sky-b52", {x:0,y:0}, {x:4.1, y:2.7, duration:5, repeat:1, yoyo:true, ease:"sine.inOut"}, 0);
+tl.fromTo("#sky-b53", {opacity:0.49}, {opacity:0.94, duration:2.500, repeat:3, yoyo:true, ease:"sine.inOut"}, 0);
+tl.fromTo("#sky-b53", {x:0,y:0}, {x:-6.3, y:2.7, duration:5, repeat:1, yoyo:true, ease:"sine.inOut"}, 0);
+tl.fromTo("#sky-b54", {opacity:0.35}, {opacity:0.80, duration:2.500, repeat:3, yoyo:true, ease:"sine.inOut"}, 0);
+tl.fromTo("#sky-b54", {x:0,y:0}, {x:12.7, y:-3.1, duration:5, repeat:1, yoyo:true, ease:"sine.inOut"}, 0);
+tl.fromTo("#sky-b55", {opacity:0.62}, {opacity:1.00, duration:2.500, repeat:3, yoyo:true, ease:"sine.inOut"}, 0);
+tl.fromTo("#sky-b55", {x:0,y:0}, {x:-11.4, y:5.4, duration:5, repeat:1, yoyo:true, ease:"sine.inOut"}, 0);
+tl.fromTo("#sky-b56", {opacity:0.65}, {opacity:1.00, duration:2.500, repeat:3, yoyo:true, ease:"sine.inOut"}, 0);
+tl.fromTo("#sky-b56", {x:0,y:0}, {x:-9.0, y:8.0, duration:5, repeat:1, yoyo:true, ease:"sine.inOut"}, 0);
+tl.fromTo("#sky-b57", {opacity:0.57}, {opacity:1.00, duration:2.500, repeat:3, yoyo:true, ease:"sine.inOut"}, 0);
+tl.fromTo("#sky-b57", {x:0,y:0}, {x:-15.6, y:7.7, duration:5, repeat:1, yoyo:true, ease:"sine.inOut"}, 0);
+tl.fromTo("#sky-b58", {opacity:0.85}, {opacity:1.00, duration:2.500, repeat:3, yoyo:true, ease:"sine.inOut"}, 0);
+tl.fromTo("#sky-b58", {x:0,y:0}, {x:-17.2, y:-7.7, duration:5, repeat:1, yoyo:true, ease:"sine.inOut"}, 0);
+tl.fromTo("#sky-b59", {opacity:0.51}, {opacity:0.96, duration:1.667, repeat:5, yoyo:true, ease:"sine.inOut"}, 0);
+tl.fromTo("#sky-b59", {x:0,y:0}, {x:10.2, y:6.4, duration:5, repeat:1, yoyo:true, ease:"sine.inOut"}, 0);
+tl.fromTo("#sky-b60", {opacity:0.49}, {opacity:0.94, duration:2.500, repeat:3, yoyo:true, ease:"sine.inOut"}, 0);
+tl.fromTo("#sky-b60", {x:0,y:0}, {x:0.3, y:-7.0, duration:5, repeat:1, yoyo:true, ease:"sine.inOut"}, 0);
+tl.fromTo("#sky-b61", {opacity:0.74}, {opacity:1.00, duration:2.500, repeat:3, yoyo:true, ease:"sine.inOut"}, 0);
+tl.fromTo("#sky-b61", {x:0,y:0}, {x:-15.9, y:-7.8, duration:5, repeat:1, yoyo:true, ease:"sine.inOut"}, 0);
+tl.fromTo("#sky-b62", {opacity:0.51}, {opacity:0.96, duration:1.667, repeat:5, yoyo:true, ease:"sine.inOut"}, 0);
+tl.fromTo("#sky-b62", {x:0,y:0}, {x:-7.3, y:6.9, duration:5, repeat:1, yoyo:true, ease:"sine.inOut"}, 0);
+tl.fromTo("#sky-b63", {opacity:0.33}, {opacity:0.78, duration:1.667, repeat:5, yoyo:true, ease:"sine.inOut"}, 0);
+tl.fromTo("#sky-b63", {x:0,y:0}, {x:5.4, y:2.5, duration:5, repeat:1, yoyo:true, ease:"sine.inOut"}, 0);
+tl.fromTo("#sky-b64", {opacity:0.35}, {opacity:0.80, duration:2.500, repeat:3, yoyo:true, ease:"sine.inOut"}, 0);
+tl.fromTo("#sky-b64", {x:0,y:0}, {x:-17.4, y:8.3, duration:5, repeat:1, yoyo:true, ease:"sine.inOut"}, 0);
+tl.fromTo("#sky-b65", {opacity:0.46}, {opacity:0.91, duration:1.667, repeat:5, yoyo:true, ease:"sine.inOut"}, 0);
+tl.fromTo("#sky-b65", {x:0,y:0}, {x:-14.8, y:-1.6, duration:5, repeat:1, yoyo:true, ease:"sine.inOut"}, 0);
+tl.fromTo("#sky-b66", {opacity:0.49}, {opacity:0.94, duration:2.500, repeat:3, yoyo:true, ease:"sine.inOut"}, 0);
+tl.fromTo("#sky-b66", {x:0,y:0}, {x:12.4, y:9.5, duration:5, repeat:1, yoyo:true, ease:"sine.inOut"}, 0);
+tl.fromTo("#sky-b67", {opacity:0.69}, {opacity:1.00, duration:1.667, repeat:5, yoyo:true, ease:"sine.inOut"}, 0);
+tl.fromTo("#sky-b67", {x:0,y:0}, {x:14.4, y:5.3, duration:5, repeat:1, yoyo:true, ease:"sine.inOut"}, 0);
+tl.fromTo("#sky-b68", {opacity:0.73}, {opacity:1.00, duration:2.500, repeat:3, yoyo:true, ease:"sine.inOut"}, 0);
+tl.fromTo("#sky-b68", {x:0,y:0}, {x:-3.8, y:9.9, duration:5, repeat:1, yoyo:true, ease:"sine.inOut"}, 0);
+tl.fromTo("#sky-b69", {opacity:0.33}, {opacity:0.78, duration:2.500, repeat:3, yoyo:true, ease:"sine.inOut"}, 0);
+tl.fromTo("#sky-b69", {x:0,y:0}, {x:-17.9, y:-5.6, duration:5, repeat:1, yoyo:true, ease:"sine.inOut"}, 0);
+tl.fromTo("#sky-b70", {opacity:0.61}, {opacity:1.00, duration:2.500, repeat:3, yoyo:true, ease:"sine.inOut"}, 0);
+tl.fromTo("#sky-b70", {x:0,y:0}, {x:3.3, y:-7.9, duration:5, repeat:1, yoyo:true, ease:"sine.inOut"}, 0);
+tl.fromTo("#sky-b71", {opacity:0.47}, {opacity:0.92, duration:2.500, repeat:3, yoyo:true, ease:"sine.inOut"}, 0);
+tl.fromTo("#sky-b71", {x:0,y:0}, {x:-9.3, y:-4.1, duration:5, repeat:1, yoyo:true, ease:"sine.inOut"}, 0);
+tl.fromTo("#sky-b72", {opacity:0.56}, {opacity:1.00, duration:2.500, repeat:3, yoyo:true, ease:"sine.inOut"}, 0);
+tl.fromTo("#sky-b72", {x:0,y:0}, {x:10.9, y:2.6, duration:5, repeat:1, yoyo:true, ease:"sine.inOut"}, 0);
+tl.fromTo("#sky-b73", {opacity:0.48}, {opacity:0.93, duration:2.500, repeat:3, yoyo:true, ease:"sine.inOut"}, 0);
+tl.fromTo("#sky-b73", {x:0,y:0}, {x:-16.0, y:-2.0, duration:5, repeat:1, yoyo:true, ease:"sine.inOut"}, 0);
+tl.fromTo("#sky-b74", {opacity:0.73}, {opacity:1.00, duration:2.500, repeat:3, yoyo:true, ease:"sine.inOut"}, 0);
+tl.fromTo("#sky-b74", {x:0,y:0}, {x:-4.5, y:-7.5, duration:5, repeat:1, yoyo:true, ease:"sine.inOut"}, 0);
+tl.fromTo("#sky-b75", {opacity:0.31}, {opacity:0.76, duration:2.500, repeat:3, yoyo:true, ease:"sine.inOut"}, 0);
+tl.fromTo("#sky-b75", {x:0,y:0}, {x:-9.3, y:7.4, duration:5, repeat:1, yoyo:true, ease:"sine.inOut"}, 0);
+tl.fromTo("#sky-b76", {opacity:0.47}, {opacity:0.92, duration:2.500, repeat:3, yoyo:true, ease:"sine.inOut"}, 0);
+tl.fromTo("#sky-b76", {x:0,y:0}, {x:0.9, y:1.2, duration:5, repeat:1, yoyo:true, ease:"sine.inOut"}, 0);
+tl.fromTo("#sky-b77", {opacity:0.33}, {opacity:0.78, duration:2.500, repeat:3, yoyo:true, ease:"sine.inOut"}, 0);
+tl.fromTo("#sky-b77", {x:0,y:0}, {x:10.0, y:7.8, duration:5, repeat:1, yoyo:true, ease:"sine.inOut"}, 0);
+tl.fromTo("#sky-b78", {opacity:0.84}, {opacity:1.00, duration:1.667, repeat:5, yoyo:true, ease:"sine.inOut"}, 0);
+tl.fromTo("#sky-b78", {x:0,y:0}, {x:1.7, y:0.2, duration:5, repeat:1, yoyo:true, ease:"sine.inOut"}, 0);
+tl.fromTo("#sky-b79", {opacity:0.62}, {opacity:1.00, duration:1.667, repeat:5, yoyo:true, ease:"sine.inOut"}, 0);
+tl.fromTo("#sky-b79", {x:0,y:0}, {x:-5.6, y:-8.5, duration:5, repeat:1, yoyo:true, ease:"sine.inOut"}, 0);
+tl.fromTo("#sky-b80", {opacity:0.61}, {opacity:1.00, duration:2.500, repeat:3, yoyo:true, ease:"sine.inOut"}, 0);
+tl.fromTo("#sky-b80", {x:0,y:0}, {x:13.9, y:-8.9, duration:5, repeat:1, yoyo:true, ease:"sine.inOut"}, 0);
+tl.fromTo("#sky-b81", {opacity:0.40}, {opacity:0.85, duration:2.500, repeat:3, yoyo:true, ease:"sine.inOut"}, 0);
+tl.fromTo("#sky-b81", {x:0,y:0}, {x:-5.4, y:6.3, duration:5, repeat:1, yoyo:true, ease:"sine.inOut"}, 0);
+tl.fromTo("#sky-b82", {opacity:0.57}, {opacity:1.00, duration:2.500, repeat:3, yoyo:true, ease:"sine.inOut"}, 0);
+tl.fromTo("#sky-b82", {x:0,y:0}, {x:-0.0, y:3.6, duration:5, repeat:1, yoyo:true, ease:"sine.inOut"}, 0);
+tl.fromTo("#sky-b83", {opacity:0.63}, {opacity:1.00, duration:2.500, repeat:3, yoyo:true, ease:"sine.inOut"}, 0);
+tl.fromTo("#sky-b83", {x:0,y:0}, {x:10.8, y:-0.8, duration:5, repeat:1, yoyo:true, ease:"sine.inOut"}, 0);
+tl.fromTo("#sky-b84", {opacity:0.53}, {opacity:0.98, duration:2.500, repeat:3, yoyo:true, ease:"sine.inOut"}, 0);
+tl.fromTo("#sky-b84", {x:0,y:0}, {x:2.6, y:3.4, duration:5, repeat:1, yoyo:true, ease:"sine.inOut"}, 0);
+tl.fromTo("#sky-b85", {opacity:0.52}, {opacity:0.97, duration:2.500, repeat:3, yoyo:true, ease:"sine.inOut"}, 0);
+tl.fromTo("#sky-b85", {x:0,y:0}, {x:-0.1, y:-4.4, duration:5, repeat:1, yoyo:true, ease:"sine.inOut"}, 0);
+tl.fromTo("#sky-b86", {opacity:0.82}, {opacity:1.00, duration:2.500, repeat:3, yoyo:true, ease:"sine.inOut"}, 0);
+tl.fromTo("#sky-b86", {x:0,y:0}, {x:-3.8, y:-8.5, duration:5, repeat:1, yoyo:true, ease:"sine.inOut"}, 0);
+tl.fromTo("#sky-b87", {opacity:0.61}, {opacity:1.00, duration:2.500, repeat:3, yoyo:true, ease:"sine.inOut"}, 0);
+tl.fromTo("#sky-b87", {x:0,y:0}, {x:-17.0, y:3.4, duration:5, repeat:1, yoyo:true, ease:"sine.inOut"}, 0);
+tl.fromTo("#sky-b88", {opacity:0.44}, {opacity:0.89, duration:2.500, repeat:3, yoyo:true, ease:"sine.inOut"}, 0);
+tl.fromTo("#sky-b88", {x:0,y:0}, {x:-4.0, y:8.9, duration:5, repeat:1, yoyo:true, ease:"sine.inOut"}, 0);
+tl.fromTo("#sky-b89", {opacity:0.77}, {opacity:1.00, duration:2.500, repeat:3, yoyo:true, ease:"sine.inOut"}, 0);
+tl.fromTo("#sky-b89", {x:0,y:0}, {x:7.7, y:9.9, duration:5, repeat:1, yoyo:true, ease:"sine.inOut"}, 0);
+tl.fromTo("#sky-b90", {opacity:0.55}, {opacity:1.00, duration:2.500, repeat:3, yoyo:true, ease:"sine.inOut"}, 0);
+tl.fromTo("#sky-b90", {x:0,y:0}, {x:-17.0, y:-4.8, duration:5, repeat:1, yoyo:true, ease:"sine.inOut"}, 0);
+tl.fromTo("#sky-b91", {opacity:0.48}, {opacity:0.93, duration:2.500, repeat:3, yoyo:true, ease:"sine.inOut"}, 0);
+tl.fromTo("#sky-b91", {x:0,y:0}, {x:16.6, y:7.8, duration:5, repeat:1, yoyo:true, ease:"sine.inOut"}, 0);
+tl.fromTo("#sky-b92", {opacity:0.71}, {opacity:1.00, duration:1.667, repeat:5, yoyo:true, ease:"sine.inOut"}, 0);
+tl.fromTo("#sky-b92", {x:0,y:0}, {x:12.6, y:-3.9, duration:5, repeat:1, yoyo:true, ease:"sine.inOut"}, 0);
+tl.fromTo("#sky-b93", {opacity:0.54}, {opacity:0.99, duration:2.500, repeat:3, yoyo:true, ease:"sine.inOut"}, 0);
+tl.fromTo("#sky-b93", {x:0,y:0}, {x:5.1, y:8.5, duration:5, repeat:1, yoyo:true, ease:"sine.inOut"}, 0);
+tl.fromTo("#sky-b94", {opacity:0.64}, {opacity:1.00, duration:2.500, repeat:3, yoyo:true, ease:"sine.inOut"}, 0);
+tl.fromTo("#sky-b94", {x:0,y:0}, {x:-11.4, y:-9.1, duration:5, repeat:1, yoyo:true, ease:"sine.inOut"}, 0);
+tl.fromTo("#sky-b95", {opacity:0.67}, {opacity:1.00, duration:2.500, repeat:3, yoyo:true, ease:"sine.inOut"}, 0);
+tl.fromTo("#sky-b95", {x:0,y:0}, {x:-16.7, y:-1.9, duration:5, repeat:1, yoyo:true, ease:"sine.inOut"}, 0);
+tl.fromTo("#sky-b96", {opacity:0.74}, {opacity:1.00, duration:2.500, repeat:3, yoyo:true, ease:"sine.inOut"}, 0);
+tl.fromTo("#sky-b96", {x:0,y:0}, {x:11.0, y:2.4, duration:5, repeat:1, yoyo:true, ease:"sine.inOut"}, 0);
+tl.fromTo("#sky-b97", {opacity:0.44}, {opacity:0.89, duration:1.667, repeat:5, yoyo:true, ease:"sine.inOut"}, 0);
+tl.fromTo("#sky-b97", {x:0,y:0}, {x:2.2, y:-7.8, duration:5, repeat:1, yoyo:true, ease:"sine.inOut"}, 0);
+tl.fromTo("#sky-b98", {opacity:0.65}, {opacity:1.00, duration:2.500, repeat:3, yoyo:true, ease:"sine.inOut"}, 0);
+tl.fromTo("#sky-b98", {x:0,y:0}, {x:4.9, y:7.8, duration:5, repeat:1, yoyo:true, ease:"sine.inOut"}, 0);
+tl.fromTo("#sky-b99", {opacity:0.38}, {opacity:0.83, duration:2.500, repeat:3, yoyo:true, ease:"sine.inOut"}, 0);
+tl.fromTo("#sky-b99", {x:0,y:0}, {x:-8.7, y:0.9, duration:5, repeat:1, yoyo:true, ease:"sine.inOut"}, 0);
+tl.fromTo("#sky-b100", {opacity:0.83}, {opacity:1.00, duration:1.667, repeat:5, yoyo:true, ease:"sine.inOut"}, 0);
+tl.fromTo("#sky-b100", {x:0,y:0}, {x:-16.2, y:4.9, duration:5, repeat:1, yoyo:true, ease:"sine.inOut"}, 0);
+tl.fromTo("#sky-b101", {opacity:0.49}, {opacity:0.94, duration:2.500, repeat:3, yoyo:true, ease:"sine.inOut"}, 0);
+tl.fromTo("#sky-b101", {x:0,y:0}, {x:-16.3, y:5.8, duration:5, repeat:1, yoyo:true, ease:"sine.inOut"}, 0);
+tl.fromTo("#sky-b102", {opacity:0.37}, {opacity:0.82, duration:1.667, repeat:5, yoyo:true, ease:"sine.inOut"}, 0);
+tl.fromTo("#sky-b102", {x:0,y:0}, {x:-6.1, y:-1.5, duration:5, repeat:1, yoyo:true, ease:"sine.inOut"}, 0);
+tl.fromTo("#sky-b103", {opacity:0.71}, {opacity:1.00, duration:2.500, repeat:3, yoyo:true, ease:"sine.inOut"}, 0);
+tl.fromTo("#sky-b103", {x:0,y:0}, {x:5.0, y:-8.0, duration:5, repeat:1, yoyo:true, ease:"sine.inOut"}, 0);
+tl.fromTo("#sky-b104", {opacity:0.72}, {opacity:1.00, duration:2.500, repeat:3, yoyo:true, ease:"sine.inOut"}, 0);
+tl.fromTo("#sky-b104", {x:0,y:0}, {x:15.5, y:7.6, duration:5, repeat:1, yoyo:true, ease:"sine.inOut"}, 0);
+tl.fromTo("#sky-b105", {opacity:0.54}, {opacity:0.99, duration:1.667, repeat:5, yoyo:true, ease:"sine.inOut"}, 0);
+tl.fromTo("#sky-b105", {x:0,y:0}, {x:-0.3, y:-5.7, duration:5, repeat:1, yoyo:true, ease:"sine.inOut"}, 0);
+tl.fromTo("#sky-b106", {opacity:0.54}, {opacity:0.99, duration:2.500, repeat:3, yoyo:true, ease:"sine.inOut"}, 0);
+tl.fromTo("#sky-b106", {x:0,y:0}, {x:-2.7, y:5.7, duration:5, repeat:1, yoyo:true, ease:"sine.inOut"}, 0);
+tl.fromTo("#sky-b107", {opacity:0.35}, {opacity:0.80, duration:2.500, repeat:3, yoyo:true, ease:"sine.inOut"}, 0);
+tl.fromTo("#sky-b107", {x:0,y:0}, {x:-15.2, y:2.8, duration:5, repeat:1, yoyo:true, ease:"sine.inOut"}, 0);
+tl.fromTo("#sky-b108", {opacity:0.71}, {opacity:1.00, duration:2.500, repeat:3, yoyo:true, ease:"sine.inOut"}, 0);
+tl.fromTo("#sky-b108", {x:0,y:0}, {x:-7.4, y:8.1, duration:5, repeat:1, yoyo:true, ease:"sine.inOut"}, 0);
+tl.fromTo("#sky-b109", {opacity:0.75}, {opacity:1.00, duration:1.667, repeat:5, yoyo:true, ease:"sine.inOut"}, 0);
+tl.fromTo("#sky-b109", {x:0,y:0}, {x:-0.7, y:6.8, duration:5, repeat:1, yoyo:true, ease:"sine.inOut"}, 0);
+tl.fromTo("#sky-b110", {opacity:0.48}, {opacity:0.93, duration:2.500, repeat:3, yoyo:true, ease:"sine.inOut"}, 0);
+tl.fromTo("#sky-b110", {x:0,y:0}, {x:-17.5, y:-8.4, duration:5, repeat:1, yoyo:true, ease:"sine.inOut"}, 0);
+tl.fromTo("#sky-b111", {opacity:0.55}, {opacity:1.00, duration:1.667, repeat:5, yoyo:true, ease:"sine.inOut"}, 0);
+tl.fromTo("#sky-b111", {x:0,y:0}, {x:4.6, y:1.2, duration:5, repeat:1, yoyo:true, ease:"sine.inOut"}, 0);
+tl.fromTo("#sky-b112", {opacity:0.76}, {opacity:1.00, duration:2.500, repeat:3, yoyo:true, ease:"sine.inOut"}, 0);
+tl.fromTo("#sky-b112", {x:0,y:0}, {x:2.7, y:4.2, duration:5, repeat:1, yoyo:true, ease:"sine.inOut"}, 0);
+tl.fromTo("#sky-b113", {opacity:0.71}, {opacity:1.00, duration:2.500, repeat:3, yoyo:true, ease:"sine.inOut"}, 0);
+tl.fromTo("#sky-b113", {x:0,y:0}, {x:-6.0, y:6.1, duration:5, repeat:1, yoyo:true, ease:"sine.inOut"}, 0);
+tl.fromTo("#sky-b114", {opacity:0.46}, {opacity:0.91, duration:2.500, repeat:3, yoyo:true, ease:"sine.inOut"}, 0);
+tl.fromTo("#sky-b114", {x:0,y:0}, {x:10.1, y:4.5, duration:5, repeat:1, yoyo:true, ease:"sine.inOut"}, 0);
+tl.fromTo("#sky-b115", {opacity:0.73}, {opacity:1.00, duration:2.500, repeat:3, yoyo:true, ease:"sine.inOut"}, 0);
+tl.fromTo("#sky-b115", {x:0,y:0}, {x:16.9, y:-3.5, duration:5, repeat:1, yoyo:true, ease:"sine.inOut"}, 0);
+tl.fromTo("#sky-b116", {opacity:0.36}, {opacity:0.81, duration:2.500, repeat:3, yoyo:true, ease:"sine.inOut"}, 0);
+tl.fromTo("#sky-b116", {x:0,y:0}, {x:17.3, y:-3.8, duration:5, repeat:1, yoyo:true, ease:"sine.inOut"}, 0);
+tl.fromTo("#sky-b117", {opacity:0.41}, {opacity:0.86, duration:2.500, repeat:3, yoyo:true, ease:"sine.inOut"}, 0);
+tl.fromTo("#sky-b117", {x:0,y:0}, {x:-3.4, y:8.4, duration:5, repeat:1, yoyo:true, ease:"sine.inOut"}, 0);
+tl.fromTo("#sky-b118", {opacity:0.76}, {opacity:1.00, duration:2.500, repeat:3, yoyo:true, ease:"sine.inOut"}, 0);
+tl.fromTo("#sky-b118", {x:0,y:0}, {x:13.3, y:-9.9, duration:5, repeat:1, yoyo:true, ease:"sine.inOut"}, 0);
+tl.fromTo("#sky-b119", {opacity:0.35}, {opacity:0.80, duration:2.500, repeat:3, yoyo:true, ease:"sine.inOut"}, 0);
+tl.fromTo("#sky-b119", {x:0,y:0}, {x:-6.3, y:-4.0, duration:5, repeat:1, yoyo:true, ease:"sine.inOut"}, 0);
+tl.fromTo("#sky-b120", {opacity:0.53}, {opacity:0.98, duration:2.500, repeat:3, yoyo:true, ease:"sine.inOut"}, 0);
+tl.fromTo("#sky-b120", {x:0,y:0}, {x:17.5, y:3.7, duration:5, repeat:1, yoyo:true, ease:"sine.inOut"}, 0);
+tl.fromTo("#sky-b121", {opacity:0.40}, {opacity:0.85, duration:1.667, repeat:5, yoyo:true, ease:"sine.inOut"}, 0);
+tl.fromTo("#sky-b121", {x:0,y:0}, {x:17.8, y:0.2, duration:5, repeat:1, yoyo:true, ease:"sine.inOut"}, 0);
+tl.fromTo("#sky-b122", {opacity:0.62}, {opacity:1.00, duration:2.500, repeat:3, yoyo:true, ease:"sine.inOut"}, 0);
+tl.fromTo("#sky-b122", {x:0,y:0}, {x:15.7, y:-9.7, duration:5, repeat:1, yoyo:true, ease:"sine.inOut"}, 0);
+tl.fromTo("#sky-b123", {opacity:0.37}, {opacity:0.82, duration:2.500, repeat:3, yoyo:true, ease:"sine.inOut"}, 0);
+tl.fromTo("#sky-b123", {x:0,y:0}, {x:2.5, y:-1.9, duration:5, repeat:1, yoyo:true, ease:"sine.inOut"}, 0);
+tl.fromTo("#sky-b124", {opacity:0.46}, {opacity:0.91, duration:2.500, repeat:3, yoyo:true, ease:"sine.inOut"}, 0);
+tl.fromTo("#sky-b124", {x:0,y:0}, {x:-6.4, y:7.5, duration:5, repeat:1, yoyo:true, ease:"sine.inOut"}, 0);
+tl.fromTo("#sky-b125", {opacity:0.73}, {opacity:1.00, duration:2.500, repeat:3, yoyo:true, ease:"sine.inOut"}, 0);
+tl.fromTo("#sky-b125", {x:0,y:0}, {x:-11.4, y:2.3, duration:5, repeat:1, yoyo:true, ease:"sine.inOut"}, 0);
+tl.fromTo("#sky-b126", {opacity:0.33}, {opacity:0.78, duration:1.667, repeat:5, yoyo:true, ease:"sine.inOut"}, 0);
+tl.fromTo("#sky-b126", {x:0,y:0}, {x:-7.0, y:-0.3, duration:5, repeat:1, yoyo:true, ease:"sine.inOut"}, 0);
+tl.fromTo("#sky-b127", {opacity:0.59}, {opacity:1.00, duration:2.500, repeat:3, yoyo:true, ease:"sine.inOut"}, 0);
+tl.fromTo("#sky-b127", {x:0,y:0}, {x:-16.8, y:4.1, duration:5, repeat:1, yoyo:true, ease:"sine.inOut"}, 0);
+tl.fromTo("#sky-b128", {opacity:0.49}, {opacity:0.94, duration:1.667, repeat:5, yoyo:true, ease:"sine.inOut"}, 0);
+tl.fromTo("#sky-b128", {x:0,y:0}, {x:-5.5, y:0.7, duration:5, repeat:1, yoyo:true, ease:"sine.inOut"}, 0);
+tl.fromTo("#sky-b129", {opacity:0.47}, {opacity:0.92, duration:2.500, repeat:3, yoyo:true, ease:"sine.inOut"}, 0);
+tl.fromTo("#sky-b129", {x:0,y:0}, {x:1.8, y:0.2, duration:5, repeat:1, yoyo:true, ease:"sine.inOut"}, 0);
+tl.fromTo("#sky-b130", {opacity:0.59}, {opacity:1.00, duration:1.667, repeat:5, yoyo:true, ease:"sine.inOut"}, 0);
+tl.fromTo("#sky-b130", {x:0,y:0}, {x:-16.7, y:-8.4, duration:5, repeat:1, yoyo:true, ease:"sine.inOut"}, 0);
+tl.fromTo("#sky-b131", {opacity:0.62}, {opacity:1.00, duration:2.500, repeat:3, yoyo:true, ease:"sine.inOut"}, 0);
+tl.fromTo("#sky-b131", {x:0,y:0}, {x:14.4, y:9.0, duration:5, repeat:1, yoyo:true, ease:"sine.inOut"}, 0);
+tl.fromTo("#sky-b132", {opacity:0.85}, {opacity:1.00, duration:2.500, repeat:3, yoyo:true, ease:"sine.inOut"}, 0);
+tl.fromTo("#sky-b132", {x:0,y:0}, {x:7.0, y:-9.9, duration:5, repeat:1, yoyo:true, ease:"sine.inOut"}, 0);
+tl.fromTo("#sky-b133", {opacity:0.33}, {opacity:0.78, duration:2.500, repeat:3, yoyo:true, ease:"sine.inOut"}, 0);
+tl.fromTo("#sky-b133", {x:0,y:0}, {x:-3.4, y:-9.0, duration:5, repeat:1, yoyo:true, ease:"sine.inOut"}, 0);
+tl.fromTo("#sky-b134", {opacity:0.73}, {opacity:1.00, duration:1.667, repeat:5, yoyo:true, ease:"sine.inOut"}, 0);
+tl.fromTo("#sky-b134", {x:0,y:0}, {x:-10.5, y:5.7, duration:5, repeat:1, yoyo:true, ease:"sine.inOut"}, 0);
+tl.fromTo("#sky-b135", {opacity:0.46}, {opacity:0.91, duration:2.500, repeat:3, yoyo:true, ease:"sine.inOut"}, 0);
+tl.fromTo("#sky-b135", {x:0,y:0}, {x:-12.2, y:-9.5, duration:5, repeat:1, yoyo:true, ease:"sine.inOut"}, 0);
+tl.fromTo("#sky-b136", {opacity:0.68}, {opacity:1.00, duration:2.500, repeat:3, yoyo:true, ease:"sine.inOut"}, 0);
+tl.fromTo("#sky-b136", {x:0,y:0}, {x:4.7, y:-2.1, duration:5, repeat:1, yoyo:true, ease:"sine.inOut"}, 0);
+tl.fromTo("#sky-b137", {opacity:0.63}, {opacity:1.00, duration:2.500, repeat:3, yoyo:true, ease:"sine.inOut"}, 0);
+tl.fromTo("#sky-b137", {x:0,y:0}, {x:-4.0, y:4.9, duration:5, repeat:1, yoyo:true, ease:"sine.inOut"}, 0);
+tl.fromTo("#sky-b138", {opacity:0.79}, {opacity:1.00, duration:2.500, repeat:3, yoyo:true, ease:"sine.inOut"}, 0);
+tl.fromTo("#sky-b138", {x:0,y:0}, {x:-8.2, y:4.7, duration:5, repeat:1, yoyo:true, ease:"sine.inOut"}, 0);
+tl.fromTo("#sky-b139", {opacity:0.70}, {opacity:1.00, duration:2.500, repeat:3, yoyo:true, ease:"sine.inOut"}, 0);
+tl.fromTo("#sky-b139", {x:0,y:0}, {x:-14.7, y:5.1, duration:5, repeat:1, yoyo:true, ease:"sine.inOut"}, 0);
+tl.fromTo("#sky-b140", {opacity:0.55}, {opacity:1.00, duration:2.500, repeat:3, yoyo:true, ease:"sine.inOut"}, 0);
+tl.fromTo("#sky-b140", {x:0,y:0}, {x:-3.4, y:0.5, duration:5, repeat:1, yoyo:true, ease:"sine.inOut"}, 0);
+tl.fromTo("#sky-b141", {opacity:0.71}, {opacity:1.00, duration:2.500, repeat:3, yoyo:true, ease:"sine.inOut"}, 0);
+tl.fromTo("#sky-b141", {x:0,y:0}, {x:-6.7, y:-3.4, duration:5, repeat:1, yoyo:true, ease:"sine.inOut"}, 0);
+tl.fromTo("#sky-b142", {opacity:0.79}, {opacity:1.00, duration:2.500, repeat:3, yoyo:true, ease:"sine.inOut"}, 0);
+tl.fromTo("#sky-b142", {x:0,y:0}, {x:-15.2, y:9.7, duration:5, repeat:1, yoyo:true, ease:"sine.inOut"}, 0);
+tl.fromTo("#sky-b143", {opacity:0.75}, {opacity:1.00, duration:2.500, repeat:3, yoyo:true, ease:"sine.inOut"}, 0);
+tl.fromTo("#sky-b143", {x:0,y:0}, {x:0.5, y:4.6, duration:5, repeat:1, yoyo:true, ease:"sine.inOut"}, 0);
+tl.fromTo("#sky-b144", {opacity:0.60}, {opacity:1.00, duration:2.500, repeat:3, yoyo:true, ease:"sine.inOut"}, 0);
+tl.fromTo("#sky-b144", {x:0,y:0}, {x:-13.5, y:-2.2, duration:5, repeat:1, yoyo:true, ease:"sine.inOut"}, 0);
+tl.fromTo("#sky-b145", {opacity:0.67}, {opacity:1.00, duration:2.500, repeat:3, yoyo:true, ease:"sine.inOut"}, 0);
+tl.fromTo("#sky-b145", {x:0,y:0}, {x:-17.6, y:3.9, duration:5, repeat:1, yoyo:true, ease:"sine.inOut"}, 0);
+tl.fromTo("#sky-b146", {opacity:0.39}, {opacity:0.84, duration:2.500, repeat:3, yoyo:true, ease:"sine.inOut"}, 0);
+tl.fromTo("#sky-b146", {x:0,y:0}, {x:12.5, y:-9.6, duration:5, repeat:1, yoyo:true, ease:"sine.inOut"}, 0);
+tl.fromTo("#sky-b147", {opacity:0.80}, {opacity:1.00, duration:2.500, repeat:3, yoyo:true, ease:"sine.inOut"}, 0);
+tl.fromTo("#sky-b147", {x:0,y:0}, {x:0.8, y:-2.4, duration:5, repeat:1, yoyo:true, ease:"sine.inOut"}, 0);
+tl.fromTo("#sky-b148", {opacity:0.48}, {opacity:0.93, duration:2.500, repeat:3, yoyo:true, ease:"sine.inOut"}, 0);
+tl.fromTo("#sky-b148", {x:0,y:0}, {x:-8.8, y:6.0, duration:5, repeat:1, yoyo:true, ease:"sine.inOut"}, 0);
+tl.fromTo("#sky-b149", {opacity:0.33}, {opacity:0.78, duration:1.667, repeat:5, yoyo:true, ease:"sine.inOut"}, 0);
+tl.fromTo("#sky-b149", {x:0,y:0}, {x:17.1, y:-9.5, duration:5, repeat:1, yoyo:true, ease:"sine.inOut"}, 0);
+tl.fromTo("#sky-neb1", {x:0,y:0,scale:1}, {x:60,y:30,scale:1.12, duration:5, repeat:1, yoyo:true, ease:"sine.inOut"}, 0);
+tl.fromTo("#sky-neb2", {x:0,y:0,scale:1}, {x:-50,y:-30,scale:1.1, duration:5, repeat:1, yoyo:true, ease:"sine.inOut"}, 0);
+tl.fromTo("#sky-c0", {x:0,y:0,scale:.7,opacity:.75}, {x:71.6, y:168.6, scale:1.25, opacity:1, duration:2.2, ease:"power2.inOut"}, 1.00);
+tl.to("#sky-c0", {x:0, y:0, scale:.7, opacity:.75, duration:1.5, ease:"power2.inOut"}, 8.20);
+tl.fromTo("#sky-c1", {x:0,y:0,scale:.7,opacity:.75}, {x:-233.3, y:175.1, scale:1.25, opacity:1, duration:2.2, ease:"power2.inOut"}, 1.06);
+tl.to("#sky-c1", {x:0, y:0, scale:.7, opacity:.75, duration:1.5, ease:"power2.inOut"}, 8.22);
+tl.fromTo("#sky-c2", {x:0,y:0,scale:.7,opacity:.75}, {x:-356.5, y:-65.0, scale:1.25, opacity:1, duration:2.2, ease:"power2.inOut"}, 1.12);
+tl.to("#sky-c2", {x:0, y:0, scale:.7, opacity:.75, duration:1.5, ease:"power2.inOut"}, 8.25);
+tl.fromTo("#sky-c3", {x:0,y:0,scale:.7,opacity:.75}, {x:-150.1, y:-485.8, scale:1.25, opacity:1, duration:2.2, ease:"power2.inOut"}, 1.18);
+tl.to("#sky-c3", {x:0, y:0, scale:.7, opacity:.75, duration:1.5, ease:"power2.inOut"}, 8.27);
+tl.fromTo("#sky-c4", {x:0,y:0,scale:.7,opacity:.75}, {x:925.2, y:181.6, scale:1.25, opacity:1, duration:2.2, ease:"power2.inOut"}, 1.24);
+tl.to("#sky-c4", {x:0, y:0, scale:.7, opacity:.75, duration:1.5, ease:"power2.inOut"}, 8.30);
+tl.fromTo("#sky-c5", {x:0,y:0,scale:.7,opacity:.75}, {x:731.9, y:2.0, scale:1.25, opacity:1, duration:2.2, ease:"power2.inOut"}, 1.30);
+tl.to("#sky-c5", {x:0, y:0, scale:.7, opacity:.75, duration:1.5, ease:"power2.inOut"}, 8.32);
+tl.fromTo("#sky-c6", {x:0,y:0,scale:.7,opacity:.75}, {x:812.7, y:221.2, scale:1.25, opacity:1, duration:2.2, ease:"power2.inOut"}, 1.36);
+tl.to("#sky-c6", {x:0, y:0, scale:.7, opacity:.75, duration:1.5, ease:"power2.inOut"}, 8.34);
+tl.fromTo("#sky-c7", {x:0,y:0,scale:.7,opacity:.75}, {x:315.9, y:212.1, scale:1.25, opacity:1, duration:2.2, ease:"power2.inOut"}, 1.42);
+tl.to("#sky-c7", {x:0, y:0, scale:.7, opacity:.75, duration:1.5, ease:"power2.inOut"}, 8.37);
+tl.fromTo("#sky-c8", {x:0,y:0,scale:.7,opacity:.75}, {x:383.6, y:271.6, scale:1.25, opacity:1, duration:2.2, ease:"power2.inOut"}, 1.48);
+tl.to("#sky-c8", {x:0, y:0, scale:.7, opacity:.75, duration:1.5, ease:"power2.inOut"}, 8.39);
+tl.fromTo("#sky-c9", {x:0,y:0,scale:.7,opacity:.75}, {x:328.8, y:158.9, scale:1.25, opacity:1, duration:2.2, ease:"power2.inOut"}, 1.54);
+tl.to("#sky-c9", {x:0, y:0, scale:.7, opacity:.75, duration:1.5, ease:"power2.inOut"}, 8.42);
+tl.fromTo("#sky-c10", {x:0,y:0,scale:.7,opacity:.75}, {x:4.5, y:261.6, scale:1.25, opacity:1, duration:2.2, ease:"power2.inOut"}, 1.60);
+tl.to("#sky-c10", {x:0, y:0, scale:.7, opacity:.75, duration:1.5, ease:"power2.inOut"}, 8.44);
+tl.fromTo("#sky-c11", {x:0,y:0,scale:.7,opacity:.75}, {x:-385.4, y:77.9, scale:1.25, opacity:1, duration:2.2, ease:"power2.inOut"}, 1.66);
+tl.to("#sky-c11", {x:0, y:0, scale:.7, opacity:.75, duration:1.5, ease:"power2.inOut"}, 8.46);
+tl.fromTo("#sky-c12", {x:0,y:0,scale:.7,opacity:.75}, {x:373.1, y:-87.9, scale:1.25, opacity:1, duration:2.2, ease:"power2.inOut"}, 1.72);
+tl.to("#sky-c12", {x:0, y:0, scale:.7, opacity:.75, duration:1.5, ease:"power2.inOut"}, 8.49);
+tl.fromTo("#sky-c13", {x:0,y:0,scale:.7,opacity:.75}, {x:374.8, y:-193.8, scale:1.25, opacity:1, duration:2.2, ease:"power2.inOut"}, 1.78);
+tl.to("#sky-c13", {x:0, y:0, scale:.7, opacity:.75, duration:1.5, ease:"power2.inOut"}, 8.51);
+tl.fromTo("#sky-l0", {strokeDashoffset:86.8, opacity:1}, {strokeDashoffset:0, duration:0.45, ease:"none"}, 3.40);
+tl.to("#sky-l0", {opacity:0, duration:0.7, ease:"sine.in"}, 7.6);
+tl.set("#sky-l0", {strokeDashoffset:86.8, opacity:1}, 9.9);
+tl.fromTo("#sky-l1", {strokeDashoffset:174.4, opacity:1}, {strokeDashoffset:0, duration:0.45, ease:"none"}, 3.50);
+tl.to("#sky-l1", {opacity:0, duration:0.7, ease:"sine.in"}, 7.6);
+tl.set("#sky-l1", {strokeDashoffset:174.4, opacity:1}, 9.9);
+tl.fromTo("#sky-l2", {strokeDashoffset:196.1, opacity:1}, {strokeDashoffset:0, duration:0.45, ease:"none"}, 3.60);
+tl.to("#sky-l2", {opacity:0, duration:0.7, ease:"sine.in"}, 7.6);
+tl.set("#sky-l2", {strokeDashoffset:196.1, opacity:1}, 9.9);
+tl.fromTo("#sky-l3", {strokeDashoffset:198.7, opacity:1}, {strokeDashoffset:0, duration:0.45, ease:"none"}, 3.70);
+tl.to("#sky-l3", {opacity:0, duration:0.7, ease:"sine.in"}, 7.6);
+tl.set("#sky-l3", {strokeDashoffset:198.7, opacity:1}, 9.9);
+tl.fromTo("#sky-l4", {strokeDashoffset:251.5, opacity:1}, {strokeDashoffset:0, duration:0.45, ease:"none"}, 3.80);
+tl.to("#sky-l4", {opacity:0, duration:0.7, ease:"sine.in"}, 7.6);
+tl.set("#sky-l4", {strokeDashoffset:251.5, opacity:1}, 9.9);
+tl.fromTo("#sky-l5", {strokeDashoffset:214.0, opacity:1}, {strokeDashoffset:0, duration:0.45, ease:"none"}, 3.90);
+tl.to("#sky-l5", {opacity:0, duration:0.7, ease:"sine.in"}, 7.6);
+tl.set("#sky-l5", {strokeDashoffset:214.0, opacity:1}, 9.9);
+tl.fromTo("#sky-l6", {strokeDashoffset:75.0, opacity:1}, {strokeDashoffset:0, duration:0.45, ease:"none"}, 4.00);
+tl.to("#sky-l6", {opacity:0, duration:0.7, ease:"sine.in"}, 7.6);
+tl.set("#sky-l6", {strokeDashoffset:75.0, opacity:1}, 9.9);
+tl.fromTo("#sky-l7", {strokeDashoffset:75.0, opacity:1}, {strokeDashoffset:0, duration:0.45, ease:"none"}, 4.10);
+tl.to("#sky-l7", {opacity:0, duration:0.7, ease:"sine.in"}, 7.6);
+tl.set("#sky-l7", {strokeDashoffset:75.0, opacity:1}, 9.9);
+tl.fromTo("#sky-l8", {strokeDashoffset:214.0, opacity:1}, {strokeDashoffset:0, duration:0.45, ease:"none"}, 4.20);
+tl.to("#sky-l8", {opacity:0, duration:0.7, ease:"sine.in"}, 7.6);
+tl.set("#sky-l8", {strokeDashoffset:214.0, opacity:1}, 9.9);
+tl.fromTo("#sky-l9", {strokeDashoffset:251.5, opacity:1}, {strokeDashoffset:0, duration:0.45, ease:"none"}, 4.30);
+tl.to("#sky-l9", {opacity:0, duration:0.7, ease:"sine.in"}, 7.6);
+tl.set("#sky-l9", {strokeDashoffset:251.5, opacity:1}, 9.9);
+tl.fromTo("#sky-l10", {strokeDashoffset:198.7, opacity:1}, {strokeDashoffset:0, duration:0.45, ease:"none"}, 4.40);
+tl.to("#sky-l10", {opacity:0, duration:0.7, ease:"sine.in"}, 7.6);
+tl.set("#sky-l10", {strokeDashoffset:198.7, opacity:1}, 9.9);
+tl.fromTo("#sky-l11", {strokeDashoffset:196.1, opacity:1}, {strokeDashoffset:0, duration:0.45, ease:"none"}, 4.50);
+tl.to("#sky-l11", {opacity:0, duration:0.7, ease:"sine.in"}, 7.6);
+tl.set("#sky-l11", {strokeDashoffset:196.1, opacity:1}, 9.9);
+tl.fromTo("#sky-l12", {strokeDashoffset:174.4, opacity:1}, {strokeDashoffset:0, duration:0.45, ease:"none"}, 4.60);
+tl.to("#sky-l12", {opacity:0, duration:0.7, ease:"sine.in"}, 7.6);
+tl.set("#sky-l12", {strokeDashoffset:174.4, opacity:1}, 9.9);
+tl.fromTo("#sky-l13", {strokeDashoffset:86.8, opacity:1}, {strokeDashoffset:0, duration:0.45, ease:"none"}, 4.70);
+tl.to("#sky-l13", {opacity:0, duration:0.7, ease:"sine.in"}, 7.6);
+tl.set("#sky-l13", {strokeDashoffset:86.8, opacity:1}, 9.9);
+tl.fromTo("#sky-glow", {opacity:0, scale:.6}, {opacity:1, scale:1, duration:1.6, ease:"power2.out"}, 4.6);
+tl.to("#sky-glow", {scale:1.08, duration:1.0, repeat:1, yoyo:true, ease:"sine.inOut"}, 6.2);
+tl.to("#sky-glow", {opacity:0, scale:.6, duration:1.3, ease:"power2.in"}, 8.25);
+tl.fromTo("#sky-logo", {opacity:0, scale:.82, y:16}, {opacity:1, scale:1, y:0, duration:1.4, ease:"power3.out"}, 4.9);
+tl.to("#sky-logo", {opacity:0, scale:.9, duration:1.2, ease:"power2.in"}, 7.9);
+window.__timelines["sky"] = tl;
+</script>
+</template>

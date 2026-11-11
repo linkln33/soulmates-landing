@@ -87,6 +87,50 @@
     "numbers-dark-1200.avif": 61102,
     "numbers-dark-1200.webp": 82118
    }
+  },
+  "natal-light": {
+   "source": "SoulMates-Quest-mobile/assets/cards/natal-chart-light.jpg",
+   "sourceSha256": "5860d7c7ac158ceec90728484d9532139cdc9400fadaa9990cda39034ddb2fa7",
+   "appCommit": "99b43ff582fad27bfeb71f47a484cfad4d77aad7",
+   "outputs": {
+    "natal-light-600.avif": 72042,
+    "natal-light-600.webp": 71124,
+    "natal-light-1200.avif": 186274,
+    "natal-light-1200.webp": 208692
+   }
+  },
+  "natal-dark": {
+   "source": "SoulMates-Quest-mobile/assets/cards/natal-chart-dark.jpg",
+   "sourceSha256": "d56cf674a490143efad90c86bd240f50b33eaabe50971fa7704db53732b66204",
+   "appCommit": "99b43ff582fad27bfeb71f47a484cfad4d77aad7",
+   "outputs": {
+    "natal-dark-600.avif": 24904,
+    "natal-dark-600.webp": 30622,
+    "natal-dark-1200.avif": 57022,
+    "natal-dark-1200.webp": 79566
+   }
+  },
+  "dreamspell-light": {
+   "source": "SoulMates-Quest-mobile/assets/cards/dreamspell-light.jpg",
+   "sourceSha256": "49a1cce60b9f826c67e95e68d1c62eddceddb75507735f10b837f54c37cec5ba",
+   "appCommit": "99b43ff582fad27bfeb71f47a484cfad4d77aad7",
+   "outputs": {
+    "dreamspell-light-600.avif": 61050,
+    "dreamspell-light-600.webp": 60460,
+    "dreamspell-light-1200.avif": 156789,
+    "dreamspell-light-1200.webp": 174652
+   }
+  },
+  "dreamspell-dark": {
+   "source": "SoulMates-Quest-mobile/assets/cards/dreamspell-dark.jpg",
+   "sourceSha256": "40136d9d64010fd0c5c9d77b381574e474512e73270186ca48b8eacd80f045cb",
+   "appCommit": "99b43ff582fad27bfeb71f47a484cfad4d77aad7",
+   "outputs": {
+    "dreamspell-dark-600.avif": 32652,
+    "dreamspell-dark-600.webp": 36664,
+    "dreamspell-dark-1200.avif": 86039,
+    "dreamspell-dark-1200.webp": 105720
+   }
   }
  },
  "note": "owner-supplied artwork, copied from the mobile assets/cards (SoulMates-Quest-mobile/assets/cards). The originals stay untouched; regenerate with scripts/make-covers.mjs."

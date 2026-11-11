@@ -1,11 +1,8 @@
 import type { Metadata } from 'next';
-import Link from 'next/link';
 import type { Locale } from '@/i18n/config';
 import { site } from '@/i18n';
 import { pageMeta } from '@/lib/site/meta';
-import PatternCard from '@/components/site/PatternCard';
-import { ToolHeader } from '@/components/site/ToolPage';
-import StoreBadges from '@/components/site/StoreBadges';
+import AppLanding from '@/components/app-page/AppLanding';
 
 type Props = PageProps<'/[lang]/app'>;
 
@@ -15,72 +12,8 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   return pageMeta(lang, '/app', t.metaTitle, t.metaDescription);
 }
 
+/** The app page (owner, 11 Nov 2026): wide, image-led, GSAP + the HyperFrames hero loop. */
 export default async function AppPage({ params }: Props) {
   const lang = (await params).lang as Locale;
-  const t = site(lang).app;
-  const [before, after] = t.contact.split('{contact}');
-  return (
-    <div className="wrap page narrow">
-      <ToolHeader lang={lang} title={t.title} lead={t.lead} art="hearts" tile="for-two" />
-      <div className="stack-lg">
-        <PatternCard tint="amber" motif="feather">
-          <div id="limited-pilot" className="stack" style={{ gap: 8 }}>
-            <h2 className="heading">{t.statusTitle}</h2>
-            <p>{t.status}</p>
-            <StoreBadges lang={lang} />
-          </div>
-        </PatternCard>
-
-        <section className="stack" aria-labelledby="how-matching-works">
-          <div className="stack" style={{ gap: 6 }}>
-            <p className="eyebrow">{t.matchingBadge}</p>
-            <h2 id="how-matching-works" className="title">{t.matchingTitle}</h2>
-          </div>
-          <ul className="stack">
-            {t.matching.map((line) => <li key={line} className="muted">{line}</li>)}
-          </ul>
-          <p className="small subtle">{t.matchingNote}</p>
-        </section>
-
-        <section className="stack" aria-labelledby="daily-compass">
-          <div className="stack" style={{ gap: 6 }}>
-            <p className="eyebrow">{t.compassBadge}</p>
-            <h2 id="daily-compass" className="title">{t.compassTitle}</h2>
-          </div>
-          <p className="muted">{t.compass}</p>
-        </section>
-
-        <section className="stack" aria-labelledby="how">
-          <h2 id="how" className="title">{t.howTitle}</h2>
-          <ol className="steps">
-            {t.steps.map((s) => (
-              <li key={s.title} className="card">
-                <h3 className="heading">{s.title}</h3>
-                <p className="small muted">{s.body}</p>
-              </li>
-            ))}
-          </ol>
-        </section>
-
-        <PatternCard tint="teal" motif="palm">
-          <div className="stack" style={{ gap: 8 }}>
-            <h2 className="heading">{t.profileTitle}</h2>
-            <p className="muted">{t.profile}</p>
-          </div>
-        </PatternCard>
-
-        <PatternCard tint="pink" motif="sprig">
-          <div className="stack" style={{ gap: 8 }}>
-            <h2 className="heading">{t.quizTitle}</h2>
-            <p className="muted">{t.quiz}</p>
-          </div>
-        </PatternCard>
-
-        <p className="muted">
-          {before}<Link href={`/${lang}/about#contact`}>{t.contactLink}</Link>{after}
-        </p>
-        <div><Link href={`/${lang}#tools`} className="btn btn-primary">{t.backToTools}</Link></div>
-      </div>
-    </div>
-  );
+  return <AppLanding lang={lang} t={site(lang).appV2} />;
 }
