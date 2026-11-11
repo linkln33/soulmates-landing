@@ -2,52 +2,52 @@
  "covers": {
   "horoscope-light": {
    "source": "SoulMates-Quest-mobile/assets/cards/zodiac-light.jpg",
-   "sourceSha256": "5aaf29a9d4f9fb9dda24083aee23c3cd95c504ebee86cd1db15f8833cb3b162a",
-   "appCommit": "c5845dacaeb694c3c8d031e9bd6b8c6a7aeb8808",
+   "sourceSha256": "5975d032d8c78d9d4ad918e06c04627780be9afb25605c884d0d65abe149a205",
+   "appCommit": "99b43ff582fad27bfeb71f47a484cfad4d77aad7",
    "outputs": {
-    "horoscope-light-600.avif": 53647,
-    "horoscope-light-600.webp": 56634,
-    "horoscope-light-1200.avif": 137494,
-    "horoscope-light-1200.webp": 160820
+    "horoscope-light-600.avif": 54640,
+    "horoscope-light-600.webp": 57306,
+    "horoscope-light-1200.avif": 144029,
+    "horoscope-light-1200.webp": 166672
    }
   },
   "horoscope-dark": {
    "source": "SoulMates-Quest-mobile/assets/cards/zodiac-dark.jpg",
-   "sourceSha256": "185f3feb559db3394ea510ab905a0cc7c7534705718c869f005b5083d74f57c7",
-   "appCommit": "c5845dacaeb694c3c8d031e9bd6b8c6a7aeb8808",
+   "sourceSha256": "bf550974d763504f894fdb8343d7b1d1d59483387e9d7cbf1f7fd912322327ea",
+   "appCommit": "99b43ff582fad27bfeb71f47a484cfad4d77aad7",
    "outputs": {
-    "horoscope-dark-600.avif": 46293,
-    "horoscope-dark-600.webp": 51162,
-    "horoscope-dark-1200.avif": 115550,
-    "horoscope-dark-1200.webp": 140138
+    "horoscope-dark-600.avif": 31661,
+    "horoscope-dark-600.webp": 37358,
+    "horoscope-dark-1200.avif": 70755,
+    "horoscope-dark-1200.webp": 92952
    }
   },
   "tarot-light": {
    "source": "SoulMates-Quest-mobile/assets/cards/tarot-light.jpg",
-   "sourceSha256": "84321c43d5cf637555b3ee416b60c4f11a2acb9b665bd28ddccb98b1cf68f6b3",
-   "appCommit": "c5845dacaeb694c3c8d031e9bd6b8c6a7aeb8808",
+   "sourceSha256": "05cc9233ec6c38e668f6686ce4ed7b9a4f1ea5229a3b2cae0cda51cf8f6ad1af",
+   "appCommit": "99b43ff582fad27bfeb71f47a484cfad4d77aad7",
    "outputs": {
-    "tarot-light-600.avif": 64324,
-    "tarot-light-600.webp": 66438,
-    "tarot-light-1200.avif": 175735,
-    "tarot-light-1200.webp": 197606
+    "tarot-light-600.avif": 66373,
+    "tarot-light-600.webp": 66404,
+    "tarot-light-1200.avif": 173097,
+    "tarot-light-1200.webp": 194512
    }
   },
   "tarot-dark": {
    "source": "SoulMates-Quest-mobile/assets/cards/tarot-dark.jpg",
-   "sourceSha256": "23f4e740570b4c69ba9f69875bb0b7d8f08273a445b8076ced48e142424863ce",
-   "appCommit": "c5845dacaeb694c3c8d031e9bd6b8c6a7aeb8808",
+   "sourceSha256": "2a41a3a15e37dc34be539bbdd49fd4ed90ddc033bf058d86409e94cf0ae85580",
+   "appCommit": "99b43ff582fad27bfeb71f47a484cfad4d77aad7",
    "outputs": {
-    "tarot-dark-600.avif": 56718,
-    "tarot-dark-600.webp": 60752,
-    "tarot-dark-1200.avif": 160189,
-    "tarot-dark-1200.webp": 183826
+    "tarot-dark-600.avif": 48091,
+    "tarot-dark-600.webp": 50694,
+    "tarot-dark-1200.avif": 121921,
+    "tarot-dark-1200.webp": 141886
    }
   },
   "moon-light": {
    "source": "SoulMates-Quest-mobile/assets/cards/moon-light.jpg",
    "sourceSha256": "616147d028dd5dd6e20d4bd02caf0cc23662c1f3af0901db650fbc01fcc20a7a",
-   "appCommit": "617ba324e51cc5d80d00b0bf60b9f733fd768cad",
+   "appCommit": "99b43ff582fad27bfeb71f47a484cfad4d77aad7",
    "outputs": {
     "moon-light-600.avif": 26093,
     "moon-light-600.webp": 33398,
@@ -57,13 +57,35 @@
   },
   "moon-dark": {
    "source": "SoulMates-Quest-mobile/assets/cards/moon-dark.jpg",
-   "sourceSha256": "197e0ac8c6ca260fd6e79909631ec709b218c7019f2250b063cadba97ea08e44",
-   "appCommit": "617ba324e51cc5d80d00b0bf60b9f733fd768cad",
+   "sourceSha256": "bbe4534202256e11c305bc76508713d9ddabd020323a3b58c52c3c63d6405cdf",
+   "appCommit": "99b43ff582fad27bfeb71f47a484cfad4d77aad7",
    "outputs": {
-    "moon-dark-600.avif": 29147,
-    "moon-dark-600.webp": 37792,
-    "moon-dark-1200.avif": 77279,
-    "moon-dark-1200.webp": 102178
+    "moon-dark-600.avif": 19128,
+    "moon-dark-600.webp": 24854,
+    "moon-dark-1200.avif": 49926,
+    "moon-dark-1200.webp": 67252
+   }
+  },
+  "numbers-light": {
+   "source": "SoulMates-Quest-mobile/assets/cards/numerology-light.jpg",
+   "sourceSha256": "c96d9a5231283df64e040b4c88b0831499399b92c2bec07a60630f4f3217cd73",
+   "appCommit": "99b43ff582fad27bfeb71f47a484cfad4d77aad7",
+   "outputs": {
+    "numbers-light-600.avif": 57853,
+    "numbers-light-600.webp": 59964,
+    "numbers-light-1200.avif": 150511,
+    "numbers-light-1200.webp": 170276
+   }
+  },
+  "numbers-dark": {
+   "source": "SoulMates-Quest-mobile/assets/cards/numerology-dark.jpg",
+   "sourceSha256": "29ce6040909edffc02aadbdbbb2578db8ff76e34778df380ed9d4ebf619515ed",
+   "appCommit": "99b43ff582fad27bfeb71f47a484cfad4d77aad7",
+   "outputs": {
+    "numbers-dark-600.avif": 26079,
+    "numbers-dark-600.webp": 31282,
+    "numbers-dark-1200.avif": 61102,
+    "numbers-dark-1200.webp": 82118
    }
   }
  },
