@@ -60,7 +60,7 @@ body:has(.home) .site-footer .wrap,
 .h-tools-intro .muted { margin-top: 8px; max-width: 46ch; }
 .h-tool-list { list-style: none; display: grid; gap: 24px 16px; grid-template-columns: 1fr; }
 @media (min-width: 600px) { .h-tool-list { grid-template-columns: repeat(2, minmax(0, 1fr)); } }
-@media (min-width: 1000px) { .h-tool-list { grid-template-columns: repeat(4, minmax(0, 1fr)); } }
+@media (min-width: 1000px) { .h-tool-list { grid-template-columns: repeat(3, minmax(0, 1fr)); } }
 /* Each tile is the 2:1 cover (the whole painting, or the illustration on its tint) with its name below: no box or border. */
 .h-tool {
   height: 100%; display: flex; flex-direction: column; gap: 12px; border-radius: var(--r-xl);

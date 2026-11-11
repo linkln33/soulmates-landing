@@ -7,6 +7,7 @@ import { FacebookLogo, InstagramLogo, LinkedinLogo, TiktokLogo, XLogo, YoutubeLo
 import { footerColumns } from '@/lib/site/footer';
 import { socialLinks, type SocialNetwork } from '@/lib/site/social';
 import StoreBadges from './StoreBadges';
+import { appDownloadHref, appSectionHref } from '@/lib/site/appLink';
 import CookieSettingsButton from './CookieSettingsButton';
 import { LangSwitch, NavLinks, type NavItem } from './HeaderControls';
 
@@ -17,7 +18,7 @@ function navItems(lang: Locale): NavItem[] {
     { href: `/${lang}/tarot`, label: t.tarot },
     { href: `/${lang}/numbers`, label: t.numbers },
     { href: `/${lang}/moon`, label: t.moon },
-    { href: `/${lang}/app`, label: t.app },
+    { href: appSectionHref(lang), label: t.app },
   ];
 }
 
@@ -38,7 +39,7 @@ export function SiteHeader({ lang }: { lang: Locale }) {
           <LangSwitch lang={lang} label={t.language} />
           {/* No public download yet: the button leads to the app page. Only one label is displayed at a time, so the accessible name matches the visible text. */}
           {/* The link is the 44px touch target; the 3D pill inside is 36px. */}
-          <Link href={`/${lang}/app`} className="header-download">
+          <Link href={appDownloadHref(lang)} className="header-download">
             <span className="btn btn-sky btn-3d btn-header">
               <Download aria-hidden />
               <span className="header-download-full">{t.nav.download}</span>
@@ -65,7 +66,7 @@ function AppBanner({ lang }: { lang: Locale }) {
           <p className="muted">{t.lead}</p>
         </div>
         <div className="app-banner-actions">
-          <Link href={`/${lang}/app`} className="btn btn-primary">{t.cta}</Link>
+          <Link href={appSectionHref(lang)} className="btn btn-primary">{t.cta}</Link>
           <StoreBadges lang={lang} />
         </div>
       </div>

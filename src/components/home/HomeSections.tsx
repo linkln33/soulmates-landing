@@ -6,6 +6,7 @@
  * mobile release ships them (SoulMates-Quest-mobile/docs/MATCHES_MODEL.md).
  */
 import Link from 'next/link';
+import { appSectionHref } from '@/lib/site/appLink';
 import { ArrowRight } from '@phosphor-icons/react/dist/ssr';
 import type { Locale } from '@/i18n/config';
 import { site } from '@/i18n';
@@ -32,7 +33,7 @@ export function JourneySection({ lang }: { lang: Locale }) {
     art: { base: JOURNEY_ART[i].base, widths: JOURNEY_WIDTHS, width: JOURNEY_ART[i].width, height: JOURNEY_ART[i].height, alt: s.alt },
   }));
   return (
-    <section className="h-section h-tinted h-journey" aria-labelledby="journey-title">
+    <section id="journey" className="h-section h-tinted h-journey" aria-labelledby="journey-title">
       <div className="wrap stack-lg">
         <div className="h-head">
           <p className="eyebrow">{j.eyebrow}</p>
@@ -45,7 +46,7 @@ export function JourneySection({ lang }: { lang: Locale }) {
             <span>{j.closingTop}</span> <span className="h-accent">{j.closingAccent}</span>
           </p>
           <p className="lead">{j.closingLead}</p>
-          <Link href={`/${lang}/app`} className="btn btn-glass btn-3d">
+          <Link href={appSectionHref(lang)} className="btn btn-glass btn-3d">
             {t.ctaApp} <ArrowRight weight="bold" aria-hidden />
           </Link>
           <p className="small muted">{j.consent}</p>

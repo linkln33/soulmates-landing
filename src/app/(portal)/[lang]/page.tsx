@@ -9,6 +9,8 @@ import { MoonNow } from '@/components/tools/MoonTool';
 import HeroVisual from '@/components/home/HeroVisual';
 import StoreBadges from '@/components/site/StoreBadges';
 import { JourneySection } from '@/components/home/HomeSections';
+import GuideCovers from '@/components/home/GuideCovers';
+import { appSectionHref } from '@/lib/site/appLink';
 import { COVER_SIZES, COVER_THEMES, HOME_TOOLS, coverFile, coverSrcSet, type HomeTool } from '@/lib/site/homeTools';
 import '@/components/home/home.css';
 
@@ -76,7 +78,7 @@ export default async function Home({ params }: Props) {
           <p className="h-lead">{t.home.lead}</p>
           <div className="h-ctas">
             <a href="#tools" className="btn btn-primary btn-3d">{t.home.ctaReadings} <ArrowRight weight="bold" aria-hidden /></a>
-            <Link href={`/${lang}/app`} className="btn btn-glass btn-3d">{t.home.ctaApp}</Link>
+            <Link href={appSectionHref(lang)} className="btn btn-glass btn-3d">{t.home.ctaApp}</Link>
           </div>
           <StoreBadges lang={lang} className="h-stores" />
         </div>
@@ -95,9 +97,9 @@ export default async function Home({ params }: Props) {
                 <ToolCover tool={tool} />
                 <span className="h-tool-row">
                   <span className="h-tool-text">
-                    <span className="heading">{t.nav[tool.key]}</span>
+                    <span className="heading">{tool.inApp ? t.appV2.covers[tool.key] : t.nav[tool.key as 'horoscope']}</span>
                     <span className="small muted">{t.home.toolsShort[tool.key]}</span>
-                    <span id={`tool-${tool.key}-about`} className="visually-hidden">{t.tools[tool.key].about}</span>
+                    <span id={`tool-${tool.key}-about`} className="visually-hidden">{tool.inApp ? t.home.toolsShort[tool.key] : t.tools[tool.key as 'horoscope'].about}</span>
                   </span>
                   <span className="h-arrow" aria-hidden><ArrowRight weight="bold" /></span>
                 </span>
@@ -106,6 +108,8 @@ export default async function Home({ params }: Props) {
           ))}
         </ul>
       </section>
+
+      <GuideCovers lang={lang} t={t.appV2} downloadLabel={t.nav.download} />
 
       <section className="h-section" aria-labelledby="readings-title">
         <div className="wrap stack-lg">
@@ -151,7 +155,7 @@ export default async function Home({ params }: Props) {
           <p className="lead">{t.home.finalLead}</p>
           <div className="h-ctas">
             <a href="#tools" className="btn btn-primary btn-3d">{t.home.ctaReadings} <ArrowRight weight="bold" aria-hidden /></a>
-            <Link href={`/${lang}/app`} className="btn btn-glass btn-3d">{t.home.ctaApp}</Link>
+            <Link href={appSectionHref(lang)} className="btn btn-glass btn-3d">{t.home.ctaApp}</Link>
           </div>
         </div>
       </section>

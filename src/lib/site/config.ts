@@ -25,7 +25,6 @@ export const PORTAL_PATHS = [
   '/tarot/cards',
   '/numbers',
   '/moon',
-  '/app',
   '/about',
 ] as const;
 

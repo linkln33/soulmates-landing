@@ -19,7 +19,9 @@ export type CoverTheme = (typeof COVER_THEMES)[number];
 export type CoverFormat = (typeof COVER_FORMATS)[number];
 
 export interface HomeTool {
-  key: 'horoscope' | 'tarot' | 'numbers' | 'moon';
+  key: 'natal' | 'dreamspell' | 'horoscope' | 'tarot' | 'numbers' | 'moon';
+  /** In the app only (no page on this site): the tile leads to the download section. */
+  inApp?: boolean;
   href: string;
   /** App illustration (public/app-content/illustrations/<art>.svg), shown when there is no cover. */
   art: string;
@@ -29,9 +31,12 @@ export interface HomeTool {
   cover: string | null;
 }
 
+// Owner, 11 Nov 2026: the same six covers, in the same order, as the app's "Explore your readings".
 export const HOME_TOOLS: readonly HomeTool[] = [
-  { key: 'horoscope', href: '/horoscope', art: 'horoscope-wheel', tile: 'horoscope', cover: 'horoscope' },
+  { key: 'natal', href: '#download', art: 'horoscope-wheel', tile: 'horoscope', cover: 'natal', inApp: true },
+  { key: 'dreamspell', href: '#download', art: 'dreams', tile: 'tarot', cover: 'dreamspell', inApp: true },
   { key: 'tarot', href: '/tarot', art: 'tarot', tile: 'tarot', cover: 'tarot' },
+  { key: 'horoscope', href: '/horoscope', art: 'horoscope-wheel', tile: 'horoscope', cover: 'horoscope' },
   { key: 'numbers', href: '/numbers', art: 'numbers', tile: 'numbers', cover: 'numbers' },
   { key: 'moon', href: '/moon', art: 'moon-phases', tile: 'moon-calendar', cover: 'moon' },
 ];
@@ -42,5 +47,5 @@ export const coverFile = (cover: string, theme: CoverTheme, width: number, forma
 export const coverSrcSet = (cover: string, theme: CoverTheme, format: CoverFormat) =>
   COVER_WIDTHS.map((w) => `${coverFile(cover, theme, w, format)} ${w}w`).join(', ');
 
-/** Rendered tile width: 1 column below 600 px, 2 up to 999 px, 4 above (home .wrap is 1320 px). */
-export const COVER_SIZES = '(min-width: 1360px) 250px, (min-width: 1000px) 25vw, (min-width: 600px) 50vw, calc(100vw - 32px)';
+/** Rendered tile width: 1 column below 600 px, 2 up to 999 px, 3 above (home .wrap is 1320 px). */
+export const COVER_SIZES = '(min-width: 1360px) 340px, (min-width: 1000px) 30vw, (min-width: 600px) 50vw, calc(100vw - 32px)';

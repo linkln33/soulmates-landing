@@ -119,6 +119,8 @@ const en = {
     toolsTitle: 'Explore free readings',
     toolsLead: 'Gain clarity, deeper connection and a new perspective on your journey.',
     toolsShort: {
+      natal: 'In the app · from your birth time and place',
+      dreamspell: 'In the app · your Galactic Signature',
       horoscope: 'Your cosmic guide',
       tarot: 'Clarity & direction',
       numbers: 'Life path & patterns',

@@ -1,5 +1,6 @@
 /** Small shared pieces: app invitation, loading and error states, sign glyph. */
 import Link from 'next/link';
+import { appSectionHref } from '@/lib/site/appLink';
 import type { Locale } from '@/i18n/config';
 import { site } from '@/i18n';
 import { SIGN_FACTS, type SignKey } from '@/content/signs';
@@ -15,7 +16,7 @@ export function AppInvite({ lang, tool }: { lang: Locale; tool: InviteTool }) {
       <div className="invite">
         <h2 className="heading">{t.title}</h2>
         <p className="small muted">{t[tool]}</p>
-        <Link href={`/${lang}/app`} className="btn btn-secondary">{t.cta}</Link>
+        <Link href={appSectionHref(lang)} className="btn btn-secondary">{t.cta}</Link>
       </div>
     </PatternCard>
   );

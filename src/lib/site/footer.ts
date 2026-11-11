@@ -33,10 +33,10 @@ export function footerColumns(lang: Locale): { key: FooterColumnKey; items: Foot
     {
       key: 'app',
       items: [
-        one('app', '/app'),
-        one('matching', '/app#how-matching-works'),
-        one('compass', '/app#daily-compass'),
-        one('pilot', '/app#limited-pilot'),
+        one('app', '#download'),
+        one('matching', '#journey'),
+        one('compass', '#download'),
+        one('pilot', '#download'),
       ],
     },
     {

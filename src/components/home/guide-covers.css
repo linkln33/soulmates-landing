@@ -1,0 +1,22 @@
+/* Home "Readings made from your own birth details" (owner, 11 Nov 2026): wide, no bordered boxes. */
+.gc { overflow-x: clip; scroll-margin-top: 72px; }
+.gc-stage { min-height: 100vh; display: flex; align-items: center; padding: 96px 0; }
+.gc-wrap { width: 100%; max-width: 1320px; margin: 0 auto; padding: 0 24px; }
+.gc-grid { display: grid; grid-template-columns: minmax(0, 0.8fr) minmax(0, 1.2fr); gap: 56px; align-items: center; }
+.gc-title { font-size: clamp(28px, 3.6vw, 44px); line-height: 1.12; font-weight: 700; letter-spacing: -0.02em; margin: 10px 0 14px; }
+.gc-get { display: flex; flex-direction: column; align-items: flex-start; gap: 10px; margin-top: 26px; }
+.gc-covers { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 18px; }
+.gc-cover { margin: 0; border-radius: 22px; overflow: hidden; box-shadow: 0 18px 40px -18px rgba(60, 20, 80, .45); will-change: transform; }
+.gc-cover img { display: block; width: 100%; height: auto; aspect-ratio: 2 / 1; object-fit: cover; }
+.gc-cover-dark { display: none; }
+:root[data-theme='dark'] .gc-cover-light { display: none; }
+:root[data-theme='dark'] .gc-cover-dark { display: block; }
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme]) .gc-cover-light { display: none; }
+  :root:not([data-theme]) .gc-cover-dark { display: block; }
+}
+@media (max-width: 899px) {
+  .gc-stage { min-height: auto; padding: 64px 0; }
+  .gc-grid { grid-template-columns: minmax(0, 1fr); gap: 32px; }
+  .gc-covers { grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 12px; }
+}
