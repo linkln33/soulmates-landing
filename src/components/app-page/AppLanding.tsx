@@ -113,6 +113,9 @@ export default function AppLanding({ lang, t }: { lang: Locale; t: T }) {
           <img className="al-hero-media" src="/app-content/video/app-hero-poster.jpg" alt="" />
         ) : (
           <video className="al-hero-media" autoPlay muted loop playsInline preload="metadata" poster="/app-content/video/app-hero-poster.jpg" aria-hidden="true">
+            {/* Wide screens get the sharp 1080p loop; phones the light 720p one. */}
+            <source src="/app-content/video/app-hero-1080.webm" type="video/webm" media="(min-width: 900px)" />
+            <source src="/app-content/video/app-hero-1080.mp4" type="video/mp4" media="(min-width: 900px)" />
             <source src="/app-content/video/app-hero-720.webm" type="video/webm" />
             <source src="/app-content/video/app-hero-720.mp4" type="video/mp4" />
           </video>
