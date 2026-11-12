@@ -17,3 +17,12 @@ export const appSectionHref = (lang: Locale) => `/${lang}#download`;
 
 /** A direct download when the APK address is set, else the download section. */
 export const appDownloadHref = (lang: Locale) => APP_DOWNLOAD_URL || appSectionHref(lang);
+
+/** The Android install help page (launch step 1, 13 Nov 2026), linked next to Download for Android. */
+export const installHref = (lang: Locale) => `/${lang}/install`;
+
+/**
+ * SHA-256 fingerprint of the APK's signing certificate, shown on /install for anyone who wants to
+ * check it. Must equal public/.well-known/assetlinks.json (src/lib/site/install.test.ts).
+ */
+export const APK_CERT_SHA256 = '35:33:8B:97:C7:17:1E:CB:65:7C:9E:01:2E:76:B7:28:B5:DE:95:9E:61:3A:12:BA:43:3A:4C:E3:4F:83:BE:85';

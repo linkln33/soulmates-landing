@@ -1,12 +1,12 @@
 /**
  * Language entry: portal paths without a language prefix (`/`, `/tarot`,
- * the old `/app`, the app's `/privacy` and `/terms` links, invitation links `/r/<code>`, …) redirect to the visitor's language from
+ * the old `/app`, the app's `/privacy` and `/terms` links, invitation links `/r/<code>`, the Android help `/install`, …) redirect to the visitor's language from
  * Accept-Language (English otherwise). No cookies are set. The quiz, API-free static files and already-prefixed paths pass through.
  */
 import { NextResponse, type NextRequest } from 'next/server';
 import { localeFromAcceptLanguage } from '@/i18n/config';
 
-const UNPREFIXED = /^\/(?:horoscope|tarot|numbers|moon|app|about|privacy|terms|safety|delete-account|r)(?:\/.*)?$/;
+const UNPREFIXED = /^\/(?:horoscope|tarot|numbers|moon|app|about|privacy|terms|safety|delete-account|install|r)(?:\/.*)?$/;
 
 export function proxy(request: NextRequest) {
   const { pathname, search } = request.nextUrl;
@@ -21,5 +21,5 @@ export function proxy(request: NextRequest) {
 }
 
 export const config = {
-  matcher: ['/', '/horoscope/:path*', '/tarot/:path*', '/numbers/:path*', '/moon/:path*', '/app/:path*', '/about', '/privacy', '/terms', '/safety', '/delete-account', '/r/:path*'],
+  matcher: ['/', '/horoscope/:path*', '/tarot/:path*', '/numbers/:path*', '/moon/:path*', '/app/:path*', '/about', '/privacy', '/terms', '/safety', '/delete-account', '/install', '/r/:path*'],
 };

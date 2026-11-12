@@ -1,14 +1,14 @@
 /**
  * The invitation landing page (/{lang}/r/<code>). The server only normalises the code: a
- * malformed one renders the neutral invalid view with no API call; a well-formed one renders
- * the code, Copy, "Open in the app", the Android download, the manual fallback and the about
- * card at once, nameless, with a server-rendered QR of the link (ReferralQr) for desktop visitors.
+ * malformed one renders the neutral invalid view with no API call; a well-formed one renders,
+ * at once, Download for Android first (with "How to install"), the numbered guide with the code and
+ * Copy, "Open in the app", the manual fallback and the about card, nameless, with a server-rendered QR of the link (ReferralQr) for desktop visitors.
  * The visitor's browser then checks the code (ReferralView).
  * No rewards, no promise of admission or matches.
  */
 import type { Locale } from '@/i18n/config';
 import { site } from '@/i18n';
-import { appDownloadHref } from '@/lib/site/appLink';
+import { appDownloadHref, installHref } from '@/lib/site/appLink';
 import PatternCard from '@/components/site/PatternCard';
 import ReferralQr from './ReferralQr';
 import ReferralView from './ReferralView';
@@ -30,5 +30,14 @@ export default function ReferralPage({ lang, code }: { lang: Locale; code: strin
 
   const qr = code ? <ReferralQr code={code} label={t.qrLabel} caption={t.qrCaption} /> : null;
 
-  return <ReferralView code={code} t={t} downloadHref={appDownloadHref(lang)} about={about} qr={qr} />;
+  return (
+    <ReferralView
+      code={code}
+      t={t}
+      downloadHref={appDownloadHref(lang)}
+      install={{ href: installHref(lang), label: s.install.link }}
+      about={about}
+      qr={qr}
+    />
+  );
 }

@@ -74,7 +74,7 @@ main { display: block; }
 .eyebrow { display: inline-flex; align-items: center; gap: 8px; font-size: 13px; font-weight: 600; letter-spacing: .02em; color: var(--teal-text); }
 .eyebrow::before { content: ''; width: 8px; height: 8px; border-radius: 50%; background: var(--primary); }
 .prose p + p { margin-top: 10px; }
-.prose ul { padding-left: 20px; display: flex; flex-direction: column; gap: 6px; }
+.prose ul, .prose ol { padding-left: 20px; display: flex; flex-direction: column; gap: 6px; }
 
 /* ── Header and footer ──────────────────────────────────── */
 

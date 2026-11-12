@@ -306,9 +306,6 @@ const en = {
     title: 'Above the Physical. Beyond the Visible.',
     lead:
       'The app is being prepared for a limited pilot. It is a free personal guide first, with your readings in one personal place. Once your profile is complete, you can also choose the Soulmate Quest, a careful, compatibility-led way to meet real people.',
-    statusTitle: 'Where things stand',
-    status:
-      'The app is being prepared for a limited pilot. It isn’t in the App Store or Google Play yet, and there is no public download. We aren’t promising a date.',
     matchingTitle: 'How matching is intended to work',
     matchingBadge: 'Being prepared',
     matching: [
@@ -344,7 +341,8 @@ const en = {
     eyebrow: 'The SoulMates Quest app',
     title: 'Above the Physical. Beyond the Visible.',
     lead: 'A free personal guide in your pocket, and when you are ready, a careful way to meet someone who truly fits you.',
-    status: 'Coming soon to Android',
+    // status, downloadTitle, downloadBody: only the archived page (archive/app-page-2026-11-11) uses them.
+    status: 'Download for Android from this website',
     ctaReadings: 'Try the free readings',
     ctaQuest: 'How the Quest works',
     guideEyebrow: 'Your free guide',
@@ -359,8 +357,8 @@ const en = {
     kinds: ['Soulmate', 'Twin Flame', 'Karmic Partner', 'Tantric Partner', 'Peacekeeper', 'Soul Companion'],
     privacyTitle: 'Nobody sees you until you both choose',
     privacyBody: 'Your name and photo stay hidden until you have both played your Quest and said yes. You can report or block anyone, at any time.',
-    downloadTitle: 'Coming to Android',
-    downloadBody: 'We are opening the app step by step. The free readings on this website are open to everyone today.',
+    downloadTitle: 'Download for Android',
+    downloadBody: 'Install the app from this website. The free readings here are open to everyone today.',
     adults: 'For adults aged 18 and over.',
   },
   // Invitation links /r/<code> (referrals Phase 1, 11 Nov 2026). No rewards, no promise of admission or matches.
@@ -383,12 +381,58 @@ const en = {
     qrLabel: 'QR code for this invitation link',
     qrCaption: 'Scan with your phone',
     download: 'Download for Android',
+    stepsTitle: 'How to join with this invitation',
+    steps: [
+      'Copy your code.',
+      'Download and install the app, allowing installs from your browser when Android asks.',
+      'Open the app and paste the code under “Have an invite code?” before you sign up with Google or email.',
+    ],
+    openAppHint: 'Already have the app?',
     manualTitle: 'If the app doesn’t open the invitation',
     manual: 'After installing, sign up and enter this code: {code}',
     manualEmail: 'Signing up with email: enter the code in the sign-up form.',
-    manualGoogle: 'Signing in with Google: enter it under You › Invite friends within 7 days of joining.',
+    manualGoogle: 'Signing up with Google: paste the code under “Have an invite code?” before you sign up. If you already signed up with Google, add it within 7 days under You › Invite friends.',
     aboutTitle: 'What SoulMates Quest is',
     about: 'A free personal guide first: horoscope, tarot, numerology and Moon readings made from your own birth details, every day, in one place. Meeting someone through the Soulmate Quest is a separate choice you can make later.',
+  },
+  // Android install help /install (launch step 1, 13 Nov 2026): the APK comes from this website, not Google Play.
+  install: {
+    link: 'How to install',
+    metaTitle: 'How to install SoulMates Quest on Android',
+    metaDescription:
+      'Step-by-step help for installing the SoulMates Quest app on Android, updating it, and checking the app’s signing certificate.',
+    eyebrow: 'Android',
+    title: 'How to install the app on Android',
+    lead: 'SoulMates Quest isn’t on Google Play yet, so you install the app file yourself. It takes a couple of minutes.',
+    download: 'Download for Android',
+    sourceNote: 'The download button on this website opens the file on Google Drive. Download the app only through the links on this website.',
+    stepsTitle: 'Installing',
+    steps: [
+      {
+        title: 'Download the app',
+        body: 'On your Android phone, tap Download for Android. If your browser asks whether to keep the file, choose to download it. Chrome may warn “File might be harmful”; choose Download anyway.',
+      },
+      {
+        title: 'Allow installs from your browser',
+        body: 'Open the downloaded file. The first time, Android asks you to let your browser install unknown apps. Tap Settings, turn on Allow from this source, then go back and tap Install.',
+      },
+      {
+        title: 'If Play Protect asks',
+        body: 'Google Play Protect may say it doesn’t recognise the app, because the app isn’t on Google Play yet. Choose Install anyway (it may be under More details). On Android 14 and 15 it may instead offer Install without scanning or Scan app; either lets you continue.',
+      },
+      {
+        title: 'Open the app',
+        body: 'When the installation finishes, tap Open. If someone gave you an invite code, paste it under “Have an invite code?” before you sign up with Google or email.',
+      },
+    ],
+    updateTitle: 'Updating',
+    update:
+      'To update, download the new version the same way and install it over the app you already have. You don’t need to uninstall first, and your data is kept. Android installs over your app only a newer version: an older file is refused, and your data is never removed.',
+    checkTitle: 'Checking the app (optional)',
+    check:
+      'Every SoulMates Quest app downloaded through this website is signed with the same certificate. If you want to check it, this is its SHA-256 fingerprint:',
+    fingerprintLabel: 'SHA-256 certificate fingerprint',
+    checkNote: 'Android only installs an update over your app when it is signed with the same certificate.',
   },
   notFound: {
     title: 'Page not found',

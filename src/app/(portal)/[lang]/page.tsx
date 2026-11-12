@@ -9,7 +9,7 @@ import { MoonNow } from '@/components/tools/MoonTool';
 import HeroVisual from '@/components/home/HeroVisual';
 import StoreBadges from '@/components/site/StoreBadges';
 import { JourneySection } from '@/components/home/HomeSections';
-import { appDownloadHref } from '@/lib/site/appLink';
+import { appDownloadHref, installHref } from '@/lib/site/appLink';
 import { COVER_SIZES, COVER_THEMES, HOME_TOOLS, coverFile, coverSrcSet, type HomeTool } from '@/lib/site/homeTools';
 import '@/components/home/home.css';
 
@@ -79,6 +79,7 @@ export default async function Home({ params }: Props) {
             <a href="#tools" className="btn btn-primary btn-3d">{t.home.ctaReadings} <ArrowRight weight="bold" aria-hidden /></a>
             <a href={appDownloadHref(lang)} className="btn btn-glass btn-3d">{t.home.ctaApp}</a>
           </div>
+          <p className="small h-install"><Link href={installHref(lang)}>{t.install.link}</Link></p>
           {/* Every "get the app" link lands here (#download) until the APK address is set. */}
           <div id="download" className="h-download-anchor"><StoreBadges lang={lang} className="h-stores" /></div>
         </div>

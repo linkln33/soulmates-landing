@@ -6,6 +6,9 @@
  *  - valid → "<firstName> invited you…" (or the nameless "You've been invited…");
  *  - 404/400 → the neutral invalid view;
  *  - 429/5xx/timeout/network → stays nameless with a short note.
+ * Order (launch step 1, 13 Nov 2026): Download for Android is the first action, then the numbered
+ * guide (copy the code, install, paste it under "Have an invite code?" before signing up), then
+ * "Open in the app" for people who already have it, and the QR.
  */
 import { useEffect, useState, type ReactNode } from 'react';
 import type { SiteMessages } from '@/i18n/site/en';
@@ -19,12 +22,14 @@ type State = { status: 'checking' } | ReferralCheck;
 const fill = (template: string, key: string, value: string) => template.split(`{${key}}`).join(value);
 
 export default function ReferralView({
-  code, t, downloadHref, about, qr,
+  code, t, downloadHref, install, about, qr,
 }: {
   /** Normalised code, or null when malformed (rendered invalid, never sent to the API). */
   code: string | null;
   t: SiteMessages['referral'];
   downloadHref: string;
+  /** The Android install help page and its link text. */
+  install: { href: string; label: string };
   about: ReactNode;
   /** Server-rendered QR of the invitation link (ReferralQr), or null. */
   qr: ReactNode;
@@ -48,8 +53,9 @@ export default function ReferralView({
         <header className="stack">
           <h1 className="display">{t.invalidTitle}</h1>
           <p className="lead">{t.invalidLead}</p>
-          <div className="row">
+          <div className="row" style={{ gap: 16 }}>
             <a href={downloadHref} className="btn btn-primary">{t.download}</a>
+            <a href={install.href} className="small">{install.label}</a>
           </div>
         </header>
         {about}
@@ -73,12 +79,26 @@ export default function ReferralView({
         <p className="lead">{lead}</p>
       </header>
 
-      <PatternCard tint="pink" as="section" aria-label={t.codeLabel}>
+      <PatternCard tint="pink" as="section" aria-labelledby="referral-steps">
         <div className="stack">
-          <CopyCode code={code} label={t.codeLabel} copy={t.copy} copied={t.copied} copyFailed={t.copyFailed} />
-          <div className="row">
-            <a href={referralDeepLink(code)} className="btn btn-primary">{t.openApp}</a>
-            <a href={downloadHref} className="btn btn-secondary">{t.download}</a>
+          <div className="row" style={{ gap: 16 }}>
+            <a href={downloadHref} className="btn btn-primary">{t.download}</a>
+            <a href={install.href} className="small">{install.label}</a>
+          </div>
+          <h2 id="referral-steps" className="heading">{t.stepsTitle}</h2>
+          <ol style={{ paddingLeft: 20, display: 'flex', flexDirection: 'column', gap: 14 }}>
+            <li>
+              <div className="stack" style={{ gap: 6 }}>
+                <span>{t.steps[0]}</span>
+                <CopyCode code={code} label={t.codeLabel} copy={t.copy} copied={t.copied} copyFailed={t.copyFailed} />
+              </div>
+            </li>
+            <li>{t.steps[1]}</li>
+            <li>{t.steps[2]}</li>
+          </ol>
+          <div className="row" style={{ gap: 12 }}>
+            <span className="small muted">{t.openAppHint}</span>
+            <a href={referralDeepLink(code)} className="btn btn-secondary">{t.openApp}</a>
           </div>
           {qr}
         </div>

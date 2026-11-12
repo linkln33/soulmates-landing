@@ -26,6 +26,7 @@ export const PORTAL_PATHS = [
   '/numbers',
   '/moon',
   '/about',
+  '/install',
 ] as const;
 
 /** Document pages under /{lang}/…, with text in src/content/legal/{slug}.{lang}.md. */
