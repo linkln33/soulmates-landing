@@ -21,13 +21,22 @@ test('four columns of four items, no "#" or mailto links', () => {
   }
 });
 
-/** The ids a destination page renders: id="…" in a route file, or {#…}/headings in its Markdown. */
+/**
+ * The ids a destination page renders: id="…" in its route file or in a component file the route
+ * imports from @/components (e.g. the home page's #journey lives in components/home/HomeSections.tsx),
+ * or {#…} in its Markdown.
+ */
 function anchorExists(path: string, lang: string, anchor: string): boolean {
   if ((DOC_PAGES as readonly string[]).includes(path)) {
     return readFileSync(`src/content/legal/${path}.${lang}.md`, 'utf8').includes(`{#${anchor}}`);
   }
   const file = path === '' ? 'src/app/(portal)/[lang]/page.tsx' : `src/app/(portal)/[lang]/${path}/page.tsx`;
-  return readFileSync(file, 'utf8').includes(`id="${anchor}"`);
+  const source = readFileSync(file, 'utf8');
+  const imported = [...source.matchAll(/from '@\/(components\/[^']+)'/g)]
+    .flatMap(([, mod]) => [`src/${mod}.tsx`, `src/${mod}.ts`])
+    .filter((f) => existsSync(f))
+    .map((f) => readFileSync(f, 'utf8'));
+  return [source, ...imported].some((text) => text.includes(`id="${anchor}"`));
 }
 
 test('every footer link resolves to a route, its content and its anchor in both languages', () => {

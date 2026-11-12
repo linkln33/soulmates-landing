@@ -380,6 +380,8 @@ const en = {
     copied: 'Copied',
     copyFailed: 'Couldn’t copy. Select the code and copy it.',
     openApp: 'Open in the app',
+    qrLabel: 'QR code for this invitation link',
+    qrCaption: 'Scan with your phone',
     download: 'Download for Android',
     manualTitle: 'If the app doesn’t open the invitation',
     manual: 'After installing, sign up and enter this code: {code}',

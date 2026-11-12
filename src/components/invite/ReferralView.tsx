@@ -19,13 +19,15 @@ type State = { status: 'checking' } | ReferralCheck;
 const fill = (template: string, key: string, value: string) => template.split(`{${key}}`).join(value);
 
 export default function ReferralView({
-  code, t, downloadHref, about,
+  code, t, downloadHref, about, qr,
 }: {
   /** Normalised code, or null when malformed (rendered invalid, never sent to the API). */
   code: string | null;
   t: SiteMessages['referral'];
   downloadHref: string;
   about: ReactNode;
+  /** Server-rendered QR of the invitation link (ReferralQr), or null. */
+  qr: ReactNode;
 }) {
   const [state, setState] = useState<State>(code ? { status: 'checking' } : { status: 'invalid' });
 
@@ -78,6 +80,7 @@ export default function ReferralView({
             <a href={referralDeepLink(code)} className="btn btn-primary">{t.openApp}</a>
             <a href={downloadHref} className="btn btn-secondary">{t.download}</a>
           </div>
+          {qr}
         </div>
       </PatternCard>
 

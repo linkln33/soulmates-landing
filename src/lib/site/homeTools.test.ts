@@ -29,6 +29,9 @@ test('every painted cover has light and dark files at 1x and 2x, recorded in SOU
   }
 });
 
-test('the four tiles stay in order', () => {
-  assert.deepEqual(HOME_TOOLS.map((t) => t.key), ['horoscope', 'tarot', 'numbers', 'moon']);
+// Owner, 11 Nov 2026 (6d2e918, kept by f2b27f3): the app's six covers in the app's order;
+// Natal chart and Dreamspell are app-only and lead to the download section.
+test('the six tiles stay in the app order', () => {
+  assert.deepEqual(HOME_TOOLS.map((t) => t.key), ['natal', 'dreamspell', 'tarot', 'horoscope', 'numbers', 'moon']);
+  assert.deepEqual(HOME_TOOLS.filter((t) => t.inApp).map((t) => [t.key, t.href]), [['natal', '#download'], ['dreamspell', '#download']]);
 });
