@@ -28,7 +28,7 @@ Older instructions or docs that describe preview stacks, preview builds, other b
 
 ## Product contract and website rules (status 22 Oct 2026)
 
-The product contract in the workspace `AGENTS.md` (readings free; matching, acceptance and chat never paid; no paid reveals, premium systems, 7-day expiry or gender-balance gate; no paid AI key, in-app Oracle off; confidential machinery) applies to every word on this website. In particular:
+The product contract in the workspace `AGENTS.md` (readings free; matching, acceptance and chat never paid; no paid reveals, premium systems, 7-day expiry; the 48–52% admission balance was reinstated on 13 Nov 2026, see the workspace file; no paid AI key, in-app Oracle off; confidential machinery) applies to every word on this website. In particular:
 
 - Never name the combined systems, their count, weights or confidence percentages in website copy. Familiar public tools (horoscope, tarot, numerology, Moon) may be named.
 - No theme switch: the theme follows local time (dark 18:00–08:00, light 08:00–18:00), owner decision 17 Oct 2026 (commit `45ec4f2`).
