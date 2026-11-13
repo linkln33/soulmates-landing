@@ -434,6 +434,24 @@ const en = {
     fingerprintLabel: 'SHA-256 certificate fingerprint',
     checkNote: 'Android only installs an update over your app when it is signed with the same certificate.',
   },
+  // Stripe checkout return page /checkout/done (API_CONTRACT_V1.md, Stripe "As built"). No prices or terms here.
+  checkout: {
+    metaTitle: 'Back to the app',
+    success: {
+      title: 'Thank you',
+      body: 'Your payment is being confirmed. Return to the app — your membership appears there automatically within a minute.',
+    },
+    cancelled: {
+      title: 'No payment was made',
+      body: 'You can return to the app and try again whenever you like.',
+    },
+    unknown: {
+      title: 'Back to the app',
+      body: 'Return to the app. If a payment was completed, your membership appears there automatically within a minute.',
+    },
+    openApp: 'Open the app',
+    openNote: 'If the app doesn’t open, open SoulMates Quest yourself.',
+  },
   notFound: {
     title: 'Page not found',
     body: 'This page doesn’t exist, or it has moved.',

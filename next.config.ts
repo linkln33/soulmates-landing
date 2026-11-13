@@ -50,6 +50,11 @@ const nextConfig: NextConfig = {
         headers: [{ key: "X-Robots-Tag", value: "noindex" }],
       },
       {
+        // The Stripe checkout return page is never indexed (also robots metadata on the page).
+        source: "/:lang(en|bg)/checkout/:path*",
+        headers: [{ key: "X-Robots-Tag", value: "noindex, nofollow" }],
+      },
+      {
         // Synced app artwork: content-hashed by the sync manifest, safe to cache.
         source: "/app-content/:path*",
         headers: [{ key: "Cache-Control", value: "public, max-age=86400, stale-while-revalidate=604800" }],
