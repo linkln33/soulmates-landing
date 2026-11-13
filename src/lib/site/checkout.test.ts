@@ -6,7 +6,7 @@
 import { test } from 'node:test';
 import assert from 'node:assert/strict';
 import { existsSync, readFileSync } from 'node:fs';
-import { CHECKOUT_DEEP_LINK, CHECKOUT_PATH, checkoutState, checkoutView, stripSessionId } from './checkout.ts';
+import { CHECKOUT_DEEP_LINK, CHECKOUT_PATH, checkoutDeepLink, checkoutState, checkoutView, stripSessionId } from './checkout.ts';
 import { PORTAL_PATHS } from './config.ts';
 import en from '../../i18n/site/en.ts';
 import bg from '../../i18n/site/bg.ts';
@@ -29,14 +29,14 @@ test('success thanks the member, says the payment is being confirmed and points 
   const v = checkoutView(en.checkout, 'success');
   assert.equal(`${v.title}. ${v.body}`, 'Thank you. Your payment is being confirmed. Return to the app — your membership appears there automatically within a minute.');
   assert.equal(v.button, 'Open the app');
-  assert.equal(v.href, 'soulmatesquest://settings/membership');
+  assert.equal(v.href, 'soulmatesquest://checkout?checkout=success');
   assert.equal(v.note, 'If the app doesn’t open, open SoulMates Quest yourself.');
 });
 
 test('cancelled says no payment was made', () => {
   const v = checkoutView(en.checkout, 'cancelled');
   assert.equal(`${v.title}. ${v.body}`, 'No payment was made. You can return to the app and try again whenever you like.');
-  assert.equal(v.href, CHECKOUT_DEEP_LINK);
+  assert.equal(v.href, 'soulmatesquest://checkout?checkout=cancelled');
 });
 
 test('the neutral version never claims a payment', () => {
@@ -48,13 +48,17 @@ test('the neutral version never claims a payment', () => {
   assert.match(en.checkout.unknown.body, /^Return to the app\. If a payment was completed/);
 });
 
-test('the deep link uses the app scheme from app.json and opens the membership screen', () => {
+test('the deep link is the app\'s checkout return link, with the state when known', () => {
   const appJson = new URL('../SoulMates-Quest-mobile/app.json', ROOT);
   if (existsSync(appJson)) {
     const scheme = JSON.parse(readFileSync(appJson, 'utf8')).expo.scheme;
     assert.ok(CHECKOUT_DEEP_LINK.startsWith(`${scheme}://`));
   }
-  assert.equal(CHECKOUT_DEEP_LINK, 'soulmatesquest://settings/membership');
+  assert.equal(CHECKOUT_DEEP_LINK, 'soulmatesquest://checkout');
+  assert.equal(checkoutDeepLink('success'), 'soulmatesquest://checkout?checkout=success');
+  assert.equal(checkoutDeepLink('cancelled'), 'soulmatesquest://checkout?checkout=cancelled');
+  assert.equal(checkoutDeepLink('unknown'), 'soulmatesquest://checkout');
+  assert.equal(checkoutView(bg.checkout, 'unknown').href, 'soulmatesquest://checkout');
 });
 
 test('no prices, amounts or terms on the page, in either language', () => {

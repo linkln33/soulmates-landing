@@ -5,8 +5,8 @@
  * reads, shows or logs `session_id` (the app confirms the membership from the server itself).
  */
 
-/** The app's membership screen (scheme from SoulMates-Quest-mobile/app.json, app/settings/membership.tsx). */
-export const CHECKOUT_DEEP_LINK = 'soulmatesquest://settings/membership';
+/** The app's checkout return link (scheme from SoulMates-Quest-mobile/app.json); the app waits for it. */
+export const CHECKOUT_DEEP_LINK = 'soulmatesquest://checkout';
 
 export type CheckoutState = 'success' | 'cancelled' | 'unknown';
 
@@ -15,6 +15,11 @@ export function checkoutState(value: string | string[] | undefined): CheckoutSta
   if (value === 'success') return 'success';
   if (value === 'cancelled') return 'cancelled';
   return 'unknown';
+}
+
+/** `soulmatesquest://checkout?checkout=<state>`; no query for the neutral version. */
+export function checkoutDeepLink(state: CheckoutState): string {
+  return state === 'unknown' ? CHECKOUT_DEEP_LINK : `${CHECKOUT_DEEP_LINK}?checkout=${state}`;
 }
 
 export type CheckoutText = {
@@ -29,7 +34,7 @@ export type CheckoutText = {
 /** What the page shows for a state: a title, one paragraph, the Open the app button and its note. */
 export function checkoutView(t: CheckoutText, state: CheckoutState) {
   const { title, body } = t[state];
-  return { title, body, button: t.openApp, href: CHECKOUT_DEEP_LINK, note: t.openNote };
+  return { title, body, button: t.openApp, href: checkoutDeepLink(state), note: t.openNote };
 }
 
 /** /checkout/… with or without a language prefix. */
